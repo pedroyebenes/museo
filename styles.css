@@ -1,0 +1,130 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #000;
+  color: #eee;
+}
+
+canvas { display: block; }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.welcome-card {
+  max-width: 420px;
+  padding: 2.5rem 2rem;
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid #333;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.welcome-card h1 {
+  margin: 0 0 1rem 0;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  font-size: 2rem;
+}
+
+.welcome-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.welcome-card li { margin: 0.4rem 0; }
+
+.welcome-card .hint {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 1.2rem;
+}
+
+#crosshair {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  margin-top: -3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  z-index: 5;
+  display: none;
+}
+
+body.playing #crosshair { display: block; }
+
+#room-hud {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.45rem 1rem;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid #444;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  color: #f0e8d6;
+  pointer-events: none;
+  z-index: 6;
+  display: none;
+}
+
+body.playing #room-hud:not(.hidden) { display: block; }
+
+#info-panel {
+  position: fixed;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  max-width: 560px;
+  min-width: 320px;
+  padding: 1rem 1.4rem;
+  background: rgba(0, 0, 0, 0.78);
+  border: 1px solid #555;
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 6;
+  transition: opacity 0.18s ease;
+}
+
+#info-panel.hidden { opacity: 0; }
+
+#info-panel h2 {
+  margin: 0 0 0.2rem 0;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+#info-panel p { margin: 0.25rem 0; line-height: 1.45; }
+
+#info-author { color: #bbb; font-style: italic; font-size: 0.95rem; }
+
+#info-description { font-size: 0.9rem; color: #ddd; }
+
+#loading {
+  background: #000;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+
+.hidden { display: none !important; }

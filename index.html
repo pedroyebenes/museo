@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museo Virtual</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="welcome" class="overlay">
+      <div class="welcome-card">
+        <h1>Museo Virtual</h1>
+        <p>Haz clic para entrar.</p>
+        <ul>
+          <li><b>W A S D</b> — moverte</li>
+          <li><b>Ratón</b> — mirar alrededor</li>
+          <li><b>Esc</b> — liberar el cursor</li>
+        </ul>
+        <p class="hint">Acércate a un cuadro para ver su información.</p>
+      </div>
+    </div>
+
+    <div id="crosshair"></div>
+
+    <div id="room-hud" class="hidden"></div>
+
+    <div id="info-panel" class="hidden">
+      <h2 id="info-title"></h2>
+      <p id="info-author"></p>
+      <p id="info-description"></p>
+    </div>
+
+    <div id="loading" class="overlay">Cargando…</div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
