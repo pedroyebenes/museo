@@ -1,4 +1,5 @@
-import { buildMuseum } from './museum.js';
+import { buildAuthorRoom } from './museum.js';
+import { buildHub } from './hub.js';
 import { placePaintings } from './paintings.js';
 
 export function createRoomManager({
@@ -9,56 +10,75 @@ export function createRoomManager({
   authorOrder,
   onRoomChanged,
 }) {
-  let currentIndex = -1;
   let currentRoom = null;
+  let currentKind = null; // 'hub' | 'author'
+  let currentAuthorIndex = null;
   let interactables = [];
   let transitioning = false;
-  // Cooldown so the player doesn't re-trigger the door they just came through
   let triggerCooldown = 0;
 
-  async function loadRoom(index, spawnKind = 'initial') {
+  async function loadHub(spawnKey = 'initial') {
     if (transitioning) return;
     transitioning = true;
     try {
-      const author = authorOrder[index];
+      const room = buildHub(scene, authorOrder);
+      swapRoom(room, []);
+      currentKind = 'hub';
+      const previousAuthor = currentAuthorIndex;
+      currentAuthorIndex = null;
+      placeAtSpawn(spawnKey, room);
+      announce({ kind: 'hub', author: null });
+    } finally {
+      transitioning = false;
+    }
+  }
+
+  async function loadAuthor(authorIndex, spawnKey = 'fromHub') {
+    if (transitioning) return;
+    transitioning = true;
+    try {
+      const author = authorOrder[authorIndex];
       const paintings = paintingsByAuthor[author];
-
-      const room = buildMuseum(scene, {
-        paintingCount: paintings.length,
+      const room = buildAuthorRoom(scene, {
         author,
-        hasPrev: index > 0,
-        hasNext: index < authorOrder.length - 1,
-        prevLabel: index > 0 ? authorOrder[index - 1] : null,
-        nextLabel: index < authorOrder.length - 1 ? authorOrder[index + 1] : null,
+        paintingCount: paintings.length,
       });
-
       const newInteractables = await placePaintings(
         room.group,
         room.slots,
         paintings,
       );
-
-      // Now atomically swap: dispose old, attach new
-      if (currentRoom) disposeRoom(currentRoom);
-
-      currentRoom = room;
-      currentIndex = index;
-      interactables = newInteractables;
-
-      controls.setSegments(room.segments);
-      controls.setPose(room.spawn[spawnKind] || room.spawn.initial);
-      triggerCooldown = 0.4; // seconds — avoid immediate re-trigger
-
-      if (onRoomChanged) {
-        onRoomChanged({
-          index,
-          total: authorOrder.length,
-          author,
-          paintingCount: paintings.length,
-        });
-      }
+      swapRoom(room, newInteractables);
+      currentKind = 'author';
+      currentAuthorIndex = authorIndex;
+      placeAtSpawn(spawnKey, room);
+      announce({
+        kind: 'author',
+        author,
+        authorIndex,
+        paintingCount: paintings.length,
+      });
     } finally {
       transitioning = false;
+    }
+  }
+
+  function swapRoom(room, newInteractables) {
+    if (currentRoom) disposeRoom(currentRoom);
+    currentRoom = room;
+    interactables = newInteractables;
+    controls.setSegments(room.segments);
+    triggerCooldown = 0.5;
+  }
+
+  function placeAtSpawn(spawnKey, room) {
+    const pose = room.spawn[spawnKey] || room.spawn.initial;
+    controls.setPose(pose);
+  }
+
+  function announce(info) {
+    if (onRoomChanged) {
+      onRoomChanged({ ...info, total: authorOrder.length });
     }
   }
 
@@ -67,19 +87,16 @@ export function createRoomManager({
     room.group.traverse((obj) => {
       if (obj.geometry) obj.geometry.dispose();
       if (obj.material) {
-        const materials = Array.isArray(obj.material)
+        const mats = Array.isArray(obj.material)
           ? obj.material
           : [obj.material];
-        for (const m of materials) {
-          if (m.map) m.map.dispose();
-          if (m.alphaMap) m.alphaMap.dispose();
-          if (m.normalMap) m.normalMap.dispose();
-          if (m.emissiveMap) m.emissiveMap.dispose();
+        for (const m of mats) {
+          if (m.userData && m.userData.shared) continue;
+          if (m.map && !(m.map.userData && m.map.userData.shared)) {
+            m.map.dispose();
+          }
           m.dispose();
         }
-      }
-      if (obj.isLight && obj.shadow) {
-        obj.shadow.map?.dispose?.();
       }
     });
   }
@@ -98,13 +115,22 @@ export function createRoomManager({
         pos.z >= t.minZ &&
         pos.z <= t.maxZ
       ) {
-        const dest =
-          t.direction === 'next' ? currentIndex + 1 : currentIndex - 1;
-        if (dest < 0 || dest >= authorOrder.length) return;
-        const spawnKind = t.direction === 'next' ? 'fromPrev' : 'fromNext';
-        loadRoom(dest, spawnKind);
+        handleDestination(t.destination);
         return;
       }
+    }
+  }
+
+  function handleDestination(destination) {
+    if (!destination) return;
+    if (destination.kind === 'author') {
+      loadAuthor(destination.authorIndex, 'fromHub');
+    } else if (destination.kind === 'hub') {
+      const key =
+        currentAuthorIndex != null
+          ? `fromAuthor${currentAuthorIndex}`
+          : 'initial';
+      loadHub(key);
     }
   }
 
@@ -112,5 +138,10 @@ export function createRoomManager({
     return interactables;
   }
 
-  return { loadRoom, update, getInteractables };
+  return {
+    loadHub,
+    loadAuthor,
+    update,
+    getInteractables,
+  };
 }

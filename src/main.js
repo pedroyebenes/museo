@@ -19,7 +19,6 @@ async function boot() {
     return;
   }
 
-  // Group paintings by author, preserving first-appearance order from the JSON.
   const paintingsByAuthor = {};
   const authorOrder = [];
   for (const p of paintings) {
@@ -59,13 +58,17 @@ async function boot() {
     controls: { setSegments, setPose },
     paintingsByAuthor,
     authorOrder,
-    onRoomChanged: ({ index, total, author }) => {
-      hud.set(`Sala ${index + 1} / ${total} — ${author}`);
+    onRoomChanged: (info) => {
       overlay.hide();
+      if (info.kind === 'hub') {
+        hud.set(`Hall principal — ${info.total} salas`);
+      } else {
+        hud.set(`${info.author} (${info.paintingCount} obras)`);
+      }
     },
   });
 
-  await roomManager.loadRoom(0, 'initial');
+  await roomManager.loadHub('initial');
 
   const focus = createFocusTracker({
     camera,
