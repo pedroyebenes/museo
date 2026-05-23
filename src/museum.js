@@ -4,7 +4,7 @@ import { getSharedMaterials } from './materials.js';
 
 const HEIGHT = 4;
 const SPACE_PER_PAINTING = 3.5;
-const MIN_SIDE = 11;
+const MIN_SIDE = 6; // a 6x6 cabinet for a single-painting room
 const PAINTING_Y = 1.6;
 
 // Builds an author room: paintings on N/E/W walls, one door on the S wall
@@ -15,7 +15,10 @@ export function buildAuthorRoom(scene, config) {
   // Distribute paintings across 3 walls (N, E, W)
   const counts = distribute3(paintingCount); // { N, E, W }
   const perWallMax = Math.max(counts.N, counts.E, counts.W, 1);
-  const side = Math.max(MIN_SIDE, perWallMax * SPACE_PER_PAINTING + 3);
+  // Room scales with painting count: each painting consumes SPACE_PER_PAINTING
+  // along its wall (plus corner padding). MIN_SIDE keeps single-piece galleries
+  // from being claustrophobic.
+  const side = Math.max(MIN_SIDE, perWallMax * SPACE_PER_PAINTING + 2.5);
   const width = side;
   const depth = side;
 
