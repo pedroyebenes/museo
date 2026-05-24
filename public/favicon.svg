@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Museo Virtual</title>
+  <rect width="64" height="64" rx="14" fill="#0c0907"/>
+  <path d="M9 25 32 11l23 14H9Z" fill="#c8a24a"/>
+  <path d="M14 25h36v5H14z" fill="#f2dfb8"/>
+  <path d="M12 50h40v5H12z" fill="#c8a24a"/>
+  <path d="M17 31h6v17h-6zm24 0h6v17h-6z" fill="#f2dfb8"/>
+  <rect x="27" y="32" width="10" height="14" rx="1.5" fill="#17110d" stroke="#f2dfb8" stroke-width="2"/>
+  <path d="m29 41 2.5-3 2 2 1.5-2 1 3H29Z" fill="#c8a24a"/>
+</svg>
