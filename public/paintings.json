@@ -5,7 +5,11 @@
     "title": "Amor sacro y amor profano",
     "author": "Tiziano",
     "year": 1514,
-    "description": "Alegoría compleja del Renacimiento veneciano. Dos figuras femeninas, una vestida y otra desnuda, flanquean un sarcófago decorado en un paisaje arcádico."
+    "description": "Alegoría compleja del Renacimiento veneciano. Dos figuras femeninas, una vestida y otra desnuda, flanquean un sarcófago decorado en un paisaje arcádico.",
+    "dimensions": {
+      "width": 279,
+      "height": 118
+    }
   },
   {
     "id": "tiziano-asuncion",
@@ -13,7 +17,11 @@
     "title": "La Asunción de la Virgen",
     "author": "Tiziano",
     "year": 1518,
-    "description": "Retablo monumental pintado para Santa María Gloriosa dei Frari de Venecia. La composición vertical en tres registros (apóstoles, Virgen ascendiendo, Padre Eterno) consagró a Tiziano como gran maestro veneciano."
+    "description": "Retablo monumental pintado para Santa María Gloriosa dei Frari de Venecia. La composición vertical en tres registros (apóstoles, Virgen ascendiendo, Padre Eterno) consagró a Tiziano como gran maestro veneciano.",
+    "dimensions": {
+      "width": 360,
+      "height": 690
+    }
   },
   {
     "id": "tiziano-baco-ariadna",
@@ -21,7 +29,11 @@
     "title": "Baco y Ariadna",
     "author": "Tiziano",
     "year": 1523,
-    "description": "Parte del ciclo mitológico encargado por Alfonso d'Este para el camerino d'alabastro de Ferrara. Captura el instante en que Baco salta del carro al ver a Ariadna abandonada en Naxos."
+    "description": "Parte del ciclo mitológico encargado por Alfonso d'Este para el camerino d'alabastro de Ferrara. Captura el instante en que Baco salta del carro al ver a Ariadna abandonada en Naxos.",
+    "dimensions": {
+      "width": 191,
+      "height": 176.5
+    }
   },
   {
     "id": "tiziano-venus-urbino",
@@ -29,7 +41,11 @@
     "title": "Venus de Urbino",
     "author": "Tiziano",
     "year": 1538,
-    "description": "Retrato de una mujer reclinada en una alcoba renacentista. Influyó en innumerables desnudos posteriores, incluida la Olimpia de Manet."
+    "description": "Retrato de una mujer reclinada en una alcoba renacentista. Influyó en innumerables desnudos posteriores, incluida la Olimpia de Manet.",
+    "dimensions": {
+      "width": 165,
+      "height": 119
+    }
   },
   {
     "id": "tiziano-carlos-v-muhlberg",
@@ -37,7 +53,23 @@
     "title": "Carlos V en la batalla de Mühlberg",
     "author": "Tiziano",
     "year": 1548,
-    "description": "Retrato ecuestre del emperador tras su victoria sobre la Liga de Esmalcalda. Modelo de retrato imperial que fija la iconografía del soberano a caballo durante siglos."
+    "description": "Retrato ecuestre del emperador tras su victoria sobre la Liga de Esmalcalda. Modelo de retrato imperial que fija la iconografía del soberano a caballo durante siglos.",
+    "dimensions": {
+      "width": 279,
+      "height": 332
+    }
+  },
+  {
+    "id": "veronese-bodas-cana",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_%3B_MR_384.jpg",
+    "title": "Las bodas de Caná",
+    "author": "Paolo Veronese",
+    "year": 1563,
+    "description": "Monumental escena bíblica encargada para el refectorio de San Giorgio Maggiore de Venecia. Veronese convierte el milagro de las bodas en un banquete veneciano de más de ciento treinta personajes, con una prodigiosa armonía de color y arquitectura.",
+    "dimensions": {
+      "width": 994,
+      "height": 677
+    }
   },
   {
     "id": "velazquez-meninas",
@@ -45,7 +77,11 @@
     "title": "Las meninas",
     "author": "Diego Velázquez",
     "year": 1656,
-    "description": "Una de las obras más analizadas de la historia del arte. Velázquez se autorretrata pintando, mientras la infanta Margarita y sus damas posan en el primer plano."
+    "description": "Una de las obras más analizadas de la historia del arte. Velázquez se autorretrata pintando, mientras la infanta Margarita y sus damas posan en el primer plano.",
+    "dimensions": {
+      "width": 279.1,
+      "height": 320.3
+    }
   },
   {
     "id": "murillo-sagrada-familia-pajarito",
@@ -53,7 +89,11 @@
     "title": "Sagrada Familia del pajarito",
     "author": "Bartolomé Esteban Murillo",
     "year": 1650,
-    "description": "Escena cotidiana de la Sagrada Familia en la que el Niño Jesús sostiene un pajarito mientras juega con un perrito. Pintura tierna y costumbrista característica del Murillo maduro."
+    "description": "Escena cotidiana de la Sagrada Familia en la que el Niño Jesús sostiene un pajarito mientras juega con un perrito. Pintura tierna y costumbrista característica del Murillo maduro.",
+    "dimensions": {
+      "width": 188,
+      "height": 144
+    }
   },
   {
     "id": "murillo-ninos-comiendo",
@@ -61,7 +101,11 @@
     "title": "Niños comiendo (Kuchenesser)",
     "author": "Bartolomé Esteban Murillo",
     "year": 1670,
-    "description": "Escena de género con niños de la calle disfrutando de un alimento humilde. Murillo elevó este tipo de retratos populares a obras de gran ternura y luz dorada."
+    "description": "Escena de género con niños de la calle disfrutando de un alimento humilde. Murillo elevó este tipo de retratos populares a obras de gran ternura y luz dorada.",
+    "dimensions": {
+      "width": 123,
+      "height": 102
+    }
   },
   {
     "id": "murillo-rebeca-eliezer",
@@ -69,7 +113,11 @@
     "title": "Rebeca y Eliezer",
     "author": "Bartolomé Esteban Murillo",
     "year": 1660,
-    "description": "Episodio bíblico del Génesis: Rebeca, futura esposa de Isaac, conversa con Eliezer, criado del patriarca Abraham, junto al pozo. Conservado en el Museo del Prado."
+    "description": "Episodio bíblico del Génesis: Rebeca, futura esposa de Isaac, conversa con Eliezer, criado del patriarca Abraham, junto al pozo. Conservado en el Museo del Prado.",
+    "dimensions": {
+      "width": 151.5,
+      "height": 108
+    }
   },
   {
     "id": "murillo-buen-pastor",
@@ -77,7 +125,11 @@
     "title": "El Buen Pastor",
     "author": "Bartolomé Esteban Murillo",
     "year": 1660,
-    "description": "El Niño Jesús representado como pastor con ovejas y cayado. Iconografía mística muy popular en la Sevilla barroca."
+    "description": "El Niño Jesús representado como pastor con ovejas y cayado. Iconografía mística muy popular en la Sevilla barroca.",
+    "dimensions": {
+      "width": 101.7,
+      "height": 123
+    }
   },
   {
     "id": "murillo-inmaculada",
@@ -85,7 +137,11 @@
     "title": "Inmaculada Concepción",
     "author": "Bartolomé Esteban Murillo",
     "year": 1670,
-    "description": "Una de las múltiples Inmaculadas pintadas por Murillo. María se eleva entre nubes sobre la luna creciente, rodeada de querubines, con manto azul y túnica blanca."
+    "description": "Una de las múltiples Inmaculadas pintadas por Murillo. María se eleva entre nubes sobre la luna creciente, rodeada de querubines, con manto azul y túnica blanca.",
+    "dimensions": {
+      "width": 112,
+      "height": 168
+    }
   },
   {
     "id": "vermeer-joven-perla",
@@ -93,7 +149,11 @@
     "title": "La joven de la perla",
     "author": "Johannes Vermeer",
     "year": 1665,
-    "description": "Conocida como la \"Mona Lisa del Norte\", esta tronie capta a una joven anónima girándose hacia el espectador con un turbante azul y una enorme perla pendiente."
+    "description": "Conocida como la \"Mona Lisa del Norte\", esta tronie capta a una joven anónima girándose hacia el espectador con un turbante azul y una enorme perla pendiente.",
+    "dimensions": {
+      "width": 39,
+      "height": 44.5
+    }
   },
   {
     "id": "hokusai-gran-ola",
@@ -101,7 +161,11 @@
     "title": "La gran ola de Kanagawa",
     "author": "Katsushika Hokusai",
     "year": 1831,
-    "description": "Grabado en madera (ukiyo-e) de la serie \"Treinta y seis vistas del monte Fuji\". Muestra una ola gigantesca a punto de romper sobre tres barcas, con el Fuji al fondo."
+    "description": "Grabado en madera (ukiyo-e) de la serie \"Treinta y seis vistas del monte Fuji\". Muestra una ola gigantesca a punto de romper sobre tres barcas, con el Fuji al fondo.",
+    "dimensions": {
+      "width": 37.9,
+      "height": 25.7
+    }
   },
   {
     "id": "monet-impresion-sol-naciente",
@@ -109,7 +173,11 @@
     "title": "Impresión, sol naciente",
     "author": "Claude Monet",
     "year": 1872,
-    "description": "Vista del puerto de Le Havre al amanecer. Dio nombre al impresionismo cuando un crítico la usó despectivamente en 1874."
+    "description": "Vista del puerto de Le Havre al amanecer. Dio nombre al impresionismo cuando un crítico la usó despectivamente en 1874.",
+    "dimensions": {
+      "width": 65,
+      "height": 50
+    }
   },
   {
     "id": "monet-urraca",
@@ -117,7 +185,11 @@
     "title": "La urraca",
     "author": "Claude Monet",
     "year": 1869,
-    "description": "Paisaje invernal con una urraca posada sobre una cancela. Estudio de las sombras coloreadas en la nieve que anticipa el lenguaje impresionista."
+    "description": "Paisaje invernal con una urraca posada sobre una cancela. Estudio de las sombras coloreadas en la nieve que anticipa el lenguaje impresionista.",
+    "dimensions": {
+      "width": 130,
+      "height": 89
+    }
   },
   {
     "id": "monet-mujer-sombrilla",
@@ -125,7 +197,11 @@
     "title": "Mujer con sombrilla",
     "author": "Claude Monet",
     "year": 1875,
-    "description": "Retrato al aire libre de Camille y Jean Monet, esposa e hijo del pintor. La pincelada suelta y el contraluz capturan la brisa y la luz del momento."
+    "description": "Retrato al aire libre de Camille y Jean Monet, esposa e hijo del pintor. La pincelada suelta y el contraluz capturan la brisa y la luz del momento.",
+    "dimensions": {
+      "width": 100,
+      "height": 81
+    }
   },
   {
     "id": "monet-catedral-rouen",
@@ -133,7 +209,11 @@
     "title": "La catedral de Rouen, fachada (atardecer)",
     "author": "Claude Monet",
     "year": 1894,
-    "description": "De la serie en la que Monet pintó la misma fachada gótica a diferentes horas y estaciones para estudiar cómo la luz transforma la materia."
+    "description": "De la serie en la que Monet pintó la misma fachada gótica a diferentes horas y estaciones para estudiar cómo la luz transforma la materia.",
+    "dimensions": {
+      "width": 100.1,
+      "height": 65
+    }
   },
   {
     "id": "monet-nenufares",
@@ -141,7 +221,11 @@
     "title": "Nenúfares",
     "author": "Claude Monet",
     "year": 1906,
-    "description": "Una de las muchas vistas del estanque de Giverny. La superficie del agua se funde con los reflejos del cielo y las flores, deshaciendo la profundidad."
+    "description": "Una de las muchas vistas del estanque de Giverny. La superficie del agua se funde con los reflejos del cielo y las flores, deshaciendo la profundidad.",
+    "dimensions": {
+      "width": 94.1,
+      "height": 89.8
+    }
   },
   {
     "id": "van-gogh-noche-estrellada",
@@ -149,7 +233,11 @@
     "title": "La noche estrellada",
     "author": "Vincent van Gogh",
     "year": 1889,
-    "description": "Óleo sobre lienzo pintado durante su estancia en el sanatorio de Saint-Rémy-de-Provence. La obra representa la vista nocturna desde su ventana, transformada por una imaginación turbulenta."
+    "description": "Óleo sobre lienzo pintado durante su estancia en el sanatorio de Saint-Rémy-de-Provence. La obra representa la vista nocturna desde su ventana, transformada por una imaginación turbulenta.",
+    "dimensions": {
+      "width": 92.1,
+      "height": 73.7
+    }
   },
   {
     "id": "munch-el-grito",
@@ -157,7 +245,11 @@
     "title": "El grito",
     "author": "Edvard Munch",
     "year": 1893,
-    "description": "Icono del expresionismo. Munch describió la inspiración como un paseo al atardecer en el que sintió un \"grito infinito que atraviesa la naturaleza\"."
+    "description": "Icono del expresionismo. Munch describió la inspiración como un paseo al atardecer en el que sintió un \"grito infinito que atraviesa la naturaleza\".",
+    "dimensions": {
+      "width": 73,
+      "height": 91
+    }
   },
   {
     "id": "sorolla-pescado-caro",
@@ -165,7 +257,23 @@
     "title": "¡Y aún dicen que el pescado es caro!",
     "author": "Joaquín Sorolla",
     "year": 1894,
-    "description": "Lienzo de denuncia social: dos pescadores asisten a un compañero herido en la sentina de una barca. Sorolla obtuvo con él la primera medalla en la Exposición Nacional de Madrid."
+    "description": "Lienzo de denuncia social: dos pescadores asisten a un compañero herido en la sentina de una barca. Sorolla obtuvo con él la primera medalla en la Exposición Nacional de Madrid.",
+    "dimensions": {
+      "width": 204,
+      "height": 151.5
+    }
+  },
+  {
+    "id": "sorolla-regreso-pesca",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Joaqu%C3%ADn_Sorolla_y_Bastida_-_La_vuelta_de_la_pesca.jpg",
+    "title": "El regreso de la pesca",
+    "author": "Joaquín Sorolla",
+    "year": 1894,
+    "description": "Dos bueyes remolcan un barco de vela latina en la playa del Cabañal, mientras pescadores coordinan la maniobra bajo una luz mediterránea intensa. Obra clave de la etapa social del pintor, adquirida por el Estado francés en el Salón de 1895.",
+    "dimensions": {
+      "width": 403.5,
+      "height": 265
+    }
   },
   {
     "id": "sorolla-triste-herencia",
@@ -173,7 +281,11 @@
     "title": "Triste herencia",
     "author": "Joaquín Sorolla",
     "year": 1899,
-    "description": "Niños tullidos bañándose en la playa del Cabañal, vigilados por un sacerdote. Premio en la Exposición Universal de París (1900) y consagración internacional del pintor."
+    "description": "Niños tullidos bañándose en la playa del Cabañal, vigilados por un sacerdote. Premio en la Exposición Universal de París (1900) y consagración internacional del pintor.",
+    "dimensions": {
+      "width": 288,
+      "height": 208
+    }
   },
   {
     "id": "sorolla-paseo-orilla",
@@ -181,7 +293,11 @@
     "title": "Paseo a orillas del mar",
     "author": "Joaquín Sorolla",
     "year": 1909,
-    "description": "Clotilde y su hija María pasean por la playa con sombrillas y vestidos blancos. Una de las obras más reconocibles del luminismo sorollesco."
+    "description": "Clotilde y su hija María pasean por la playa con sombrillas y vestidos blancos. Una de las obras más reconocibles del luminismo sorollesco.",
+    "dimensions": {
+      "width": 205,
+      "height": 200
+    }
   },
   {
     "id": "sorolla-chicos-playa",
@@ -189,7 +305,11 @@
     "title": "Chicos en la playa",
     "author": "Joaquín Sorolla",
     "year": 1909,
-    "description": "Tres niños tumbados en la orilla, reflejados en la película de agua. Composición casi cenital y pincelada vibrante que captura el sol del Mediterráneo."
+    "description": "Tres niños tumbados en la orilla, reflejados en la película de agua. Composición casi cenital y pincelada vibrante que captura el sol del Mediterráneo.",
+    "dimensions": {
+      "width": 185,
+      "height": 118
+    }
   },
   {
     "id": "sorolla-bano-caballo",
@@ -197,7 +317,11 @@
     "title": "El baño del caballo",
     "author": "Joaquín Sorolla",
     "year": 1909,
-    "description": "Un mozo guía a su caballo blanco al mar bajo la luz cegadora del mediodía valenciano. Ejercicio magistral de reflejos y movimiento del agua."
+    "description": "Un mozo guía a su caballo blanco al mar bajo la luz cegadora del mediodía valenciano. Ejercicio magistral de reflejos y movimiento del agua.",
+    "dimensions": {
+      "width": 282,
+      "height": 205
+    }
   },
   {
     "id": "dali-persistencia-memoria",
@@ -205,6 +329,10 @@
     "title": "La persistencia de la memoria",
     "author": "Salvador Dalí",
     "year": 1931,
-    "description": "Los relojes blandos derritiéndose en un paisaje onírico de Port Lligat. Una de las imágenes más reconocibles del surrealismo."
+    "description": "Los relojes blandos derritiéndose en un paisaje onírico de Port Lligat. Una de las imágenes más reconocibles del surrealismo.",
+    "dimensions": {
+      "width": 33,
+      "height": 24
+    }
   }
 ]

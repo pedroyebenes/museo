@@ -42,7 +42,7 @@ export function createRoomManager({
       const paintings = paintingsByAuthor[author];
       const room = buildAuthorRoom(scene, {
         author,
-        paintingCount: paintings.length,
+        paintings,
         bio: authorsData[author] || null,
       });
       const newInteractables = await placePaintings(

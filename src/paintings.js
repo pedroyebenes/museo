@@ -1,10 +1,45 @@
 import * as THREE from 'three';
 
-const TARGET_LONG_SIDE = 2.0; // meters
+const CM_TO_M = 0.01;
 const FRAME_THICKNESS = 0.06;
 const FRAME_DEPTH = 0.08;
 const LABEL_HEIGHT = 0.18;
 const LABEL_WIDTH = 1.2;
+const FALLBACK_LONG_SIDE = 2.0;
+
+export const PAINTING_LAYOUT = {
+  labelHeight: LABEL_HEIGHT,
+  labelGap: 0.04,
+  frameThickness: FRAME_THICKNESS,
+  floorClearance: 0.15,
+  ceilingClearance: 0.4,
+  wallPadding: 1.5,
+  paintingGap: 0.8,
+};
+
+export function getPaintingDimensionsMeters(data) {
+  const { width, height } = data.dimensions ?? {};
+  if (width > 0 && height > 0) {
+    return { w: width * CM_TO_M, h: height * CM_TO_M };
+  }
+  return null;
+}
+
+export function getPaintingLayoutExtents(data) {
+  const dims = getPaintingDimensionsMeters(data) ?? {
+    w: FALLBACK_LONG_SIDE,
+    h: FALLBACK_LONG_SIDE,
+  };
+  const labelBelow =
+    PAINTING_LAYOUT.labelHeight +
+    PAINTING_LAYOUT.labelGap +
+    PAINTING_LAYOUT.labelHeight / 2;
+  return {
+    width: dims.w + FRAME_THICKNESS * 2,
+    height: dims.h + FRAME_THICKNESS * 2 + labelBelow,
+    canvasH: dims.h,
+  };
+}
 
 const loader = new THREE.TextureLoader();
 loader.crossOrigin = 'anonymous';
@@ -51,16 +86,7 @@ export async function placePaintings(container, slots, paintings) {
 }
 
 function buildPaintingMesh(texture, data) {
-  const img = texture.image;
-  const aspect = img.width / img.height;
-  let w, h;
-  if (aspect >= 1) {
-    w = TARGET_LONG_SIDE;
-    h = TARGET_LONG_SIDE / aspect;
-  } else {
-    h = TARGET_LONG_SIDE;
-    w = TARGET_LONG_SIDE * aspect;
-  }
+  const { w, h } = getPaintingSize(data, texture);
 
   const group = new THREE.Group();
 
@@ -97,6 +123,21 @@ function buildPaintingMesh(texture, data) {
 
   group.userData.painting = data;
   return group;
+}
+
+function getPaintingSize(data, texture) {
+  const { width, height } = data.dimensions ?? {};
+  if (width > 0 && height > 0) {
+    return { w: width * CM_TO_M, h: height * CM_TO_M };
+  }
+
+  // Fallback for entries without catalog dimensions: scale from image aspect ratio.
+  const img = texture.image;
+  const aspect = img.width / img.height;
+  if (aspect >= 1) {
+    return { w: FALLBACK_LONG_SIDE, h: FALLBACK_LONG_SIDE / aspect };
+  }
+  return { w: FALLBACK_LONG_SIDE * aspect, h: FALLBACK_LONG_SIDE };
 }
 
 function buildLabel(data) {
@@ -149,7 +190,7 @@ function ellipsize(ctx, text, maxWidth) {
 function makeSpotlight(slot) {
   const spot = new THREE.SpotLight(0xfff1d8, 8, 9, Math.PI / 5, 0.5, 1.4);
   spot.position.copy(slot.position);
-  spot.position.y = 3.6;
+  spot.position.y = Math.max(3.6, slot.position.y + 2.5);
   spot.position.add(slot.normal.clone().multiplyScalar(0.7));
 
   const target = new THREE.Object3D();

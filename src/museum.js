@@ -1,26 +1,42 @@
 import * as THREE from 'three';
 import { buildRoomShell } from './wallBuilder.js';
 import { getAuthorRoomMaterials } from './materials.js';
+import {
+  getPaintingDimensionsMeters,
+  getPaintingLayoutExtents,
+  PAINTING_LAYOUT,
+} from './paintings.js';
 
-const HEIGHT = 4;
+const MIN_HEIGHT = 4;
+const MIN_SIDE = 6;
 const SPACE_PER_PAINTING = 3.5;
-const MIN_SIDE = 6; // a 6x6 cabinet for a single-painting room
-const PAINTING_Y = 1.6;
+const DEFAULT_PAINTING_Y = 1.6;
 
 // Builds an author room: paintings on N/E/W walls, one door on the S wall
 // that leads back to the hub. Returns slots/segments/triggers/spawn.
 export function buildAuthorRoom(scene, config) {
-  const { author, paintingCount, bio = null } = config;
+  const { author, paintings = [], bio = null } = config;
 
-  // Distribute paintings across 3 walls (N, E, W)
-  const counts = distribute3(paintingCount); // { N, E, W }
-  const perWallMax = Math.max(counts.N, counts.E, counts.W, 1);
-  // Room scales with painting count: each painting consumes SPACE_PER_PAINTING
-  // along its wall (plus corner padding). MIN_SIDE keeps single-piece galleries
-  // from being claustrophobic.
-  const side = Math.max(MIN_SIDE, perWallMax * SPACE_PER_PAINTING + 2.5);
-  const width = side;
-  const depth = side;
+  const walls = partitionPaintings(paintings);
+  const perWallMax = Math.max(
+    walls.N.length,
+    walls.E.length,
+    walls.W.length,
+    1,
+  );
+
+  const countSide = perWallMax * SPACE_PER_PAINTING + 2.5;
+  const widthSide = Math.max(
+    MIN_SIDE,
+    countSide,
+    wallSpanNeeded(walls.N),
+    wallSpanNeeded(walls.E),
+    wallSpanNeeded(walls.W),
+  );
+  const height = Math.max(MIN_HEIGHT, roomHeightNeeded(paintings));
+
+  const width = widthSide;
+  const depth = widthSide;
 
   const group = new THREE.Group();
   group.name = `room:${author}`;
@@ -28,7 +44,7 @@ export function buildAuthorRoom(scene, config) {
   const { segments, triggers } = buildRoomShell(group, {
     width,
     depth,
-    height: HEIGHT,
+    height,
     materials: getAuthorRoomMaterials(author),
     walls: [
       { side: 'N', doors: [] },
@@ -48,11 +64,10 @@ export function buildAuthorRoom(scene, config) {
     ],
   });
 
-  // Slots
   const slots = [];
-  if (counts.N > 0) {
+  if (walls.N.length > 0) {
     layoutSlots(slots, {
-      count: counts.N,
+      paintings: walls.N,
       wallLength: width,
       fixedAxis: 'z',
       fixedValue: -depth / 2 + 0.05,
@@ -60,9 +75,9 @@ export function buildAuthorRoom(scene, config) {
       rotY: 0,
     });
   }
-  if (counts.E > 0) {
+  if (walls.E.length > 0) {
     layoutSlots(slots, {
-      count: counts.E,
+      paintings: walls.E,
       wallLength: depth,
       fixedAxis: 'x',
       fixedValue: width / 2 - 0.05,
@@ -70,9 +85,9 @@ export function buildAuthorRoom(scene, config) {
       rotY: -Math.PI / 2,
     });
   }
-  if (counts.W > 0) {
+  if (walls.W.length > 0) {
     layoutSlots(slots, {
-      count: counts.W,
+      paintings: walls.W,
       wallLength: depth,
       fixedAxis: 'x',
       fixedValue: -width / 2 + 0.05,
@@ -81,42 +96,81 @@ export function buildAuthorRoom(scene, config) {
     });
   }
 
-  // Author plaque on the floor near the entrance
   addAuthorPlaque(group, author, depth);
-
-  // Biographical placard mounted on the S wall, beside the door, facing into
-  // the room. The visitor reads it when turning back toward the exit.
   if (bio) addAuthorBioPlaque(group, author, bio, depth);
-
-  // Gentle hemisphere fill so the room isn't pitch black between spotlights
-  addRoomLights(group, width, depth);
+  addRoomLights(group, width, depth, height);
 
   scene.add(group);
 
+  const spawnZ = depth / 2 - Math.min(2.8, depth * 0.22);
   return {
     group,
     slots,
     segments,
     triggers,
-    dimensions: { width, depth, height: HEIGHT },
+    dimensions: { width, depth, height },
     author,
     kind: 'author',
     spawn: {
-      // Coming from the hub through the S door, face -Z (into the room)
       fromHub: {
-        position: new THREE.Vector3(0, PAINTING_Y, depth / 2 - 2.8),
+        position: new THREE.Vector3(0, DEFAULT_PAINTING_Y, spawnZ),
         yaw: 0,
       },
       initial: {
-        position: new THREE.Vector3(0, PAINTING_Y, depth / 2 - 2.8),
+        position: new THREE.Vector3(0, DEFAULT_PAINTING_Y, spawnZ),
         yaw: 0,
       },
     },
   };
 }
 
+function partitionPaintings(paintings) {
+  const counts = distribute3(paintings.length);
+  let idx = 0;
+  const walls = { N: [], E: [], W: [] };
+  for (const side of ['N', 'E', 'W']) {
+    for (let i = 0; i < counts[side]; i++) {
+      walls[side].push(paintings[idx++]);
+    }
+  }
+  return walls;
+}
+
+function wallSpanNeeded(paintingsOnWall) {
+  if (paintingsOnWall.length === 0) return 0;
+
+  const { wallPadding, paintingGap } = PAINTING_LAYOUT;
+  const widths = paintingsOnWall.map(
+    (p) => getPaintingLayoutExtents(p).width,
+  );
+  const sum = widths.reduce((total, w) => total + w, 0);
+  const gaps = Math.max(0, paintingsOnWall.length - 1) * paintingGap;
+  return sum + gaps + wallPadding * 2;
+}
+
+function roomHeightNeeded(paintings) {
+  const { ceilingClearance } = PAINTING_LAYOUT;
+  let maxTop = MIN_HEIGHT;
+
+  for (const painting of paintings) {
+    const { canvasH } = getPaintingLayoutExtents(painting);
+    const y = paintingCenterY(canvasH);
+    const top =
+      y + canvasH / 2 + PAINTING_LAYOUT.frameThickness + ceilingClearance;
+    maxTop = Math.max(maxTop, top);
+  }
+
+  return maxTop;
+}
+
+function paintingCenterY(canvasHeight) {
+  const { labelHeight, labelGap, frameThickness, floorClearance } =
+    PAINTING_LAYOUT;
+  const labelBelow = labelHeight + labelGap + labelHeight / 2;
+  return floorClearance + canvasHeight / 2 + frameThickness + labelBelow;
+}
+
 function distribute3(n) {
-  // Round-robin order: N gets the first (biggest), then E, then W.
   const N = Math.ceil(n / 3);
   const E = Math.ceil((n - N) / 2);
   const W = n - N - E;
@@ -124,17 +178,29 @@ function distribute3(n) {
 }
 
 function layoutSlots(slots, opts) {
-  const { count, wallLength, fixedAxis, fixedValue, normal, rotY } = opts;
-  const usable = wallLength - 2;
-  const step = usable / count;
-  const start = -usable / 2 + step / 2;
-  for (let i = 0; i < count; i++) {
-    const along = start + i * step;
+  const { paintings, wallLength, fixedAxis, fixedValue, normal, rotY } = opts;
+  const { paintingGap } = PAINTING_LAYOUT;
+
+  const sizes = paintings.map((p) => {
+    const dims = getPaintingDimensionsMeters(p) ?? { w: 2, h: 2 };
+    return { w: dims.w, h: dims.h };
+  });
+
+  const totalWidth =
+    sizes.reduce((sum, size) => sum + size.w, 0) +
+    Math.max(0, paintings.length - 1) * paintingGap;
+  let along = -totalWidth / 2;
+
+  for (let i = 0; i < paintings.length; i++) {
+    const { w, h } = sizes[i];
+    along += w / 2;
+    const y = paintingCenterY(h);
     const position =
       fixedAxis === 'x'
-        ? new THREE.Vector3(fixedValue, PAINTING_Y, along)
-        : new THREE.Vector3(along, PAINTING_Y, fixedValue);
+        ? new THREE.Vector3(fixedValue, y, along)
+        : new THREE.Vector3(along, y, fixedValue);
     slots.push({ position, normal: normal.clone(), rotationY: rotY });
+    along += w / 2 + paintingGap;
   }
 }
 
@@ -163,16 +229,19 @@ function addAuthorPlaque(group, author, depth) {
   });
   const plaque = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
   plaque.rotation.x = -Math.PI / 2;
-  // Place near the centre, oriented so it reads when entering from the hub
   plaque.position.set(0, 0.012, 0.5);
-  plaque.rotation.z = Math.PI; // text faces the entering visitor
+  plaque.rotation.z = Math.PI;
   group.add(plaque);
 }
 
-function addRoomLights(group, width, depth) {
-  // Soft fill so the gallery isn't dependent on spotlights only.
-  const point = new THREE.PointLight(0xfff1d8, 0.65, Math.max(width, depth) * 1.4, 1.6);
-  point.position.set(0, HEIGHT - 0.4, 0);
+function addRoomLights(group, width, depth, height) {
+  const point = new THREE.PointLight(
+    0xfff1d8,
+    0.65,
+    Math.max(width, depth) * 1.4,
+    1.6,
+  );
+  point.position.set(0, height - 0.4, 0);
   group.add(point);
 }
 
@@ -184,7 +253,6 @@ function addAuthorBioPlaque(group, author, bio, depth) {
   c.height = H_PX;
   const ctx = c.getContext('2d');
 
-  // Background — dark with a double gilded border
   ctx.fillStyle = '#0c0907';
   ctx.fillRect(0, 0, W_PX, H_PX);
   ctx.strokeStyle = '#c7a060';
@@ -193,7 +261,6 @@ function addAuthorBioPlaque(group, author, bio, depth) {
   ctx.lineWidth = 2;
   ctx.strokeRect(34, 34, W_PX - 68, H_PX - 68);
 
-  // Title — author full name
   let y = 100;
   ctx.fillStyle = '#f0dca0';
   ctx.font = 'italic 600 56px Georgia, "Times New Roman", serif';
@@ -202,14 +269,12 @@ function addAuthorBioPlaque(group, author, bio, depth) {
   const title = bio.fullName || author;
   y = drawWrappedText(ctx, title, W_PX / 2, y, W_PX - 120, 64);
 
-  // Years
   ctx.fillStyle = '#c9a067';
   ctx.font = '400 34px Georgia, serif';
   y += 24;
   ctx.fillText(bio.years || '', W_PX / 2, y);
   y += 50;
 
-  // Origin
   if (bio.origin) {
     ctx.fillStyle = '#a98a52';
     ctx.font = 'italic 26px Georgia, serif';
@@ -217,7 +282,6 @@ function addAuthorBioPlaque(group, author, bio, depth) {
     y += 12;
   }
 
-  // Separator
   ctx.strokeStyle = '#c7a060';
   ctx.lineWidth = 1.5;
   ctx.beginPath();
@@ -226,7 +290,6 @@ function addAuthorBioPlaque(group, author, bio, depth) {
   ctx.stroke();
   y += 48;
 
-  // Bio paragraph
   if (bio.bio) {
     ctx.fillStyle = '#ebe4d2';
     ctx.font = '400 26px Georgia, serif';
@@ -239,18 +302,14 @@ function addAuthorBioPlaque(group, author, bio, depth) {
   tex.anisotropy = 8;
 
   const w = 1.3;
-  const h = w * (H_PX / W_PX); // ~1.71m
+  const h = w * (H_PX / W_PX);
   const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: false });
   const plaque = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
-  // Mount on the S wall, 1.8m to the left of the door (player's right when
-  // standing at the door looking into the room), centred at eye level.
   plaque.position.set(-1.85, h / 2 + 0.25, depth / 2 - 0.07);
-  plaque.rotation.y = Math.PI; // face -Z, into the room
+  plaque.rotation.y = Math.PI;
   group.add(plaque);
 }
 
-// Draws word-wrapped text starting at (x, y). Returns the final y after the
-// last line. For centred text pass an x that's the centre of the line span.
 function drawWrappedText(ctx, text, x, y, maxWidth, lineHeight) {
   const words = String(text).split(/\s+/);
   let line = '';
