@@ -104,11 +104,11 @@ export function buildAuthorRoom(scene, config) {
       // Coming from the hub through the S door, face -Z (into the room)
       fromHub: {
         position: new THREE.Vector3(0, PAINTING_Y, depth / 2 - 2.8),
-        yaw: Math.PI,
+        yaw: 0,
       },
       initial: {
         position: new THREE.Vector3(0, PAINTING_Y, depth / 2 - 2.8),
-        yaw: Math.PI,
+        yaw: 0,
       },
     },
   };

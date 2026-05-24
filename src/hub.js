@@ -138,7 +138,7 @@ function computeDoorSpawn(slot, width, depth) {
           PLAYER_Y,
           position,
         ),
-        yaw: -Math.PI / 2,
+        yaw: Math.PI / 2,
       };
     case 'W':
       return {
@@ -147,7 +147,7 @@ function computeDoorSpawn(slot, width, depth) {
           PLAYER_Y,
           position,
         ),
-        yaw: Math.PI / 2,
+        yaw: -Math.PI / 2,
       };
   }
 }
