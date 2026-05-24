@@ -11,6 +11,10 @@ Este documento describe cómo ampliar el catálogo del museo editando **solo dat
 
 **No edites** `dist/` — es la build de producción y se regenera con `npm run build`.
 
+Para cambios de **paredes, texturas o iluminación ambiente** (estilo neoclásico, costuras de UV), sigue la skill [`.cursor/skills/museo-visual-neoclassico/SKILL.md`](.cursor/skills/museo-visual-neoclassico/SKILL.md).
+
+Para **añadir autores y cuadros famosos** (solo JSON), sigue la skill [`.cursor/skills/museo-catalogo-obras/SKILL.md`](.cursor/skills/museo-catalogo-obras/SKILL.md).
+
 ---
 
 ## Regla crítica: el nombre del autor debe coincidir
@@ -197,7 +201,7 @@ if(orphan.length) console.log('Biografía sin cuadros:', orphan);
 
 ## Autores y cuadros actuales (referencia)
 
-Consulta los archivos fuente para el listado vigente. A mayo de 2026 el museo incluye autores como Tiziano, Paolo Veronese, Velázquez, Murillo, Vermeer, Hokusai, Monet, Van Gogh, Munch, Sorolla y Dalí, con **28 cuadros** en total.
+Consulta los archivos fuente para el listado vigente (autores y recuento de cuadros cambian con cada ampliación del catálogo).
 
 Al añadir contenido, **mantén el estilo** de las entradas existentes: descripciones en español, tono divulgativo de museo, datos históricos verificables.
 

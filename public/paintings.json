@@ -478,5 +478,341 @@
       "width": 1220,
       "height": 1370
     }
+  },
+  {
+    "id": "goya-tres-de-mayo",
+    "title": "El tres de mayo de 1808 en Madrid",
+    "author": "Francisco de Goya",
+    "year": 1814,
+    "description": "Conmemora los fusilamientos de patriotas madrileños tras la sublevación del dos de mayo. La linterna concentra la luz sobre las víctimas y convierte el horror en símbolo universal de la resistencia civil.",
+    "dimensions": {
+      "width": 266,
+      "height": 345
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/El_tres_de_mayo_de_1808_en_Madrid.jpg"
+  },
+  {
+    "id": "goya-maja-desnuda",
+    "title": "La maja desnuda",
+    "author": "Francisco de Goya",
+    "year": 1800,
+    "description": "Retrato reclinado de figura anónima que desafió la moralidad de la época. Pareja iconográfica de La maja vestida; ambas pertenecieron a la colección de Godoy.",
+    "dimensions": {
+      "width": 98,
+      "height": 191
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Francisco_de_Goya_y_Lucientes_-_La_maja_desnuda_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "goya-sueno-razon",
+    "title": "El sueño de la razón produce monstruos",
+    "author": "Francisco de Goya",
+    "year": 1799,
+    "description": "Estampa del Capricho 43: un hombre dormido entre búhos y murciélagos encarna la fragilidad de la Ilustración frente a la superstición.",
+    "dimensions": {
+      "width": 22,
+      "height": 15
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Francisco_de_Goya_y_Lucientes_-_The_Sleep_of_Reason_Produces_Monsters_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "goya-saturno",
+    "title": "Saturno devorando a su hijo",
+    "author": "Francisco de Goya",
+    "year": 1823,
+    "description": "Pintura negra de la Quinta del Sordo. El dios devora a su vástago en una escena de horror íntimo, leída como metáfora del tiempo y la tiranía.",
+    "dimensions": {
+      "width": 143,
+      "height": 81
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Francisco_de_Goya_y_Lucientes_-_Saturn_Devouring_His_Son_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "rembrandt-ronda-noche",
+    "title": "La ronda de noche",
+    "author": "Rembrandt",
+    "year": 1642,
+    "description": "Retrato grupal de la milicia cívica de Ámsterdam en movimiento. El claroscuro y la pincelada suelta revolucionaron el género y dieron nombre a la obra.",
+    "dimensions": {
+      "width": 363,
+      "height": 437
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/The_Night_Watch_-_HD.jpg"
+  },
+  {
+    "id": "rembrandt-autorretrato",
+    "title": "Autorretrato",
+    "author": "Rembrandt",
+    "year": 1659,
+    "description": "Uno de los numerosos autorretratos de su madurez. La mirada directa y la materia espesa documentan el envejecimiento y la maestría técnica del artista.",
+    "dimensions": {
+      "width": 145,
+      "height": 112
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "rembrandt-sindicos",
+    "title": "Los síndicos de los pañeros",
+    "author": "Rembrandt",
+    "year": 1662,
+    "description": "Seis regentes del gremio de pañeros interrumpidos en su reunión. La luz lateral y el gesto del hombre que se levanta crean una escena de instante vivido.",
+    "dimensions": {
+      "width": 192,
+      "height": 279
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Rembrandt_van_Rijn_-_The_Syndics_of_the_Drapers%27_Guild_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "leonardo-gioconda",
+    "title": "La Gioconda",
+    "author": "Leonardo da Vinci",
+    "year": 1503,
+    "description": "Retrato de Lisa Gherardini, esposa de Francesco del Giocondo. El sfumato del paisaje y la sonrisa enigmática la convirtieron en el cuadro más famoso del mundo.",
+    "dimensions": {
+      "width": 77,
+      "height": 53
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+  },
+  {
+    "id": "leonardo-virgen-roca",
+    "title": "La Virgen de las Rocas",
+    "author": "Leonardo da Vinci",
+    "year": 1491,
+    "description": "Versión londinense del encargo de la Inmaculada Concepción para la iglesia de San Francisco en Milán. Rocas, agua y gestos enlazados definen el paisaje sagrado leonardesco.",
+    "dimensions": {
+      "width": 190,
+      "height": 120
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Leonardo_da_Vinci_-_Virgin_of_the_Rocks_(National_Gallery).jpg"
+  },
+  {
+    "id": "caravaggio-vocacion-mateo",
+    "title": "La vocación de San Mateo",
+    "author": "Caravaggio",
+    "year": 1600,
+    "description": "En la iglesia de San Luis de los Franceses, Cristo señala a Mateo entre taverneros. Un rayo de luz divide la escena y funda el naturalismo barroco.",
+    "dimensions": {
+      "width": 322,
+      "height": 340
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/The_Calling_of_Saint_Matthew-Caravaggio_(1599-1600).jpg"
+  },
+  {
+    "id": "caravaggio-david-goliat",
+    "title": "David con la cabeza de Goliat",
+    "author": "Caravaggio",
+    "year": 1610,
+    "description": "David sostiene la cabeza del gigante —con rasgos del propio pintor— en una reflexión sobre la violencia y la redención. Obra tardía de su estancia en Nápoles.",
+    "dimensions": {
+      "width": 125,
+      "height": 101
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/David_with_the_Head_of_Goliath-Caravaggio_(1610).jpg"
+  },
+  {
+    "id": "caravaggio-baco",
+    "title": "Baco",
+    "author": "Caravaggio",
+    "year": 1596,
+    "description": "Joven dios del vino ofrece la copa al espectador con una naturalidad casi provocadora. Bodegón y retrato fundidos en una de sus primeras obras maestras romanas.",
+    "dimensions": {
+      "width": 95,
+      "height": 85
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Caravaggio_-_Bacchus_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "botticelli-nacimiento-venus",
+    "title": "El nacimiento de Venus",
+    "author": "Sandro Botticelli",
+    "year": 1485,
+    "description": "Venus nace de la espuma del mar y llega a la orilla en una concha. Obra cumbre del neoplatonismo florentino en los Uffizi.",
+    "dimensions": {
+      "width": 173,
+      "height": 279
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
+  },
+  {
+    "id": "botticelli-primavera",
+    "title": "La Primavera",
+    "author": "Sandro Botticelli",
+    "year": 1482,
+    "description": "Alegoría de la primavera en un bosque de naranjos: Venus, las Tres Gracias y el dios del viento Zepiro en una danza de figuras líricas.",
+    "dimensions": {
+      "width": 203,
+      "height": 314
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Botticelli-primavera.jpg"
+  },
+  {
+    "id": "el-greco-entierro-orgaz",
+    "title": "El entierro del Conde de Orgaz",
+    "author": "El Greco",
+    "year": 1586,
+    "description": "Obra maestra de la iglesia de Santo Tomé en Toledo. La tierra y el cielo se dividen en dos registros unidos por un manto sobrenatural.",
+    "dimensions": {
+      "width": 480,
+      "height": 360
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/El_Greco_-_The_Burial_of_the_Count_of_Orgaz.jpg"
+  },
+  {
+    "id": "el-greco-vista-toledo",
+    "title": "Vista de Toledo",
+    "author": "El Greco",
+    "year": 1599,
+    "description": "Paisaje dramático de la ciudad adoptiva bajo un cielo tormentoso. Anticipa el paisaje expresivo del siglo XIX.",
+    "dimensions": {
+      "width": 121,
+      "height": 109
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/El_Greco_View_of_Toledo.jpg"
+  },
+  {
+    "id": "rubens-descendimiento",
+    "title": "El descendimiento de la cruz",
+    "author": "Peter Paul Rubens",
+    "year": 1614,
+    "description": "Tríptico de la catedral de Amberes. Cuerpos en tensión diagonal y carne luminosa definen el barroco flamenco en su máxima intensidad devocional.",
+    "dimensions": {
+      "width": 421,
+      "height": 261
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Peter_Paul_Rubens_-_The_Descent_from_the_Cross_-_WGA20300.jpg"
+  },
+  {
+    "id": "picasso-guernica",
+    "title": "Guernica",
+    "author": "Pablo Picasso",
+    "year": 1937,
+    "description": "Monumental denuncia del bombardeo de la villa vasca durante la Guerra Civil. Figuras fragmentadas en blanco, negro y gris se convirtieron en icono pacifista universal.",
+    "dimensions": {
+      "width": 349,
+      "height": 776
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Guernica%2C_by_Pablo_Picasso%2C_from_Museo_Reina_Sofia.jpg"
+  },
+  {
+    "id": "picasso-demoselles-avignon",
+    "title": "Las señoritas de Aviñón",
+    "author": "Pablo Picasso",
+    "year": 1907,
+    "description": "Manifiesto del cubismo: cinco figuras femeninas con máscaras ibéricas y africanas que rompen la perspectiva renacentista. Revolucionó el arte del siglo XX.",
+    "dimensions": {
+      "width": 244,
+      "height": 234
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Les_Demoiselles_d%27Avignon%2C_by_Pablo_Picasso%2C_from_MoMA.jpg"
+  },
+  {
+    "id": "klimt-el-beso",
+    "title": "El beso",
+    "author": "Gustav Klimt",
+    "year": 1908,
+    "description": "Pareja abrazada sobre un precipicio de hojas doradas. Síntesis del art nouveau vienés y de la decoración bizantina en el Belvedere.",
+    "dimensions": {
+      "width": 180,
+      "height": 180
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+  },
+  {
+    "id": "rafael-escuela-atenas",
+    "title": "La escuela de Atenas",
+    "author": "Rafael",
+    "year": 1511,
+    "description": "Fresco de la Stanza della Segnatura en el Vaticano. Filósofos antiguos —Platón y Aristóteles al centro— dialogan en un espacio clásico ideal.",
+    "dimensions": {
+      "width": 500,
+      "height": 770
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/The_School_of_Athens.jpg"
+  },
+  {
+    "id": "cezanne-banistas",
+    "title": "Los grandes bañistas",
+    "author": "Paul Cézanne",
+    "year": 1906,
+    "description": "Versión monumental del tema de las bañistas. Figuras modeladas por planos de color que anuncian el cubismo y el fauvismo.",
+    "dimensions": {
+      "width": 211,
+      "height": 251
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Paul_C%C3%A9zanne%2C_French_-_The_Large_Bathers_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "renoir-moulin-galette",
+    "title": "Baile en el Moulin de la Galette",
+    "author": "Pierre-Auguste Renoir",
+    "year": 1876,
+    "description": "Tarde de domingo en Montmartre: luz filtrada por los árboles y parejas que bailan. Cumbre del impresionismo social y luminoso.",
+    "dimensions": {
+      "width": 131,
+      "height": 175
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Pierre-Auguste_Renoir%2C_Le_Moulin_de_la_Galette%2C_1876.jpg"
+  },
+  {
+    "id": "van-eyck-arnolfini",
+    "title": "Los esposos Arnolfini",
+    "author": "Jan van Eyck",
+    "year": 1434,
+    "description": "Retrato doble con espejo convexo que refleja la escena. Obra fundacional de la pintura flamenca por su detalle simbólico y el virtuosismo del óleo.",
+    "dimensions": {
+      "width": 82,
+      "height": 60
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Jan_van_Eyck_-_The_Arnolfini_Portrait_(National_Gallery%2C_London).jpg"
+  },
+  {
+    "id": "kahlo-dos-fridas",
+    "title": "Las dos Fridas",
+    "author": "Frida Kahlo",
+    "year": 1939,
+    "description": "Dos Fridas sentadas de frente, manos unidas, corazones conectados y expuestos. Autorretrato doble tras el divorcio de Diego Rivera.",
+    "dimensions": {
+      "width": 194,
+      "height": 173
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Las_dos_Fridas.jpg"
+  },
+  {
+    "id": "degas-clase-ballet",
+    "title": "La clase de ballet",
+    "author": "Edgar Degas",
+    "year": 1874,
+    "description": "Ensayo en el Conservatorio de París visto en perspectiva asimétrica. Degas captura el gesto repetido y la disciplina del ballet clásico.",
+    "dimensions": {
+      "width": 85,
+      "height": 75
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Edgar_Degas_-_The_Ballet_Class_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "zurbaran-santa-casilda",
+    "title": "Santa Casilda",
+    "author": "Francisco de Zurbarán",
+    "year": 1635,
+    "description": "La santa presenta la cesta de rosas que ocultaba el pan destinado a cristianos perseguidos. Silencio, túnula blanca y fondo oscuro definen el misticismo zurbaranesco.",
+    "dimensions": {
+      "width": 169,
+      "height": 97
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Francisco_de_Zurbar%C3%A1n_-_Santa_Casilda_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "vangogh-girasoles",
+    "title": "Girasoles",
+    "author": "Vincent van Gogh",
+    "year": 1889,
+    "description": "Uno de los jarrones de girasoles pintados en Arlés para decorar la habitación de Gauguin. Amarillos empastados sobre fondo amarillo exploran la intensidad del color.",
+    "dimensions": {
+      "width": 92,
+      "height": 73
+    },
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg"
   }
 ]

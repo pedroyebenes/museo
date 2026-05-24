@@ -76,5 +76,101 @@
     "years": "1748 – 1825",
     "origin": "París, Francia",
     "bio": "Máximo exponente del neoclasicismo francés y pintor oficial de Napoleón. Sus lienzos cívicos del periodo revolucionario —desde el juramento de los Horacios hasta la muerte de Marat— definieron la imaginería política de finales del siglo XVIII. Tras apoyar a Robespierre, se reinventó como cronista del Imperio con retratos ecuestres y la monumental consagración de Napoleón."
+  },
+  "Francisco de Goya": {
+    "fullName": "Francisco José de Goya y Lucientes",
+    "years": "1746 – 1828",
+    "origin": "Fuendetodos, Aragón, España",
+    "bio": "Pintor y grabador entre el rococó tardío y el arte moderno. Trabajó para la corte de Carlos IV y documentó en los Caprichos y en los lienzos de los fusilamientos de 1808 la violencia y la superstición de su tiempo. Su pintura tardía, de pincelada libre y temas sombríos, anticipó el romanticismo."
+  },
+  "Rembrandt": {
+    "fullName": "Rembrandt Harmenszoon van Rijn",
+    "years": "1606 – 1669",
+    "origin": "Leiden, Provincias Unidas",
+    "bio": "El gran maestro del Siglo de Oro neerlandés. Dominó el claroscuro, el retrato psicológico y el grabado. Su taller en Ámsterdam produjo obras bíblicas y burguesas que influyeron en toda la pintura europea posterior."
+  },
+  "Leonardo da Vinci": {
+    "fullName": "Leonardo di ser Piero da Vinci",
+    "years": "1452 – 1519",
+    "origin": "Vinci, República de Florencia",
+    "bio": "Artista universal del Renacimiento: pintor, anatomista, ingeniero y teórico. En Milán y Florencia definió el sfumato y la composición piramidal. La Gioconda y La Última Cena son iconos de la modernidad occidental."
+  },
+  "Caravaggio": {
+    "fullName": "Michelangelo Merisi da Caravaggio",
+    "years": "1571 – 1610",
+    "origin": "Milán, Ducado de Milán",
+    "bio": "Revolucionó la pintura barroca con un naturalismo brutal y contrastes de luz teatrales. Huyó de Roma tras matar a un rival, pero su legado —los caravaggisti— se extendió por Italia y Europa."
+  },
+  "Sandro Botticelli": {
+    "fullName": "Alessandro di Mariano Filipepi, detto Botticelli",
+    "years": "c. 1445 – 1510",
+    "origin": "Florencia, República de Florencia",
+    "bio": "Pintor clave del Quattrocento florentino, cercano a los Médici. Sus mitologías —Venus y Primavera— sintetizan la estética neoplatónica con líneas melódicas y paleta delicada."
+  },
+  "El Greco": {
+    "fullName": "Doménikos Theotokópoulos, El Greco",
+    "years": "1541 – 1614",
+    "origin": "Candía (Creta), República de Venecia",
+    "bio": "Formado en la escuela cretense y veneciana, se estableció en Toledo y creó un estilo único de figuras elongadas y cromatismos fríos. Puente entre el Renacimiento italiano y el barroco español."
+  },
+  "Peter Paul Rubens": {
+    "fullName": "Peter Paul Rubens",
+    "years": "1577 – 1640",
+    "origin": "Siegen, Sacro Imperio Romano",
+    "bio": "Gigante del barroco flamenco: dinamismo, carnalidad y color sonoro. Diplomático y director de un taller prolífico, pintó mitologías, retratos reales y escenas religiosas de formato monumental."
+  },
+  "Pablo Picasso": {
+    "fullName": "Pablo Diego José Francisco de Paula Juan Nepomuceno Picasso",
+    "years": "1881 – 1973",
+    "origin": "Málaga, España",
+    "bio": "El artista más influyente del siglo XX. Del período azul al cubismo y al neoclasicismo, reinventó sin cesar la pintura y la escultura. Guernica se convirtió en emblema universal contra la guerra."
+  },
+  "Gustav Klimt": {
+    "fullName": "Gustav Klimt",
+    "years": "1862 – 1918",
+    "origin": "Baumgarten, Imperio austrohúngaro",
+    "bio": "Líder del modernismo vienés. Sus superficies doradas y figuras decorativas —en especial El beso— funden simbolismo, erotismo y art nouveau en un lenguaje ornamental inconfundible."
+  },
+  "Rafael": {
+    "fullName": "Raffaello Sanzio da Urbino",
+    "years": "1483 – 1520",
+    "origin": "Urbino, Ducado de Urbino",
+    "bio": "Tercero del trío renacentista junto a Leonardo y Miguel Ángel. Maestro de la armonía clásica en retratos, madonnas y la decoración de las Stanze vaticanas, donde La escuela de Atenas resume el humanismo."
+  },
+  "Paul Cézanne": {
+    "fullName": "Paul Cézanne",
+    "years": "1839 – 1906",
+    "origin": "Aix-en-Provence, Francia",
+    "bio": "Puente entre el impresionismo y el cubismo. Construyó el espacio pictórico mediante planos de color y geometría subyacente; Picasso y Matisse lo llamaron «el padre de todos nosotros»."
+  },
+  "Pierre-Auguste Renoir": {
+    "fullName": "Pierre-Auguste Renoir",
+    "years": "1841 – 1919",
+    "origin": "Limoges, Francia",
+    "bio": "Impresionista de la alegría y la carne. Pincelada suelta, luz filtrada y escenas de ocio parisino —especialmente en Moulin de la Galette— celebran la vida moderna sin idealización fría."
+  },
+  "Jan van Eyck": {
+    "fullName": "Jan van Eyck",
+    "years": "c. 1390 – 1441",
+    "origin": "Maaseik, Condado de Borgoña",
+    "bio": "Pionero del óleo en el norte de Europa. Su minuciosidad casi microscópica y el uso del simbolismo en retratos —como Los esposos Arnolfini— fundaron la pintura flamenca del siglo XV."
+  },
+  "Frida Kahlo": {
+    "fullName": "Magdalena Carmen Frida Kahlo y Calderón",
+    "years": "1907 – 1954",
+    "origin": "Coyoacán, Ciudad de México, México",
+    "bio": "Pintora mexicana que convirtió el dolor físico y emocional en iconografía autobiográfica. Su obra mezcla folclore, surrealismo y política; Las dos Fridas es una de las imágenes más potentes del siglo XX."
+  },
+  "Edgar Degas": {
+    "fullName": "Hilaire-Germain-Edgar De Gas, detto Degas",
+    "years": "1834 – 1917",
+    "origin": "París, Francia",
+    "bio": "Asociado al impresionismo pero con raíces clásicas. Observó bailarinas, caballos de carrera y burdeles con composiciones audaces y pastel revolucionario. Maestro del movimiento y del gesto fugaz."
+  },
+  "Francisco de Zurbarán": {
+    "fullName": "Francisco de Zurbarán",
+    "years": "1598 – 1664",
+    "origin": "Fuente de Cantos, Extremadura, España",
+    "bio": "«Pintor de los reyes y de los monjes». Su barroco sevillano combina silencio místico, telas densas y objetos aislados contra fondos oscuros. Santa Casilda resume su devoción y su precisión casi escultórica."
   }
 }
