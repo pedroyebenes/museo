@@ -12,6 +12,14 @@ html, body {
 
 canvas { display: block; }
 
+button,
+canvas,
+#touch-controls {
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -125,6 +133,43 @@ body.playing #room-hud:not(.hidden) { display: block; }
   background: #000;
   font-size: 1.1rem;
   letter-spacing: 0.1em;
+}
+
+#touch-controls {
+  position: fixed;
+  inset: 0;
+  z-index: 7;
+  pointer-events: none;
+}
+
+#touch-look {
+  position: absolute;
+  inset: 0 0 0 42%;
+  pointer-events: auto;
+}
+
+#touch-stick {
+  position: absolute;
+  left: max(1.2rem, env(safe-area-inset-left));
+  bottom: max(1.2rem, env(safe-area-inset-bottom));
+  width: 132px;
+  height: 132px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.34);
+  pointer-events: auto;
+}
+
+#touch-stick-knob {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(240, 232, 214, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  transform: translate(-50%, -50%);
 }
 
 .hidden { display: none !important; }

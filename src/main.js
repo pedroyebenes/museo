@@ -39,8 +39,8 @@ async function boot() {
   const hud = createRoomHUD();
 
   const {
-    controls,
     update: updateControls,
+    isActive: controlsActive,
     setSegments,
     setPose,
     lockOnClick,
@@ -108,7 +108,7 @@ async function boot() {
 
     updateControls(dt);
     roomManager.update(dt);
-    if (controls.isLocked) focus.update();
+    if (controlsActive()) focus.update();
 
     renderer.render(scene, camera);
     requestAnimationFrame(loop);
