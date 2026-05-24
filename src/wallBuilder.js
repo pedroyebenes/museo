@@ -24,8 +24,8 @@ export const DOOR_WIDTH = DOOR_W;
 export const DOOR_HEIGHT = DOOR_H;
 
 export function buildRoomShell(group, opts) {
-  const { width, depth, height, walls } = opts;
-  const mats = getSharedMaterials();
+  const { width, depth, height, walls, materials = getSharedMaterials() } = opts;
+  const mats = materials;
 
   // Floor + ceiling
   const floor = new THREE.Mesh(

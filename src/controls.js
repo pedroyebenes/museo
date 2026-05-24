@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls.js';
 
-const SPEED = 3.2; // m/s
+const SPEED = 4.8; // m/s
 const RUN_MULT = 1.8;
 const EYE_HEIGHT = 1.6;
 const PLAYER_RADIUS = 0.32;

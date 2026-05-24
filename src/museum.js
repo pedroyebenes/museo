@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { buildRoomShell } from './wallBuilder.js';
-import { getSharedMaterials } from './materials.js';
+import { getAuthorRoomMaterials } from './materials.js';
 
 const HEIGHT = 4;
 const SPACE_PER_PAINTING = 3.5;
@@ -29,6 +29,7 @@ export function buildAuthorRoom(scene, config) {
     width,
     depth,
     height: HEIGHT,
+    materials: getAuthorRoomMaterials(author),
     walls: [
       { side: 'N', doors: [] },
       { side: 'E', doors: [] },

@@ -11,6 +11,26 @@ export function getSharedMaterials() {
   return cached;
 }
 
+export function getAuthorRoomMaterials(author) {
+  const base = getSharedMaterials();
+  const hue = hashString(author) % 360;
+  const wallMat = base.wallMat.clone();
+  wallMat.color = new THREE.Color().setHSL(hue / 360, 0.42, 0.9);
+
+  const wainscotMat = base.wainscotMat.clone();
+  wainscotMat.color = new THREE.Color().setHSL(hue / 360, 0.38, 0.72);
+
+  const trimMat = base.trimMat.clone();
+  trimMat.color = new THREE.Color().setHSL(((hue + 34) % 360) / 360, 0.5, 0.58);
+
+  return {
+    ...base,
+    wallMat,
+    wainscotMat,
+    trimMat,
+  };
+}
+
 function build() {
   const floorTex = makeParquetTexture();
   const floorMat = new THREE.MeshStandardMaterial({
@@ -74,6 +94,15 @@ function build() {
     baseboardMat,
     trimMat,
   };
+}
+
+function hashString(value) {
+  let hash = 2166136261;
+  for (let i = 0; i < value.length; i++) {
+    hash ^= value.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
 }
 
 function makeParquetTexture() {
