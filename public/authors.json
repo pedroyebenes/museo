@@ -64,5 +64,11 @@
     "years": "1904 – 1989",
     "origin": "Figueres, Cataluña, España",
     "bio": "Surrealista catalán de virtuosismo técnico extremo. Su «método paranoico-crítico» convirtió fobias, recuerdos y deseos en imágenes precisas y enigmáticas. Diseñó también para cine (Buñuel, Hitchcock), teatro y ballet."
+  },
+  "Jacques-Louis David": {
+    "fullName": "Jacques-Louis David",
+    "years": "1748 – 1825",
+    "origin": "París, Francia",
+    "bio": "Máximo exponente del neoclasicismo francés y pintor oficial de Napoleón. Sus lienzos cívicos del periodo revolucionario —desde el juramento de los Horacios hasta la muerte de Marat— definieron la imaginería política de finales del siglo XVIII. Tras apoyar a Robespierre, se reinventó como cronista del Imperio con retratos ecuestres y la monumental consagración de Napoleón."
   }
 }

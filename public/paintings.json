@@ -334,5 +334,77 @@
       "width": 33,
       "height": 24
     }
+  },
+  {
+    "id": "david-juramento-horacios",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Jacques-Louis_David%2C_Le_Serment_des_Horaces.jpg",
+    "title": "El juramento de los Horacios",
+    "author": "Jacques-Louis David",
+    "year": 1784,
+    "description": "Obra cumbre del neoclasicismo encargada por Luis XVI. Tres hermanos romanos juran defender la República ante sus padres, mientras las mujeres lloran el destino incierto de sus esposos y hermanos.",
+    "dimensions": {
+      "width": 424.8,
+      "height": 329.8
+    }
+  },
+  {
+    "id": "david-muerte-marat",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Death_of_Marat_by_David.jpg",
+    "title": "La muerte de Marat",
+    "author": "Jacques-Louis David",
+    "year": 1793,
+    "description": "Retrato póstumo del revolucionario asesinado en su bañera por Charlotte Corday. David transforma el crimen político en icono mártir de la Revolución, con un realismo sobrio y didáctico.",
+    "dimensions": {
+      "width": 128,
+      "height": 165
+    }
+  },
+  {
+    "id": "david-bonaparte-san-bernardo",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Napoleon_at_the_Great_St._Bernard_-_Jacques-Louis_David_-_Google_Cultural_Institute.jpg",
+    "title": "Bonaparte cruzando el Gran San Bernardo",
+    "author": "Jacques-Louis David",
+    "year": 1801,
+    "description": "Retrato ecuestre en el que Napoleón aparece sereno y majestuoso tras cruzar los Alpes. David lo idealiza como sucesor de Aníbal y Carlomagno en una propaganda visual encargada por el propio Bonaparte.",
+    "dimensions": {
+      "width": 231,
+      "height": 246
+    }
+  },
+  {
+    "id": "david-madame-recamier",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Louis_david%2C_madame_r%C3%A9camier%2C_1800%2C_01.jpg",
+    "title": "Madame Récamier",
+    "author": "Jacques-Louis David",
+    "year": 1800,
+    "description": "Retrato sin terminar de Juliette Récamier, celebridad intelectual del Directorio, recostada en un diván al estilo antiguo. Quedó inconcluso por desacuerdos entre pintor y modelo, pero se convirtió en una de sus imágenes más evocadoras.",
+    "dimensions": {
+      "width": 244,
+      "height": 174
+    }
+  },
+  {
+    "id": "david-sabinas",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/F0440_Louvre_JL_David_Sabines_INV3691_rwk.jpg",
+    "title": "Las sabinas",
+    "author": "Jacques-Louis David",
+    "year": 1799,
+    "description": "Episodio legendario en el que las sabinas interponen su cuerpo para detener la batalla entre sus esposos romanos y sus padres. Pintado tras la caída de Robespierre como llamada a la reconciliación nacional.",
+    "dimensions": {
+      "width": 522,
+      "height": 385
+    }
+  },
+  {
+    "id": "david-consagracion-napoleon",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Jacques-Louis_David%2C_The_Coronation_of_Napoleon.jpg",
+    "title": "La consagración de Napoleón",
+    "author": "Jacques-Louis David",
+    "year": 1807,
+    "description": "Monumental registro de la coronación imperial en Notre-Dame: Napoleón corona a Josefina mientras el papa Pío VII presencia. Encargo oficial de tres años con más de doscientas figuras, documento histórico y propaganda imperial por excelencia.",
+    "dimensions": {
+      "width": 979,
+      "height": 621
+    }
   }
 ]
