@@ -24,6 +24,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
   let stickBaseX = 0;
   let stickBaseY = 0;
   let mobileRun = false;
+  let suspended = false;
   let stickPointerId = null;
   let lookPointerId = null;
   let lastLookX = 0;
@@ -97,7 +98,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
   const touchUi = createTouchUi();
 
   function update(dt) {
-    if (!isActive()) return;
+    if (suspended || !isActive()) return;
 
     let dx = mobileActive ? mobileMoveX : 0;
     let dz = mobileActive ? mobileMoveZ : 0;
@@ -169,6 +170,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
   }
 
   function lockOnClick() {
+    if (suspended) return;
     if (isTouchDevice) {
       startMobileControls();
       return;
@@ -176,8 +178,28 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
     controls.lock();
   }
 
+  function suspend() {
+    suspended = true;
+    if (controls.isLocked) controls.unlock();
+    if (mobileActive) {
+      resetTouchState();
+      mobileActive = false;
+      touchUi.root.classList.add('hidden');
+      document.removeEventListener('touchmove', preventTouchScroll);
+    }
+  }
+
+  function resume() {
+    suspended = false;
+  }
+
+  function unlock() {
+    if (controls.isLocked) controls.unlock();
+    if (mobileActive) suspend();
+  }
+
   function isActive() {
-    return controls.isLocked || mobileActive;
+    return !suspended && (controls.isLocked || mobileActive);
   }
 
   function startMobileControls() {
@@ -371,6 +393,9 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
     setSegments,
     setPose,
     lockOnClick,
+    suspend,
+    resume,
+    unlock,
     dispose,
     PLAYER_RADIUS,
   };

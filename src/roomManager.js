@@ -45,9 +45,16 @@ export function createRoomManager({
     }
   }
 
-  async function loadAuthor(authorIndex, spawnKey = 'fromHub') {
+  function resolveAuthorSpawnKey(options) {
+    if (typeof options === 'string') return options;
+    if (options?.paintingId) return `atPainting:${options.paintingId}`;
+    return 'fromHub';
+  }
+
+  async function loadAuthor(authorIndex, options = {}) {
     if (transitioning) return;
     transitioning = true;
+    const spawnKey = resolveAuthorSpawnKey(options);
     const author = authorOrder[authorIndex];
     const paintings = paintingsByAuthor[author];
     onTransitionStart?.({ kind: 'author', author, paintingCount: paintings.length });

@@ -13,6 +13,7 @@ const MIN_HEIGHT = 4;
 const MIN_SIDE = 6;
 const SPACE_PER_PAINTING = 3.5;
 const DEFAULT_PAINTING_Y = 1.6;
+const PAINTING_VIEW_DISTANCE = 2.0;
 
 // Builds an author room: paintings on N/E/W walls, one door on the S wall
 // that leads back to the hub. Returns slots/segments/triggers/spawn.
@@ -105,6 +106,10 @@ export function buildAuthorRoom(scene, config) {
   scene.add(group);
 
   const spawnZ = depth / 2 - Math.min(2.8, depth * 0.22);
+  const defaultSpawn = {
+    position: new THREE.Vector3(0, DEFAULT_PAINTING_Y, spawnZ),
+    yaw: 0,
+  };
   return {
     group,
     slots,
@@ -114,16 +119,26 @@ export function buildAuthorRoom(scene, config) {
     author,
     kind: 'author',
     spawn: {
-      fromHub: {
-        position: new THREE.Vector3(0, DEFAULT_PAINTING_Y, spawnZ),
-        yaw: 0,
-      },
-      initial: {
-        position: new THREE.Vector3(0, DEFAULT_PAINTING_Y, spawnZ),
-        yaw: 0,
-      },
+      fromHub: defaultSpawn,
+      initial: defaultSpawn,
+      ...buildPaintingSpawns(slots, paintings),
     },
   };
+}
+
+function buildPaintingSpawns(slots, paintings) {
+  const spawns = {};
+  for (let i = 0; i < paintings.length; i++) {
+    const slot = slots[i];
+    if (!slot) continue;
+    const pos = slot.position
+      .clone()
+      .add(slot.normal.clone().multiplyScalar(PAINTING_VIEW_DISTANCE));
+    pos.y = DEFAULT_PAINTING_Y;
+    const yaw = Math.atan2(-slot.normal.x, -slot.normal.z);
+    spawns[`atPainting:${paintings[i].id}`] = { position: pos, yaw };
+  }
+  return spawns;
 }
 
 function partitionPaintings(paintings) {

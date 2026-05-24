@@ -406,5 +406,77 @@
       "width": 979,
       "height": 621
     }
+  },
+  {
+    "id": "miguel-angel-tondo-doni",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Michelangelo_Buonarroti_-_Tondo_Doni_-_Google_Art_Project.jpg",
+    "title": "Tondo Doni",
+    "author": "Miguel Ángel",
+    "year": 1506,
+    "description": "Único panel al óleo autógrafo conservado de Miguel Ángel, encargado por Agnolo Doni. La Sagrada Familia ocupa el centro del tondo; los desnudos del fondo, en un paisaje de ruinas clásicas, anticipan el manierismo.",
+    "dimensions": {
+      "width": 120,
+      "height": 120
+    }
+  },
+  {
+    "id": "miguel-angel-creacion-adan",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg",
+    "title": "La creación de Adán",
+    "author": "Miguel Ángel",
+    "year": 1512,
+    "description": "Fresco del techo de la Capilla Sixtina: Dios y Adán se inclinan el uno hacia el otro en el instante previo al contacto de los dedos. La escena sintetiza el humanismo renacentista y es una de las imágenes más reproducidas de la historia del arte.",
+    "dimensions": {
+      "width": 570,
+      "height": 280
+    }
+  },
+  {
+    "id": "miguel-angel-creacion-eva",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Michelangelo%2C_Creation_of_Eve_01.jpg",
+    "title": "La creación de Eva",
+    "author": "Miguel Ángel",
+    "year": 1510,
+    "description": "Fresco del techo sixtino en el que Dios, rodeado de ángeles, extrae a Eva del costado dormido de Adán. La composición en arco y el contraste de escala entre las figuras refuerzan el dramatismo del episodio bíblico.",
+    "dimensions": {
+      "width": 260,
+      "height": 170
+    }
+  },
+  {
+    "id": "miguel-angel-diluvio",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/El_Diluvio.jpg",
+    "title": "El diluvio universal",
+    "author": "Miguel Ángel",
+    "year": 1509,
+    "description": "Fresco del techo de la Capilla Sixtina que narra el diluvio del Génesis. Decenas de cuerpos se agolpan en una composición densa y torcida, buscando refugio antes de la ira divina.",
+    "dimensions": {
+      "width": 520,
+      "height": 230
+    }
+  },
+  {
+    "id": "miguel-angel-expulsion-paraiso",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Michelangelo%2C_Fall_and_Expulsion_from_Garden_of_Eden_00.jpg",
+    "title": "La expulsión del Paraíso",
+    "author": "Miguel Ángel",
+    "year": 1510,
+    "description": "Fresco del techo sixtino que reúne la tentación y la expulsión de Adán y Eva. A la izquierda, la serpiente; a la derecha, el ángel armado las expulsa del Edén en un gesto de desesperación corporal.",
+    "dimensions": {
+      "width": 570,
+      "height": 280
+    }
+  },
+  {
+    "id": "miguel-angel-juicio-final",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Michelangelo%2C_Giudizio_Universale_02.jpg",
+    "title": "El Juicio Final",
+    "author": "Miguel Ángel",
+    "year": 1541,
+    "description": "Fresco de la pared del altar de la Capilla Sixtina, encargado por Clemente VII y terminado bajo Paulo III. Cristo juzga a la humanidad en una masa de cuerpos ascendentes y caídos que define el lenguaje del manierismo tardío.",
+    "dimensions": {
+      "width": 1220,
+      "height": 1370
+    }
   }
 ]

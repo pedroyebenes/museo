@@ -38,6 +38,7 @@ Si el autor existe en `paintings.json` pero **no** en `authors.json`, la sala se
 3. Cada autor tiene una **sala rectangular** con sus cuadros en las paredes norte, este y oeste.
 4. El tamaño de la sala y la altura del techo se calculan a partir de las **dimensiones reales** de los cuadros.
 5. Al mirar un cuadro, el HUD muestra título, autor, año y descripción.
+6. El **catálogo** (`M` o botón «Catálogo») lista autores y permite teletransportarse a una sala o delante de un cuadro concreto, sin depender del hall principal.
 
 ---
 
@@ -199,3 +200,12 @@ if(orphan.length) console.log('Biografía sin cuadros:', orphan);
 Consulta los archivos fuente para el listado vigente. A mayo de 2026 el museo incluye autores como Tiziano, Paolo Veronese, Velázquez, Murillo, Vermeer, Hokusai, Monet, Van Gogh, Munch, Sorolla y Dalí, con **28 cuadros** en total.
 
 Al añadir contenido, **mantén el estilo** de las entradas existentes: descripciones en español, tono divulgativo de museo, datos históricos verificables.
+
+---
+
+## Navegación (catálogo)
+
+- Tecla **`M`** o botón **Catálogo** (visible durante la partida): lista de autores con búsqueda.
+- Tras elegir un autor: **Entrar en la sala** o elegir un **cuadro** para aparecer frente a ese lienzo.
+- El `id` de cada cuadro en `paintings.json` debe ser único: el teletransporte usa `atPainting:{id}` como spawn.
+- El hall principal sigue existiendo (puertas en orden de primera aparición del autor en `paintings.json`), pero no es la única forma de navegar.

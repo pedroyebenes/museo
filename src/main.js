@@ -8,6 +8,7 @@ import {
   createTransitionOverlay,
 } from './ui.js';
 import { createRoomManager } from './roomManager.js';
+import { createCatalog } from './catalog.js';
 
 async function boot() {
   const loading = document.getElementById('loading');
@@ -51,22 +52,30 @@ async function boot() {
   const hud = createRoomHUD();
   const transition = createTransitionOverlay();
 
+  let catalog = null;
+
   const {
     update: updateControls,
     isActive: controlsActive,
     setSegments,
     setPose,
     lockOnClick,
+    suspend: suspendControls,
+    resume: resumeControls,
+    unlock: unlockControls,
   } = createControls({
     camera,
     renderer,
     onLock: () => {
       welcome.classList.add('hidden');
       document.body.classList.add('playing');
+      document.getElementById('catalog-btn')?.classList.remove('hidden');
     },
     onUnlock: () => {
+      if (catalog?.isOpen()) return;
       welcome.classList.remove('hidden');
       document.body.classList.remove('playing');
+      document.getElementById('catalog-btn')?.classList.add('hidden');
       overlay.hide();
     },
     onToggleInfo: () => {
@@ -100,6 +109,36 @@ async function boot() {
 
   await roomManager.loadHub('initial');
 
+  catalog = createCatalog({
+    authorOrder,
+    paintingsByAuthor,
+    authorsData,
+    onGoToRoom: (authorIndex) => roomManager.loadAuthor(authorIndex),
+    onGoToPainting: (authorIndex, paintingId) =>
+      roomManager.loadAuthor(authorIndex, { paintingId }),
+    onClose: () => resumeAfterCatalog(),
+  });
+
+  const catalogBtn = document.getElementById('catalog-btn');
+
+  function openCatalog() {
+    if (!document.body.classList.contains('playing')) return;
+    overlay.hide();
+    suspendControls();
+    unlockControls();
+    catalog.open();
+  }
+
+  function resumeAfterCatalog() {
+    resumeControls();
+    if (!controlsActive()) lockOnClick();
+  }
+
+  catalogBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openCatalog();
+  });
+
   const focus = createFocusTracker({
     camera,
     overlay,
@@ -120,6 +159,15 @@ async function boot() {
   });
 
   window.addEventListener('keydown', (e) => {
+    if (e.code === 'KeyM' && document.body.classList.contains('playing')) {
+      if (catalog.isOpen()) catalog.close();
+      else openCatalog();
+      return;
+    }
+    if (e.code === 'Escape' && catalog?.isOpen()) {
+      catalog.close();
+      return;
+    }
     if (e.code === 'KeyH') {
       const suppressed = overlay.toggleSuppressed();
       hud.flash(

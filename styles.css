@@ -147,6 +147,271 @@ canvas,
 
 body.playing #crosshair { display: block; }
 body.is-touch.playing #crosshair { display: none; }
+body.catalog-open #crosshair { display: none !important; }
+
+.catalog-btn {
+  position: fixed;
+  top: max(1rem, env(safe-area-inset-top));
+  left: max(1rem, env(safe-area-inset-left));
+  z-index: 6;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--museum-border);
+  border-radius: 999px;
+  background: rgba(12, 9, 7, 0.72);
+  color: var(--museum-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.catalog-btn:hover,
+.catalog-btn:focus-visible {
+  background: rgba(199, 160, 96, 0.22);
+  border-color: var(--museum-gold);
+  outline: none;
+}
+
+body.playing .catalog-btn:not(.hidden) { display: block; }
+
+.catalog-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.88);
+  padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right))
+    max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+  cursor: default;
+}
+
+.catalog-card {
+  width: min(520px, 96vw);
+  max-height: min(85vh, 720px);
+  display: flex;
+  flex-direction: column;
+  background: rgba(12, 9, 7, 0.96);
+  border: 1px solid var(--museum-border);
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.catalog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.1rem 0.5rem;
+  flex-shrink: 0;
+}
+
+.catalog-header h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: var(--museum-gold);
+  letter-spacing: 0.04em;
+}
+
+.catalog-close {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--museum-muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.catalog-close:hover,
+.catalog-close:focus-visible {
+  color: var(--museum-cream);
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+}
+
+.catalog-search-wrap {
+  padding: 0 1.1rem 0.75rem;
+  flex-shrink: 0;
+}
+
+.catalog-search {
+  width: 100%;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--museum-border);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--museum-cream);
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.catalog-search:focus {
+  outline: none;
+  border-color: var(--museum-gold);
+}
+
+.catalog-list,
+.catalog-detail {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 0.6rem 1rem;
+}
+
+.catalog-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0.25rem 0;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--museum-cream);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+.catalog-row:hover,
+.catalog-row:focus-visible {
+  background: rgba(199, 160, 96, 0.12);
+  border-color: var(--museum-border);
+  outline: none;
+}
+
+.catalog-row-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  color: var(--museum-cream);
+}
+
+.catalog-row-meta {
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: var(--museum-muted);
+}
+
+.catalog-empty {
+  padding: 1rem;
+  text-align: center;
+  color: var(--museum-muted);
+  font-size: 0.9rem;
+}
+
+.catalog-back {
+  margin: 0.25rem 0.5rem 0.75rem;
+  padding: 0.35rem 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--museum-gold);
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.catalog-back:hover,
+.catalog-back:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+.catalog-detail-header h2 {
+  margin: 0 0 0.25rem;
+  padding: 0 0.85rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--museum-gold);
+}
+
+.catalog-detail-years,
+.catalog-detail-origin {
+  margin: 0.15rem 0;
+  padding: 0 0.85rem;
+  font-size: 0.85rem;
+  color: var(--museum-muted);
+}
+
+.catalog-detail-origin { font-style: italic; }
+
+.catalog-go-room {
+  display: block;
+  width: calc(100% - 1.7rem);
+  margin: 0.75rem auto;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--museum-gold);
+  border-radius: 999px;
+  background: rgba(199, 160, 96, 0.14);
+  color: var(--museum-cream);
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.catalog-go-room:hover,
+.catalog-go-room:focus-visible {
+  background: rgba(199, 160, 96, 0.28);
+  outline: none;
+}
+
+.catalog-paintings-heading {
+  margin: 0.5rem 0 0.35rem;
+  padding: 0 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--museum-gold);
+}
+
+.catalog-painting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  width: 100%;
+  margin: 0.2rem 0;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--museum-cream);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.catalog-painting-row:hover,
+.catalog-painting-row:focus-visible {
+  background: rgba(199, 160, 96, 0.1);
+  border-color: var(--museum-border);
+  outline: none;
+}
+
+.catalog-painting-title {
+  flex: 1;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.catalog-painting-year {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  color: var(--museum-muted);
+  font-style: italic;
+}
+
+body.catalog-open #touch-controls { display: none !important; }
 
 #room-hud {
   position: fixed;
