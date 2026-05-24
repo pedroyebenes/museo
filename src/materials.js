@@ -15,13 +15,13 @@ export function getAuthorRoomMaterials(author) {
   const base = getSharedMaterials();
   const hue = hashString(author) % 360;
   const wallMat = base.wallMat.clone();
-  wallMat.color = new THREE.Color().setHSL(hue / 360, 0.42, 0.9);
+  wallMat.color = new THREE.Color().setHSL(hue / 360, 0.06, 0.96);
 
   const wainscotMat = base.wainscotMat.clone();
-  wainscotMat.color = new THREE.Color().setHSL(hue / 360, 0.38, 0.72);
+  wainscotMat.color = new THREE.Color().setHSL(hue / 360, 0.05, 0.9);
 
   const trimMat = base.trimMat.clone();
-  trimMat.color = new THREE.Color().setHSL(((hue + 34) % 360) / 360, 0.5, 0.58);
+  trimMat.color = new THREE.Color().setHSL(((hue + 34) % 360) / 360, 0.35, 0.62);
 
   return {
     ...base,
@@ -40,19 +40,19 @@ function build() {
   });
   floorMat.userData.shared = true;
 
-  const wallTex = makeDamaskTexture();
+  const wallTex = makePlasterWallTexture();
   const wallMat = new THREE.MeshStandardMaterial({
     map: wallTex,
-    roughness: 0.88,
-    metalness: 0.04,
+    roughness: 0.92,
+    metalness: 0.02,
   });
   wallMat.userData.shared = true;
 
   const wainscotTex = makeWainscotTexture();
   const wainscotMat = new THREE.MeshStandardMaterial({
     map: wainscotTex,
-    roughness: 0.55,
-    metalness: 0.2,
+    roughness: 0.48,
+    metalness: 0.12,
   });
   wainscotMat.userData.shared = true;
 
@@ -65,23 +65,23 @@ function build() {
   ceilMat.userData.shared = true;
 
   const frameMat = new THREE.MeshStandardMaterial({
-    color: 0x1c1410,
+    color: 0x2e2420,
     roughness: 0.45,
     metalness: 0.28,
   });
   frameMat.userData.shared = true;
 
   const baseboardMat = new THREE.MeshStandardMaterial({
-    color: 0x2a1a10,
+    color: 0x5c4a3a,
     roughness: 0.5,
     metalness: 0.1,
   });
   baseboardMat.userData.shared = true;
 
   const trimMat = new THREE.MeshStandardMaterial({
-    color: 0xc7a060,
-    roughness: 0.45,
-    metalness: 0.4,
+    color: 0xd4b878,
+    roughness: 0.4,
+    metalness: 0.45,
   });
   trimMat.userData.shared = true;
 
@@ -110,10 +110,10 @@ export function getHubMaterials() {
   floorMat.userData.shared = true;
 
   const wallMat = base.wallMat.clone();
-  wallMat.color = new THREE.Color('#efe3cc');
+  wallMat.color = new THREE.Color('#f7f3ea');
 
   const wainscotMat = base.wainscotMat.clone();
-  wainscotMat.color = new THREE.Color('#6b4a32');
+  wainscotMat.color = new THREE.Color('#e0d6c6');
 
   hubCached = { ...base, floorMat, wallMat, wainscotMat };
   return hubCached;
@@ -275,67 +275,45 @@ function makeParquetTexture() {
   return tex;
 }
 
-function makeDamaskTexture() {
-  // A subtle warm damask: tessellated diamond motif over a cream ground.
-  // Kept low-contrast so it reads like silk wallpaper, not a costume.
+function makePlasterWallTexture() {
+  // Seamless neoclassical plaster: low-contrast stucco so panel UV offsets
+  // do not produce visible block boundaries.
   const c = document.createElement('canvas');
   c.width = 512;
   c.height = 512;
   const ctx = c.getContext('2d');
 
-  // Warm cream base with a soft vertical gradient (lighter at the top)
   const bg = ctx.createLinearGradient(0, 0, 0, c.height);
-  bg.addColorStop(0, '#f1e6ce');
-  bg.addColorStop(1, '#e7daba');
+  bg.addColorStop(0, '#f8f5ee');
+  bg.addColorStop(1, '#ebe6dc');
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, c.width, c.height);
 
-  // Damask diamonds (offset rows). Two passes: a soft halo, then a darker
-  // ornament inside.
-  const dw = 128;
-  const dh = 96;
-  for (let row = -1; row <= c.height / dh + 1; row++) {
-    for (let col = -1; col <= c.width / dw + 1; col++) {
-      const offX = (row & 1) ? dw / 2 : 0;
-      const cx = col * dw + offX + dw / 2;
-      const cy = row * dh + dh / 2;
-      // Soft outer halo
-      const halo = ctx.createRadialGradient(cx, cy, 4, cx, cy, dw / 2);
-      halo.addColorStop(0, 'rgba(170,130,70,0.10)');
-      halo.addColorStop(1, 'rgba(170,130,70,0)');
-      ctx.fillStyle = halo;
-      ctx.fillRect(cx - dw / 2, cy - dh / 2, dw, dh);
-      // Diamond
-      ctx.fillStyle = 'rgba(150,110,60,0.10)';
-      ctx.beginPath();
-      ctx.moveTo(cx, cy - dh / 2 + 10);
-      ctx.lineTo(cx + dw / 2 - 12, cy);
-      ctx.lineTo(cx, cy + dh / 2 - 10);
-      ctx.lineTo(cx - dw / 2 + 12, cy);
-      ctx.closePath();
-      ctx.fill();
-      // Inner fleur / cross
-      ctx.strokeStyle = 'rgba(120,80,40,0.16)';
-      ctx.lineWidth = 1.4;
-      ctx.beginPath();
-      ctx.moveTo(cx - 12, cy);
-      ctx.lineTo(cx + 12, cy);
-      ctx.moveTo(cx, cy - 14);
-      ctx.lineTo(cx, cy + 14);
-      ctx.stroke();
-      // tiny gold dot
-      ctx.fillStyle = 'rgba(190,150,90,0.35)';
-      ctx.beginPath();
-      ctx.arc(cx, cy, 1.8, 0, Math.PI * 2);
-      ctx.fill();
-    }
+  // Soft vertical stucco bands (period = tile height for seamless repeat)
+  for (let x = 0; x < c.width; x += 3) {
+    const a = 0.02 + Math.random() * 0.03;
+    ctx.strokeStyle = `rgba(120,110,95,${a})`;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x + (Math.random() - 0.5) * 2, c.height);
+    ctx.stroke();
   }
 
-  // Fine noise so the damask reads as fabric, not vector graphics.
+  // Very faint horizontal lime wash (seamless at y=0 and y=height)
+  for (let y = 0; y < c.height; y += 64) {
+    const g = ctx.createLinearGradient(0, y, 0, y + 48);
+    g.addColorStop(0, 'rgba(255,255,255,0)');
+    g.addColorStop(0.5, 'rgba(255,255,255,0.06)');
+    g.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, y, c.width, 48);
+  }
+
   const img = ctx.getImageData(0, 0, c.width, c.height);
   const d = img.data;
   for (let i = 0; i < d.length; i += 4) {
-    const n = (Math.random() - 0.5) * 10;
+    const n = (Math.random() - 0.5) * 8;
     d[i] = Math.max(0, Math.min(255, d[i] + n));
     d[i + 1] = Math.max(0, Math.min(255, d[i + 1] + n));
     d[i + 2] = Math.max(0, Math.min(255, d[i + 2] + n));
@@ -344,7 +322,6 @@ function makeDamaskTexture() {
 
   const tex = new THREE.CanvasTexture(c);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  // Tiling is driven per-geometry by wallBuilder's UVs, so leave repeat = 1.
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = 8;
   tex.userData.shared = true;
@@ -352,56 +329,48 @@ function makeDamaskTexture() {
 }
 
 function makeWainscotTexture() {
-  // Dark walnut: vertical grain + soft highlights. Tiles seamlessly so it
-  // reads like a continuous panelled wainscoting at any wall length.
+  // Pale marble wainscot panels; tiles seamlessly along wall length.
   const c = document.createElement('canvas');
   c.width = 512;
   c.height = 256;
   const ctx = c.getContext('2d');
 
-  // Base with a vertical gradient (slightly darker at the top, classic shadow)
   const bg = ctx.createLinearGradient(0, 0, 0, c.height);
-  bg.addColorStop(0, '#2c1c10');
-  bg.addColorStop(0.5, '#3a261a');
-  bg.addColorStop(1, '#321f12');
+  bg.addColorStop(0, '#ebe4d6');
+  bg.addColorStop(0.5, '#e2d9c8');
+  bg.addColorStop(1, '#d8cfc0');
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, c.width, c.height);
 
-  // Vertical wood grain — many fine streaks
-  for (let i = 0; i < 180; i++) {
+  for (let i = 0; i < 120; i++) {
     const x = Math.random() * c.width;
-    const alpha = 0.05 + Math.random() * 0.12;
-    ctx.strokeStyle = `rgba(0,0,0,${alpha})`;
-    ctx.lineWidth = 0.4 + Math.random() * 1.4;
-    ctx.beginPath();
-    ctx.moveTo(x, 0);
-    ctx.lineTo(x + (Math.random() - 0.5) * 4, c.height);
-    ctx.stroke();
-  }
-  // Warm highlights
-  for (let i = 0; i < 60; i++) {
-    const x = Math.random() * c.width;
-    const alpha = 0.03 + Math.random() * 0.05;
-    ctx.strokeStyle = `rgba(180,130,70,${alpha})`;
-    ctx.lineWidth = 0.5 + Math.random() * 0.9;
+    const alpha = 0.03 + Math.random() * 0.06;
+    ctx.strokeStyle = `rgba(90,80,70,${alpha})`;
+    ctx.lineWidth = 0.3 + Math.random() * 0.8;
     ctx.beginPath();
     ctx.moveTo(x, 0);
     ctx.lineTo(x + (Math.random() - 0.5) * 3, c.height);
     ctx.stroke();
   }
-  // Subtle vertical panel grooves: 4 deeper shadow lines per tile so the
-  // wainscoting reads as panelled rather than as a single plank.
+  for (let i = 0; i < 40; i++) {
+    const x = Math.random() * c.width;
+    ctx.strokeStyle = `rgba(255,250,240,${0.04 + Math.random() * 0.05})`;
+    ctx.lineWidth = 0.4;
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x + (Math.random() - 0.5) * 2, c.height);
+    ctx.stroke();
+  }
   for (let i = 1; i < 4; i++) {
     const x = (i * c.width) / 4;
     const g = ctx.createLinearGradient(x - 5, 0, x + 5, 0);
     g.addColorStop(0, 'rgba(0,0,0,0)');
-    g.addColorStop(0.5, 'rgba(0,0,0,0.4)');
+    g.addColorStop(0.5, 'rgba(0,0,0,0.12)');
     g.addColorStop(1, 'rgba(0,0,0,0)');
     ctx.fillStyle = g;
     ctx.fillRect(x - 5, 0, 10, c.height);
-    // matching gold pin-stripe inside the groove
-    ctx.strokeStyle = 'rgba(180,130,70,0.18)';
-    ctx.lineWidth = 0.6;
+    ctx.strokeStyle = 'rgba(199,160,96,0.22)';
+    ctx.lineWidth = 0.5;
     ctx.beginPath();
     ctx.moveTo(x, 8);
     ctx.lineTo(x, c.height - 8);
@@ -423,7 +392,7 @@ function makeCofferedCeilingTexture() {
   c.width = 512;
   c.height = 512;
   const ctx = c.getContext('2d');
-  ctx.fillStyle = '#efe6d2';
+  ctx.fillStyle = '#f5f0e4';
   ctx.fillRect(0, 0, c.width, c.height);
 
   const STEP = 128;

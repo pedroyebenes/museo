@@ -88,13 +88,14 @@ function buildWall(group, wallSpec, dims, mats, segments, triggers) {
   for (const span of spans) {
     const panelW = span.to - span.from;
     const centerAlong = (span.to + span.from) / 2;
-    buildPanel(group, mats, axis, fixed, centerAlong, panelW, height, rotY, normalIn);
+    const offsetU = (span.from + length / 2) / DAMASK_TILE_W;
+    buildPanel(group, mats, axis, fixed, centerAlong, panelW, height, rotY, normalIn, offsetU);
     addCollisionSegment(segments, axis, fixed, span.from, span.to);
   }
 
   // Per-door: lintel above the opening + doorframe + portal + sign + trigger
   for (const d of sortedDoors) {
-    addLintel(group, mats, d, axis, fixed, height, rotY, normalIn);
+    addLintel(group, mats, d, axis, fixed, height, rotY, normalIn, length);
     addDoorFrame(group, mats, d, axis, fixed, normalIn);
     addDoorPortal(group, mats, d, axis, fixed, normalIn, rotY);
     if (d.label) addDoorSign(group, d, axis, fixed, height, rotY, normalIn);
@@ -105,10 +106,10 @@ function buildWall(group, wallSpec, dims, mats, segments, triggers) {
   addCrownMoulding(group, mats, axis, fixed, length, height, normalIn);
 }
 
-function buildPanel(group, mats, axis, fixed, centerAlong, panelW, height, rotY, normalIn) {
+function buildPanel(group, mats, axis, fixed, centerAlong, panelW, height, rotY, normalIn, offsetU = 0) {
   // Wainscot (bottom band)
   const wainscotGeo = new THREE.PlaneGeometry(panelW, WAINSCOT_H);
-  applyWorldUVs(wainscotGeo, panelW, WAINSCOT_H, WAINSCOT_TILE_W, WAINSCOT_H);
+  applyWorldUVs(wainscotGeo, panelW, WAINSCOT_H, WAINSCOT_TILE_W, WAINSCOT_H, offsetU, 0);
   const wainscot = new THREE.Mesh(wainscotGeo, mats.wainscotMat);
   wainscot.position.copy(
     placeAlong(axis, fixed, centerAlong, WAINSCOT_H / 2),
@@ -119,7 +120,7 @@ function buildPanel(group, mats, axis, fixed, centerAlong, panelW, height, rotY,
   // Upper wall (damask)
   const upperH = height - WAINSCOT_H;
   const upperGeo = new THREE.PlaneGeometry(panelW, upperH);
-  applyWorldUVs(upperGeo, panelW, upperH, DAMASK_TILE_W, DAMASK_TILE_H);
+  applyWorldUVs(upperGeo, panelW, upperH, DAMASK_TILE_W, DAMASK_TILE_H, offsetU, 0);
   const upper = new THREE.Mesh(upperGeo, mats.wallMat);
   upper.position.copy(
     placeAlong(axis, fixed, centerAlong, WAINSCOT_H + upperH / 2),
@@ -134,10 +135,11 @@ function buildPanel(group, mats, axis, fixed, centerAlong, panelW, height, rotY,
   addProudBar(group, mats.trimMat, axis, fixed, centerAlong, panelW, CHAIR_RAIL_H, CHAIR_RAIL_PROUD, WAINSCOT_H + CHAIR_RAIL_H / 2, normalIn);
 }
 
-function addLintel(group, mats, door, axis, fixed, height, rotY, normalIn) {
+function addLintel(group, mats, door, axis, fixed, height, rotY, normalIn, length) {
   const lintelH = height - DOOR_H;
   const geo = new THREE.PlaneGeometry(DOOR_W, lintelH);
-  applyWorldUVs(geo, DOOR_W, lintelH, DAMASK_TILE_W, DAMASK_TILE_H);
+  const offsetU = (door.position - DOOR_W / 2 + length / 2) / DAMASK_TILE_W;
+  applyWorldUVs(geo, DOOR_W, lintelH, DAMASK_TILE_W, DAMASK_TILE_H, offsetU, 0);
   const lintel = new THREE.Mesh(geo, mats.wallMat);
   lintel.position.copy(
     placeAlong(axis, fixed, door.position, DOOR_H + lintelH / 2),
@@ -382,12 +384,12 @@ function addProudBar(
   group.add(mesh);
 }
 
-function applyWorldUVs(geo, worldW, worldH, tileW, tileH) {
+function applyWorldUVs(geo, worldW, worldH, tileW, tileH, offsetU = 0, offsetV = 0) {
   const sX = worldW / tileW;
   const sY = worldH / tileH;
   const uv = geo.attributes.uv;
   for (let i = 0; i < uv.count; i++) {
-    uv.setXY(i, uv.getX(i) * sX, uv.getY(i) * sY);
+    uv.setXY(i, uv.getX(i) * sX + offsetU, uv.getY(i) * sY + offsetV);
   }
   uv.needsUpdate = true;
 }

@@ -4,8 +4,8 @@ import { getQualityProfile } from './qualityProfile.js';
 export function createScene() {
   const quality = getQualityProfile();
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x0a0a0a);
-  scene.fog = new THREE.Fog(0x0a0a0a, 15, 60);
+  scene.background = new THREE.Color(0x2a2824);
+  scene.fog = new THREE.Fog(0x2a2824, 18, 70);
 
   const camera = new THREE.PerspectiveCamera(
     72,
@@ -23,13 +23,13 @@ export function createScene() {
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.0;
+  renderer.toneMappingExposure = 1.18;
   document.body.appendChild(renderer.domElement);
 
-  const hemi = new THREE.HemisphereLight(0xfff4e6, 0x222222, 0.55);
+  const hemi = new THREE.HemisphereLight(0xfff8f0, 0x4a4540, 0.78);
   scene.add(hemi);
 
-  const ambient = new THREE.AmbientLight(0xffffff, 0.15);
+  const ambient = new THREE.AmbientLight(0xfff5e8, 0.32);
   scene.add(ambient);
 
   return { scene, camera, renderer, quality };

@@ -176,7 +176,8 @@ function buildCurvedWalls(group, mats, radius, height, doors, segments, triggers
 
     const mid = arcStart + arcSpan / 2;
     const panelW = wallR * arcSpan;
-    buildWallPanel(group, mats, mid, wallR, panelW, height);
+    const offsetU = (arcStart * wallR) / DAMASK_TILE_W;
+    buildWallPanel(group, mats, mid, wallR, panelW, height, offsetU);
 
     const p1 = wallPoint(arcStart, wallR, 0);
     const p2 = wallPoint(arcEnd, wallR, 0);
@@ -184,7 +185,7 @@ function buildCurvedWalls(group, mats, radius, height, doors, segments, triggers
   }
 }
 
-function buildWallPanel(group, mats, angle, radius, panelW, height) {
+function buildWallPanel(group, mats, angle, radius, panelW, height, offsetU = 0) {
   const rotY = facingYaw(angle);
   const normalIn = inwardNormal(angle);
   const center = wallPoint(angle, radius, 0);
@@ -193,7 +194,7 @@ function buildWallPanel(group, mats, angle, radius, panelW, height) {
     new THREE.PlaneGeometry(panelW, WAINSCOT_H),
     mats.wainscotMat,
   );
-  applyWorldUVs(wainscot.geometry, panelW, WAINSCOT_H, WAINSCOT_TILE_W, WAINSCOT_H);
+  applyWorldUVs(wainscot.geometry, panelW, WAINSCOT_H, WAINSCOT_TILE_W, WAINSCOT_H, offsetU, 0);
   wainscot.position.copy(center);
   wainscot.position.y = WAINSCOT_H / 2;
   wainscot.rotation.y = rotY;
@@ -204,7 +205,7 @@ function buildWallPanel(group, mats, angle, radius, panelW, height) {
     new THREE.PlaneGeometry(panelW, upperH),
     mats.wallMat,
   );
-  applyWorldUVs(upper.geometry, panelW, upperH, DAMASK_TILE_W, DAMASK_TILE_H);
+  applyWorldUVs(upper.geometry, panelW, upperH, DAMASK_TILE_W, DAMASK_TILE_H, offsetU, 0);
   upper.position.copy(center);
   upper.position.y = WAINSCOT_H + upperH / 2;
   upper.rotation.y = rotY;
@@ -226,7 +227,8 @@ function addOrientedDoor(group, mats, door, radius, height, triggers) {
     new THREE.PlaneGeometry(DOOR_W, lintelH),
     mats.wallMat,
   );
-  applyWorldUVs(lintel.geometry, DOOR_W, lintelH, DAMASK_TILE_W, DAMASK_TILE_H);
+  const offsetU = (angle * radius - DOOR_W / 2) / DAMASK_TILE_W;
+  applyWorldUVs(lintel.geometry, DOOR_W, lintelH, DAMASK_TILE_W, DAMASK_TILE_H, offsetU, 0);
   lintel.position.copy(wallCenter);
   lintel.position.y = DOOR_H + lintelH / 2;
   lintel.rotation.y = rotY;
@@ -378,12 +380,12 @@ function angleDistance(a, b) {
   return d > Math.PI ? Math.PI * 2 - d : d;
 }
 
-function applyWorldUVs(geo, worldW, worldH, tileW, tileH) {
+function applyWorldUVs(geo, worldW, worldH, tileW, tileH, offsetU = 0, offsetV = 0) {
   const sX = worldW / tileW;
   const sY = worldH / tileH;
   const uv = geo.attributes.uv;
   for (let i = 0; i < uv.count; i++) {
-    uv.setXY(i, uv.getX(i) * sX, uv.getY(i) * sY);
+    uv.setXY(i, uv.getX(i) * sX + offsetU, uv.getY(i) * sY + offsetV);
   }
   uv.needsUpdate = true;
 }

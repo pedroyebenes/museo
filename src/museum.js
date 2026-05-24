@@ -247,7 +247,7 @@ function addAuthorPlaque(group, author, depth) {
 function addRoomLights(group, width, depth, height) {
   const point = new THREE.PointLight(
     0xfff1d8,
-    0.65,
+    0.45,
     Math.max(width, depth) * 1.4,
     1.6,
   );
