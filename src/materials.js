@@ -20,13 +20,21 @@ function build() {
   });
   floorMat.userData.shared = true;
 
-  const wallTex = makePlasterTexture();
+  const wallTex = makeDamaskTexture();
   const wallMat = new THREE.MeshStandardMaterial({
     map: wallTex,
-    roughness: 0.92,
-    metalness: 0.0,
+    roughness: 0.88,
+    metalness: 0.04,
   });
   wallMat.userData.shared = true;
+
+  const wainscotTex = makeWainscotTexture();
+  const wainscotMat = new THREE.MeshStandardMaterial({
+    map: wainscotTex,
+    roughness: 0.55,
+    metalness: 0.2,
+  });
+  wainscotMat.userData.shared = true;
 
   const ceilTex = makeCofferedCeilingTexture();
   const ceilMat = new THREE.MeshStandardMaterial({
@@ -57,7 +65,15 @@ function build() {
   });
   trimMat.userData.shared = true;
 
-  return { floorMat, wallMat, ceilMat, frameMat, baseboardMat, trimMat };
+  return {
+    floorMat,
+    wallMat,
+    wainscotMat,
+    ceilMat,
+    frameMat,
+    baseboardMat,
+    trimMat,
+  };
 }
 
 function makeParquetTexture() {
@@ -116,30 +132,67 @@ function makeParquetTexture() {
   return tex;
 }
 
-function makePlasterTexture() {
+function makeDamaskTexture() {
+  // A subtle warm damask: tessellated diamond motif over a cream ground.
+  // Kept low-contrast so it reads like silk wallpaper, not a costume.
   const c = document.createElement('canvas');
   c.width = 512;
   c.height = 512;
   const ctx = c.getContext('2d');
-  ctx.fillStyle = '#ebe2cf';
+
+  // Warm cream base with a soft vertical gradient (lighter at the top)
+  const bg = ctx.createLinearGradient(0, 0, 0, c.height);
+  bg.addColorStop(0, '#f1e6ce');
+  bg.addColorStop(1, '#e7daba');
+  ctx.fillStyle = bg;
   ctx.fillRect(0, 0, c.width, c.height);
-  // soft cloud blotches
-  for (let i = 0; i < 80; i++) {
-    const x = Math.random() * c.width;
-    const y = Math.random() * c.height;
-    const r = 30 + Math.random() * 90;
-    const g = ctx.createRadialGradient(x, y, 0, x, y, r);
-    const alpha = 0.04 + Math.random() * 0.05;
-    g.addColorStop(0, `rgba(120,90,60,${alpha})`);
-    g.addColorStop(1, 'rgba(120,90,60,0)');
-    ctx.fillStyle = g;
-    ctx.fillRect(x - r, y - r, r * 2, r * 2);
+
+  // Damask diamonds (offset rows). Two passes: a soft halo, then a darker
+  // ornament inside.
+  const dw = 128;
+  const dh = 96;
+  for (let row = -1; row <= c.height / dh + 1; row++) {
+    for (let col = -1; col <= c.width / dw + 1; col++) {
+      const offX = (row & 1) ? dw / 2 : 0;
+      const cx = col * dw + offX + dw / 2;
+      const cy = row * dh + dh / 2;
+      // Soft outer halo
+      const halo = ctx.createRadialGradient(cx, cy, 4, cx, cy, dw / 2);
+      halo.addColorStop(0, 'rgba(170,130,70,0.10)');
+      halo.addColorStop(1, 'rgba(170,130,70,0)');
+      ctx.fillStyle = halo;
+      ctx.fillRect(cx - dw / 2, cy - dh / 2, dw, dh);
+      // Diamond
+      ctx.fillStyle = 'rgba(150,110,60,0.10)';
+      ctx.beginPath();
+      ctx.moveTo(cx, cy - dh / 2 + 10);
+      ctx.lineTo(cx + dw / 2 - 12, cy);
+      ctx.lineTo(cx, cy + dh / 2 - 10);
+      ctx.lineTo(cx - dw / 2 + 12, cy);
+      ctx.closePath();
+      ctx.fill();
+      // Inner fleur / cross
+      ctx.strokeStyle = 'rgba(120,80,40,0.16)';
+      ctx.lineWidth = 1.4;
+      ctx.beginPath();
+      ctx.moveTo(cx - 12, cy);
+      ctx.lineTo(cx + 12, cy);
+      ctx.moveTo(cx, cy - 14);
+      ctx.lineTo(cx, cy + 14);
+      ctx.stroke();
+      // tiny gold dot
+      ctx.fillStyle = 'rgba(190,150,90,0.35)';
+      ctx.beginPath();
+      ctx.arc(cx, cy, 1.8, 0, Math.PI * 2);
+      ctx.fill();
+    }
   }
-  // fine noise
+
+  // Fine noise so the damask reads as fabric, not vector graphics.
   const img = ctx.getImageData(0, 0, c.width, c.height);
   const d = img.data;
   for (let i = 0; i < d.length; i += 4) {
-    const n = (Math.random() - 0.5) * 14;
+    const n = (Math.random() - 0.5) * 10;
     d[i] = Math.max(0, Math.min(255, d[i] + n));
     d[i + 1] = Math.max(0, Math.min(255, d[i + 1] + n));
     d[i + 2] = Math.max(0, Math.min(255, d[i + 2] + n));
@@ -148,9 +201,76 @@ function makePlasterTexture() {
 
   const tex = new THREE.CanvasTexture(c);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set(3, 1.5);
+  // Tiling is driven per-geometry by wallBuilder's UVs, so leave repeat = 1.
   tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 4;
+  tex.anisotropy = 8;
+  tex.userData.shared = true;
+  return tex;
+}
+
+function makeWainscotTexture() {
+  // Dark walnut: vertical grain + soft highlights. Tiles seamlessly so it
+  // reads like a continuous panelled wainscoting at any wall length.
+  const c = document.createElement('canvas');
+  c.width = 512;
+  c.height = 256;
+  const ctx = c.getContext('2d');
+
+  // Base with a vertical gradient (slightly darker at the top, classic shadow)
+  const bg = ctx.createLinearGradient(0, 0, 0, c.height);
+  bg.addColorStop(0, '#2c1c10');
+  bg.addColorStop(0.5, '#3a261a');
+  bg.addColorStop(1, '#321f12');
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, c.width, c.height);
+
+  // Vertical wood grain — many fine streaks
+  for (let i = 0; i < 180; i++) {
+    const x = Math.random() * c.width;
+    const alpha = 0.05 + Math.random() * 0.12;
+    ctx.strokeStyle = `rgba(0,0,0,${alpha})`;
+    ctx.lineWidth = 0.4 + Math.random() * 1.4;
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x + (Math.random() - 0.5) * 4, c.height);
+    ctx.stroke();
+  }
+  // Warm highlights
+  for (let i = 0; i < 60; i++) {
+    const x = Math.random() * c.width;
+    const alpha = 0.03 + Math.random() * 0.05;
+    ctx.strokeStyle = `rgba(180,130,70,${alpha})`;
+    ctx.lineWidth = 0.5 + Math.random() * 0.9;
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x + (Math.random() - 0.5) * 3, c.height);
+    ctx.stroke();
+  }
+  // Subtle vertical panel grooves: 4 deeper shadow lines per tile so the
+  // wainscoting reads as panelled rather than as a single plank.
+  for (let i = 1; i < 4; i++) {
+    const x = (i * c.width) / 4;
+    const g = ctx.createLinearGradient(x - 5, 0, x + 5, 0);
+    g.addColorStop(0, 'rgba(0,0,0,0)');
+    g.addColorStop(0.5, 'rgba(0,0,0,0.4)');
+    g.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(x - 5, 0, 10, c.height);
+    // matching gold pin-stripe inside the groove
+    ctx.strokeStyle = 'rgba(180,130,70,0.18)';
+    ctx.lineWidth = 0.6;
+    ctx.beginPath();
+    ctx.moveTo(x, 8);
+    ctx.lineTo(x, c.height - 8);
+    ctx.stroke();
+  }
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.wrapS = THREE.RepeatWrapping;
+  tex.wrapT = THREE.ClampToEdgeWrapping; // wainscot never tiles vertically
+  // Tiling is driven per-geometry by wallBuilder's UVs.
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 8;
   tex.userData.shared = true;
   return tex;
 }
