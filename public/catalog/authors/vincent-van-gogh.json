@@ -1,0 +1,33 @@
+{
+  "id": "vincent-van-gogh",
+  "name": "Vincent van Gogh",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Vincent Willem van Gogh",
+  "years": "1853 – 1890",
+  "origin": "Zundert, Países Bajos",
+  "bio": "Postimpresionista neerlandés de carrera fulgurante: apenas diez años de pintura y más de 2.000 obras entre lienzos y dibujos. Pincelada empastada, color simbólico y una correspondencia con su hermano Theo que documenta como pocas la vida interior de un artista.",
+  "paintings": [
+    {
+      "id": "van-gogh-noche-estrellada",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+      "title": "La noche estrellada",
+      "year": 1889,
+      "description": "Óleo sobre lienzo pintado durante su estancia en el sanatorio de Saint-Rémy-de-Provence. La obra representa la vista nocturna desde su ventana, transformada por una imaginación turbulenta.",
+      "dimensions": {
+        "width": 92.1,
+        "height": 73.7
+      }
+    },
+    {
+      "id": "vangogh-girasoles",
+      "title": "Girasoles",
+      "year": 1889,
+      "description": "Uno de los jarrones de girasoles pintados en Arlés para decorar la habitación de Gauguin. Amarillos empastados sobre fondo amarillo exploran la intensidad del color.",
+      "dimensions": {
+        "width": 92,
+        "height": 73
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg"
+    }
+  ]
+}

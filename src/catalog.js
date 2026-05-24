@@ -1,5 +1,5 @@
 function escapeHtml(text) {
-  return String(text)
+  return String(text ?? '')
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -13,10 +13,13 @@ function normalizeSearch(text) {
     .replace(/\p{M}/gu, '');
 }
 
+function plural(count, singular, pluralText) {
+  return `${count} ${count === 1 ? singular : pluralText}`;
+}
+
 export function createCatalog({
-  authorOrder,
-  paintingsByAuthor,
-  authorsData,
+  catalog,
+  onGoToCategory,
   onGoToRoom,
   onGoToPainting,
   onClose,
@@ -27,136 +30,314 @@ export function createCatalog({
   const detailEl = document.getElementById('catalog-detail');
   const closeBtn = document.getElementById('catalog-close');
 
+  const {
+    categories,
+    categoriesById,
+    authorsById,
+    authorsByCategory,
+    paintingsByAuthor,
+  } = catalog;
+
   let open = false;
-  let view = 'authors';
-  let selectedAuthor = null;
+  let view = 'categories';
+  let selectedCategoryId = null;
+  let selectedAuthorId = null;
   let query = '';
 
-  function authorMeta(author) {
-    const bio = authorsData[author] || {};
-    const paintings = paintingsByAuthor[author] || [];
-    return { bio, paintings, count: paintings.length };
+  function authorPaintings(authorId) {
+    return paintingsByAuthor[authorId] || [];
   }
 
-  function matchesAuthor(author) {
-    if (!query) return true;
-    const { bio } = authorMeta(author);
-    const haystack = normalizeSearch(
-      [author, bio.fullName, bio.origin, bio.years].filter(Boolean).join(' '),
-    );
-    return haystack.includes(query);
-  }
-
-  function renderAuthors() {
-    view = 'authors';
-    selectedAuthor = null;
+  function renderCategories() {
+    view = 'categories';
+    selectedCategoryId = null;
+    selectedAuthorId = null;
     detailEl.classList.add('hidden');
     listEl.classList.remove('hidden');
-    searchInput.parentElement.classList.remove('hidden');
 
-    const filtered = authorOrder.filter(matchesAuthor);
-    if (filtered.length === 0) {
-      listEl.innerHTML =
-        '<p class="catalog-empty">No hay autores que coincidan con la búsqueda.</p>';
-      return;
-    }
-
-    listEl.innerHTML = filtered
-      .map((author) => {
-        const { bio, count } = authorMeta(author);
-        const sub = [bio.years, `${count} obra${count === 1 ? '' : 's'}`]
-          .filter(Boolean)
-          .join(' · ');
+    listEl.innerHTML = categories
+      .map((category) => {
+        const count = (authorsByCategory[category.id] || []).length;
         return `
-          <button type="button" class="catalog-row" data-author="${escapeHtml(author)}">
-            <span class="catalog-row-title">${escapeHtml(author)}</span>
-            <span class="catalog-row-meta">${escapeHtml(sub)}</span>
+          <button type="button" class="catalog-row" data-category-id="${escapeHtml(category.id)}">
+            <span class="catalog-row-title">${escapeHtml(category.label)}</span>
+            <span class="catalog-row-meta">${escapeHtml(plural(count, 'autor', 'autores'))}</span>
           </button>
         `;
       })
       .join('');
 
-    listEl.querySelectorAll('.catalog-row').forEach((btn) => {
-      btn.addEventListener('click', () => showAuthorDetail(btn.dataset.author));
-    });
+    bindCategoryRows(listEl);
   }
 
-  function renderAuthorDetail(author) {
-    view = 'author-detail';
-    selectedAuthor = author;
+  function renderCategoryDetail(categoryId) {
+    const category = categoriesById[categoryId];
+    if (!category) return;
+
+    view = 'category-detail';
+    selectedCategoryId = categoryId;
+    selectedAuthorId = null;
     listEl.classList.add('hidden');
     detailEl.classList.remove('hidden');
-    searchInput.parentElement.classList.add('hidden');
 
-    const { bio, paintings } = authorMeta(author);
-    const originLine = bio.origin
-      ? `<p class="catalog-detail-origin">${escapeHtml(bio.origin)}</p>`
+    const authors = authorsByCategory[categoryId] || [];
+    const description = category.description
+      ? `<p class="catalog-detail-description">${escapeHtml(category.description)}</p>`
       : '';
-
-    const paintingsHtml = paintings
-      .map(
-        (p) => `
-        <button type="button" class="catalog-painting-row" data-painting-id="${escapeHtml(p.id)}">
-          <span class="catalog-painting-title">${escapeHtml(p.title)}</span>
-          <span class="catalog-painting-year">${escapeHtml(String(p.year))}</span>
-        </button>
-      `,
-      )
+    const authorsHtml = authors
+      .map((author) => renderAuthorRow(author, { showCategory: false }))
       .join('');
 
     detailEl.innerHTML = `
-      <button type="button" class="catalog-back" id="catalog-back">← Autores</button>
+      <button type="button" class="catalog-back" id="catalog-back">← Categorías</button>
       <header class="catalog-detail-header">
-        <h2>${escapeHtml(author)}</h2>
-        ${bio.years ? `<p class="catalog-detail-years">${escapeHtml(bio.years)}</p>` : ''}
+        <h2>${escapeHtml(category.label)}</h2>
+        ${description}
+      </header>
+      <button type="button" class="catalog-go-room" id="catalog-go-category">Entrar en la sala</button>
+      <h3 class="catalog-paintings-heading">Autores</h3>
+      <div class="catalog-section">${authorsHtml}</div>
+    `;
+
+    detailEl.querySelector('#catalog-back').addEventListener('click', () => {
+      clearQuery();
+      renderCategories();
+    });
+    detailEl.querySelector('#catalog-go-category').addEventListener('click', () => {
+      goToCategory(categoryId);
+    });
+    bindAuthorRows(detailEl);
+  }
+
+  function renderAuthorDetail(authorId) {
+    const author = authorsById[authorId];
+    if (!author) return;
+
+    const category = categoriesById[author.category];
+    view = 'author-detail';
+    selectedCategoryId = author.category;
+    selectedAuthorId = authorId;
+    listEl.classList.add('hidden');
+    detailEl.classList.remove('hidden');
+
+    const paintings = authorPaintings(authorId);
+    const originLine = author.origin
+      ? `<p class="catalog-detail-origin">${escapeHtml(author.origin)}</p>`
+      : '';
+    const bio = author.bio
+      ? `<p class="catalog-detail-bio">${escapeHtml(author.bio)}</p>`
+      : '';
+    const paintingsHtml = paintings
+      .map((painting) => renderPaintingRow(author, painting))
+      .join('');
+
+    detailEl.innerHTML = `
+      <button type="button" class="catalog-back" id="catalog-back">← ${escapeHtml(category?.label || 'Categoría')}</button>
+      <header class="catalog-detail-header">
+        <h2>${escapeHtml(author.name)}</h2>
+        ${author.years ? `<p class="catalog-detail-years">${escapeHtml(author.years)}</p>` : ''}
         ${originLine}
+        ${bio}
       </header>
       <button type="button" class="catalog-go-room" id="catalog-go-room">Entrar en la sala</button>
       <h3 class="catalog-paintings-heading">Cuadros</h3>
       <div class="catalog-paintings">${paintingsHtml}</div>
     `;
 
-    detailEl.querySelector('#catalog-back').addEventListener('click', renderAuthors);
-    detailEl.querySelector('#catalog-go-room').addEventListener('click', () => {
-      goToRoom(author);
+    detailEl.querySelector('#catalog-back').addEventListener('click', () => {
+      clearQuery();
+      renderCategoryDetail(author.category);
     });
-    detailEl.querySelectorAll('.catalog-painting-row').forEach((btn) => {
+    detailEl.querySelector('#catalog-go-room').addEventListener('click', () => {
+      goToRoom(authorId);
+    });
+    bindPaintingRows(detailEl);
+  }
+
+  function renderSearchResults() {
+    view = 'search';
+    selectedCategoryId = null;
+    selectedAuthorId = null;
+    detailEl.classList.add('hidden');
+    listEl.classList.remove('hidden');
+
+    const matchedCategories = categories.filter(matchesCategory);
+    const matchedAuthors = Object.values(authorsById).filter(matchesAuthor);
+    const matchedPaintings = Object.values(paintingsByAuthor)
+      .flat()
+      .filter(matchesPainting);
+
+    const sections = [
+      renderSearchSection(
+        'Categorías',
+        matchedCategories.map(renderCategorySearchRow),
+      ),
+      renderSearchSection(
+        'Autores',
+        matchedAuthors.map((author) => renderAuthorRow(author)),
+      ),
+      renderSearchSection(
+        'Cuadros',
+        matchedPaintings.map((painting) =>
+          renderPaintingRow(authorsById[painting.authorId], painting, {
+            showAuthor: true,
+          }),
+        ),
+      ),
+    ].filter(Boolean);
+
+    listEl.innerHTML =
+      sections.join('') ||
+      '<p class="catalog-empty">No hay resultados para la búsqueda.</p>';
+
+    bindCategoryRows(listEl);
+    bindAuthorRows(listEl);
+    bindPaintingRows(listEl);
+  }
+
+  function renderSearchSection(title, rows) {
+    if (!rows.length) return '';
+    return `
+      <h3 class="catalog-section-heading">${escapeHtml(title)}</h3>
+      <div class="catalog-section">${rows.join('')}</div>
+    `;
+  }
+
+  function renderCategorySearchRow(category) {
+    const count = (authorsByCategory[category.id] || []).length;
+    const meta = [plural(count, 'autor', 'autores'), category.description]
+      .filter(Boolean)
+      .join(' · ');
+    return `
+      <button type="button" class="catalog-row" data-category-id="${escapeHtml(category.id)}">
+        <span class="catalog-row-title">${escapeHtml(category.label)}</span>
+        <span class="catalog-row-meta">${escapeHtml(meta)}</span>
+      </button>
+    `;
+  }
+
+  function renderAuthorRow(author, { showCategory = true } = {}) {
+    const paintings = authorPaintings(author.id);
+    const category = categoriesById[author.category];
+    const meta = [
+      showCategory ? category?.label : '',
+      author.years,
+      plural(paintings.length, 'obra', 'obras'),
+    ]
+      .filter(Boolean)
+      .join(' · ');
+    return `
+      <button type="button" class="catalog-row" data-author-id="${escapeHtml(author.id)}">
+        <span class="catalog-row-title">${escapeHtml(author.name)}</span>
+        <span class="catalog-row-meta">${escapeHtml(meta)}</span>
+      </button>
+    `;
+  }
+
+  function renderPaintingRow(author, painting, { showAuthor = false } = {}) {
+    const meta = showAuthor
+      ? `${author?.name || painting.author} · ${painting.year}`
+      : String(painting.year);
+    return `
+      <button type="button" class="catalog-painting-row" data-author-id="${escapeHtml(painting.authorId)}" data-painting-id="${escapeHtml(painting.id)}">
+        <span class="catalog-painting-title">${escapeHtml(painting.title)}</span>
+        <span class="catalog-painting-year">${escapeHtml(meta)}</span>
+      </button>
+    `;
+  }
+
+  function matchesCategory(category) {
+    return searchable([
+      category.id,
+      category.label,
+      category.description,
+    ]).includes(query);
+  }
+
+  function matchesAuthor(author) {
+    const category = categoriesById[author.category];
+    return searchable([
+      author.name,
+      author.fullName,
+      author.origin,
+      author.years,
+      author.bio,
+      category?.label,
+    ]).includes(query);
+  }
+
+  function matchesPainting(painting) {
+    const author = authorsById[painting.authorId];
+    const category = categoriesById[painting.categoryId];
+    return searchable([
+      painting.title,
+      painting.year,
+      painting.description,
+      author?.name,
+      category?.label,
+    ]).includes(query);
+  }
+
+  function searchable(parts) {
+    return normalizeSearch(parts.filter(Boolean).join(' '));
+  }
+
+  function bindCategoryRows(root) {
+    root.querySelectorAll('[data-category-id]').forEach((btn) => {
       btn.addEventListener('click', () => {
-        goToPainting(author, btn.dataset.paintingId);
+        clearQuery();
+        renderCategoryDetail(btn.dataset.categoryId);
       });
     });
   }
 
-  function showAuthorDetail(author) {
-    renderAuthorDetail(author);
+  function bindAuthorRows(root) {
+    root.querySelectorAll('[data-author-id]:not([data-painting-id])').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        clearQuery();
+        renderAuthorDetail(btn.dataset.authorId);
+      });
+    });
   }
 
-  function authorIndex(author) {
-    return authorOrder.indexOf(author);
+  function bindPaintingRows(root) {
+    root.querySelectorAll('[data-painting-id]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        goToPainting(btn.dataset.authorId, btn.dataset.paintingId);
+      });
+    });
   }
 
-  function goToRoom(author) {
-    const idx = authorIndex(author);
-    if (idx < 0) return;
+  function clearQuery() {
+    query = '';
+    searchInput.value = '';
+  }
+
+  function goToCategory(categoryId) {
+    if (!categoriesById[categoryId]) return;
     close();
-    onGoToRoom(idx);
+    onGoToCategory(categoryId);
   }
 
-  function goToPainting(author, paintingId) {
-    const idx = authorIndex(author);
-    if (idx < 0) return;
+  function goToRoom(authorId) {
+    if (!authorsById[authorId]) return;
     close();
-    onGoToPainting(idx, paintingId);
+    onGoToRoom(authorId);
+  }
+
+  function goToPainting(authorId, paintingId) {
+    if (!authorsById[authorId]) return;
+    close();
+    onGoToPainting(authorId, paintingId);
   }
 
   function openCatalog() {
     if (open) return;
     open = true;
-    query = searchInput.value.trim();
-    query = normalizeSearch(query);
+    clearQuery();
     panel.classList.remove('hidden');
     document.body.classList.add('catalog-open');
-    renderAuthors();
+    renderCategories();
     searchInput.focus();
   }
 
@@ -165,8 +346,9 @@ export function createCatalog({
     open = false;
     panel.classList.add('hidden');
     document.body.classList.remove('catalog-open');
-    view = 'authors';
-    selectedAuthor = null;
+    view = 'categories';
+    selectedCategoryId = null;
+    selectedAuthorId = null;
     onClose?.();
   }
 
@@ -181,7 +363,15 @@ export function createCatalog({
 
   searchInput.addEventListener('input', () => {
     query = normalizeSearch(searchInput.value.trim());
-    if (view === 'authors') renderAuthors();
+    if (query) {
+      renderSearchResults();
+    } else if (view === 'category-detail' && selectedCategoryId) {
+      renderCategoryDetail(selectedCategoryId);
+    } else if (view === 'author-detail' && selectedAuthorId) {
+      renderAuthorDetail(selectedAuthorId);
+    } else {
+      renderCategories();
+    }
   });
 
   closeBtn.addEventListener('click', close);

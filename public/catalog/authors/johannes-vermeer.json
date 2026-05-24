@@ -1,0 +1,22 @@
+{
+  "id": "johannes-vermeer",
+  "name": "Johannes Vermeer",
+  "category": "barroco",
+  "fullName": "Johannes Vermeer",
+  "years": "1632 – 1675",
+  "origin": "Delft, Provincias Unidas",
+  "bio": "Pintor del Siglo de Oro neerlandés especializado en escenas domésticas íntimas. Produjo sólo unas 35 obras documentadas, todas marcadas por una luz casi fotográfica y un dominio absoluto del color. Olvidado durante dos siglos, fue redescubierto en el XIX.",
+  "paintings": [
+    {
+      "id": "vermeer-joven-perla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/1665_Girl_with_a_Pearl_Earring.jpg",
+      "title": "La joven de la perla",
+      "year": 1665,
+      "description": "Conocida como la \"Mona Lisa del Norte\", esta tronie capta a una joven anónima que gira hacia el espectador. La luz, el turbante azul y la perla convierten un estudio de expresión en una presencia íntima y enigmática.",
+      "dimensions": {
+        "width": 39,
+        "height": 44.5
+      }
+    }
+  ]
+}

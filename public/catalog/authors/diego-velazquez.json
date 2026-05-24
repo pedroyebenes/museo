@@ -1,0 +1,22 @@
+{
+  "id": "diego-velazquez",
+  "name": "Diego Velázquez",
+  "category": "barroco",
+  "fullName": "Diego Rodríguez de Silva y Velázquez",
+  "years": "1599 – 1660",
+  "origin": "Sevilla, España",
+  "bio": "Pintor de cámara de Felipe IV y figura cumbre del Siglo de Oro español. Sus dos viajes a Italia consolidaron una pintura sobria, atmosférica y de precisa observación. Las meninas resume su modernidad: composición, luz y reflexión sobre el propio acto de pintar.",
+  "paintings": [
+    {
+      "id": "velazquez-meninas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Las_Meninas_01.jpg",
+      "title": "Las meninas",
+      "year": 1656,
+      "description": "Una de las obras más analizadas de la historia del arte. Velázquez se autorretrata pintando, mientras la infanta Margarita y sus damas posan en el primer plano.",
+      "dimensions": {
+        "width": 279.1,
+        "height": 320.3
+      }
+    }
+  ]
+}

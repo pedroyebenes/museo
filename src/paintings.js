@@ -58,12 +58,6 @@ export function getPaintingLayoutExtents(data) {
   };
 }
 
-export async function loadPaintingData(url = '/paintings.json') {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`No pude cargar ${url}: ${res.status}`);
-  return await res.json();
-}
-
 export async function placePaintings(container, slots, paintings, { renderer, onProgress } = {}) {
   const interactables = [];
   let loaded = 0;

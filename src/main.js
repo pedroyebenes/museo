@@ -1,5 +1,5 @@
 import { createScene } from './scene.js';
-import { loadPaintingData } from './paintings.js';
+import { loadCatalogData } from './catalogData.js';
 import { createControls } from './controls.js';
 import {
   createInfoOverlay,
@@ -23,29 +23,13 @@ async function boot() {
     document.body.classList.add('is-touch');
   }
 
-  let paintings = [];
-  let authorsData = {};
+  let catalogData = null;
   try {
-    const [pj, aj] = await Promise.all([
-      loadPaintingData(),
-      fetch('/authors.json').then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
-    ]);
-    paintings = pj;
-    authorsData = aj || {};
+    catalogData = await loadCatalogData();
   } catch (err) {
-    loading.textContent = 'Error cargando paintings.json';
+    loading.textContent = 'Error cargando el catálogo';
     console.error(err);
     return;
-  }
-
-  const paintingsByAuthor = {};
-  const authorOrder = [];
-  for (const p of paintings) {
-    if (!paintingsByAuthor[p.author]) {
-      paintingsByAuthor[p.author] = [];
-      authorOrder.push(p.author);
-    }
-    paintingsByAuthor[p.author].push(p);
   }
 
   const overlay = createInfoOverlay();
@@ -91,15 +75,15 @@ async function boot() {
     camera,
     renderer,
     controls: { setSegments, setPose },
-    paintingsByAuthor,
-    authorOrder,
-    authorsData,
+    catalog: catalogData,
     onRoomChanged: (info) => {
       overlay.hide();
       if (info.kind === 'hub') {
-        hud.set(`Hall principal — ${info.total} salas`);
+        hud.set(`Hall principal — ${info.total} categorías`);
+      } else if (info.kind === 'category') {
+        hud.set(`${info.category.label} — ${info.authorCount} autores`);
       } else {
-        hud.set(`${info.author} (${info.paintingCount} obras)`);
+        hud.set(`${info.author.name} (${info.paintingCount} obras)`);
       }
     },
     onTransitionStart: (info) => transition.show(info),
@@ -110,12 +94,11 @@ async function boot() {
   await roomManager.loadHub('initial');
 
   catalog = createCatalog({
-    authorOrder,
-    paintingsByAuthor,
-    authorsData,
-    onGoToRoom: (authorIndex) => roomManager.loadAuthor(authorIndex),
-    onGoToPainting: (authorIndex, paintingId) =>
-      roomManager.loadAuthor(authorIndex, { paintingId }),
+    catalog: catalogData,
+    onGoToCategory: (categoryId) => roomManager.loadCategory(categoryId),
+    onGoToRoom: (authorId) => roomManager.loadAuthor(authorId),
+    onGoToPainting: (authorId, paintingId) =>
+      roomManager.loadAuthor(authorId, { paintingId }),
     onClose: () => resumeAfterCatalog(),
   });
 

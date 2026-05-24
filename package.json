@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "validate:catalog": "node scripts/validate-catalog.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },

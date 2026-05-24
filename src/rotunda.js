@@ -216,7 +216,7 @@ function buildWallPanel(group, mats, angle, radius, panelW, height, offsetU = 0)
 }
 
 function addOrientedDoor(group, mats, door, radius, height, triggers) {
-  const { angle, label, destination } = door;
+  const { angle, label, arrow, destination } = door;
   const rotY = facingYaw(angle);
   const normalIn = inwardNormal(angle);
   const tangent = tangentVector(angle);
@@ -237,7 +237,7 @@ function addOrientedDoor(group, mats, door, radius, height, triggers) {
   addDoorFrame(group, mats, wallCenter, rotY, normalIn, tangent);
   addDoorPortal(group, mats, wallCenter, rotY, normalIn, tangent);
   if (label) {
-    const sign = createDoorSignMesh({ label, lintelH: height - DOOR_H });
+    const sign = createDoorSignMesh({ label, arrow, lintelH: height - DOOR_H });
     sign.position.copy(wallCenter);
     sign.position.y = DOOR_H + lintelH / 2;
     sign.position.add(normalIn.clone().multiplyScalar(0.055));

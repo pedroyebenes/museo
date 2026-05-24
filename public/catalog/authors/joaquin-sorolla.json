@@ -1,0 +1,77 @@
+{
+  "id": "joaquin-sorolla",
+  "name": "Joaquín Sorolla",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Joaquín Sorolla y Bastida",
+  "years": "1863 – 1923",
+  "origin": "Valencia, España",
+  "bio": "Gran maestro del luminismo. Empezó pintando obra de denuncia social y costumbrista, pero la consagración internacional le llegó con sus playas valencianas: figuras vestidas de blanco a contraluz, agua transparente y pincelada suelta cargada de sol.",
+  "paintings": [
+    {
+      "id": "sorolla-pescado-caro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Joaqu%C3%ADn_Sorolla_y_Bastida_-_A%C3%BAn_dicen_que_el_pescado_es_caro.jpg",
+      "title": "¡Y aún dicen que el pescado es caro!",
+      "year": 1894,
+      "description": "Lienzo de denuncia social: dos pescadores asisten a un compañero herido en la sentina de una barca. Sorolla obtuvo con él la primera medalla en la Exposición Nacional de Madrid.",
+      "dimensions": {
+        "width": 204,
+        "height": 151.5
+      }
+    },
+    {
+      "id": "sorolla-regreso-pesca",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Joaqu%C3%ADn_Sorolla_y_Bastida_-_La_vuelta_de_la_pesca.jpg",
+      "title": "El regreso de la pesca",
+      "year": 1894,
+      "description": "Dos bueyes remolcan un barco de vela latina en la playa del Cabañal, mientras pescadores coordinan la maniobra bajo una luz mediterránea intensa. Obra clave de la etapa social del pintor, adquirida por el Estado francés en el Salón de 1895.",
+      "dimensions": {
+        "width": 403.5,
+        "height": 265
+      }
+    },
+    {
+      "id": "sorolla-triste-herencia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Triste_Herencia_%281899%29.jpg",
+      "title": "Triste herencia",
+      "year": 1899,
+      "description": "Niños tullidos bañándose en la playa del Cabañal, vigilados por un sacerdote. Premio en la Exposición Universal de París (1900) y consagración internacional del pintor.",
+      "dimensions": {
+        "width": 288,
+        "height": 208
+      }
+    },
+    {
+      "id": "sorolla-paseo-orilla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Strolling_along_the_Seashore_-_Google_Art_Project.jpg",
+      "title": "Paseo a orillas del mar",
+      "year": 1909,
+      "description": "Clotilde y su hija María pasean por la playa con sombrillas y vestidos blancos. Una de las obras más reconocibles del luminismo sorollesco.",
+      "dimensions": {
+        "width": 205,
+        "height": 200
+      }
+    },
+    {
+      "id": "sorolla-chicos-playa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Joaqu%C3%ADn_Sorolla_-_Chicos_en_la_playa.jpg",
+      "title": "Chicos en la playa",
+      "year": 1909,
+      "description": "Tres niños tumbados en la orilla, reflejados en la película de agua. Composición casi cenital y pincelada vibrante que captura el sol del Mediterráneo.",
+      "dimensions": {
+        "width": 185,
+        "height": 118
+      }
+    },
+    {
+      "id": "sorolla-bano-caballo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Joaqu%C3%ADn_Sorolla_y_Bastida_-_El_ba%C3%B1o_del_caballo.jpg",
+      "title": "El baño del caballo",
+      "year": 1909,
+      "description": "Un mozo guía a su caballo blanco al mar bajo la luz cegadora del mediodía valenciano. Ejercicio magistral de reflejos y movimiento del agua.",
+      "dimensions": {
+        "width": 282,
+        "height": 205
+      }
+    }
+  ]
+}

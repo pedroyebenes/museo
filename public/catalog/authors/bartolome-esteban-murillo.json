@@ -1,0 +1,66 @@
+{
+  "id": "bartolome-esteban-murillo",
+  "name": "Bartolomé Esteban Murillo",
+  "category": "barroco",
+  "fullName": "Bartolomé Esteban Murillo",
+  "years": "1617 – 1682",
+  "origin": "Sevilla, España",
+  "bio": "Junto a Zurbarán y Valdés Leal definió la pintura barroca sevillana. Cofundador y primer presidente de la Academia de Sevilla (1660). Famoso por sus Inmaculadas, escenas religiosas tiernas y retratos de pícaros y niños tomados del natural.",
+  "paintings": [
+    {
+      "id": "murillo-sagrada-familia-pajarito",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sagrada_Familia_del_pajarito_%28Murillo%29.jpg",
+      "title": "Sagrada Familia del pajarito",
+      "year": 1650,
+      "description": "Escena cotidiana de la Sagrada Familia en la que el Niño Jesús sostiene un pajarito mientras juega con un perrito. Pintura tierna y costumbrista característica del Murillo maduro.",
+      "dimensions": {
+        "width": 188,
+        "height": 144
+      }
+    },
+    {
+      "id": "murillo-ninos-comiendo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bartolom%C3%A9_Esteban_Perez_Murillo_013.jpg",
+      "title": "Niños comiendo (Kuchenesser)",
+      "year": 1670,
+      "description": "Escena de género con niños de la calle disfrutando de un alimento humilde. Murillo elevó este tipo de retratos populares a obras de gran ternura y luz dorada.",
+      "dimensions": {
+        "width": 123,
+        "height": 102
+      }
+    },
+    {
+      "id": "murillo-rebeca-eliezer",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Bartolom%C3%A9_Esteban_Perez_Murillo_022.jpg",
+      "title": "Rebeca y Eliezer",
+      "year": 1660,
+      "description": "Episodio bíblico del Génesis: Rebeca, futura esposa de Isaac, conversa con Eliezer, criado del patriarca Abraham, junto al pozo. Conservado en el Museo del Prado.",
+      "dimensions": {
+        "width": 151.5,
+        "height": 108
+      }
+    },
+    {
+      "id": "murillo-buen-pastor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/BuenPastorMurillo1660.jpg",
+      "title": "El Buen Pastor",
+      "year": 1660,
+      "description": "El Niño Jesús representado como pastor con ovejas y cayado. Iconografía mística muy popular en la Sevilla barroca.",
+      "dimensions": {
+        "width": 101.7,
+        "height": 123
+      }
+    },
+    {
+      "id": "murillo-inmaculada",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bartolom%C3%A9_Esteban_Murillo_-_Immaculada_Concepci%C3%B3n%2C_c._1670.jpg",
+      "title": "Inmaculada Concepción",
+      "year": 1670,
+      "description": "Una de las múltiples Inmaculadas pintadas por Murillo. María se eleva entre nubes sobre la luna creciente, rodeada de querubines, con manto azul y túnica blanca.",
+      "dimensions": {
+        "width": 112,
+        "height": 168
+      }
+    }
+  ]
+}

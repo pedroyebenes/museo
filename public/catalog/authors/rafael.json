@@ -1,0 +1,22 @@
+{
+  "id": "rafael",
+  "name": "Rafael",
+  "category": "renacimiento-manierismo",
+  "fullName": "Raffaello Sanzio da Urbino",
+  "years": "1483 – 1520",
+  "origin": "Urbino, Ducado de Urbino",
+  "bio": "Tercero del trío renacentista junto a Leonardo y Miguel Ángel. Maestro de la armonía clásica en retratos, madonnas y la decoración de las Stanze vaticanas, donde La escuela de Atenas resume el humanismo.",
+  "paintings": [
+    {
+      "id": "rafael-escuela-atenas",
+      "title": "La escuela de Atenas",
+      "year": 1511,
+      "description": "Fresco de la Stanza della Segnatura en el Vaticano. Filósofos antiguos —Platón y Aristóteles al centro— dialogan en un espacio clásico ideal.",
+      "dimensions": {
+        "width": 500,
+        "height": 770
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/The_School_of_Athens.jpg"
+    }
+  ]
+}

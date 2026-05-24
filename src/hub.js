@@ -7,15 +7,17 @@ const RADIUS = 11;
 const PLAYER_Y = 1.6;
 const SPAWN_OFFSET = 3.0;
 
-export function buildHub(scene, authorOrder) {
+export function buildHub(scene, config) {
+  const { id, title, items } = normalizeConfig(config);
   const group = new THREE.Group();
-  group.name = 'room:hub';
+  group.name = `room:${id}`;
 
-  const layout = computeDoorLayout(authorOrder.length);
+  const layout = computeDoorLayout(items.length);
   const doors = layout.map((slot, i) => ({
     angle: slot.angle,
-    label: authorOrder[i],
-    destination: { kind: 'author', authorIndex: i },
+    label: items[i].label,
+    arrow: items[i].arrow,
+    destination: items[i].destination,
   }));
 
   const { segments, triggers } = buildRotundaShell(group, {
@@ -27,13 +29,13 @@ export function buildHub(scene, authorOrder) {
 
   addChandelier(group, RADIUS);
   addCenterMedallion(group);
-  addHubTitle(group);
+  addHubTitle(group, title);
 
   scene.add(group);
 
-  const spawnFromAuthor = {};
+  const spawnFromItem = {};
   layout.forEach((slot, i) => {
-    spawnFromAuthor[i] = computeDoorSpawn(slot);
+    spawnFromItem[items[i].id] = computeDoorSpawn(slot);
   });
 
   return {
@@ -43,19 +45,27 @@ export function buildHub(scene, authorOrder) {
     triggers,
     dimensions: { width: RADIUS * 2, depth: RADIUS * 2, height: HEIGHT },
     author: null,
-    kind: 'hub',
+    kind: id === 'hub' ? 'hub' : 'category',
     spawn: {
       initial: {
         position: new THREE.Vector3(0, PLAYER_Y, RADIUS - 4),
         yaw: 0,
       },
       ...Object.fromEntries(
-        Object.entries(spawnFromAuthor).map(([i, s]) => [
-          `fromAuthor${i}`,
+        Object.entries(spawnFromItem).map(([itemId, s]) => [
+          `from:${itemId}`,
           s,
         ]),
       ),
     },
+  };
+}
+
+function normalizeConfig(config) {
+  return {
+    id: config.id || 'hub',
+    title: config.title || 'Hall principal',
+    items: config.items || [],
   };
 }
 
@@ -184,17 +194,18 @@ function addCenterMedallion(group) {
   group.add(mesh);
 }
 
-function addHubTitle(group) {
+function addHubTitle(group, title) {
   const canvas = document.createElement('canvas');
   canvas.width = 1024;
   canvas.height = 256;
   const ctx = canvas.getContext('2d');
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = '#c7a060';
-  ctx.font = 'italic 600 110px Georgia, "Times New Roman", serif';
+  const fontSize = fitTitleFont(ctx, title, canvas.width - 96, 110, 54);
+  ctx.font = `italic 600 ${fontSize}px Georgia, "Times New Roman", serif`;
   ctx.textBaseline = 'middle';
   ctx.textAlign = 'center';
-  ctx.fillText('Hall principal', canvas.width / 2, canvas.height / 2);
+  ctx.fillText(title, canvas.width / 2, canvas.height / 2);
 
   const tex = new THREE.CanvasTexture(canvas);
   tex.colorSpace = THREE.SRGBColorSpace;
@@ -211,4 +222,12 @@ function addHubTitle(group) {
   plaque.rotation.x = -Math.PI / 2;
   plaque.position.set(0, 0.015, 0);
   group.add(plaque);
+}
+
+function fitTitleFont(ctx, text, maxWidth, startSize, minSize) {
+  for (let size = startSize; size >= minSize; size -= 2) {
+    ctx.font = `italic 600 ${size}px Georgia, "Times New Roman", serif`;
+    if (ctx.measureText(text).width <= maxWidth) return size;
+  }
+  return minSize;
 }

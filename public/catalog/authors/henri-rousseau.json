@@ -1,0 +1,27 @@
+{
+  "id": "henri-rousseau",
+  "name": "Henri Rousseau",
+  "category": "simbolismo-modernismo-naif",
+  "fullName": "Henri Julien Félix Rousseau",
+  "years": "1844 – 1910",
+  "origin": "Laval, Francia",
+  "bio": "Pintor autodidacta asociado al arte naïf y admirado por las vanguardias parisinas. Sus selvas imaginarias, construidas desde jardines botánicos, estampas y fantasía, combinan frontalidad, detalle minucioso y una extraña intensidad poética.",
+  "paintings": [
+    {
+      "id": "rousseau-sueno",
+      "title": "El sueño",
+      "year": 1910,
+      "description": "Una mujer reclinada aparece en plena selva entre plantas, músicos y animales acechantes. Rousseau combina imaginación, frontalidad y detalle decorativo en una escena onírica que fascinó a las vanguardias.",
+      "dimensions": {
+        "width": 299,
+        "height": 204
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg",
+      "collection": "Museum of Modern Art, Nueva York",
+      "medium": "Óleo sobre lienzo",
+      "movement": "Postimpresionismo / arte naíf",
+      "imageLicense": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg"
+    }
+  ]
+}

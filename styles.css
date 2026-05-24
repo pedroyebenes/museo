@@ -307,6 +307,20 @@ body.playing .catalog-btn:not(.hidden) { display: block; }
   font-size: 0.9rem;
 }
 
+.catalog-section {
+  margin: 0 0 0.8rem;
+}
+
+.catalog-section-heading {
+  margin: 0.7rem 0 0.3rem;
+  padding: 0 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--museum-gold);
+}
+
 .catalog-back {
   margin: 0.25rem 0.5rem 0.75rem;
   padding: 0.35rem 0.5rem;
@@ -334,7 +348,9 @@ body.playing .catalog-btn:not(.hidden) { display: block; }
 }
 
 .catalog-detail-years,
-.catalog-detail-origin {
+.catalog-detail-origin,
+.catalog-detail-description,
+.catalog-detail-bio {
   margin: 0.15rem 0;
   padding: 0 0.85rem;
   font-size: 0.85rem;
@@ -342,6 +358,13 @@ body.playing .catalog-btn:not(.hidden) { display: block; }
 }
 
 .catalog-detail-origin { font-style: italic; }
+
+.catalog-detail-description,
+.catalog-detail-bio {
+  margin-top: 0.45rem;
+  line-height: 1.45;
+  color: #ddd;
+}
 
 .catalog-go-room {
   display: block;

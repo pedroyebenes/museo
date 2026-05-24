@@ -1,29 +1,35 @@
 ---
 name: museo-catalogo-obras
 description: >-
-  Añade autores y cuadros famosos al Museo Virtual editando paintings.json y
-  authors.json. Usar cuando el usuario pida nuevas obras, autores, ampliar el
-  catálogo, obras maestras, pintores famosos, o contenido del museo en JSON.
+  Añade categorías, autores y cuadros famosos al Museo Virtual editando el
+  catálogo modular en public/catalog. Usar cuando el usuario pida nuevas obras,
+  autores, ampliar el catálogo, obras maestras, pintores famosos o contenido del
+  museo en JSON.
 ---
 
-# Museo Virtual — ampliar catálogo (autores y cuadros)
+# Museo Virtual — ampliar catálogo
 
-Amplía el museo **solo con datos JSON**. La guía completa está en [`AGENTS.md`](../../AGENTS.md); esta skill define el **flujo de trabajo** y criterios de calidad.
+Amplía el museo **solo con datos JSON**. La guía completa está en [`AGENTS.md`](../../../AGENTS.md); esta skill resume el flujo operativo.
 
-## Archivos (única fuente de verdad)
+## Fuente de verdad
 
 | Archivo | Acción |
 |---------|--------|
-| [`public/paintings.json`](../../public/paintings.json) | Array de cuadros |
-| [`public/authors.json`](../../public/authors.json) | Biografías (clave = `author` del cuadro) |
+| [`public/catalog/index.json`](../../../public/catalog/index.json) | Orden de categorías y autores |
+| [`public/catalog/authors/{autor-slug}.json`](../../../public/catalog/authors/) | Biografía, categoría y obras del autor |
 
 **No editar** `dist/` ni código salvo que el usuario pida campos o comportamiento nuevos.
 
-## Regla de oro
+**No recrear** `public/paintings.json` ni `public/authors.json`; el catálogo antiguo fue retirado.
 
-El string `"author"` en cada cuadro debe ser **idéntico** a la clave en `authors.json` (tildes, espacios, mayúsculas). Un solo nombre por pintor en todo el proyecto (p. ej. `"Claude Monet"`, no `"Monet"` en un sitio y otro en otro).
+## Reglas de estructura
 
----
+- Cada autor tiene un archivo `public/catalog/authors/{slug}.json`.
+- `author.id` debe coincidir con `{slug}`.
+- `author.category` debe existir en `public/catalog/index.json`.
+- El slug del autor debe aparecer una sola vez en `categories[].authors`.
+- Las obras dentro de `paintings` **no llevan** campo `author`; el cargador lo inyecta desde `author.name`.
+- Cada `painting.id` es único globalmente.
 
 ## Flujo recomendado
 
@@ -33,152 +39,95 @@ Ejecuta antes y después:
 
 ```bash
 cd /ruta/al/repo/museo
-
-node -e "
-const p=require('./public/paintings.json');
-const a=require('./public/authors.json');
-const authors=[...new Set(p.map(x=>x.author))];
-const byAuthor={};
-p.forEach(x=>{byAuthor[x.author]=(byAuthor[x.author]||0)+1});
-console.log('Cuadros:', p.length, '| Autores:', authors.length);
-authors.forEach(n=>console.log(' ',n,':',byAuthor[n]));
-const missing=authors.filter(n=>!a[n]);
-if(missing.length) console.log('Sin biografía:', missing);
-const ids=new Set(p.map(x=>x.id));
-if(ids.size!==p.length) console.log('ERROR: ids duplicados');
-"
+npm run validate:catalog
 ```
 
-No duplicar `id` ni autor ya cubierto con el mismo nombre mal escrito.
+Lee `public/catalog/index.json` para entender categorías y orden público. Lee el archivo del autor si ya existe.
 
 ### 2. Elegir obras
 
-Priorizar **obras reconocibles** (iconos del arte occidental y oriental ya presente en el museo). Por autor nuevo, apunta a **3–6 cuadros** representativos; para autor existente, **1–3** obras que falten.
+Priorizar obras reconocibles y verificables. Por autor nuevo, apunta a **3–6 cuadros** representativos; para autor existente, **1–3** obras que falten.
 
-Comprueba en `paintings.json` que el título/obras no estén ya (mismo autor + tema similar).
+Comprueba en el archivo del autor que el título/tema no esté ya duplicado.
 
-### 3. Autor nuevo → orden de edición
+### 3. Autor nuevo
 
-1. Añadir entrada en **`authors.json`** (`fullName`, `years`, `origin`, `bio` en español, 3–5 frases, tono museo).
-2. Añadir cuadros en **`paintings.json`** con el mismo `"author"`.
-3. **Primera aparición** del autor en el array define la **puerta del hall** y el orden en el catálogo (`M`). Si importa la posición, inserta el primer cuadro de ese autor donde quieras la puerta; si no, al final del array.
+1. Elegir slug en kebab-case, sin tildes: `frida-kahlo`.
+2. Crear `public/catalog/authors/frida-kahlo.json` con `id`, `name`, `category`, `fullName`, `years`, `origin`, `bio` y `paintings`.
+3. Añadir `frida-kahlo` al array `authors` de la categoría correspondiente en `public/catalog/index.json`.
+4. El orden en ese array define la puerta dentro de la sala de categoría.
 
 ### 4. Autor existente
 
-Solo `paintings.json`: nuevos objetos **juntos** a los demás cuadros del mismo `author` (o al final si no importa agrupación en archivo).
+Editar solo `public/catalog/authors/{slug}.json` y añadir obras al array `paintings`. No tocar `index.json` salvo que haya que reordenar o mover al autor.
 
 ### 5. Por cada cuadro
 
 | Campo | Cómo rellenarlo |
 |-------|------------------|
 | `id` | `{apellido}-{slug-titulo}` kebab-case, único, sin tildes |
-| `url` | HTTPS Wikimedia Commons (`upload.wikimedia.org`), imagen JPG/PNG, CORS OK |
-| `title` | Título en español (nombre habitual en museos españoles) |
-| `author` | Igual que clave en `authors.json` |
-| `year` | Entero (año de ejecución; `c.` en `years` del autor, no en `year`) |
-| `description` | 1–3 frases en español: contexto, técnica o legado; sin spoilers vacíos |
-| `dimensions` | **Siempre** si existen datos de museo: `width` y `height` en **cm** |
+| `url` | HTTPS Wikimedia Commons (`upload.wikimedia.org`), imagen directa JPG/PNG/WebP, CORS OK |
+| `title` | Título en español cuando exista nombre habitual |
+| `year` | Número; si la fecha es aproximada, usar el año principal |
+| `description` | 1–3 frases en español: contexto, técnica o legado |
+| `dimensions` | `width` y `height` en centímetros |
 
-### 6. Buscar imagen en Wikimedia Commons
+No añadas `author` dentro del cuadro.
 
-1. Buscar en [commons.wikimedia.org](https://commons.wikimedia.org): «Author Title painting».
-2. Elegir archivo de **dominio público** o licencia compatible.
-3. Clic en el archivo → botón derecho «Archivo original» / URL que empiece por `https://upload.wikimedia.org/...`.
-4. Comprobar con `curl -sI "URL" | head -5` que responde `200` y `content-type: image/...`.
+### 6. Imagen y dimensiones
 
-No uses Google Arts, museos con hotlinking ni URLs que requieran cookies.
+Fuentes fiables:
 
-### 7. Dimensiones
+- Wikimedia Commons para imagen directa.
+- Fichas de museos (Prado, Louvre, Met, Uffizi, etc.) para dimensiones.
+- Wikidata/Wikipedia como apoyo cuando citen fuente clara.
 
-Fuentes fiables: ficha del museo (Prado, Louvre, Met, Uffizi), Wikipedia infobox «Dimensiones», Wikidata.  
-`width` = ancho horizontal del **lienzo**; `height` = alto. Obras murales/frescos: dimensiones del campo pictórico si constan.
-
-### 8. Validar y cerrar
+Comprobar imagen:
 
 ```bash
-node -e "JSON.parse(require('fs').readFileSync('public/paintings.json','utf8')); console.log('paintings.json OK')"
-node -e "JSON.parse(require('fs').readFileSync('public/authors.json','utf8')); console.log('authors.json OK')"
+curl -L -I "URL_DE_IMAGEN" | sed -n '1,12p'
+```
+
+Debe verse una respuesta válida y `content-type: image/...`.
+
+### 7. Validar y cerrar
+
+```bash
+npm run validate:catalog
+npm run build
 ```
 
 Checklist:
 
-- [ ] JSON válido, sin comas finales
-- [ ] `id` únicos
-- [ ] `author` ↔ clave `authors.json`
-- [ ] Todas las entradas con `dimensions`
-- [ ] URLs HTTPS verificadas
-- [ ] Textos en español, estilo divulgativo como las entradas vecinas
-- [ ] Autor nuevo: bio + al menos un cuadro
-- [ ] No se tocó `dist/` ni código innecesario
-
-Opcional: `npm run build` si hubo cambios de código (solo JSON no hace falta build para probar con `npm run dev`).
-
----
-
-## Estilo de redacción
-
-- **Biografías:** tercera persona, datos verificables, una frase de estilo/época.
-- **Descripciones de cuadros:** qué se ve, por qué importa, dónde se conserva o quién encargó si es relevante.
-- Evitar juicios vacíos («obra maestra increíble»); preferir hechos.
-
-Copia el tono de entradas cercanas en `paintings.json` / `authors.json` (p. ej. Sorolla, David, Tiziano).
-
----
-
-## Autores en el museo (referencia dinámica)
-
-Antes de añadir, **lee** `public/paintings.json` y lista autores actuales con el script del §1.  
-A mayo de 2026 el museo incluye entre otros: Tiziano, Paolo Veronese, Velázquez, Murillo, Vermeer, Hokusai, Monet, Van Gogh, Munch, Sorolla, Dalí, Jacques-Louis David, Miguel Ángel (~40 cuadros).
-
-## Ideas de autores aún no representados (sugerencias)
-
-Usar solo si el usuario no especifica lista. Comprobar siempre que no existan ya:
-
-| Autor (clave sugerida) | Obras icono (ejemplos) |
-|------------------------|-------------------------|
-| Leonardo da Vinci | La Gioconda, La Última Cena (detalle), Virgen de las Rocas |
-| Rafael | La Escuela de Atenas (detalle), La Virgen del Jilguero |
-| Caravaggio | La vocación de San Mateo, David con la cabeza de Goliat |
-| Rembrandt | La ronda de noche, Autorretrato |
-| Peter Paul Rubens | El descendimiento de la cruz |
-| El Greco | El entierro del Conde de Orgaz, Vista de Toledo |
-| Francisco de Goya | El tres de mayo, La maja desnuda |
-| Sandro Botticelli | El nacimiento de Venus, La Primavera |
-| Pablo Picasso | Guernica, Las señoritas de Aviñón |
-| Pierre-Auguste Renoir | Baile en Moulin de la Galette |
-| Edgar Degas | La clase de ballet |
-| Paul Cézanne | Los jugadores de cartas |
-| Gustav Klimt | El beso |
-| Frida Kahlo | Las dos Fridas |
-| Jan van Eyck | El matrimonio Arnolfini |
-| Francisco de Zurbarán | Santa Casilda |
-
-Añade **varios cuadros por autor** cuando el usuario pida «ampliar mucho» el museo; si pide «un autor», 3–5 obras bastan.
-
----
+- [ ] `npm run validate:catalog` pasa.
+- [ ] Autor nuevo listado en `index.json`.
+- [ ] `author.id` coincide con el archivo.
+- [ ] `author.category` coincide con la categoría donde está listado.
+- [ ] `painting.id` únicos.
+- [ ] Obras con URL, título, año, descripción y dimensiones.
+- [ ] Textos en español, estilo divulgativo como entradas vecinas.
+- [ ] No se tocó `dist/`.
 
 ## Si el usuario pide cantidad concreta
 
 | Petición | Acción |
 |----------|--------|
-| «Añade a Goya» | Bio en `authors.json` si falta + 3–5 obras en `paintings.json` |
-| «10 pintores nuevos» | 10 autores con bio + 2–4 obras cada uno; variedad de épocas |
-| «Solo un cuadro» | Una entrada; no crear autor duplicado |
-| «Reordena el hall» | Reordenar **primer** cuadro de cada autor en `paintings.json` (con cuidado) |
-
----
+| «Añade a Goya» | Editar `public/catalog/authors/francisco-de-goya.json` y añadir 3–5 obras |
+| «10 pintores nuevos» | Crear 10 archivos de autor + listarlos en `index.json`, con variedad de categorías |
+| «Solo un cuadro» | Añadir una entrada al autor correcto; no crear duplicados |
+| «Reordena el hall» | Reordenar `categories` en `public/catalog/index.json` |
+| «Reordena autores» | Reordenar `categories[].authors` dentro de la categoría |
 
 ## Errores a evitar
 
-- Duplicar variantes del nombre (`"Van Gogh"` vs `"Vincent van Gogh"`).
-- Olvidar `authors.json` → sala sin placa biográfica.
-- `id` sin prefijo de autor → colisión futura.
+- Crear un archivo de autor sin listarlo en `index.json`.
+- Poner `author` dentro de cada cuadro.
+- Duplicar ids de obras.
+- Cambiar `category` en el autor sin moverlo en `index.json`.
 - Dimensiones en metros o pulgadas sin convertir a cm.
-- URL de miniatura de Wikimedia (`.../thumb/...`) en lugar del original.
-
----
+- URL de miniatura cuando exista imagen original de Wikimedia.
 
 ## Relación con otras skills
 
 - Aspecto visual del museo: [museo-visual-neoclassico](../museo-visual-neoclassico/SKILL.md)
-- Datos y esquema detallado: [`AGENTS.md`](../../AGENTS.md)
+- Datos y esquema detallado: [`AGENTS.md`](../../../AGENTS.md)

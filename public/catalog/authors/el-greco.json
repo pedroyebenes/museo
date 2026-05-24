@@ -1,0 +1,33 @@
+{
+  "id": "el-greco",
+  "name": "El Greco",
+  "category": "renacimiento-manierismo",
+  "fullName": "Doménikos Theotokópoulos, El Greco",
+  "years": "1541 – 1614",
+  "origin": "Candía (Creta), República de Venecia",
+  "bio": "Formado en la escuela cretense y veneciana, se estableció en Toledo y creó un estilo único de figuras elongadas y cromatismos fríos. Puente entre el Renacimiento italiano y el barroco español.",
+  "paintings": [
+    {
+      "id": "el-greco-entierro-orgaz",
+      "title": "El entierro del Conde de Orgaz",
+      "year": 1586,
+      "description": "Obra maestra de la iglesia de Santo Tomé en Toledo. El entierro milagroso ocupa el registro terrenal, mientras el alma del conde asciende hacia una corte celestial de cuerpos alargados y luz visionaria.",
+      "dimensions": {
+        "width": 360,
+        "height": 480
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/El_Greco_-_The_Burial_of_the_Count_of_Orgaz.JPG"
+    },
+    {
+      "id": "el-greco-vista-toledo",
+      "title": "Vista de Toledo",
+      "year": 1599,
+      "description": "Paisaje dramático de la ciudad adoptiva bajo un cielo tormentoso, más emocional que topográfico. La luz verdosa, las colinas tensas y la arquitectura comprimida anticipan el paisaje expresivo del siglo XIX.",
+      "dimensions": {
+        "width": 121,
+        "height": 109
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/El_Greco_View_of_Toledo.jpg"
+    }
+  ]
+}

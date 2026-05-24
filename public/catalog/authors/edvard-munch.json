@@ -1,0 +1,22 @@
+{
+  "id": "edvard-munch",
+  "name": "Edvard Munch",
+  "category": "simbolismo-modernismo-naif",
+  "fullName": "Edvard Munch",
+  "years": "1863 – 1944",
+  "origin": "Løten, Noruega",
+  "bio": "Precursor del expresionismo. Concibió su obra como un Friso de la vida que recorre el amor, la angustia y la muerte. El grito, su icono, condensa la sensación moderna de soledad y vértigo existencial.",
+  "paintings": [
+    {
+      "id": "munch-el-grito",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+      "title": "El grito",
+      "year": 1893,
+      "description": "Icono del expresionismo. Munch describió la inspiración como un paseo al atardecer en el que sintió un \"grito infinito que atraviesa la naturaleza\".",
+      "dimensions": {
+        "width": 73,
+        "height": 91
+      }
+    }
+  ]
+}

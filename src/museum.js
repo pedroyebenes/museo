@@ -18,7 +18,14 @@ const PAINTING_VIEW_DISTANCE = 2.0;
 // Builds an author room: paintings on N/E/W walls, one door on the S wall
 // that leads back to the hub. Returns slots/segments/triggers/spawn.
 export function buildAuthorRoom(scene, config) {
-  const { author, paintings = [], bio = null } = config;
+  const {
+    author,
+    authorId = author,
+    categoryId = null,
+    categoryLabel = 'Categoría',
+    paintings = [],
+    bio = null,
+  } = config;
 
   const walls = partitionPaintings(paintings);
   const perWallMax = Math.max(
@@ -42,7 +49,10 @@ export function buildAuthorRoom(scene, config) {
   const depth = widthSide;
 
   const group = new THREE.Group();
-  group.name = `room:${author}`;
+  group.name = `room:author:${authorId}`;
+  const exitDestination = categoryId
+    ? { kind: 'category', categoryId }
+    : { kind: 'hub' };
 
   const { segments, triggers } = buildRoomShell(group, {
     width,
@@ -58,9 +68,9 @@ export function buildAuthorRoom(scene, config) {
         doors: [
           {
             position: 0,
-            label: 'Hall principal',
+            label: categoryId ? categoryLabel : 'Hall principal',
             arrow: '←',
-            destination: { kind: 'hub' },
+            destination: exitDestination,
           },
         ],
       },
@@ -117,8 +127,11 @@ export function buildAuthorRoom(scene, config) {
     triggers,
     dimensions: { width, depth, height },
     author,
+    authorId,
+    categoryId,
     kind: 'author',
     spawn: {
+      fromCategory: defaultSpawn,
       fromHub: defaultSpawn,
       initial: defaultSpawn,
       ...buildPaintingSpawns(slots, paintings),

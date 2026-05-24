@@ -1,0 +1,22 @@
+{
+  "id": "francisco-de-zurbaran",
+  "name": "Francisco de Zurbarán",
+  "category": "barroco",
+  "fullName": "Francisco de Zurbarán",
+  "years": "1598 – 1664",
+  "origin": "Fuente de Cantos, Extremadura, España",
+  "bio": "«Pintor de los reyes y de los monjes». Su barroco sevillano combina silencio místico, telas densas y objetos aislados contra fondos oscuros. Santa Casilda resume su devoción y su precisión casi escultórica.",
+  "paintings": [
+    {
+      "id": "zurbaran-santa-casilda",
+      "title": "Santa Casilda",
+      "year": 1635,
+      "description": "La santa presenta la cesta de rosas que, según la leyenda, ocultaba el pan destinado a cristianos perseguidos. El fondo oscuro, la túnica blanca y el silencio frontal concentran el misticismo sobrio de Zurbarán.",
+      "dimensions": {
+        "width": 97,
+        "height": 169
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Francisco_de_Zurbar%C3%A1n_-_Santa_Casilda.jpg"
+    }
+  ]
+}

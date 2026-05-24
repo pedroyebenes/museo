@@ -1,0 +1,27 @@
+{
+  "id": "odilon-redon",
+  "name": "Odilon Redon",
+  "category": "simbolismo-modernismo-naif",
+  "fullName": "Odilon Redon",
+  "years": "1840 – 1916",
+  "origin": "Burdeos, Francia",
+  "bio": "Figura central del simbolismo francés. Sus dibujos y pinturas sustituyen la observación naturalista por visiones interiores, mitológicas y oníricas. En su obra tardía, el color se vuelve luminoso y fantástico, con flores, criaturas híbridas y escenas suspendidas entre sueño y alegoría.",
+  "paintings": [
+    {
+      "id": "redon-ciclope",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Odilon_Redon_-_The_Cyclops%2C_c._1914.jpg",
+      "title": "El cíclope",
+      "year": 1914,
+      "description": "Una cabeza gigantesca observa con ternura a Galatea dormida entre flores. Redon transforma el mito en una visión simbolista donde lo monstruoso se vuelve contemplativo y casi melancólico.",
+      "dimensions": {
+        "width": 64,
+        "height": 51
+      },
+      "collection": "Kröller-Müller Museum, Otterlo",
+      "medium": "Óleo sobre cartón montado sobre panel",
+      "movement": "Simbolismo",
+      "imageLicense": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_The_Cyclops,_c._1914.jpg"
+    }
+  ]
+}

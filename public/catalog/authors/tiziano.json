@@ -1,0 +1,66 @@
+{
+  "id": "tiziano",
+  "name": "Tiziano",
+  "category": "renacimiento-manierismo",
+  "fullName": "Tiziano Vecellio",
+  "years": "c. 1488 – 1576",
+  "origin": "Pieve di Cadore, República de Venecia",
+  "bio": "Máximo representante de la escuela veneciana del Cinquecento. Su carrera, de más de seis décadas, abarcó retratos imperiales, mitologías para Felipe II y monumentales retablos religiosos. Innovó con el uso libre del color y la pincelada suelta, anticipando la pintura barroca.",
+  "paintings": [
+    {
+      "id": "tiziano-amor-sacro-profano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tiziano_-_Amor_Sacro_y_Amor_Profano_%28Galer%C3%ADa_Borghese%2C_Roma%2C_1514%29.jpg",
+      "title": "Amor sacro y amor profano",
+      "year": 1514,
+      "description": "Alegoría compleja del Renacimiento veneciano. Dos figuras femeninas, una vestida y otra desnuda, flanquean un sarcófago decorado en un paisaje arcádico.",
+      "dimensions": {
+        "width": 279,
+        "height": 118
+      }
+    },
+    {
+      "id": "tiziano-asuncion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Tizian_041.jpg",
+      "title": "La Asunción de la Virgen",
+      "year": 1518,
+      "description": "Retablo monumental pintado para Santa María Gloriosa dei Frari de Venecia. La composición vertical en tres registros (apóstoles, Virgen ascendiendo, Padre Eterno) consagró a Tiziano como gran maestro veneciano.",
+      "dimensions": {
+        "width": 360,
+        "height": 690
+      }
+    },
+    {
+      "id": "tiziano-baco-ariadna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Titian_Bacchus_and_Ariadne.jpg",
+      "title": "Baco y Ariadna",
+      "year": 1523,
+      "description": "Parte del ciclo mitológico encargado por Alfonso d'Este para el camerino d'alabastro de Ferrara. Captura el instante en que Baco salta del carro al ver a Ariadna abandonada en Naxos.",
+      "dimensions": {
+        "width": 191,
+        "height": 176.5
+      }
+    },
+    {
+      "id": "tiziano-venus-urbino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+      "title": "Venus de Urbino",
+      "year": 1538,
+      "description": "Retrato de una mujer reclinada en una alcoba renacentista. Influyó en innumerables desnudos posteriores, incluida la Olimpia de Manet.",
+      "dimensions": {
+        "width": 165,
+        "height": 119
+      }
+    },
+    {
+      "id": "tiziano-carlos-v-muhlberg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Carlos_V_en_la_batalla_de_M%C3%BChlberg.jpg",
+      "title": "Carlos V en la batalla de Mühlberg",
+      "year": 1548,
+      "description": "Retrato ecuestre del emperador tras su victoria sobre la Liga de Esmalcalda. Modelo de retrato imperial que fija la iconografía del soberano a caballo durante siglos.",
+      "dimensions": {
+        "width": 279,
+        "height": 332
+      }
+    }
+  ]
+}

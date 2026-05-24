@@ -1,0 +1,22 @@
+{
+  "id": "peter-paul-rubens",
+  "name": "Peter Paul Rubens",
+  "category": "barroco",
+  "fullName": "Peter Paul Rubens",
+  "years": "1577 – 1640",
+  "origin": "Siegen, Sacro Imperio Romano",
+  "bio": "Gigante del barroco flamenco: dinamismo, carnalidad y color sonoro. Diplomático y director de un taller prolífico, pintó mitologías, retratos reales y escenas religiosas de formato monumental.",
+  "paintings": [
+    {
+      "id": "rubens-descendimiento",
+      "title": "El descendimiento de la cruz",
+      "year": 1614,
+      "description": "Tríptico de la catedral de Amberes. Cuerpos en tensión diagonal y carne luminosa definen el barroco flamenco en su máxima intensidad devocional.",
+      "dimensions": {
+        "width": 421,
+        "height": 261
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Peter_Paul_Rubens_-_Descent_from_the_Cross_-_WGA20212.jpg"
+    }
+  ]
+}

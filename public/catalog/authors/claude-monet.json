@@ -1,0 +1,66 @@
+{
+  "id": "claude-monet",
+  "name": "Claude Monet",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Oscar-Claude Monet",
+  "years": "1840 – 1926",
+  "origin": "París, Francia",
+  "bio": "Padre del impresionismo y de la pintura en serie. Llevó al aire libre el estudio sistemático de cómo la luz transforma un mismo motivo a lo largo del día y de las estaciones. Su jardín de Giverny y los Nenúfares ocuparon sus últimas décadas.",
+  "paintings": [
+    {
+      "id": "monet-impresion-sol-naciente",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Monet_-_Impression%2C_Sunrise.jpg",
+      "title": "Impresión, sol naciente",
+      "year": 1872,
+      "description": "Vista del puerto de Le Havre al amanecer, reducida a brumas, reflejos y un sol naranja. Dio nombre al impresionismo cuando un crítico empleó el título de forma despectiva en 1874.",
+      "dimensions": {
+        "width": 65,
+        "height": 50
+      }
+    },
+    {
+      "id": "monet-urraca",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg",
+      "title": "La urraca",
+      "year": 1869,
+      "description": "Paisaje invernal con una urraca posada sobre una cancela. Estudio de las sombras coloreadas en la nieve que anticipa el lenguaje impresionista.",
+      "dimensions": {
+        "width": 130,
+        "height": 89
+      }
+    },
+    {
+      "id": "monet-mujer-sombrilla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Claude_Monet_-_Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son_-_Google_Art_Project.jpg",
+      "title": "Mujer con sombrilla",
+      "year": 1875,
+      "description": "Retrato al aire libre de Camille y Jean Monet, esposa e hijo del pintor. La pincelada suelta y el contraluz capturan la brisa y la luz del momento.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "monet-catedral-rouen",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Claude_Monet_-_Rouen_Cathedral%2C_Facade_%28Sunset%29.JPG",
+      "title": "La catedral de Rouen, fachada (atardecer)",
+      "year": 1894,
+      "description": "De la serie en la que Monet pintó la misma fachada gótica a diferentes horas y estaciones para estudiar cómo la luz transforma la materia.",
+      "dimensions": {
+        "width": 100.1,
+        "height": 65
+      }
+    },
+    {
+      "id": "monet-nenufares",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Claude_Monet_-_Water_Lilies_-_1906%2C_Ryerson.jpg",
+      "title": "Nenúfares",
+      "year": 1906,
+      "description": "Una de las muchas vistas del estanque de Giverny. La superficie del agua se funde con los reflejos del cielo y las flores, deshaciendo la profundidad.",
+      "dimensions": {
+        "width": 94.1,
+        "height": 89.8
+      }
+    }
+  ]
+}

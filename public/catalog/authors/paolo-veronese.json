@@ -1,0 +1,22 @@
+{
+  "id": "paolo-veronese",
+  "name": "Paolo Veronese",
+  "category": "renacimiento-manierismo",
+  "fullName": "Paolo Caliari, detto Veronese",
+  "years": "1528 – 1588",
+  "origin": "Verona, República de Venecia",
+  "bio": "Maestro del color veneciano del Cinquecento tardío. Especialista en grandes decoraciones palaciegas y escenas bíblicas convertidas en fastuosos banquetes. Su dominio de la perspectiva, el vestuario y las multitudes lo convirtió en uno de los pintores más solicitados de la Serenísima.",
+  "paintings": [
+    {
+      "id": "veronese-bodas-cana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_%3B_MR_384.jpg",
+      "title": "Las bodas de Caná",
+      "year": 1563,
+      "description": "Monumental escena bíblica encargada para el refectorio de San Giorgio Maggiore de Venecia. Veronese convierte el milagro de las bodas en un banquete veneciano de más de ciento treinta personajes, con una prodigiosa armonía de color y arquitectura.",
+      "dimensions": {
+        "width": 994,
+        "height": 677
+      }
+    }
+  ]
+}

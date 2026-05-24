@@ -1,0 +1,33 @@
+{
+  "id": "sandro-botticelli",
+  "name": "Sandro Botticelli",
+  "category": "renacimiento-manierismo",
+  "fullName": "Alessandro di Mariano Filipepi, detto Botticelli",
+  "years": "c. 1445 – 1510",
+  "origin": "Florencia, República de Florencia",
+  "bio": "Pintor clave del Quattrocento florentino, cercano a los Médici. Sus mitologías —Venus y Primavera— sintetizan la estética neoplatónica con líneas melódicas y paleta delicada.",
+  "paintings": [
+    {
+      "id": "botticelli-nacimiento-venus",
+      "title": "El nacimiento de Venus",
+      "year": 1485,
+      "description": "Venus nace de la espuma del mar y llega a la orilla en una concha, empujada por los vientos y recibida por una Hora. Obra cumbre del neoplatonismo florentino, transforma el mito clásico en ideal poético de belleza.",
+      "dimensions": {
+        "width": 173,
+        "height": 279
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
+    },
+    {
+      "id": "botticelli-primavera",
+      "title": "La Primavera",
+      "year": 1482,
+      "description": "Alegoría de la primavera en un bosque de naranjos: Venus, las Tres Gracias y el dios del viento Zepiro en una danza de figuras líricas.",
+      "dimensions": {
+        "width": 203,
+        "height": 314
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Botticelli-primavera.jpg"
+    }
+  ]
+}

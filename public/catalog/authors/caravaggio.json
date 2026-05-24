@@ -1,0 +1,44 @@
+{
+  "id": "caravaggio",
+  "name": "Caravaggio",
+  "category": "barroco",
+  "fullName": "Michelangelo Merisi da Caravaggio",
+  "years": "1571 – 1610",
+  "origin": "Milán, Ducado de Milán",
+  "bio": "Revolucionó la pintura barroca con un naturalismo brutal y contrastes de luz teatrales. Huyó de Roma tras matar a un rival, pero su legado —los caravaggisti— se extendió por Italia y Europa.",
+  "paintings": [
+    {
+      "id": "caravaggio-vocacion-mateo",
+      "title": "La vocación de San Mateo",
+      "year": 1600,
+      "description": "En la capilla Contarelli de San Luis de los Franceses, Cristo señala a Mateo entre recaudadores y taverneros. Un rayo de luz atraviesa la oscuridad y convierte una escena cotidiana en revelación barroca.",
+      "dimensions": {
+        "width": 340,
+        "height": 322
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg"
+    },
+    {
+      "id": "caravaggio-david-goliat",
+      "title": "David con la cabeza de Goliat",
+      "year": 1610,
+      "description": "David sostiene la cabeza del gigante —con rasgos del propio pintor— en una reflexión sobre la violencia y la redención. Obra tardía de su estancia en Nápoles.",
+      "dimensions": {
+        "width": 125,
+        "height": 101
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/David_with_the_Head_of_Goliath-Caravaggio_(1610).jpg"
+    },
+    {
+      "id": "caravaggio-baco",
+      "title": "Baco",
+      "year": 1596,
+      "description": "Joven dios del vino ofrece la copa al espectador con una naturalidad casi provocadora. Bodegón y retrato fundidos en una de sus primeras obras maestras romanas.",
+      "dimensions": {
+        "width": 85,
+        "height": 95
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bacchus-Caravaggio_%281598%29.jpg"
+    }
+  ]
+}

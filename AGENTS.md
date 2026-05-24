@@ -1,215 +1,243 @@
-# Guía para agentes AI: añadir cuadros y autores al Museo Virtual
+# Guía para agentes AI: catálogo del Museo Virtual
 
 Este documento describe cómo ampliar el catálogo del museo editando **solo datos JSON**. No hace falta tocar código salvo que se quieran campos nuevos o comportamiento distinto.
 
 ## Archivos que debes editar
 
 | Archivo | Qué contiene |
-|---------|----------------|
-| [`public/paintings.json`](public/paintings.json) | Catálogo de cuadros (array JSON) |
-| [`public/authors.json`](public/authors.json) | Biografías de autores (objeto JSON) |
+|---------|--------------|
+| [`public/catalog/index.json`](public/catalog/index.json) | Orden público de categorías y autores |
+| [`public/catalog/authors/{autor-slug}.json`](public/catalog/authors/) | Biografía, categoría y obras de cada autor |
 
 **No edites** `dist/` — es la build de producción y se regenera con `npm run build`.
+
+**No recrees ni edites** `public/paintings.json` ni `public/authors.json`. El catálogo antiguo fue retirado y ya no es fuente de verdad.
 
 Para cambios de **paredes, texturas o iluminación ambiente** (estilo neoclásico, costuras de UV), sigue la skill [`.cursor/skills/museo-visual-neoclassico/SKILL.md`](.cursor/skills/museo-visual-neoclassico/SKILL.md).
 
 Para **añadir autores y cuadros famosos** (solo JSON), sigue la skill [`.cursor/skills/museo-catalogo-obras/SKILL.md`](.cursor/skills/museo-catalogo-obras/SKILL.md).
 
+Para **rellenar salas completas** o cuando el usuario invoque **`/museo`**, sigue la skill [`.cursor/skills/museo-rellenar-salas/SKILL.md`](.cursor/skills/museo-rellenar-salas/SKILL.md).
+
 ---
 
-## Regla crítica: el nombre del autor debe coincidir
+## Regla crítica: ids coherentes
 
-El campo `author` de cada cuadro en `paintings.json` debe ser **exactamente igual** (misma ortografía, tildes y espacios) a la clave correspondiente en `authors.json`.
+Cada autor vive en un archivo propio:
 
-```json
-// paintings.json
-"author": "Paolo Veronese"
-
-// authors.json
-"Paolo Veronese": { ... }
+```text
+public/catalog/authors/claude-monet.json
 ```
 
-Si el autor existe en `paintings.json` pero **no** en `authors.json`, la sala se crea igualmente, pero **no aparecerá la placa biográfica** en la pared.
+El campo `id` dentro de ese archivo debe coincidir exactamente con el slug del archivo y con el slug listado en `index.json`:
+
+```json
+// public/catalog/index.json
+"authors": ["claude-monet"]
+
+// public/catalog/authors/claude-monet.json
+{
+  "id": "claude-monet",
+  "name": "Claude Monet",
+  "category": "impresionismo-postimpresionismo",
+  "paintings": []
+}
+```
+
+El campo `category` del autor debe coincidir con el `id` de una categoría existente en `index.json`.
 
 ---
 
 ## Cómo el museo usa estos datos
 
-1. Al arrancar, la app carga ambos JSON desde `/paintings.json` y `/authors.json`.
-2. Agrupa los cuadros por `author` en el orden en que **aparecen por primera vez** en `paintings.json` → eso define:
-   - el **orden de las puertas** en el hall principal;
-   - el índice de cada sala de autor.
-3. Cada autor tiene una **sala rectangular** con sus cuadros en las paredes norte, este y oeste.
-4. El tamaño de la sala y la altura del techo se calculan a partir de las **dimensiones reales** de los cuadros.
-5. Al mirar un cuadro, el HUD muestra título, autor, año y descripción.
-6. El **catálogo** (`M` o botón «Catálogo») lista autores y permite teletransportarse a una sala o delante de un cuadro concreto, sin depender del hall principal.
+1. Al arrancar, la app carga `/catalog/index.json`.
+2. El índice define:
+   - el **orden de las puertas de categorías** en el hall principal;
+   - el **orden de las puertas de autores** dentro de cada sala de categoría.
+3. La app carga cada archivo `public/catalog/authors/{id}.json`.
+4. Cada autor tiene una **sala rectangular** con sus cuadros en las paredes norte, este y oeste.
+5. El cargador inyecta en memoria el nombre del autor en cada obra para que el HUD, etiquetas y teletransporte sigan funcionando.
+6. La navegación 3D es: **Hall principal → sala de categoría → sala de autor → cuadros**.
+7. El **catálogo** (`M` o botón «Catálogo») permite saltar a una categoría, a una sala de autor o delante de un cuadro.
 
 ---
 
-## Esquema de un cuadro (`paintings.json`)
-
-Cada entrada del array es un objeto con estos campos:
-
-| Campo | Tipo | Obligatorio | Descripción |
-|-------|------|-------------|-------------|
-| `id` | string | sí | Identificador único, en kebab-case. Convención: `{apellido-o-nombre-corto}-{slug-del-titulo}` |
-| `url` | string | sí | URL HTTPS de la imagen. Debe ser accesible con CORS (Wikimedia Commons funciona bien) |
-| `title` | string | sí | Título visible en la etiqueta 3D y en el panel de información |
-| `author` | string | sí | Nombre del autor; debe coincidir con una clave de `authors.json` |
-| `year` | number | sí | Año de creación (entero, p. ej. `1894`) |
-| `description` | string | sí | Texto breve (1–3 frases) para el panel al mirar el cuadro |
-| `dimensions` | object | muy recomendado | Tamaño real del lienzo en **centímetros** |
-| `dimensions.width` | number | sí* | Ancho en cm |
-| `dimensions.height` | number | sí* | Alto en cm |
-
-\* Sin `dimensions`, el cuadro se renderiza con un tamaño genérico (~2 m de lado largo) usando la proporción de la imagen. **Siempre incluye dimensiones** cuando se conozcan: afectan al tamaño del cuadro, al techo y al ancho de la sala.
-
-### Ejemplo de cuadro nuevo
+## Esquema de `index.json`
 
 ```json
 {
-  "id": "goya-maya-vestida",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/.../La_maja_vestida.jpg",
-  "title": "La maja vestida",
-  "author": "Francisco de Goya",
-  "year": 1803,
-  "description": "Retrato en el que Goya contrasta con La maja desnuda. Ambas obras formaron parte de la colección de Godoy.",
-  "dimensions": {
-    "width": 95,
-    "height": 190
-  }
+  "categories": [
+    {
+      "id": "impresionismo-postimpresionismo",
+      "label": "Impresionismo y postimpresionismo",
+      "description": "Luz moderna, vida cotidiana y nuevas formas de construir el espacio pictórico.",
+      "authors": ["claude-monet", "edgar-degas"]
+    }
+  ]
 }
 ```
-
-### Convenciones para `id`
-
-- Minúsculas, palabras separadas por guiones.
-- Prefijo del autor para evitar colisiones: `sorolla-...`, `monet-...`.
-- Sin espacios ni tildes en el `id` (las tildes van en `title` y `author`).
-- Debe ser **único** en todo el array.
-
-### Imágenes (`url`)
-
-- Usa URLs de **Wikimedia Commons** (`upload.wikimedia.org`) cuando sea posible: son estables y permiten CORS.
-- Prefiere el archivo original o una resolución alta; la app redimensiona internamente (2048 px en desktop, 1024 px en móvil).
-- Evita URLs que requieran cookies o que bloqueen peticiones cross-origin.
-- Comprueba que la URL devuelve una imagen (jpg, png, webp).
-
-### Dimensiones
-
-- Unidades: **centímetros**, como en los catálogos de museos.
-- `width` = ancho horizontal del lienzo; `height` = alto vertical.
-- Obras muy grandes (p. ej. *Las bodas de Caná*, 994×677 cm) son válidas: la sala se adapta automáticamente.
-
----
-
-## Esquema de un autor (`authors.json`)
-
-Objeto cuya **clave** es el nombre corto del autor (el mismo string que `author` en los cuadros):
 
 | Campo | Tipo | Obligatorio | Descripción |
 |-------|------|-------------|-------------|
-| `fullName` | string | recomendado | Nombre completo para la placa biográfica |
-| `years` | string | recomendado | Fechas de nacimiento y muerte, p. ej. `"1746 – 1828"` |
-| `origin` | string | opcional | Lugar de origen |
-| `bio` | string | recomendado | Párrafo biográfico (3–5 frases). Se muestra en una placa dentro de la sala |
+| `categories` | array | sí | Lista ordenada de categorías |
+| `categories[].id` | string | sí | Slug único de categoría |
+| `categories[].label` | string | sí | Nombre visible en puertas, HUD y catálogo |
+| `categories[].description` | string | opcional | Texto breve para el catálogo |
+| `categories[].authors` | array | sí | Slugs de autores, en orden |
 
-### Ejemplo de autor nuevo
-
-```json
-"Francisco de Goya": {
-  "fullName": "Francisco José de Goya y Lucientes",
-  "years": "1746 – 1828",
-  "origin": "Fuendetodos, Aragón, España",
-  "bio": "Pintor y grabador clave entre el rococó y el arte moderno. Trabajó para la corte de Carlos IV y documentó en los Caprichos y el Dos de mayo la España de finales del siglo XVIII y principios del XIX."
-}
-```
+Un autor debe aparecer **una sola vez** en todo `index.json`.
 
 ---
 
-## Procedimientos paso a paso
+## Esquema de un autor
 
-### Añadir cuadros a un autor que ya existe
+Archivo: `public/catalog/authors/{autor-slug}.json`
 
-1. Abre `public/paintings.json`.
-2. Añade un objeto al **final del array** (o junto a los demás cuadros del mismo autor).
-3. Usa exactamente el mismo string en `author` que en `authors.json`.
-4. Genera un `id` único.
-5. Verifica que el JSON sigue siendo válido (array de objetos, comas correctas).
-6. No hace falta tocar `authors.json` si el autor ya está registrado.
+```json
+{
+  "id": "claude-monet",
+  "name": "Claude Monet",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Oscar-Claude Monet",
+  "years": "1840 – 1926",
+  "origin": "París, Francia",
+  "bio": "Padre del impresionismo y de la pintura en serie...",
+  "paintings": [
+    {
+      "id": "monet-impresion-sol-naciente",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Monet_-_Impression%2C_Sunrise.jpg",
+      "title": "Impresión, sol naciente",
+      "year": 1872,
+      "description": "Vista del puerto de Le Havre al amanecer...",
+      "dimensions": {
+        "width": 65,
+        "height": 50
+      }
+    }
+  ]
+}
+```
 
-### Añadir un autor nuevo (con sus cuadros)
+| Campo | Tipo | Obligatorio | Descripción |
+|-------|------|-------------|-------------|
+| `id` | string | sí | Slug único; debe coincidir con el nombre del archivo |
+| `name` | string | sí | Nombre visible del autor |
+| `category` | string | sí | `id` de categoría existente en `index.json` |
+| `fullName` | string | recomendado | Nombre completo para la placa biográfica |
+| `years` | string | recomendado | Fechas de nacimiento y muerte, p. ej. `"1746 – 1828"` |
+| `origin` | string | opcional | Lugar de origen |
+| `bio` | string | recomendado | Párrafo biográfico en español, tono divulgativo de museo |
+| `paintings` | array | sí | Obras de ese autor |
 
-1. Añade la entrada del autor en `public/authors.json`.
-2. Añade uno o más cuadros en `public/paintings.json` con `"author": "Nombre exacto"`.
-3. **Orden de puertas:** la posición de la puerta en el hall depende del **primer cuadro** de ese autor en `paintings.json`. Si quieres controlar el orden de las salas, inserta el primer cuadro del autor en la posición deseada del array (o reordena con cuidado).
-4. Tras recargar la app, aparecerá una nueva puerta en la rotonda con el nombre del autor.
+---
 
-### Añadir solo biografía de un autor ya presente
+## Esquema de un cuadro
 
-1. Si hay cuadros con `"author": "X"` pero no hay entrada en `authors.json`, añade la clave `"X"` en `authors.json`.
-2. No modifiques los cuadros.
+Los cuadros van dentro de `paintings` en el archivo del autor. **No añadas campo `author`**: el cargador lo inyecta desde `name`.
+
+| Campo | Tipo | Obligatorio | Descripción |
+|-------|------|-------------|-------------|
+| `id` | string | sí | Identificador único global, en kebab-case |
+| `url` | string | sí | URL HTTPS de imagen directa; Wikimedia Commons funciona bien |
+| `title` | string | sí | Título visible en etiqueta 3D y panel |
+| `year` | number | sí | Año de creación, entero cuando sea posible |
+| `description` | string | sí | Texto breve, 1–3 frases, en español |
+| `dimensions.width` | number | sí | Ancho real en centímetros |
+| `dimensions.height` | number | sí | Alto real en centímetros |
+
+Convenciones para `id`:
+
+- Minúsculas, palabras separadas por guiones.
+- Prefijo del autor para evitar colisiones: `sorolla-...`, `monet-...`.
+- Sin espacios ni tildes.
+- Único en todo el catálogo, no solo dentro de un autor.
+
+---
+
+## Procedimientos
+
+### Añadir cuadros a un autor existente
+
+1. Abre `public/catalog/authors/{autor-slug}.json`.
+2. Añade los objetos nuevos al array `paintings`.
+3. No añadas `author` a las obras.
+4. Verifica que cada `id` es único globalmente.
+5. Ejecuta `npm run validate:catalog`.
+
+### Añadir un autor nuevo
+
+1. Elige un slug en kebab-case, por ejemplo `frida-kahlo`.
+2. Crea `public/catalog/authors/frida-kahlo.json`.
+3. Rellena `id`, `name`, `category`, biografía y al menos una obra.
+4. Añade `frida-kahlo` al array `authors` de la categoría correspondiente en `public/catalog/index.json`.
+5. El orden dentro de ese array define la puerta del autor en la sala de categoría.
+6. Ejecuta `npm run validate:catalog`.
+
+### Añadir una categoría nueva
+
+1. Añade un objeto en `public/catalog/index.json` con `id`, `label`, `description` y `authors`.
+2. Crea los archivos de autor referenciados o mueve autores existentes actualizando su campo `category`.
+3. El orden de `categories` define las puertas del hall principal.
+4. Ejecuta `npm run validate:catalog`.
+
+### Mover un autor de categoría
+
+1. Quita el slug del autor de la categoría antigua en `index.json`.
+2. Añádelo a la nueva categoría.
+3. Cambia `category` en `public/catalog/authors/{autor-slug}.json`.
+4. Ejecuta `npm run validate:catalog`.
 
 ---
 
 ## Checklist antes de terminar
 
-- [ ] JSON válido (sin comas finales, comillas dobles).
-- [ ] `id` del cuadro único en todo `paintings.json`.
-- [ ] `author` idéntico en cuadro y clave de `authors.json`.
-- [ ] `dimensions.width` y `dimensions.height` en centímetros.
-- [ ] `url` accesible (HTTPS, imagen real).
-- [ ] `description` en español, concisa y sin errores.
-- [ ] Si es autor nuevo: entrada completa en `authors.json` y al menos un cuadro.
-- [ ] No se ha editado `dist/` ni código fuente innecesariamente.
+- [ ] `npm run validate:catalog` pasa.
+- [ ] Cada autor de `index.json` tiene archivo en `public/catalog/authors/`.
+- [ ] `author.id` coincide con el slug del archivo.
+- [ ] `author.category` existe y coincide con la categoría donde está listado.
+- [ ] Cada `painting.id` es único globalmente.
+- [ ] Cada obra tiene `url`, `title`, `year`, `description` y `dimensions.width/height`.
+- [ ] Las URLs son HTTPS e imagen real.
+- [ ] Textos en español, concisos y sin errores.
+- [ ] No se ha editado `dist/`.
+- [ ] No se han recreado `public/paintings.json` ni `public/authors.json`.
 
 ---
 
-## Validación rápida en terminal
+## Validación rápida
 
 ```bash
-# Comprobar que el JSON es válido
-node -e "JSON.parse(require('fs').readFileSync('public/paintings.json','utf8')); console.log('paintings.json OK')"
-node -e "JSON.parse(require('fs').readFileSync('public/authors.json','utf8')); console.log('authors.json OK')"
-
-# Listar autores en cuadros vs autores con biografía
-node -e "
-const p=require('./public/paintings.json');
-const a=require('./public/authors.json');
-const fromPaintings=[...new Set(p.map(x=>x.author))];
-const missing=fromPaintings.filter(n=>!a[n]);
-const orphan=Object.keys(a).filter(n=>!fromPaintings.includes(n));
-console.log('Autores en cuadros:', fromPaintings.length);
-if(missing.length) console.log('Sin biografía:', missing);
-if(orphan.length) console.log('Biografía sin cuadros:', orphan);
-"
+npm run validate:catalog
+npm run build
 ```
+
+Para una imagen concreta:
+
+```bash
+curl -L -I "URL_DE_IMAGEN" | sed -n '1,12p'
+```
+
+Debe responder con `content-type: image/...` y un estado HTTP válido.
 
 ---
 
 ## Errores frecuentes
 
 | Problema | Causa | Solución |
-|----------|--------|----------|
-| Cuadro no aparece | JSON inválido o error al cargar imagen | Revisa consola del navegador; corrige URL o JSON |
-| Sala sin placa biográfica | Autor ausente en `authors.json` | Añade la entrada del autor |
-| Puerta con nombre distinto al esperado | El `author` del cuadro no coincide | Unifica el string en ambos archivos |
-| Cuadro desproporcionado | `dimensions` incorrectas o ausentes | Corrige width/height en cm |
-| Autor duplicado en el hall | Dos variantes del nombre (`"Monet"` vs `"Claude Monet"`) | Usa un solo nombre en todos los cuadros |
+|----------|-------|----------|
+| Categoría sin puerta | `index.json` inválido o categoría sin `id` | Ejecuta `npm run validate:catalog` |
+| Autor no aparece | Archivo no listado en `index.json` | Añade el slug a `categories[].authors` |
+| Autor listado pero falla carga | Falta `public/catalog/authors/{slug}.json` o `id` no coincide | Corrige archivo o slug |
+| Sala sin obras | `paintings` vacío o inválido | Añade obras válidas |
+| Cuadro desproporcionado | `dimensions` incorrectas | Corrige ancho/alto en cm |
+| Teletransporte al cuadro falla | `painting.id` duplicado o mal escrito | Usa ids únicos y valida |
 
 ---
 
-## Autores y cuadros actuales (referencia)
+## Navegación
 
-Consulta los archivos fuente para el listado vigente (autores y recuento de cuadros cambian con cada ampliación del catálogo).
-
-Al añadir contenido, **mantén el estilo** de las entradas existentes: descripciones en español, tono divulgativo de museo, datos históricos verificables.
-
----
-
-## Navegación (catálogo)
-
-- Tecla **`M`** o botón **Catálogo** (visible durante la partida): lista de autores con búsqueda.
-- Tras elegir un autor: **Entrar en la sala** o elegir un **cuadro** para aparecer frente a ese lienzo.
-- El `id` de cada cuadro en `paintings.json` debe ser único: el teletransporte usa `atPainting:{id}` como spawn.
-- El hall principal sigue existiendo (puertas en orden de primera aparición del autor en `paintings.json`), pero no es la única forma de navegar.
+- Tecla **`M`** o botón **Catálogo**: lista categorías, autores y obras con búsqueda agrupada.
+- Hall principal: puertas a categorías.
+- Sala de categoría: puerta de vuelta al hall y puertas a autores.
+- Sala de autor: puerta de vuelta a su categoría y cuadros del autor.
+- El teletransporte usa `atPainting:{id}`; por eso cada `painting.id` debe ser único.

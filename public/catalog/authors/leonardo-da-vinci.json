@@ -1,0 +1,33 @@
+{
+  "id": "leonardo-da-vinci",
+  "name": "Leonardo da Vinci",
+  "category": "renacimiento-manierismo",
+  "fullName": "Leonardo di ser Piero da Vinci",
+  "years": "1452 – 1519",
+  "origin": "Vinci, República de Florencia",
+  "bio": "Artista universal del Renacimiento: pintor, anatomista, ingeniero y teórico. En Milán y Florencia definió el sfumato y la composición piramidal. La Gioconda y La Última Cena son iconos de la modernidad occidental.",
+  "paintings": [
+    {
+      "id": "leonardo-gioconda",
+      "title": "La Gioconda",
+      "year": 1503,
+      "description": "Retrato de Lisa Gherardini, esposa de Francesco del Giocondo. El sfumato del paisaje y la sonrisa enigmática la convirtieron en el cuadro más famoso del mundo.",
+      "dimensions": {
+        "width": 77,
+        "height": 53
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "leonardo-virgen-roca",
+      "title": "La Virgen de las Rocas",
+      "year": 1491,
+      "description": "Versión londinense del encargo de la Inmaculada Concepción para la iglesia de San Francisco en Milán. Rocas, agua y gestos enlazados definen el paisaje sagrado leonardesco.",
+      "dimensions": {
+        "width": 120,
+        "height": 190
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29_02.jpg"
+    }
+  ]
+}

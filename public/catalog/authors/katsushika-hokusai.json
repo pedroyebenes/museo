@@ -1,0 +1,22 @@
+{
+  "id": "katsushika-hokusai",
+  "name": "Katsushika Hokusai",
+  "category": "arte-japones",
+  "fullName": "葛飾 北斎 (Katsushika Hokusai)",
+  "years": "1760 – 1849",
+  "origin": "Edo (actual Tokio), Japón",
+  "bio": "Grabador y pintor del ukiyo-e, el arte popular japonés del periodo Edo. Su serie Treinta y seis vistas del monte Fuji influyó decisivamente en el japonismo europeo y, a través de él, en Manet, Van Gogh y Monet.",
+  "paintings": [
+    {
+      "id": "hokusai-gran-ola",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Great_Wave_off_Kanagawa.jpg",
+      "title": "La gran ola de Kanagawa",
+      "year": 1831,
+      "description": "Grabado en madera (ukiyo-e) de la serie \"Treinta y seis vistas del monte Fuji\". Muestra una ola gigantesca a punto de romper sobre tres barcas, con el Fuji al fondo.",
+      "dimensions": {
+        "width": 37.9,
+        "height": 25.7
+      }
+    }
+  ]
+}

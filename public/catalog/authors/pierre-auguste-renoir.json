@@ -1,0 +1,22 @@
+{
+  "id": "pierre-auguste-renoir",
+  "name": "Pierre-Auguste Renoir",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Pierre-Auguste Renoir",
+  "years": "1841 – 1919",
+  "origin": "Limoges, Francia",
+  "bio": "Impresionista de la alegría y la carne. Pincelada suelta, luz filtrada y escenas de ocio parisino —especialmente en Moulin de la Galette— celebran la vida moderna sin idealización fría.",
+  "paintings": [
+    {
+      "id": "renoir-moulin-galette",
+      "title": "Baile en el Moulin de la Galette",
+      "year": 1876,
+      "description": "Tarde de domingo en Montmartre: luz filtrada por los árboles, vestidos claros y parejas que bailan entre conversaciones. Renoir convierte el ocio moderno en una escena vibrante de color y sociabilidad impresionista.",
+      "dimensions": {
+        "width": 175,
+        "height": 131
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Pierre-Auguste_Renoir%2C_Le_Moulin_de_la_Galette.jpg"
+    }
+  ]
+}

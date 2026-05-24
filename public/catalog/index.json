@@ -1,0 +1,75 @@
+{
+  "categories": [
+    {
+      "id": "renacimiento-manierismo",
+      "label": "Renacimiento y manierismo",
+      "description": "Del Quattrocento flamenco e italiano al color veneciano y las tensiones espirituales del manierismo.",
+      "authors": [
+        "jan-van-eyck",
+        "sandro-botticelli",
+        "leonardo-da-vinci",
+        "miguel-angel",
+        "rafael",
+        "tiziano",
+        "paolo-veronese",
+        "el-greco"
+      ]
+    },
+    {
+      "id": "barroco",
+      "label": "Barroco",
+      "description": "Claroscuro, teatralidad, devoción y retrato psicológico en la Europa del siglo XVII.",
+      "authors": [
+        "caravaggio",
+        "peter-paul-rubens",
+        "diego-velazquez",
+        "francisco-de-zurbaran",
+        "rembrandt",
+        "bartolome-esteban-murillo",
+        "johannes-vermeer"
+      ]
+    },
+    {
+      "id": "neoclasicismo-romanticismo",
+      "label": "Neoclasicismo y romanticismo",
+      "description": "La pintura entre la virtud cívica, la revolución, la corte y la conciencia moderna.",
+      "authors": [
+        "jacques-louis-david",
+        "francisco-de-goya"
+      ]
+    },
+    {
+      "id": "arte-japones",
+      "label": "Arte japonés",
+      "description": "Ukiyo-e y estampa japonesa, con su influencia decisiva en la mirada europea del siglo XIX.",
+      "authors": [
+        "katsushika-hokusai"
+      ]
+    },
+    {
+      "id": "impresionismo-postimpresionismo",
+      "label": "Impresionismo y postimpresionismo",
+      "description": "Luz moderna, vida cotidiana, color autónomo y nuevas formas de construir el espacio pictórico.",
+      "authors": [
+        "claude-monet",
+        "edgar-degas",
+        "pierre-auguste-renoir",
+        "mary-cassatt",
+        "joaquin-sorolla",
+        "paul-cezanne",
+        "vincent-van-gogh"
+      ]
+    },
+    {
+      "id": "simbolismo-modernismo-naif",
+      "label": "Simbolismo, modernismo y naíf",
+      "description": "Visiones interiores, ornamentación moderna, mundos oníricos y lenguajes deliberadamente antinaturalistas.",
+      "authors": [
+        "edvard-munch",
+        "odilon-redon",
+        "henri-rousseau",
+        "gustav-klimt"
+      ]
+    }
+  ]
+}

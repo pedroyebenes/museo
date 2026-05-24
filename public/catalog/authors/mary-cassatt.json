@@ -1,0 +1,27 @@
+{
+  "id": "mary-cassatt",
+  "name": "Mary Cassatt",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Mary Stevenson Cassatt",
+  "years": "1844 – 1926",
+  "origin": "Allegheny City, Pensilvania, Estados Unidos",
+  "bio": "Pintora y grabadora estadounidense vinculada al impresionismo francés. Trabajó con Degas y destacó por escenas de mujeres, niños e intimidad doméstica, tratadas con composición moderna, influencia de la estampa japonesa y una mirada poco complaciente sobre la vida cotidiana.",
+  "paintings": [
+    {
+      "id": "cassatt-bano-nino",
+      "title": "El baño del niño",
+      "year": 1893,
+      "description": "Una mujer sostiene a una niña mientras lava sus pies en una jofaina. Cassatt adapta encuadres de la estampa japonesa para convertir una escena doméstica en una composición moderna de intimidad y cuidado.",
+      "dimensions": {
+        "width": 66,
+        "height": 100
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Mary_Cassatt_-_The_Child%27s_Bath_-_Google_Art_Project.jpg",
+      "collection": "Art Institute of Chicago",
+      "medium": "Óleo sobre lienzo",
+      "movement": "Impresionismo",
+      "imageLicense": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Cassatt_-_The_Child%27s_Bath_-_Google_Art_Project.jpg"
+    }
+  ]
+}

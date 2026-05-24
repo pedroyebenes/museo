@@ -1,6 +1,6 @@
 # Museo Virtual
 
-Museo de arte en **primera persona** en el navegador: recorre un hall central (rotonda) y salas dedicadas a cada autor, con cuadros a escala real y fichas informativas al mirar las obras.
+Museo de arte en **primera persona** en el navegador: recorre un hall central (rotonda), salas por categoría y salas dedicadas a cada autor, con cuadros a escala real y fichas informativas al mirar las obras.
 
 El catálogo es **estático** (JSON en `public/`); no hay backend ni base de datos.
 
@@ -9,10 +9,11 @@ El catálogo es **estático** (JSON en `public/`); no hay backend ni base de dat
 | Área | Descripción |
 |------|-------------|
 | **Recorrido 3D** | Movimiento tipo FPS (ratón + WASD/flechas en escritorio; controles táctiles en móvil). |
-| **Hall principal** | Rotonda con una puerta por autor; el orden de las puertas sigue el orden de aparición en `paintings.json`. |
+| **Hall principal** | Rotonda con una puerta por categoría; el orden lo define `public/catalog/index.json`. |
+| **Salas por categoría** | Rotondas intermedias con una puerta por autor y vuelta al hall principal. |
 | **Salas por autor** | Cada autor tiene una sala rectangular; los cuadros se colocan en las paredes norte, este y oeste. |
 | **Escala real** | Si el cuadro incluye `dimensions` (cm), el lienzo y el tamaño de la sala se calculan a partir de esas medidas. |
-| **Placas biográficas** | Si el autor está en `authors.json`, se muestra una placa en la sala. |
+| **Placas biográficas** | Cada archivo de autor incluye la biografía que se muestra en la sala. |
 | **HUD e información** | Panel de sala (autor, número de obras) y ficha del cuadro (título, autor, año, descripción) al enfocar una obra. Tecla **H** para mostrar/ocultar la ficha. |
 | **Carga progresiva** | Al entrar en una sala por primera vez, barra de progreso mientras se descargan las texturas. |
 | **Calidad adaptativa** | Perfil distinto en móvil (menos antialiasing, texturas hasta 1024 px) y en escritorio (hasta 2048 px). |
@@ -21,7 +22,7 @@ El catálogo es **estático** (JSON en `public/`); no hay backend ni base de dat
 
 - **[Vite](https://vitejs.dev/)** 5 — bundler y servidor de desarrollo
 - **[Three.js](https://threejs.org/)** 0.160 — escena 3D (ES modules, `"type": "module"` en `package.json`)
-- **Catálogo** — `public/paintings.json` y `public/authors.json`
+- **Catálogo** — `public/catalog/index.json` y `public/catalog/authors/*.json`
 - **Código fuente** — `src/` (`main.js`, `museum.js`, `scene.js`, `roomManager.js`, etc.)
 
 ---
@@ -351,16 +352,16 @@ pm2 restart museo
 
 ---
 
-## Ampliar el catálogo (cuadros y autores)
+## Ampliar el catálogo (categorías, autores y cuadros)
 
 Puedes añadir obras y biografías **sin tocar el código**, editando solo JSON:
 
 | Archivo | Contenido |
 |---------|-----------|
-| `public/paintings.json` | Lista de cuadros |
-| `public/authors.json` | Biografías por autor |
+| `public/catalog/index.json` | Orden de categorías y autores |
+| `public/catalog/authors/{autor-slug}.json` | Biografía, categoría y obras de cada autor |
 
-El nombre en `"author"` de cada cuadro debe coincidir **exactamente** con la clave en `authors.json`.
+No recrees `public/paintings.json` ni `public/authors.json`; el catálogo antiguo fue retirado. Cada autor debe estar listado una sola vez en `index.json`, y el campo `id` del archivo de autor debe coincidir con su slug.
 
 Guía detallada (esquemas, convenciones, validación en terminal): **[`AGENTS.md`](AGENTS.md)**.
 
@@ -377,13 +378,15 @@ museo/
 ├── AGENTS.md           # Cómo añadir cuadros/autores (JSON)
 ├── README.md           # Este archivo
 ├── public/
-│   ├── paintings.json  # Catálogo de obras
-│   └── authors.json    # Biografías
+│   └── catalog/
+│       ├── index.json          # Categorías y orden de autores
+│       └── authors/*.json      # Biografías y obras por autor
 ├── src/
 │   ├── main.js         # Arranque, bucle de render, carga de datos
+│   ├── catalogData.js  # Cargador y normalización del catálogo
 │   ├── scene.js        # Escena Three.js, cámara, renderer
 │   ├── museum.js       # Construcción de salas de autor
-│   ├── hub.js          # Hall principal (rotonda)
+│   ├── hub.js          # Rotondas de hall y categoría
 │   ├── roomManager.js  # Cambio de sala, caché, transiciones
 │   ├── paintings.js    # Colocación de cuadros y dimensiones
 │   ├── controls.js     # Movimiento (ratón / táctil)
@@ -399,6 +402,7 @@ museo/
 | Script | Comando | Descripción |
 |--------|---------|-------------|
 | `dev` | `npm run dev` | Servidor de desarrollo Vite con recarga en caliente |
+| `validate:catalog` | `npm run validate:catalog` | Valida índice, autores y obras del catálogo JSON |
 | `build` | `npm run build` | Genera `dist/` para producción |
 | `preview` | `npm run preview` | Sirve `dist/` localmente (prueba post-build) |
 

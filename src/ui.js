@@ -81,12 +81,14 @@ export function createTransitionOverlay() {
   const labelEl = document.getElementById('transition-label');
   const barEl = document.getElementById('transition-bar');
 
-  function show({ kind, author, paintingCount }) {
+  function show({ kind, author, category }) {
     if (!el) return;
     if (kind === 'hub') {
       labelEl.textContent = 'Regresando al hall principal…';
+    } else if (kind === 'category') {
+      labelEl.textContent = `Entrando en ${category.label}…`;
     } else {
-      labelEl.textContent = `Entrando en la sala de ${author}…`;
+      labelEl.textContent = `Entrando en la sala de ${author.name}…`;
     }
     barEl.style.width = kind === 'author' ? '0%' : '100%';
     el.classList.remove('hidden');

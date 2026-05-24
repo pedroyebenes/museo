@@ -7,9 +7,7 @@ export function createRoomManager({
   camera,
   controls,
   renderer,
-  paintingsByAuthor,
-  authorOrder,
-  authorsData = {},
+  catalog,
   onRoomChanged,
   onTransitionStart,
   onTransitionProgress,
@@ -17,12 +15,14 @@ export function createRoomManager({
 }) {
   let currentRoom = null;
   let currentKind = null;
-  let currentAuthorIndex = null;
+  let currentCategoryId = null;
+  let currentAuthorId = null;
   let interactables = [];
   let transitioning = false;
   let triggerCooldown = 0;
 
   const hubCache = { room: null, interactables: [] };
+  const categoryCache = new Map();
   const authorCache = new Map();
 
   async function loadHub(spawnKey = 'initial') {
@@ -31,14 +31,72 @@ export function createRoomManager({
     onTransitionStart?.({ kind: 'hub', author: null });
     try {
       if (!hubCache.room) {
-        hubCache.room = buildHub(scene, authorOrder);
+        hubCache.room = buildHub(scene, {
+          id: 'hub',
+          title: 'Hall principal',
+          items: catalog.categories.map((category) => ({
+            id: category.id,
+            label: category.label,
+            destination: { kind: 'category', categoryId: category.id },
+          })),
+        });
+        scene.remove(hubCache.room.group);
         hubCache.interactables = [];
       }
       swapRoom(hubCache.room, hubCache.interactables);
       currentKind = 'hub';
-      currentAuthorIndex = null;
+      currentCategoryId = null;
+      currentAuthorId = null;
       placeAtSpawn(spawnKey, hubCache.room);
       announce({ kind: 'hub', author: null });
+    } finally {
+      transitioning = false;
+      onTransitionEnd?.();
+    }
+  }
+
+  async function loadCategory(categoryId, spawnKey = 'initial') {
+    if (transitioning) return;
+    const category = catalog.categoriesById[categoryId];
+    if (!category) return;
+    const authors = catalog.authorsByCategory[categoryId] || [];
+
+    transitioning = true;
+    onTransitionStart?.({ kind: 'category', category, authorCount: authors.length });
+    try {
+      let cached = categoryCache.get(categoryId);
+      if (!cached) {
+        const room = buildHub(scene, {
+          id: `category:${categoryId}`,
+          title: category.label,
+          items: [
+            {
+              id: 'hub',
+              label: 'Hall principal',
+              arrow: '←',
+              destination: { kind: 'hub' },
+            },
+            ...authors.map((author) => ({
+              id: author.id,
+              label: author.name,
+              destination: { kind: 'author', authorId: author.id },
+            })),
+          ],
+        });
+        scene.remove(room.group);
+        cached = { room, interactables: [] };
+        categoryCache.set(categoryId, cached);
+      }
+      swapRoom(cached.room, cached.interactables);
+      currentKind = 'category';
+      currentCategoryId = categoryId;
+      currentAuthorId = null;
+      placeAtSpawn(spawnKey, cached.room);
+      announce({
+        kind: 'category',
+        category,
+        authorCount: authors.length,
+      });
     } finally {
       transitioning = false;
       onTransitionEnd?.();
@@ -48,23 +106,29 @@ export function createRoomManager({
   function resolveAuthorSpawnKey(options) {
     if (typeof options === 'string') return options;
     if (options?.paintingId) return `atPainting:${options.paintingId}`;
-    return 'fromHub';
+    return 'fromCategory';
   }
 
-  async function loadAuthor(authorIndex, options = {}) {
+  async function loadAuthor(authorId, options = {}) {
     if (transitioning) return;
+    const author = catalog.authorsById[authorId];
+    if (!author) return;
+
     transitioning = true;
     const spawnKey = resolveAuthorSpawnKey(options);
-    const author = authorOrder[authorIndex];
-    const paintings = paintingsByAuthor[author];
+    const category = catalog.categoriesById[author.category];
+    const paintings = catalog.paintingsByAuthor[author.id] || [];
     onTransitionStart?.({ kind: 'author', author, paintingCount: paintings.length });
     try {
-      let cached = authorCache.get(author);
+      let cached = authorCache.get(author.id);
       if (!cached) {
         const room = buildAuthorRoom(scene, {
-          author,
+          author: author.name,
+          authorId: author.id,
+          categoryId: author.category,
+          categoryLabel: category?.label || 'Categoría',
           paintings,
-          bio: authorsData[author] || null,
+          bio: author,
         });
         scene.remove(room.group);
         const newInteractables = await placePaintings(
@@ -79,16 +143,16 @@ export function createRoomManager({
           },
         );
         cached = { room, interactables: newInteractables };
-        authorCache.set(author, cached);
+        authorCache.set(author.id, cached);
       }
       swapRoom(cached.room, cached.interactables);
       currentKind = 'author';
-      currentAuthorIndex = authorIndex;
+      currentCategoryId = author.category;
+      currentAuthorId = author.id;
       placeAtSpawn(spawnKey, cached.room);
       announce({
         kind: 'author',
         author,
-        authorIndex,
         paintingCount: paintings.length,
       });
     } finally {
@@ -115,7 +179,7 @@ export function createRoomManager({
 
   function announce(info) {
     if (onRoomChanged) {
-      onRoomChanged({ ...info, total: authorOrder.length });
+      onRoomChanged({ ...info, total: catalog.categories.length });
     }
   }
 
@@ -141,13 +205,16 @@ export function createRoomManager({
 
   function handleDestination(destination) {
     if (!destination) return;
-    if (destination.kind === 'author') {
-      loadAuthor(destination.authorIndex, 'fromHub');
+    if (destination.kind === 'category') {
+      const spawnKey =
+        currentKind === 'author' && currentAuthorId
+          ? `from:${currentAuthorId}`
+          : 'from:hub';
+      loadCategory(destination.categoryId, spawnKey);
+    } else if (destination.kind === 'author') {
+      loadAuthor(destination.authorId, 'fromCategory');
     } else if (destination.kind === 'hub') {
-      const key =
-        currentAuthorIndex != null
-          ? `fromAuthor${currentAuthorIndex}`
-          : 'initial';
+      const key = currentCategoryId ? `from:${currentCategoryId}` : 'initial';
       loadHub(key);
     }
   }
@@ -162,6 +229,7 @@ export function createRoomManager({
 
   return {
     loadHub,
+    loadCategory,
     loadAuthor,
     update,
     getInteractables,

@@ -1,0 +1,38 @@
+{
+  "id": "paul-cezanne",
+  "name": "Paul Cézanne",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Paul Cézanne",
+  "years": "1839 – 1906",
+  "origin": "Aix-en-Provence, Francia",
+  "bio": "Puente entre el impresionismo y el cubismo. Construyó el espacio pictórico mediante planos de color y geometría subyacente; Picasso y Matisse lo llamaron «el padre de todos nosotros».",
+  "paintings": [
+    {
+      "id": "cezanne-jugadores-cartas",
+      "title": "Los jugadores de cartas",
+      "year": 1895,
+      "description": "Dos campesinos concentrados en una partida silenciosa sustituyen la anécdota por construcción pictórica. Las figuras, la mesa y las botellas se organizan en planos de color que preparan el camino del cubismo.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg",
+      "collection": "The Courtauld Gallery, Londres",
+      "medium": "Óleo sobre lienzo",
+      "movement": "Postimpresionismo",
+      "imageLicense": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Les_Joueurs_de_cartes,_par_Paul_C%C3%A9zanne.jpg"
+    },
+    {
+      "id": "cezanne-banistas",
+      "title": "Los grandes bañistas",
+      "year": 1906,
+      "description": "Versión monumental del tema de las bañistas, trabajada durante sus últimos años. Las figuras se integran en una arquitectura de árboles y planos de color que anuncia el cubismo y el fauvismo.",
+      "dimensions": {
+        "width": 211,
+        "height": 251
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Paul_C%C3%A9zanne%2C_French_-_The_Large_Bathers_-_Google_Art_Project.jpg"
+    }
+  ]
+}
