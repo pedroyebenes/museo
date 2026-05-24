@@ -56,6 +56,12 @@ async function boot() {
       document.body.classList.remove('playing');
       overlay.hide();
     },
+    onToggleInfo: () => {
+      const suppressed = overlay.toggleSuppressed();
+      hud.flash(
+        suppressed ? 'Información del cuadro: oculta' : 'Información del cuadro: visible',
+      );
+    },
   });
 
   const roomManager = createRoomManager({

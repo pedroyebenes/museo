@@ -5,21 +5,25 @@ const SPEED = 4.8; // m/s
 const RUN_MULT = 1.8;
 const EYE_HEIGHT = 1.6;
 const PLAYER_RADIUS = 0.32;
-const TOUCH_LOOK_SPEED = 0.003;
-const TOUCH_STICK_RADIUS = 54;
-const TOUCH_DEAD_ZONE = 0.12;
+const TOUCH_LOOK_SPEED = 0.0045;
+const TOUCH_STICK_RADIUS = 68;
+const TOUCH_DEAD_ZONE = 0.14;
+const STICK_VISUAL_SIZE = 148;
 
-export function createControls({ camera, renderer, onLock, onUnlock }) {
+export function createControls({ camera, renderer, onLock, onUnlock, onToggleInfo }) {
   const controls = new PointerLockControls(camera, renderer.domElement);
   const isTouchDevice =
     window.matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0;
 
-  let segments = []; // collision: axis-aligned wall segments
+  let segments = [];
   let mobileActive = false;
   let mobileMoveX = 0;
   let mobileMoveZ = 0;
   let touchYaw = camera.rotation.y;
   let touchPitch = camera.rotation.x;
+  let stickBaseX = 0;
+  let stickBaseY = 0;
+  let mobileRun = false;
   let stickPointerId = null;
   let lookPointerId = null;
   let lastLookX = 0;
@@ -111,13 +115,11 @@ export function createControls({ camera, renderer, onLock, onUnlock }) {
       forward.normalize();
       right.copy(forward).cross(camera.up).normalize();
 
-      const speed = SPEED * (keys.run ? RUN_MULT : 1) * dt;
+      const speed = SPEED * ((keys.run || mobileRun) ? RUN_MULT : 1) * dt;
       move.set(0, 0, 0);
       move.addScaledVector(forward, dz * speed);
       move.addScaledVector(right, dx * speed);
 
-      // Two-pass collision resolution: move in X, resolve; then Z, resolve.
-      // This produces wall-sliding behaviour.
       camera.position.x += move.x;
       resolveCollisions(camera.position);
       camera.position.z += move.z;
@@ -160,7 +162,6 @@ export function createControls({ camera, renderer, onLock, onUnlock }) {
   function setPose({ position, yaw }) {
     camera.position.copy(position);
     if (typeof yaw === 'number') {
-      // PointerLockControls reads camera.rotation directly.
       camera.rotation.set(0, yaw, 0, 'YXZ');
       touchYaw = yaw;
       touchPitch = 0;
@@ -185,7 +186,12 @@ export function createControls({ camera, renderer, onLock, onUnlock }) {
     touchYaw = camera.rotation.y;
     touchPitch = camera.rotation.x;
     touchUi.root.classList.remove('hidden');
+    document.addEventListener('touchmove', preventTouchScroll, { passive: false });
     onLock && onLock();
+  }
+
+  function preventTouchScroll(e) {
+    if (mobileActive) e.preventDefault();
   }
 
   function resetTouchState() {
@@ -193,7 +199,14 @@ export function createControls({ camera, renderer, onLock, onUnlock }) {
     mobileMoveZ = 0;
     stickPointerId = null;
     lookPointerId = null;
-    touchUi.knob.style.transform = 'translate(-50%, -50%)';
+    touchUi.hideStick();
+    touchUi.setRunActive(false);
+  }
+
+  function applyStickDeadZone(value) {
+    const abs = Math.abs(value);
+    if (abs <= TOUCH_DEAD_ZONE) return 0;
+    return Math.sign(value) * ((abs - TOUCH_DEAD_ZONE) / (1 - TOUCH_DEAD_ZONE));
   }
 
   function createTouchUi() {
@@ -201,32 +214,84 @@ export function createControls({ camera, renderer, onLock, onUnlock }) {
     root.id = 'touch-controls';
     root.className = 'hidden';
     root.innerHTML = `
-      <div id="touch-look"></div>
-      <div id="touch-stick" aria-label="Control de movimiento">
+      <div id="touch-move-zone" aria-label="Zona de movimiento"></div>
+      <div id="touch-look-zone" aria-label="Zona de cámara"></div>
+      <div id="touch-stick" aria-hidden="true">
         <div id="touch-stick-knob"></div>
       </div>
+      <button type="button" id="touch-run" aria-label="Correr">Correr</button>
+      <button type="button" id="touch-info" aria-label="Mostrar u ocultar ficha">Info</button>
     `;
     document.body.appendChild(root);
 
-    const lookArea = root.querySelector('#touch-look');
+    const moveZone = root.querySelector('#touch-move-zone');
+    const lookZone = root.querySelector('#touch-look-zone');
     const stick = root.querySelector('#touch-stick');
     const knob = root.querySelector('#touch-stick-knob');
+    const runBtn = root.querySelector('#touch-run');
+    const infoBtn = root.querySelector('#touch-info');
 
-    const onStickPointerDown = (e) => {
+    function showStickAt(x, y) {
+      stick.style.left = `${x}px`;
+      stick.style.top = `${y}px`;
+      stick.classList.add('visible');
+    }
+
+    function hideStick() {
+      stick.classList.remove('visible');
+      knob.style.transform = 'translate(-50%, -50%)';
+    }
+
+    function setRunActive(active) {
+      mobileRun = active;
+      runBtn.classList.toggle('active', active);
+    }
+
+    function positionStickBase(clientX, clientY) {
+      const half = STICK_VISUAL_SIZE / 2;
+      const x = Math.min(
+        window.innerWidth * 0.48 - half,
+        Math.max(half + 8, clientX),
+      );
+      const y = Math.min(
+        window.innerHeight - half - 8,
+        Math.max(half + 8, clientY),
+      );
+      stickBaseX = x;
+      stickBaseY = y;
+      showStickAt(x, y);
+    }
+
+    function updateStickFromPointer(e) {
+      const rawX = e.clientX - stickBaseX;
+      const rawY = e.clientY - stickBaseY;
+      const distance = Math.min(TOUCH_STICK_RADIUS, Math.hypot(rawX, rawY));
+      const angle = Math.atan2(rawY, rawX);
+      const x = Math.cos(angle) * distance;
+      const y = Math.sin(angle) * distance;
+      mobileMoveX = applyStickDeadZone(x / TOUCH_STICK_RADIUS);
+      mobileMoveZ = applyStickDeadZone(-y / TOUCH_STICK_RADIUS);
+      knob.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+    }
+
+    const onMovePointerDown = (e) => {
       if (!mobileActive || stickPointerId !== null) return;
+      e.preventDefault();
       stickPointerId = e.pointerId;
-      stick.setPointerCapture(e.pointerId);
-      updateStick(e);
+      positionStickBase(e.clientX, e.clientY);
+      moveZone.setPointerCapture(e.pointerId);
+      updateStickFromPointer(e);
     };
-    const onStickPointerMove = (e) => {
-      if (e.pointerId === stickPointerId) updateStick(e);
+    const onMovePointerMove = (e) => {
+      if (e.pointerId !== stickPointerId) return;
+      updateStickFromPointer(e);
     };
-    const onStickPointerEnd = (e) => {
+    const onMovePointerEnd = (e) => {
       if (e.pointerId !== stickPointerId) return;
       stickPointerId = null;
       mobileMoveX = 0;
       mobileMoveZ = 0;
-      knob.style.transform = 'translate(-50%, -50%)';
+      hideStick();
     };
 
     const onLookPointerDown = (e) => {
@@ -234,7 +299,7 @@ export function createControls({ camera, renderer, onLock, onUnlock }) {
       lookPointerId = e.pointerId;
       lastLookX = e.clientX;
       lastLookY = e.clientY;
-      lookArea.setPointerCapture(e.pointerId);
+      lookZone.setPointerCapture(e.pointerId);
     };
     const onLookPointerMove = (e) => {
       if (e.pointerId !== lookPointerId) return;
@@ -251,52 +316,48 @@ export function createControls({ camera, renderer, onLock, onUnlock }) {
       if (e.pointerId === lookPointerId) lookPointerId = null;
     };
 
-    stick.addEventListener('pointerdown', onStickPointerDown);
-    stick.addEventListener('pointermove', onStickPointerMove);
-    stick.addEventListener('pointerup', onStickPointerEnd);
-    stick.addEventListener('pointercancel', onStickPointerEnd);
-    lookArea.addEventListener('pointerdown', onLookPointerDown);
-    lookArea.addEventListener('pointermove', onLookPointerMove);
-    lookArea.addEventListener('pointerup', onLookPointerEnd);
-    lookArea.addEventListener('pointercancel', onLookPointerEnd);
+    runBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setRunActive(!mobileRun);
+    });
+    infoBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      onToggleInfo && onToggleInfo();
+    });
+    runBtn.addEventListener('pointerdown', (e) => e.stopPropagation());
+    infoBtn.addEventListener('pointerdown', (e) => e.stopPropagation());
 
-    function updateStick(e) {
-      const rect = stick.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2;
-      const centerY = rect.top + rect.height / 2;
-      const rawX = e.clientX - centerX;
-      const rawY = e.clientY - centerY;
-      const distance = Math.min(TOUCH_STICK_RADIUS, Math.hypot(rawX, rawY));
-      const angle = Math.atan2(rawY, rawX);
-      const x = Math.cos(angle) * distance;
-      const y = Math.sin(angle) * distance;
-      const normalizedX = x / TOUCH_STICK_RADIUS;
-      const normalizedY = y / TOUCH_STICK_RADIUS;
-
-      mobileMoveX = Math.abs(normalizedX) > TOUCH_DEAD_ZONE ? normalizedX : 0;
-      mobileMoveZ = Math.abs(normalizedY) > TOUCH_DEAD_ZONE ? -normalizedY : 0;
-      knob.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
-    }
+    moveZone.addEventListener('pointerdown', onMovePointerDown);
+    moveZone.addEventListener('pointermove', onMovePointerMove);
+    moveZone.addEventListener('pointerup', onMovePointerEnd);
+    moveZone.addEventListener('pointercancel', onMovePointerEnd);
+    lookZone.addEventListener('pointerdown', onLookPointerDown);
+    lookZone.addEventListener('pointermove', onLookPointerMove);
+    lookZone.addEventListener('pointerup', onLookPointerEnd);
+    lookZone.addEventListener('pointercancel', onLookPointerEnd);
 
     function dispose() {
-      stick.removeEventListener('pointerdown', onStickPointerDown);
-      stick.removeEventListener('pointermove', onStickPointerMove);
-      stick.removeEventListener('pointerup', onStickPointerEnd);
-      stick.removeEventListener('pointercancel', onStickPointerEnd);
-      lookArea.removeEventListener('pointerdown', onLookPointerDown);
-      lookArea.removeEventListener('pointermove', onLookPointerMove);
-      lookArea.removeEventListener('pointerup', onLookPointerEnd);
-      lookArea.removeEventListener('pointercancel', onLookPointerEnd);
+      document.removeEventListener('touchmove', preventTouchScroll);
+      moveZone.removeEventListener('pointerdown', onMovePointerDown);
+      moveZone.removeEventListener('pointermove', onMovePointerMove);
+      moveZone.removeEventListener('pointerup', onMovePointerEnd);
+      moveZone.removeEventListener('pointercancel', onMovePointerEnd);
+      lookZone.removeEventListener('pointerdown', onLookPointerDown);
+      lookZone.removeEventListener('pointermove', onLookPointerMove);
+      lookZone.removeEventListener('pointerup', onLookPointerEnd);
+      lookZone.removeEventListener('pointercancel', onLookPointerEnd);
       root.remove();
     }
 
-    return { root, knob, dispose };
+    return { root, hideStick, setRunActive, dispose };
   }
 
   function dispose() {
     document.removeEventListener('keydown', onKeyDown);
     document.removeEventListener('keyup', onKeyUp);
+    document.removeEventListener('touchmove', preventTouchScroll);
     resetTouchState();
+    mobileActive = false;
     touchUi.dispose();
     controls.dispose();
   }

@@ -142,22 +142,35 @@ body.playing #room-hud:not(.hidden) { display: block; }
   pointer-events: none;
 }
 
-#touch-look {
+#touch-move-zone {
   position: absolute;
-  inset: 0 0 0 42%;
+  inset: 0 52% 0 0;
+  pointer-events: auto;
+}
+
+#touch-look-zone {
+  position: absolute;
+  inset: 0 0 0 48%;
   pointer-events: auto;
 }
 
 #touch-stick {
-  position: absolute;
-  left: max(1.2rem, env(safe-area-inset-left));
-  bottom: max(1.2rem, env(safe-area-inset-bottom));
-  width: 132px;
-  height: 132px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 148px;
+  height: 148px;
+  margin: -74px 0 0 -74px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.34);
-  pointer-events: auto;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+
+#touch-stick.visible {
+  opacity: 1;
 }
 
 #touch-stick-knob {
@@ -170,6 +183,36 @@ body.playing #room-hud:not(.hidden) { display: block; }
   background: rgba(240, 232, 214, 0.52);
   border: 1px solid rgba(255, 255, 255, 0.45);
   transform: translate(-50%, -50%);
+}
+
+#touch-run,
+#touch-info {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  min-width: 4.4rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #f0e8d6;
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+#touch-run {
+  bottom: max(5.5rem, calc(env(safe-area-inset-bottom) + 4.5rem));
+}
+
+#touch-info {
+  bottom: max(1.2rem, env(safe-area-inset-bottom));
+}
+
+#touch-run.active {
+  background: rgba(240, 232, 214, 0.22);
+  border-color: rgba(240, 232, 214, 0.65);
 }
 
 .hidden { display: none !important; }
