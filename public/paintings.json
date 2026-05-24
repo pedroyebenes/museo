@@ -145,11 +145,11 @@
   },
   {
     "id": "vermeer-joven-perla",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/800px-1665_Girl_with_a_Pearl_Earring.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/1665_Girl_with_a_Pearl_Earring.jpg",
     "title": "La joven de la perla",
     "author": "Johannes Vermeer",
     "year": 1665,
-    "description": "Conocida como la \"Mona Lisa del Norte\", esta tronie capta a una joven anónima girándose hacia el espectador con un turbante azul y una enorme perla pendiente.",
+    "description": "Conocida como la \"Mona Lisa del Norte\", esta tronie capta a una joven anónima que gira hacia el espectador. La luz, el turbante azul y la perla convierten un estudio de expresión en una presencia íntima y enigmática.",
     "dimensions": {
       "width": 39,
       "height": 44.5
@@ -157,7 +157,7 @@
   },
   {
     "id": "hokusai-gran-ola",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/1280px-The_Great_Wave_off_Kanagawa.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Great_Wave_off_Kanagawa.jpg",
     "title": "La gran ola de Kanagawa",
     "author": "Katsushika Hokusai",
     "year": 1831,
@@ -173,7 +173,7 @@
     "title": "Impresión, sol naciente",
     "author": "Claude Monet",
     "year": 1872,
-    "description": "Vista del puerto de Le Havre al amanecer. Dio nombre al impresionismo cuando un crítico la usó despectivamente en 1874.",
+    "description": "Vista del puerto de Le Havre al amanecer, reducida a brumas, reflejos y un sol naranja. Dio nombre al impresionismo cuando un crítico empleó el título de forma despectiva en 1874.",
     "dimensions": {
       "width": 65,
       "height": 50
@@ -229,7 +229,7 @@
   },
   {
     "id": "van-gogh-noche-estrellada",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
     "title": "La noche estrellada",
     "author": "Vincent van Gogh",
     "year": 1889,
@@ -241,7 +241,7 @@
   },
   {
     "id": "munch-el-grito",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/800px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
     "title": "El grito",
     "author": "Edvard Munch",
     "year": 1893,
@@ -324,16 +324,21 @@
     }
   },
   {
-    "id": "dali-persistencia-memoria",
-    "url": "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg",
-    "title": "La persistencia de la memoria",
-    "author": "Salvador Dalí",
-    "year": 1931,
-    "description": "Los relojes blandos derritiéndose en un paisaje onírico de Port Lligat. Una de las imágenes más reconocibles del surrealismo.",
+    "id": "redon-ciclope",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Odilon_Redon_-_The_Cyclops%2C_c._1914.jpg",
+    "title": "El cíclope",
+    "author": "Odilon Redon",
+    "year": 1914,
+    "description": "Una cabeza gigantesca observa con ternura a Galatea dormida entre flores. Redon transforma el mito en una visión simbolista donde lo monstruoso se vuelve contemplativo y casi melancólico.",
     "dimensions": {
-      "width": 33,
-      "height": 24
-    }
+      "width": 64,
+      "height": 51
+    },
+    "collection": "Kröller-Müller Museum, Otterlo",
+    "medium": "Óleo sobre cartón montado sobre panel",
+    "movement": "Simbolismo",
+    "imageLicense": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_The_Cyclops,_c._1914.jpg"
   },
   {
     "id": "david-juramento-horacios",
@@ -496,36 +501,36 @@
     "title": "La maja desnuda",
     "author": "Francisco de Goya",
     "year": 1800,
-    "description": "Retrato reclinado de figura anónima que desafió la moralidad de la época. Pareja iconográfica de La maja vestida; ambas pertenecieron a la colección de Godoy.",
+    "description": "Retrato reclinado de figura anónima que mira al espectador sin pudor alegórico. Su frontalidad desafió la moralidad de la época y forma pareja iconográfica con La maja vestida, ambas vinculadas a la colección de Godoy.",
     "dimensions": {
-      "width": 98,
-      "height": 191
+      "width": 191,
+      "height": 98
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Francisco_de_Goya_y_Lucientes_-_La_maja_desnuda_-_Google_Art_Project.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/La_Maja_desnuda_por_Goya.jpg"
   },
   {
     "id": "goya-sueno-razon",
     "title": "El sueño de la razón produce monstruos",
     "author": "Francisco de Goya",
     "year": 1799,
-    "description": "Estampa del Capricho 43: un hombre dormido entre búhos y murciélagos encarna la fragilidad de la Ilustración frente a la superstición.",
+    "description": "Estampa del Capricho 43: un hombre dormido entre búhos, murciélagos y criaturas nocturnas encarna la fragilidad de la Ilustración. La imagen advierte que la razón adormecida abre paso a la superstición y al miedo.",
     "dimensions": {
-      "width": 22,
-      "height": 15
+      "width": 15,
+      "height": 22
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Francisco_de_Goya_y_Lucientes_-_The_Sleep_of_Reason_Produces_Monsters_-_Google_Art_Project.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_sleep_of_reason_produces_monsters_%28No._43%29%2C_from_Los_Caprichos_-_Google_Art_Project.jpg"
   },
   {
     "id": "goya-saturno",
     "title": "Saturno devorando a su hijo",
     "author": "Francisco de Goya",
     "year": 1823,
-    "description": "Pintura negra de la Quinta del Sordo. El dios devora a su vástago en una escena de horror íntimo, leída como metáfora del tiempo y la tiranía.",
+    "description": "Pintura negra de la Quinta del Sordo trasladada después a lienzo. El dios devora a su vástago en una escena de horror íntimo, leída como metáfora del tiempo, la violencia política y la tiranía.",
     "dimensions": {
-      "width": 143,
-      "height": 81
+      "width": 81,
+      "height": 143
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Francisco_de_Goya_y_Lucientes_-_Saturn_Devouring_His_Son_-_Google_Art_Project.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg"
   },
   {
     "id": "rembrandt-ronda-noche",
@@ -561,7 +566,7 @@
       "width": 192,
       "height": 279
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Rembrandt_van_Rijn_-_The_Syndics_of_the_Drapers%27_Guild_-_Google_Art_Project.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Rembrandt_-_De_Staalmeesters-_het_college_van_staalmeesters_%28waardijns%29_van_het_Amsterdamse_lakenbereidersgilde_-_Google_Art_Project.jpg"
   },
   {
     "id": "leonardo-gioconda",
@@ -582,22 +587,22 @@
     "year": 1491,
     "description": "Versión londinense del encargo de la Inmaculada Concepción para la iglesia de San Francisco en Milán. Rocas, agua y gestos enlazados definen el paisaje sagrado leonardesco.",
     "dimensions": {
-      "width": 190,
-      "height": 120
+      "width": 120,
+      "height": 190
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Leonardo_da_Vinci_-_Virgin_of_the_Rocks_(National_Gallery).jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29_02.jpg"
   },
   {
     "id": "caravaggio-vocacion-mateo",
     "title": "La vocación de San Mateo",
     "author": "Caravaggio",
     "year": 1600,
-    "description": "En la iglesia de San Luis de los Franceses, Cristo señala a Mateo entre taverneros. Un rayo de luz divide la escena y funda el naturalismo barroco.",
+    "description": "En la capilla Contarelli de San Luis de los Franceses, Cristo señala a Mateo entre recaudadores y taverneros. Un rayo de luz atraviesa la oscuridad y convierte una escena cotidiana en revelación barroca.",
     "dimensions": {
-      "width": 322,
-      "height": 340
+      "width": 340,
+      "height": 322
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/The_Calling_of_Saint_Matthew-Caravaggio_(1599-1600).jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg"
   },
   {
     "id": "caravaggio-david-goliat",
@@ -618,17 +623,17 @@
     "year": 1596,
     "description": "Joven dios del vino ofrece la copa al espectador con una naturalidad casi provocadora. Bodegón y retrato fundidos en una de sus primeras obras maestras romanas.",
     "dimensions": {
-      "width": 95,
-      "height": 85
+      "width": 85,
+      "height": 95
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Caravaggio_-_Bacchus_-_Google_Art_Project.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bacchus-Caravaggio_%281598%29.jpg"
   },
   {
     "id": "botticelli-nacimiento-venus",
     "title": "El nacimiento de Venus",
     "author": "Sandro Botticelli",
     "year": 1485,
-    "description": "Venus nace de la espuma del mar y llega a la orilla en una concha. Obra cumbre del neoplatonismo florentino en los Uffizi.",
+    "description": "Venus nace de la espuma del mar y llega a la orilla en una concha, empujada por los vientos y recibida por una Hora. Obra cumbre del neoplatonismo florentino, transforma el mito clásico en ideal poético de belleza.",
     "dimensions": {
       "width": 173,
       "height": 279
@@ -652,19 +657,19 @@
     "title": "El entierro del Conde de Orgaz",
     "author": "El Greco",
     "year": 1586,
-    "description": "Obra maestra de la iglesia de Santo Tomé en Toledo. La tierra y el cielo se dividen en dos registros unidos por un manto sobrenatural.",
+    "description": "Obra maestra de la iglesia de Santo Tomé en Toledo. El entierro milagroso ocupa el registro terrenal, mientras el alma del conde asciende hacia una corte celestial de cuerpos alargados y luz visionaria.",
     "dimensions": {
-      "width": 480,
-      "height": 360
+      "width": 360,
+      "height": 480
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/El_Greco_-_The_Burial_of_the_Count_of_Orgaz.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/El_Greco_-_The_Burial_of_the_Count_of_Orgaz.JPG"
   },
   {
     "id": "el-greco-vista-toledo",
     "title": "Vista de Toledo",
     "author": "El Greco",
     "year": 1599,
-    "description": "Paisaje dramático de la ciudad adoptiva bajo un cielo tormentoso. Anticipa el paisaje expresivo del siglo XIX.",
+    "description": "Paisaje dramático de la ciudad adoptiva bajo un cielo tormentoso, más emocional que topográfico. La luz verdosa, las colinas tensas y la arquitectura comprimida anticipan el paisaje expresivo del siglo XIX.",
     "dimensions": {
       "width": 121,
       "height": 109
@@ -681,31 +686,41 @@
       "width": 421,
       "height": 261
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Peter_Paul_Rubens_-_The_Descent_from_the_Cross_-_WGA20300.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Peter_Paul_Rubens_-_Descent_from_the_Cross_-_WGA20212.jpg"
   },
   {
-    "id": "picasso-guernica",
-    "title": "Guernica",
-    "author": "Pablo Picasso",
-    "year": 1937,
-    "description": "Monumental denuncia del bombardeo de la villa vasca durante la Guerra Civil. Figuras fragmentadas en blanco, negro y gris se convirtieron en icono pacifista universal.",
+    "id": "cezanne-jugadores-cartas",
+    "title": "Los jugadores de cartas",
+    "author": "Paul Cézanne",
+    "year": 1895,
+    "description": "Dos campesinos concentrados en una partida silenciosa sustituyen la anécdota por construcción pictórica. Las figuras, la mesa y las botellas se organizan en planos de color que preparan el camino del cubismo.",
     "dimensions": {
-      "width": 349,
-      "height": 776
+      "width": 65,
+      "height": 81
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Guernica%2C_by_Pablo_Picasso%2C_from_Museo_Reina_Sofia.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg",
+    "collection": "The Courtauld Gallery, Londres",
+    "medium": "Óleo sobre lienzo",
+    "movement": "Postimpresionismo",
+    "imageLicense": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Les_Joueurs_de_cartes,_par_Paul_C%C3%A9zanne.jpg"
   },
   {
-    "id": "picasso-demoselles-avignon",
-    "title": "Las señoritas de Aviñón",
-    "author": "Pablo Picasso",
-    "year": 1907,
-    "description": "Manifiesto del cubismo: cinco figuras femeninas con máscaras ibéricas y africanas que rompen la perspectiva renacentista. Revolucionó el arte del siglo XX.",
+    "id": "rousseau-sueno",
+    "title": "El sueño",
+    "author": "Henri Rousseau",
+    "year": 1910,
+    "description": "Una mujer reclinada aparece en plena selva entre plantas, músicos y animales acechantes. Rousseau combina imaginación, frontalidad y detalle decorativo en una escena onírica que fascinó a las vanguardias.",
     "dimensions": {
-      "width": 244,
-      "height": 234
+      "width": 299,
+      "height": 204
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Les_Demoiselles_d%27Avignon%2C_by_Pablo_Picasso%2C_from_MoMA.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg",
+    "collection": "Museum of Modern Art, Nueva York",
+    "medium": "Óleo sobre lienzo",
+    "movement": "Postimpresionismo / arte naíf",
+    "imageLicense": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg"
   },
   {
     "id": "klimt-el-beso",
@@ -736,7 +751,7 @@
     "title": "Los grandes bañistas",
     "author": "Paul Cézanne",
     "year": 1906,
-    "description": "Versión monumental del tema de las bañistas. Figuras modeladas por planos de color que anuncian el cubismo y el fauvismo.",
+    "description": "Versión monumental del tema de las bañistas, trabajada durante sus últimos años. Las figuras se integran en una arquitectura de árboles y planos de color que anuncia el cubismo y el fauvismo.",
     "dimensions": {
       "width": 211,
       "height": 251
@@ -748,12 +763,12 @@
     "title": "Baile en el Moulin de la Galette",
     "author": "Pierre-Auguste Renoir",
     "year": 1876,
-    "description": "Tarde de domingo en Montmartre: luz filtrada por los árboles y parejas que bailan. Cumbre del impresionismo social y luminoso.",
+    "description": "Tarde de domingo en Montmartre: luz filtrada por los árboles, vestidos claros y parejas que bailan entre conversaciones. Renoir convierte el ocio moderno en una escena vibrante de color y sociabilidad impresionista.",
     "dimensions": {
-      "width": 131,
-      "height": 175
+      "width": 175,
+      "height": 131
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Pierre-Auguste_Renoir%2C_Le_Moulin_de_la_Galette%2C_1876.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Pierre-Auguste_Renoir%2C_Le_Moulin_de_la_Galette.jpg"
   },
   {
     "id": "van-eyck-arnolfini",
@@ -762,22 +777,27 @@
     "year": 1434,
     "description": "Retrato doble con espejo convexo que refleja la escena. Obra fundacional de la pintura flamenca por su detalle simbólico y el virtuosismo del óleo.",
     "dimensions": {
-      "width": 82,
-      "height": 60
+      "width": 60,
+      "height": 82
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Jan_van_Eyck_-_The_Arnolfini_Portrait_(National_Gallery%2C_London).jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Jan_van_Eyck_-_Arnolfini_Portrait_-_National_Gallery.png"
   },
   {
-    "id": "kahlo-dos-fridas",
-    "title": "Las dos Fridas",
-    "author": "Frida Kahlo",
-    "year": 1939,
-    "description": "Dos Fridas sentadas de frente, manos unidas, corazones conectados y expuestos. Autorretrato doble tras el divorcio de Diego Rivera.",
+    "id": "cassatt-bano-nino",
+    "title": "El baño del niño",
+    "author": "Mary Cassatt",
+    "year": 1893,
+    "description": "Una mujer sostiene a una niña mientras lava sus pies en una jofaina. Cassatt adapta encuadres de la estampa japonesa para convertir una escena doméstica en una composición moderna de intimidad y cuidado.",
     "dimensions": {
-      "width": 194,
-      "height": 173
+      "width": 66,
+      "height": 100
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Las_dos_Fridas.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Mary_Cassatt_-_The_Child%27s_Bath_-_Google_Art_Project.jpg",
+    "collection": "Art Institute of Chicago",
+    "medium": "Óleo sobre lienzo",
+    "movement": "Impresionismo",
+    "imageLicense": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Cassatt_-_The_Child%27s_Bath_-_Google_Art_Project.jpg"
   },
   {
     "id": "degas-clase-ballet",
@@ -796,12 +816,12 @@
     "title": "Santa Casilda",
     "author": "Francisco de Zurbarán",
     "year": 1635,
-    "description": "La santa presenta la cesta de rosas que ocultaba el pan destinado a cristianos perseguidos. Silencio, túnula blanca y fondo oscuro definen el misticismo zurbaranesco.",
+    "description": "La santa presenta la cesta de rosas que, según la leyenda, ocultaba el pan destinado a cristianos perseguidos. El fondo oscuro, la túnica blanca y el silencio frontal concentran el misticismo sobrio de Zurbarán.",
     "dimensions": {
-      "width": 169,
-      "height": 97
+      "width": 97,
+      "height": 169
     },
-    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Francisco_de_Zurbar%C3%A1n_-_Santa_Casilda_-_Google_Art_Project.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Francisco_de_Zurbar%C3%A1n_-_Santa_Casilda.jpg"
   },
   {
     "id": "vangogh-girasoles",

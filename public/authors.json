@@ -59,12 +59,6 @@
     "origin": "Valencia, España",
     "bio": "Gran maestro del luminismo. Empezó pintando obra de denuncia social y costumbrista, pero la consagración internacional le llegó con sus playas valencianas: figuras vestidas de blanco a contraluz, agua transparente y pincelada suelta cargada de sol."
   },
-  "Salvador Dalí": {
-    "fullName": "Salvador Domingo Felipe Jacinto Dalí i Domènech",
-    "years": "1904 – 1989",
-    "origin": "Figueres, Cataluña, España",
-    "bio": "Surrealista catalán de virtuosismo técnico extremo. Su «método paranoico-crítico» convirtió fobias, recuerdos y deseos en imágenes precisas y enigmáticas. Diseñó también para cine (Buñuel, Hitchcock), teatro y ballet."
-  },
   "Miguel Ángel": {
     "fullName": "Michelangelo di Lodovico Buonarroti Simoni",
     "years": "1475 – 1564",
@@ -119,12 +113,6 @@
     "origin": "Siegen, Sacro Imperio Romano",
     "bio": "Gigante del barroco flamenco: dinamismo, carnalidad y color sonoro. Diplomático y director de un taller prolífico, pintó mitologías, retratos reales y escenas religiosas de formato monumental."
   },
-  "Pablo Picasso": {
-    "fullName": "Pablo Diego José Francisco de Paula Juan Nepomuceno Picasso",
-    "years": "1881 – 1973",
-    "origin": "Málaga, España",
-    "bio": "El artista más influyente del siglo XX. Del período azul al cubismo y al neoclasicismo, reinventó sin cesar la pintura y la escultura. Guernica se convirtió en emblema universal contra la guerra."
-  },
   "Gustav Klimt": {
     "fullName": "Gustav Klimt",
     "years": "1862 – 1918",
@@ -155,12 +143,6 @@
     "origin": "Maaseik, Condado de Borgoña",
     "bio": "Pionero del óleo en el norte de Europa. Su minuciosidad casi microscópica y el uso del simbolismo en retratos —como Los esposos Arnolfini— fundaron la pintura flamenca del siglo XV."
   },
-  "Frida Kahlo": {
-    "fullName": "Magdalena Carmen Frida Kahlo y Calderón",
-    "years": "1907 – 1954",
-    "origin": "Coyoacán, Ciudad de México, México",
-    "bio": "Pintora mexicana que convirtió el dolor físico y emocional en iconografía autobiográfica. Su obra mezcla folclore, surrealismo y política; Las dos Fridas es una de las imágenes más potentes del siglo XX."
-  },
   "Edgar Degas": {
     "fullName": "Hilaire-Germain-Edgar De Gas, detto Degas",
     "years": "1834 – 1917",
@@ -172,5 +154,23 @@
     "years": "1598 – 1664",
     "origin": "Fuente de Cantos, Extremadura, España",
     "bio": "«Pintor de los reyes y de los monjes». Su barroco sevillano combina silencio místico, telas densas y objetos aislados contra fondos oscuros. Santa Casilda resume su devoción y su precisión casi escultórica."
+  },
+  "Odilon Redon": {
+    "fullName": "Odilon Redon",
+    "years": "1840 – 1916",
+    "origin": "Burdeos, Francia",
+    "bio": "Figura central del simbolismo francés. Sus dibujos y pinturas sustituyen la observación naturalista por visiones interiores, mitológicas y oníricas. En su obra tardía, el color se vuelve luminoso y fantástico, con flores, criaturas híbridas y escenas suspendidas entre sueño y alegoría."
+  },
+  "Henri Rousseau": {
+    "fullName": "Henri Julien Félix Rousseau",
+    "years": "1844 – 1910",
+    "origin": "Laval, Francia",
+    "bio": "Pintor autodidacta asociado al arte naïf y admirado por las vanguardias parisinas. Sus selvas imaginarias, construidas desde jardines botánicos, estampas y fantasía, combinan frontalidad, detalle minucioso y una extraña intensidad poética."
+  },
+  "Mary Cassatt": {
+    "fullName": "Mary Stevenson Cassatt",
+    "years": "1844 – 1926",
+    "origin": "Allegheny City, Pensilvania, Estados Unidos",
+    "bio": "Pintora y grabadora estadounidense vinculada al impresionismo francés. Trabajó con Degas y destacó por escenas de mujeres, niños e intimidad doméstica, tratadas con composición moderna, influencia de la estampa japonesa y una mirada poco complaciente sobre la vida cotidiana."
   }
 }
