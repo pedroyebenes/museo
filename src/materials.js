@@ -272,6 +272,9 @@ function makeSanPietroDomeFrescoTexture() {
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = 8;
+  // Flip U so text reads correctly when viewed from inside the sphere
+  tex.repeat.set(-1, 1);
+  tex.offset.set(1, 0);
   tex.userData.shared = true;
   return tex;
 }
