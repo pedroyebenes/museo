@@ -58,22 +58,37 @@ function addFloor(group, radius, mats, quality) {
   group.add(floor);
 }
 
+function remapDomeUVToPolar(geometry, maxTheta) {
+  const pos = geometry.attributes.position;
+  const uv = geometry.attributes.uv;
+  for (let i = 0; i < pos.count; i++) {
+    const x = pos.getX(i);
+    const y = pos.getY(i);
+    const z = pos.getZ(i);
+    const r = Math.sqrt(x * x + y * y + z * z);
+    const theta = Math.acos(Math.max(-1, Math.min(1, y / r)));
+    const phi = Math.atan2(z, x);
+    const normR = Math.min(1, theta / maxTheta);
+    uv.setXY(i, 0.5 + normR * 0.5 * Math.cos(phi), 0.5 + normR * 0.5 * Math.sin(phi));
+  }
+  uv.needsUpdate = true;
+}
+
 function addRotundaDome(group, radius, height, mats, quality) {
   const domeRadius = radius * 0.98;
   const domeMat = getDomeMaterial();
+  const maxTheta = Math.PI * 0.52;
 
-  const dome = new THREE.Mesh(
-    new THREE.SphereGeometry(
-      domeRadius,
-      quality.domeWidthSegments,
-      quality.domeHeightSegments,
-      0,
-      Math.PI * 2,
-      0,
-      Math.PI * 0.52,
-    ),
-    domeMat,
+  const domeGeo = new THREE.SphereGeometry(
+    domeRadius,
+    quality.domeWidthSegments,
+    quality.domeHeightSegments,
+    0, Math.PI * 2,
+    0, maxTheta,
   );
+  remapDomeUVToPolar(domeGeo, maxTheta);
+
+  const dome = new THREE.Mesh(domeGeo, domeMat);
   dome.scale.y = 0.62;
   dome.position.set(0, height, 0);
   group.add(dome);

@@ -409,13 +409,26 @@ function domeDrawArch(ctx, cx, topY, archW, archH) {
 
 export function getDomeMaterial() {
   if (domeMatCached) return domeMatCached;
+  // Procedural texture shows immediately while the real photo loads
   domeMatCached = new THREE.MeshStandardMaterial({
     map: makeSanPietroDomeFrescoTexture(),
     side: THREE.DoubleSide,
-    roughness: 0.82,
-    metalness: 0.08,
+    roughness: 0.78,
+    metalness: 0.06,
   });
   domeMatCached.userData.shared = true;
+  new THREE.TextureLoader().load(
+    '/textures/san_pietro_cupola.jpg',
+    (tex) => {
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.anisotropy = 8;
+      tex.userData.shared = true;
+      domeMatCached.map = tex;
+      domeMatCached.needsUpdate = true;
+    },
+    undefined,
+    (err) => console.warn('Dome photo failed, keeping procedural texture:', err),
+  );
   return domeMatCached;
 }
 
