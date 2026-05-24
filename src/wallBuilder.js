@@ -24,7 +24,14 @@ export const DOOR_WIDTH = DOOR_W;
 export const DOOR_HEIGHT = DOOR_H;
 
 export function buildRoomShell(group, opts) {
-  const { width, depth, height, walls, materials = getSharedMaterials() } = opts;
+  const {
+    width,
+    depth,
+    height,
+    walls,
+    materials = getSharedMaterials(),
+    domeCeiling = false,
+  } = opts;
   const mats = materials;
 
   // Floor + ceiling
@@ -35,13 +42,17 @@ export function buildRoomShell(group, opts) {
   floor.rotation.x = -Math.PI / 2;
   group.add(floor);
 
-  const ceiling = new THREE.Mesh(
-    new THREE.PlaneGeometry(width, depth),
-    mats.ceilMat,
-  );
-  ceiling.rotation.x = Math.PI / 2;
-  ceiling.position.y = height;
-  group.add(ceiling);
+  if (domeCeiling) {
+    addDomeCeiling(group, width, depth, height, mats);
+  } else {
+    const ceiling = new THREE.Mesh(
+      new THREE.PlaneGeometry(width, depth),
+      mats.ceilMat,
+    );
+    ceiling.rotation.x = Math.PI / 2;
+    ceiling.position.y = height;
+    group.add(ceiling);
+  }
 
   const segments = [];
   const triggers = [];
@@ -80,10 +91,11 @@ function buildWall(group, wallSpec, dims, mats, segments, triggers) {
     addCollisionSegment(segments, axis, fixed, span.from, span.to);
   }
 
-  // Per-door: lintel above the opening + doorframe + sign + trigger
+  // Per-door: lintel above the opening + doorframe + portal + sign + trigger
   for (const d of sortedDoors) {
     addLintel(group, mats, d, axis, fixed, height, rotY, normalIn);
     addDoorFrame(group, mats, d, axis, fixed, normalIn);
+    addDoorPortal(group, mats, d, axis, fixed, normalIn, rotY);
     if (d.label) addDoorSign(group, d, axis, fixed, height, rotY, normalIn);
     triggers.push(makeTrigger(d, axis, fixed, normalIn));
   }
@@ -177,9 +189,165 @@ function addDoorFrame(group, mats, door, axis, fixed, normalIn) {
   }
 }
 
+function addDoorPortal(group, mats, door, axis, fixed, normalIn, rotY) {
+  const recessDepth = 0.38;
+  const inset = normalIn.clone().multiplyScalar(0.04);
+  const center = placeAlong(axis, fixed, door.position, DOOR_H / 2);
+  center.add(inset);
+
+  const recessMat = new THREE.MeshStandardMaterial({
+    color: 0x24160e,
+    roughness: 0.92,
+    metalness: 0.04,
+  });
+  const doorLeafMat = new THREE.MeshStandardMaterial({
+    color: 0x5c3a22,
+    roughness: 0.72,
+    metalness: 0.08,
+  });
+  const trimMat = mats.trimMat;
+
+  const backDist = recessDepth * 0.92;
+  const back = new THREE.Mesh(
+    new THREE.PlaneGeometry(DOOR_W * 0.88, DOOR_H * 0.92),
+    makePortalGlowMaterial(),
+  );
+  back.position.copy(center);
+  back.position.add(normalIn.clone().multiplyScalar(backDist));
+  back.rotation.y = rotY + Math.PI;
+  group.add(back);
+
+  const sideDepth = recessDepth * 0.55;
+  for (const dir of [-1, 1]) {
+    let side;
+    if (axis === 'x') {
+      side = new THREE.Mesh(
+        new THREE.BoxGeometry(FW * 0.7, DOOR_H * 0.94, sideDepth),
+        recessMat,
+      );
+      side.position.set(
+        door.position + dir * (DOOR_W / 2 - FW * 0.2),
+        DOOR_H / 2,
+        fixed + normalIn.z * (inset.z + sideDepth / 2),
+      );
+    } else {
+      side = new THREE.Mesh(
+        new THREE.BoxGeometry(sideDepth, DOOR_H * 0.94, FW * 0.7),
+        recessMat,
+      );
+      side.position.set(
+        fixed + normalIn.x * (inset.x + sideDepth / 2),
+        DOOR_H / 2,
+        door.position + dir * (DOOR_W / 2 - FW * 0.2),
+      );
+    }
+    group.add(side);
+  }
+
+  const leafW = DOOR_W / 2 - 0.12;
+  const leafH = DOOR_H - 0.18;
+  const leafD = 0.07;
+  const openAngle = 0.42;
+
+  for (const dir of [-1, 1]) {
+    const leaf = new THREE.Mesh(
+      axis === 'x'
+        ? new THREE.BoxGeometry(leafW, leafH, leafD)
+        : new THREE.BoxGeometry(leafD, leafH, leafW),
+      doorLeafMat,
+    );
+    leaf.position.copy(center);
+    if (axis === 'x') {
+      leaf.position.x += dir * (DOOR_W / 4);
+      leaf.position.z += normalIn.z * 0.12;
+      leaf.rotation.y = rotY + dir * openAngle;
+    } else {
+      leaf.position.z += dir * (DOOR_W / 4);
+      leaf.position.x += normalIn.x * 0.12;
+      leaf.rotation.y = rotY + dir * openAngle;
+    }
+    group.add(leaf);
+
+    const handle = new THREE.Mesh(
+      new THREE.SphereGeometry(0.045, 10, 10),
+      trimMat,
+    );
+    handle.position.copy(leaf.position);
+    if (axis === 'x') {
+      handle.position.x -= dir * (leafW / 2 - 0.18);
+    } else {
+      handle.position.z -= dir * (leafW / 2 - 0.18);
+    }
+    handle.position.y -= leafH * 0.15;
+    group.add(handle);
+  }
+
+  const light = new THREE.PointLight(0xffdba8, 1.1, 5.5, 1.6);
+  light.position.copy(center);
+  light.position.add(normalIn.clone().multiplyScalar(recessDepth * 0.55));
+  group.add(light);
+}
+
+function makePortalGlowMaterial() {
+  const c = document.createElement('canvas');
+  c.width = 256;
+  c.height = 256;
+  const ctx = c.getContext('2d');
+  const g = ctx.createRadialGradient(128, 128, 8, 128, 128, 128);
+  g.addColorStop(0, '#fff4d0');
+  g.addColorStop(0.35, '#e8c078');
+  g.addColorStop(0.72, '#6a4528');
+  g.addColorStop(1, '#1a1008');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, c.width, c.height);
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return new THREE.MeshBasicMaterial({ map: tex });
+}
+
+function addDomeCeiling(group, width, depth, height, mats) {
+  const span = Math.min(width, depth);
+  const radius = span * 0.42;
+  const dome = new THREE.Mesh(
+    new THREE.SphereGeometry(radius, 48, 28, 0, Math.PI * 2, 0, Math.PI * 0.48),
+    mats.ceilMat,
+  );
+  dome.scale.y = 0.82;
+  dome.position.set(0, height, 0);
+  group.add(dome);
+
+  const oculus = new THREE.Mesh(
+    new THREE.CircleGeometry(radius * 0.11, 32),
+    new THREE.MeshStandardMaterial({
+      color: 0xfff6e0,
+      emissive: 0xffe8b0,
+      emissiveIntensity: 0.85,
+      roughness: 0.35,
+      metalness: 0.05,
+    }),
+  );
+  oculus.rotation.x = -Math.PI / 2;
+  oculus.position.set(0, height + radius * 0.72, 0);
+  group.add(oculus);
+
+  const ring = new THREE.Mesh(
+    new THREE.TorusGeometry(radius * 0.13, radius * 0.018, 12, 40),
+    mats.trimMat,
+  );
+  ring.rotation.x = Math.PI / 2;
+  ring.position.copy(oculus.position);
+  ring.position.y -= 0.02;
+  group.add(ring);
+
+  const skylight = new THREE.PointLight(0xfff0cc, 1.4, span * 1.2, 1.5);
+  skylight.position.set(0, height + radius * 0.75, 0);
+  group.add(skylight);
+}
+
 function addDoorSign(group, door, axis, fixed, height, rotY, normalIn) {
-  const sign = buildSignMesh(door.label, door.arrow);
   const lintelH = height - DOOR_H;
+  const sign = buildSignMesh(door.label, door.arrow, lintelH);
   // Centre the sign within the lintel area
   sign.position.copy(
     placeAlong(axis, fixed, door.position, DOOR_H + lintelH / 2),
@@ -189,31 +357,76 @@ function addDoorSign(group, door, axis, fixed, height, rotY, normalIn) {
   group.add(sign);
 }
 
-function buildSignMesh(label, arrow) {
+function buildSignMesh(label, arrow, lintelH = 2.4) {
   const c = document.createElement('canvas');
   c.width = 1024;
-  c.height = 192;
+  c.height = 256;
   const ctx = c.getContext('2d');
   ctx.fillStyle = '#0e0a06';
   ctx.fillRect(0, 0, c.width, c.height);
   ctx.strokeStyle = '#c7a060';
   ctx.lineWidth = 6;
   ctx.strokeRect(6, 6, c.width - 12, c.height - 12);
+
+  const txt = arrow ? `${arrow}  ${label}` : label;
+  const maxTextW = c.width - 80;
+  const fontSize = fitSignFont(ctx, txt, maxTextW, 72, 34);
   ctx.fillStyle = '#f3e8c8';
-  ctx.font = '600 88px Georgia, "Times New Roman", serif';
+  ctx.font = `600 ${fontSize}px Georgia, "Times New Roman", serif`;
   ctx.textBaseline = 'middle';
   ctx.textAlign = 'center';
-  const txt = arrow ? `${arrow}  ${label}` : label;
-  ctx.fillText(txt, c.width / 2, c.height / 2);
+  drawWrappedCenteredText(ctx, txt, c.width / 2, c.height / 2, maxTextW, fontSize * 1.15, 2);
 
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = 8;
 
-  const w = 2.4;
-  const h = w * (c.height / c.width);
+  const w = DOOR_W - 0.12;
+  const h = Math.min(w * (c.height / c.width), lintelH - 0.18);
   const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
   return new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
+}
+
+function fitSignFont(ctx, text, maxWidth, startSize, minSize) {
+  for (let size = startSize; size >= minSize; size -= 2) {
+    ctx.font = `600 ${size}px Georgia, "Times New Roman", serif`;
+    if (ctx.measureText(text).width <= maxWidth) return size;
+  }
+  return minSize;
+}
+
+function drawWrappedCenteredText(ctx, text, cx, cy, maxWidth, lineHeight, maxLines) {
+  const words = String(text).split(/\s+/);
+  const lines = [];
+  let line = '';
+
+  for (const word of words) {
+    const test = line ? `${line} ${word}` : word;
+    if (ctx.measureText(test).width > maxWidth && line) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = test;
+    }
+  }
+  if (line) lines.push(line);
+
+  let display = lines;
+  if (lines.length > maxLines) {
+    display = lines.slice(0, maxLines);
+    let last = display[maxLines - 1];
+    while (ctx.measureText(`${last}…`).width > maxWidth && last.length > 0) {
+      last = last.slice(0, -1);
+    }
+    display[maxLines - 1] = `${last}…`;
+  }
+
+  const blockH = (display.length - 1) * lineHeight;
+  let y = cy - blockH / 2;
+  for (const row of display) {
+    ctx.fillText(row, cx, y);
+    y += lineHeight;
+  }
 }
 
 function addCrownMoulding(group, mats, axis, fixed, length, height, normalIn) {

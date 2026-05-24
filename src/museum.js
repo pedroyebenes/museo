@@ -4,6 +4,7 @@ import { getAuthorRoomMaterials } from './materials.js';
 import {
   getPaintingDimensionsMeters,
   getPaintingLayoutExtents,
+  computePaintingCenterY,
   PAINTING_LAYOUT,
 } from './paintings.js';
 
@@ -154,20 +155,13 @@ function roomHeightNeeded(paintings) {
 
   for (const painting of paintings) {
     const { canvasH } = getPaintingLayoutExtents(painting);
-    const y = paintingCenterY(canvasH);
+    const y = computePaintingCenterY(canvasH);
     const top =
       y + canvasH / 2 + PAINTING_LAYOUT.frameThickness + ceilingClearance;
     maxTop = Math.max(maxTop, top);
   }
 
   return maxTop;
-}
-
-function paintingCenterY(canvasHeight) {
-  const { labelHeight, labelGap, frameThickness, floorClearance } =
-    PAINTING_LAYOUT;
-  const labelBelow = labelHeight + labelGap + labelHeight / 2;
-  return floorClearance + canvasHeight / 2 + frameThickness + labelBelow;
 }
 
 function distribute3(n) {
@@ -194,7 +188,7 @@ function layoutSlots(slots, opts) {
   for (let i = 0; i < paintings.length; i++) {
     const { w, h } = sizes[i];
     along += w / 2;
-    const y = paintingCenterY(h);
+    const y = computePaintingCenterY(h);
     const position =
       fixedAxis === 'x'
         ? new THREE.Vector3(fixedValue, y, along)

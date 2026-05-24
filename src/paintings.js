@@ -15,7 +15,27 @@ export const PAINTING_LAYOUT = {
   ceilingClearance: 0.4,
   wallPadding: 1.5,
   paintingGap: 0.8,
+  eyeHeight: 1.6,
 };
+
+function labelBelowExtent() {
+  return (
+    PAINTING_LAYOUT.labelHeight +
+    PAINTING_LAYOUT.labelGap +
+    PAINTING_LAYOUT.labelHeight / 2
+  );
+}
+
+// Centers the canvas at eye level when it fits; otherwise hangs from the floor.
+export function computePaintingCenterY(canvasHeight) {
+  const { frameThickness, floorClearance, eyeHeight } = PAINTING_LAYOUT;
+  const labelBelow = labelBelowExtent();
+  const bottomIfCentered = eyeHeight - canvasHeight / 2 - labelBelow;
+  if (bottomIfCentered >= floorClearance) {
+    return eyeHeight;
+  }
+  return floorClearance + canvasHeight / 2 + frameThickness + labelBelow;
+}
 
 export function getPaintingDimensionsMeters(data) {
   const { width, height } = data.dimensions ?? {};
@@ -30,10 +50,7 @@ export function getPaintingLayoutExtents(data) {
     w: FALLBACK_LONG_SIDE,
     h: FALLBACK_LONG_SIDE,
   };
-  const labelBelow =
-    PAINTING_LAYOUT.labelHeight +
-    PAINTING_LAYOUT.labelGap +
-    PAINTING_LAYOUT.labelHeight / 2;
+  const labelBelow = labelBelowExtent();
   return {
     width: dims.w + FRAME_THICKNESS * 2,
     height: dims.h + FRAME_THICKNESS * 2 + labelBelow,

@@ -96,6 +96,120 @@ function build() {
   };
 }
 
+let hubCached = null;
+let domeMatCached = null;
+
+export function getHubMaterials() {
+  if (hubCached) return hubCached;
+  const base = build();
+  const floorMat = new THREE.MeshStandardMaterial({
+    map: makeMarbleFloorTexture(),
+    roughness: 0.42,
+    metalness: 0.12,
+  });
+  floorMat.userData.shared = true;
+
+  const wallMat = base.wallMat.clone();
+  wallMat.color = new THREE.Color('#efe3cc');
+
+  const wainscotMat = base.wainscotMat.clone();
+  wainscotMat.color = new THREE.Color('#6b4a32');
+
+  hubCached = { ...base, floorMat, wallMat, wainscotMat };
+  return hubCached;
+}
+
+function makeMarbleFloorTexture() {
+  const c = document.createElement('canvas');
+  c.width = 1024;
+  c.height = 1024;
+  const ctx = c.getContext('2d');
+  const cx = c.width / 2;
+  const cy = c.height / 2;
+
+  const bg = ctx.createRadialGradient(cx, cy, 40, cx, cy, 520);
+  bg.addColorStop(0, '#f7efe0');
+  bg.addColorStop(0.55, '#ead9bc');
+  bg.addColorStop(1, '#ccb892');
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, c.width, c.height);
+
+  ctx.strokeStyle = 'rgba(199,160,96,0.35)';
+  ctx.lineWidth = 3;
+  for (let i = 0; i < 12; i++) {
+    const a = (i / 12) * Math.PI * 2;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + Math.cos(a) * 500, cy + Math.sin(a) * 500);
+    ctx.stroke();
+  }
+
+  for (let r = 120; r <= 460; r += 80) {
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 8;
+  tex.userData.shared = true;
+  return tex;
+}
+
+function makeDomeInteriorTexture() {
+  const c = document.createElement('canvas');
+  c.width = 1024;
+  c.height = 1024;
+  const ctx = c.getContext('2d');
+  const cx = c.width / 2;
+  const cy = c.height / 2;
+
+  const sky = ctx.createRadialGradient(cx, cy, 20, cx, cy, 520);
+  sky.addColorStop(0, '#fff9eb');
+  sky.addColorStop(0.22, '#f3e2b8');
+  sky.addColorStop(0.55, '#dcc18a');
+  sky.addColorStop(0.82, '#b99258');
+  sky.addColorStop(1, '#8c693f');
+  ctx.fillStyle = sky;
+  ctx.fillRect(0, 0, c.width, c.height);
+
+  ctx.strokeStyle = 'rgba(120,80,40,0.18)';
+  ctx.lineWidth = 2;
+  for (let ring = 1; ring <= 5; ring++) {
+    ctx.beginPath();
+    ctx.arc(cx, cy, ring * 90, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+
+  for (let i = 0; i < 16; i++) {
+    const a = (i / 16) * Math.PI * 2;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + Math.cos(a) * 500, cy + Math.sin(a) * 500);
+    ctx.stroke();
+  }
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 8;
+  tex.userData.shared = true;
+  return tex;
+}
+
+export function getDomeMaterial() {
+  if (domeMatCached) return domeMatCached;
+  domeMatCached = new THREE.MeshStandardMaterial({
+    map: makeDomeInteriorTexture(),
+    side: THREE.DoubleSide,
+    roughness: 0.88,
+    metalness: 0.04,
+  });
+  domeMatCached.userData.shared = true;
+  return domeMatCached;
+}
+
 function hashString(value) {
   let hash = 2166136261;
   for (let i = 0; i < value.length; i++) {
