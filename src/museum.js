@@ -10,7 +10,7 @@ const PAINTING_Y = 1.6;
 // Builds an author room: paintings on N/E/W walls, one door on the S wall
 // that leads back to the hub. Returns slots/segments/triggers/spawn.
 export function buildAuthorRoom(scene, config) {
-  const { author, paintingCount } = config;
+  const { author, paintingCount, bio = null } = config;
 
   // Distribute paintings across 3 walls (N, E, W)
   const counts = distribute3(paintingCount); // { N, E, W }
@@ -82,6 +82,10 @@ export function buildAuthorRoom(scene, config) {
 
   // Author plaque on the floor near the entrance
   addAuthorPlaque(group, author, depth);
+
+  // Biographical placard mounted on the S wall, beside the door, facing into
+  // the room. The visitor reads it when turning back toward the exit.
+  if (bio) addAuthorBioPlaque(group, author, bio, depth);
 
   // Gentle hemisphere fill so the room isn't pitch black between spotlights
   addRoomLights(group, width, depth);
@@ -169,4 +173,100 @@ function addRoomLights(group, width, depth) {
   const point = new THREE.PointLight(0xfff1d8, 0.65, Math.max(width, depth) * 1.4, 1.6);
   point.position.set(0, HEIGHT - 0.4, 0);
   group.add(point);
+}
+
+function addAuthorBioPlaque(group, author, bio, depth) {
+  const W_PX = 820;
+  const H_PX = 1080;
+  const c = document.createElement('canvas');
+  c.width = W_PX;
+  c.height = H_PX;
+  const ctx = c.getContext('2d');
+
+  // Background — dark with a double gilded border
+  ctx.fillStyle = '#0c0907';
+  ctx.fillRect(0, 0, W_PX, H_PX);
+  ctx.strokeStyle = '#c7a060';
+  ctx.lineWidth = 10;
+  ctx.strokeRect(12, 12, W_PX - 24, H_PX - 24);
+  ctx.lineWidth = 2;
+  ctx.strokeRect(34, 34, W_PX - 68, H_PX - 68);
+
+  // Title — author full name
+  let y = 100;
+  ctx.fillStyle = '#f0dca0';
+  ctx.font = 'italic 600 56px Georgia, "Times New Roman", serif';
+  ctx.textBaseline = 'top';
+  ctx.textAlign = 'center';
+  const title = bio.fullName || author;
+  y = drawWrappedText(ctx, title, W_PX / 2, y, W_PX - 120, 64);
+
+  // Years
+  ctx.fillStyle = '#c9a067';
+  ctx.font = '400 34px Georgia, serif';
+  y += 24;
+  ctx.fillText(bio.years || '', W_PX / 2, y);
+  y += 50;
+
+  // Origin
+  if (bio.origin) {
+    ctx.fillStyle = '#a98a52';
+    ctx.font = 'italic 26px Georgia, serif';
+    y = drawWrappedText(ctx, bio.origin, W_PX / 2, y, W_PX - 140, 36);
+    y += 12;
+  }
+
+  // Separator
+  ctx.strokeStyle = '#c7a060';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(180, y + 16);
+  ctx.lineTo(W_PX - 180, y + 16);
+  ctx.stroke();
+  y += 48;
+
+  // Bio paragraph
+  if (bio.bio) {
+    ctx.fillStyle = '#ebe4d2';
+    ctx.font = '400 26px Georgia, serif';
+    ctx.textAlign = 'left';
+    drawWrappedText(ctx, bio.bio, 80, y, W_PX - 160, 38);
+  }
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 8;
+
+  const w = 1.3;
+  const h = w * (H_PX / W_PX); // ~1.71m
+  const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: false });
+  const plaque = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
+  // Mount on the S wall, 1.8m to the left of the door (player's right when
+  // standing at the door looking into the room), centred at eye level.
+  plaque.position.set(-1.85, h / 2 + 0.25, depth / 2 - 0.07);
+  plaque.rotation.y = Math.PI; // face -Z, into the room
+  group.add(plaque);
+}
+
+// Draws word-wrapped text starting at (x, y). Returns the final y after the
+// last line. For centred text pass an x that's the centre of the line span.
+function drawWrappedText(ctx, text, x, y, maxWidth, lineHeight) {
+  const words = String(text).split(/\s+/);
+  let line = '';
+  let curY = y;
+  for (const word of words) {
+    const test = line ? line + ' ' + word : word;
+    if (ctx.measureText(test).width > maxWidth && line) {
+      ctx.fillText(line, x, curY);
+      line = word;
+      curY += lineHeight;
+    } else {
+      line = test;
+    }
+  }
+  if (line) {
+    ctx.fillText(line, x, curY);
+    curY += lineHeight;
+  }
+  return curY;
 }

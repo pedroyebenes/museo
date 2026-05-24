@@ -11,8 +11,14 @@ async function boot() {
   const { scene, camera, renderer } = createScene();
 
   let paintings = [];
+  let authorsData = {};
   try {
-    paintings = await loadPaintingData();
+    const [pj, aj] = await Promise.all([
+      loadPaintingData(),
+      fetch('/authors.json').then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
+    ]);
+    paintings = pj;
+    authorsData = aj || {};
   } catch (err) {
     loading.textContent = 'Error cargando paintings.json';
     console.error(err);
@@ -58,6 +64,7 @@ async function boot() {
     controls: { setSegments, setPose },
     paintingsByAuthor,
     authorOrder,
+    authorsData,
     onRoomChanged: (info) => {
       overlay.hide();
       if (info.kind === 'hub') {
@@ -83,6 +90,15 @@ async function boot() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.code === 'KeyH') {
+      const suppressed = overlay.toggleSuppressed();
+      hud.flash(
+        suppressed ? 'Información del cuadro: oculta' : 'Información del cuadro: visible',
+      );
+    }
   });
 
   let last = performance.now();

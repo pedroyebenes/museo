@@ -1,0 +1,62 @@
+{
+  "Tiziano": {
+    "fullName": "Tiziano Vecellio",
+    "years": "c. 1488 – 1576",
+    "origin": "Pieve di Cadore, República de Venecia",
+    "bio": "Máximo representante de la escuela veneciana del Cinquecento. Su carrera, de más de seis décadas, abarcó retratos imperiales, mitologías para Felipe II y monumentales retablos religiosos. Innovó con el uso libre del color y la pincelada suelta, anticipando la pintura barroca."
+  },
+  "Diego Velázquez": {
+    "fullName": "Diego Rodríguez de Silva y Velázquez",
+    "years": "1599 – 1660",
+    "origin": "Sevilla, España",
+    "bio": "Pintor de cámara de Felipe IV y figura cumbre del Siglo de Oro español. Sus dos viajes a Italia consolidaron una pintura sobria, atmosférica y de precisa observación. Las meninas resume su modernidad: composición, luz y reflexión sobre el propio acto de pintar."
+  },
+  "Bartolomé Esteban Murillo": {
+    "fullName": "Bartolomé Esteban Murillo",
+    "years": "1617 – 1682",
+    "origin": "Sevilla, España",
+    "bio": "Junto a Zurbarán y Valdés Leal definió la pintura barroca sevillana. Cofundador y primer presidente de la Academia de Sevilla (1660). Famoso por sus Inmaculadas, escenas religiosas tiernas y retratos de pícaros y niños tomados del natural."
+  },
+  "Johannes Vermeer": {
+    "fullName": "Johannes Vermeer",
+    "years": "1632 – 1675",
+    "origin": "Delft, Provincias Unidas",
+    "bio": "Pintor del Siglo de Oro neerlandés especializado en escenas domésticas íntimas. Produjo sólo unas 35 obras documentadas, todas marcadas por una luz casi fotográfica y un dominio absoluto del color. Olvidado durante dos siglos, fue redescubierto en el XIX."
+  },
+  "Katsushika Hokusai": {
+    "fullName": "葛飾 北斎 (Katsushika Hokusai)",
+    "years": "1760 – 1849",
+    "origin": "Edo (actual Tokio), Japón",
+    "bio": "Grabador y pintor del ukiyo-e, el arte popular japonés del periodo Edo. Su serie Treinta y seis vistas del monte Fuji influyó decisivamente en el japonismo europeo y, a través de él, en Manet, Van Gogh y Monet."
+  },
+  "Claude Monet": {
+    "fullName": "Oscar-Claude Monet",
+    "years": "1840 – 1926",
+    "origin": "París, Francia",
+    "bio": "Padre del impresionismo y de la pintura en serie. Llevó al aire libre el estudio sistemático de cómo la luz transforma un mismo motivo a lo largo del día y de las estaciones. Su jardín de Giverny y los Nenúfares ocuparon sus últimas décadas."
+  },
+  "Vincent van Gogh": {
+    "fullName": "Vincent Willem van Gogh",
+    "years": "1853 – 1890",
+    "origin": "Zundert, Países Bajos",
+    "bio": "Postimpresionista neerlandés de carrera fulgurante: apenas diez años de pintura y más de 2.000 obras entre lienzos y dibujos. Pincelada empastada, color simbólico y una correspondencia con su hermano Theo que documenta como pocas la vida interior de un artista."
+  },
+  "Edvard Munch": {
+    "fullName": "Edvard Munch",
+    "years": "1863 – 1944",
+    "origin": "Løten, Noruega",
+    "bio": "Precursor del expresionismo. Concibió su obra como un Friso de la vida que recorre el amor, la angustia y la muerte. El grito, su icono, condensa la sensación moderna de soledad y vértigo existencial."
+  },
+  "Joaquín Sorolla": {
+    "fullName": "Joaquín Sorolla y Bastida",
+    "years": "1863 – 1923",
+    "origin": "Valencia, España",
+    "bio": "Gran maestro del luminismo. Empezó pintando obra de denuncia social y costumbrista, pero la consagración internacional le llegó con sus playas valencianas: figuras vestidas de blanco a contraluz, agua transparente y pincelada suelta cargada de sol."
+  },
+  "Salvador Dalí": {
+    "fullName": "Salvador Domingo Felipe Jacinto Dalí i Domènech",
+    "years": "1904 – 1989",
+    "origin": "Figueres, Cataluña, España",
+    "bio": "Surrealista catalán de virtuosismo técnico extremo. Su «método paranoico-crítico» convirtió fobias, recuerdos y deseos en imágenes precisas y enigmáticas. Diseñó también para cine (Buñuel, Hitchcock), teatro y ballet."
+  }
+}

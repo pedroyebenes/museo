@@ -160,6 +160,46 @@
     "description": "Icono del expresionismo. Munch describió la inspiración como un paseo al atardecer en el que sintió un \"grito infinito que atraviesa la naturaleza\"."
   },
   {
+    "id": "sorolla-pescado-caro",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Joaqu%C3%ADn_Sorolla_y_Bastida_-_A%C3%BAn_dicen_que_el_pescado_es_caro.jpg",
+    "title": "¡Y aún dicen que el pescado es caro!",
+    "author": "Joaquín Sorolla",
+    "year": 1894,
+    "description": "Lienzo de denuncia social: dos pescadores asisten a un compañero herido en la sentina de una barca. Sorolla obtuvo con él la primera medalla en la Exposición Nacional de Madrid."
+  },
+  {
+    "id": "sorolla-triste-herencia",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Triste_Herencia_%281899%29.jpg",
+    "title": "Triste herencia",
+    "author": "Joaquín Sorolla",
+    "year": 1899,
+    "description": "Niños tullidos bañándose en la playa del Cabañal, vigilados por un sacerdote. Premio en la Exposición Universal de París (1900) y consagración internacional del pintor."
+  },
+  {
+    "id": "sorolla-paseo-orilla",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Strolling_along_the_Seashore_-_Google_Art_Project.jpg",
+    "title": "Paseo a orillas del mar",
+    "author": "Joaquín Sorolla",
+    "year": 1909,
+    "description": "Clotilde y su hija María pasean por la playa con sombrillas y vestidos blancos. Una de las obras más reconocibles del luminismo sorollesco."
+  },
+  {
+    "id": "sorolla-chicos-playa",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Joaqu%C3%ADn_Sorolla_-_Chicos_en_la_playa.jpg",
+    "title": "Chicos en la playa",
+    "author": "Joaquín Sorolla",
+    "year": 1909,
+    "description": "Tres niños tumbados en la orilla, reflejados en la película de agua. Composición casi cenital y pincelada vibrante que captura el sol del Mediterráneo."
+  },
+  {
+    "id": "sorolla-bano-caballo",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Joaqu%C3%ADn_Sorolla_y_Bastida_-_El_ba%C3%B1o_del_caballo.jpg",
+    "title": "El baño del caballo",
+    "author": "Joaquín Sorolla",
+    "year": 1909,
+    "description": "Un mozo guía a su caballo blanco al mar bajo la luz cegadora del mediodía valenciano. Ejercicio magistral de reflejos y movimiento del agua."
+  },
+  {
     "id": "dali-persistencia-memoria",
     "url": "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg",
     "title": "La persistencia de la memoria",

@@ -9,8 +9,10 @@ export function createInfoOverlay() {
   const descEl = document.getElementById('info-description');
 
   let current = null;
+  let suppressed = false;
 
   function show(data) {
+    if (suppressed) return;
     if (current && current.id === data.id) return;
     current = data;
     titleEl.textContent = data.title;
@@ -25,16 +27,47 @@ export function createInfoOverlay() {
     panel.classList.add('hidden');
   }
 
-  return { show, hide };
+  function toggleSuppressed() {
+    suppressed = !suppressed;
+    if (suppressed) hide();
+    return suppressed;
+  }
+
+  function isSuppressed() {
+    return suppressed;
+  }
+
+  return { show, hide, toggleSuppressed, isSuppressed };
 }
 
 export function createRoomHUD() {
   const el = document.getElementById('room-hud');
+  let baseText = '';
+  let flashTimer = null;
   return {
     set(text) {
-      if (!el) return;
+      baseText = text;
+      if (flashTimer || !el) {
+        // A flash is currently showing — let it run; the base text will
+        // be restored when it ends.
+        if (!flashTimer && el) {
+          el.textContent = text;
+          el.classList.remove('hidden');
+        }
+        return;
+      }
       el.textContent = text;
       el.classList.remove('hidden');
+    },
+    flash(text, ms = 1400) {
+      if (!el) return;
+      if (flashTimer) clearTimeout(flashTimer);
+      el.textContent = text;
+      el.classList.remove('hidden');
+      flashTimer = setTimeout(() => {
+        flashTimer = null;
+        if (baseText) el.textContent = baseText;
+      }, ms);
     },
     hide() {
       el?.classList.add('hidden');

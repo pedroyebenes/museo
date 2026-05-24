@@ -8,6 +8,7 @@ export function createRoomManager({
   controls,
   paintingsByAuthor,
   authorOrder,
+  authorsData = {},
   onRoomChanged,
 }) {
   let currentRoom = null;
@@ -42,6 +43,7 @@ export function createRoomManager({
       const room = buildAuthorRoom(scene, {
         author,
         paintingCount: paintings.length,
+        bio: authorsData[author] || null,
       });
       const newInteractables = await placePaintings(
         room.group,
