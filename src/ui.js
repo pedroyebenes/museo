@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 
 const MAX_VIEW_DISTANCE = 4.0;
+const FOCUS_INTERVAL_MS = 120;
 
 export function createInfoOverlay() {
   const panel = document.getElementById('info-panel');
@@ -48,8 +49,6 @@ export function createRoomHUD() {
     set(text) {
       baseText = text;
       if (flashTimer || !el) {
-        // A flash is currently showing — let it run; the base text will
-        // be restored when it ends.
         if (!flashTimer && el) {
           el.textContent = text;
           el.classList.remove('hidden');
@@ -63,9 +62,11 @@ export function createRoomHUD() {
       if (!el) return;
       if (flashTimer) clearTimeout(flashTimer);
       el.textContent = text;
+      el.classList.add('toast');
       el.classList.remove('hidden');
       flashTimer = setTimeout(() => {
         flashTimer = null;
+        el.classList.remove('toast');
         if (baseText) el.textContent = baseText;
       }, ms);
     },
@@ -75,12 +76,61 @@ export function createRoomHUD() {
   };
 }
 
+export function createTransitionOverlay() {
+  const el = document.getElementById('room-transition');
+  const labelEl = document.getElementById('transition-label');
+  const barEl = document.getElementById('transition-bar');
+
+  function show({ kind, author, paintingCount }) {
+    if (!el) return;
+    if (kind === 'hub') {
+      labelEl.textContent = 'Regresando al hall principal…';
+    } else {
+      labelEl.textContent = `Entrando en la sala de ${author}…`;
+    }
+    barEl.style.width = kind === 'author' ? '0%' : '100%';
+    el.classList.remove('hidden');
+  }
+
+  function setProgress(loaded, total) {
+    if (!barEl || total <= 0) return;
+    const pct = Math.round((loaded / total) * 100);
+    barEl.style.width = `${pct}%`;
+  }
+
+  function hide() {
+    el?.classList.add('hidden');
+    if (barEl) barEl.style.width = '0%';
+  }
+
+  return { show, setProgress, hide };
+}
+
 export function createFocusTracker({ camera, getInteractables, overlay }) {
   const raycaster = new THREE.Raycaster();
   raycaster.far = MAX_VIEW_DISTANCE;
   const center = new THREE.Vector2(0, 0);
+  let lastCheck = 0;
+  let lastCamPos = new THREE.Vector3();
+  let lastCamRot = new THREE.Euler();
 
-  function update() {
+  function shouldUpdate(now) {
+    if (now - lastCheck >= FOCUS_INTERVAL_MS) return true;
+    const pos = camera.position;
+    const rot = camera.rotation;
+    return (
+      pos.distanceToSquared(lastCamPos) > 0.0025 ||
+      Math.abs(rot.y - lastCamRot.y) > 0.008 ||
+      Math.abs(rot.x - lastCamRot.x) > 0.008
+    );
+  }
+
+  function update(now = performance.now()) {
+    if (!shouldUpdate(now)) return;
+    lastCheck = now;
+    lastCamPos.copy(camera.position);
+    lastCamRot.copy(camera.rotation);
+
     const interactables = getInteractables();
     if (!interactables || interactables.length === 0) {
       overlay.hide();

@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { getSharedMaterials } from './materials.js';
+import { getPortalGlowMaterial, createDoorSignMesh } from './doorAssets.js';
 
 const DOOR_W = 1.8;
 const DOOR_H = 2.6;
@@ -210,7 +211,7 @@ function addDoorPortal(group, mats, door, axis, fixed, normalIn, rotY) {
   const backDist = recessDepth * 0.92;
   const back = new THREE.Mesh(
     new THREE.PlaneGeometry(DOOR_W * 0.88, DOOR_H * 0.92),
-    makePortalGlowMaterial(),
+    getPortalGlowMaterial(),
   );
   back.position.copy(center);
   back.position.add(normalIn.clone().multiplyScalar(backDist));
@@ -281,29 +282,6 @@ function addDoorPortal(group, mats, door, axis, fixed, normalIn, rotY) {
     handle.position.y -= leafH * 0.15;
     group.add(handle);
   }
-
-  const light = new THREE.PointLight(0xffdba8, 1.1, 5.5, 1.6);
-  light.position.copy(center);
-  light.position.add(normalIn.clone().multiplyScalar(recessDepth * 0.55));
-  group.add(light);
-}
-
-function makePortalGlowMaterial() {
-  const c = document.createElement('canvas');
-  c.width = 256;
-  c.height = 256;
-  const ctx = c.getContext('2d');
-  const g = ctx.createRadialGradient(128, 128, 8, 128, 128, 128);
-  g.addColorStop(0, '#fff4d0');
-  g.addColorStop(0.35, '#e8c078');
-  g.addColorStop(0.72, '#6a4528');
-  g.addColorStop(1, '#1a1008');
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, c.width, c.height);
-
-  const tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  return new THREE.MeshBasicMaterial({ map: tex });
 }
 
 function addDomeCeiling(group, width, depth, height, mats) {
@@ -347,7 +325,11 @@ function addDomeCeiling(group, width, depth, height, mats) {
 
 function addDoorSign(group, door, axis, fixed, height, rotY, normalIn) {
   const lintelH = height - DOOR_H;
-  const sign = buildSignMesh(door.label, door.arrow, lintelH);
+  const sign = createDoorSignMesh({
+    label: door.label,
+    arrow: door.arrow,
+    lintelH,
+  });
   // Centre the sign within the lintel area
   sign.position.copy(
     placeAlong(axis, fixed, door.position, DOOR_H + lintelH / 2),
@@ -355,78 +337,6 @@ function addDoorSign(group, door, axis, fixed, height, rotY, normalIn) {
   sign.position.add(normalIn.clone().multiplyScalar(0.055));
   sign.rotation.y = rotY;
   group.add(sign);
-}
-
-function buildSignMesh(label, arrow, lintelH = 2.4) {
-  const c = document.createElement('canvas');
-  c.width = 1024;
-  c.height = 256;
-  const ctx = c.getContext('2d');
-  ctx.fillStyle = '#0e0a06';
-  ctx.fillRect(0, 0, c.width, c.height);
-  ctx.strokeStyle = '#c7a060';
-  ctx.lineWidth = 6;
-  ctx.strokeRect(6, 6, c.width - 12, c.height - 12);
-
-  const txt = arrow ? `${arrow}  ${label}` : label;
-  const maxTextW = c.width - 80;
-  const fontSize = fitSignFont(ctx, txt, maxTextW, 72, 34);
-  ctx.fillStyle = '#f3e8c8';
-  ctx.font = `600 ${fontSize}px Georgia, "Times New Roman", serif`;
-  ctx.textBaseline = 'middle';
-  ctx.textAlign = 'center';
-  drawWrappedCenteredText(ctx, txt, c.width / 2, c.height / 2, maxTextW, fontSize * 1.15, 2);
-
-  const tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
-
-  const w = DOOR_W - 0.12;
-  const h = Math.min(w * (c.height / c.width), lintelH - 0.18);
-  const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
-  return new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
-}
-
-function fitSignFont(ctx, text, maxWidth, startSize, minSize) {
-  for (let size = startSize; size >= minSize; size -= 2) {
-    ctx.font = `600 ${size}px Georgia, "Times New Roman", serif`;
-    if (ctx.measureText(text).width <= maxWidth) return size;
-  }
-  return minSize;
-}
-
-function drawWrappedCenteredText(ctx, text, cx, cy, maxWidth, lineHeight, maxLines) {
-  const words = String(text).split(/\s+/);
-  const lines = [];
-  let line = '';
-
-  for (const word of words) {
-    const test = line ? `${line} ${word}` : word;
-    if (ctx.measureText(test).width > maxWidth && line) {
-      lines.push(line);
-      line = word;
-    } else {
-      line = test;
-    }
-  }
-  if (line) lines.push(line);
-
-  let display = lines;
-  if (lines.length > maxLines) {
-    display = lines.slice(0, maxLines);
-    let last = display[maxLines - 1];
-    while (ctx.measureText(`${last}…`).width > maxWidth && last.length > 0) {
-      last = last.slice(0, -1);
-    }
-    display[maxLines - 1] = `${last}…`;
-  }
-
-  const blockH = (display.length - 1) * lineHeight;
-  let y = cy - blockH / 2;
-  for (const row of display) {
-    ctx.fillText(row, cx, y);
-    y += lineHeight;
-  }
 }
 
 function addCrownMoulding(group, mats, axis, fixed, length, height, normalIn) {

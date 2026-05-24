@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { DOOR_WIDTH, DOOR_HEIGHT } from './wallBuilder.js';
 import { getDomeMaterial } from './materials.js';
+import { getQualityProfile } from './qualityProfile.js';
+import { getPortalGlowMaterial, createDoorSignMesh } from './doorAssets.js';
 
 const DOOR_W = DOOR_WIDTH;
 const DOOR_H = DOOR_HEIGHT;
@@ -17,36 +19,59 @@ const DAMASK_TILE_H = 1.5;
 const WAINSCOT_TILE_W = 1.6;
 const COLUMN_COUNT = 12;
 
+let columnShaftMat = null;
+
+function getColumnShaftMaterial() {
+  if (!columnShaftMat) {
+    columnShaftMat = new THREE.MeshStandardMaterial({
+      color: 0xf0e6d0,
+      roughness: 0.55,
+      metalness: 0.08,
+    });
+    columnShaftMat.userData.shared = true;
+  }
+  return columnShaftMat;
+}
+
 export function buildRotundaShell(group, opts) {
   const { radius, height, doors, materials } = opts;
+  const quality = getQualityProfile();
   const mats = materials;
   const segments = [];
   const triggers = [];
 
-  addFloor(group, radius, mats);
-  addRotundaDome(group, radius, height, mats);
-  addCorniceRing(group, radius, height, mats);
-  addColumns(group, radius, height, doors, mats);
+  addFloor(group, radius, mats, quality);
+  addRotundaDome(group, radius, height, mats, quality);
+  addCorniceRing(group, radius, height, mats, quality);
+  addColumns(group, radius, height, doors, mats, quality);
   buildCurvedWalls(group, mats, radius, height, doors, segments, triggers);
 
   return { segments, triggers };
 }
 
-function addFloor(group, radius, mats) {
+function addFloor(group, radius, mats, quality) {
   const floor = new THREE.Mesh(
-    new THREE.CircleGeometry(radius, 72),
+    new THREE.CircleGeometry(radius, quality.floorSegments),
     mats.floorMat,
   );
   floor.rotation.x = -Math.PI / 2;
   group.add(floor);
 }
 
-function addRotundaDome(group, radius, height, mats) {
+function addRotundaDome(group, radius, height, mats, quality) {
   const domeRadius = radius * 0.98;
   const domeMat = getDomeMaterial();
 
   const dome = new THREE.Mesh(
-    new THREE.SphereGeometry(domeRadius, 72, 40, 0, Math.PI * 2, 0, Math.PI * 0.52),
+    new THREE.SphereGeometry(
+      domeRadius,
+      quality.domeWidthSegments,
+      quality.domeHeightSegments,
+      0,
+      Math.PI * 2,
+      0,
+      Math.PI * 0.52,
+    ),
     domeMat,
   );
   dome.scale.y = 0.62;
@@ -55,7 +80,7 @@ function addRotundaDome(group, radius, height, mats) {
 
   const oculusY = height + domeRadius * 0.52 * 0.62;
   const oculus = new THREE.Mesh(
-    new THREE.CircleGeometry(radius * 0.12, 40),
+    new THREE.CircleGeometry(radius * 0.12, Math.max(24, quality.columnSegments + 8)),
     new THREE.MeshStandardMaterial({
       color: 0xfff8e8,
       emissive: 0xffe9b8,
@@ -70,25 +95,21 @@ function addRotundaDome(group, radius, height, mats) {
   group.add(oculus);
 
   const ring = new THREE.Mesh(
-    new THREE.TorusGeometry(radius * 0.14, radius * 0.016, 14, 48),
+    new THREE.TorusGeometry(radius * 0.14, radius * 0.016, 14, quality.torusSegments / 2),
     mats.trimMat,
   );
   ring.rotation.x = Math.PI / 2;
   ring.position.set(0, oculusY - 0.03, 0);
   group.add(ring);
 
-  const skylight = new THREE.PointLight(0xfff2cc, 2.2, radius * 2.4, 1.4);
+  const skylight = new THREE.PointLight(0xfff2cc, 2.8, radius * 2.8, 1.4);
   skylight.position.set(0, oculusY + 0.2, 0);
   group.add(skylight);
-
-  const fill = new THREE.PointLight(0xffe8c8, 0.9, radius * 2, 1.6);
-  fill.position.set(0, height + radius * 0.25, 0);
-  group.add(fill);
 }
 
-function addCorniceRing(group, radius, height, mats) {
+function addCorniceRing(group, radius, height, mats, quality) {
   const ring = new THREE.Mesh(
-    new THREE.TorusGeometry(radius - 0.08, 0.12, 10, 96),
+    new THREE.TorusGeometry(radius - 0.08, 0.12, 10, quality.torusSegments),
     mats.trimMat,
   );
   ring.rotation.x = Math.PI / 2;
@@ -96,11 +117,13 @@ function addCorniceRing(group, radius, height, mats) {
   group.add(ring);
 }
 
-function addColumns(group, radius, height, doors, mats) {
+function addColumns(group, radius, height, doors, mats, quality) {
   const doorAngles = doors.map((d) => d.angle);
   const colR = radius - 0.75;
   const colH = height - 0.35;
   const halfDoor = (DOOR_W / 2 + 0.15) / radius;
+  const shaftMat = getColumnShaftMaterial();
+  const segs = quality.columnSegments;
 
   for (let i = 0; i < COLUMN_COUNT; i++) {
     const angle = (i / COLUMN_COUNT) * Math.PI * 2;
@@ -110,18 +133,14 @@ function addColumns(group, radius, height, doors, mats) {
 
     const pos = wallPoint(angle, colR, colH / 2);
     const shaft = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.28, 0.34, colH, 16),
-      new THREE.MeshStandardMaterial({
-        color: 0xf0e6d0,
-        roughness: 0.55,
-        metalness: 0.08,
-      }),
+      new THREE.CylinderGeometry(0.28, 0.34, colH, segs),
+      shaftMat,
     );
     shaft.position.copy(pos);
     group.add(shaft);
 
     const capital = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.42, 0.3, 0.18, 16),
+      new THREE.CylinderGeometry(0.42, 0.3, 0.18, segs),
       mats.trimMat,
     );
     capital.position.copy(pos);
@@ -129,7 +148,7 @@ function addColumns(group, radius, height, doors, mats) {
     group.add(capital);
 
     const base = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.38, 0.42, 0.14, 16),
+      new THREE.CylinderGeometry(0.38, 0.42, 0.14, segs),
       mats.trimMat,
     );
     base.position.copy(pos);
@@ -216,7 +235,7 @@ function addOrientedDoor(group, mats, door, radius, height, triggers) {
   addDoorFrame(group, mats, wallCenter, rotY, normalIn, tangent);
   addDoorPortal(group, mats, wallCenter, rotY, normalIn, tangent);
   if (label) {
-    const sign = buildSignMesh(label);
+    const sign = createDoorSignMesh({ label, lintelH: height - DOOR_H });
     sign.position.copy(wallCenter);
     sign.position.y = DOOR_H + lintelH / 2;
     sign.position.add(normalIn.clone().multiplyScalar(0.055));
@@ -270,7 +289,7 @@ function addDoorPortal(group, mats, center, rotY, normalIn, tangent) {
 
   const back = new THREE.Mesh(
     new THREE.PlaneGeometry(DOOR_W * 0.88, DOOR_H * 0.92),
-    makePortalGlowMaterial(),
+    getPortalGlowMaterial(),
   );
   back.position.copy(portalCenter);
   back.position.add(normalIn.clone().multiplyScalar(recessDepth * 0.92));
@@ -304,11 +323,6 @@ function addDoorPortal(group, mats, center, rotY, normalIn, tangent) {
     leaf.rotation.y = rotY + dir * openAngle;
     group.add(leaf);
   }
-
-  const light = new THREE.PointLight(0xffdba8, 1.1, 5.5, 1.6);
-  light.position.copy(portalCenter);
-  light.position.add(normalIn.clone().multiplyScalar(recessDepth * 0.55));
-  group.add(light);
 }
 
 function addBar(group, material, center, length, barH, proud, yCenter, normalIn, rotY) {
@@ -318,88 +332,6 @@ function addBar(group, material, center, length, barH, proud, yCenter, normalIn,
   bar.position.add(normalIn.clone().multiplyScalar(proud / 2));
   bar.rotation.y = rotY;
   group.add(bar);
-}
-
-function makePortalGlowMaterial() {
-  const c = document.createElement('canvas');
-  c.width = 256;
-  c.height = 256;
-  const ctx = c.getContext('2d');
-  const g = ctx.createRadialGradient(128, 128, 8, 128, 128, 128);
-  g.addColorStop(0, '#fff4d0');
-  g.addColorStop(0.35, '#e8c078');
-  g.addColorStop(0.72, '#6a4528');
-  g.addColorStop(1, '#24160e');
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, c.width, c.height);
-  const tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  return new THREE.MeshBasicMaterial({ map: tex });
-}
-
-function buildSignMesh(label) {
-  const c = document.createElement('canvas');
-  c.width = 1024;
-  c.height = 256;
-  const ctx = c.getContext('2d');
-  ctx.fillStyle = '#0e0a06';
-  ctx.fillRect(0, 0, c.width, c.height);
-  ctx.strokeStyle = '#c7a060';
-  ctx.lineWidth = 6;
-  ctx.strokeRect(6, 6, c.width - 12, c.height - 12);
-
-  const maxTextW = c.width - 80;
-  let fontSize = 72;
-  ctx.font = `600 ${fontSize}px Georgia, "Times New Roman", serif`;
-  while (fontSize > 34 && ctx.measureText(label).width > maxTextW) {
-    fontSize -= 2;
-    ctx.font = `600 ${fontSize}px Georgia, "Times New Roman", serif`;
-  }
-  ctx.fillStyle = '#f3e8c8';
-  ctx.textBaseline = 'middle';
-  ctx.textAlign = 'center';
-  drawWrappedCenteredText(ctx, label, c.width / 2, c.height / 2, maxTextW, fontSize * 1.15, 2);
-
-  const tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
-  const w = DOOR_W - 0.12;
-  const h = w * (c.height / c.width);
-  return new THREE.Mesh(
-    new THREE.PlaneGeometry(w, h),
-    new THREE.MeshBasicMaterial({ map: tex, transparent: true }),
-  );
-}
-
-function drawWrappedCenteredText(ctx, text, cx, cy, maxWidth, lineHeight, maxLines) {
-  const words = String(text).split(/\s+/);
-  const lines = [];
-  let line = '';
-  for (const word of words) {
-    const test = line ? `${line} ${word}` : word;
-    if (ctx.measureText(test).width > maxWidth && line) {
-      lines.push(line);
-      line = word;
-    } else {
-      line = test;
-    }
-  }
-  if (line) lines.push(line);
-  let display = lines;
-  if (lines.length > maxLines) {
-    display = lines.slice(0, maxLines);
-    let last = display[maxLines - 1];
-    while (ctx.measureText(`${last}…`).width > maxWidth && last.length > 0) {
-      last = last.slice(0, -1);
-    }
-    display[maxLines - 1] = `${last}…`;
-  }
-  const blockH = (display.length - 1) * lineHeight;
-  let y = cy - blockH / 2;
-  for (const row of display) {
-    ctx.fillText(row, cx, y);
-    y += lineHeight;
-  }
 }
 
 function makeRadialTrigger(wallCenter, normalIn, tangent, destination) {

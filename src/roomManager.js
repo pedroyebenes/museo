@@ -6,54 +6,78 @@ export function createRoomManager({
   scene,
   camera,
   controls,
+  renderer,
   paintingsByAuthor,
   authorOrder,
   authorsData = {},
   onRoomChanged,
+  onTransitionStart,
+  onTransitionProgress,
+  onTransitionEnd,
 }) {
   let currentRoom = null;
-  let currentKind = null; // 'hub' | 'author'
+  let currentKind = null;
   let currentAuthorIndex = null;
   let interactables = [];
   let transitioning = false;
   let triggerCooldown = 0;
 
+  const hubCache = { room: null, interactables: [] };
+  const authorCache = new Map();
+
   async function loadHub(spawnKey = 'initial') {
     if (transitioning) return;
     transitioning = true;
+    onTransitionStart?.({ kind: 'hub', author: null });
     try {
-      const room = buildHub(scene, authorOrder);
-      swapRoom(room, []);
+      if (!hubCache.room) {
+        hubCache.room = buildHub(scene, authorOrder);
+        hubCache.interactables = [];
+      }
+      swapRoom(hubCache.room, hubCache.interactables);
       currentKind = 'hub';
-      const previousAuthor = currentAuthorIndex;
       currentAuthorIndex = null;
-      placeAtSpawn(spawnKey, room);
+      placeAtSpawn(spawnKey, hubCache.room);
       announce({ kind: 'hub', author: null });
     } finally {
       transitioning = false;
+      onTransitionEnd?.();
     }
   }
 
   async function loadAuthor(authorIndex, spawnKey = 'fromHub') {
     if (transitioning) return;
     transitioning = true;
+    const author = authorOrder[authorIndex];
+    const paintings = paintingsByAuthor[author];
+    onTransitionStart?.({ kind: 'author', author, paintingCount: paintings.length });
     try {
-      const author = authorOrder[authorIndex];
-      const paintings = paintingsByAuthor[author];
-      const room = buildAuthorRoom(scene, {
-        author,
-        paintings,
-        bio: authorsData[author] || null,
-      });
-      const newInteractables = await placePaintings(
-        room.group,
-        room.slots,
-        paintings,
-      );
-      swapRoom(room, newInteractables);
+      let cached = authorCache.get(author);
+      if (!cached) {
+        const room = buildAuthorRoom(scene, {
+          author,
+          paintings,
+          bio: authorsData[author] || null,
+        });
+        scene.remove(room.group);
+        const newInteractables = await placePaintings(
+          room.group,
+          room.slots,
+          paintings,
+          {
+            renderer,
+            onProgress: (loaded, total) => {
+              onTransitionProgress?.({ loaded, total, author });
+            },
+          },
+        );
+        cached = { room, interactables: newInteractables };
+        authorCache.set(author, cached);
+      }
+      swapRoom(cached.room, cached.interactables);
       currentKind = 'author';
       currentAuthorIndex = authorIndex;
-      placeAtSpawn(spawnKey, room);
+      placeAtSpawn(spawnKey, cached.room);
       announce({
         kind: 'author',
         author,
@@ -62,13 +86,17 @@ export function createRoomManager({
       });
     } finally {
       transitioning = false;
+      onTransitionEnd?.();
     }
   }
 
   function swapRoom(room, newInteractables) {
-    if (currentRoom) disposeRoom(currentRoom);
+    if (currentRoom?.group) {
+      scene.remove(currentRoom.group);
+    }
     currentRoom = room;
     interactables = newInteractables;
+    scene.add(room.group);
     controls.setSegments(room.segments);
     triggerCooldown = 0.5;
   }
@@ -82,25 +110,6 @@ export function createRoomManager({
     if (onRoomChanged) {
       onRoomChanged({ ...info, total: authorOrder.length });
     }
-  }
-
-  function disposeRoom(room) {
-    scene.remove(room.group);
-    room.group.traverse((obj) => {
-      if (obj.geometry) obj.geometry.dispose();
-      if (obj.material) {
-        const mats = Array.isArray(obj.material)
-          ? obj.material
-          : [obj.material];
-        for (const m of mats) {
-          if (m.userData && m.userData.shared) continue;
-          if (m.map && !(m.map.userData && m.map.userData.shared)) {
-            m.map.dispose();
-          }
-          m.dispose();
-        }
-      }
-    });
   }
 
   function update(dt) {
@@ -140,10 +149,15 @@ export function createRoomManager({
     return interactables;
   }
 
+  function isTransitioning() {
+    return transitioning;
+  }
+
   return {
     loadHub,
     loadAuthor,
     update,
     getInteractables,
+    isTransitioning,
   };
 }

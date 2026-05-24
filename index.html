@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0c0907" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Museo Virtual</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -10,22 +12,27 @@
     <div id="welcome" class="overlay">
       <div class="welcome-card">
         <h1>Museo Virtual</h1>
-        <p>Haz clic o toca para entrar.</p>
-        <p><b>Ordenador</b></p>
-        <ul>
-          <li><b>W A S D</b> o <b>flechas</b> — moverte</li>
-          <li><b>Ratón</b> — mirar alrededor</li>
-          <li><b>Mayús</b> — correr</li>
-          <li><b>H</b> — ocultar o mostrar la ficha del cuadro</li>
-          <li><b>Esc</b> — liberar el cursor</li>
-        </ul>
-        <p><b>Móvil</b></p>
-        <ul>
-          <li><b>Mitad izquierda</b> — mantén pulsado y arrastra para moverte (joystick flotante)</li>
-          <li><b>Mitad derecha</b> — arrastra para mirar alrededor</li>
-          <li><b>Correr</b> — botón en la esquina inferior derecha</li>
-          <li><b>Info</b> — mostrar u ocultar la ficha del cuadro</li>
-        </ul>
+        <p class="welcome-lead">Explora salas a escala real con obras maestras del arte.</p>
+        <button type="button" id="enter-btn" class="enter-btn">Entrar al museo</button>
+        <div class="controls-section">
+          <h2 class="controls-heading">Ordenador</h2>
+          <ul>
+            <li><b>W A S D</b> o <b>flechas</b> — moverte</li>
+            <li><b>Ratón</b> — mirar alrededor</li>
+            <li><b>Mayús</b> — correr</li>
+            <li><b>H</b> — ocultar o mostrar la ficha del cuadro</li>
+            <li><b>Esc</b> — liberar el cursor</li>
+          </ul>
+        </div>
+        <div class="controls-section">
+          <h2 class="controls-heading">Móvil</h2>
+          <ul>
+            <li><b>Mitad izquierda</b> — mantén pulsado y arrastra para moverte</li>
+            <li><b>Mitad derecha</b> — arrastra para mirar alrededor</li>
+            <li><b>Correr</b> — botón en la esquina inferior derecha</li>
+            <li><b>Info</b> — mostrar u ocultar la ficha del cuadro</li>
+          </ul>
+        </div>
         <p class="hint">Empiezas en el hall principal. Cruza cualquier puerta para entrar en la sala de ese autor; vuelve por la puerta del fondo para regresar al hall.</p>
       </div>
     </div>
@@ -38,6 +45,15 @@
       <h2 id="info-title"></h2>
       <p id="info-author"></p>
       <p id="info-description"></p>
+    </div>
+
+    <div id="room-transition" class="hidden" aria-live="polite">
+      <div class="transition-card">
+        <p id="transition-label">Cargando sala…</p>
+        <div class="transition-track">
+          <div id="transition-bar" class="transition-bar"></div>
+        </div>
+      </div>
     </div>
 
     <div id="loading" class="overlay">Cargando…</div>

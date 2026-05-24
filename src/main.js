@@ -1,7 +1,12 @@
 import { createScene } from './scene.js';
 import { loadPaintingData } from './paintings.js';
 import { createControls } from './controls.js';
-import { createInfoOverlay, createFocusTracker, createRoomHUD } from './ui.js';
+import {
+  createInfoOverlay,
+  createFocusTracker,
+  createRoomHUD,
+  createTransitionOverlay,
+} from './ui.js';
 import { createRoomManager } from './roomManager.js';
 
 async function boot() {
@@ -9,6 +14,13 @@ async function boot() {
   const welcome = document.getElementById('welcome');
 
   const { scene, camera, renderer } = createScene();
+
+  if (
+    window.matchMedia('(pointer: coarse)').matches ||
+    navigator.maxTouchPoints > 0
+  ) {
+    document.body.classList.add('is-touch');
+  }
 
   let paintings = [];
   let authorsData = {};
@@ -37,6 +49,7 @@ async function boot() {
 
   const overlay = createInfoOverlay();
   const hud = createRoomHUD();
+  const transition = createTransitionOverlay();
 
   const {
     update: updateControls,
@@ -67,6 +80,7 @@ async function boot() {
   const roomManager = createRoomManager({
     scene,
     camera,
+    renderer,
     controls: { setSegments, setPose },
     paintingsByAuthor,
     authorOrder,
@@ -79,6 +93,9 @@ async function boot() {
         hud.set(`${info.author} (${info.paintingCount} obras)`);
       }
     },
+    onTransitionStart: (info) => transition.show(info),
+    onTransitionProgress: ({ loaded, total }) => transition.setProgress(loaded, total),
+    onTransitionEnd: () => transition.hide(),
   });
 
   await roomManager.loadHub('initial');
@@ -91,6 +108,10 @@ async function boot() {
 
   loading.classList.add('hidden');
   welcome.addEventListener('click', lockOnClick);
+  document.getElementById('enter-btn')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    lockOnClick();
+  });
 
   window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -108,18 +129,34 @@ async function boot() {
   });
 
   let last = performance.now();
+  let rafId = null;
+  let visible = document.visibilityState !== 'hidden';
+
+  document.addEventListener('visibilitychange', () => {
+    visible = document.visibilityState !== 'hidden';
+    if (visible && rafId === null) {
+      last = performance.now();
+      rafId = requestAnimationFrame(loop);
+    }
+  });
+
   function loop(now) {
+    if (!visible) {
+      rafId = null;
+      return;
+    }
+    rafId = requestAnimationFrame(loop);
+
     const dt = Math.min(0.05, (now - last) / 1000);
     last = now;
 
     updateControls(dt);
     roomManager.update(dt);
-    if (controlsActive()) focus.update();
+    if (controlsActive()) focus.update(now);
 
     renderer.render(scene, camera);
-    requestAnimationFrame(loop);
   }
-  requestAnimationFrame(loop);
+  rafId = requestAnimationFrame(loop);
 }
 
 boot();

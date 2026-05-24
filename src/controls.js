@@ -183,6 +183,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
   function startMobileControls() {
     if (mobileActive) return;
     mobileActive = true;
+    document.body.classList.add('is-touch');
     touchYaw = camera.rotation.y;
     touchPitch = camera.rotation.x;
     touchUi.root.classList.remove('hidden');
@@ -358,6 +359,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
     document.removeEventListener('touchmove', preventTouchScroll);
     resetTouchState();
     mobileActive = false;
+    document.body.classList.remove('is-touch');
     touchUi.dispose();
     controls.dispose();
   }

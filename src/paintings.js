@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { loadPaintingTexture } from './textureUtils.js';
 
 const CM_TO_M = 0.01;
 const FRAME_THICKNESS = 0.06;
@@ -26,7 +27,6 @@ function labelBelowExtent() {
   );
 }
 
-// Centers the canvas at eye level when it fits; otherwise hangs from the floor.
 export function computePaintingCenterY(canvasHeight) {
   const { frameThickness, floorClearance, eyeHeight } = PAINTING_LAYOUT;
   const labelBelow = labelBelowExtent();
@@ -58,43 +58,38 @@ export function getPaintingLayoutExtents(data) {
   };
 }
 
-const loader = new THREE.TextureLoader();
-loader.crossOrigin = 'anonymous';
-
 export async function loadPaintingData(url = '/paintings.json') {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`No pude cargar ${url}: ${res.status}`);
   return await res.json();
 }
 
-// Adds painting meshes and per-painting spotlights as children of `container`
-// (so a single container.remove() + traverse(dispose) cleans everything up).
-// Returns the list of painting Group objects for the raycaster.
-export async function placePaintings(container, slots, paintings) {
+export async function placePaintings(container, slots, paintings, { renderer, onProgress } = {}) {
   const interactables = [];
+  let loaded = 0;
+  const total = paintings.filter((_, i) => slots[i]).length;
+
+  const report = () => {
+    loaded += 1;
+    onProgress?.(loaded, total);
+  };
 
   await Promise.all(
     paintings.map(async (data, i) => {
       const slot = slots[i];
       if (!slot) return;
       try {
-        const texture = await loader.loadAsync(data.url);
-        texture.colorSpace = THREE.SRGBColorSpace;
-        texture.anisotropy = 8;
-
+        const texture = await loadPaintingTexture(data.url, renderer);
         const group = buildPaintingMesh(texture, data);
         group.position.copy(slot.position);
         group.rotation.y = slot.rotationY;
         group.userData.painting = data;
-
-        const spot = makeSpotlight(slot);
-        container.add(spot);
-        container.add(spot.target);
-
         container.add(group);
         interactables.push(group);
       } catch (err) {
         console.error(`No pude cargar el cuadro "${data.title}":`, err);
+      } finally {
+        report();
       }
     }),
   );
@@ -117,6 +112,8 @@ function buildPaintingMesh(texture, data) {
       color: 0x1a1a1a,
       roughness: 0.6,
       metalness: 0.1,
+      emissive: 0x221a10,
+      emissiveIntensity: 0.08,
     }),
   );
   frame.position.z = -FRAME_DEPTH / 2;
@@ -124,11 +121,7 @@ function buildPaintingMesh(texture, data) {
 
   const canvas = new THREE.Mesh(
     new THREE.PlaneGeometry(w, h),
-    new THREE.MeshStandardMaterial({
-      map: texture,
-      roughness: 0.95,
-      metalness: 0.0,
-    }),
+    new THREE.MeshBasicMaterial({ map: texture }),
   );
   canvas.position.z = 0.001;
   canvas.userData.painting = data;
@@ -148,7 +141,6 @@ function getPaintingSize(data, texture) {
     return { w: width * CM_TO_M, h: height * CM_TO_M };
   }
 
-  // Fallback for entries without catalog dimensions: scale from image aspect ratio.
   const img = texture.image;
   const aspect = img.width / img.height;
   if (aspect >= 1) {
@@ -184,7 +176,7 @@ function buildLabel(data) {
 
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
+  tex.anisotropy = 4;
   return new THREE.Mesh(
     new THREE.PlaneGeometry(LABEL_WIDTH, LABEL_HEIGHT),
     new THREE.MeshBasicMaterial({ map: tex }),
@@ -194,24 +186,12 @@ function buildLabel(data) {
 function ellipsize(ctx, text, maxWidth) {
   if (ctx.measureText(text).width <= maxWidth) return text;
   const ell = '…';
-  let lo = 0,
-    hi = text.length;
+  let lo = 0;
+  let hi = text.length;
   while (lo < hi) {
     const mid = (lo + hi + 1) >> 1;
     if (ctx.measureText(text.slice(0, mid) + ell).width <= maxWidth) lo = mid;
     else hi = mid - 1;
   }
   return text.slice(0, lo) + ell;
-}
-
-function makeSpotlight(slot) {
-  const spot = new THREE.SpotLight(0xfff1d8, 8, 9, Math.PI / 5, 0.5, 1.4);
-  spot.position.copy(slot.position);
-  spot.position.y = Math.max(3.6, slot.position.y + 2.5);
-  spot.position.add(slot.normal.clone().multiplyScalar(0.7));
-
-  const target = new THREE.Object3D();
-  target.position.copy(slot.position);
-  spot.target = target;
-  return spot;
 }

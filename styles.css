@@ -1,3 +1,11 @@
+:root {
+  --museum-bg: #0c0907;
+  --museum-gold: #c7a060;
+  --museum-cream: #f0e8d6;
+  --museum-muted: #a89880;
+  --museum-border: rgba(199, 160, 96, 0.35);
+}
+
 * { box-sizing: border-box; }
 
 html, body {
@@ -7,7 +15,7 @@ html, body {
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #000;
-  color: #eee;
+  color: var(--museum-cream);
 }
 
 canvas { display: block; }
@@ -23,48 +31,103 @@ canvas,
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.88);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
   cursor: pointer;
+  padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right))
+    max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
 }
 
 .welcome-card {
-  max-width: 420px;
-  padding: 2.5rem 2rem;
-  background: rgba(20, 20, 20, 0.9);
-  border: 1px solid #333;
-  border-radius: 8px;
+  max-width: min(480px, 92vw);
+  max-height: min(90vh, 720px);
+  overflow-y: auto;
+  padding: 2rem 1.75rem;
+  background: rgba(12, 9, 7, 0.94);
+  border: 1px solid var(--museum-border);
+  border-radius: 10px;
   text-align: center;
+  cursor: default;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
 }
 
 .welcome-card h1 {
-  margin: 0 0 1rem 0;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  font-size: 2rem;
+  margin: 0 0 0.6rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  font-size: clamp(1.6rem, 5vw, 2rem);
+  color: var(--museum-gold);
+}
+
+.welcome-lead {
+  margin: 0 0 1.2rem 0;
+  color: var(--museum-muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.enter-btn {
+  display: inline-block;
+  margin: 0 0 1.25rem 0;
+  padding: 0.65rem 1.4rem;
+  border: 1px solid var(--museum-gold);
+  border-radius: 999px;
+  background: rgba(199, 160, 96, 0.14);
+  color: var(--museum-cream);
+  font: inherit;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.enter-btn:hover,
+.enter-btn:focus-visible {
+  background: rgba(199, 160, 96, 0.28);
+  border-color: #ddb978;
+  outline: none;
+}
+
+.controls-section {
+  text-align: left;
+  margin: 0.75rem 0;
+}
+
+.controls-heading {
+  margin: 0 0 0.35rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--museum-gold);
 }
 
 .welcome-card ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
-  text-align: left;
+  margin: 0;
   display: inline-block;
+  width: 100%;
 }
 
-.welcome-card p { margin: 0.6rem 0 0.35rem 0; }
-
-.welcome-card p + ul { margin-top: 0.25rem; }
-
-.welcome-card li { margin: 0.4rem 0; }
+.welcome-card li {
+  margin: 0.35rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ddd;
+}
 
 .welcome-card .hint {
-  font-size: 0.85rem;
-  color: #999;
-  margin-top: 1.2rem;
+  font-size: 0.82rem;
+  color: var(--museum-muted);
+  margin-top: 1rem;
+  line-height: 1.45;
 }
 
 #crosshair {
@@ -83,60 +146,118 @@ canvas,
 }
 
 body.playing #crosshair { display: block; }
+body.is-touch.playing #crosshair { display: none; }
 
 #room-hud {
   position: fixed;
-  top: 1rem;
+  top: max(1rem, env(safe-area-inset-top));
   left: 50%;
   transform: translateX(-50%);
   padding: 0.45rem 1rem;
-  background: rgba(0, 0, 0, 0.55);
-  border: 1px solid #444;
+  background: rgba(12, 9, 7, 0.72);
+  border: 1px solid var(--museum-border);
   border-radius: 999px;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 0.9rem;
   letter-spacing: 0.03em;
-  color: #f0e8d6;
+  color: var(--museum-cream);
   pointer-events: none;
   z-index: 6;
   display: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 body.playing #room-hud:not(.hidden) { display: block; }
+
+#room-hud.toast {
+  transform: translateX(-50%) scale(1.04);
+  border-color: var(--museum-gold);
+}
 
 #info-panel {
   position: fixed;
   left: 50%;
   bottom: 5%;
-  transform: translateX(-50%);
-  max-width: 560px;
-  min-width: 320px;
+  transform: translateX(-50%) translateY(0);
+  max-width: min(560px, 92vw);
+  min-width: min(320px, 92vw);
   padding: 1rem 1.4rem;
-  background: rgba(0, 0, 0, 0.78);
-  border: 1px solid #555;
-  border-radius: 6px;
+  background: rgba(12, 9, 7, 0.84);
+  border: 1px solid var(--museum-border);
+  border-radius: 8px;
   pointer-events: none;
   z-index: 6;
-  transition: opacity 0.18s ease;
+  opacity: 1;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-#info-panel.hidden { opacity: 0; }
+#info-panel.hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(12px);
+  pointer-events: none;
+}
 
 #info-panel h2 {
   margin: 0 0 0.2rem 0;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 1.15rem;
   font-weight: 500;
+  color: var(--museum-cream);
 }
 
 #info-panel p { margin: 0.25rem 0; line-height: 1.45; }
 
-#info-author { color: #bbb; font-style: italic; font-size: 0.95rem; }
+#info-author { color: var(--museum-muted); font-style: italic; font-size: 0.95rem; }
 
 #info-description { font-size: 0.9rem; color: #ddd; }
 
+#room-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+}
+
+.transition-card {
+  min-width: min(320px, 88vw);
+  padding: 1.2rem 1.4rem;
+  background: rgba(12, 9, 7, 0.92);
+  border: 1px solid var(--museum-border);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#transition-label {
+  margin: 0 0 0.85rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--museum-cream);
+  font-size: 0.95rem;
+}
+
+.transition-track {
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.transition-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #a9844f, var(--museum-gold));
+  border-radius: 999px;
+  transition: width 0.18s ease;
+}
+
 #loading {
-  background: #000;
+  background: var(--museum-bg);
   font-size: 1.1rem;
   letter-spacing: 0.1em;
+  color: var(--museum-cream);
 }
 
 #touch-controls {
@@ -173,9 +294,7 @@ body.playing #room-hud:not(.hidden) { display: block; }
   transition: opacity 0.12s ease;
 }
 
-#touch-stick.visible {
-  opacity: 1;
-}
+#touch-stick.visible { opacity: 1; }
 
 #touch-stick-knob {
   position: absolute;
@@ -195,15 +314,21 @@ body.playing #room-hud:not(.hidden) { display: block; }
   right: max(1rem, env(safe-area-inset-right));
   min-width: 4.4rem;
   padding: 0.55rem 0.85rem;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid var(--museum-border);
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.55);
-  color: #f0e8d6;
+  background: rgba(12, 9, 7, 0.72);
+  color: var(--museum-cream);
   font: inherit;
   font-size: 0.85rem;
   letter-spacing: 0.03em;
   pointer-events: auto;
   cursor: pointer;
+}
+
+#touch-run:focus-visible,
+#touch-info:focus-visible {
+  outline: 2px solid var(--museum-gold);
+  outline-offset: 2px;
 }
 
 #touch-run {
@@ -215,8 +340,14 @@ body.playing #room-hud:not(.hidden) { display: block; }
 }
 
 #touch-run.active {
-  background: rgba(240, 232, 214, 0.22);
-  border-color: rgba(240, 232, 214, 0.65);
+  background: rgba(199, 160, 96, 0.22);
+  border-color: var(--museum-gold);
+}
+
+@media (pointer: coarse) {
+  #info-panel {
+    bottom: max(6.5rem, calc(env(safe-area-inset-bottom) + 5.5rem));
+  }
 }
 
 .hidden { display: none !important; }

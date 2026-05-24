@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { getQualityProfile } from './qualityProfile.js';
 import { buildRoomShell } from './wallBuilder.js';
 import { getAuthorRoomMaterials } from './materials.js';
 import {
@@ -240,8 +241,9 @@ function addRoomLights(group, width, depth, height) {
 }
 
 function addAuthorBioPlaque(group, author, bio, depth) {
-  const W_PX = 820;
-  const H_PX = 1080;
+  const { isMobile } = getQualityProfile();
+  const W_PX = isMobile ? 560 : 820;
+  const H_PX = isMobile ? 740 : 1080;
   const c = document.createElement('canvas');
   c.width = W_PX;
   c.height = H_PX;
