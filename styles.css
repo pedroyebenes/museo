@@ -55,6 +55,10 @@ canvas,
   display: inline-block;
 }
 
+.welcome-card p { margin: 0.6rem 0 0.35rem 0; }
+
+.welcome-card p + ul { margin-top: 0.25rem; }
+
 .welcome-card li { margin: 0.4rem 0; }
 
 .welcome-card .hint {
