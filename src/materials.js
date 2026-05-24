@@ -158,38 +158,116 @@ function makeMarbleFloorTexture() {
   return tex;
 }
 
-function makeDomeInteriorTexture() {
+function makeSanPietroDomeFrescoTexture() {
+  const W = 2048;
+  const H = 1024;
   const c = document.createElement('canvas');
-  c.width = 1024;
-  c.height = 1024;
+  c.width = W;
+  c.height = H;
   const ctx = c.getContext('2d');
-  const cx = c.width / 2;
-  const cy = c.height / 2;
+  const RIBS = 16;
+  const secW = W / RIBS;
 
-  const sky = ctx.createRadialGradient(cx, cy, 20, cx, cy, 520);
-  sky.addColorStop(0, '#fff9eb');
-  sky.addColorStop(0.22, '#f3e2b8');
-  sky.addColorStop(0.55, '#dcc18a');
-  sky.addColorStop(0.82, '#b99258');
-  sky.addColorStop(1, '#8c693f');
-  ctx.fillStyle = sky;
-  ctx.fillRect(0, 0, c.width, c.height);
+  // Background: lapis lazuli blue, gold at apex
+  const bg = ctx.createLinearGradient(0, 0, 0, H);
+  bg.addColorStop(0.00, '#fff5c0');
+  bg.addColorStop(0.05, '#c8890e');
+  bg.addColorStop(0.13, '#1c3a8a');
+  bg.addColorStop(0.55, '#162f78');
+  bg.addColorStop(0.88, '#0f2260');
+  bg.addColorStop(1.00, '#0a1848');
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, W, H);
 
-  ctx.strokeStyle = 'rgba(120,80,40,0.18)';
-  ctx.lineWidth = 2;
-  for (let ring = 1; ring <= 5; ring++) {
-    ctx.beginPath();
-    ctx.arc(cx, cy, ring * 90, 0, Math.PI * 2);
-    ctx.stroke();
+  // 16 gold ribs (structural ribs of the dome)
+  const rW = secW * 0.09;
+  for (let i = 0; i < RIBS; i++) {
+    const x = i * secW;
+    const g = ctx.createLinearGradient(x - rW * 2.5, 0, x + rW * 2.5, 0);
+    g.addColorStop(0,    'rgba(190,148,50,0)');
+    g.addColorStop(0.25, 'rgba(215,175,72,0.45)');
+    g.addColorStop(0.48, 'rgba(240,205,95,0.92)');
+    g.addColorStop(0.52, 'rgba(245,210,100,0.92)');
+    g.addColorStop(0.75, 'rgba(215,175,72,0.45)');
+    g.addColorStop(1,    'rgba(190,148,50,0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(x - rW * 2.5, 0, rW * 5, H);
   }
 
-  for (let i = 0; i < 16; i++) {
-    const a = (i / 16) * Math.PI * 2;
-    ctx.beginPath();
-    ctx.moveTo(cx, cy);
-    ctx.lineTo(cx + Math.cos(a) * 500, cy + Math.sin(a) * 500);
-    ctx.stroke();
+  // Horizontal gold divider bands
+  for (const yf of [0.13, 0.40, 0.53, 0.61, 0.76, 0.88]) {
+    const y = H * yf;
+    const bh = H * 0.013;
+    const g = ctx.createLinearGradient(0, y, 0, y + bh);
+    g.addColorStop(0,   'rgba(190,148,50,0.3)');
+    g.addColorStop(0.3, 'rgba(232,187,78,0.82)');
+    g.addColorStop(0.7, 'rgba(232,187,78,0.82)');
+    g.addColorStop(1,   'rgba(190,148,50,0.3)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, y, W, bh);
   }
+
+  // Inner ring near apex
+  ctx.fillStyle = 'rgba(240,200,90,0.82)';
+  ctx.fillRect(0, H * 0.09, W, H * 0.005);
+
+  // Upper apostle figures (13% – 40%)
+  for (let i = 0; i < RIBS; i++) {
+    domeDrawApostle(ctx, (i + 0.5) * secW, H * 0.135, secW * 0.68, H * 0.26);
+  }
+
+  // Inscription band: "TV ES PETRVS..." (53% – 61%)
+  const inscY = H * 0.535;
+  const inscH = H * 0.07;
+  ctx.fillStyle = 'rgba(6,12,42,0.90)';
+  ctx.fillRect(0, inscY, W, inscH);
+  const fSize = Math.floor(inscH * 0.56);
+  ctx.font = `bold ${fSize}px "Times New Roman", Times, serif`;
+  ctx.fillStyle = 'rgba(228,190,78,0.97)';
+  ctx.textBaseline = 'middle';
+  ctx.textAlign = 'left';
+  const insc = '  TV · ES · PETRVS · ET · SVPER · HANC · PETRAM · AEDIFICABO · ECCLESIAM · MEAM · ET · TIBI · DABO · CLAVES · REGNI · CAELORVM  ';
+  const tw = ctx.measureText(insc).width;
+  for (let x = 0; x < W + tw; x += tw) ctx.fillText(insc, x, inscY + inscH / 2);
+
+  // Angel / cherub row (61% – 76%)
+  for (let i = 0; i < RIBS; i++) {
+    domeDrawAngel(ctx, (i + 0.5) * secW, H * 0.615, secW * 0.55, H * 0.13);
+  }
+
+  // Arched windows arcade (76% – 88%)
+  for (let i = 0; i < RIBS; i++) {
+    domeDrawArch(ctx, (i + 0.5) * secW, H * 0.762, secW * 0.62, H * 0.10);
+  }
+
+  // Bottom cornice strip (88% – 100%)
+  const cg = ctx.createLinearGradient(0, H * 0.88, 0, H);
+  cg.addColorStop(0, '#1e2d6a');
+  cg.addColorStop(0.4, '#2a3d88');
+  cg.addColorStop(1, '#0e1848');
+  ctx.fillStyle = cg;
+  ctx.fillRect(0, H * 0.88, W, H * 0.12);
+  for (let d = 0; d < 4; d++) {
+    ctx.fillStyle = `rgba(215,175,72,${0.5 - d * 0.1})`;
+    ctx.fillRect(0, H * 0.88 + d * H * 0.024, W, H * 0.004);
+  }
+
+  // Golden apex glow (composited on top)
+  const glow = ctx.createRadialGradient(W / 2, 0, 0, W / 2, 0, H * 0.32);
+  glow.addColorStop(0.00, 'rgba(255,248,188,0.95)');
+  glow.addColorStop(0.12, 'rgba(235,195,80,0.75)');
+  glow.addColorStop(0.32, 'rgba(180,140,40,0.28)');
+  glow.addColorStop(0.60, 'rgba(20,50,130,0)');
+  ctx.fillStyle = glow;
+  ctx.fillRect(0, 0, W, H * 0.36);
+
+  // Mosaic tesserae grid (very subtle)
+  ctx.globalAlpha = 0.024;
+  ctx.strokeStyle = '#000';
+  ctx.lineWidth = 0.5;
+  for (let x = 0; x < W; x += 9) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+  for (let y = 0; y < H; y += 9) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+  ctx.globalAlpha = 1;
 
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
@@ -198,13 +276,144 @@ function makeDomeInteriorTexture() {
   return tex;
 }
 
+function domeDrawApostle(ctx, cx, topY, figW, figH) {
+  const headR = figW * 0.135;
+  const headCY = topY + headR * 1.5;
+
+  // Halo
+  ctx.beginPath();
+  ctx.arc(cx, headCY, headR * 1.68, 0, Math.PI * 2);
+  ctx.strokeStyle = 'rgba(245,210,95,0.88)';
+  ctx.lineWidth = figW * 0.042;
+  ctx.stroke();
+
+  // Head
+  ctx.beginPath();
+  ctx.ellipse(cx, headCY, headR, headR * 1.08, 0, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(245,215,145,0.92)';
+  ctx.fill();
+
+  // Outer robe
+  const bodyTop = headCY + headR * 1.08;
+  const bodyBot = topY + figH;
+  ctx.beginPath();
+  ctx.moveTo(cx - figW * 0.14, bodyTop);
+  ctx.lineTo(cx - figW * 0.40, bodyBot);
+  ctx.lineTo(cx + figW * 0.40, bodyBot);
+  ctx.lineTo(cx + figW * 0.14, bodyTop);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(228,192,108,0.78)';
+  ctx.fill();
+
+  // Inner robe highlight
+  ctx.beginPath();
+  ctx.moveTo(cx - figW * 0.06, bodyTop);
+  ctx.lineTo(cx - figW * 0.20, bodyBot);
+  ctx.lineTo(cx + figW * 0.20, bodyBot);
+  ctx.lineTo(cx + figW * 0.06, bodyTop);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(248,220,148,0.40)';
+  ctx.fill();
+
+  // Left arm holding scroll
+  ctx.beginPath();
+  ctx.moveTo(cx - figW * 0.11, bodyTop + figH * 0.10);
+  ctx.lineTo(cx - figW * 0.38, bodyTop + figH * 0.32);
+  ctx.lineTo(cx - figW * 0.22, bodyTop + figH * 0.36);
+  ctx.lineTo(cx - figW * 0.05, bodyTop + figH * 0.14);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(228,192,108,0.68)';
+  ctx.fill();
+
+  // Scroll
+  ctx.fillStyle = 'rgba(248,220,148,0.82)';
+  ctx.fillRect(cx - figW * 0.41, bodyTop + figH * 0.28, figW * 0.17, figH * 0.11);
+}
+
+function domeDrawAngel(ctx, cx, topY, figW, figH) {
+  const headR = figW * 0.15;
+  const headCY = topY + headR * 1.4;
+
+  // Halo
+  ctx.beginPath();
+  ctx.arc(cx, headCY, headR * 1.62, 0, Math.PI * 2);
+  ctx.strokeStyle = 'rgba(245,210,95,0.90)';
+  ctx.lineWidth = figW * 0.045;
+  ctx.stroke();
+
+  // Head (rounder, cherubic)
+  ctx.beginPath();
+  ctx.arc(cx, headCY, headR * 1.04, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(245,215,145,0.93)';
+  ctx.fill();
+
+  // Wings
+  for (const dir of [-1, 1]) {
+    ctx.beginPath();
+    ctx.moveTo(cx, headCY + headR * 0.5);
+    ctx.quadraticCurveTo(cx + dir * figW * 0.56, headCY - headR * 0.4, cx + dir * figW * 0.52, headCY + figH * 0.32);
+    ctx.quadraticCurveTo(cx + dir * figW * 0.30, headCY + figH * 0.42, cx, headCY + figH * 0.36);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(228,192,108,0.58)';
+    ctx.fill();
+    // Wing highlight
+    ctx.beginPath();
+    ctx.moveTo(cx, headCY + headR * 0.5);
+    ctx.quadraticCurveTo(cx + dir * figW * 0.34, headCY - headR * 0.25, cx + dir * figW * 0.31, headCY + figH * 0.20);
+    ctx.quadraticCurveTo(cx + dir * figW * 0.17, headCY + figH * 0.28, cx, headCY + figH * 0.28);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(248,220,148,0.28)';
+    ctx.fill();
+  }
+
+  // Small torso
+  ctx.beginPath();
+  ctx.ellipse(cx, headCY + headR + figH * 0.14, figW * 0.14, figH * 0.12, 0, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(228,192,108,0.72)';
+  ctx.fill();
+}
+
+function domeDrawArch(ctx, cx, topY, archW, archH) {
+  const archR = archW * 0.44;
+  const baseY = topY + archH * 0.95;
+  const sprY = topY + archH * 0.40;
+
+  // Interior glow
+  const ig = ctx.createRadialGradient(cx, sprY, 0, cx, sprY, archW * 0.52);
+  ig.addColorStop(0,   'rgba(240,220,150,0.22)');
+  ig.addColorStop(0.5, 'rgba(200,180,100,0.08)');
+  ig.addColorStop(1,   'rgba(20,50,130,0)');
+
+  ctx.beginPath();
+  ctx.moveTo(cx - archW * 0.42, baseY);
+  ctx.lineTo(cx - archW * 0.42, sprY);
+  ctx.arc(cx, sprY, archW * 0.42, Math.PI, 0);
+  ctx.lineTo(cx + archW * 0.42, baseY);
+  ctx.closePath();
+  ctx.fillStyle = ig;
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(215,175,72,0.78)';
+  ctx.lineWidth = archW * 0.034;
+  ctx.stroke();
+
+  // Keystone
+  ctx.beginPath();
+  ctx.moveTo(cx - archW * 0.055, topY + archH * 0.08);
+  ctx.lineTo(cx + archW * 0.055, topY + archH * 0.08);
+  ctx.lineTo(cx + archW * 0.038, topY + archH * 0.20);
+  ctx.lineTo(cx - archW * 0.038, topY + archH * 0.20);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(215,175,72,0.82)';
+  ctx.fill();
+}
+
 export function getDomeMaterial() {
   if (domeMatCached) return domeMatCached;
   domeMatCached = new THREE.MeshStandardMaterial({
-    map: makeDomeInteriorTexture(),
+    map: makeSanPietroDomeFrescoTexture(),
     side: THREE.DoubleSide,
-    roughness: 0.88,
-    metalness: 0.04,
+    roughness: 0.82,
+    metalness: 0.08,
   });
   domeMatCached.userData.shared = true;
   return domeMatCached;
