@@ -77,7 +77,8 @@ function computeDoorSpawn(slot) {
   );
   return {
     position: wallPos.clone().add(normalIn.multiplyScalar(SPAWN_OFFSET)),
-    yaw: Math.atan2(normalIn.x, normalIn.z),
+    // Face into the hall so the door you just left is behind you.
+    yaw: Math.atan2(-normalIn.x, -normalIn.z),
   };
 }
 
