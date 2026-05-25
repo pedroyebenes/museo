@@ -186,8 +186,13 @@ async function boot() {
   });
 
   window.addEventListener('keydown', (e) => {
-    if (e.code === 'KeyM' && document.body.classList.contains('playing')) {
-      if (!catalog.isOpen()) openCatalog();
+    if (
+      e.code === 'KeyM'
+      && document.body.classList.contains('playing')
+      && !catalog.isOpen()
+    ) {
+      e.preventDefault();
+      openCatalog();
       return;
     }
     if (e.code === 'Escape' && catalog?.isOpen()) {
