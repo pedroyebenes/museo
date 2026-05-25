@@ -45,6 +45,7 @@ export function buildHub(scene, config) {
 
   addChandelier(group, RADIUS, materials);
   addCenterMedallion(group, materials);
+  if (id === 'hub') addCentralGlobe(group);
   addHubTitle(group, title, materials);
 
   scene.add(group);
@@ -213,6 +214,124 @@ function addCenterMedallion(group, materials) {
   mesh.rotation.x = -Math.PI / 2;
   mesh.position.y = 0.014;
   group.add(mesh);
+}
+
+function addCentralGlobe(group) {
+  const globe = new THREE.Group();
+  globe.name = 'hall:central-globe';
+  globe.position.set(0, 0, 0);
+
+  const standMat = new THREE.MeshStandardMaterial({
+    color: 0x2b2119,
+    roughness: 0.46,
+    metalness: 0.28,
+  });
+  const brassMat = new THREE.MeshStandardMaterial({
+    color: 0xc7a060,
+    roughness: 0.36,
+    metalness: 0.72,
+  });
+
+  const base = new THREE.Mesh(new THREE.CylinderGeometry(0.72, 0.9, 0.18, 48), standMat);
+  base.position.y = 0.09;
+  globe.add(base);
+
+  const pedestal = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.26, 0.7, 32), standMat);
+  pedestal.position.y = 0.52;
+  globe.add(pedestal);
+
+  const axis = new THREE.Group();
+  axis.position.y = 1.18;
+  axis.rotation.z = -0.42;
+  globe.add(axis);
+
+  const sphere = new THREE.Mesh(
+    new THREE.SphereGeometry(0.82, 48, 32),
+    new THREE.MeshStandardMaterial({
+      map: makeSimpleGlobeTexture(),
+      roughness: 0.72,
+      metalness: 0.02,
+    }),
+  );
+  axis.add(sphere);
+
+  const meridian = new THREE.Mesh(new THREE.TorusGeometry(0.88, 0.015, 10, 96), brassMat);
+  meridian.rotation.y = Math.PI / 2;
+  axis.add(meridian);
+
+  const equator = new THREE.Mesh(new THREE.TorusGeometry(0.825, 0.008, 8, 96), brassMat);
+  equator.rotation.x = Math.PI / 2;
+  axis.add(equator);
+
+  for (const y of [-0.42, 0.42]) {
+    const r = Math.sqrt(0.82 * 0.82 - y * y);
+    const parallel = new THREE.Mesh(new THREE.TorusGeometry(r, 0.006, 8, 80), brassMat);
+    parallel.rotation.x = Math.PI / 2;
+    parallel.position.y = y;
+    axis.add(parallel);
+  }
+
+  const pinGeo = new THREE.SphereGeometry(0.04, 16, 10);
+  const topPin = new THREE.Mesh(pinGeo, brassMat);
+  topPin.position.y = 0.91;
+  axis.add(topPin);
+  const bottomPin = new THREE.Mesh(pinGeo, brassMat);
+  bottomPin.position.y = -0.91;
+  axis.add(bottomPin);
+
+  const fillLight = new THREE.PointLight(0xffe5b0, 0.7, 4.5, 1.8);
+  fillLight.position.set(0, 2.3, 1.2);
+  globe.add(fillLight);
+
+  group.add(globe);
+}
+
+function makeSimpleGlobeTexture() {
+  const c = document.createElement('canvas');
+  c.width = 1024;
+  c.height = 512;
+  const ctx = c.getContext('2d');
+
+  const ocean = ctx.createLinearGradient(0, 0, 0, c.height);
+  ocean.addColorStop(0, '#2e79ac');
+  ocean.addColorStop(1, '#164f7d');
+  ctx.fillStyle = ocean;
+  ctx.fillRect(0, 0, c.width, c.height);
+
+  ctx.fillStyle = 'rgba(255,255,255,0.18)';
+  for (let y = 64; y < c.height; y += 64) {
+    ctx.fillRect(0, y, c.width, 2);
+  }
+  for (let x = 64; x < c.width; x += 64) {
+    ctx.fillRect(x, 0, 2, c.height);
+  }
+
+  ctx.fillStyle = '#4f9b5f';
+  drawLand(ctx, [[130, 160], [210, 105], [305, 130], [335, 215], [250, 260], [150, 240]]);
+  drawLand(ctx, [[278, 280], [345, 300], [385, 380], [320, 455], [255, 386]]);
+  drawLand(ctx, [[510, 145], [610, 115], [705, 155], [680, 245], [560, 255], [470, 215]]);
+  drawLand(ctx, [[665, 250], [755, 280], [790, 360], [710, 420], [640, 350]]);
+  drawLand(ctx, [[830, 165], [935, 150], [985, 230], [905, 285], [820, 245]]);
+
+  ctx.fillStyle = 'rgba(240,225,150,0.32)';
+  drawLand(ctx, [[575, 215], [645, 205], [690, 250], [645, 300], [565, 275]]);
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 8;
+  tex.wrapS = THREE.RepeatWrapping;
+  tex.wrapT = THREE.ClampToEdgeWrapping;
+  return tex;
+}
+
+function drawLand(ctx, points) {
+  ctx.beginPath();
+  points.forEach(([x, y], i) => {
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  });
+  ctx.closePath();
+  ctx.fill();
 }
 
 function addHubTitle(group, title, materials) {
