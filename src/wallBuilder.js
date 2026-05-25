@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { getSharedMaterials } from './materials.js';
-import { getPortalGlowMaterial, createDoorSignMesh } from './doorAssets.js';
+import { getPortalGlowMaterial, getReturnPortalGlowMaterial, getReturnFrameMaterial, createDoorSignMesh } from './doorAssets.js';
 
 const DOOR_W = 1.8;
 const DOOR_H = 2.6;
@@ -95,9 +95,10 @@ function buildWall(group, wallSpec, dims, mats, segments, triggers) {
 
   // Per-door: lintel above the opening + doorframe + portal + sign + trigger
   for (const d of sortedDoors) {
+    const isReturn = d.destination?.kind === 'hub' || d.signShape === 'return';
     addLintel(group, mats, d, axis, fixed, height, rotY, normalIn, length);
-    addDoorFrame(group, mats, d, axis, fixed, normalIn);
-    addDoorPortal(group, mats, d, axis, fixed, normalIn, rotY);
+    addDoorFrame(group, mats, d, axis, fixed, normalIn, isReturn);
+    addDoorPortal(group, mats, d, axis, fixed, normalIn, rotY, isReturn);
     if (d.label) addDoorSign(group, d, axis, fixed, height, rotY, normalIn);
     triggers.push(makeTrigger(d, axis, fixed, normalIn));
   }
@@ -148,7 +149,8 @@ function addLintel(group, mats, door, axis, fixed, height, rotY, normalIn, lengt
   group.add(lintel);
 }
 
-function addDoorFrame(group, mats, door, axis, fixed, normalIn) {
+function addDoorFrame(group, mats, door, axis, fixed, normalIn, isReturn = false) {
+  const frameMat = isReturn ? getReturnFrameMaterial() : mats.frameMat;
   const offset = normalIn.clone().multiplyScalar(0.03);
 
   // Top bar
@@ -158,7 +160,7 @@ function addDoorFrame(group, mats, door, axis, fixed, normalIn) {
   } else {
     topGeo = new THREE.BoxGeometry(0.1, FW, DOOR_W + 2 * FW);
   }
-  const top = new THREE.Mesh(topGeo, mats.frameMat);
+  const top = new THREE.Mesh(topGeo, frameMat);
   if (axis === 'x') {
     top.position.set(door.position, DOOR_H + FW / 2, fixed);
   } else {
@@ -173,14 +175,14 @@ function addDoorFrame(group, mats, door, axis, fixed, normalIn) {
   for (const dir of [-1, 1]) {
     let jamb;
     if (axis === 'x') {
-      jamb = new THREE.Mesh(sideGeoX, mats.frameMat);
+      jamb = new THREE.Mesh(sideGeoX, frameMat);
       jamb.position.set(
         door.position + dir * (DOOR_W / 2 + FW / 2),
         DOOR_H / 2,
         fixed,
       );
     } else {
-      jamb = new THREE.Mesh(sideGeoZ, mats.frameMat);
+      jamb = new THREE.Mesh(sideGeoZ, frameMat);
       jamb.position.set(
         fixed,
         DOOR_H / 2,
@@ -192,28 +194,28 @@ function addDoorFrame(group, mats, door, axis, fixed, normalIn) {
   }
 }
 
-function addDoorPortal(group, mats, door, axis, fixed, normalIn, rotY) {
+function addDoorPortal(group, mats, door, axis, fixed, normalIn, rotY, isReturn = false) {
   const recessDepth = 0.38;
   const inset = normalIn.clone().multiplyScalar(0.04);
   const center = placeAlong(axis, fixed, door.position, DOOR_H / 2);
   center.add(inset);
 
   const recessMat = new THREE.MeshStandardMaterial({
-    color: 0x24160e,
+    color: isReturn ? 0x020d18 : 0x24160e,
     roughness: 0.92,
     metalness: 0.04,
   });
   const doorLeafMat = new THREE.MeshStandardMaterial({
-    color: 0x5c3a22,
-    roughness: 0.72,
-    metalness: 0.08,
+    color: isReturn ? 0x0a1828 : 0x5c3a22,
+    roughness: isReturn ? 0.38 : 0.72,
+    metalness: isReturn ? 0.45 : 0.08,
   });
-  const trimMat = mats.trimMat;
+  const trimMat = isReturn ? getReturnFrameMaterial() : mats.trimMat;
 
   const backDist = recessDepth * 0.92;
   const back = new THREE.Mesh(
     new THREE.PlaneGeometry(DOOR_W * 0.88, DOOR_H * 0.92),
-    getPortalGlowMaterial(),
+    isReturn ? getReturnPortalGlowMaterial() : getPortalGlowMaterial(),
   );
   back.position.copy(center);
   back.position.add(normalIn.clone().multiplyScalar(backDist));
@@ -331,6 +333,9 @@ function addDoorSign(group, door, axis, fixed, height, rotY, normalIn) {
     label: door.label,
     arrow: door.arrow,
     lintelH,
+    textColor: door.textColor,
+    borderColor: door.borderColor,
+    shape: door.signShape,
   });
   // Centre the sign within the lintel area
   sign.position.copy(

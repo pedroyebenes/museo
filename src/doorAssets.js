@@ -3,6 +3,8 @@ import * as THREE from 'three';
 const DEFAULT_SIGN_WIDTH = 1.68;
 
 let portalGlowMat = null;
+let returnPortalGlowMat = null;
+let returnFrameMat = null;
 const signCache = new Map();
 
 export function getPortalGlowMaterial() {
@@ -24,6 +26,41 @@ export function getPortalGlowMaterial() {
   portalGlowMat = new THREE.MeshBasicMaterial({ map: tex });
   portalGlowMat.userData.shared = true;
   return portalGlowMat;
+}
+
+export function getReturnPortalGlowMaterial() {
+  if (returnPortalGlowMat) return returnPortalGlowMat;
+  const c = document.createElement('canvas');
+  c.width = 256;
+  c.height = 256;
+  const ctx = c.getContext('2d');
+  const g = ctx.createRadialGradient(128, 128, 6, 128, 128, 128);
+  g.addColorStop(0, '#ffffff');
+  g.addColorStop(0.22, '#aae8ff');
+  g.addColorStop(0.52, '#1a8fc0');
+  g.addColorStop(0.80, '#06223a');
+  g.addColorStop(1, '#020810');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, c.width, c.height);
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.userData.shared = true;
+  returnPortalGlowMat = new THREE.MeshBasicMaterial({ map: tex });
+  returnPortalGlowMat.userData.shared = true;
+  return returnPortalGlowMat;
+}
+
+export function getReturnFrameMaterial() {
+  if (returnFrameMat) return returnFrameMat;
+  returnFrameMat = new THREE.MeshStandardMaterial({
+    color: 0x8cdaf5,
+    emissive: 0x1a6890,
+    emissiveIntensity: 0.55,
+    roughness: 0.08,
+    metalness: 0.92,
+  });
+  returnFrameMat.userData.shared = true;
+  return returnFrameMat;
 }
 
 export function createDoorSignMesh({
