@@ -1,6 +1,10 @@
 import * as THREE from 'three';
 import { buildRotundaShell } from './rotunda.js';
-import { getHubMaterials } from './materials.js';
+import {
+  getCategoryRoomMaterials,
+  getHubMaterials,
+  getReadableHashTextColor,
+} from './materials.js';
 
 const HEIGHT = 5.5;
 const RADIUS = 11;
@@ -8,7 +12,7 @@ const PLAYER_Y = 1.6;
 const SPAWN_OFFSET = 3.0;
 
 export function buildHub(scene, config) {
-  const { id, title, items } = normalizeConfig(config);
+  const { id, title, items, colorKey } = normalizeConfig(config);
   const group = new THREE.Group();
   group.name = `room:${id}`;
 
@@ -17,19 +21,31 @@ export function buildHub(scene, config) {
     angle: slot.angle,
     label: items[i].label,
     arrow: items[i].arrow,
+    signShape: items[i].signShape,
+    textColor:
+      items[i].textColor ||
+      (items[i].colorKey ? getReadableHashTextColor(items[i].colorKey) : undefined),
+    borderColor:
+      items[i].borderColor ||
+      (items[i].colorKey ? getReadableHashTextColor(items[i].colorKey) : undefined),
     destination: items[i].destination,
   }));
+
+  const materials =
+    id === 'hub'
+      ? getHubMaterials()
+      : getCategoryRoomMaterials(colorKey || title || id);
 
   const { segments, triggers } = buildRotundaShell(group, {
     radius: RADIUS,
     height: HEIGHT,
     doors,
-    materials: getHubMaterials(),
+    materials,
   });
 
-  addChandelier(group, RADIUS);
-  addCenterMedallion(group);
-  addHubTitle(group, title);
+  addChandelier(group, RADIUS, materials);
+  addCenterMedallion(group, materials);
+  addHubTitle(group, title, materials);
 
   scene.add(group);
 
@@ -65,6 +81,7 @@ function normalizeConfig(config) {
   return {
     id: config.id || 'hub',
     title: config.title || 'Hall principal',
+    colorKey: config.colorKey,
     items: config.items || [],
   };
 }
@@ -92,15 +109,17 @@ function computeDoorSpawn(slot) {
   };
 }
 
-function addChandelier(group, radius) {
+function addChandelier(group, radius, materials) {
+  const bulbColor = materials.chandelierBulbColor || new THREE.Color(0xfff2c2);
+  const lightColor = materials.chandelierLightColor || new THREE.Color(0xffe1a8);
   const chandelier = new THREE.Group();
   chandelier.position.set(0, HEIGHT + 2.2, 0);
 
   const bulb = new THREE.Mesh(
     new THREE.SphereGeometry(0.28, 24, 16),
     new THREE.MeshStandardMaterial({
-      color: 0xfff2c2,
-      emissive: 0xffd57a,
+      color: bulbColor,
+      emissive: lightColor,
       emissiveIntensity: 1.8,
       roughness: 0.35,
     }),
@@ -139,14 +158,16 @@ function addChandelier(group, radius) {
   cable.position.y = cableLen / 2;
   chandelier.add(cable);
 
-  const light = new THREE.PointLight(0xffe1a8, 3.2, radius * 2.2, 1.4);
+  const light = new THREE.PointLight(lightColor, 3.2, radius * 2.2, 1.4);
   light.position.set(0, -0.08, 0);
   chandelier.add(light);
 
   group.add(chandelier);
 }
 
-function addCenterMedallion(group) {
+function addCenterMedallion(group, materials) {
+  const accent = materials.medallionColor || new THREE.Color(0xc7a060);
+  const accentCss = `#${accent.getHexString()}`;
   const canvas = document.createElement('canvas');
   canvas.width = 1024;
   canvas.height = 1024;
@@ -154,7 +175,7 @@ function addCenterMedallion(group) {
   const cx = canvas.width / 2;
   const cy = canvas.height / 2;
 
-  ctx.strokeStyle = 'rgba(199,160,96,0.65)';
+  ctx.strokeStyle = colorWithAlpha(accentCss, 0.65);
   for (let r = 80; r <= 420; r += 70) {
     ctx.lineWidth = r > 300 ? 4 : 6;
     ctx.beginPath();
@@ -171,11 +192,11 @@ function addCenterMedallion(group) {
     ctx.stroke();
   }
 
-  ctx.fillStyle = 'rgba(199,160,96,0.25)';
+  ctx.fillStyle = colorWithAlpha(accentCss, 0.25);
   ctx.beginPath();
   ctx.arc(cx, cy, 70, 0, Math.PI * 2);
   ctx.fill();
-  ctx.strokeStyle = 'rgba(199,160,96,0.8)';
+  ctx.strokeStyle = colorWithAlpha(accentCss, 0.8);
   ctx.lineWidth = 5;
   ctx.stroke();
 
@@ -194,13 +215,14 @@ function addCenterMedallion(group) {
   group.add(mesh);
 }
 
-function addHubTitle(group, title) {
+function addHubTitle(group, title, materials) {
   const canvas = document.createElement('canvas');
   canvas.width = 1024;
   canvas.height = 256;
   const ctx = canvas.getContext('2d');
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = '#c7a060';
+  const titleColor = materials.titleColor || new THREE.Color(0xc7a060);
+  ctx.fillStyle = `#${titleColor.getHexString()}`;
   const fontSize = fitTitleFont(ctx, title, canvas.width - 96, 110, 54);
   ctx.font = `italic 600 ${fontSize}px Georgia, "Times New Roman", serif`;
   ctx.textBaseline = 'middle';
@@ -222,6 +244,11 @@ function addHubTitle(group, title) {
   plaque.rotation.x = -Math.PI / 2;
   plaque.position.set(0, 0.015, 0);
   group.add(plaque);
+}
+
+function colorWithAlpha(hex, alpha) {
+  const color = new THREE.Color(hex);
+  return `rgba(${Math.round(color.r * 255)},${Math.round(color.g * 255)},${Math.round(color.b * 255)},${alpha})`;
 }
 
 function fitTitleFont(ctx, text, maxWidth, startSize, minSize) {

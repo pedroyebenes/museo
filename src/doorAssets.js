@@ -26,8 +26,23 @@ export function getPortalGlowMaterial() {
   return portalGlowMat;
 }
 
-export function createDoorSignMesh({ label, arrow = '', lintelH = 2.4, width = DEFAULT_SIGN_WIDTH }) {
-  const key = `${arrow}|${label}|${lintelH.toFixed(2)}`;
+export function createDoorSignMesh({
+  label,
+  arrow = '',
+  lintelH = 2.4,
+  width = DEFAULT_SIGN_WIDTH,
+  textColor = '#f3e8c8',
+  borderColor = '#c7a060',
+  shape = 'standard',
+}) {
+  const key = [
+    arrow,
+    label,
+    lintelH.toFixed(2),
+    textColor,
+    borderColor,
+    shape,
+  ].join('|');
   if (signCache.has(key)) {
     const cached = signCache.get(key);
     return cached.clone();
@@ -37,16 +52,12 @@ export function createDoorSignMesh({ label, arrow = '', lintelH = 2.4, width = D
   c.width = 1024;
   c.height = 256;
   const ctx = c.getContext('2d');
-  ctx.fillStyle = '#0e0a06';
-  ctx.fillRect(0, 0, c.width, c.height);
-  ctx.strokeStyle = '#c7a060';
-  ctx.lineWidth = 6;
-  ctx.strokeRect(6, 6, c.width - 12, c.height - 12);
+  drawPlaqueShape(ctx, c.width, c.height, { shape, borderColor });
 
   const txt = arrow ? `${arrow}  ${label}` : label;
   const maxTextW = c.width - 80;
   const fontSize = fitSignFont(ctx, txt, maxTextW, 72, 34);
-  ctx.fillStyle = '#f3e8c8';
+  ctx.fillStyle = textColor;
   ctx.font = `600 ${fontSize}px Georgia, "Times New Roman", serif`;
   ctx.textBaseline = 'middle';
   ctx.textAlign = 'center';
@@ -65,6 +76,45 @@ export function createDoorSignMesh({ label, arrow = '', lintelH = 2.4, width = D
   );
   signCache.set(key, mesh);
   return mesh.clone();
+}
+
+function drawPlaqueShape(ctx, w, h, { shape, borderColor }) {
+  ctx.clearRect(0, 0, w, h);
+  ctx.fillStyle = '#0e0a06';
+  ctx.strokeStyle = borderColor;
+  ctx.lineWidth = 8;
+
+  if (shape === 'return') {
+    drawReturnPlaquePath(ctx, w, h, 34);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = 'rgba(243,232,200,0.42)';
+    drawReturnPlaquePath(ctx, w, h, 58);
+    ctx.stroke();
+    return;
+  }
+
+  ctx.fillRect(0, 0, w, h);
+  ctx.strokeRect(6, 6, w - 12, h - 12);
+}
+
+function drawReturnPlaquePath(ctx, w, h, inset) {
+  const x0 = inset;
+  const x1 = w - inset;
+  const y0 = inset * 0.55;
+  const y1 = h - inset * 0.55;
+  const notch = h * 0.28;
+  ctx.beginPath();
+  ctx.moveTo(x0 + notch, y0);
+  ctx.lineTo(x1 - notch, y0);
+  ctx.quadraticCurveTo(x1, y0, x1, y0 + notch);
+  ctx.lineTo(x1, y1 - notch);
+  ctx.quadraticCurveTo(x1, y1, x1 - notch, y1);
+  ctx.lineTo(x0 + notch, y1);
+  ctx.lineTo(x0, h / 2);
+  ctx.closePath();
 }
 
 function fitSignFont(ctx, text, maxWidth, startSize, minSize) {

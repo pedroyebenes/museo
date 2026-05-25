@@ -18,6 +18,7 @@ const DAMASK_TILE_W = 1.5;
 const DAMASK_TILE_H = 1.5;
 const WAINSCOT_TILE_W = 1.6;
 const COLUMN_COUNT = 12;
+const MAX_WALL_PANEL_ARC = 0.24;
 
 let columnShaftMat = null;
 
@@ -60,7 +61,10 @@ function addFloor(group, radius, mats, quality) {
 
 function addRotundaDome(group, radius, height, mats, quality) {
   const domeRadius = radius * 0.98;
-  const domeMat = getDomeMaterial();
+  const domeMat = mats.domeMat || getDomeMaterial();
+  const oculusColor = mats.oculusColor || new THREE.Color(0xfff8e8);
+  const oculusEmissive = mats.oculusEmissive || new THREE.Color(0xffe9b8);
+  const skylightColor = mats.skylightColor || new THREE.Color(0xfff2cc);
 
   const dome = new THREE.Mesh(
     new THREE.SphereGeometry(
@@ -82,8 +86,8 @@ function addRotundaDome(group, radius, height, mats, quality) {
   const oculus = new THREE.Mesh(
     new THREE.CircleGeometry(radius * 0.12, Math.max(24, quality.columnSegments + 8)),
     new THREE.MeshStandardMaterial({
-      color: 0xfff8e8,
-      emissive: 0xffe9b8,
+      color: oculusColor,
+      emissive: oculusEmissive,
       emissiveIntensity: 1.2,
       roughness: 0.25,
       metalness: 0.05,
@@ -102,7 +106,7 @@ function addRotundaDome(group, radius, height, mats, quality) {
   ring.position.set(0, oculusY - 0.03, 0);
   group.add(ring);
 
-  const skylight = new THREE.PointLight(0xfff2cc, 2.8, radius * 2.8, 1.4);
+  const skylight = new THREE.PointLight(skylightColor, 2.8, radius * 2.8, 1.4);
   skylight.position.set(0, oculusY + 0.2, 0);
   group.add(skylight);
 }
@@ -174,14 +178,20 @@ function buildCurvedWalls(group, mats, radius, height, doors, segments, triggers
     const arcSpan = arcEnd - arcStart;
     if (arcSpan < 0.08) continue;
 
-    const mid = arcStart + arcSpan / 2;
-    const panelW = wallR * arcSpan;
-    const offsetU = (arcStart * wallR) / DAMASK_TILE_W;
-    buildWallPanel(group, mats, mid, wallR, panelW, height, offsetU);
+    const panelCount = Math.max(1, Math.ceil(arcSpan / MAX_WALL_PANEL_ARC));
+    const panelArc = arcSpan / panelCount;
+    for (let j = 0; j < panelCount; j++) {
+      const panelStart = arcStart + j * panelArc;
+      const panelEnd = panelStart + panelArc;
+      const mid = panelStart + panelArc / 2;
+      const panelW = wallR * panelArc;
+      const offsetU = (panelStart * wallR) / DAMASK_TILE_W;
+      buildWallPanel(group, mats, mid, wallR, panelW, height, offsetU);
 
-    const p1 = wallPoint(arcStart, wallR, 0);
-    const p2 = wallPoint(arcEnd, wallR, 0);
-    segments.push({ ax: p1.x, az: p1.z, bx: p2.x, bz: p2.z });
+      const p1 = wallPoint(panelStart, wallR, 0);
+      const p2 = wallPoint(panelEnd, wallR, 0);
+      segments.push({ ax: p1.x, az: p1.z, bx: p2.x, bz: p2.z });
+    }
   }
 }
 
@@ -216,7 +226,15 @@ function buildWallPanel(group, mats, angle, radius, panelW, height, offsetU = 0)
 }
 
 function addOrientedDoor(group, mats, door, radius, height, triggers) {
-  const { angle, label, arrow, destination } = door;
+  const {
+    angle,
+    label,
+    arrow,
+    destination,
+    textColor,
+    borderColor,
+    signShape,
+  } = door;
   const rotY = facingYaw(angle);
   const normalIn = inwardNormal(angle);
   const tangent = tangentVector(angle);
@@ -237,7 +255,14 @@ function addOrientedDoor(group, mats, door, radius, height, triggers) {
   addDoorFrame(group, mats, wallCenter, rotY, normalIn, tangent);
   addDoorPortal(group, mats, wallCenter, rotY, normalIn, tangent);
   if (label) {
-    const sign = createDoorSignMesh({ label, arrow, lintelH: height - DOOR_H });
+    const sign = createDoorSignMesh({
+      label,
+      arrow,
+      lintelH: height - DOOR_H,
+      textColor,
+      borderColor,
+      shape: signShape,
+    });
     sign.position.copy(wallCenter);
     sign.position.y = DOOR_H + lintelH / 2;
     sign.position.add(normalIn.clone().multiplyScalar(0.055));

@@ -143,8 +143,7 @@ async function boot() {
 
   window.addEventListener('keydown', (e) => {
     if (e.code === 'KeyM' && document.body.classList.contains('playing')) {
-      if (catalog.isOpen()) catalog.close();
-      else openCatalog();
+      if (!catalog.isOpen()) openCatalog();
       return;
     }
     if (e.code === 'Escape' && catalog?.isOpen()) {

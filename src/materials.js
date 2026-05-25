@@ -13,7 +13,7 @@ export function getSharedMaterials() {
 
 export function getAuthorRoomMaterials(author) {
   const base = getSharedMaterials();
-  const hue = hashString(author) % 360;
+  const hue = hashHue(author);
   const wallMat = base.wallMat.clone();
   wallMat.color = new THREE.Color().setHSL(hue / 360, 0.06, 0.96);
 
@@ -29,6 +29,72 @@ export function getAuthorRoomMaterials(author) {
     wainscotMat,
     trimMat,
   };
+}
+
+export function getCategoryRoomMaterials(category) {
+  const base = getHubMaterials();
+  const hue = hashHue(category);
+  const accentColor = new THREE.Color().setHSL(hue / 360, 0.62, 0.68);
+  const lightColor = new THREE.Color().setHSL(hue / 360, 0.7, 0.78);
+  const wallMat = base.wallMat.clone();
+  wallMat.color = new THREE.Color().setHSL(hue / 360, 0.08, 0.94);
+
+  const wainscotMat = base.wainscotMat.clone();
+  wainscotMat.color = new THREE.Color().setHSL(hue / 360, 0.07, 0.86);
+
+  const trimMat = base.trimMat.clone();
+  trimMat.color = new THREE.Color().setHSL(((hue + 28) % 360) / 360, 0.42, 0.6);
+
+  const domeMat = getDomeMaterial().clone();
+  domeMat.color = new THREE.Color().setHSL(hue / 360, 0.18, 0.82);
+  domeMat.userData.shared = false;
+
+  return {
+    ...base,
+    wallMat,
+    wainscotMat,
+    trimMat,
+    domeMat,
+    oculusColor: lightColor,
+    oculusEmissive: lightColor,
+    skylightColor: lightColor,
+    chandelierLightColor: lightColor,
+    chandelierBulbColor: lightColor,
+    medallionColor: accentColor,
+    titleColor: accentColor,
+  };
+}
+
+export function getReadableHashTextColor(value, background = '#0e0a06') {
+  const hue = hashHue(value);
+  let color = new THREE.Color().setHSL(hue / 360, 0.62, 0.72);
+  while (contrastRatio(color, new THREE.Color(background)) < 4.5) {
+    const hsl = {};
+    color.getHSL(hsl);
+    if (hsl.l >= 0.9) break;
+    color = new THREE.Color().setHSL(hsl.h, hsl.s, hsl.l + 0.04);
+  }
+  return `#${color.getHexString()}`;
+}
+
+function hashHue(value) {
+  return hashString(value) % 360;
+}
+
+function contrastRatio(a, b) {
+  const l1 = relativeLuminance(a);
+  const l2 = relativeLuminance(b);
+  const light = Math.max(l1, l2);
+  const dark = Math.min(l1, l2);
+  return (light + 0.05) / (dark + 0.05);
+}
+
+function relativeLuminance(color) {
+  const channels = [color.r, color.g, color.b].map((value) => {
+    if (value <= 0.03928) return value / 12.92;
+    return ((value + 0.055) / 1.055) ** 2.4;
+  });
+  return channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
 }
 
 function build() {
@@ -422,7 +488,8 @@ export function getDomeMaterial() {
   return domeMatCached;
 }
 
-function hashString(value) {
+export function hashString(value) {
+  value = String(value);
   let hash = 2166136261;
   for (let i = 0; i < value.length; i++) {
     hash ^= value.charCodeAt(i);

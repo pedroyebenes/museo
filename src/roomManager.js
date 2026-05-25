@@ -37,6 +37,7 @@ export function createRoomManager({
           items: catalog.categories.map((category) => ({
             id: category.id,
             label: category.label,
+            colorKey: category.id,
             destination: { kind: 'category', categoryId: category.id },
           })),
         });
@@ -69,16 +70,21 @@ export function createRoomManager({
         const room = buildHub(scene, {
           id: `category:${categoryId}`,
           title: category.label,
+          colorKey: category.id,
           items: [
             {
               id: 'hub',
               label: 'Hall principal',
               arrow: '←',
+              signShape: 'return',
+              textColor: '#9ee7ff',
+              borderColor: '#4fb6d8',
               destination: { kind: 'hub' },
             },
             ...authors.map((author) => ({
               id: author.id,
               label: author.name,
+              colorKey: author.name,
               destination: { kind: 'author', authorId: author.id },
             })),
           ],
