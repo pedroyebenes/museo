@@ -123,7 +123,13 @@ async function boot() {
 
   function resumeAfterReport() {
     resumeControls();
-    if (!controlsActive()) lockOnClick();
+    if (controlsActive()) return;
+    // Reset to welcome state first; if requestPointerLock() fails (e.g. tab lost focus after
+    // opening the GitHub issue), the welcome screen stays visible so the user can click back in.
+    welcome.classList.remove('hidden');
+    document.body.classList.remove('playing');
+    document.getElementById('catalog-btn')?.classList.add('hidden');
+    lockOnClick();
   }
 
   function openReport() {
