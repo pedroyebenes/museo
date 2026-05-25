@@ -28,6 +28,39 @@
         "width": 182,
         "height": 220.5
       }
+    },
+    {
+      "id": "rubens-juicio-de-paris",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Rubens_-_Judgement_of_Paris.jpg",
+      "title": "El juicio de Paris",
+      "year": 1636,
+      "description": "Rubens convierte el certamen mitológico entre las diosas en un despliegue de cuerpos, telas y paisaje. La escena resume su gusto tardío por la sensualidad clásica y el movimiento teatral.",
+      "dimensions": {
+        "width": 193.7,
+        "height": 144.8
+      }
+    },
+    {
+      "id": "rubens-jardin-del-amor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/El_Jard%C3%ADn_del_Amor_%28Rubens%29_%28alta_resoluci%C3%B3n%29.jpg",
+      "title": "El jardín del amor",
+      "year": 1633,
+      "description": "Escena cortesana y festiva en la que parejas, amorcillos y arquitectura se funden en una celebración del deseo. Su atmósfera luminosa anticipa la elegancia galante del siglo XVIII.",
+      "dimensions": {
+        "width": 286,
+        "height": 199
+      }
+    },
+    {
+      "id": "rubens-caida-de-faeton",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Peter_Paul_Rubens_-_The_Fall_of_Phaeton_%28National_Gallery_of_Art%29.jpg",
+      "title": "La caída de Faetón",
+      "year": 1604,
+      "description": "El mito de Faetón se transforma en una escena de vértigo, con caballos desbocados y figuras precipitándose en diagonal. La obra muestra el dramatismo que Rubens desarrolló tras su contacto con Italia.",
+      "dimensions": {
+        "width": 131.2,
+        "height": 98.4
+      }
     }
   ]
 }

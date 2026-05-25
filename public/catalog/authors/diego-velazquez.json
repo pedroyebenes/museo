@@ -28,6 +28,39 @@
         "width": 371.5,
         "height": 307.3
       }
+    },
+    {
+      "id": "velazquez-las-hilanderas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Velazquez-las_hilanderas.jpg",
+      "title": "Las hilanderas",
+      "year": 1657,
+      "description": "También conocida como La fábula de Aracne, combina una escena de taller con un episodio mitológico. Su compleja profundidad espacial y su pincelada libre la sitúan entre las obras tardías más audaces de Velázquez.",
+      "dimensions": {
+        "width": 289,
+        "height": 220
+      }
+    },
+    {
+      "id": "velazquez-venus-del-espejo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Diego_Vel%C3%A1zquez_-_Rokeby_Venus.jpg",
+      "title": "La Venus del espejo",
+      "year": 1651,
+      "description": "Único desnudo femenino conservado de Velázquez, muestra a Venus recostada mientras Cupido sostiene el espejo. La obra transforma el tema mitológico en una imagen íntima y ambigua sobre mirada y representación.",
+      "dimensions": {
+        "width": 177,
+        "height": 122.5
+      }
+    },
+    {
+      "id": "velazquez-inocencio-x",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Innocent-x-velazquez.jpg",
+      "title": "Retrato del papa Inocencio X",
+      "year": 1650,
+      "description": "Pintado durante el segundo viaje italiano del artista, es uno de los retratos más penetrantes del Barroco europeo. La intensidad psicológica del pontífice se sostiene con una gama dominante de rojos y blancos.",
+      "dimensions": {
+        "width": 119,
+        "height": 141
+      }
     }
   ]
 }

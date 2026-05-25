@@ -61,6 +61,39 @@
         "width": 336,
         "height": 280
       }
+    },
+    {
+      "id": "goya-maja-vestida",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Maja_vestida_%28Prado%29.jpg",
+      "title": "La maja vestida",
+      "year": 1800,
+      "description": "Pareja de La maja desnuda, muestra a la misma figura reclinada con traje popular y mirada directa. La obra combina sensualidad, retrato cortesano y ambigüedad social en torno al Madrid de finales del siglo XVIII.",
+      "dimensions": {
+        "width": 188,
+        "height": 95
+      }
+    },
+    {
+      "id": "goya-duelo-a-garrotazos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Francisco_de_Goya_y_Lucientes_-_Duelo_a_garrotazos.jpg",
+      "title": "Duelo a garrotazos",
+      "year": 1823,
+      "description": "Una de las Pinturas negras de la Quinta del Sordo, representa a dos hombres enfrentados en un combate brutal. La escena se ha interpretado como imagen amarga de la violencia fratricida y la obstinación humana.",
+      "dimensions": {
+        "width": 261,
+        "height": 125
+      }
+    },
+    {
+      "id": "goya-perro-semihundido",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Goya_Dog.jpg",
+      "title": "Perro semihundido",
+      "year": 1823,
+      "description": "Pintura negra de composición radical, con la cabeza de un perro aislada bajo un gran campo vacío. Su economía visual la convierte en una de las imágenes más modernas y enigmáticas de Goya.",
+      "dimensions": {
+        "width": 79,
+        "height": 131
+      }
     }
   ]
 }

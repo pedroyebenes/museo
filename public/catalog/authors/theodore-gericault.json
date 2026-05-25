@@ -14,6 +14,39 @@
         "width": 716,
         "height": 491
       }
+    },
+    {
+      "id": "theodore-gericault-oficial-de-cazadores-a-caballo-de-la-guardia-imperial",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/An_Officer_of_the_Imperial_Horse_Guards_Charging_-_G%C3%A9ricault_%28Louvre_INV_4885%29.jpg",
+      "title": "Oficial de cazadores a caballo de la Guardia Imperial a la carga",
+      "year": 1812,
+      "description": "Retrato ecuestre de energía turbulenta, presentado en el Salón de 1812. La diagonal del caballo y la mirada del oficial convierten la escena militar en una imagen temprana del dramatismo romántico.",
+      "dimensions": {
+        "width": 266,
+        "height": 349
+      }
+    },
+    {
+      "id": "theodore-gericault-coracero-herido-abandonando-el-campo-de-batalla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Cuirassier_bless%C3%A9_quittant_le_champ_de_bataille_%28Louvre%29.jpg",
+      "title": "Coracero herido abandonando el campo de batalla",
+      "year": 1814,
+      "description": "Figura monumental de un soldado derrotado que se retira con su caballo. La obra invierte la retórica heroica napoleónica y subraya el cansancio físico y moral de la guerra.",
+      "dimensions": {
+        "width": 294,
+        "height": 358
+      }
+    },
+    {
+      "id": "theodore-gericault-derbi-de-epsom",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Le_Derby_de_1821_%C3%A0_Epsom_-_Th%C3%A9odore_G%C3%A9ricault_-_Mus%C3%A9e_du_Louvre_Peintures_MI_708.jpg",
+      "title": "El derbi de Epsom",
+      "year": 1821,
+      "description": "Escena de carreras realizada tras la estancia inglesa de Géricault. La silueta suspendida de los caballos expresa velocidad moderna y anticipa el interés por captar el movimiento.",
+      "dimensions": {
+        "width": 123,
+        "height": 92
+      }
     }
   ]
 }

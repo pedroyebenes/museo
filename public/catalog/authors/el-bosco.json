@@ -14,6 +14,39 @@
         "width": 384.9,
         "height": 205.5
       }
+    },
+    {
+      "id": "el-bosco-el-carro-de-heno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bosch_-_Haywain_Triptych.jpg",
+      "title": "El carro de heno",
+      "year": 1516,
+      "description": "Tríptico moralizante donde reyes, clérigos y campesinos siguen un carro de heno como símbolo de codicia y vanidad. La escena enlaza creación, pecado e infierno con la imaginación satírica característica de El Bosco.",
+      "dimensions": {
+        "width": 200,
+        "height": 135
+      }
+    },
+    {
+      "id": "el-bosco-la-adoracion-de-los-magos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Hieronymus_Bosch_-_Triptych_of_the_Adoration_of_the_Magi_-_WGA2606.jpg",
+      "title": "La adoración de los Magos",
+      "year": 1495,
+      "description": "Tríptico del Prado que combina la escena de la Epifanía con donantes y detalles simbólicos inquietantes. Bajo su apariencia devocional aparecen signos de amenaza, herejía y redención.",
+      "dimensions": {
+        "width": 144,
+        "height": 138
+      }
+    },
+    {
+      "id": "el-bosco-las-tentaciones-de-san-antonio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/The_Temptation_of_St_Anthony_%28Bosch%29.jpg",
+      "title": "Las tentaciones de san Antonio",
+      "year": 1501,
+      "description": "Tríptico dedicado a las pruebas espirituales de san Antonio Abad. Sus criaturas híbridas y escenas fragmentadas convierten la tentación en un combate interior lleno de visiones fantásticas.",
+      "dimensions": {
+        "width": 228,
+        "height": 131
+      }
     }
   ]
 }
