@@ -14,6 +14,28 @@
         "width": 194,
         "height": 194
       }
+    },
+    {
+      "id": "angelico-anunciaciacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Fra_Angelico_-_The_Annunciation_-_Google_Art_Project.jpg",
+      "title": "La Anunciación",
+      "year": 1430,
+      "description": "Arco renacentista enmarca a Gabriel y a la Virgen en un jardín de pureza. Fra Angelico traduce la devoción dominica en color luminoso y calma espiritual.",
+      "dimensions": {
+        "width": 230,
+        "height": 297
+      }
+    },
+    {
+      "id": "angelico-coronation",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Fra_Angelico_-_The_Coronation_of_the_Virgin_-_Google_Art_Project.jpg",
+      "title": "Coronación de la Virgen",
+      "year": 1432,
+      "description": "Cristo corona a María rodeados de santos y ángeles en un cielo de oro. Obra maestra del fresco florentino temprano en San Marco.",
+      "dimensions": {
+        "width": 213,
+        "height": 165
+      }
     }
   ]
 }

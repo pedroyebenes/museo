@@ -14,6 +14,28 @@
         "width": 162,
         "height": 91
       }
+    },
+    {
+      "id": "ingres-primavera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Jean_Auguste_Dominique_Ingres_-_The_Spring_-_Google_Art_Project.jpg",
+      "title": "La primavera",
+      "year": 1856,
+      "description": "Figura femenina idealizada sostiene un ramo en un paisaje clásico. Ingres prolonga la tradición académica del desnudo alegórico hasta su vejez.",
+      "dimensions": {
+        "width": 171,
+        "height": 85
+      }
+    },
+    {
+      "id": "ingres-edipo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jean_Auguste_Dominique_Ingres_-_Oedipus_and_the_Sphinx_-_Google_Art_Project.jpg",
+      "title": "Edipo y la Esfinge",
+      "year": 1827,
+      "description": "Edipo responde al enigma en un paisaje teatral de rocas y cielo tormentoso. Ingres combina erudición clásica y tensión psicológica en una escena mitológica.",
+      "dimensions": {
+        "width": 189,
+        "height": 241
+      }
     }
   ]
 }

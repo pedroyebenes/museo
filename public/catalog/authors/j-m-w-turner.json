@@ -1,0 +1,66 @@
+{
+  "id": "j-m-w-turner",
+  "name": "J. M. W. Turner",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Joseph Mallord William Turner",
+  "years": "1775 – 1851",
+  "origin": "Londres, Inglaterra",
+  "bio": "Pintor romántico británico que transformó el paisaje en experiencia casi abstracta de luz y atmósfera. Sus marinas tempestuosas, incendios urbanos y estudios de vapor y bruma anticiparon la pintura moderna.",
+  "paintings": [
+    {
+      "id": "turner-fighting-temeraire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/The_Fighting_Temeraire_tugged_to_her_last_berth_to_be_broken_up%2C_1838.jpg",
+      "title": "El Temeraire remolcado a su último amarre",
+      "year": 1839,
+      "description": "Homenaje melancólico al navío de Trafalgar arrastrado por un remolcador a vapor hacia el desguace. Turner contrapone la gloria naval del pasado con la era industrial.",
+      "dimensions": {
+        "width": 91,
+        "height": 122
+      }
+    },
+    {
+      "id": "turner-rain-steam-speed",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rain_Steam_and_Speed_-_The_Great_Western_Railway.jpg",
+      "title": "Lluvia, vapor y velocidad",
+      "year": 1844,
+      "description": "Una locomotora atraviesa un puente bajo una tormenta de lluvia y niebla. Obra clave sobre la modernidad, la velocidad y la fuerza destructiva del progreso.",
+      "dimensions": {
+        "width": 91,
+        "height": 122
+      }
+    },
+    {
+      "id": "turner-hannibal-alps",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Joseph_Mallord_William_Turner_017.jpg",
+      "title": "El paso del San Bernardo por Hannibal",
+      "year": 1812,
+      "description": "Ejército cartaginés cruzando los Alpes entre nieve y nubarrones. Turner combina historia antigua con una naturaleza sublime que amenaza con devorar la civilización.",
+      "dimensions": {
+        "width": 237,
+        "height": 146
+      }
+    },
+    {
+      "id": "turner-slave-ship",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/The_Slave_Ship.jpg",
+      "title": "El buque negrero",
+      "year": 1840,
+      "description": "Mar agitado donde cadáveres y grilletes emergen entre olas anaranjadas. Turner denuncia el comercio de esclavos con una paleta violenta y una atmósfera casi abstracta.",
+      "dimensions": {
+        "width": 91,
+        "height": 123
+      }
+    },
+    {
+      "id": "turner-dort",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Turner_Dort_or_Dordrecht%3A_The_Dort_packet-boat_from_Rotterdam_bac.jpg",
+      "title": "El paquete-bote de Dort",
+      "year": 1818,
+      "description": "Bruma dorada envuelve embarcaciones en el puerto holandés de Dordrecht. Ejemplo temprano de la fascinación de Turner por la luz difusa sobre el agua.",
+      "dimensions": {
+        "width": 68,
+        "height": 88
+      }
+    }
+  ]
+}

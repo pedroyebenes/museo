@@ -61,6 +61,105 @@
         "width": 94.1,
         "height": 89.8
       }
+    },
+    {
+      "id": "monet-boulevard-capucines",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Claude_Monet_-_Boulevard_des_Capucines_-_Google_Art_Project.jpg",
+      "title": "Bulevar de Capuchinas",
+      "year": 1873,
+      "description": "Vista desde el estudio de Nadar sobre uno de los bulevares haussmannianos de París. Multitudes y banderas sugieren la vida urbana moderna que el impresionismo acaba de descubrir.",
+      "dimensions": {
+        "width": 80,
+        "height": 60
+      }
+    },
+    {
+      "id": "monet-chopos-epte",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Claude_Monet_-_Poplars_on_the_Epte_-_Google_Art_Project.jpg",
+      "title": "Chopos en las orillas del Epte",
+      "year": 1891,
+      "description": "Serie sobre álamos reflejados en el río Epte. Monet estudiaba cómo la luz vertical transforma el follaje y su sombra sobre el agua.",
+      "dimensions": {
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "id": "monet-haystacks-verano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Claude_Monet_-_Haystacks%2C_end_of_Summer_-_Google_Art_Project.jpg",
+      "title": "Almiares, fin del verano",
+      "year": 1891,
+      "description": "De la célebre serie de almiares cerca de Giverny. Monet fijó el mismo motivo rural en distintas horas para captar variaciones casi imperceptibles de luz.",
+      "dimensions": {
+        "width": 100,
+        "height": 60
+      }
+    },
+    {
+      "id": "monet-haystacks",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Claude_Monet_-_Haystacks_-_Google_Art_Project.jpg",
+      "title": "Almiares",
+      "year": 1885,
+      "description": "Estudio de montones de grano bajo luz cambiante. Anticipa la pintura en serie que Monet llevará después a la catedral de Rouen y a los nenúfares.",
+      "dimensions": {
+        "width": 81,
+        "height": 60
+      }
+    },
+    {
+      "id": "monet-campo-amapolas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Claude_Monet_-_Poppy_Field_-_Google_Art_Project.jpg",
+      "title": "Campo de amapolas",
+      "year": 1873,
+      "description": "Camille y Jean Monet caminan entre amapolas rojas cerca de Argenteuil. Paisaje impresionista por excelencia: color puro, luz abierta y figuras integradas en el campo.",
+      "dimensions": {
+        "width": 50,
+        "height": 65
+      }
+    },
+    {
+      "id": "monet-grenouillere",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Claude_Monet_-_La_Grenouill%C3%A8re_-_Google_Art_Project.jpg",
+      "title": "La Grenouillère",
+      "year": 1869,
+      "description": "Escena de ocio fluvial en la famosa guinguette de la isla de Croissy. Monet y Renoir pintaron el mismo lugar ese verano, explorando reflejos y figuras sobre el agua.",
+      "dimensions": {
+        "width": 73,
+        "height": 54
+      }
+    },
+    {
+      "id": "monet-gare-saint-lazare",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Claude_Monet_-_The_Gare_Saint-Lazare_-_Google_Art_Project.jpg",
+      "title": "La estación Saint-Lazare",
+      "year": 1877,
+      "description": "Vapor y hierro en la gran estación parisina. Monet captura la modernidad industrial con pinceladas rápidas y una atmósfera densa de humo y luz filtrada.",
+      "dimensions": {
+        "width": 75,
+        "height": 104
+      }
+    },
+    {
+      "id": "monet-nenufares-1919",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Claude_Monet_-_Water_Lilies_-_1919%2C_Metropolitan.jpg",
+      "title": "Nenúfares",
+      "year": 1919,
+      "description": "Lienzo tardío del ciclo de Giverny conservado en el Metropolitan. La superficie acuática se disuelve en manchas de color que borran el horizonte tradicional.",
+      "dimensions": {
+        "width": 130,
+        "height": 200
+      }
+    },
+    {
+      "id": "monet-puente-japones",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Claude_Monet_-_The_Japanese_Footbridge_-_Google_Art_Project.jpg",
+      "title": "El puente japonés",
+      "year": 1899,
+      "description": "Arco verde sobre el estanque de nenúfares que Monet diseñó en su jardín. El puente se convierte en marco para explorar reflejos y vegetación.",
+      "dimensions": {
+        "width": 81,
+        "height": 101
+      }
     }
   ]
 }

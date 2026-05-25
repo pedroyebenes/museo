@@ -1,0 +1,99 @@
+{
+  "id": "thomas-cole",
+  "name": "Thomas Cole",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Thomas Cole",
+  "years": "1801 – 1848",
+  "origin": "Bolton-le-Moors, Inglaterra (activo en Estados Unidos)",
+  "bio": "Fundador de la Escuela del río Hudson y primer gran pintor del paisaje americano. Sus series alegóricas sobre la civilización y sus vistas de la naturaleza virgen influyeron en generaciones de paisajistas románticos en Norteamérica.",
+  "paintings": [
+    {
+      "id": "cole-savage-state",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg",
+      "title": "El curso del imperio: el estado salvaje",
+      "year": 1836,
+      "description": "Primera escena de la serie alegórica encargada por Luman Reed. Un paisaje primitivo bajo tormenta anuncia el ciclo civilizatorio que Cole desarrollará en los cuatro lienzos siguientes.",
+      "dimensions": {
+        "width": 100,
+        "height": 67
+      }
+    },
+    {
+      "id": "cole-arcadian-state",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cole_Thomas_The_Course_of_Empire_The_Arcadian_or_Pastoral_State_1836.jpg",
+      "title": "El curso del imperio: el estado arcadio",
+      "year": 1836,
+      "description": "Segunda parte de la serie: un valle cultivado y templado donde la vida pastoril florece en armonía con la naturaleza, antes de la ambición urbana.",
+      "dimensions": {
+        "width": 100,
+        "height": 67
+      }
+    },
+    {
+      "id": "cole-consummation",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+      "title": "El curso del imperio: la consumación",
+      "year": 1836,
+      "description": "Tercera escena: una metrópolis clásica en su apogeo, repleta de arquitectura monumental y multitudes que celebran el poder imperial.",
+      "dimensions": {
+        "width": 100,
+        "height": 67
+      }
+    },
+    {
+      "id": "cole-destruction",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
+      "title": "El curso del imperio: destrucción",
+      "year": 1836,
+      "description": "Cuarta escena: invasores saquean la ciudad mientras el fuego devora templos y palacios. Cole dramatiza el colapso de un imperio en su momento de mayor orgullo.",
+      "dimensions": {
+        "width": 100,
+        "height": 67
+      }
+    },
+    {
+      "id": "cole-desolation",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Cole_Thomas_The_Course_of_Empire_Desolation_1836.jpg",
+      "title": "El curso del imperio: desolación",
+      "year": 1836,
+      "description": "Epílogo de la serie: ruinas silenciosas bañadas por la luna mientras la naturaleza reclama lentamente el territorio conquistado por la civilización.",
+      "dimensions": {
+        "width": 100,
+        "height": 67
+      }
+    },
+    {
+      "id": "cole-oxbow",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Thomas_Cole_-_The_Oxbow_-_Google_Art_Project.jpg",
+      "title": "El meandro del Connecticut (Oxbow)",
+      "year": 1836,
+      "description": "Vista panorámica del río Connecticut desde Mount Holyoke. Cole contrapone la naturaleza salvaje a la izquierda con el paisaje agrícola ordenado a la derecha.",
+      "dimensions": {
+        "width": 130,
+        "height": 76
+      }
+    },
+    {
+      "id": "cole-expulsion-eden",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Thomas_Cole_-_Expulsion_from_the_Garden_of_Eden_-_Google_Art_Project.jpg",
+      "title": "La expulsión del Edén",
+      "year": 1828,
+      "description": "Paisaje apocalíptico que representa la expulsión de Adán y Eva. La composición dramatiza el contraste entre el paraíso luminoso y el mundo hostil que les espera.",
+      "dimensions": {
+        "width": 91,
+        "height": 122
+      }
+    },
+    {
+      "id": "cole-kaaterskill",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Thomas_Cole_-_The_Falls_of_Kaaterskill_-_Google_Art_Project.jpg",
+      "title": "Las cataratas de Kaaterskill",
+      "year": 1826,
+      "description": "Una de las primeras grandes vistas americanas de Cole. La cascada del Catskill se yergue como emblema romántico de la naturaleza sublime del Nuevo Mundo.",
+      "dimensions": {
+        "width": 110,
+        "height": 84
+      }
+    }
+  ]
+}

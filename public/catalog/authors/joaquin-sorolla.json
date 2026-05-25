@@ -72,6 +72,17 @@
         "width": 282,
         "height": 205
       }
+    },
+    {
+      "id": "sorolla-paseo-mar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Walk_on_the_Beach_-_Google_Art_Project.jpg",
+      "title": "Paseo a orillas del mar",
+      "year": 1909,
+      "description": "Pareja camina sobre la arena mojada mientras la falda captura la brisa marina. Sorolla pinta la luz mediterránea con empaste luminoso y movimiento.",
+      "dimensions": {
+        "width": 205,
+        "height": 200
+      }
     }
   ]
 }

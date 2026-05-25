@@ -14,6 +14,28 @@
         "width": 194,
         "height": 129
       }
+    },
+    {
+      "id": "watteau-peregrinacion-citera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Antoine_Watteau_-_The_Embarkation_for_Cythera_-_Google_Art_Project.jpg",
+      "title": "La peregrinación a la isla de Citera",
+      "year": 1717,
+      "description": "Parejas galantes se dirigen hacia la isla del amor en un paisaje dorado. Watteau inventa el fête galante mezclando teatro, música y melancolía rococó.",
+      "dimensions": {
+        "width": 129,
+        "height": 194
+      }
+    },
+    {
+      "id": "watteau-gilles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Antoine_Watteau_-_Pierrot_-_Google_Art_Project.jpg",
+      "title": "Gilles",
+      "year": 1718,
+      "description": "Comediante de teatro aislado en el centro del lienzo con traje blanco. Retrato melancólico que traslada la escena italiana al silencio introspectivo.",
+      "dimensions": {
+        "width": 184,
+        "height": 149
+      }
     }
   ]
 }

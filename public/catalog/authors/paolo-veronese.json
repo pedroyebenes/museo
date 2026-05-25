@@ -17,6 +17,28 @@
         "width": 994,
         "height": 677
       }
+    },
+    {
+      "id": "veronese-familia-dario",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Paolo_Veronese_-_The_Family_of_Darius_before_Alexander_-_Google_Art_Project.jpg",
+      "title": "La familia de Darío ante Alejandro",
+      "year": 1565,
+      "description": "Encuentro histórico entre conquistador y realeza persa en un escenario teatral. Veronese demuestra su dominio del retrato colectivo y del color veneciano.",
+      "dimensions": {
+        "width": 236,
+        "height": 455
+      }
+    },
+    {
+      "id": "veronese-marte-venus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Paolo_Veronese_-_Mars_and_Venus_United_by_Love_-_Google_Art_Project.jpg",
+      "title": "Marte y Venus unidos por el amor",
+      "year": 1578,
+      "description": "Alegoría mitológica donde Cupido ata a los dioses del amor y la guerra. Veronese despliega sedas, armaduras y paisaje veneciano con elegancia decorativa.",
+      "dimensions": {
+        "width": 205,
+        "height": 123
+      }
     }
   ]
 }

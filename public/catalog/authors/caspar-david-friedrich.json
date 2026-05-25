@@ -1,0 +1,66 @@
+{
+  "id": "caspar-david-friedrich",
+  "name": "Caspar David Friedrich",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Caspar David Friedrich",
+  "years": "1774 – 1840",
+  "origin": "Greifswald, Pomerania (Alemania)",
+  "bio": "Máximo exponente del paisaje romántico alemán. Sus figuras solitarias ante el mar, la montaña o la bruma convierten la naturaleza en espejo de estados espirituales y de la fragilidad humana.",
+  "paintings": [
+    {
+      "id": "friedrich-wanderer",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg",
+      "title": "El caminante sobre el mar de nubes",
+      "year": 1818,
+      "description": "Un viajero de espaldas contempla montañas envueltas en niebla desde un peñasco. Icono del romanticismo alemán y de la meditación solitaria ante lo sublime.",
+      "dimensions": {
+        "width": 94.8,
+        "height": 74.8
+      }
+    },
+    {
+      "id": "friedrich-monje-orilla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Caspar_David_Friedrich_-_The_Monk_by_the_Sea_-_Google_Art_Project.jpg",
+      "title": "El monje junto al mar",
+      "year": 1810,
+      "description": "Figura diminuta frente a un horizonte casi abstracto de mar y cielo. La escala desmesurada transmite silencio, soledad y una devoción mística ante la naturaleza.",
+      "dimensions": {
+        "width": 110,
+        "height": 172
+      }
+    },
+    {
+      "id": "friedrich-abadia-roble",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Caspar_David_Friedrich_-_Abbey_in_the_Oakwood_-_Google_Art_Project.jpg",
+      "title": "Abadía en el robledal",
+      "year": 1810,
+      "description": "Ruinas góticas entre robles desnudos bajo un cielo crepuscular. Friedrich evoca la memoria, la muerte y la persistencia de lo sagrado en un paisaje invernal.",
+      "dimensions": {
+        "width": 110,
+        "height": 171
+      }
+    },
+    {
+      "id": "friedrich-luna-mar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Caspar_David_Friedrich_-_Moonrise_over_the_Sea_-_Google_Art_Project.jpg",
+      "title": "Salida de la luna sobre el mar",
+      "year": 1822,
+      "description": "Tres figuras observan la luna elevarse sobre el Báltico. El horizonte dividido en franjas de color convierte la escena en meditación sobre el paso del tiempo.",
+      "dimensions": {
+        "width": 50,
+        "height": 35
+      }
+    },
+    {
+      "id": "friedrich-contemplando-luna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Caspar_David_Friedrich_-_Two_Men_Contemplating_the_Moon_-_Google_Art_Project.jpg",
+      "title": "Dos hombres contemplando la luna",
+      "year": 1825,
+      "description": "Amigos detenidos ante un roble en un paisaje crepuscular. Friedrich convierte la observación compartida del cielo en un ritual íntimo de comunión con la naturaleza.",
+      "dimensions": {
+        "width": 34.5,
+        "height": 43.8
+      }
+    }
+  ]
+}

@@ -17,6 +17,28 @@
         "width": 39,
         "height": 44.5
       }
+    },
+    {
+      "id": "vermeer-perla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/1665_Girl_with_a_Pearl_Earring.jpg",
+      "title": "La joven de la perla",
+      "year": 1665,
+      "description": "Retrato tricromo de figura anónima con turbante exótico y pendiente de perla. La mirada oblicua y el fondo oscuro concentran toda la atención en el rostro.",
+      "dimensions": {
+        "width": 44.5,
+        "height": 39
+      }
+    },
+    {
+      "id": "vermeer-lechera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Johannes_Vermeer_-_The_Milkmaid_-_Google_Art_Project.jpg",
+      "title": "La lechera",
+      "year": 1658,
+      "description": "Servidora vertiendo leche junto a una mesa con pan y cesta. Vermeer eleva una escena doméstica mediante luz lateral y detalle casi táctil.",
+      "dimensions": {
+        "width": 45.5,
+        "height": 41
+      }
     }
   ]
 }

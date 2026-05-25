@@ -14,6 +14,28 @@
         "width": 121,
         "height": 85
       }
+    },
+    {
+      "id": "poussin-rapto-sabinas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Nicolas_Poussin_-_The_Rape_of_the_Sabine_Women_-_Google_Art_Project.jpg",
+      "title": "El rapto de las sabinas",
+      "year": 1637,
+      "description": "Romulo y sus hombres arrebatan a las mujeres sabinas en una espiral compositiva perfecta. Poussin ordena la violencia mitológica con geometría clásica.",
+      "dimensions": {
+        "width": 159,
+        "height": 206
+      }
+    },
+    {
+      "id": "poussin-orfeo-euridice",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Nicolas_Poussin_-_Landscape_with_Orpheus_and_Eurydice_-_Google_Art_Project.jpg",
+      "title": "Paisaje con Orfeo y Eurídice",
+      "year": 1650,
+      "description": "Orfeo mira atrás hacia Eurídice en un paisaje clásico de árboles y ruinas. Poussin convierte el mito en meditación sobre el deseo, la pérdida y la mirada.",
+      "dimensions": {
+        "width": 124,
+        "height": 200
+      }
     }
   ]
 }

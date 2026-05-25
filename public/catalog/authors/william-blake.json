@@ -14,6 +14,28 @@
         "width": 16.8,
         "height": 23.3
       }
+    },
+    {
+      "id": "blake-newton",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/William_Blake_-_Newton_-_Google_Art_Project.jpg",
+      "title": "Newton",
+      "year": 1795,
+      "description": "El científico agachado traza figuras sobre un pergamino en el fondo del mar. Blake critica la razón deshumanizada que reduce la creación a medida geométrica.",
+      "dimensions": {
+        "width": 46,
+        "height": 60
+      }
+    },
+    {
+      "id": "blake-nebuchadnezzar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/William_Blake_-_Nebuchadnezzar_-_Google_Art_Project.jpg",
+      "title": "Nabucodonosor",
+      "year": 1795,
+      "description": "Rey babilonio convertido en bestia según el relato bíblico. Blake pinta el castigo de la soberbia con un cuerpo contorsionado y una mirada de terror animal.",
+      "dimensions": {
+        "width": 45,
+        "height": 62
+      }
     }
   ]
 }

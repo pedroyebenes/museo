@@ -14,6 +14,28 @@
         "width": 262,
         "height": 220
       }
+    },
+    {
+      "id": "rogier-ultima-cena",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Rogier_van_der_Weyden_-_The_Last_Supper_-_Google_Art_Project.jpg",
+      "title": "La Última Cena",
+      "year": 1464,
+      "description": "Cristo y los apóstoles en un interior gótico con detalle minucioso. Obra tardía que transmite la solemnidad eucarística con intimidad dramática.",
+      "dimensions": {
+        "width": 43,
+        "height": 38
+      }
+    },
+    {
+      "id": "rogier-retrato-dama",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Rogier_van_der_Weyden_-_Portrait_of_a_Lady_-_Google_Art_Project.jpg",
+      "title": "Retrato de una dama",
+      "year": 1460,
+      "description": "Mujer anónima con tocado elaborado y manos entrelazadas sobre fondo oscuro. Rogier condensa la dignidad burguesa flamenca en una mirada contenida y serena.",
+      "dimensions": {
+        "width": 37,
+        "height": 27
+      }
     }
   ]
 }

@@ -33,6 +33,28 @@
         "height": 251
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Paul_C%C3%A9zanne%2C_French_-_The_Large_Bathers_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "cezanne-mont-sainte-victoire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Paul_C%C3%A9zanne_-_Mont_Sainte-Victoire_-_Google_Art_Project.jpg",
+      "title": "Mont Sainte-Victoire",
+      "year": 1904,
+      "description": "La montaña provenzal reconstruida con planos geométricos de color. Cézanne convirtió el paisaje en laboratorio para la forma que Picasso y Matisse heredarían.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "cezanne-naturaleza-muerta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Paul_C%C3%A9zanne_-_Still_Life_with_Apples_-_Google_Art_Project.jpg",
+      "title": "Naturaleza muerta con manzanas",
+      "year": 1895,
+      "description": "Manzanas, mantel y jarra dispuestos en una mesa inclinada. Cézanne desafía la perspectiva única para mostrar el objeto desde varios ángulos a la vez.",
+      "dimensions": {
+        "width": 68,
+        "height": 52
+      }
     }
   ]
 }

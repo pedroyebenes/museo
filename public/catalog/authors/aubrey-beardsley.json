@@ -14,6 +14,28 @@
         "width": 16,
         "height": 22.5
       }
+    },
+    {
+      "id": "beardsley-capa-negra",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Aubrey_Beardsley_-_The_Black_Cape_-_Google_Art_Project.jpg",
+      "title": "La capa negra",
+      "year": 1893,
+      "description": "Salomé envuelta en una capa que oculta y revela a la vez. Dibujo de contornos extremos que condensa erotismo y amenaza en el arte nouveau británico.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
+    },
+    {
+      "id": "beardsley-john-y-salome",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Aubrey_Beardsley_-_The_Climax_-_Google_Art_Project.jpg",
+      "title": "El clímax",
+      "year": 1893,
+      "description": "Ilustración para Salomé de Wilde: la heroína sostiene la cabeza del Bautista en una escena de contornos extremos. Beardsley condensa erotismo y violencia en el arte nouveau británico.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
     }
   ]
 }

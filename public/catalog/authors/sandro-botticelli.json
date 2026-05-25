@@ -28,6 +28,17 @@
         "height": 202
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Botticelli-primavera.jpg"
+    },
+    {
+      "id": "botticelli-venus-mars",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sandro_Botticelli_-_Venus_and_Mars_-_Google_Art_Project.jpg",
+      "title": "Venus y Marte",
+      "year": 1485,
+      "description": "La diosa contempla al dios de la guerra dormido mientras sátiros juegan con su armadura. Botticelli combina erotismo clásico y humor refinado.",
+      "dimensions": {
+        "width": 69,
+        "height": 173
+      }
     }
   ]
 }
