@@ -1,5 +1,6 @@
 import { createScene } from './scene.js';
 import { loadCatalogData } from './catalogData.js';
+import { initMaterialRenderer } from './proceduralTextureUtils.js';
 import { createControls } from './controls.js';
 import {
   createInfoOverlay,
@@ -16,6 +17,7 @@ async function boot() {
   const welcome = document.getElementById('welcome');
 
   const { scene, camera, renderer } = createScene();
+  initMaterialRenderer(renderer);
 
   if (
     window.matchMedia('(pointer: coarse)').matches ||

@@ -1,4 +1,16 @@
 import * as THREE from 'three';
+import { getQualityProfile } from './qualityProfile.js';
+import {
+  configureCanvasTexture,
+  createHeightBuffer,
+  createSeededRandom,
+  createTileableNoise2D,
+  fbmNoise2D,
+  hashString,
+  heightBufferToNormalTexture,
+} from './proceduralTextureUtils.js';
+
+export { hashString };
 
 // Shared textures + materials. Created once and reused across every room.
 // Marked with userData.shared = true so the room disposer skips them.
@@ -98,31 +110,44 @@ function relativeLuminance(color) {
 }
 
 function build() {
-  const floorTex = makeParquetTexture();
+  const quality = getQualityProfile();
+  const { floorTex, floorNormal } = makeParquetTexture(quality);
   const floorMat = new THREE.MeshStandardMaterial({
     map: floorTex,
     roughness: 0.78,
     metalness: 0.06,
   });
+  if (floorNormal) {
+    floorMat.normalMap = floorNormal;
+    floorMat.normalScale.set(0.2, 0.2);
+  }
   floorMat.userData.shared = true;
 
-  const wallTex = makePlasterWallTexture();
+  const { colorTex: wallTex, normalTex: wallNormal } = makePlasterWallTexture(quality);
   const wallMat = new THREE.MeshStandardMaterial({
     map: wallTex,
     roughness: 0.92,
     metalness: 0.02,
   });
+  if (wallNormal) {
+    wallMat.normalMap = wallNormal;
+    wallMat.normalScale.set(0.22, 0.22);
+  }
   wallMat.userData.shared = true;
 
-  const wainscotTex = makeWainscotTexture();
+  const { colorTex: wainscotTex, normalTex: wainscotNormal } = makeWainscotTexture(quality);
   const wainscotMat = new THREE.MeshStandardMaterial({
     map: wainscotTex,
     roughness: 0.48,
     metalness: 0.12,
   });
+  if (wainscotNormal) {
+    wainscotMat.normalMap = wainscotNormal;
+    wainscotMat.normalScale.set(0.4, 0.4);
+  }
   wainscotMat.userData.shared = true;
 
-  const ceilTex = makeCofferedCeilingTexture();
+  const ceilTex = makeCofferedCeilingTexture(quality);
   const ceilMat = new THREE.MeshStandardMaterial({
     map: ceilTex,
     roughness: 0.95,
@@ -167,9 +192,11 @@ let domeMatCached = null;
 
 export function getHubMaterials() {
   if (hubCached) return hubCached;
+  const quality = getQualityProfile();
   const base = build();
+  const hubFloorTex = makeMarbleFloorTexture(quality);
   const floorMat = new THREE.MeshStandardMaterial({
-    map: makeMarbleFloorTexture(),
+    map: hubFloorTex,
     roughness: 0.42,
     metalness: 0.12,
   });
@@ -185,42 +212,59 @@ export function getHubMaterials() {
   return hubCached;
 }
 
-function makeMarbleFloorTexture() {
+function makeMarbleFloorTexture(quality = getQualityProfile()) {
+  const size = quality.architectureTextureSize.hubMarble;
   const c = document.createElement('canvas');
-  c.width = 1024;
-  c.height = 1024;
+  c.width = size;
+  c.height = size;
   const ctx = c.getContext('2d');
   const cx = c.width / 2;
   const cy = c.height / 2;
+  const scale = size / 1024;
 
-  const bg = ctx.createRadialGradient(cx, cy, 40, cx, cy, 520);
+  const bg = ctx.createRadialGradient(cx, cy, 40 * scale, cx, cy, 520 * scale);
   bg.addColorStop(0, '#f7efe0');
   bg.addColorStop(0.55, '#ead9bc');
   bg.addColorStop(1, '#ccb892');
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, c.width, c.height);
 
-  ctx.strokeStyle = 'rgba(199,160,96,0.35)';
-  ctx.lineWidth = 3;
+  const veinNoise = createTileableNoise2D(64, 64, 'hub-marble-vein');
+  const img = ctx.getImageData(0, 0, c.width, c.height);
+  const d = img.data;
+  for (let y = 0; y < c.height; y++) {
+    for (let x = 0; x < c.width; x++) {
+      const n = fbmNoise2D(veinNoise, x / (48 * scale), y / (48 * scale), 3, 2, 0.55);
+      const vein = Math.sin((x * 0.018 + y * 0.011 + n * 4) * Math.PI) * 0.5 + 0.5;
+      const tint = (n - 0.5) * 14 + (vein - 0.5) * 18;
+      const i = (y * c.width + x) * 4;
+      d[i] = Math.max(0, Math.min(255, d[i] + tint * 0.6));
+      d[i + 1] = Math.max(0, Math.min(255, d[i + 1] + tint * 0.5));
+      d[i + 2] = Math.max(0, Math.min(255, d[i + 2] + tint * 0.35));
+    }
+  }
+  ctx.putImageData(img, 0, 0);
+
+  ctx.strokeStyle = 'rgba(199,160,96,0.28)';
+  ctx.lineWidth = 2.5 * scale;
   for (let i = 0; i < 12; i++) {
     const a = (i / 12) * Math.PI * 2;
     ctx.beginPath();
     ctx.moveTo(cx, cy);
-    ctx.lineTo(cx + Math.cos(a) * 500, cy + Math.sin(a) * 500);
+    ctx.lineTo(cx + Math.cos(a) * 500 * scale, cy + Math.sin(a) * 500 * scale);
     ctx.stroke();
   }
 
-  for (let r = 120; r <= 460; r += 80) {
+  for (let r = 120 * scale; r <= 460 * scale; r += 80 * scale) {
     ctx.beginPath();
     ctx.arc(cx, cy, r, 0, Math.PI * 2);
     ctx.stroke();
   }
 
-  const tex = new THREE.CanvasTexture(c);
-  tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
-  tex.userData.shared = true;
+  const tex = configureCanvasTexture(new THREE.CanvasTexture(c), null, {
+    wrapS: THREE.ClampToEdgeWrapping,
+    wrapT: THREE.ClampToEdgeWrapping,
+  });
   return tex;
 }
 
@@ -335,13 +379,11 @@ function makeSanPietroDomeFrescoTexture() {
   for (let y = 0; y < H; y += 9) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
   ctx.globalAlpha = 1;
 
-  const tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
-  // Flip U so text reads correctly when viewed from inside the sphere
+  const tex = configureCanvasTexture(new THREE.CanvasTexture(c), null, {
+    generateMipmaps: true,
+  });
   tex.repeat.set(-1, 1);
   tex.offset.set(1, 0);
-  tex.userData.shared = true;
   return tex;
 }
 
@@ -488,222 +530,276 @@ export function getDomeMaterial() {
   return domeMatCached;
 }
 
-export function hashString(value) {
-  value = String(value);
-  let hash = 2166136261;
-  for (let i = 0; i < value.length; i++) {
-    hash ^= value.charCodeAt(i);
-    hash = Math.imul(hash, 16777619);
-  }
-  return hash >>> 0;
-}
-
-function makeParquetTexture() {
+function makeParquetTexture(quality = getQualityProfile()) {
+  const size = quality.architectureTextureSize.floor;
   const c = document.createElement('canvas');
-  c.width = 1024;
-  c.height = 1024;
+  c.width = size;
+  c.height = size;
   const ctx = c.getContext('2d');
+  const rand = createSeededRandom('parquet');
+  const scale = size / 2048;
 
-  const PLANK_H = 96;
+  const PLANK_H = Math.round(56 * scale);
   const palette = ['#7a5230', '#82542f', '#6a4220', '#7d4f2a', '#85583a', '#704a26'];
+  const heightBuf = quality.enableNormalMaps ? createHeightBuffer(size, size, 0.5) : null;
+
   let y = 0;
   let rowOffset = 0;
   while (y < c.height) {
     let x = -rowOffset;
     while (x < c.width) {
-      const w = 200 + Math.floor(Math.random() * 260);
-      const color = palette[Math.floor(Math.random() * palette.length)];
+      const w = Math.round((180 + rand() * 220) * scale);
+      const color = palette[Math.floor(rand() * palette.length)];
       ctx.fillStyle = color;
       ctx.fillRect(x, y, w, PLANK_H);
 
-      // grain streaks
-      ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+      const grainCount = Math.round(8 * scale);
+      ctx.strokeStyle = 'rgba(0,0,0,0.045)';
       ctx.lineWidth = 1;
-      for (let g = 0; g < 6; g++) {
-        const gy = y + 10 + Math.random() * (PLANK_H - 20);
+      for (let g = 0; g < grainCount; g++) {
+        const gy = y + 8 * scale + rand() * (PLANK_H - 16 * scale);
         ctx.beginPath();
-        ctx.moveTo(x + 4, gy);
-        ctx.lineTo(x + w - 4, gy);
+        ctx.moveTo(x + 4 * scale, gy);
+        ctx.lineTo(x + w - 4 * scale, gy);
+        ctx.stroke();
+        if (heightBuf) {
+          const hx = Math.min(c.width - 1, Math.max(0, Math.round(x + w * 0.5)));
+          const hy = Math.min(c.height - 1, Math.max(0, Math.round(gy)));
+          heightBuf[hy * size + hx] = Math.min(1, heightBuf[hy * size + hx] + 0.015);
+        }
+      }
+
+      ctx.strokeStyle = 'rgba(255,240,210,0.04)';
+      for (let g = 0; g < 4; g++) {
+        const gy = y + 10 * scale + rand() * (PLANK_H - 20 * scale);
+        ctx.beginPath();
+        ctx.moveTo(x + 4 * scale, gy);
+        ctx.lineTo(x + w - 4 * scale, gy);
         ctx.stroke();
       }
-      // small lighter highlights
-      ctx.strokeStyle = 'rgba(255,240,210,0.05)';
-      for (let g = 0; g < 3; g++) {
-        const gy = y + 12 + Math.random() * (PLANK_H - 24);
-        ctx.beginPath();
-        ctx.moveTo(x + 4, gy);
-        ctx.lineTo(x + w - 4, gy);
-        ctx.stroke();
+
+      const bevel = Math.max(1, Math.round(2 * scale));
+      ctx.fillStyle = 'rgba(0,0,0,0.12)';
+      ctx.fillRect(x, y + PLANK_H - bevel, w, bevel);
+      ctx.fillStyle = 'rgba(255,245,220,0.06)';
+      ctx.fillRect(x, y, w, bevel);
+
+      ctx.strokeStyle = 'rgba(0,0,0,0.14)';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(x + 0.5, y + 0.5, w - 1, PLANK_H - 1);
+
+      if (heightBuf) {
+        for (let py = y; py < y + PLANK_H && py < size; py++) {
+          for (let px = Math.max(0, x); px < x + w && px < size; px++) {
+            const edgeDist = Math.min(px - x, x + w - px, py - y, y + PLANK_H - py);
+            const bump = edgeDist < bevel * 2 ? -0.025 : 0.008 + rand() * 0.004;
+            heightBuf[py * size + px] = Math.max(0, Math.min(1, 0.5 + bump));
+          }
+        }
       }
-      // plank borders
-      ctx.strokeStyle = 'rgba(0,0,0,0.35)';
-      ctx.lineWidth = 2;
-      ctx.strokeRect(x, y, w, PLANK_H);
+
       x += w;
     }
     y += PLANK_H;
-    rowOffset = (rowOffset + 140) % 400;
+    rowOffset = Math.round((rowOffset + 140 * scale) % (400 * scale));
   }
 
-  const tex = new THREE.CanvasTexture(c);
-  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set(4, 4);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
-  tex.userData.shared = true;
-  return tex;
+  const floorTex = configureCanvasTexture(new THREE.CanvasTexture(c), null, {
+    repeat: [4, 4],
+  });
+  const floorNormal = quality.enableNormalMaps
+    ? heightBufferToNormalTexture(heightBuf, size, size, { strength: 3.5, wrapX: true, wrapY: true })
+    : null;
+  if (floorNormal) {
+    floorNormal.wrapS = floorNormal.wrapT = THREE.RepeatWrapping;
+    floorNormal.repeat.set(4, 4);
+  }
+  return { floorTex, floorNormal };
 }
 
-function makePlasterWallTexture() {
-  // Seamless neoclassical plaster: low-contrast stucco so panel UV offsets
-  // do not produce visible block boundaries.
+function makePlasterWallTexture(quality = getQualityProfile()) {
+  const size = quality.architectureTextureSize.wall;
   const c = document.createElement('canvas');
-  c.width = 512;
-  c.height = 512;
+  c.width = size;
+  c.height = size;
   const ctx = c.getContext('2d');
+  const noise = createTileableNoise2D(size, size, 'plaster-wall');
+  const heightBuf = quality.enableNormalMaps ? createHeightBuffer(size, size, 0.5) : null;
 
-  const bg = ctx.createLinearGradient(0, 0, 0, c.height);
-  bg.addColorStop(0, '#f8f5ee');
-  bg.addColorStop(1, '#ebe6dc');
-  ctx.fillStyle = bg;
-  ctx.fillRect(0, 0, c.width, c.height);
-
-  // Soft vertical stucco bands (period = tile height for seamless repeat)
-  for (let x = 0; x < c.width; x += 3) {
-    const a = 0.02 + Math.random() * 0.03;
-    ctx.strokeStyle = `rgba(120,110,95,${a})`;
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(x, 0);
-    ctx.lineTo(x + (Math.random() - 0.5) * 2, c.height);
-    ctx.stroke();
-  }
-
-  // Very faint horizontal lime wash (seamless at y=0 and y=height)
-  for (let y = 0; y < c.height; y += 64) {
-    const g = ctx.createLinearGradient(0, y, 0, y + 48);
-    g.addColorStop(0, 'rgba(255,255,255,0)');
-    g.addColorStop(0.5, 'rgba(255,255,255,0.06)');
-    g.addColorStop(1, 'rgba(255,255,255,0)');
-    ctx.fillStyle = g;
-    ctx.fillRect(0, y, c.width, 48);
-  }
-
-  const img = ctx.getImageData(0, 0, c.width, c.height);
+  const img = ctx.createImageData(size, size);
   const d = img.data;
-  for (let i = 0; i < d.length; i += 4) {
-    const n = (Math.random() - 0.5) * 8;
-    d[i] = Math.max(0, Math.min(255, d[i] + n));
-    d[i + 1] = Math.max(0, Math.min(255, d[i + 1] + n));
-    d[i + 2] = Math.max(0, Math.min(255, d[i + 2] + n));
+  for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+      const vGrad = y / size;
+      const baseR = 248 - vGrad * 8;
+      const baseG = 245 - vGrad * 9;
+      const baseB = 238 - vGrad * 12;
+
+      const n = fbmNoise2D(noise, x / 32, y / 32, 4, 2, 0.5);
+      const micro = fbmNoise2D(noise, x / 6, y / 6, 2, 2, 0.45);
+      const band = Math.sin((y / size) * Math.PI * 8) * 0.015;
+      const variation = (n - 0.5) * 12 + (micro - 0.5) * 6 + band * 255;
+
+      const i = (y * size + x) * 4;
+      d[i] = Math.max(0, Math.min(255, baseR + variation));
+      d[i + 1] = Math.max(0, Math.min(255, baseG + variation));
+      d[i + 2] = Math.max(0, Math.min(255, baseB + variation * 0.9));
+      d[i + 3] = 255;
+
+      if (heightBuf) {
+        heightBuf[y * size + x] = 0.5 + (n - 0.5) * 0.08 + (micro - 0.5) * 0.04;
+      }
+    }
   }
   ctx.putImageData(img, 0, 0);
 
-  const tex = new THREE.CanvasTexture(c);
-  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
-  tex.userData.shared = true;
-  return tex;
+  for (let y = 0; y < size; y += Math.round(size / 8)) {
+    const g = ctx.createLinearGradient(0, y, 0, y + size / 10);
+    g.addColorStop(0, 'rgba(255,255,255,0)');
+    g.addColorStop(0.5, 'rgba(255,255,255,0.05)');
+    g.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, y, size, size / 10);
+  }
+
+  const colorTex = configureCanvasTexture(new THREE.CanvasTexture(c));
+  const normalTex = quality.enableNormalMaps
+    ? heightBufferToNormalTexture(heightBuf, size, size, { strength: 2.5, wrapX: true, wrapY: true })
+    : null;
+  return { colorTex, normalTex };
 }
 
-function makeWainscotTexture() {
-  // Pale marble wainscot panels; tiles seamlessly along wall length.
+function makeWainscotTexture(quality = getQualityProfile()) {
+  const width = quality.architectureTextureSize.wainscotW;
+  const height = quality.architectureTextureSize.wainscotH;
   const c = document.createElement('canvas');
-  c.width = 512;
-  c.height = 256;
+  c.width = width;
+  c.height = height;
   const ctx = c.getContext('2d');
+  const noise = createTileableNoise2D(width, height, 'wainscot-marble');
+  const rand = createSeededRandom('wainscot-veins');
+  const heightBuf = quality.enableNormalMaps ? createHeightBuffer(width, height, 0.5) : null;
 
-  const bg = ctx.createLinearGradient(0, 0, 0, c.height);
-  bg.addColorStop(0, '#ebe4d6');
-  bg.addColorStop(0.5, '#e2d9c8');
-  bg.addColorStop(1, '#d8cfc0');
-  ctx.fillStyle = bg;
-  ctx.fillRect(0, 0, c.width, c.height);
+  const img = ctx.createImageData(width, height);
+  const d = img.data;
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const vGrad = y / height;
+      const baseR = 235 - vGrad * 18;
+      const baseG = 228 - vGrad * 20;
+      const baseB = 214 - vGrad * 22;
+      const n = fbmNoise2D(noise, x / 40, y / 24, 3, 2, 0.5);
+      const variation = (n - 0.5) * 16;
+      const i = (y * width + x) * 4;
+      d[i] = Math.max(0, Math.min(255, baseR + variation));
+      d[i + 1] = Math.max(0, Math.min(255, baseG + variation));
+      d[i + 2] = Math.max(0, Math.min(255, baseB + variation * 0.85));
+      d[i + 3] = 255;
+      if (heightBuf) heightBuf[y * width + x] = 0.5 + (n - 0.5) * 0.06;
+    }
+  }
+  ctx.putImageData(img, 0, 0);
 
-  for (let i = 0; i < 120; i++) {
-    const x = Math.random() * c.width;
-    const alpha = 0.03 + Math.random() * 0.06;
+  const veinCount = Math.round(width / 28);
+  for (let v = 0; v < veinCount; v++) {
+    const startX = (v / veinCount) * width;
+    const alpha = 0.04 + rand() * 0.05;
     ctx.strokeStyle = `rgba(90,80,70,${alpha})`;
-    ctx.lineWidth = 0.3 + Math.random() * 0.8;
+    ctx.lineWidth = 0.4 + rand() * 0.9;
     ctx.beginPath();
-    ctx.moveTo(x, 0);
-    ctx.lineTo(x + (Math.random() - 0.5) * 3, c.height);
+    ctx.moveTo(startX, 0);
+    const cp1x = startX + (rand() - 0.5) * width * 0.08;
+    const cp2x = startX + (rand() - 0.5) * width * 0.08;
+    ctx.bezierCurveTo(cp1x, height * 0.33, cp2x, height * 0.66, startX + (rand() - 0.5) * 6, height);
+    ctx.stroke();
+
+    ctx.strokeStyle = `rgba(255,250,240,${0.03 + rand() * 0.04})`;
+    ctx.lineWidth = 0.35;
+    ctx.beginPath();
+    ctx.moveTo(startX + 3, 0);
+    ctx.bezierCurveTo(cp1x + 4, height * 0.33, cp2x + 4, height * 0.66, startX + 5, height);
     ctx.stroke();
   }
-  for (let i = 0; i < 40; i++) {
-    const x = Math.random() * c.width;
-    ctx.strokeStyle = `rgba(255,250,240,${0.04 + Math.random() * 0.05})`;
-    ctx.lineWidth = 0.4;
-    ctx.beginPath();
-    ctx.moveTo(x, 0);
-    ctx.lineTo(x + (Math.random() - 0.5) * 2, c.height);
-    ctx.stroke();
-  }
+
   for (let i = 1; i < 4; i++) {
-    const x = (i * c.width) / 4;
-    const g = ctx.createLinearGradient(x - 5, 0, x + 5, 0);
+    const x = (i * width) / 4;
+    const dividerW = Math.max(4, Math.round(width / 128));
+    const g = ctx.createLinearGradient(x - dividerW, 0, x + dividerW, 0);
     g.addColorStop(0, 'rgba(0,0,0,0)');
-    g.addColorStop(0.5, 'rgba(0,0,0,0.12)');
+    g.addColorStop(0.5, 'rgba(0,0,0,0.10)');
     g.addColorStop(1, 'rgba(0,0,0,0)');
     ctx.fillStyle = g;
-    ctx.fillRect(x - 5, 0, 10, c.height);
-    ctx.strokeStyle = 'rgba(199,160,96,0.22)';
-    ctx.lineWidth = 0.5;
+    ctx.fillRect(x - dividerW, 0, dividerW * 2, height);
+    ctx.strokeStyle = 'rgba(199,160,96,0.28)';
+    ctx.lineWidth = 0.6;
     ctx.beginPath();
-    ctx.moveTo(x, 8);
-    ctx.lineTo(x, c.height - 8);
+    ctx.moveTo(x, height * 0.04);
+    ctx.lineTo(x, height * 0.96);
     ctx.stroke();
-  }
-
-  const tex = new THREE.CanvasTexture(c);
-  tex.wrapS = THREE.RepeatWrapping;
-  tex.wrapT = THREE.ClampToEdgeWrapping; // wainscot never tiles vertically
-  // Tiling is driven per-geometry by wallBuilder's UVs.
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
-  tex.userData.shared = true;
-  return tex;
-}
-
-function makeCofferedCeilingTexture() {
-  const c = document.createElement('canvas');
-  c.width = 512;
-  c.height = 512;
-  const ctx = c.getContext('2d');
-  ctx.fillStyle = '#f5f0e4';
-  ctx.fillRect(0, 0, c.width, c.height);
-
-  const STEP = 128;
-  // outer dark grid
-  ctx.fillStyle = 'rgba(0,0,0,0.22)';
-  for (let i = 0; i < c.width; i += STEP) {
-    ctx.fillRect(i, 0, 8, c.height);
-    ctx.fillRect(0, i, c.width, 8);
-  }
-  // inner recess shadow on each panel
-  for (let i = 8; i < c.width; i += STEP) {
-    for (let j = 8; j < c.height; j += STEP) {
-      const w = STEP - 8;
-      // top-left shadow gradient
-      const g = ctx.createLinearGradient(i, j, i, j + w);
-      g.addColorStop(0, 'rgba(0,0,0,0.08)');
-      g.addColorStop(0.5, 'rgba(0,0,0,0)');
-      g.addColorStop(1, 'rgba(255,240,210,0.05)');
-      ctx.fillStyle = g;
-      ctx.fillRect(i + 6, j + 6, w - 12, w - 12);
-      // gold trim
-      ctx.strokeStyle = 'rgba(199,160,96,0.55)';
-      ctx.lineWidth = 2;
-      ctx.strokeRect(i + 14, j + 14, w - 28, w - 28);
+    if (heightBuf) {
+      for (let py = 0; py < height; py++) {
+        for (let dx = -dividerW; dx <= dividerW; dx++) {
+          const px = x + dx;
+          if (px < 0 || px >= width) continue;
+          heightBuf[py * width + Math.round(px)] = 0.42;
+        }
+      }
     }
   }
 
-  const tex = new THREE.CanvasTexture(c);
-  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set(3, 3);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 4;
-  tex.userData.shared = true;
+  const colorTex = configureCanvasTexture(new THREE.CanvasTexture(c), null, {
+    wrapS: THREE.RepeatWrapping,
+    wrapT: THREE.ClampToEdgeWrapping,
+  });
+  const normalTex = quality.enableNormalMaps
+    ? heightBufferToNormalTexture(heightBuf, width, height, { strength: 3, wrapX: true, wrapY: false })
+    : null;
+  if (normalTex) {
+    normalTex.wrapS = THREE.RepeatWrapping;
+    normalTex.wrapT = THREE.ClampToEdgeWrapping;
+  }
+  return { colorTex, normalTex };
+}
+
+function makeCofferedCeilingTexture(quality = getQualityProfile()) {
+  const size = quality.architectureTextureSize.ceiling;
+  const c = document.createElement('canvas');
+  c.width = size;
+  c.height = size;
+  const ctx = c.getContext('2d');
+  const scale = size / 1024;
+
+  ctx.fillStyle = '#f5f0e4';
+  ctx.fillRect(0, 0, c.width, c.height);
+
+  const STEP = Math.round(128 * scale);
+  const beamW = Math.max(3, Math.round(4 * scale));
+
+  ctx.fillStyle = 'rgba(0,0,0,0.16)';
+  for (let i = 0; i < c.width; i += STEP) {
+    ctx.fillRect(i, 0, beamW, c.height);
+    ctx.fillRect(0, i, c.width, beamW);
+  }
+
+  for (let i = beamW; i < c.width; i += STEP) {
+    for (let j = beamW; j < c.height; j += STEP) {
+      const w = STEP - beamW;
+      const g = ctx.createLinearGradient(i, j, i, j + w);
+      g.addColorStop(0, 'rgba(0,0,0,0.06)');
+      g.addColorStop(0.45, 'rgba(0,0,0,0)');
+      g.addColorStop(1, 'rgba(255,240,210,0.04)');
+      ctx.fillStyle = g;
+      ctx.fillRect(i + beamW * 0.5, j + beamW * 0.5, w - beamW, w - beamW);
+
+      ctx.strokeStyle = 'rgba(199,160,96,0.5)';
+      ctx.lineWidth = Math.max(1, 1.5 * scale);
+      const inset = Math.round(14 * scale);
+      ctx.strokeRect(i + inset, j + inset, w - inset * 2, w - inset * 2);
+    }
+  }
+
+  const tex = configureCanvasTexture(new THREE.CanvasTexture(c), null, {
+    repeat: [3, 3],
+  });
   return tex;
 }
