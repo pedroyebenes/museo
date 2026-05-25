@@ -24,14 +24,18 @@ function resizeImage(image, maxSize) {
 }
 
 function configureTexture(texture, renderer) {
+  const quality = getQualityProfile();
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.generateMipmaps = true;
   texture.minFilter = THREE.LinearMipmapLinearFilter;
   texture.magFilter = THREE.LinearFilter;
   if (renderer) {
-    texture.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+    texture.anisotropy = Math.min(
+      quality.anisotropy,
+      renderer.capabilities.getMaxAnisotropy(),
+    );
   } else {
-    texture.anisotropy = 4;
+    texture.anisotropy = quality.anisotropy;
   }
   texture.userData.shared = true;
   return texture;
