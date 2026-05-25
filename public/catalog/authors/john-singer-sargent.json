@@ -6,7 +6,7 @@
   "paintings": [
     {
       "id": "john-singer-sargent-madame-x",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Madame_X_%28Madame_Pierre_Gautreau%29%2C_John_Singer_Sargent%2C_1884_%28unfree_frame_crop%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Madame_X_(Madame_Pierre_Gautreau)%2C_John_Singer_Sargent%2C_1884_(unfree_frame_crop).jpg",
       "title": "Madame X",
       "year": 1883,
       "description": "Retrato de Virginie Gautreau con vestido negro y pose de perfil marcada. La elegancia de la figura y la frialdad del fondo construyen una imagen moderna de prestigio, deseo y controversia social.",
@@ -22,19 +22,19 @@
       "year": 1885,
       "description": "Dos niñas encendiendo linternas entre flores al crepúsculo. Sargent captura la hora azul con pinceladas sugerentes inspiradas en el impresionismo.",
       "dimensions": {
-        "width": 174,
-        "height": 154
+        "width": 154,
+        "height": 174
       }
     },
     {
       "id": "sargent-hijas-boitt",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/John_Singer_Sargent_-_The_Daughters_of_Edward_Darley_Boitt_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/The_Daughters_of_Edward_Darley_Boit%2C_John_Singer_Sargent%2C_1882_(unfree_frame_crop).jpg",
       "title": "Las hijas de Edward Darley Boit",
       "year": 1882,
       "description": "Cuatro hermanas en un salón lujoso de París, dos en primer plano y dos perdidas en la penumbra. Retrato de grupo que equilibra intimidad familiar y distancia psicológica.",
       "dimensions": {
-        "width": 222,
-        "height": 222
+        "width": 222.5,
+        "height": 222.5
       }
     },
     {

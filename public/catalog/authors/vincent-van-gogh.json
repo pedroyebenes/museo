@@ -9,7 +9,7 @@
   "paintings": [
     {
       "id": "van-gogh-noche-estrellada",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Vincent_van_Gogh%2C_The_Starry_Night_%281889%29%2C_MoMA.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Vincent_van_Gogh%2C_The_Starry_Night_(1889)%2C_MoMA.jpg",
       "title": "La noche estrellada",
       "year": 1889,
       "description": "Óleo sobre lienzo pintado durante su estancia en el sanatorio de Saint-Rémy-de-Provence. La obra representa la vista nocturna desde su ventana, transformada por una imaginación turbulenta.",
@@ -24,8 +24,8 @@
       "year": 1889,
       "description": "Uno de los jarrones de girasoles pintados en Arlés para decorar la habitación de Gauguin. Amarillos empastados sobre fondo amarillo exploran la intensidad del color.",
       "dimensions": {
-        "width": 92,
-        "height": 73
+        "width": 73,
+        "height": 92
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg"
     },
@@ -36,8 +36,8 @@
       "year": 1889,
       "description": "Van Gogh se representa con barba y bata azul de pintor durante su estancia en Saint-Rémy. La pincelada ondulante refleja la inquietud de su último periodo.",
       "dimensions": {
-        "width": 65,
-        "height": 54
+        "width": 54,
+        "height": 65
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1888,
       "description": "Dormitorio en Arlés simplificado en planos de color puro. Van Gogh buscaba descanso y orden interior mediante amarillos, azules y verdes intensos.",
       "dimensions": {
-        "width": 72,
-        "height": 90
+        "width": 90,
+        "height": 72
       }
     },
     {
