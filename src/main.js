@@ -6,6 +6,7 @@ import {
   createFocusTracker,
   createRoomHUD,
   createTransitionOverlay,
+  createReportDialog,
 } from './ui.js';
 import { createRoomManager } from './roomManager.js';
 import { createCatalog } from './catalog.js';
@@ -35,6 +36,7 @@ async function boot() {
   const overlay = createInfoOverlay();
   const hud = createRoomHUD();
   const transition = createTransitionOverlay();
+  const reportDialog = createReportDialog();
 
   let catalog = null;
 
@@ -57,6 +59,8 @@ async function boot() {
     },
     onUnlock: () => {
       if (catalog?.isOpen()) return;
+      const reportModal = document.getElementById('report-modal');
+      if (reportModal && !reportModal.classList.contains('hidden')) return;
       welcome.classList.remove('hidden');
       document.body.classList.remove('playing');
       document.getElementById('catalog-btn')?.classList.add('hidden');
@@ -117,6 +121,40 @@ async function boot() {
     if (!controlsActive()) lockOnClick();
   }
 
+  function resumeAfterReport() {
+    resumeControls();
+    if (!controlsActive()) lockOnClick();
+  }
+
+  function openReport() {
+    if (!document.body.classList.contains('playing')) return;
+    if (catalog?.isOpen()) return;
+
+    const painting = overlay.getCurrent();
+    const { kind, authorId } = roomManager.getRoomState();
+
+    let issueTitle, issueBody, description;
+
+    if (painting) {
+      issueTitle = `Error en cuadro: ${painting.title}`;
+      issueBody = `**Cuadro:** ${painting.title}\n**Autor:** ${painting.author}\n**Año:** ${painting.year}\n\n**Descripción del error:**\n\n`;
+      description = `Se abrirá un issue para el cuadro "${painting.title}" de ${painting.author}.`;
+    } else if (kind === 'author' && authorId) {
+      const author = catalogData.authorsById[authorId];
+      const name = author?.name ?? authorId;
+      issueTitle = `Error en sala de ${name}`;
+      issueBody = `**Autor:** ${name}\n\n**Descripción del error:**\n\n`;
+      description = `Se abrirá un issue para la sala de ${name}.`;
+    } else {
+      return;
+    }
+
+    overlay.hide();
+    suspendControls();
+    unlockControls();
+    reportDialog.open({ issueTitle, issueBody, description, onClose: resumeAfterReport });
+  }
+
   catalogBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
     openCatalog();
@@ -155,6 +193,9 @@ async function boot() {
       hud.flash(
         suppressed ? 'Información del cuadro: oculta' : 'Información del cuadro: visible',
       );
+    }
+    if (e.code === 'KeyR') {
+      openReport();
     }
   });
 

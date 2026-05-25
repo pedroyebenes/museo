@@ -38,7 +38,11 @@ export function createInfoOverlay() {
     return suppressed;
   }
 
-  return { show, hide, toggleSuppressed, isSuppressed };
+  function getCurrent() {
+    return current;
+  }
+
+  return { show, hide, toggleSuppressed, isSuppressed, getCurrent };
 }
 
 export function createRoomHUD() {
@@ -160,4 +164,51 @@ function findPainting(node) {
     n = n.parent;
   }
   return null;
+}
+
+export function createReportDialog() {
+  const modal = document.getElementById('report-modal');
+  const descEl = document.getElementById('report-description');
+  const confirmBtn = document.getElementById('report-confirm');
+  const cancelBtn = document.getElementById('report-cancel');
+
+  let pendingUrl = null;
+  let onDismiss = null;
+
+  function open({ issueTitle, issueBody, description, onClose }) {
+    const params = new URLSearchParams({ title: issueTitle, body: issueBody, labels: 'bug' });
+    pendingUrl = `https://github.com/pedroyebenes/museo/issues/new?${params}`;
+    onDismiss = onClose;
+    descEl.textContent = description;
+    modal.classList.remove('hidden');
+    confirmBtn.focus();
+  }
+
+  function close() {
+    modal.classList.add('hidden');
+    pendingUrl = null;
+    const cb = onDismiss;
+    onDismiss = null;
+    cb?.();
+  }
+
+  confirmBtn.addEventListener('click', () => {
+    if (pendingUrl) window.open(pendingUrl, '_blank', 'noopener,noreferrer');
+    close();
+  });
+
+  cancelBtn.addEventListener('click', close);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) close();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Escape' && !modal.classList.contains('hidden')) {
+      e.stopPropagation();
+      close();
+    }
+  });
+
+  return { open, close };
 }

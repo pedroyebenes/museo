@@ -233,6 +233,10 @@ export function createRoomManager({
     return transitioning;
   }
 
+  function getRoomState() {
+    return { kind: currentKind, authorId: currentAuthorId, categoryId: currentCategoryId };
+  }
+
   return {
     loadHub,
     loadCategory,
@@ -240,5 +244,6 @@ export function createRoomManager({
     update,
     getInteractables,
     isTransitioning,
+    getRoomState,
   };
 }

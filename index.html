@@ -23,6 +23,7 @@
             <li><b>Mayús</b> — correr</li>
             <li><b>M</b> — catálogo de categorías, autores y cuadros</li>
             <li><b>H</b> — ocultar o mostrar la ficha del cuadro</li>
+            <li><b>R</b> — reportar error en el cuadro o sala actual</li>
             <li><b>Esc</b> — liberar el cursor</li>
           </ul>
         </div>
@@ -71,6 +72,17 @@
         <p id="transition-label">Cargando sala…</p>
         <div class="transition-track">
           <div id="transition-bar" class="transition-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="report-modal" class="overlay hidden" role="dialog" aria-modal="true" aria-label="Reportar error">
+      <div class="report-card">
+        <h2>Reportar error</h2>
+        <p id="report-description"></p>
+        <div class="report-actions">
+          <button type="button" id="report-confirm" class="report-confirm-btn">Abrir issue en GitHub</button>
+          <button type="button" id="report-cancel" class="report-cancel-btn">Cancelar</button>
         </div>
       </div>
     </div>

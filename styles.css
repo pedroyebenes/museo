@@ -639,3 +639,83 @@ body.playing #room-hud:not(.hidden) { display: block; }
 }
 
 .hidden { display: none !important; }
+
+/* Report modal */
+#report-modal {
+  z-index: 20;
+  cursor: default;
+}
+
+.report-card {
+  max-width: min(400px, 90vw);
+  padding: 1.75rem 1.75rem 1.5rem;
+  background: rgba(12, 9, 7, 0.96);
+  border: 1px solid var(--museum-border);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  cursor: default;
+}
+
+.report-card h2 {
+  margin: 0 0 0.75rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  color: var(--museum-gold);
+}
+
+#report-description {
+  margin: 0 0 1.25rem 0;
+  font-size: 0.9rem;
+  color: var(--museum-muted);
+  line-height: 1.45;
+}
+
+.report-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.report-confirm-btn {
+  padding: 0.55rem 1.2rem;
+  border: 1px solid var(--museum-gold);
+  border-radius: 999px;
+  background: rgba(199, 160, 96, 0.14);
+  color: var(--museum-cream);
+  font: inherit;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background 0.15s ease;
+}
+
+.report-confirm-btn:hover,
+.report-confirm-btn:focus-visible {
+  background: rgba(199, 160, 96, 0.28);
+  outline: none;
+}
+
+.report-cancel-btn {
+  padding: 0.55rem 1.2rem;
+  border: 1px solid rgba(199, 160, 96, 0.2);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--museum-muted);
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.report-cancel-btn:hover,
+.report-cancel-btn:focus-visible {
+  border-color: var(--museum-border);
+  color: var(--museum-cream);
+  outline: none;
+}
