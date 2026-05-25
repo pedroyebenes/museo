@@ -39,6 +39,28 @@
         "width": 138,
         "height": 138
       }
+    },
+    {
+      "id": "klimt-atene",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Gustav_Klimt_-_Pallas_Athena_-_Google_Art_Project.jpg",
+      "title": "Palas Atenea",
+      "year": 1898,
+      "description": "La diosa de la sabiduría con armadura dorada y mirada severa. Klimt funde simbolismo vienés y decoración bizantina en una figura de poder femenino.",
+      "dimensions": {
+        "width": 75,
+        "height": 75
+      }
+    },
+    {
+      "id": "klimt-arbol-vida",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Gustav_Klimt_-_The_Tree_of_Life%2C_Stoclet_Frieze_-_Google_Art_Project.jpg",
+      "title": "El árbol de la vida",
+      "year": 1909,
+      "description": "Árbol simétrico con espirales doradas del frieze Stoclet. Klimt condensa vida, crecimiento y ornamento en un emblema del modernismo decorativo.",
+      "dimensions": {
+        "width": 280,
+        "height": 280
+      }
     }
   ]
 }

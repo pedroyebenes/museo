@@ -39,6 +39,28 @@
         "width": 125,
         "height": 191
       }
+    },
+    {
+      "id": "munch-nino-enfermo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Edvard_Munch_-_The_Sick_Child_-_Google_Art_Project.jpg",
+      "title": "La niña enferma",
+      "year": 1907,
+      "description": "Niña pálida en la almohada mientras una mujer acompaña su agonía. Munch revisita el recuerdo de la muerte de su hermana con color desgarrado y pincelada temblorosa.",
+      "dimensions": {
+        "width": 118,
+        "height": 121
+      }
+    },
+    {
+      "id": "munch-ansiedad",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Edvard_Munch_-_Anxiety_-_Google_Art_Project.jpg",
+      "title": "Ansiedad",
+      "year": 1894,
+      "description": "Multitud de figuras verdes camina junto al fiordo de Oslo con rostros anónimos. Munch traduce la angustia colectiva en un paisaje simbolista de línea ondulante.",
+      "dimensions": {
+        "width": 94,
+        "height": 74
+      }
     }
   ]
 }

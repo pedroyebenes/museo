@@ -1,0 +1,55 @@
+{
+  "id": "jean-honore-fragonard",
+  "name": "Jean-Honoré Fragonard",
+  "category": "barroco",
+  "fullName": "Jean-Honoré Nicolas Fragonard",
+  "years": "1732 – 1806",
+  "origin": "Grasse, Francia",
+  "bio": "Maestro del rococó tardío francés, especialista en escenas galantes, paisajes luminosos y retratos íntimos. Fragonard pintó el placer aristocrático con pincelada suelta y color brillante antes de la Revolución.",
+  "paintings": [
+    {
+      "id": "fragonard-columpio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg",
+      "title": "El columpio",
+      "year": 1767,
+      "description": "Joven en un columpio lanza su zapato mientras un cortesano oculto contempla desde la maleza. Obra cumbre del rococó erótico con luz filtrada y vegetación exuberante.",
+      "dimensions": {
+        "width": 81,
+        "height": 64
+      }
+    },
+    {
+      "id": "fragonard-beso-robado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Jean-Honor%C3%A9_Fragonard_-_The_Stolen_Kiss_-_Google_Art_Project.jpg",
+      "title": "El beso robado",
+      "year": 1780,
+      "description": "Pareja se besa a escondidas en un palco o pasillo íntimo. Fragonard captura el instante furtivo del deseo con color cálido y composición teatral.",
+      "dimensions": {
+        "width": 45,
+        "height": 36
+      }
+    },
+    {
+      "id": "fragonard-lectura",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Jean-Honor%C3%A9_Fragonard_-_A_Young_Girl_Reading_-_Google_Art_Project.jpg",
+      "title": "Joven leyendo",
+      "year": 1776,
+      "description": "Muchacha absorta en un libro sobre un diván con cojines amarillos. Retrato íntimo donde la lectura se convierte en escena de recogimiento y elegancia doméstica.",
+      "dimensions": {
+        "width": 81,
+        "height": 65
+      }
+    },
+    {
+      "id": "fragonard-amor-escultor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Jean-Honor%C3%A9_Fragonard_-_Love_as_Folly_-_Google_Art_Project.jpg",
+      "title": "El amor como locura",
+      "year": 1775,
+      "description": "Cupido como loco con campanas y figuras alegóricas en un paisaje fantástico. Fragonard mezcla mitología, teatro y humor en una escena rococó de enérgica pincelada.",
+      "dimensions": {
+        "width": 70,
+        "height": 90
+      }
+    }
+  ]
+}

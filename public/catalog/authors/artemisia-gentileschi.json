@@ -1,0 +1,66 @@
+{
+  "id": "artemisia-gentileschi",
+  "name": "Artemisia Gentileschi",
+  "category": "barroco",
+  "fullName": "Artemisia Gentileschi",
+  "years": "1593 – c. 1656",
+  "origin": "Roma, Estados Pontificios",
+  "bio": "Pintora barroca italiana formada en el taller de su padre Orazio y en la órbita caravaggesca. Sus heroínas bíblicas, retratos regios y escenas de violencia y justicia redefinieron la pintura femenina del Seicento.",
+  "paintings": [
+    {
+      "id": "gentileschi-judith-holofernes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Artemisia_Gentileschi_-_Judith_beheading_Holofernes_-_Google_Art_Project.jpg",
+      "title": "Judith decapitando a Holofernes",
+      "year": 1620,
+      "description": "Judith y su criada decapitan al general asirio con una violencia física sin precedentes. Gentileschi convierte el episodio bíblico en drama barroco de acción y claroscuro tenso.",
+      "dimensions": {
+        "width": 146,
+        "height": 199
+      }
+    },
+    {
+      "id": "gentileschi-judith-sirvienta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Artemisia_Gentileschi_-_Judith_and_Her_Maidservant_-_Google_Art_Project.jpg",
+      "title": "Judith y su criada",
+      "year": 1613,
+      "description": "Las dos mujeres ocultan la cabeza de Holofernes mientras escuchan un ruido en la oscuridad. Gentileschi concentra la tensión en gestos contenidos y luz lateral caravaggesca.",
+      "dimensions": {
+        "width": 114,
+        "height": 93
+      }
+    },
+    {
+      "id": "gentileschi-susana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Artemisia_Gentileschi_-_Susanna_and_the_Elders_-_Google_Art_Project.jpg",
+      "title": "Susana y los viejos",
+      "year": 1610,
+      "description": "Susana rechaza a los ancianos que la espían en el baño. Obra temprana que ya muestra la capacidad de Gentileschi para dramatizar la vulnerabilidad y la resistencia femeninas.",
+      "dimensions": {
+        "width": 170,
+        "height": 119
+      }
+    },
+    {
+      "id": "gentileschi-autorretrato-pintura",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Artemisia_Gentileschi_-_Self-Portrait_as_the_Allegory_of_Painting_-_Google_Art_Project.jpg",
+      "title": "Autorretrato como alegoría de la Pintura",
+      "year": 1638,
+      "description": "La artista se representa como la Pintura personificada, con delantal manchado y brazo en movimiento. Autorretrato programático que afirma su lugar entre los grandes pintores de su tiempo.",
+      "dimensions": {
+        "width": 96,
+        "height": 74
+      }
+    },
+    {
+      "id": "gentileschi-jael",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Artemisia_Gentileschi_-_Jael_and_Sisera_-_Google_Art_Project.jpg",
+      "title": "Jael y Sísara",
+      "year": 1620,
+      "description": "Jael clava una estaca en el cráneo del general cananeo. Gentileschi elige de nuevo una heroína bíblica que actúa con determinación en una escena de violencia justificada.",
+      "dimensions": {
+        "width": 86,
+        "height": 105
+      }
+    }
+  ]
+}

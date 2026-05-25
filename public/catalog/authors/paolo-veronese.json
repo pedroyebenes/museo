@@ -39,6 +39,28 @@
         "width": 205,
         "height": 123
       }
+    },
+    {
+      "id": "veronese-cena-emmaus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Paolo_Veronese_-_The_Supper_at_Emmaus_-_Google_Art_Project.jpg",
+      "title": "La cena de Emaús",
+      "year": 1559,
+      "description": "Cristo revelado en un banquete aristocrático veneciano. Veronese eleva el episóngelico con arquitectura clásica, sirvientes y un despliegue de color y seda.",
+      "dimensions": {
+        "width": 240,
+        "height": 550
+      }
+    },
+    {
+      "id": "veronese-juicio-paris",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Paolo_Veronese_-_The_Judgement_of_Paris_-_Google_Art_Project.jpg",
+      "title": "El juicio de Paris",
+      "year": 1570,
+      "description": "Paris entrega la manzana a Venus entre Juno y Minerva. Veronese convierte el mito en escena de lujo veneciano con figuras monumentales y paisaje luminoso.",
+      "dimensions": {
+        "width": 80,
+        "height": 72
+      }
     }
   ]
 }

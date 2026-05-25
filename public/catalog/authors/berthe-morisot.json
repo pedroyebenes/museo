@@ -1,0 +1,55 @@
+{
+  "id": "berthe-morisot",
+  "name": "Berthe Morisot",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Berthe Marie Pauline Morisot",
+  "years": "1841 – 1895",
+  "origin": "Bourges, Francia",
+  "bio": "Impresionista esencial y miembro fundador del grupo. Morisot pintó la vida burguesa femenina, la infancia y los jardines con pincelada ligera y una sensibilidad íntima que amplió el canon impresionista.",
+  "paintings": [
+    {
+      "id": "morisot-cuna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg",
+      "title": "La cuna",
+      "year": 1872,
+      "description": "Madre contempla a su hija dormida en una cuna de mimbre. Morisot transforma la escena doméstica en meditación sobre la maternidad con color claro y composición diagonal.",
+      "dimensions": {
+        "width": 56,
+        "height": 46
+      }
+    },
+    {
+      "id": "morisot-dia-verano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Berthe_Morisot_-_Summer's_Day_-_Google_Art_Project.jpg",
+      "title": "Día de verano",
+      "year": 1879,
+      "description": "Dos mujeres en un bote sobre un estanque parisino bajo la luz del mediodía. Morisot captura el ocio femenino al aire libre con reflejos acuáticos y pincelada suelta.",
+      "dimensions": {
+        "width": 45,
+        "height": 75
+      }
+    },
+    {
+      "id": "morisot-comedor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Berthe_Morisot_-_In_the_Dining_Room_-_Google_Art_Project.jpg",
+      "title": "En el comedor",
+      "year": 1886,
+      "description": "Niña y sirvienta en un interior burgués iluminado lateralmente. Morisot observa la vida privada con la misma atención psicológica que Degas dedicaba al ballet.",
+      "dimensions": {
+        "width": 61,
+        "height": 50
+      }
+    },
+    {
+      "id": "morisot-lectura",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Berthe_Morisot_-_Reading_-_Google_Art_Project.jpg",
+      "title": "Lectura",
+      "year": 1873,
+      "description": "Joven leyendo en un sofá junto a una ventana luminosa. Escena íntima donde la figura se funde con el ambiente mediante tonos claros y pincelada vibrante.",
+      "dimensions": {
+        "width": 74,
+        "height": 60
+      }
+    }
+  ]
+}

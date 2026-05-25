@@ -1,0 +1,55 @@
+{
+  "id": "henri-de-toulouse-lautrec",
+  "name": "Henri de Toulouse-Lautrec",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Henri Marie Raymond de Toulouse-Lautrec-Monfa",
+  "years": "1864 – 1901",
+  "origin": "Albi, Francia",
+  "bio": "Cronista gráfico del París nocturno de fin de siglo. Sus carteles, litografías y lienzos sobre el Moulin Rouge, las danzarinas y los cafés-concert capturaron la modernidad con línea audaz y color plano.",
+  "paintings": [
+    {
+      "id": "lautrec-moulin-rouge",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Henri_de_Toulouse-Lautrec_-_At_the_Moulin_Rouge_-_Google_Art_Project.jpg",
+      "title": "En el Moulin Rouge",
+      "year": 1892,
+      "description": "Escena nocturna del cabaret parisino con figuras de perfil y rostro en primer plano. Lautrec retrata la vida bohemia con recortes compositivos inspirados en la fotografía y el ukiyo-e.",
+      "dimensions": {
+        "width": 123,
+        "height": 141
+      }
+    },
+    {
+      "id": "lautrec-baile-moulin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Henri_de_Toulouse-Lautrec_-_The_Dance_at_the_Moulin_Rouge_-_Google_Art_Project.jpg",
+      "title": "El baile en el Moulin Rouge",
+      "year": 1890,
+      "description": "Parejas bailan bajo las luces del local mientras el público observa desde las mesas. Lautrec condensa el movimiento y el bullicio del ocio popular montmartrense.",
+      "dimensions": {
+        "width": 115,
+        "height": 150
+      }
+    },
+    {
+      "id": "lautrec-jane-avril",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Henri_de_Toulouse-Lautrec_-_Jane_Avril_-_Google_Art_Project.jpg",
+      "title": "Jane Avril",
+      "year": 1891,
+      "description": "Retrato de la célebre bailarina del Moulin Rouge con falda en movimiento. Lautrec captura su elegancia nerviosa y la energía del espectáculo parisino en contornos sinuosos.",
+      "dimensions": {
+        "width": 97,
+        "height": 130
+      }
+    },
+    {
+      "id": "lautrec-cama",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Henri_de_Toulouse-Lautrec_-_In_Bed_-_Google_Art_Project.jpg",
+      "title": "En la cama",
+      "year": 1893,
+      "description": "Dos figuras abrazadas bajo sábanas blancas en un interior íntimo. Lautrec retrata la intimidad sin idealización, con una sensibilidad poco habitual en la pintura de cabaret.",
+      "dimensions": {
+        "width": 54,
+        "height": 70
+      }
+    }
+  ]
+}

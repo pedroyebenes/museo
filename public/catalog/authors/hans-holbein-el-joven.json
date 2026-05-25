@@ -1,0 +1,55 @@
+{
+  "id": "hans-holbein-el-joven",
+  "name": "Hans Holbein el Joven",
+  "category": "renacimiento-manierismo",
+  "fullName": "Hans Holbein der Jüngere",
+  "years": "c. 1497 – 1543",
+  "origin": "Augsburgo, Sacro Imperio Romano",
+  "bio": "Retratista renacentista de la corte inglesa de Enrique VIII y pintor de la Reforma. Holbein combinó precisión flamenga con elegancia italiana en retratos que definen la imagen del poder Tudor.",
+  "paintings": [
+    {
+      "id": "holbein-embajadores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+      "title": "Los embajadores",
+      "year": 1533,
+      "description": "Dos diplomáticos franceses rodeados de instrumentos científicos y un cráneo distorsionado en anamorfosis. Obra maestra del retrato renacentista que mezcla erudición, poder y vanitas.",
+      "dimensions": {
+        "width": 207,
+        "height": 209
+      }
+    },
+    {
+      "id": "holbein-enrique-viii",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg",
+      "title": "Retrato de Enrique VIII",
+      "year": 1537,
+      "description": "El monarca Tudor en pose majestuosa con ropas bordadas y mirada imperiosa. Holbein fijó la imagen icónica del rey que dominaría la iconografía inglesa durante siglos.",
+      "dimensions": {
+        "width": 28,
+        "height": 19
+      }
+    },
+    {
+      "id": "holbein-erasmo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Hans_Holbein_the_Younger_-_Erasmus_of_Rotterdam_-_Google_Art_Project.jpg",
+      "title": "Erasmo de Róterdam",
+      "year": 1523,
+      "description": "El humanista escribe en su estudio con libros y expresión concentrada. Holbein retrata al intelectual más influyente de Europa con sobriedad y detalle casi miniaturístico.",
+      "dimensions": {
+        "width": 43,
+        "height": 32
+      }
+    },
+    {
+      "id": "holbein-tomas-mor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hans_Holbein_the_Younger_-_Portrait_of_Sir_Thomas_More_-_Google_Art_Project.jpg",
+      "title": "Retrato de sir Tomás Moro",
+      "year": 1527,
+      "description": "El estadista y autor de Utopia posa con cadena de oro y expresión grave. Holbein captura la dignidad intelectual de uno de los hombres más cultos del Renacimiento inglés.",
+      "dimensions": {
+        "width": 74,
+        "height": 59
+      }
+    }
+  ]
+}

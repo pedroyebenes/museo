@@ -39,6 +39,39 @@
         "height": 95
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bacchus-Caravaggio_%281598%29.jpg"
+    },
+    {
+      "id": "caravaggio-judith-holofernes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Caravaggio_-_Judith_Beheading_Holofernes_-_Google_Art_Project.jpg",
+      "title": "Judith decapitando a Holofernes",
+      "year": 1599,
+      "description": "Judith y su criada decapitan al general dormido con una crudeza que escandalizó a Roma. Caravaggio convierte el episodio bíblico en teatro de violencia y claroscuro extremo.",
+      "dimensions": {
+        "width": 145,
+        "height": 195
+      }
+    },
+    {
+      "id": "caravaggio-narciso",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Caravaggio_-_Narcissus_at_the_Source_-_Google_Art_Project.jpg",
+      "title": "Narciso",
+      "year": 1597,
+      "description": "El joven contempla su reflejo en el agua en una composición circular casi perfecta. Caravaggio fusiona mitología clásica y naturalismo obsesivo en una meditación sobre la vanidad.",
+      "dimensions": {
+        "width": 114,
+        "height": 92
+      }
+    },
+    {
+      "id": "caravaggio-cena-emmaus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Caravaggio_-_Supper_at_Emmaus_(London)_-_Google_Art_Project.jpg",
+      "title": "La cena de Emaús",
+      "year": 1601,
+      "description": "Cristo revelado entre dos discípulos en el instante del reconocimiento. Gestos teatrales y frutas precarias sobre la mesa condensan la fe barroca en una escena de taverna.",
+      "dimensions": {
+        "width": 141,
+        "height": 196
+      }
     }
   ]
 }

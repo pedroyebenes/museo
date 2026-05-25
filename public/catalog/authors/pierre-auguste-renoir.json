@@ -28,6 +28,39 @@
         "width": 129,
         "height": 172
       }
+    },
+    {
+      "id": "renoir-gran-banista",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Pierre-Auguste_Renoir_-_The_Large_Bather_-_Google_Art_Project.jpg",
+      "title": "La gran bañista",
+      "year": 1887,
+      "description": "Desnudo femenino clásico con pincelada suave y contornos redondeados. Renoir retoma la tradición académica del baño con la sensualidad luminosa de su madurez.",
+      "dimensions": {
+        "width": 117,
+        "height": 88
+      }
+    },
+    {
+      "id": "renoir-mujeres-jardin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Pierre-Auguste_Renoir_-_Women_in_the_Garden_-_Google_Art_Project.jpg",
+      "title": "Mujeres en el jardín",
+      "year": 1866,
+      "description": "Cuatro figuras femeninas entre flores bajo la luz filtrada de un árbol. Obra temprana donde Renoir experimenta con la luz al aire libre antes del impresionismo pleno.",
+      "dimensions": {
+        "width": 213,
+        "height": 265
+      }
+    },
+    {
+      "id": "renoir-bañistas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Pierre-Auguste_Renoir_-_The_Bathers_-_Google_Art_Project.jpg",
+      "title": "Las bañistas",
+      "year": 1918,
+      "description": "Grupo de desnudos femeninos en un paisaje arcadiano de su última etapa. Renoir condensa su ideal de belleza clásica y color carnal en una escena de ocio campestre.",
+      "dimensions": {
+        "width": 160,
+        "height": 110
+      }
     }
   ]
 }

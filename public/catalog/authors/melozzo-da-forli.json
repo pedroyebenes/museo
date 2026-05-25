@@ -36,6 +36,28 @@
         "width": 280,
         "height": 250
       }
+    },
+    {
+      "id": "melozzo-transfiguracion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Melozzo_da_Forl%C3%AC_-_Transfiguration_-_Google_Art_Project.jpg",
+      "title": "La Transfiguración",
+      "year": 1480,
+      "description": "Cristo resplandece entre Moisés y Elías ante apóstoles postrados. Melozzo organiza la escena con claridad narrativa y figuras en escorzo anticipando el barroco.",
+      "dimensions": {
+        "width": 280,
+        "height": 250
+      }
+    },
+    {
+      "id": "melozzo-reyes-magos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Melozzo_da_Forl%C3%AC_-_Adoration_of_the_Magi_-_Google_Art_Project.jpg",
+      "title": "Adoración de los Magos",
+      "year": 1480,
+      "description": "Los Magos adoran al Niño en un paisaje arquitectónico. Melozzo demuestra su maestría en perspectiva y retrato colectivo en una escena devocional umbria.",
+      "dimensions": {
+        "width": 280,
+        "height": 250
+      }
     }
   ]
 }

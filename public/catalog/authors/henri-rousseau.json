@@ -44,6 +44,28 @@
         "width": 200,
         "height": 301
       }
+    },
+    {
+      "id": "rousseau-futbolistas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Henri_Rousseau_-_The_Football_Players_-_Google_Art_Project.jpg",
+      "title": "Los futbolistas",
+      "year": 1908,
+      "description": "Jugadores de rugby o fútbol saltan entre árboles en un parque parisino. Rousseau pinta el deporte moderno con ingenuidad deliberada y vegetación imaginaria.",
+      "dimensions": {
+        "width": 100,
+        "height": 80
+      }
+    },
+    {
+      "id": "rousseau-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Henri_Rousseau_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "title": "Autorretrato",
+      "year": 1890,
+      "description": "El pintor con paleta y pincel ante la Torre Eiffel en construcción. Rousseau se presenta como artista autodidacta orgulloso de su lugar en la París moderna.",
+      "dimensions": {
+        "width": 81,
+        "height": 100
+      }
     }
   ]
 }

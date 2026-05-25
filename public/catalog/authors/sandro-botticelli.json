@@ -39,6 +39,28 @@
         "width": 69,
         "height": 173
       }
+    },
+    {
+      "id": "botticelli-calumnia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Sandro_Botticelli_-_The_Calumny_of_Apelles_-_Google_Art_Project.jpg",
+      "title": "La calumnia de Apeles",
+      "year": 1495,
+      "description": "Alegoría basada en un texto de Luciano con figuras de la calumnia, la envidia y la verdad. Botticelli traduce la erudición clásica en una escena narrativa de precisión lineal.",
+      "dimensions": {
+        "width": 62,
+        "height": 91
+      }
+    },
+    {
+      "id": "botticelli-adoracion-magos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Sandro_Botticelli_-_Adoration_of_the_Magi_of_1475_-_Google_Art_Project.jpg",
+      "title": "Adoración de los Magos",
+      "year": 1475,
+      "description": "Epifanía con multitud de personajes entre los que aparecen miembros de la familia Médici. Botticelli combina devoción, retrato y arquitectura renacentista en un tapiz humano.",
+      "dimensions": {
+        "width": 111,
+        "height": 134
+      }
     }
   ]
 }

@@ -39,6 +39,28 @@
         "width": 130,
         "height": 168.4
       }
+    },
+    {
+      "id": "leonardo-dama-ermellino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Leonardo_da_Vinci_-_Lady_with_an_Ermine_-_Google_Art_Project.jpg",
+      "title": "Dama del armiño",
+      "year": 1490,
+      "description": "Cecilia Gallerani sostiene un armiño mientras gira la cabeza con vivacidad. Leonardo captura movimiento psicológico y anatomía animal con maestría renacentista.",
+      "dimensions": {
+        "width": 54,
+        "height": 39
+      }
+    },
+    {
+      "id": "leonardo-san-juan-bautista",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Leonardo_da_Vinci_-_Saint_John_the_Baptist_-_Google_Art_Project.jpg",
+      "title": "San Juan Bautista",
+      "year": 1516,
+      "description": "El santo señala hacia arriba con sonrisa enigmática en un fondo de sfumato oscuro. Obra tardía donde Leonardo condensa misterio, anatomía y luz en una sola figura.",
+      "dimensions": {
+        "width": 69,
+        "height": 57
+      }
     }
   ]
 }

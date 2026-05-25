@@ -1,0 +1,55 @@
+{
+  "id": "camille-pissarro",
+  "name": "Camille Pissarro",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Jacob Abraham Camille Pissarro",
+  "years": "1830 – 1903",
+  "origin": "Charlotte Amalie, Islas Vírgenes (Danish West Indies)",
+  "bio": "Padre mayor del impresionismo y único artista presente en las ocho exposiciones del grupo. Paisajista y retratista de la vida rural y urbana, mentor de Cézanne, Gauguin y Seurat.",
+  "paintings": [
+    {
+      "id": "pissarro-bulevar-montmartre",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Camille_Pissarro_-_Boulevard_Montmartre%2C_Spring_-_Google_Art_Project.jpg",
+      "title": "Bulevar Montmartre, primavera",
+      "year": 1897,
+      "description": "Serie sobre el bulevar parisino desde la ventana del hotel de Pissarro. Carruajes, árboles y edificios se disuelven en pinceladas rápidas que captan la atmósfera cambiante de la ciudad moderna.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "pissarro-tejados-rojos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Camille_Pissarro_-_The_Red_Roofs_-_Google_Art_Project.jpg",
+      "title": "Los tejados rojos",
+      "year": 1877,
+      "description": "Tejados y chimeneas de un pueblo vistos desde una ladera. Pissarro traduce el paisaje rural francés con color constructivo y una perspectiva elevada típica de su madurez impresionista.",
+      "dimensions": {
+        "width": 54,
+        "height": 65
+      }
+    },
+    {
+      "id": "pissarro-teatro-frances",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Camille_Pissarro_-_Place_du_Th%C3%A9%C3%A2tre_Fran%C3%A7ais%2C_Paris_-_Google_Art_Project.jpg",
+      "title": "Plaza del Teatro Francés, París",
+      "year": 1898,
+      "description": "Vista urbana con carruajes y peatones ante el teatro parisino. Pissarro explora la serie pictórica sobre la metrópolis con la misma atención que Monet dedicó a la catedral de Rouen.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "pissarro-huerto-eragny",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Camille_Pissarro_-_The_Artist's_Garden_at_%C3%89ragny_-_Google_Art_Project.jpg",
+      "title": "El jardín del artista en Éragny",
+      "year": 1898,
+      "description": "Huerto floreciente en la granja normanda donde Pissarro pasó sus últimos años. Luz suave y pincelada divisionista unen naturaleza cultivada y intimidad doméstica.",
+      "dimensions": {
+        "width": 73,
+        "height": 60
+      }
+    }
+  ]
+}

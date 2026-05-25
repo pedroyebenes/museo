@@ -36,6 +36,28 @@
         "width": 184,
         "height": 149
       }
+    },
+    {
+      "id": "watteau-comediantes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Antoine_Watteau_-_The_Italian_Comedians_-_Google_Art_Project.jpg",
+      "title": "Los comediantes italianos",
+      "year": 1720,
+      "description": "Actores de la commedia dell'arte posan en un paisaje abierto con Pierrot al centro. Watteau funde teatro, música y melancolía en la despedida de su estilo galante.",
+      "dimensions": {
+        "width": 89,
+        "height": 108
+      }
+    },
+    {
+      "id": "watteau-mezzetin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Antoine_Watteau_-_The_Mezzetin_-_Google_Art_Project.jpg",
+      "title": "El Mezzetino",
+      "year": 1718,
+      "description": "Músico de teatro toca la guitarra con gesto melancólico en un parque crepuscular. Watteau retrata la soledad del personaje cómico con pincelada ligera y color poético.",
+      "dimensions": {
+        "width": 55,
+        "height": 43
+      }
     }
   ]
 }

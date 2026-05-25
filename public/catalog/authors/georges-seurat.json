@@ -1,0 +1,55 @@
+{
+  "id": "georges-seurat",
+  "name": "Georges Seurat",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Georges Pierre Seurat",
+  "years": "1859 – 1891",
+  "origin": "París, Francia",
+  "bio": "Inventor del puntillismo y del neoimpresionismo científico. Seurat construyó escenas modernas de ocio parisino mediante millones de puntos de color puro que el ojo mezcla a distancia.",
+  "paintings": [
+    {
+      "id": "seurat-domingo-grande-jatte",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg",
+      "title": "Un domingo por la tarde en la isla de La Grande Jatte",
+      "year": 1886,
+      "description": "Parisienses pasean y descansan a orillas del Sena en una composición monumental de puntos de color. Obra cumbre del neoimpresionismo que transformó el paisaje de ocio en laboratorio óptico.",
+      "dimensions": {
+        "width": 207,
+        "height": 308
+      }
+    },
+    {
+      "id": "seurat-circo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Georges_Seurat_-_The_Circus_-_Google_Art_Project.jpg",
+      "title": "El circo",
+      "year": 1891,
+      "description": "Acróbata ecuestre y público captados con arabescos de color puro bajo la lona del circo. Última gran obra de Seurat, inacabada a su muerte, resume su fascinación por el espectáculo moderno.",
+      "dimensions": {
+        "width": 185,
+        "height": 150
+      }
+    },
+    {
+      "id": "seurat-banistas-asnieres",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Georges_Seurat_-_Bathers_at_Asni%C3%A8res_-_Google_Art_Project.jpg",
+      "title": "Bañistas en Asnières",
+      "year": 1884,
+      "description": "Obreros y familias descansan junto al Sena bajo un sol difuso de puntos claros. Antecedente directo de La Grande Jatte, con figuras más estáticas y una paleta luminosa de ocio suburbano.",
+      "dimensions": {
+        "width": 201,
+        "height": 300
+      }
+    },
+    {
+      "id": "seurat-modelos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Georges_Seurat_-_Models_-_Google_Art_Project.jpg",
+      "title": "Modelos",
+      "year": 1888,
+      "description": "Desnudos femeninos posan ante lienzos que evocan obras maestras del pasado. Seurat reflexiona sobre el arte, el cuerpo y la tradición académica desde su método puntillista.",
+      "dimensions": {
+        "width": 200,
+        "height": 250
+      }
+    }
+  ]
+}

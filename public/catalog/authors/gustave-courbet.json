@@ -1,0 +1,66 @@
+{
+  "id": "gustave-courbet",
+  "name": "Gustave Courbet",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Jean Désiré Gustave Courbet",
+  "years": "1819 – 1877",
+  "origin": "Ornans, Francia",
+  "bio": "Líder del realismo francés que rechazó la pintura académica idealizada. Courbet pintó campesinos, paisajes y escenas cotidianas con escala monumental y crudeza que escandalizó al Salón parisino.",
+  "paintings": [
+    {
+      "id": "courbet-taller",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Gustave_Courbet_-_The_Artist's_Studio_-_Google_Art_Project.jpg",
+      "title": "El taller del pintor",
+      "year": 1855,
+      "description": "Autorretrato alegórico donde Courbet se presenta rodeado de amigos, modelos y personajes simbólicos. Manifiesto visual del realismo que explica su concepción del arte y la sociedad.",
+      "dimensions": {
+        "width": 361,
+        "height": 598
+      }
+    },
+    {
+      "id": "courbet-entierro-ornans",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg",
+      "title": "Entierro en Ornans",
+      "year": 1849,
+      "description": "Funeral campesino en escala histórica que elevó la vida rural a tema digno de gran lienzo. Courbet desafió la jerarquía académica de géneros con una escena provincial sin héroes ni pathos retórico.",
+      "dimensions": {
+        "width": 315,
+        "height": 668
+      }
+    },
+    {
+      "id": "courbet-desesperado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Gustave_Courbet_-_The_Desperate_Man_(Self-Portrait)_-_Google_Art_Project.jpg",
+      "title": "El hombre desesperado (Autorretrato)",
+      "year": 1843,
+      "description": "Courbet se agarra el pelo con los ojos desorbitados en un autorretrato de intensidad romántica. Obra temprana que anticipa su búsqueda de expresión cruda y directa.",
+      "dimensions": {
+        "width": 54,
+        "height": 45
+      }
+    },
+    {
+      "id": "courbet-piedras",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Gustave_Courbet_-_The_Stone_Breakers_-_Google_Art_Project.jpg",
+      "title": "Los quebrantadores de piedra",
+      "year": 1849,
+      "description": "Dos obreros destrozando rocas en un camino rural. Courbet dignifica el trabajo manual con una escala antes reservada a la historia y provocó el rechazo del establishment artístico.",
+      "dimensions": {
+        "width": 170,
+        "height": 240
+      }
+    },
+    {
+      "id": "courbet-olas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Gustave_Courbet_-_The_Wave_-_Google_Art_Project.jpg",
+      "title": "La ola",
+      "year": 1870,
+      "description": "Mar embravecido que ocupa casi todo el lienzo con espuma y roca oscura. Courbet pinta la naturaleza con fuerza materialista, sin romanticismo decorativo.",
+      "dimensions": {
+        "width": 66,
+        "height": 90
+      }
+    }
+  ]
+}

@@ -36,6 +36,28 @@
         "width": 222,
         "height": 222
       }
+    },
+    {
+      "id": "sargent-jaleo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/John_Singer_Sargent_-_El_Jaleo_-_Google_Art_Project.jpg",
+      "title": "El jaleo",
+      "year": 1882,
+      "description": "Bailarina flamenca en medio de un tablao con guitarras y palmas. Sargent captura el movimiento y el sonido del espectáculo español con pincelada vigorosa y luz teatral.",
+      "dimensions": {
+        "width": 237,
+        "height": 352
+      }
+    },
+    {
+      "id": "sargent-gassed",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/John_Singer_Sargent_-_Gassed_-_Google_Art_Project.jpg",
+      "title": "Gassed",
+      "year": 1919,
+      "description": "Soldados ciegos por gas caminan en fila tras una escena de campo de batalla. Sargent documenta la Primera Guerra Mundial con realismo monumental y pathos contenido.",
+      "dimensions": {
+        "width": 231,
+        "height": 611
+      }
     }
   ]
 }
