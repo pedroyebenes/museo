@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { DOOR_WIDTH, DOOR_HEIGHT } from './wallBuilder.js';
 import { getDomeMaterial } from './materials.js';
 import { getQualityProfile } from './qualityProfile.js';
-import { getPortalGlowMaterial, createDoorSignMesh } from './doorAssets.js';
+import { getPortalGlowMaterial, getReturnPortalGlowMaterial, getReturnFrameMaterial, createDoorSignMesh } from './doorAssets.js';
 
 const DOOR_W = DOOR_WIDTH;
 const DOOR_H = DOOR_HEIGHT;
@@ -45,9 +45,9 @@ export function buildRotundaShell(group, opts) {
   addRotundaDome(group, radius, height, mats, quality);
   addCorniceRing(group, radius, height, mats, quality);
   addColumns(group, radius, height, doors, mats, quality);
-  buildCurvedWalls(group, mats, radius, height, doors, segments, triggers);
+  const doorInteractables = buildCurvedWalls(group, mats, radius, height, doors, segments, triggers);
 
-  return { segments, triggers };
+  return { segments, triggers, doorInteractables };
 }
 
 function addFloor(group, radius, mats, quality) {
@@ -166,10 +166,12 @@ function buildCurvedWalls(group, mats, radius, height, doors, segments, triggers
   const n = sorted.length;
   const wallR = radius - 0.05;
   const halfDoor = (DOOR_W / 2 + 0.15) / radius;
+  const doorInteractables = [];
 
   for (let i = 0; i < n; i++) {
     const door = sorted[i];
-    addOrientedDoor(group, mats, door, wallR, height, triggers);
+    const hitbox = addOrientedDoor(group, mats, door, wallR, height, triggers);
+    if (hitbox) doorInteractables.push(hitbox);
 
     const next = sorted[(i + 1) % n];
     let arcStart = door.angle + halfDoor;
@@ -193,6 +195,7 @@ function buildCurvedWalls(group, mats, radius, height, doors, segments, triggers
       segments.push({ ax: p1.x, az: p1.z, bx: p2.x, bz: p2.z });
     }
   }
+  return doorInteractables;
 }
 
 function buildWallPanel(group, mats, angle, radius, panelW, height, offsetU = 0) {
@@ -235,6 +238,7 @@ function addOrientedDoor(group, mats, door, radius, height, triggers) {
     borderColor,
     signShape,
   } = door;
+  const isReturn = destination?.kind === 'hub' || signShape === 'return';
   const rotY = facingYaw(angle);
   const normalIn = inwardNormal(angle);
   const tangent = tangentVector(angle);
@@ -252,8 +256,8 @@ function addOrientedDoor(group, mats, door, radius, height, triggers) {
   lintel.rotation.y = rotY;
   group.add(lintel);
 
-  addDoorFrame(group, mats, wallCenter, rotY, normalIn, tangent);
-  addDoorPortal(group, mats, wallCenter, rotY, normalIn, tangent);
+  addDoorFrame(group, mats, wallCenter, rotY, normalIn, tangent, isReturn);
+  addDoorPortal(group, mats, wallCenter, rotY, normalIn, tangent, isReturn);
   if (label) {
     const sign = createDoorSignMesh({
       label,
@@ -271,13 +275,29 @@ function addOrientedDoor(group, mats, door, radius, height, triggers) {
   }
 
   triggers.push(makeRadialTrigger(wallCenter, normalIn, tangent, destination));
+
+  if (door.doorInfo) {
+    const hitbox = new THREE.Mesh(
+      new THREE.PlaneGeometry(DOOR_W, DOOR_H),
+      new THREE.MeshBasicMaterial({ visible: false }),
+    );
+    hitbox.position.copy(wallCenter);
+    hitbox.position.y = DOOR_H / 2;
+    hitbox.position.add(normalIn.clone().multiplyScalar(0.2));
+    hitbox.rotation.y = rotY;
+    hitbox.userData.door = door.doorInfo;
+    group.add(hitbox);
+    return hitbox;
+  }
+  return null;
 }
 
-function addDoorFrame(group, mats, center, rotY, normalIn, tangent) {
+function addDoorFrame(group, mats, center, rotY, normalIn, tangent, isReturn = false) {
+  const frameMat = isReturn ? getReturnFrameMaterial() : mats.frameMat;
   const offset = normalIn.clone().multiplyScalar(0.03);
   const top = new THREE.Mesh(
     new THREE.BoxGeometry(DOOR_W + 2 * FW, FW, 0.1),
-    mats.frameMat,
+    frameMat,
   );
   top.position.copy(center);
   top.position.y = DOOR_H + FW / 2;
@@ -287,7 +307,7 @@ function addDoorFrame(group, mats, center, rotY, normalIn, tangent) {
 
   const sideGeo = new THREE.BoxGeometry(FW, DOOR_H, 0.1);
   for (const dir of [-1, 1]) {
-    const jamb = new THREE.Mesh(sideGeo, mats.frameMat);
+    const jamb = new THREE.Mesh(sideGeo, frameMat);
     jamb.position.copy(center);
     jamb.position.y = DOOR_H / 2;
     jamb.position.add(tangent.clone().multiplyScalar(dir * (DOOR_W / 2 + FW / 2)));
@@ -297,26 +317,26 @@ function addDoorFrame(group, mats, center, rotY, normalIn, tangent) {
   }
 }
 
-function addDoorPortal(group, mats, center, rotY, normalIn, tangent) {
+function addDoorPortal(group, mats, center, rotY, normalIn, tangent, isReturn = false) {
   const recessDepth = 0.38;
   const portalCenter = center.clone();
   portalCenter.y = DOOR_H / 2;
   portalCenter.add(normalIn.clone().multiplyScalar(0.04));
 
   const recessMat = new THREE.MeshStandardMaterial({
-    color: 0x24160e,
+    color: isReturn ? 0x020d18 : 0x24160e,
     roughness: 0.92,
     metalness: 0.04,
   });
   const doorLeafMat = new THREE.MeshStandardMaterial({
-    color: 0x5c3a22,
-    roughness: 0.72,
-    metalness: 0.08,
+    color: isReturn ? 0x0a1828 : 0x5c3a22,
+    roughness: isReturn ? 0.38 : 0.72,
+    metalness: isReturn ? 0.45 : 0.08,
   });
 
   const back = new THREE.Mesh(
     new THREE.PlaneGeometry(DOOR_W * 0.88, DOOR_H * 0.92),
-    getPortalGlowMaterial(),
+    isReturn ? getReturnPortalGlowMaterial() : getPortalGlowMaterial(),
   );
   back.position.copy(portalCenter);
   back.position.add(normalIn.clone().multiplyScalar(recessDepth * 0.92));
