@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { formatPaintingDimensions } from './paintings.js';
 
 const MAX_VIEW_DISTANCE = 4.0;
 const FOCUS_INTERVAL_MS = 120;
@@ -7,6 +8,7 @@ export function createInfoOverlay() {
   const panel = document.getElementById('info-panel');
   const titleEl = document.getElementById('info-title');
   const authorEl = document.getElementById('info-author');
+  const sizeEl = document.getElementById('info-size');
   const descEl = document.getElementById('info-description');
   const itemsEl = document.getElementById('info-items');
 
@@ -22,6 +24,10 @@ export function createInfoOverlay() {
     const subtitle = data.subtitle ?? (data.author && data.year ? `${data.author} · ${data.year}` : null);
     authorEl.textContent = subtitle ?? '';
     authorEl.style.display = subtitle ? '' : 'none';
+
+    const size = formatPaintingDimensions(data);
+    sizeEl.textContent = size ?? '';
+    sizeEl.style.display = size ? '' : 'none';
 
     descEl.textContent = data.description ?? '';
     descEl.style.display = data.description ? '' : 'none';
@@ -47,6 +53,7 @@ export function createInfoOverlay() {
     if (!current) return;
     current = null;
     authorEl.style.display = '';
+    sizeEl.style.display = '';
     descEl.style.display = '';
     if (itemsEl) itemsEl.classList.add('hidden');
     panel.classList.add('hidden');
