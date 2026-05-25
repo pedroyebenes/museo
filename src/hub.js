@@ -29,6 +29,7 @@ export function buildHub(scene, config) {
       items[i].borderColor ||
       (items[i].colorKey ? getReadableHashTextColor(items[i].colorKey) : undefined),
     destination: items[i].destination,
+    doorInfo: items[i].doorInfo ?? null,
   }));
 
   const materials =
@@ -36,7 +37,7 @@ export function buildHub(scene, config) {
       ? getHubMaterials()
       : getCategoryRoomMaterials(colorKey || title || id);
 
-  const { segments, triggers } = buildRotundaShell(group, {
+  const { segments, triggers, doorInteractables } = buildRotundaShell(group, {
     radius: RADIUS,
     height: HEIGHT,
     doors,
@@ -60,6 +61,7 @@ export function buildHub(scene, config) {
     slots: [],
     segments,
     triggers,
+    doorInteractables,
     dimensions: { width: RADIUS * 2, depth: RADIUS * 2, height: HEIGHT },
     author: null,
     kind: id === 'hub' ? 'hub' : 'category',

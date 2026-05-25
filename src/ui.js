@@ -8,6 +8,7 @@ export function createInfoOverlay() {
   const titleEl = document.getElementById('info-title');
   const authorEl = document.getElementById('info-author');
   const descEl = document.getElementById('info-description');
+  const itemsEl = document.getElementById('info-items');
 
   let current = null;
   let suppressed = false;
@@ -17,14 +18,37 @@ export function createInfoOverlay() {
     if (current && current.id === data.id) return;
     current = data;
     titleEl.textContent = data.title;
-    authorEl.textContent = `${data.author} · ${data.year}`;
-    descEl.textContent = data.description;
+
+    const subtitle = data.subtitle ?? (data.author && data.year ? `${data.author} · ${data.year}` : null);
+    authorEl.textContent = subtitle ?? '';
+    authorEl.style.display = subtitle ? '' : 'none';
+
+    descEl.textContent = data.description ?? '';
+    descEl.style.display = data.description ? '' : 'none';
+
+    if (itemsEl) {
+      if (data.items && data.items.length > 0) {
+        itemsEl.innerHTML = '';
+        for (const item of data.items) {
+          const li = document.createElement('li');
+          li.textContent = item;
+          itemsEl.appendChild(li);
+        }
+        itemsEl.classList.remove('hidden');
+      } else {
+        itemsEl.classList.add('hidden');
+      }
+    }
+
     panel.classList.remove('hidden');
   }
 
   function hide() {
     if (!current) return;
     current = null;
+    authorEl.style.display = '';
+    descEl.style.display = '';
+    if (itemsEl) itemsEl.classList.add('hidden');
     panel.classList.add('hidden');
   }
 
@@ -145,9 +169,9 @@ export function createFocusTracker({ camera, getInteractables, overlay }) {
     raycaster.setFromCamera(center, camera);
     const hits = raycaster.intersectObjects(interactables, true);
     if (hits.length > 0) {
-      const obj = findPainting(hits[0].object);
+      const obj = findInteractable(hits[0].object);
       if (obj) {
-        overlay.show(obj.userData.painting);
+        overlay.show(obj.userData.door ?? obj.userData.painting);
         return;
       }
     }
@@ -157,10 +181,10 @@ export function createFocusTracker({ camera, getInteractables, overlay }) {
   return { update };
 }
 
-function findPainting(node) {
+function findInteractable(node) {
   let n = node;
   while (n) {
-    if (n.userData && n.userData.painting) return n;
+    if (n.userData && (n.userData.painting || n.userData.door)) return n;
     n = n.parent;
   }
   return null;

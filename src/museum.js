@@ -25,6 +25,7 @@ export function buildAuthorRoom(scene, config) {
     categoryLabel = 'Categoría',
     paintings = [],
     bio = null,
+    exitDoorInfo = null,
   } = config;
 
   const walls = partitionPaintings(paintings);
@@ -54,7 +55,7 @@ export function buildAuthorRoom(scene, config) {
     ? { kind: 'category', categoryId }
     : { kind: 'hub' };
 
-  const { segments, triggers } = buildRoomShell(group, {
+  const { segments, triggers, doorInteractables } = buildRoomShell(group, {
     width,
     depth,
     height,
@@ -70,7 +71,11 @@ export function buildAuthorRoom(scene, config) {
             position: 0,
             label: categoryId ? categoryLabel : 'Hall principal',
             arrow: '←',
+            signShape: 'return',
+            textColor: '#9ee7ff',
+            borderColor: '#4fb6d8',
             destination: exitDestination,
+            doorInfo: exitDoorInfo,
           },
         ],
       },
@@ -125,6 +130,7 @@ export function buildAuthorRoom(scene, config) {
     slots,
     segments,
     triggers,
+    doorInteractables,
     dimensions: { width, depth, height },
     author,
     authorId,
