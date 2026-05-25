@@ -1,0 +1,88 @@
+{
+  "id": "eugene-delacroix",
+  "name": "Eugène Delacroix",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Ferdinand-Victor-Eugène Delacroix",
+  "years": "1798 – 1863",
+  "origin": "Charenton-Saint-Maurice, Francia",
+  "bio": "Figura central del romanticismo francés, renovó la pintura histórica con composiciones agitadas, color vibrante y una intensidad emocional opuesta al equilibrio neoclásico. Sus grandes lienzos sobre literatura, política y conflictos contemporáneos marcaron la imaginación visual del siglo XIX e influyeron decisivamente en los pintores modernos.",
+  "paintings": [
+    {
+      "id": "delacroix-barca-dante",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Eug%C3%A8ne_Delacroix_-_The_Barque_of_Dante.jpg",
+      "title": "La barca de Dante",
+      "year": 1822,
+      "description": "Primer gran éxito de Delacroix en el Salón de París. Dante y Virgilio cruzan el río Estigia entre cuerpos atormentados, con una energía cromática que anuncia el romanticismo francés.",
+      "dimensions": {
+        "width": 246,
+        "height": 189
+      }
+    },
+    {
+      "id": "delacroix-matanza-quios",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Sc%C3%A8ne_des_massacres_de_Scio.jpg",
+      "title": "La matanza de Quíos",
+      "year": 1824,
+      "description": "Lienzo monumental sobre la masacre de la población griega de Quíos durante la guerra de independencia. Delacroix desplaza el heroísmo clásico hacia una escena de derrota, sufrimiento y denuncia.",
+      "dimensions": {
+        "width": 354,
+        "height": 419
+      }
+    },
+    {
+      "id": "delacroix-grecia-ruinas-missolonghi",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Eug%C3%A8ne_Delacroix_-_La_Gr%C3%A8ce_sur_les_ruines_de_Missolonghi_%281826%29.jpg",
+      "title": "Grecia expirando sobre las ruinas de Missolonghi",
+      "year": 1826,
+      "description": "Alegoría política de la resistencia griega tras el sitio de Missolonghi. La figura femenina, entre súplica y martirio, convierte un episodio contemporáneo en símbolo romántico de libertad.",
+      "dimensions": {
+        "width": 142,
+        "height": 213
+      }
+    },
+    {
+      "id": "delacroix-muerte-sardanapalo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/La_Mort_de_Sardanapale_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2346.jpg",
+      "title": "La muerte de Sardanápalo",
+      "year": 1827,
+      "description": "Inspirada en Byron, muestra al rey asirio ordenando destruir sus tesoros y su corte antes de la derrota. La diagonal violenta, los rojos intensos y el movimiento extremo hicieron de la obra un manifiesto romántico.",
+      "dimensions": {
+        "width": 496,
+        "height": 392
+      }
+    },
+    {
+      "id": "delacroix-libertad-guiando-pueblo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg",
+      "title": "La Libertad guiando al pueblo",
+      "year": 1830,
+      "description": "Icono de la Revolución de Julio de 1830, une alegoría y crónica urbana en una misma barricada. La figura de la Libertad avanza con la bandera tricolor entre combatientes anónimos y cuerpos caídos.",
+      "dimensions": {
+        "width": 325,
+        "height": 260
+      }
+    },
+    {
+      "id": "delacroix-mujeres-argel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Eug%C3%A8ne_Delacroix_-_Les_Femmes_d%27Alger_dans_leur_appartement%2C_1834.jpg",
+      "title": "Mujeres de Argel en su apartamento",
+      "year": 1834,
+      "description": "Resultado de los apuntes de Delacroix durante su viaje al norte de África. La escena interior combina observación etnográfica, color cálido y una quietud que fascinó a generaciones posteriores.",
+      "dimensions": {
+        "width": 229,
+        "height": 180
+      }
+    },
+    {
+      "id": "delacroix-entrada-cruzados-constantinopla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Eug%C3%A8ne_delacroix%2C_entrata_dei_crociati_a_costantinopoli%2C_1840%2C_01.jpg",
+      "title": "La entrada de los cruzados en Constantinopla",
+      "year": 1840,
+      "description": "Encargo histórico sobre el saqueo de Constantinopla por la cuarta cruzada. Delacroix evita el triunfo militar puro y subraya el desorden moral de la victoria con una composición amplia y melancólica.",
+      "dimensions": {
+        "width": 498,
+        "height": 410
+      }
+    }
+  ]
+}
