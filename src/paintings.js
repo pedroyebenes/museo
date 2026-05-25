@@ -45,6 +45,14 @@ export function getPaintingDimensionsMeters(data) {
   return null;
 }
 
+export function formatPaintingDimensions(data) {
+  const { width, height } = data.dimensions ?? {};
+  if (width > 0 && height > 0) {
+    return `${width} × ${height} cm`;
+  }
+  return null;
+}
+
 export function getPaintingLayoutExtents(data) {
   const dims = getPaintingDimensionsMeters(data) ?? {
     w: FALLBACK_LONG_SIDE,
@@ -82,6 +90,12 @@ export async function placePaintings(container, slots, paintings, { renderer, on
         interactables.push(group);
       } catch (err) {
         console.error(`No pude cargar el cuadro "${data.title}":`, err);
+        const group = buildPaintingMesh(null, data);
+        group.position.copy(slot.position);
+        group.rotation.y = slot.rotationY;
+        group.userData.painting = data;
+        container.add(group);
+        interactables.push(group);
       } finally {
         report();
       }
@@ -113,9 +127,12 @@ function buildPaintingMesh(texture, data) {
   frame.position.z = -FRAME_DEPTH / 2;
   group.add(frame);
 
+  const canvasMaterial = texture
+    ? new THREE.MeshBasicMaterial({ map: texture })
+    : new THREE.MeshBasicMaterial({ color: 0x000000 });
   const canvas = new THREE.Mesh(
     new THREE.PlaneGeometry(w, h),
-    new THREE.MeshBasicMaterial({ map: texture }),
+    canvasMaterial,
   );
   canvas.position.z = 0.001;
   canvas.userData.painting = data;
@@ -133,6 +150,10 @@ function getPaintingSize(data, texture) {
   const { width, height } = data.dimensions ?? {};
   if (width > 0 && height > 0) {
     return { w: width * CM_TO_M, h: height * CM_TO_M };
+  }
+
+  if (!texture) {
+    return { w: FALLBACK_LONG_SIDE, h: FALLBACK_LONG_SIDE };
   }
 
   const img = texture.image;
@@ -155,17 +176,24 @@ function buildLabel(data) {
   ctx.lineWidth = 4;
   ctx.strokeRect(2, 2, c.width - 4, c.height - 4);
 
+  const textWidth = c.width - 32;
+  const textX = 16;
+
   ctx.fillStyle = '#f0e8d6';
-  ctx.font = '600 36px -apple-system, "Segoe UI", sans-serif';
+  ctx.font = '600 28px -apple-system, "Segoe UI", sans-serif';
   ctx.textBaseline = 'middle';
-  ctx.fillText(ellipsize(ctx, data.title, c.width - 32), 16, c.height * 0.35);
+  drawWrappedText(ctx, data.title, textX, c.height * 0.28, textWidth, 30, 2);
 
   ctx.fillStyle = '#bbb';
-  ctx.font = '400 26px -apple-system, "Segoe UI", sans-serif';
+  ctx.font = '400 22px -apple-system, "Segoe UI", sans-serif';
+  const metaParts = [];
+  if (data.author && data.year) metaParts.push(`${data.author} · ${data.year}`);
+  const size = formatPaintingDimensions(data);
+  if (size) metaParts.push(size);
   ctx.fillText(
-    ellipsize(ctx, `${data.author} · ${data.year}`, c.width - 32),
-    16,
-    c.height * 0.72,
+    ellipsize(ctx, metaParts.join(' · '), textWidth),
+    textX,
+    c.height * 0.78,
   );
 
   const tex = new THREE.CanvasTexture(c);
@@ -175,6 +203,41 @@ function buildLabel(data) {
     new THREE.PlaneGeometry(LABEL_WIDTH, LABEL_HEIGHT),
     new THREE.MeshBasicMaterial({ map: tex }),
   );
+}
+
+function drawWrappedText(ctx, text, x, startY, maxWidth, lineHeight, maxLines) {
+  const words = text.split(/\s+/).filter(Boolean);
+  const lines = [];
+  let line = '';
+
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    const candidate = line ? `${line} ${word}` : word;
+    if (ctx.measureText(candidate).width <= maxWidth) {
+      line = candidate;
+      continue;
+    }
+
+    if (line) lines.push(line);
+    line = word;
+
+    if (lines.length >= maxLines) {
+      const rest = words.slice(i).join(' ');
+      const merged = lines[maxLines - 1] ? `${lines[maxLines - 1]} ${rest}` : rest;
+      lines[maxLines - 1] = ellipsize(ctx, merged, maxWidth);
+      line = '';
+      break;
+    }
+  }
+
+  if (line) {
+    if (lines.length < maxLines) lines.push(line);
+    else lines[maxLines - 1] = ellipsize(ctx, `${lines[maxLines - 1]} ${line}`, maxWidth);
+  }
+
+  lines.slice(0, maxLines).forEach((entry, index) => {
+    ctx.fillText(entry, x, startY + index * lineHeight);
+  });
 }
 
 function ellipsize(ctx, text, maxWidth) {

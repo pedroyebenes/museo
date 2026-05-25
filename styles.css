@@ -423,6 +423,10 @@ body.playing .catalog-btn:not(.hidden) { display: block; }
 
 .catalog-painting-title {
   flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 0.92rem;
   line-height: 1.35;
 }
@@ -491,11 +495,18 @@ body.playing #room-hud:not(.hidden) { display: block; }
   font-size: 1.15rem;
   font-weight: 500;
   color: var(--museum-cream);
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 #info-panel p { margin: 0.25rem 0; line-height: 1.45; }
 
 #info-author { color: var(--museum-muted); font-style: italic; font-size: 0.95rem; }
+
+#info-size { color: var(--museum-muted); font-size: 0.88rem; }
 
 #info-description { font-size: 0.9rem; color: #ddd; }
 
