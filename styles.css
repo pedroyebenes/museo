@@ -499,6 +499,24 @@ body.playing #room-hud:not(.hidden) { display: block; }
 
 #info-description { font-size: 0.9rem; color: #ddd; }
 
+.info-items {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.5rem;
+}
+
+.info-items li {
+  font-size: 0.78rem;
+  color: var(--museum-muted);
+  border: 1px solid var(--museum-border);
+  border-radius: 3px;
+  padding: 0.15rem 0.55rem;
+  white-space: nowrap;
+}
+
 #room-transition {
   position: fixed;
   inset: 0;

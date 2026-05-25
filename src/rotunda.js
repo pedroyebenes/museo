@@ -45,9 +45,9 @@ export function buildRotundaShell(group, opts) {
   addRotundaDome(group, radius, height, mats, quality);
   addCorniceRing(group, radius, height, mats, quality);
   addColumns(group, radius, height, doors, mats, quality);
-  buildCurvedWalls(group, mats, radius, height, doors, segments, triggers);
+  const doorInteractables = buildCurvedWalls(group, mats, radius, height, doors, segments, triggers);
 
-  return { segments, triggers };
+  return { segments, triggers, doorInteractables };
 }
 
 function addFloor(group, radius, mats, quality) {
@@ -166,10 +166,12 @@ function buildCurvedWalls(group, mats, radius, height, doors, segments, triggers
   const n = sorted.length;
   const wallR = radius - 0.05;
   const halfDoor = (DOOR_W / 2 + 0.15) / radius;
+  const doorInteractables = [];
 
   for (let i = 0; i < n; i++) {
     const door = sorted[i];
-    addOrientedDoor(group, mats, door, wallR, height, triggers);
+    const hitbox = addOrientedDoor(group, mats, door, wallR, height, triggers);
+    if (hitbox) doorInteractables.push(hitbox);
 
     const next = sorted[(i + 1) % n];
     let arcStart = door.angle + halfDoor;
@@ -193,6 +195,7 @@ function buildCurvedWalls(group, mats, radius, height, doors, segments, triggers
       segments.push({ ax: p1.x, az: p1.z, bx: p2.x, bz: p2.z });
     }
   }
+  return doorInteractables;
 }
 
 function buildWallPanel(group, mats, angle, radius, panelW, height, offsetU = 0) {
@@ -272,6 +275,21 @@ function addOrientedDoor(group, mats, door, radius, height, triggers) {
   }
 
   triggers.push(makeRadialTrigger(wallCenter, normalIn, tangent, destination));
+
+  if (door.doorInfo) {
+    const hitbox = new THREE.Mesh(
+      new THREE.PlaneGeometry(DOOR_W, DOOR_H),
+      new THREE.MeshBasicMaterial({ visible: false }),
+    );
+    hitbox.position.copy(wallCenter);
+    hitbox.position.y = DOOR_H / 2;
+    hitbox.position.add(normalIn.clone().multiplyScalar(0.2));
+    hitbox.rotation.y = rotY;
+    hitbox.userData.door = door.doorInfo;
+    group.add(hitbox);
+    return hitbox;
+  }
+  return null;
 }
 
 function addDoorFrame(group, mats, center, rotY, normalIn, tangent, isReturn = false) {

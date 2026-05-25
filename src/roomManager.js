@@ -34,15 +34,25 @@ export function createRoomManager({
         hubCache.room = buildHub(scene, {
           id: 'hub',
           title: 'Hall principal',
-          items: catalog.categories.map((category) => ({
-            id: category.id,
-            label: category.label,
-            colorKey: category.id,
-            destination: { kind: 'category', categoryId: category.id },
-          })),
+          items: catalog.categories.map((category) => {
+            const catAuthors = catalog.authorsByCategory[category.id] || [];
+            return {
+              id: category.id,
+              label: category.label,
+              colorKey: category.id,
+              destination: { kind: 'category', categoryId: category.id },
+              doorInfo: {
+                id: `door:category:${category.id}`,
+                title: category.label,
+                subtitle: `${catAuthors.length} ${catAuthors.length === 1 ? 'artista' : 'artistas'}`,
+                description: category.description ?? null,
+                items: catAuthors.map((a) => a.name),
+              },
+            };
+          }),
         });
         scene.remove(hubCache.room.group);
-        hubCache.interactables = [];
+        hubCache.interactables = hubCache.room.doorInteractables || [];
       }
       swapRoom(hubCache.room, hubCache.interactables);
       currentKind = 'hub';
@@ -80,17 +90,28 @@ export function createRoomManager({
               textColor: '#9ee7ff',
               borderColor: '#4fb6d8',
               destination: { kind: 'hub' },
+              doorInfo: null,
             },
-            ...authors.map((author) => ({
-              id: author.id,
-              label: author.name,
-              colorKey: author.name,
-              destination: { kind: 'author', authorId: author.id },
-            })),
+            ...authors.map((author) => {
+              const authorPaintings = catalog.paintingsByAuthor[author.id] || [];
+              return {
+                id: author.id,
+                label: author.name,
+                colorKey: author.name,
+                destination: { kind: 'author', authorId: author.id },
+                doorInfo: {
+                  id: `door:author:${author.id}`,
+                  title: author.name,
+                  subtitle: [author.years, author.origin].filter(Boolean).join(' · '),
+                  description: author.bio ?? null,
+                  items: authorPaintings.map((p) => p.title),
+                },
+              };
+            }),
           ],
         });
         scene.remove(room.group);
-        cached = { room, interactables: [] };
+        cached = { room, interactables: room.doorInteractables || [] };
         categoryCache.set(categoryId, cached);
       }
       swapRoom(cached.room, cached.interactables);
@@ -128,6 +149,15 @@ export function createRoomManager({
     try {
       let cached = authorCache.get(author.id);
       if (!cached) {
+        const categoryAuthors = catalog.authorsByCategory[author.category] || [];
+        const exitDoorInfo = category ? {
+          id: `door:category:${category.id}`,
+          title: category.label,
+          subtitle: `${categoryAuthors.length} ${categoryAuthors.length === 1 ? 'artista' : 'artistas'}`,
+          description: category.description ?? null,
+          items: categoryAuthors.map((a) => a.name),
+        } : null;
+
         const room = buildAuthorRoom(scene, {
           author: author.name,
           authorId: author.id,
@@ -135,6 +165,7 @@ export function createRoomManager({
           categoryLabel: category?.label || 'Categoría',
           paintings,
           bio: author,
+          exitDoorInfo,
         });
         scene.remove(room.group);
         const newInteractables = await placePaintings(
@@ -148,7 +179,7 @@ export function createRoomManager({
             },
           },
         );
-        cached = { room, interactables: newInteractables };
+        cached = { room, interactables: [...newInteractables, ...(room.doorInteractables || [])] };
         authorCache.set(author.id, cached);
       }
       swapRoom(cached.room, cached.interactables);

@@ -57,15 +57,16 @@ export function buildRoomShell(group, opts) {
 
   const segments = [];
   const triggers = [];
+  const doorInteractables = [];
 
   for (const wallSpec of walls) {
-    buildWall(group, wallSpec, { width, depth, height }, mats, segments, triggers);
+    buildWall(group, wallSpec, { width, depth, height }, mats, segments, triggers, doorInteractables);
   }
 
-  return { segments, triggers };
+  return { segments, triggers, doorInteractables };
 }
 
-function buildWall(group, wallSpec, dims, mats, segments, triggers) {
+function buildWall(group, wallSpec, dims, mats, segments, triggers, doorInteractables) {
   const { side, doors = [] } = wallSpec;
   const { width, depth, height } = dims;
   const cfg = wallGeometry(side, width, depth);
@@ -101,6 +102,20 @@ function buildWall(group, wallSpec, dims, mats, segments, triggers) {
     addDoorPortal(group, mats, d, axis, fixed, normalIn, rotY, isReturn);
     if (d.label) addDoorSign(group, d, axis, fixed, height, rotY, normalIn);
     triggers.push(makeTrigger(d, axis, fixed, normalIn));
+
+    if (d.doorInfo && doorInteractables) {
+      const center = placeAlong(axis, fixed, d.position, DOOR_H / 2);
+      const hitbox = new THREE.Mesh(
+        new THREE.PlaneGeometry(DOOR_W, DOOR_H),
+        new THREE.MeshBasicMaterial({ visible: false }),
+      );
+      hitbox.position.copy(center);
+      hitbox.position.add(normalIn.clone().multiplyScalar(0.2));
+      hitbox.rotation.y = rotY;
+      hitbox.userData.door = d.doorInfo;
+      group.add(hitbox);
+      doorInteractables.push(hitbox);
+    }
   }
 
   // Crown moulding runs the full wall length (continuous over door lintels)
