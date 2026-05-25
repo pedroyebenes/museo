@@ -138,7 +138,7 @@ Los cuadros van dentro de `paintings` en el archivo del autor. **No añadas camp
 | Campo | Tipo | Obligatorio | Descripción |
 |-------|------|-------------|-------------|
 | `id` | string | sí | Identificador único global, en kebab-case |
-| `url` | string | sí | URL HTTPS de imagen directa; Wikimedia Commons funciona bien |
+| `url` | string | sí | URL HTTPS de **imagen directa** en `upload.wikimedia.org` (ver sección siguiente) |
 | `title` | string | sí | Título visible en etiqueta 3D y panel |
 | `year` | number | sí | Año de creación, entero cuando sea posible |
 | `description` | string | sí | Texto breve, 1–3 frases, en español |
@@ -151,6 +151,46 @@ Convenciones para `id`:
 - Prefijo del autor para evitar colisiones: `sorolla-...`, `monet-...`.
 - Sin espacios ni tildes.
 - Único en todo el catálogo, no solo dentro de un autor.
+
+---
+
+## URLs de imágenes (Wikimedia Commons)
+
+El museo carga las obras con `THREE.TextureLoader` contra la URL del JSON. Tiene que ser un **archivo de imagen servido directamente**, no una página wiki ni un redirect frágil.
+
+### Usar siempre `upload.wikimedia.org`
+
+**Correcto** — CDN directo, con el nombre de archivo codificado en la ruta:
+
+```json
+"url": "https://upload.wikimedia.org/wikipedia/commons/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg"
+```
+
+**Incorrecto** — enlace `Special:FilePath` de Commons; a menudo **no carga** en el museo (redirect, HTML o codificación inconsistente con tildes y paréntesis):
+
+```json
+"url": "https://commons.wikimedia.org/wiki/Special:FilePath/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg"
+```
+
+### Caracteres especiales en la URL
+
+En la ruta de `upload.wikimedia.org`, los caracteres no ASCII y los reservados deben ir **percent-encoded** (UTF-8):
+
+| Carácter | Codificación |
+|----------|----------------|
+| `é`, `á`, `ñ`, … | UTF-8, p. ej. `é` → `%C3%A9` |
+| `(` `)` | `%28` `%29` |
+| `,` | `%2C` |
+| espacio | `%20` (mejor usar `_` en el nombre del archivo en Commons) |
+
+No mezcles en la misma URL texto literal con tildes o paréntesis **y** trozos ya codificados: o codificas toda la parte del nombre de archivo, o copias la URL tal cual la muestra Commons en «Full resolution» / enlace al archivo.
+
+### Cómo obtener la URL buena
+
+1. Abre la ficha del archivo en Commons (no la página del cuadro en Wikipedia).
+2. Clic derecho en la imagen → copiar enlace, o usa el enlace de **resolución completa** que apunte a `https://upload.wikimedia.org/...`.
+3. Si solo tienes `Special:FilePath`, sustituye por la URL de `upload.wikimedia.org` equivalente (misma ruta `commons/X/XX/nombre.jpg` con encoding correcto).
+4. Valida con `curl -L -I "URL"` → debe devolver `200` y `content-type: image/jpeg` (o `image/png`).
 
 ---
 
@@ -197,7 +237,9 @@ Convenciones para `id`:
 - [ ] `author.category` existe y coincide con la categoría donde está listado.
 - [ ] Cada `painting.id` es único globalmente.
 - [ ] Cada obra tiene `url`, `title`, `year`, `description` y `dimensions.width/height`.
-- [ ] Las URLs son HTTPS e imagen real.
+- [ ] Las URLs son HTTPS, apuntan a `upload.wikimedia.org` (no `commons.wikimedia.org/wiki/Special:FilePath/...`).
+- [ ] Tildes y paréntesis en el nombre del archivo están correctamente codificados (`%C3%A9`, `%28`, `%29`, `%2C`, etc.).
+- [ ] `curl -L -I` de cada URL nueva devuelve `content-type: image/...`.
 - [ ] Textos en español, concisos y sin errores.
 - [ ] No se ha editado `dist/`.
 - [ ] No se han recreado `public/paintings.json` ni `public/authors.json`.
@@ -230,6 +272,7 @@ Debe responder con `content-type: image/...` y un estado HTTP válido.
 | Autor listado pero falla carga | Falta `public/catalog/authors/{slug}.json` o `id` no coincide | Corrige archivo o slug |
 | Sala sin obras | `paintings` vacío o inválido | Añade obras válidas |
 | Cuadro desproporcionado | `dimensions` incorrectas | Corrige ancho/alto en cm |
+| Cuadro en blanco / no carga textura | URL `Special:FilePath` o caracteres sin codificar | Usa `upload.wikimedia.org` con percent-encoding; valida con `curl -L -I` |
 | Teletransporte al cuadro falla | `painting.id` duplicado o mal escrito | Usa ids únicos y valida |
 
 ---
