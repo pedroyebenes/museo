@@ -28,6 +28,28 @@
         "width": 38,
         "height": 62
       }
+    },
+    {
+      "id": "zurbaran-francisco-exaltacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Francisco_de_Zurbar%C3%A1n_-_Saint_Francis_in_Ecstasy_-_Google_Art_Project.jpg",
+      "title": "San Francisco en éxtasis",
+      "year": 1635,
+      "description": "El santo contempla un cráneo mientras un ángel le susurra al oído en la oscuridad. Zurbarán convierte la devoción franciscana en meditación sobria de luz y silencio.",
+      "dimensions": {
+        "width": 152,
+        "height": 99
+      }
+    },
+    {
+      "id": "zurbaran-virgen-ildefonso",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Francisco_de_Zurbar%C3%A1n_-_The_Apparition_of_the_Virgin_to_Saint_Ildefonso_-_Google_Art_Project.jpg",
+      "title": "Aparición de la Virgen a san Ildefonso",
+      "year": 1635,
+      "description": "La Virgen entrega una casulla al obispo arrodillado ante un altar. Zurbarán organiza la escena con claridad teatral y blancos luminosos sobre fondo oscuro.",
+      "dimensions": {
+        "width": 179,
+        "height": 232
+      }
     }
   ]
 }

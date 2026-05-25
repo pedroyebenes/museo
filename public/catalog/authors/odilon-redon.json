@@ -44,6 +44,28 @@
         "width": 80,
         "height": 60
       }
+    },
+    {
+      "id": "redon-ojo-globo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Odilon_Redon_-_The_eye_like_a_strange_balloon_mounts_toward_infinity_-_Google_Art_Project.jpg",
+      "title": "El ojo, como un globo extraño, se dirige hacia el infinito",
+      "year": 1882,
+      "description": "Globo ocular surca un cielo gris sobre un mar desolado. Redon condensa el simbolismo finisecular en una imagen onírica de visión y misterio.",
+      "dimensions": {
+        "width": 44,
+        "height": 55
+      }
+    },
+    {
+      "id": "redon-orfeo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Odilon_Redon_-_Orpheus_-_Google_Art_Project.jpg",
+      "title": "Orfeo",
+      "year": 1903,
+      "description": "Cabeza flotante de Orfeo cantando entre nubes rosadas. Redon transforma el mito en poema visual de color pastel y forma imaginaria.",
+      "dimensions": {
+        "width": 67,
+        "height": 54
+      }
     }
   ]
 }

@@ -18,7 +18,9 @@
         "fra-angelico",
         "alberto-durero",
         "pietro-perugino",
-        "melozzo-da-forli"
+        "melozzo-da-forli",
+        "hans-holbein-el-joven",
+        "pieter-bruegel-el-viejo"
       ]
     },
     {
@@ -34,7 +36,9 @@
         "bartolome-esteban-murillo",
         "johannes-vermeer",
         "nicolas-poussin",
-        "antoine-watteau"
+        "antoine-watteau",
+        "artemisia-gentileschi",
+        "jean-honore-fragonard"
       ]
     },
     {
@@ -51,7 +55,9 @@
         "william-blake",
         "thomas-cole",
         "caspar-david-friedrich",
-        "j-m-w-turner"
+        "j-m-w-turner",
+        "gustave-courbet",
+        "john-constable"
       ]
     },
     {
@@ -77,7 +83,12 @@
         "vincent-van-gogh",
         "john-singer-sargent",
         "winslow-homer",
-        "edouard-manet"
+        "edouard-manet",
+        "camille-pissarro",
+        "paul-gauguin",
+        "georges-seurat",
+        "henri-de-toulouse-lautrec",
+        "berthe-morisot"
       ]
     },
     {

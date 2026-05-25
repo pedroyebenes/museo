@@ -1,0 +1,55 @@
+{
+  "id": "john-constable",
+  "name": "John Constable",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "John Constable",
+  "years": "1776 – 1837",
+  "origin": "East Bergholt, Suffolk, Inglaterra",
+  "bio": "Paisajista romántico británico que pintó el campo de Suffolk con observación directa del clima y la luz. Su influencia en la pintura europea del siglo XIX, especialmente en Delacroix, fue decisiva.",
+  "paintings": [
+    {
+      "id": "constable-carro-heno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/John_Constable_-_The_Hay_Wain_-_Google_Art_Project.jpg",
+      "title": "El carro de heno",
+      "year": 1821,
+      "description": "Carro atravesando un vado del río Stour con un molino al fondo. Obra emblemática del paisaje inglés que Constable presentó en París y que influyó en los románticos franceses.",
+      "dimensions": {
+        "width": 130,
+        "height": 185
+      }
+    },
+    {
+      "id": "constable-valle-dedham",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/John_Constable_-_Dedham_Vale_-_Google_Art_Project.jpg",
+      "title": "Valle de Dedham",
+      "year": 1828,
+      "description": "Vista panorámica del valle natal con campos, árboles y la torre de la iglesia al fondo. Constable captura la atmósfera húmeda del Suffolk con nubes cargadas de lluvia.",
+      "dimensions": {
+        "width": 120,
+        "height": 145
+      }
+    },
+    {
+      "id": "constable-campo-maiz",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/John_Constable_-_The_Cornfield_-_Google_Art_Project.jpg",
+      "title": "El campo de maíz",
+      "year": 1826,
+      "description": "Pastor con rebaño avanza por un sendero entre campos de trigo y un arroyo. Constable idealiza el campo inglés con naturalismo poético y detalle botánico.",
+      "dimensions": {
+        "width": 143,
+        "height": 122
+      }
+    },
+    {
+      "id": "constable-salisbury",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/John_Constable_-_Salisbury_Cathedral_from_the_Meadows_-_Google_Art_Project.jpg",
+      "title": "Catedral de Salisbury desde los prados",
+      "year": 1831,
+      "description": "La catedral gótica surge tras un prado mojado bajo un arcoíris tormentoso. Constable combina topografía precisa y drama romántico del cielo.",
+      "dimensions": {
+        "width": 151,
+        "height": 189
+      }
+    }
+  ]
+}

@@ -39,6 +39,28 @@
         "width": 45.5,
         "height": 41
       }
+    },
+    {
+      "id": "vermeer-diana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Johannes_Vermeer_-_Diana_and_Her_Companions_-_Google_Art_Project.jpg",
+      "title": "Diana y sus compañeras",
+      "year": 1655,
+      "description": "Diana y sus ninfas descansan en un paisaje clásico con luz suave. Obra temprana donde Vermeer aún dialoga con la pintura de historia antes de especializarse en escenas domésticas.",
+      "dimensions": {
+        "width": 98,
+        "height": 105
+      }
+    },
+    {
+      "id": "vermeer-arte-pintura",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Johannes_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg",
+      "title": "El arte de la pintura",
+      "year": 1668,
+      "description": "Pintor retrata a una modelo vestida de Clío ante un mapa y un candelabro. Vermeer medita sobre su propio oficio con una escena enigmática de luz y perspectiva.",
+      "dimensions": {
+        "width": 120,
+        "height": 100
+      }
     }
   ]
 }

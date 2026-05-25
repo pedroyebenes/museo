@@ -36,6 +36,28 @@
         "width": 213,
         "height": 165
       }
+    },
+    {
+      "id": "angelico-transito",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Fra_Angelico_-_The_Transit_of_the_Virgin_-_Google_Art_Project.jpg",
+      "title": "Tránsito de la Virgen",
+      "year": 1432,
+      "description": "Apóstoles rodean el lecho de la Virgen en una arquitectura renacentista luminosa. Fra Angelico traduce la devoción dominica en color claro y composición serena.",
+      "dimensions": {
+        "width": 213,
+        "height": 165
+      }
+    },
+    {
+      "id": "angelico-cosme-damian",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Fra_Angelico_-_Saints_Cosmas_and_Damian_-_Google_Art_Project.jpg",
+      "title": "San Cosme y San Damián",
+      "year": 1438,
+      "description": "Médicos santos en oración ante un paisaje toscano. Fra Angelico combina retrato devocional y perspectiva temprana con la calma espiritual de San Marco.",
+      "dimensions": {
+        "width": 38,
+        "height": 46
+      }
     }
   ]
 }

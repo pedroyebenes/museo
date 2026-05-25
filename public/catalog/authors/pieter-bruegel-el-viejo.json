@@ -1,0 +1,55 @@
+{
+  "id": "pieter-bruegel-el-viejo",
+  "name": "Pieter Bruegel el Viejo",
+  "category": "renacimiento-manierismo",
+  "fullName": "Pieter Bruegel",
+  "years": "c. 1525 – 1569",
+  "origin": "Breda o Breugel, Condado de Henao (Países Bajos)",
+  "bio": "Pintor flamenco de escenas campesinas, paisajes y alegorías morales. Bruegel observó el mundo rural y popular con ironía y detalle que convirtieron sus lienzos en crónicas visuales del siglo XVI.",
+  "paintings": [
+    {
+      "id": "bruegel-cazadores-nieve",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_-_Google_Art_Project.jpg",
+      "title": "Cazadores en la nieve",
+      "year": 1565,
+      "description": "Primera escena de la serie de los meses. Cazadores regresan en invierno mientras el valle nevado se extiende hacia un pueblo con patinadores sobre el hielo.",
+      "dimensions": {
+        "width": 117,
+        "height": 162
+      }
+    },
+    {
+      "id": "bruegel-torre-babel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project.jpg",
+      "title": "La torre de Babel",
+      "year": 1563,
+      "description": "Torre colosal inspirada en el Coliseo romano que se eleva sobre un puerto flamenco. Bruegel dramatiza la soberbia humana con arquitectura imposible y multitudes diminutas.",
+      "dimensions": {
+        "width": 114,
+        "height": 155
+      }
+    },
+    {
+      "id": "bruegel-boda-campesina",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Pieter_Bruegel_the_Elder_-_The_Peasant_Wedding_-_Google_Art_Project.jpg",
+      "title": "La boda campesina",
+      "year": 1567,
+      "description": "Banquete popular en un granero donde invitados comen, beben y conversan con naturalidad. Bruegel dignifica la vida campesina sin idealización ni condescendencia.",
+      "dimensions": {
+        "width": 114,
+        "height": 164
+      }
+    },
+    {
+      "id": "bruegel-caida-icaro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Pieter_Bruegel_the_Elder_-_Landscape_with_the_Fall_of_Icarus_-_Google_Art_Project.jpg",
+      "title": "Paisaje con la caída de Ícaro",
+      "year": 1560,
+      "description": "Pastor, arado y barca continúan su labor mientras Ícaro cae al mar casi invisible. Bruegel subvierte el mito clásico mostrando la indiferencia del mundo ante la tragedia individual.",
+      "dimensions": {
+        "width": 73,
+        "height": 112
+      }
+    }
+  ]
+}

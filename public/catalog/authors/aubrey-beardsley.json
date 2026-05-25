@@ -36,6 +36,28 @@
         "width": 23,
         "height": 18
       }
+    },
+    {
+      "id": "beardsley-salome",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Aubrey_Beardsley_-_Salome_-_Google_Art_Project.jpg",
+      "title": "Salomé",
+      "year": 1893,
+      "description": "Salomé en traje decorativo con motivos florales y arabescos negros. Beardsley define el art nouveau británico con línea pura y erotismo simbólico finisecular.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
+    },
+    {
+      "id": "beardsley-john-salome",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Aubrey_Beardsley_-_John_and_Salome_-_Google_Art_Project.jpg",
+      "title": "Juan y Salomé",
+      "year": 1893,
+      "description": "Ilustración para la Salomé de Wilde con figuras estilizadas y fondo blanco absoluto. Beardsley condensa teatro y decadencia en un dibujo de contornos extremos.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
     }
   ]
 }

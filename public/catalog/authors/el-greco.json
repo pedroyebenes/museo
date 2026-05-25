@@ -28,6 +28,28 @@
         "height": 109
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/El_Greco_View_of_Toledo.jpg"
+    },
+    {
+      "id": "greco-anunciacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/El_Greco_-_The_Annunciation_-_Google_Art_Project.jpg",
+      "title": "La Anunciación",
+      "year": 1576,
+      "description": "Arcángel Gabriel anuncia a la Virgen en un espacio vertical de color frío y figuras alargadas. El Greco adapta la tradición bizantina a la espiritualidad manierista toledana.",
+      "dimensions": {
+        "width": 114,
+        "height": 105
+      }
+    },
+    {
+      "id": "greco-apostoles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/El_Greco_-_The_Apostles_Peter_and_Paul_-_Google_Art_Project.jpg",
+      "title": "Los apóstoles Pedro y Pablo",
+      "year": 1592,
+      "description": "Dos fundadores de la Iglesia conversan con gestos enfáticos y rostros iluminados. El Greco dramatiza el encuentro teológico con su característico alargamiento y color incandescente.",
+      "dimensions": {
+        "width": 121,
+        "height": 105
+      }
     }
   ]
 }

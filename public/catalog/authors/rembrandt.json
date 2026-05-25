@@ -39,6 +39,28 @@
         "height": 279
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Rembrandt_-_De_Staalmeesters-_het_college_van_staalmeesters_%28waardijns%29_van_het_Amsterdamse_lakenbereidersgilde_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "rembrandt-novia-judia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rembrandt_-_The_Jewish_Bride_-_Google_Art_Project.jpg",
+      "title": "La novia judía",
+      "year": 1667,
+      "description": "Pareja en un abrazo tierno con pincelada espesa de oro y rojo. Rembrandt pinta el amor conyugal con una intimidad que trasciende el retrato convencional.",
+      "dimensions": {
+        "width": 121,
+        "height": 166
+      }
+    },
+    {
+      "id": "rembrandt-danae",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Rembrandt_-_Dana%C3%AB_-_Google_Art_Project.jpg",
+      "title": "Danae",
+      "year": 1636,
+      "description": "La princesa recibe a Zeus transformado en lluvia de oro. Rembrandt dramatiza el mito con luz dorada que inunda el lecho y una sensualidad barroca contenida.",
+      "dimensions": {
+        "width": 185,
+        "height": 203
+      }
     }
   ]
 }

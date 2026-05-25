@@ -39,6 +39,28 @@
         "width": 58,
         "height": 42
       }
+    },
+    {
+      "id": "degas-repeticion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Edgar_Degas_-_The_Rehearsal_of_the_Ballet_Onstage_-_Google_Art_Project.jpg",
+      "title": "Ensayo de ballet en escena",
+      "year": 1874,
+      "description": "Bailarinas ensayan en escena mientras figuras del teatro observan desde la oscuridad. Degas captura el instante casual del espectáculo con recortes audaces y pastel sobre monotipo.",
+      "dimensions": {
+        "width": 54,
+        "height": 73
+      }
+    },
+    {
+      "id": "degas-peinado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Edgar_Degas_-_Combing_the_Hair_-_Google_Art_Project.jpg",
+      "title": "Peinándose",
+      "year": 1888,
+      "description": "Mujer peina a otra en un interior íntimo de tonos rosados y ocres. Degas aplica pastel con crudeza casi escultórica en una escena de vida privada lejos del escenario.",
+      "dimensions": {
+        "width": 114,
+        "height": 146
+      }
     }
   ]
 }

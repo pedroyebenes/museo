@@ -1,0 +1,55 @@
+{
+  "id": "paul-gauguin",
+  "name": "Paul Gauguin",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Eugène Henri Paul Gauguin",
+  "years": "1848 – 1903",
+  "origin": "París, Francia",
+  "bio": "Broker parisino convertido en pintor postimpresionista que buscó en Bretaña y Tahití un color primitivo y simbólico. Su rechazo del naturalismo europeo abrió camino al modernismo del siglo XX.",
+  "paintings": [
+    {
+      "id": "gauguin-arearea",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Paul_Gauguin_-_Arearea_-_Google_Art_Project.jpg",
+      "title": "Arearea",
+      "year": 1892,
+      "description": "Dos mujeres tahitianas flanquean un perro rojo en un paisaje de templos y palmeras. Gauguin mezcla memoria europea y fantasía oceánica en uno de sus lienzos más celebrados de la primera estancia en Polinesia.",
+      "dimensions": {
+        "width": 75,
+        "height": 94
+      }
+    },
+    {
+      "id": "gauguin-vision-sermon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Paul_Gauguin_-_Vision_after_the_Sermon_-_Google_Art_Project.jpg",
+      "title": "Visión tras el sermón",
+      "year": 1888,
+      "description": "Bretonas en oración contemplan la lucha de Jacob con el ángel en un campo rojo. Gauguin separa lo visible de lo visionario con un tronco inclinado que actúa como umbral simbólico.",
+      "dimensions": {
+        "width": 73,
+        "height": 92
+      }
+    },
+    {
+      "id": "gauguin-cristo-amarillo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Paul_Gauguin_-_The_Yellow_Christ_-_Google_Art_Project.jpg",
+      "title": "El Cristo amarillo",
+      "year": 1889,
+      "description": "Cristo crucificado sobre un fondo amarillo intenso con campesinas bretonas al fondo. La simplificación formal y el color plano anticipan el simbolismo y el primitivismo moderno.",
+      "dimensions": {
+        "width": 92,
+        "height": 73
+      }
+    },
+    {
+      "id": "gauguin-mujeres-tahiti",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Paul_Gauguin_-_Two_Tahitian_Women_-_Google_Art_Project.jpg",
+      "title": "Dos mujeres tahitianas",
+      "year": 1899,
+      "description": "Figuras majestuosas sostienen frutos tropicales ante un paisaje exótico. Gauguin idealiza la vida insular mientras incorpora referencias a la escultura maorí y al color puro.",
+      "dimensions": {
+        "width": 94,
+        "height": 72
+      }
+    }
+  ]
+}

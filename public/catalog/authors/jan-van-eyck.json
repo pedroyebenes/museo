@@ -39,6 +39,28 @@
         "width": 66,
         "height": 60
       }
+    },
+    {
+      "id": "van-eyck-madonna-fuente",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Jan_van_Eyck_-_Madonna_at_the_Fountain_-_Google_Art_Project.jpg",
+      "title": "Madonna de la fuente",
+      "year": 1439,
+      "description": "Virgen con el Niño junto a una fuente gótica en un jardín cerrado. Van Eyck combina simbolismo mariano y detalle flamenco minucioso en un panel devocional de formato vertical.",
+      "dimensions": {
+        "width": 19,
+        "height": 13
+      }
+    },
+    {
+      "id": "van-eyck-adoracion-cordero",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Jan_van_Eyck_-_The_Ghent_Altarpiece_-_Google_Art_Project.jpg",
+      "title": "La adoración del Cordero místico",
+      "year": 1432,
+      "description": "Panel central del retablo de Gante con multitudes adorando al Cordero sobre un altar. Obra cumbre del primitivo flamenco que Van Eyck ejecutó con su taller.",
+      "dimensions": {
+        "width": 461,
+        "height": 350
+      }
     }
   ]
 }

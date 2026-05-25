@@ -25,6 +25,28 @@
         "width": 18.8,
         "height": 24.1
       }
+    },
+    {
+      "id": "durero-adam-eva",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Albrecht_D%C3%BCrer_-_Adam_and_Eve_-_Google_Art_Project.jpg",
+      "title": "Adán y Eva",
+      "year": 1507,
+      "description": "Primeros padres en simetría perfecta ante un bosque habitado por animales simbólicos. Durero sintetiza proporción renacentista italiana y minuciosidad nórdica en un desnudo ideal.",
+      "dimensions": {
+        "width": 209,
+        "height": 81
+      }
+    },
+    {
+      "id": "durero-caballero-muerte",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Albrecht_D%C3%BCrer_-_Knight%2C_Death_and_the_Devil_-_Google_Art_Project.jpg",
+      "title": "Caballero, la Muerte y el Diablo",
+      "year": 1513,
+      "description": "Grabado donde un caballero avanza impasible entre la muerte esquelética y un demonio. Alegoría moral de la virtud cristiana frente a la tentación y la mortalidad.",
+      "dimensions": {
+        "width": 24,
+        "height": 19
+      }
     }
   ]
 }

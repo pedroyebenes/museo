@@ -36,6 +36,28 @@
         "width": 189,
         "height": 241
       }
+    },
+    {
+      "id": "ingres-napoleon-trono",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Jean_Auguste_Dominique_Ingres_-_Napoleon_on_his_Imperial_throne_-_Google_Art_Project.jpg",
+      "title": "Napoleón en su trono imperial",
+      "year": 1806,
+      "description": "El emperador en trono dorado con gesto hierático y ropajes imperiales. Ingres fija la imagen del poder napoleónico con rigor neoclásico y detalle miniaturístico.",
+      "dimensions": {
+        "width": 259,
+        "height": 162
+      }
+    },
+    {
+      "id": "ingres-banio-turco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Jean_Auguste_Dominique_Ingres_-_The_Turkish_Bath_-_Google_Art_Project.jpg",
+      "title": "El baño turco",
+      "year": 1862,
+      "description": "Desnudos femeninos en un hammam circular vistos desde arriba. Obra tardía donde Ingres condensa orientalismo, erotismo académico y virtuosismo lineal.",
+      "dimensions": {
+        "width": 108,
+        "height": 108
+      }
     }
   ]
 }

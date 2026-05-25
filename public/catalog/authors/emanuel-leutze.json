@@ -36,6 +36,28 @@
         "width": 130,
         "height": 97
       }
+    },
+    {
+      "id": "leutze-columbus-landing",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Emanuel_Leutze_-_Landing_of_Columbus_-_Google_Art_Project.jpg",
+      "title": "Desembarco de Colón",
+      "year": 1847,
+      "description": "Colón planta la cruz en América mientras marinos e indígenas observan. Leutze dramatiza el encuentro histórico con retórica romántica y escala monumental.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "leutze-hudson",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Emanuel_Leutze_-_The_Settlement_on_the_Hudson_-_Google_Art_Project.jpg",
+      "title": "Asentamiento en el Hudson",
+      "year": 1862,
+      "description": "Colonos y navegantes fundan un poblado a orillas del río Hudson. Leutze celebra la expansión americana con figuras alegóricas y paisaje romántico.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
     }
   ]
 }
