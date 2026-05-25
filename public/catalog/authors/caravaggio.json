@@ -13,10 +13,10 @@
       "year": 1600,
       "description": "En la capilla Contarelli de San Luis de los Franceses, Cristo señala a Mateo entre recaudadores y taverneros. Un rayo de luz atraviesa la oscuridad y convierte una escena cotidiana en revelación barroca.",
       "dimensions": {
-        "width": 340,
-        "height": 322
+        "width": 322,
+        "height": 340
       },
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Calling_of_Saint_Matthew-Caravaggo_(1599-1600).jpg"
     },
     {
       "id": "caravaggio-david-goliat",
@@ -24,10 +24,10 @@
       "year": 1610,
       "description": "David sostiene la cabeza del gigante —con rasgos del propio pintor— en una reflexión sobre la violencia y la redención. Obra tardía de su estancia en Nápoles.",
       "dimensions": {
-        "width": 125,
-        "height": 101
+        "width": 101,
+        "height": 125
       },
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/David_with_the_Head_of_Goliath-Caravaggio_%281610%29.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/David_with_the_Head_of_Goliath-Caravaggio_(1610).jpg"
     },
     {
       "id": "caravaggio-baco",
@@ -38,7 +38,7 @@
         "width": 85,
         "height": 95
       },
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bacchus-Caravaggio_%281598%29.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bacchus-Caravaggio_(1598).jpg"
     },
     {
       "id": "caravaggio-judith-holofernes",

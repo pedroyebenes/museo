@@ -13,8 +13,8 @@
       "year": 1814,
       "description": "Conmemora los fusilamientos de patriotas madrileños tras la sublevación del dos de mayo. La linterna concentra la luz sobre las víctimas y convierte el horror en símbolo universal de la resistencia civil.",
       "dimensions": {
-        "width": 266,
-        "height": 345
+        "width": 345,
+        "height": 266
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/El_tres_de_mayo_de_1808_en_Madrid.jpg"
     },
@@ -38,7 +38,7 @@
         "width": 15,
         "height": 22
       },
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_sleep_of_reason_produces_monsters_%28No._43%29%2C_from_Los_Caprichos_-_Google_Art_Project.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_sleep_of_reason_produces_monsters_(No._43)%2C_from_Los_Caprichos_-_Google_Art_Project.jpg"
     },
     {
       "id": "goya-saturno",
@@ -49,7 +49,7 @@
         "width": 81,
         "height": 143
       },
-      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_(1819-1823).jpg"
     },
     {
       "id": "francisco-de-goya-la-familia-de-carlos-iv",
@@ -64,7 +64,7 @@
     },
     {
       "id": "goya-maja-vestida",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Maja_vestida_%28Prado%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Maja_vestida_(Prado).jpg",
       "title": "La maja vestida",
       "year": 1800,
       "description": "Pareja de La maja desnuda, muestra a la misma figura reclinada con traje popular y mirada directa. La obra combina sensualidad, retrato cortesano y ambigüedad social en torno al Madrid de finales del siglo XVIII.",
@@ -102,8 +102,8 @@
       "year": 1814,
       "description": "Goya conmemora la sublevación popular madrileña contra las tropas napoleónicas con una escena caótica de lucha cuerpo a cuerpo en la Puerta del Sol.",
       "dimensions": {
-        "width": 268,
-        "height": 347
+        "width": 347,
+        "height": 268
       }
     }
   ]

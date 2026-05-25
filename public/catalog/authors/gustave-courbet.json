@@ -25,8 +25,8 @@
       "year": 1849,
       "description": "Funeral campesino en escala histórica que elevó la vida rural a tema digno de gran lienzo. Courbet desafió la jerarquía académica de géneros con una escena provincial sin héroes ni pathos retórico.",
       "dimensions": {
-        "width": 315,
-        "height": 668
+        "width": 668,
+        "height": 315
       }
     },
     {
@@ -58,8 +58,8 @@
       "year": 1870,
       "description": "Mar embravecido que ocupa casi todo el lienzo con espuma y roca oscura. Courbet pinta la naturaleza con fuerza materialista, sin romanticismo decorativo.",
       "dimensions": {
-        "width": 66,
-        "height": 90
+        "width": 90,
+        "height": 66
       }
     }
   ]

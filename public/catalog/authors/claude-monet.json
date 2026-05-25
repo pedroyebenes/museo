@@ -36,19 +36,19 @@
       "year": 1875,
       "description": "Retrato al aire libre de Camille y Jean Monet, esposa e hijo del pintor. La pincelada suelta y el contraluz capturan la brisa y la luz del momento.",
       "dimensions": {
-        "width": 100,
-        "height": 81
+        "width": 81,
+        "height": 100
       }
     },
     {
       "id": "monet-catedral-rouen",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Claude_Monet_-_Rouen_Cathedral%2C_Facade_%28Sunset%29.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Claude_Monet_-_Rouen_Cathedral%2C_Facade_(Sunset).JPG",
       "title": "La catedral de Rouen, fachada (atardecer)",
       "year": 1894,
       "description": "De la serie en la que Monet pintó la misma fachada gótica a diferentes horas y estaciones para estudiar cómo la luz transforma la materia.",
       "dimensions": {
-        "width": 100.1,
-        "height": 65
+        "width": 65,
+        "height": 100.1
       }
     },
     {
@@ -69,8 +69,8 @@
       "year": 1873,
       "description": "Vista desde el estudio de Nadar sobre uno de los bulevares haussmannianos de París. Multitudes y banderas sugieren la vida urbana moderna que el impresionismo acaba de descubrir.",
       "dimensions": {
-        "width": 80,
-        "height": 60
+        "width": 60,
+        "height": 80
       }
     },
     {
@@ -113,8 +113,8 @@
       "year": 1873,
       "description": "Camille y Jean Monet caminan entre amapolas rojas cerca de Argenteuil. Paisaje impresionista por excelencia: color puro, luz abierta y figuras integradas en el campo.",
       "dimensions": {
-        "width": 50,
-        "height": 65
+        "width": 65,
+        "height": 50
       }
     },
     {
