@@ -17,6 +17,39 @@
         "height": 500
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/The_School_of_Athens-Vatican.jpg"
+    },
+    {
+      "id": "rafael-la-belle-jardiniere",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphael_-_La_belle_jardini%C3%A8re.jpg",
+      "title": "La Belle Jardinière",
+      "year": 1507,
+      "description": "La Virgen, el Niño y san Juan Bautista aparecen en un paisaje claro y ordenado. Rafael equilibra naturalidad afectiva, armonía compositiva y devoción serena.",
+      "dimensions": {
+        "width": 80,
+        "height": 122
+      }
+    },
+    {
+      "id": "rafael-la-disputa-del-sacramento",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Disputation_of_the_Holy_Sacrament_(Rafael).jpg",
+      "title": "La disputa del Sacramento",
+      "year": 1509,
+      "description": "Fresco de la Stanza della Segnatura que organiza cielo y tierra alrededor de la Eucaristía. La composición presenta la teología cristiana como un orden visual claro y jerárquico.",
+      "dimensions": {
+        "width": 770,
+        "height": 500
+      }
+    },
+    {
+      "id": "rafael-el-parnaso",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raffael_073.jpg",
+      "title": "El Parnaso",
+      "year": 1509,
+      "description": "Apolo, las musas y poetas antiguos y modernos ocupan el monte sagrado de la poesía. Rafael integra cultura clásica y humanismo renacentista en una escena de equilibrio ideal.",
+      "dimensions": {
+        "width": 670,
+        "height": 450
+      }
     }
   ]
 }

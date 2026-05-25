@@ -1,0 +1,19 @@
+{
+  "id": "aubrey-beardsley",
+  "name": "Aubrey Beardsley",
+  "category": "simbolismo-modernismo-naif",
+  "bio": "Dibujante e ilustrador británico asociado al modernismo y al decadentismo. Su estilo de líneas negras, siluetas planas y erotismo sugerido definió una estética fin de siglo.",
+  "paintings": [
+    {
+      "id": "aubrey-beardsley-the-peacock-skirt",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aubrey_Beardsley_-_The_Peacock_Skirt.jpg",
+      "title": "The Peacock Skirt",
+      "year": 1893,
+      "description": "Ilustración de líneas sinuosas y fuertes contrastes en blanco y negro. Beardsley transforma el motivo decorativo en una imagen elegante, teatral y cargada de ambigüedad.",
+      "dimensions": {
+        "width": 16,
+        "height": 22.5
+      }
+    }
+  ]
+}

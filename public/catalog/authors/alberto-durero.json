@@ -1,0 +1,30 @@
+{
+  "id": "alberto-durero",
+  "name": "Alberto Durero",
+  "category": "renacimiento-manierismo",
+  "bio": "Pintor y grabador alemán que integró el detalle nórdico con la teoría artística italiana. Sus autorretratos, estampas y estudios elevaron el prestigio intelectual del artista.",
+  "paintings": [
+    {
+      "id": "alberto-durero-autorretrato-con-pelliza",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht_D%C3%BCrer_-_Self-Portrait_-_WGA07321.jpg",
+      "title": "Autorretrato con pelliza",
+      "year": 1500,
+      "description": "Durero se representa de frente, con una presencia solemne reservada tradicionalmente a imágenes sagradas. El retrato afirma la dignidad intelectual y espiritual del artista.",
+      "dimensions": {
+        "width": 48.9,
+        "height": 67.1
+      }
+    },
+    {
+      "id": "alberto-durero-melencolia-i",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Albrecht_D%C3%BCrer_-_Melencolia_I_-_Google_Art_Project.jpg",
+      "title": "Melencolia I",
+      "year": 1514,
+      "description": "Figura alada rodeada de instrumentos, formas geométricas y objetos de medición. La estampa medita sobre el conocimiento, la creación artística y los límites de la razón humana.",
+      "dimensions": {
+        "width": 18.8,
+        "height": 24.1
+      }
+    }
+  ]
+}

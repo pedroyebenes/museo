@@ -12,7 +12,13 @@
         "rafael",
         "tiziano",
         "paolo-veronese",
-        "el-greco"
+        "el-greco",
+        "el-bosco",
+        "rogier-van-der-weyden",
+        "fra-angelico",
+        "alberto-durero",
+        "pietro-perugino",
+        "melozzo-da-forli"
       ]
     },
     {
@@ -26,7 +32,9 @@
         "francisco-de-zurbaran",
         "rembrandt",
         "bartolome-esteban-murillo",
-        "johannes-vermeer"
+        "johannes-vermeer",
+        "nicolas-poussin",
+        "antoine-watteau"
       ]
     },
     {
@@ -36,7 +44,11 @@
       "authors": [
         "jacques-louis-david",
         "francisco-de-goya",
-        "eugene-delacroix"
+        "eugene-delacroix",
+        "theodore-gericault",
+        "jean-auguste-dominique-ingres",
+        "emanuel-leutze",
+        "william-blake"
       ]
     },
     {
@@ -44,7 +56,8 @@
       "label": "Arte japonés",
       "description": "Ukiyo-e y estampa japonesa, con su influencia decisiva en la mirada europea del siglo XIX.",
       "authors": [
-        "katsushika-hokusai"
+        "katsushika-hokusai",
+        "utagawa-hiroshige"
       ]
     },
     {
@@ -58,7 +71,10 @@
         "mary-cassatt",
         "joaquin-sorolla",
         "paul-cezanne",
-        "vincent-van-gogh"
+        "vincent-van-gogh",
+        "john-singer-sargent",
+        "winslow-homer",
+        "edouard-manet"
       ]
     },
     {
@@ -69,7 +85,8 @@
         "edvard-munch",
         "odilon-redon",
         "henri-rousseau",
-        "gustav-klimt"
+        "gustav-klimt",
+        "aubrey-beardsley"
       ]
     }
   ]

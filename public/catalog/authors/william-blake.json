@@ -1,0 +1,19 @@
+{
+  "id": "william-blake",
+  "name": "William Blake",
+  "category": "neoclasicismo-romanticismo",
+  "bio": "Artista, poeta y grabador británico de imaginación visionaria. Su obra une mito, religión y crítica moral en imágenes de gran intensidad simbólica.",
+  "paintings": [
+    {
+      "id": "william-blake-the-ancient-of-days",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Europe_a_Prophecy_copy_K_plate_1.jpg",
+      "title": "The Ancient of Days",
+      "year": 1794,
+      "description": "Una figura divina se inclina desde una esfera luminosa para medir el mundo con un compás. Blake representa la creación como acto visionario de orden, energía y poder simbólico.",
+      "dimensions": {
+        "width": 16.8,
+        "height": 23.3
+      }
+    }
+  ]
+}

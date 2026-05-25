@@ -1,0 +1,19 @@
+{
+  "id": "winslow-homer",
+  "name": "Winslow Homer",
+  "category": "impresionismo-postimpresionismo",
+  "bio": "Pintor estadounidense atento al mar, el trabajo y la vida moderna. Su lenguaje directo combina observación realista, tensión narrativa y una poderosa sensación atmosférica.",
+  "paintings": [
+    {
+      "id": "winslow-homer-the-gulf-stream",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Winslow_Homer_-_The_Gulf_Stream_-_Metropolitan_Museum_of_Art.jpg",
+      "title": "The Gulf Stream",
+      "year": 1899,
+      "description": "Un hombre permanece a la deriva en una barca dañada, rodeado por el mar y amenazas visibles. Homer concentra la escena en la resistencia humana frente a una naturaleza indiferente.",
+      "dimensions": {
+        "width": 124.8,
+        "height": 71.4
+      }
+    }
+  ]
+}

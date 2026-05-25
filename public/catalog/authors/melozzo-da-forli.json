@@ -1,0 +1,19 @@
+{
+  "id": "melozzo-da-forli",
+  "name": "Melozzo da Forlì",
+  "category": "renacimiento-manierismo",
+  "bio": "Pintor italiano especializado en perspectiva y escorzos monumentales. Trabajó en Roma y ayudó a definir una imagen solemne del poder papal.",
+  "paintings": [
+    {
+      "id": "melozzo-da-forli-sixto-iv-nombra-a-bartolomeo-plat",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Melozzo_da_Forli,_Pope_Sixtus_IV_Appointing_Bartolomeo_Platina_to_the_Prefectory_of_the_Vatican_Library,_1477.jpg",
+      "title": "Sixto IV nombra a Bartolomeo Platina prefecto de la Biblioteca Vaticana",
+      "year": 1477,
+      "description": "Escena cortesana que presenta al papa rodeado de familiares y humanistas. La pintura celebra el poder pontificio mediante retrato, arquitectura y ceremonia.",
+      "dimensions": {
+        "width": 315,
+        "height": 370
+      }
+    }
+  ]
+}

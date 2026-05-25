@@ -28,6 +28,17 @@
         "height": 190
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29_02.jpg"
+    },
+    {
+      "id": "leonardo-da-vinci-santa-ana-la-virgen-y-el-nino",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo_da_Vinci_-_Virgin_and_Child_with_St_Anne_C2RMF_retouched.jpg",
+      "title": "Santa Ana, la Virgen y el Niño",
+      "year": 1503,
+      "description": "Grupo familiar de composición piramidal, unido por gestos suaves y miradas cruzadas. Leonardo integra ternura doméstica, simbolismo religioso y un paisaje de profundidad atmosférica.",
+      "dimensions": {
+        "width": 130,
+        "height": 168.4
+      }
     }
   ]
 }

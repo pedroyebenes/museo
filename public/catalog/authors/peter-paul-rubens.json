@@ -17,6 +17,17 @@
         "height": 261
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Peter_Paul_Rubens_-_Descent_from_the_Cross_-_WGA20212.jpg"
+    },
+    {
+      "id": "peter-paul-rubens-las-tres-gracias",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Three_Graces,_by_Peter_Paul_Rubens,_from_Prado_in_Google_Earth.jpg",
+      "title": "Las tres Gracias",
+      "year": 1630,
+      "description": "Las diosas aparecen enlazadas en una composición circular de cuerpos luminosos. Rubens celebra la abundancia, la sensualidad y el ideal barroco de belleza viva.",
+      "dimensions": {
+        "width": 182,
+        "height": 220.5
+      }
     }
   ]
 }

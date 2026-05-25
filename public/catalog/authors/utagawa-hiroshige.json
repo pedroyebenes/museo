@@ -1,0 +1,19 @@
+{
+  "id": "utagawa-hiroshige",
+  "name": "Utagawa Hiroshige",
+  "category": "arte-japones",
+  "bio": "Maestro japonés del ukiyo-e, célebre por sus paisajes, lluvias, caminos y vistas urbanas. Su uso del encuadre y del clima influyó profundamente en el arte europeo del siglo XIX.",
+  "paintings": [
+    {
+      "id": "utagawa-hiroshige-lluvia-repentina-sobre-el-puente",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%E5%90%8D%E6%89%80%E6%B1%9F%E6%88%B8%E7%99%BE%E6%99%AF_%E5%A4%A7%E3%81%AF%E3%81%97%E3%81%82%E3%81%9F%E3%81%91%E3%81%AE%E5%A4%95%E7%AB%8B.jpg",
+      "title": "Lluvia repentina sobre el puente Shin-Ōhashi y Atake",
+      "year": 1857,
+      "description": "La lluvia cae en líneas oblicuas sobre un puente recorrido por figuras apresuradas. Hiroshige convierte un instante meteorológico en una composición de ritmo, encuadre y atmósfera urbana.",
+      "dimensions": {
+        "width": 22.2,
+        "height": 33.7
+      }
+    }
+  ]
+}

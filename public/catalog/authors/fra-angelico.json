@@ -1,0 +1,19 @@
+{
+  "id": "fra-angelico",
+  "name": "Fra Angelico",
+  "category": "renacimiento-manierismo",
+  "bio": "Pintor dominico del primer Renacimiento italiano. Unió claridad espacial, color delicado y espiritualidad serena en frescos y retablos religiosos.",
+  "paintings": [
+    {
+      "id": "fra-angelico-la-anunciacion",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Anunciaci%C3%B3n,_by_Fra_Angelico,_from_Prado_in_Google_Earth.jpg",
+      "title": "La Anunciación",
+      "year": 1425,
+      "description": "El arcángel Gabriel se presenta ante María en un pórtico limpio y silencioso. La escena une perspectiva temprana, color delicado y recogimiento espiritual.",
+      "dimensions": {
+        "width": 194,
+        "height": 194
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "emanuel-leutze",
+  "name": "Emanuel Leutze",
+  "category": "neoclasicismo-romanticismo",
+  "bio": "Pintor germano-estadounidense de historia, conocido por imágenes patrióticas de gran formato. Su obra convirtió episodios políticos en escenas heroicas de alcance popular.",
+  "paintings": [
+    {
+      "id": "emanuel-leutze-washington-cruzando-el-delaware",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Emanuel_Leutze,_Washington_Crossing_the_Delaware,_1851.jpg",
+      "title": "Washington cruzando el Delaware",
+      "year": 1851,
+      "description": "Washington aparece de pie en una barca durante una operación decisiva de la Guerra de Independencia. La escena convierte un episodio militar en icono heroico de determinación nacional.",
+      "dimensions": {
+        "width": 647.7,
+        "height": 378.5
+      }
+    }
+  ]
+}

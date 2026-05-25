@@ -17,6 +17,17 @@
         "width": 279.1,
         "height": 320.3
       }
+    },
+    {
+      "id": "diego-velazquez-la-rendicion-de-breda",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Vel%C3%A1zquez_-_de_Breda_o_Las_Lanzas_%28Museo_del_Prado%2C_1634-35%29.jpg",
+      "title": "La rendición de Breda",
+      "year": 1634,
+      "description": "La entrega de las llaves se muestra como un gesto de cortesía entre vencedores y vencidos. Velázquez evita el triunfalismo y convierte la escena militar en una reflexión sobre honor y humanidad.",
+      "dimensions": {
+        "width": 371.5,
+        "height": 307.3
+      }
     }
   ]
 }

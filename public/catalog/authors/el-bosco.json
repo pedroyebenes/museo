@@ -1,0 +1,19 @@
+{
+  "id": "el-bosco",
+  "name": "El Bosco",
+  "category": "renacimiento-manierismo",
+  "bio": "Pintor neerlandés de imaginación moral y visionaria. Sus trípticos combinan devoción, sátira y fantasía para representar la fragilidad humana ante el pecado.",
+  "paintings": [
+    {
+      "id": "el-bosco-el-jardin-de-las-delicias",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
+      "title": "El jardín de las delicias",
+      "year": 1490,
+      "description": "Tríptico que pasa del paraíso a los placeres humanos y al castigo infernal. Su acumulación de figuras y episodios ofrece una visión moral del deseo, la fragilidad y la condena.",
+      "dimensions": {
+        "width": 384.9,
+        "height": 205.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "jean-auguste-dominique-ingres",
+  "name": "Jean-Auguste-Dominique Ingres",
+  "category": "neoclasicismo-romanticismo",
+  "bio": "Pintor francés formado en el ideal clásico, célebre por sus retratos y desnudos de línea precisa. Su obra combina rigor académico, sensualidad y una relación libre con la anatomía.",
+  "paintings": [
+    {
+      "id": "jean-auguste-dominique-ingres-la-gran-odalisca",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Auguste_Dominique_Ingres,_La_Grande_Odalisque,_1814.jpg",
+      "title": "La gran odalisca",
+      "year": 1814,
+      "description": "Desnudo orientalista construido con una línea elegante y una anatomía deliberadamente alargada. La obra combina ideal clásico, exotismo y distancia sensual.",
+      "dimensions": {
+        "width": 162,
+        "height": 91
+      }
+    }
+  ]
+}

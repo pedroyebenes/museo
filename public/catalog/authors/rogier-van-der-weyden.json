@@ -1,0 +1,19 @@
+{
+  "id": "rogier-van-der-weyden",
+  "name": "Rogier van der Weyden",
+  "category": "renacimiento-manierismo",
+  "bio": "Maestro flamenco del siglo XV, conocido por su intensidad emocional y su precisión técnica. Sus figuras convierten los temas religiosos en escenas de duelo cercano.",
+  "paintings": [
+    {
+      "id": "rogier-van-der-weyden-el-descendimiento",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Descendimiento,_by_Rogier_van_der_Weyden,_from_Prado_in_Google_Earth.jpg",
+      "title": "El descendimiento",
+      "year": 1435,
+      "description": "Cristo es bajado de la cruz ante un grupo de figuras comprimidas en un espacio casi escultórico. El dolor se expresa mediante gestos precisos, rostros tensos y una composición de gran intensidad emocional.",
+      "dimensions": {
+        "width": 262,
+        "height": 220
+      }
+    }
+  ]
+}

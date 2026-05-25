@@ -1,0 +1,19 @@
+{
+  "id": "pietro-perugino",
+  "name": "Pietro Perugino",
+  "category": "renacimiento-manierismo",
+  "bio": "Pintor italiano del Quattrocento, maestro de composiciones equilibradas y perspectivas claras. Su lenguaje sereno influyó directamente en Rafael.",
+  "paintings": [
+    {
+      "id": "pietro-perugino-entrega-de-las-llaves-a-san-pedro",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg",
+      "title": "Entrega de las llaves a san Pedro",
+      "year": 1481,
+      "description": "Cristo entrega a san Pedro las llaves de la Iglesia ante una plaza de perspectiva rigurosa. La escena combina doctrina, orden arquitectónico y serenidad narrativa.",
+      "dimensions": {
+        "width": 550,
+        "height": 335
+      }
+    }
+  ]
+}
