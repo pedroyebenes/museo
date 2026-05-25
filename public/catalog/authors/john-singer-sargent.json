@@ -14,6 +14,28 @@
         "width": 109.9,
         "height": 234.9
       }
+    },
+    {
+      "id": "sargent-carnacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/John_Singer_Sargent_-_Carnation%2C_Lily%2C_Lily%2C_Rose_-_Google_Art_Project.jpg",
+      "title": "Clavel, lirio, lirio, rosa",
+      "year": 1885,
+      "description": "Dos niñas encendiendo linternas entre flores al crepúsculo. Sargent captura la hora azul con pinceladas sugerentes inspiradas en el impresionismo.",
+      "dimensions": {
+        "width": 174,
+        "height": 154
+      }
+    },
+    {
+      "id": "sargent-hijas-boitt",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/John_Singer_Sargent_-_The_Daughters_of_Edward_Darley_Boitt_-_Google_Art_Project.jpg",
+      "title": "Las hijas de Edward Darley Boit",
+      "year": 1882,
+      "description": "Cuatro hermanas en un salón lujoso de París, dos en primer plano y dos perdidas en la penumbra. Retrato de grupo que equilibra intimidad familiar y distancia psicológica.",
+      "dimensions": {
+        "width": 222,
+        "height": 222
+      }
     }
   ]
 }

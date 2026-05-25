@@ -17,6 +17,17 @@
         "height": 131
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Pierre-Auguste_Renoir%2C_Le_Moulin_de_la_Galette.jpg"
+    },
+    {
+      "id": "renoir-remando",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg",
+      "title": "Almuerzo de los remeros",
+      "year": 1881,
+      "description": "Comida en la terraza del restaurante Maison Fournaise en Chatou. Renoir combina retrato, paisaje y escena de ocio con una luz festiva sobre el Sena.",
+      "dimensions": {
+        "width": 129,
+        "height": 172
+      }
     }
   ]
 }

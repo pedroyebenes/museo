@@ -94,6 +94,17 @@
         "width": 79,
         "height": 131
       }
+    },
+    {
+      "id": "goya-dos-mayo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/El_dos_de_mayo_de_1808_en_Madrid.jpg",
+      "title": "El dos de mayo de 1808 en Madrid",
+      "year": 1814,
+      "description": "Goya conmemora la sublevación popular madrileña contra las tropas napoleónicas con una escena caótica de lucha cuerpo a cuerpo en la Puerta del Sol.",
+      "dimensions": {
+        "width": 268,
+        "height": 347
+      }
     }
   ]
 }

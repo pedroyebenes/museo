@@ -17,6 +17,17 @@
         "height": 169
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Francisco_de_Zurbar%C3%A1n_-_Santa_Casilda.jpg"
+    },
+    {
+      "id": "zurbaran-agno-dios",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Francisco_de_Zurbar%C3%A1n_-_Agnus_Dei_-_Google_Art_Project.jpg",
+      "title": "Agnus Dei",
+      "year": 1635,
+      "description": "Cordero atado sobre un altar oscuro, símbolo del sacrificio cristo. Zurbarán convierte un bodegón animal en meditación sobria de fe barroca española.",
+      "dimensions": {
+        "width": 38,
+        "height": 62
+      }
     }
   ]
 }

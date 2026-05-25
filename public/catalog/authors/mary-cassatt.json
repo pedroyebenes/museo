@@ -22,6 +22,28 @@
       "movement": "Impresionismo",
       "imageLicense": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Cassatt_-_The_Child%27s_Bath_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "cassatt-te",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Mary_Cassatt_-_The_Tea_-_Google_Art_Project.jpg",
+      "title": "La merienda",
+      "year": 1880,
+      "description": "Dos mujeres burguesas compartiendo té en un interior elegante. Cassatt observa la vida femenina moderna con la misma atención psicológica que Degas dedicaba al ballet.",
+      "dimensions": {
+        "width": 64,
+        "height": 91
+      }
+    },
+    {
+      "id": "cassatt-jardin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Mary_Cassatt_-_Children_in_a_Garden_-_Google_Art_Project.jpg",
+      "title": "Niños en un jardín",
+      "year": 1878,
+      "description": "Niños jugando entre flores en un jardín suburbano. Cassatt traduce la infancia moderna con color claro y composición influenciada por el impresionismo y el ukiyo-e.",
+      "dimensions": {
+        "width": 92,
+        "height": 65
+      }
     }
   ]
 }

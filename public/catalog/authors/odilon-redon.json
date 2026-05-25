@@ -22,6 +22,28 @@
       "movement": "Simbolismo",
       "imageLicense": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_The_Cyclops,_c._1914.jpg"
+    },
+    {
+      "id": "redon-barco-flores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Odilon_Redon_-_The_Boat_with_Two_Crows_-_Google_Art_Project.jpg",
+      "title": "Barco con dos cuervos",
+      "year": 1900,
+      "description": "Embarcación fantasmal surcando un mar de flores bajo un cielo rosado. Redon sitúa la imaginación simbolista por encima de la descripción naturalista.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "redon-apolo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Odilon_Redon_-_Apollo's_Chariot_-_Google_Art_Project.jpg",
+      "title": "El carro de Apolo",
+      "year": 1912,
+      "description": "Dios solar surcando un cielo de color pastel entre nubes doradas. Redon transforma la mitología clásica en un sueño luminoso de formas flotantes.",
+      "dimensions": {
+        "width": 80,
+        "height": 60
+      }
     }
   ]
 }

@@ -14,6 +14,28 @@
         "width": 315,
         "height": 370
       }
+    },
+    {
+      "id": "melozzo-angeles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Melozzo_da_Forl%C3%AC_-_Angels_with_the_Viol_and_Lute_-_Google_Art_Project.jpg",
+      "title": "Ángeles con viola y laúd",
+      "year": 1480,
+      "description": "Fragmento de un fresco con ángeles músicos vistos desde abajo. Melozzo anticipa el escorzo barroco en una celestía de movimiento y gracia.",
+      "dimensions": {
+        "width": 222,
+        "height": 200
+      }
+    },
+    {
+      "id": "melozzo-cristo-templo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Melozzo_da_Forl%C3%AC_-_Christ_in_the_Temple_-_Google_Art_Project.jpg",
+      "title": "Cristo en el templo",
+      "year": 1482,
+      "description": "Disputa del joven Jesús con los doctores en un interior arquitectónico. Melozzo organiza la escena con claridad narrativa y figuras en escorzo.",
+      "dimensions": {
+        "width": 280,
+        "height": 250
+      }
     }
   ]
 }

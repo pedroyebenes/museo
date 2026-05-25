@@ -17,6 +17,28 @@
         "width": 73,
         "height": 91
       }
+    },
+    {
+      "id": "munch-madonna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Edvard_Munch_-_Madonna_-_Google_Art_Project.jpg",
+      "title": "Madonna",
+      "year": 1894,
+      "description": "Desnudo femenino de torso envuelto en ondas de color con un feto en la esquina. Munch explora deseo, maternidad y mortalidad con simbolismo provocador.",
+      "dimensions": {
+        "width": 90,
+        "height": 70
+      }
+    },
+    {
+      "id": "munch-vida",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Edvard_Munch_-_The_Dance_of_Life_-_Google_Art_Project.jpg",
+      "title": "La danza de la vida",
+      "year": 1899,
+      "description": "Parejas bailan en una orilla nocturna mientras una figura vestida de blanco y otra de negro enmarcan la escena. Munch condensa el ciclo del deseo, la juventud y la vejez en un paisaje simbólico.",
+      "dimensions": {
+        "width": 125,
+        "height": 191
+      }
     }
   ]
 }

@@ -14,6 +14,28 @@
         "width": 550,
         "height": 335
       }
+    },
+    {
+      "id": "perugino-entrega-llaves",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Pietro_Perugino_-_Delivery_of_the_Keys_-_Google_Art_Project.jpg",
+      "title": "La entrega de las llaves a San Pedro",
+      "year": 1482,
+      "description": "Cristo entrega las llaves a Pedro en una plaza perspectiva flanqueada por arquitectura. Perugino establece el modelo compositivo que Rafael perfeccionará después.",
+      "dimensions": {
+        "width": 330,
+        "height": 550
+      }
+    },
+    {
+      "id": "perugino-madonna-collegio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Pietro_Perugino_-_Madonna_with_Child_Enthroned_with_Saints_-_Google_Art_Project.jpg",
+      "title": "Madonna con el Niño entronizada con santos",
+      "year": 1493,
+      "description": "Sacra conversazione en un paisaje apacible con santos laterales. Perugino equilibra devoción y armonía renacentista en su madurez umbria.",
+      "dimensions": {
+        "width": 178,
+        "height": 163
+      }
     }
   ]
 }

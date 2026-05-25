@@ -17,6 +17,28 @@
         "height": 75
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Edgar_Degas_-_The_Ballet_Class_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "degas-absenta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Edgar_Degas_-_In_a_Caf%C3%A9_(The_Absinthe_Drinker)_-_Google_Art_Project.jpg",
+      "title": "En un café (La absenta)",
+      "year": 1876,
+      "description": "Pareja absorta en un café parisino, separada por la mesa y el vaso verde de absenta. Degas retrata la soledad compartida de la vida moderna sin moralina.",
+      "dimensions": {
+        "width": 92,
+        "height": 68
+      }
+    },
+    {
+      "id": "degas-estrella",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Edgar_Degas_-_The_Star_(Dancer_on_Stage)_-_Google_Art_Project.jpg",
+      "title": "La estrella (Bailarina en escena)",
+      "year": 1878,
+      "description": "Bailarina en pointe bajo un foco de gas mientras el telón cae. Pastel sobre monotipo que captura el instante efímero del aplauso y la fatiga del espectáculo.",
+      "dimensions": {
+        "width": 58,
+        "height": 42
+      }
     }
   ]
 }

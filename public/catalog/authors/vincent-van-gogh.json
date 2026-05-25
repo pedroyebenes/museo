@@ -28,6 +28,39 @@
         "height": 73
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg"
+    },
+    {
+      "id": "van-gogh-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "title": "Autorretrato",
+      "year": 1889,
+      "description": "Van Gogh se representa con barba y bata azul de pintor durante su estancia en Saint-Rémy. La pincelada ondulante refleja la inquietud de su último periodo.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "van-gogh-dormitorio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Vincent_van_Gogh_-_The_Bedroom_-_Google_Art_Project.jpg",
+      "title": "La habitación",
+      "year": 1888,
+      "description": "Dormitorio en Arlés simplificado en planos de color puro. Van Gogh buscaba descanso y orden interior mediante amarillos, azules y verdes intensos.",
+      "dimensions": {
+        "width": 72,
+        "height": 90
+      }
+    },
+    {
+      "id": "van-gogh-lirios",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Vincent_van_Gogh_-_Irises_-_Google_Art_Project.jpg",
+      "title": "Lirios",
+      "year": 1889,
+      "description": "Macizo de lirios azules pintado en el jardín del asilo de Saint-Rémy. Obra de transición entre la observación directa y la abstracción del color.",
+      "dimensions": {
+        "width": 71,
+        "height": 93
+      }
     }
   ]
 }

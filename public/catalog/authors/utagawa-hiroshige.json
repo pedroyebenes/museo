@@ -14,6 +14,28 @@
         "width": 22.2,
         "height": 33.7
       }
+    },
+    {
+      "id": "hiroshige-nieve-kanbara",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hiroshige%2C_Evening_snow_at_Kanbara.jpg",
+      "title": "Nieve vespertina en Kanbara",
+      "year": 1833,
+      "description": "De las Cincuenta y tres estaciones del Tōkaidō. Viajeros avanzan entre casas cubiertas de nieve en una escena nocturna de silencio y frío.",
+      "dimensions": {
+        "width": 36,
+        "height": 24
+      }
+    },
+    {
+      "id": "hiroshige-jardin-ciruelos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Hiroshige%2C_The_Plum_Garden_at_Kameido.jpg",
+      "title": "Jardín de ciruelos en Kameido",
+      "year": 1857,
+      "description": "Ciruelos en flor sobre un estanque con puente arqueado. Hiroshige combina perspectiva occidental con sensibilidad japonesa por la estación floreciente.",
+      "dimensions": {
+        "width": 36,
+        "height": 24
+      }
     }
   ]
 }

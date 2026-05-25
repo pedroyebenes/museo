@@ -14,6 +14,28 @@
         "width": 130.2,
         "height": 97.2
       }
+    },
+    {
+      "id": "manet-olympia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Edouard_Manet_-_Olympia_-_Google_Art_Project.jpg",
+      "title": "Olympia",
+      "year": 1863,
+      "description": "Prostituta reclinada mira directamente al espectador mientras una criada trae un ramo. Manet provocó escándalo al modernizar el desnudo académico con realismo urbano.",
+      "dimensions": {
+        "width": 130,
+        "height": 190
+      }
+    },
+    {
+      "id": "manet-almuerzo-hierba",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg",
+      "title": "Almuerzo sobre la hierba",
+      "year": 1863,
+      "description": "Picnic parisino donde una mujer desnuda almuerza con dos hombres vestidos. Manet cita a los maestros del pasado con una escena contemporánea que desconcertó al Salón.",
+      "dimensions": {
+        "width": 208,
+        "height": 264
+      }
     }
   ]
 }

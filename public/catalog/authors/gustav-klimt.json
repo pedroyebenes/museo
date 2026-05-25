@@ -17,6 +17,28 @@
         "height": 180
       },
       "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+    },
+    {
+      "id": "klimt-judith",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Gustav_Klimt_-_Judith_I_-_Google_Art_Project.jpg",
+      "title": "Judith I",
+      "year": 1901,
+      "description": "Judith sostiene la cabeza de Holofernes con expresión sensual y decoración bizantina. Klimt fusiona erotismo simbólico y ornamentación preciosa.",
+      "dimensions": {
+        "width": 42,
+        "height": 84
+      }
+    },
+    {
+      "id": "klimt-adela",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Gustav_Klimt_-_Portrait_of_Adele_Bloch-Bauer_I_-_Google_Art_Project.jpg",
+      "title": "Retrato de Adele Bloch-Bauer I",
+      "year": 1907,
+      "description": "Dama vienesa envuelta en oro y mosaicos bizantinos. Obra cumbre del periodo dorado de Klimt y emblema del gusto modernista de la burguesía judía.",
+      "dimensions": {
+        "width": 138,
+        "height": 138
+      }
     }
   ]
 }

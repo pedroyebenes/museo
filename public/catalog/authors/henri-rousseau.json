@@ -22,6 +22,28 @@
       "movement": "Postimpresionismo / arte naíf",
       "imageLicense": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "rousseau-guerra",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Henri_Rousseau_-_The_Tropical_Storm_with_Tiger_-_Google_Art_Project.jpg",
+      "title": "Tormenta tropical con tigre",
+      "year": 1891,
+      "description": "Felino aterrorizado bajo la lluvia en una vegetación exótica imaginada. Primer cuadro selvático de Rousseau, pintado desde recortes y el Jardín de Plantas.",
+      "dimensions": {
+        "width": 130,
+        "height": 162
+      }
+    },
+    {
+      "id": "rousseau-leones",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Henri_Rousseau_-_The_Hungry_Lion_Throws_Itself_on_the_Antelope_-_Google_Art_Project.jpg",
+      "title": "El león hambriento se abalanza sobre el antílope",
+      "year": 1905,
+      "description": "Escena de depredación en la selva con plantas gigantes y animales congelados en el instante del ataque. Rousseau inventa un mundo tropical sin salir de París.",
+      "dimensions": {
+        "width": 200,
+        "height": 301
+      }
     }
   ]
 }
