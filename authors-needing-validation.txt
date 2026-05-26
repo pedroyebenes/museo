@@ -4,7 +4,7 @@
 
 Authors to validate (105 total):
 
-[ ] adolph-menzel (8 paintings)
+[x] adolph-menzel (8 paintings)
 [ ] alberto-durero (6 paintings)
 [ ] alfred-sisley (10 paintings)
 [ ] alphonse-mucha (16 paintings)
@@ -27,7 +27,7 @@ Authors to validate (105 total):
 [ ] claude-monet (14 paintings)
 [ ] correggio (5 paintings)
 [ ] dante-gabriel-rossetti (8 paintings)
-[ ] diego-velazquez (4 paintings)
+[x] diego-velazquez (4 paintings)
 [ ] edgar-degas (12 paintings)
 [ ] edouard-manet (11 paintings)
 [ ] edouard-vuillard (10 paintings)
@@ -62,7 +62,7 @@ Authors to validate (105 total):
 [ ] j-m-w-turner (6 paintings)
 [ ] jacques-louis-david (4 paintings)
 [ ] james-mcneill-whistler (8 paintings)
-[ ] jan-van-eyck (2 paintings)
+[x] jan-van-eyck (2 paintings)
 [ ] jean-auguste-dominique-ingres (6 paintings)
 [ ] jean-baptiste-simeon-chardin (9 paintings)
 [ ] jean-francois-millet (8 paintings)
