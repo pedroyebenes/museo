@@ -22,7 +22,7 @@ Authors to validate (105 total):
 [ ] bronzino (5 paintings)
 [x] camille-pissarro (11 paintings)
 [x] canaletto (6 paintings)
-[ ] caspar-david-friedrich (10 paintings)
+[x] caspar-david-friedrich (10 paintings)
 [ ] claude-lorrain (5 paintings)
 [ ] claude-monet (14 paintings)
 [ ] correggio (5 paintings)
