@@ -13,7 +13,7 @@ Authors to validate (105 total):
 [x] andrea-mantegna (6 paintings)
 [x] andrew-wyeth (8 paintings)
 [x] anthony-van-dyck (5 paintings)
-[ ] antoine-watteau (6 paintings)
+[x] antoine-watteau (6 paintings)
 [ ] arnold-bocklin (6 paintings)
 [ ] artemisia-gentileschi (7 paintings)
 [ ] aubrey-beardsley (10 paintings)
