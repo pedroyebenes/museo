@@ -19,7 +19,7 @@ Authors to validate (105 total):
 [x] aubrey-beardsley (10 paintings)
 [x] bartolome-esteban-murillo (4 paintings)
 [x] berthe-morisot (6 paintings)
-[ ] bronzino (5 paintings)
+[x] bronzino (5 paintings) - all URLs confirmed working (5 paintings)
 [x] camille-pissarro (11 paintings)
 [x] canaletto (6 paintings)
 [x] caspar-david-friedrich (10 paintings)
