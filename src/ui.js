@@ -4,16 +4,23 @@ import { formatPaintingDimensions } from './paintings.js';
 const MAX_VIEW_DISTANCE = 4.0;
 const FOCUS_INTERVAL_MS = 120;
 
-export function createInfoOverlay() {
+export function createInfoOverlay({ onReport } = {}) {
   const panel = document.getElementById('info-panel');
   const titleEl = document.getElementById('info-title');
   const authorEl = document.getElementById('info-author');
   const sizeEl = document.getElementById('info-size');
   const descEl = document.getElementById('info-description');
   const itemsEl = document.getElementById('info-items');
+  const reportBtn = document.getElementById('info-report');
 
   let current = null;
   let suppressed = false;
+
+  reportBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    onReport?.();
+  });
+  reportBtn?.addEventListener('pointerdown', (e) => e.stopPropagation());
 
   function show(data) {
     if (suppressed) return;
@@ -47,6 +54,7 @@ export function createInfoOverlay() {
     }
 
     panel.classList.remove('hidden');
+    reportBtn?.classList.remove('hidden');
   }
 
   function hide() {
@@ -56,6 +64,7 @@ export function createInfoOverlay() {
     sizeEl.style.display = '';
     descEl.style.display = '';
     if (itemsEl) itemsEl.classList.add('hidden');
+    reportBtn?.classList.add('hidden');
     panel.classList.add('hidden');
   }
 
@@ -211,12 +220,14 @@ export function createReportDialog() {
     pendingUrl = `https://github.com/pedroyebenes/museo/issues/new?${params}`;
     onDismiss = onClose;
     descEl.textContent = description;
+    document.body.classList.add('report-open');
     modal.classList.remove('hidden');
     confirmBtn.focus();
   }
 
   function close() {
     modal.classList.add('hidden');
+    document.body.classList.remove('report-open');
     pendingUrl = null;
     const cb = onDismiss;
     onDismiss = null;
