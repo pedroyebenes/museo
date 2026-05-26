@@ -11,7 +11,7 @@ Authors to validate (105 total):
 [x] amedeo-modigliani (12 paintings)
 [x] andrea-del-sarto (6 paintings)
 [x] andrea-mantegna (6 paintings)
-[ ] andrew-wyeth (8 paintings)
+[x] andrew-wyeth (8 paintings)
 [ ] anthony-van-dyck (5 paintings)
 [ ] antoine-watteau (6 paintings)
 [ ] arnold-bocklin (6 paintings)
