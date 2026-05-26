@@ -61,6 +61,105 @@
         "width": 71,
         "height": 93
       }
+    },
+    {
+      "id": "van-gogh-comedores-patatas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Vincent_van_Gogh_-_The_Potato_Eaters_-_Google_Art_Project.jpg",
+      "title": "Los comedores de patatas",
+      "year": 1885,
+      "description": "Campesinos brabanzones cenan a la luz de una lámpara de petróleo. Van Gogh buscaba dignidad en la tierra oscura y las manos toscas antes de descubrir el color meridional.",
+      "dimensions": {
+        "width": 82,
+        "height": 114
+      }
+    },
+    {
+      "id": "van-gogh-campo-trigo-cuervos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Vincent_van_Gogh_-_Wheatfield_with_Crows_-_Google_Art_Project.jpg",
+      "title": "Campo de trigo con cuervos",
+      "year": 1890,
+      "description": "Senda que se pierde entre trigo dorado bajo un cielo tormentoso y bandadas de cuervos. Una de las últimas obras de Auvers, leída a menudo como presagio de su muerte.",
+      "dimensions": {
+        "width": 103,
+        "height": 262
+      }
+    },
+    {
+      "id": "van-gogh-iglesia-auvers",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Vincent_van_Gogh_-_The_Church_at_Auvers_-_Google_Art_Project.jpg",
+      "title": "La iglesia de Auvers",
+      "year": 1890,
+      "description": "La iglesia gótica de Auvers-sur-Oise se alza como bloque violeta bajo un cielo azul intenso. Van Gogh deforma la arquitectura con líneas ondulantes que expresan inquietud interior.",
+      "dimensions": {
+        "width": 74,
+        "height": 94
+      }
+    },
+    {
+      "id": "van-gogh-vina-roja",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Vincent_van_Gogh_-_The_Red_Vineyard_-_Google_Art_Project.jpg",
+      "title": "La viña roja",
+      "year": 1888,
+      "description": "Vendimiadores trabajan entre hileras teñidas de rojo bajo un sol de otoño. Única obra vendida en vida del artista, pintada en Arlés con color empastado.",
+      "dimensions": {
+        "width": 75,
+        "height": 93
+      }
+    },
+    {
+      "id": "van-gogh-olivos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Vincent_van_Gogh_-_Olive_Trees_-_Google_Art_Project.jpg",
+      "title": "Olivos",
+      "year": 1889,
+      "description": "Olivos retorcidos bajo un sol meridiano en Saint-Rémy. Van Gogh traduce el paisaje provenzal en arabescos de verde, violeta y amarillo que vibran con la fuerza del viento.",
+      "dimensions": {
+        "width": 92,
+        "height": 73
+      }
+    },
+    {
+      "id": "van-gogh-cipreses",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Vincent_van_Gogh_-_Cypresses_-_Google_Art_Project.jpg",
+      "title": "Cipreses",
+      "year": 1889,
+      "description": "Cipreses como llamas verdes se alzan contra un cielo remolineado. Van Gogh convierte el árbol emblemático de Provenza en signo de ascensión y angustia espiritual.",
+      "dimensions": {
+        "width": 94,
+        "height": 74
+      }
+    },
+    {
+      "id": "van-gogh-noche-estrellada-rhone",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Vincent_van_Gogh_-_Starry_Night_Over_the_Rhone_-_Google_Art_Project.jpg",
+      "title": "Noche estrellada sobre el Ródano",
+      "year": 1888,
+      "description": "Reflejos de gas y estrellas sobre el río en Arlés mientras parejas pasean por el muelle. Antecedente nocturno de La noche estrellada, con azules profundos y puntos de luz sobre el agua.",
+      "dimensions": {
+        "width": 92,
+        "height": 73
+      }
+    },
+    {
+      "id": "van-gogh-zapatos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Vincent_van_Gogh_-_Shoes_-_Google_Art_Project.jpg",
+      "title": "Zapatos",
+      "year": 1886,
+      "description": "Par de zapatos gastados sobre un suelo ocre. Van Gogh eleva un objeto humilde a símbolo de la vida del trabajador, anticipando el interés moderno por lo cotidiano.",
+      "dimensions": {
+        "width": 46,
+        "height": 56
+      }
+    },
+    {
+      "id": "van-gogh-retrato-pere-tanguy",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Vincent_van_Gogh_-_Portrait_of_P%C3%A8re_Tanguy_-_Google_Art_Project.jpg",
+      "title": "Retrato del père Tanguy",
+      "year": 1887,
+      "description": "El marchante parisino posa ante estampas japonesas con mirada tranquila. Van Gogh rinde homenaje a quien apoyó a los impresionistas y a su pasión por el ukiyo-e.",
+      "dimensions": {
+        "width": 65,
+        "height": 92
+      }
     }
   ]
 }

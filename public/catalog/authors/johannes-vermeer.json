@@ -61,6 +61,28 @@
         "width": 120,
         "height": 100
       }
+    },
+    {
+      "id": "vermeer-vista-delft",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Johannes_Vermeer_-_View_of_Delft_-_Google_Art_Project.jpg",
+      "title": "Vista de Delft",
+      "year": 1661,
+      "description": "Panorama de la ciudad natal bajo un cielo nublado con reflejos en el agua. Obra cumbre del paisaje holandés donde la luz define la identidad urbana.",
+      "dimensions": {
+        "width": 98,
+        "height": 117
+      }
+    },
+    {
+      "id": "vermeer-concierto",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Johannes_Vermeer_-_The_Music_Lesson_-_Google_Art_Project.jpg",
+      "title": "La lección de música",
+      "year": 1665,
+      "description": "Maestro y alumna junto a un clave en un interior bañado de luz lateral. Vermeer captura la intimidad educativa con geometría silenciosa y color sobrio.",
+      "dimensions": {
+        "width": 74,
+        "height": 64
+      }
     }
   ]
 }

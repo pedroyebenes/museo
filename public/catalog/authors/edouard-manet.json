@@ -58,6 +58,83 @@
         "width": 250,
         "height": 305
       }
+    },
+    {
+      "id": "manet-musicos-calle",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Edouard_Manet_-_The_Street_Singers_-_Google_Art_Project.jpg",
+      "title": "Los cantantes callejeros",
+      "year": 1862,
+      "description": "Niña canta con dos músicos en una calle parisina mientras un hombre escucha desde un portal. Manet captura la vida urbana con realismo directo y composición recortada.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "manet-balcon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Edouard_Manet_-_The_Balcony_-_Google_Art_Project.jpg",
+      "title": "El balcón",
+      "year": 1868,
+      "description": "Berthe Morisot y figuras parisinas posan en un balcón verde con miradas desviadas. Manet cita a Goya y traduce la modernidad burguesa en una escena de distancia psicológica.",
+      "dimensions": {
+        "width": 170,
+        "height": 124
+      }
+    },
+    {
+      "id": "manet-pifano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Edouard_Manet_-_The_Fifer_-_Google_Art_Project.jpg",
+      "title": "El pífano",
+      "year": 1866,
+      "description": "Joven militar toca el pífano contra un fondo plano y neutro. Manet elimina la profundidad ilusionista para centrar la atención en la figura y el color uniforme rojo.",
+      "dimensions": {
+        "width": 97,
+        "height": 160
+      }
+    },
+    {
+      "id": "manet-corrida",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Edouard_Manet_-_The_Bullfight_-_Google_Art_Project.jpg",
+      "title": "La corrida de toros",
+      "year": 1864,
+      "description": "Escena taurina con toro, picadores y multitud en un encuadre fragmentado. Manet importa la estética española a París con pincelada suelta y color audaz.",
+      "dimensions": {
+        "width": 90,
+        "height": 60
+      }
+    },
+    {
+      "id": "manet-retrato-emile-zola",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Edouard_Manet_-_Portrait_of_%C3%89mile_Zola_-_Google_Art_Project.jpg",
+      "title": "Retrato de Émile Zola",
+      "year": 1868,
+      "description": "El escritor posa entre estampas japonesas, libros y objetos simbólicos. Manet rinde homenaje a su defensor intelectual y al gusto moderno por el arte oriental.",
+      "dimensions": {
+        "width": 118,
+        "height": 146
+      }
+    },
+    {
+      "id": "manet-mujer-loro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Edouard_Manet_-_Woman_with_a_Parrot_-_Google_Art_Project.jpg",
+      "title": "Mujer con loro",
+      "year": 1866,
+      "description": "Mujer semidesnuda posa con un loro posado en su mano extendida. Manet provoca al espectador con una escena de seducción ambigua y pincelada suelta.",
+      "dimensions": {
+        "width": 97,
+        "height": 160
+      }
+    },
+    {
+      "id": "manet-ferrocarril",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Edouard_Manet_-_The_Railway_-_Google_Art_Project.jpg",
+      "title": "El ferrocarril",
+      "year": 1873,
+      "description": "Victorine Meurent y una niña contemplan el paso de un tren tras una verja. Manet convierte la modernidad industrial en escena enigmática de miradas cruzadas.",
+      "dimensions": {
+        "width": 93,
+        "height": 114
+      }
     }
   ]
 }

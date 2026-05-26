@@ -50,6 +50,28 @@
         "width": 94,
         "height": 72
       }
+    },
+    {
+      "id": "gauguin-nunca-mas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Paul_Gauguin_-_Nevermore_-_Google_Art_Project.jpg",
+      "title": "Nunca jamás",
+      "year": 1897,
+      "description": "Desnudo tahitiano reclinado mientras un cuervo posa al fondo. Gauguin mezcla memoria de Poe, erotismo oceánico y color simbólico en Polinesia.",
+      "dimensions": {
+        "width": 73,
+        "height": 95
+      }
+    },
+    {
+      "id": "gauguin-autorretrato-cristo-amarillo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Paul_Gauguin_-_Self-Portrait_with_The_Yellow_Christ_-_Google_Art_Project.jpg",
+      "title": "Autorretrato con El Cristo amarillo",
+      "year": 1890,
+      "description": "Gauguin se representa junto a su Cristo amarillo en un interior breton. Autorretrato donde el artista se identifica con el mártir y el primitivismo moderno.",
+      "dimensions": {
+        "width": 92,
+        "height": 73
+      }
     }
   ]
 }

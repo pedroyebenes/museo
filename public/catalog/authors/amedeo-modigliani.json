@@ -1,0 +1,143 @@
+{
+  "id": "amedeo-modigliani",
+  "name": "Amedeo Modigliani",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Amedeo Clemente Modigliani",
+  "years": "1884 – 1920",
+  "origin": "Livorno, Italia",
+  "bio": "Pintor y escultor italiano de la Escuela de París. Modigliani es célebre por sus retratos de cuello alargado, miradas enigmáticas y desnudos de contorno sinuoso y moderno.",
+  "paintings": [
+    {
+      "id": "modigliani-retrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Amedeo_Modigliani_-_Portrait_of_Jeanne_H%C3%A9buterne_-_Google_Art_Project.jpg",
+      "title": "Retrato de Jeanne Hébuterne",
+      "year": 1918,
+      "description": "Compañera del artista con rostro ovalado y mirada melancólica. Retrato íntimo de línea elegante y color cálido.",
+      "dimensions": {
+        "width": 55,
+        "height": 46
+      }
+    },
+    {
+      "id": "modigliani-mujer",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Amedeo_Modigliani_-_Reclining_Nude_-_Google_Art_Project.jpg",
+      "title": "Desnudo reclinado",
+      "year": 1917,
+      "description": "Figura femenina tumbada de contornos alargados. Modigliani moderniza el desnudo académico con sensualidad serena.",
+      "dimensions": {
+        "width": 92,
+        "height": 60
+      }
+    },
+    {
+      "id": "modigliani-nino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Amedeo_Modigliani_-_Portrait_of_a_Young_Girl_-_Google_Art_Project.jpg",
+      "title": "Retrato de una joven",
+      "year": 1917,
+      "description": "Niña sentada de ojos almendrados y expresión grave. Modigliani condensa inocencia y solemnidad en línea pura.",
+      "dimensions": {
+        "width": 92,
+        "height": 60
+      }
+    },
+    {
+      "id": "modigliani-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Amedeo_Modigliani_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "title": "Autorretrato",
+      "year": 1919,
+      "description": "Rostro alargado y mirada directa en tonos ocres. Testimonio tardío de un artista de vida breve e intensa.",
+      "dimensions": {
+        "width": 46,
+        "height": 38
+      }
+    },
+    {
+      "id": "modigliani-chaika",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Amedeo_Modigliani_-_Portrait_of_L%C3%A9opold_Zborowski_-_Google_Art_Project.jpg",
+      "title": "Retrato de Léopold Zborowski",
+      "year": 1919,
+      "description": "Mercader y mecenas con manos entrelazadas y rostro estilizado. Modigliani retrata el mundo bohemio parisino.",
+      "dimensions": {
+        "width": 73,
+        "height": 60
+      }
+    },
+    {
+      "id": "modigliani-madame",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Amedeo_Modigliani_-_Madame_H%C3%A9buterne_-_Google_Art_Project.jpg",
+      "title": "Madame Hébuterne",
+      "year": 1918,
+      "description": "Jeanne sentada con elegancia escultural y fondo sobrio. Retrato de armonía y tristeza contenida.",
+      "dimensions": {
+        "width": 92,
+        "height": 60
+      }
+    },
+    {
+      "id": "modigliani-mujer-silla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Amedeo_Modigliani_-_Woman_Seated_in_a_Red_Chair_-_Google_Art_Project.jpg",
+      "title": "Mujer sentada en silla roja",
+      "year": 1917,
+      "description": "Figura femenina en sillon rojo de contornos sinuosos. Color y línea definen el retrato moderno modiglianesco.",
+      "dimensions": {
+        "width": 81,
+        "height": 100
+      }
+    },
+    {
+      "id": "modigliani-caryatid",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Amedeo_Modigliani_-_Caryatid_-_Google_Art_Project.jpg",
+      "title": "Cariátide",
+      "year": 1913,
+      "description": "Figura escultórica de cuerpo alargado y rostro enmascarado. Puente entre escultura primitiva y pintura parisina.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    },
+    {
+      "id": "modigliani-joven",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Amedeo_Modigliani_-_Young_Woman_in_a_Yellow_Dress_-_Google_Art_Project.jpg",
+      "title": "Joven con vestido amarillo",
+      "year": 1918,
+      "description": "Retrato de color cálido y cuello esbelto. Modigliani combina elegancia y melancolía en la París de posguerra.",
+      "dimensions": {
+        "width": 92,
+        "height": 60
+      }
+    },
+    {
+      "id": "modigliani-paul",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Amedeo_Modigliani_-_Portrait_of_Paul_Guillaume_-_Google_Art_Project.jpg",
+      "title": "Retrato de Paul Guillaume",
+      "year": 1916,
+      "description": "Joven marchante con rostro ovalado y fondo azul. Modigliani retrata al mundo del arte con línea depurada.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "modigliani-mujer-peine",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Amedeo_Modigliani_-_Woman_with_a_Comb_-_Google_Art_Project.jpg",
+      "title": "Mujer con peine",
+      "year": 1918,
+      "description": "Figura femenina peinándose con mirada enigmática. Intimidad cotidiana elevada a icono modernista.",
+      "dimensions": {
+        "width": 81,
+        "height": 100
+      }
+    },
+    {
+      "id": "modigliani-diego",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Amedeo_Modigliani_-_Portrait_of_Diego_Rivera_-_Google_Art_Project.jpg",
+      "title": "Retrato de Diego Rivera",
+      "year": 1914,
+      "description": "Rivera joven con rostro alargado y fondo cálido. Encuentro entre artistas de la bohemia parisina.",
+      "dimensions": {
+        "width": 55,
+        "height": 46
+      }
+    }
+  ]
+}

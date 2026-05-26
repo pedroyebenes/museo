@@ -1,0 +1,77 @@
+{
+  "id": "canaletto",
+  "name": "Canaletto",
+  "category": "barroco",
+  "fullName": "Giovanni Antonio Canal, llamado Canaletto",
+  "years": "1697 – 1768",
+  "origin": "Venecia, República de Venecia",
+  "bio": "Maestro del vedutismo veneciano que documentó con precisión topográfica y luz cristalina los canales, plazas y ceremonias de la Serenísima. Sus vistas fueron codiciadas por el gran tour británico y definieron la imagen romántica de Venecia.",
+  "paintings": [
+    {
+      "id": "canaletto-entrada-gran-canal",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Canaletto_-_The_Entrance_to_the_Grand_Canal%2C_Venice_-_Google_Art_Project.jpg",
+      "title": "La entrada al Gran Canal",
+      "year": 1730,
+      "description": "Góndolas y palacios se alinean en la desembocadura del canal mayor. Canaletto combina precisión arquitectónica y atmósfera luminosa en una veduta emblemática.",
+      "dimensions": {
+        "width": 118,
+        "height": 76
+      }
+    },
+    {
+      "id": "canaletto-riva-schiavoni",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Giovanni_Antonio_Canal%2C_called_Canaletto_-_View_of_the_Riva_degli_Schiavoni%2C_Venice_-_Google_Art_Project.jpg",
+      "title": "La Riva degli Schiavoni",
+      "year": 1730,
+      "description": "Vista panorámica del muelle veneciano con barcos y figuras diminutas. Canaletto registra la vida urbana con claridad casi cartográfica y cielo sereno.",
+      "dimensions": {
+        "width": 165,
+        "height": 100
+      }
+    },
+    {
+      "id": "canaletto-thames",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Canaletto_-_London-_The_Thames_from_Somerset_House_Terrace_towards_the_City_-_Google_Art_Project.jpg",
+      "title": "El Támesis desde Somerset House",
+      "year": 1750,
+      "description": "Vista londinense con el río, la ciudad y el cielo abierto. Durante su estancia inglesa, Canaletto aplicó su vedutismo veneciano a la metrópolis británica.",
+      "dimensions": {
+        "width": 118,
+        "height": 76
+      }
+    },
+    {
+      "id": "canaletto-patio-canteros",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Canaletto_-_The_Stone_Mason's_Yard_-_Google_Art_Project.jpg",
+      "title": "El patio de los canteros",
+      "year": 1725,
+      "description": "Obreros trabajan junto al canal en una Venecia cotidiana y soleada. Veduta temprana donde la precisión topográfica convive con escenas de vida laboral.",
+      "dimensions": {
+        "width": 124,
+        "height": 163
+      }
+    },
+    {
+      "id": "canaletto-san-marco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Canaletto_-_The_Piazza_San_Marco%2C_Venice_-_Google_Art_Project.jpg",
+      "title": "La plaza de San Marcos",
+      "year": 1730,
+      "description": "La plaza y la basílica se despliegan bajo un cielo limpio con figuras paseando. Canaletto fija la imagen icónica de Venecia con luz diáfana y perspectiva rigurosa.",
+      "dimensions": {
+        "width": 144,
+        "height": 192
+      }
+    },
+    {
+      "id": "canaletto-dolo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Canaletto_-_The_Grand_Canal_at_the_Church_of_the_Madonna_della_Salute_-_Google_Art_Project.jpg",
+      "title": "El Gran Canal con la Salute",
+      "year": 1730,
+      "description": "La iglesia barroca se alza al final del canal bajo un cielo sereno. Veduta clásica que combina precisión topográfica y atmósfera luminosa veneciana.",
+      "dimensions": {
+        "width": 151,
+        "height": 121
+      }
+    }
+  ]
+}

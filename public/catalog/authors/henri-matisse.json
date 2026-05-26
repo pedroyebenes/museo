@@ -1,0 +1,176 @@
+{
+  "id": "henri-matisse",
+  "name": "Henri Matisse",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Henri Émile Benoît Matisse",
+  "years": "1869 – 1954",
+  "origin": "Le Cateau-Cambrésis, Francia",
+  "bio": "Líder del fauvismo y maestro del color moderno. Matisse buscó en toda su carrera una arte de equilibrio, pureza y serenidad mediante línea decorativa, planos intensos y recortes de papel tardíos.",
+  "paintings": [
+    {
+      "id": "matisse-danza",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Henri_Matisse_-_The_Dance_-_Google_Art_Project.jpg",
+      "title": "La danza",
+      "year": 1910,
+      "description": "Círculo de figuras rojas que giran en un prado verde. Matisse condensa movimiento, ritual y armonía cromática en un emblema moderno.",
+      "dimensions": {
+        "width": 391,
+        "height": 260
+      }
+    },
+    {
+      "id": "matisse-musica",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Henri_Matisse_-_The_Music_-_Google_Art_Project.jpg",
+      "title": "La música",
+      "year": 1910,
+      "description": "Figuras azules y rojas tocan instrumentos en paisaje simplificado. Pareja complementaria de La danza en clave de serenidad fauve.",
+      "dimensions": {
+        "width": 260,
+        "height": 391
+      }
+    },
+    {
+      "id": "matisse-armonia-rojo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Henri_Matisse_-_The_Red_Room_-_Google_Art_Project.jpg",
+      "title": "Armonía en rojo",
+      "year": 1908,
+      "description": "Interior rojo con mesa, figura y ventana al jardín. Matisse demuestra que el color puede construir espacio sin perspectiva tradicional.",
+      "dimensions": {
+        "width": 180,
+        "height": 221
+      }
+    },
+    {
+      "id": "matisse-ventana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Henri_Matisse_-_The_Open_Window_-_Google_Art_Project.jpg",
+      "title": "La ventana abierta",
+      "year": 1905,
+      "description": "Ventana sobre puerto con barcos y banderas de color puro. Obra fauve que disuelve forma en vibración cromática.",
+      "dimensions": {
+        "width": 55,
+        "height": 46
+      }
+    },
+    {
+      "id": "matisse-lujo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Henri_Matisse_-_Luxury%2C_Calm_and_Pleasure_-_Google_Art_Project.jpg",
+      "title": "Lujo, calma y voluptuosidad",
+      "year": 1904,
+      "description": "Bañistas en isla de color tropical y ritmo decorativo. Matisse imagina paraíso sensual antes del fauvismo pleno.",
+      "dimensions": {
+        "width": 98,
+        "height": 135
+      }
+    },
+    {
+      "id": "matisse-bailarina",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Henri_Matisse_-_Dance_(II)_-_Google_Art_Project.jpg",
+      "title": "La danza II",
+      "year": 1932,
+      "description": "Versión mural de figuras rojas en movimiento circular. Matisse simplifica cuerpo y fondo hasta la esencia decorativa.",
+      "dimensions": {
+        "width": 260,
+        "height": 391
+      }
+    },
+    {
+      "id": "matisse-moriscos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Henri_Matisse_-_Moroccan_Landscape_-_Google_Art_Project.jpg",
+      "title": "Paisaje marroquí",
+      "year": 1912,
+      "description": "Arquitectura y figuras en Tánger con color plano y contorno marcado. El viaje a Marruecos transforma la paleta de Matisse.",
+      "dimensions": {
+        "width": 60,
+        "height": 80
+      }
+    },
+    {
+      "id": "matisse-odalisque",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Henri_Matisse_-_Odalisque_with_Red_Culottes_-_Google_Art_Project.jpg",
+      "title": "Odalisca con calzones rojos",
+      "year": 1921,
+      "description": "Mujer reclinada en interior exótico de patrones y color. Matisse explora orientalismo decorativo con línea serena.",
+      "dimensions": {
+        "width": 54,
+        "height": 65
+      }
+    },
+    {
+      "id": "matisse-goldfish",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Henri_Matisse_-_Goldfish_-_Google_Art_Project.jpg",
+      "title": "Peces rojos",
+      "year": 1912,
+      "description": "Acuario y mesa en interior verde de contornos sinuosos. Matisse convierte objeto doméstico en meditación colorista.",
+      "dimensions": {
+        "width": 147,
+        "height": 119
+      }
+    },
+    {
+      "id": "matisse-bajo-sol",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Henri_Matisse_-_Joy_of_Life_-_Google_Art_Project.jpg",
+      "title": "Alegría de vivir",
+      "year": 1905,
+      "description": "Bañistas y músicos en paisaje arcadiano de color intenso. Manifiesto fauve de placer, luz y simplificación formal.",
+      "dimensions": {
+        "width": 176,
+        "height": 241
+      }
+    },
+    {
+      "id": "matisse-icaros",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Henri_Matisse_-_Icarus_-_Google_Art_Project.jpg",
+      "title": "Ícaro",
+      "year": 1947,
+      "description": "Figura roja con estrellas en recorte de papel coloreado. Obra tardía donde Matisse esculpe con color y silueta.",
+      "dimensions": {
+        "width": 42,
+        "height": 34
+      }
+    },
+    {
+      "id": "matisse-balanza",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Henri_Matisse_-_The_Snail_-_Google_Art_Project.jpg",
+      "title": "El caracol",
+      "year": 1953,
+      "description": "Composición de papeles recortados en espiral cromática. Síntesis final de su búsqueda de equilibrio y decoración pura.",
+      "dimensions": {
+        "width": 286,
+        "height": 287
+      }
+    },
+    {
+      "id": "matisse-bauhaus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Henri_Matisse_-_Portrait_of_Madame_Matisse_-_Google_Art_Project.jpg",
+      "title": "Retrato de madame Matisse",
+      "year": 1905,
+      "description": "Amélie Matisse con sombrero verde y rostro de color discordante. Retrato fauve que escandalizó por su libertad cromática.",
+      "dimensions": {
+        "width": 40,
+        "height": 32
+      }
+    },
+    {
+      "id": "matisse-piano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Henri_Matisse_-_The_Piano_Lesson_-_Google_Art_Project.jpg",
+      "title": "La lección de piano",
+      "year": 1916,
+      "description": "Interior geométrico con niño al piano y figura maternal. Matisse equilibra disciplina cubista y intimidad doméstica.",
+      "dimensions": {
+        "width": 245,
+        "height": 212
+      }
+    },
+    {
+      "id": "matisse-bajo-viento",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Henri_Matisse_-_Blue_Nude_-_Google_Art_Project.jpg",
+      "title": "Desnudo azul",
+      "year": 1952,
+      "description": "Silueta femenina recortada en azul sobre fondo claro. Recorte tardío que resume décadas de búsqueda de línea esencial.",
+      "dimensions": {
+        "width": 106,
+        "height": 78
+      }
+    }
+  ]
+}

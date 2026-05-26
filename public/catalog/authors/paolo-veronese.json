@@ -61,6 +61,28 @@
         "width": 80,
         "height": 72
       }
+    },
+    {
+      "id": "veronese-cena-levi",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Paolo_Veronese_-_The_Feast_in_the_House_of_Levi_-_Google_Art_Project.jpg",
+      "title": "La cena en casa de Leví",
+      "year": 1573,
+      "description": "Banquete bíblico convertido en escena de lujo veneciano con decenas de personajes. Veronese desafió la Inquisición y amplió la escena sagrada hasta límites teatrales.",
+      "dimensions": {
+        "width": 560,
+        "height": 130
+      }
+    },
+    {
+      "id": "veronese-unfaithfulness",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Paolo_Veronese_-_The_Family_of_Darius_before_Alexander_-_Google_Art_Project.jpg",
+      "title": "La familia de Darío ante Alejandro",
+      "year": 1565,
+      "description": "La familia persa se inclina ante el conquistador macedonio en una escena de seda y arquitectura clásica. Veronese celebra el poder y el protocolo histórico con color veneciano.",
+      "dimensions": {
+        "width": 236,
+        "height": 475
+      }
     }
   ]
 }

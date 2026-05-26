@@ -61,6 +61,61 @@
         "width": 279,
         "height": 332
       }
+    },
+    {
+      "id": "tiziano-venus-espejo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg",
+      "title": "Venus con espejo",
+      "year": 1555,
+      "description": "La diosa contempla su imagen mientras Cupido sostiene el espejo. Tiziano explora la vanidad y la sensualidad tardía con pincelada rica y atmósfera dorada.",
+      "dimensions": {
+        "width": 124,
+        "height": 106
+      }
+    },
+    {
+      "id": "tiziano-tributo-cesar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Titian_-_The_Tribute_Money_-_Google_Art_Project.jpg",
+      "title": "El tributo de la moneda",
+      "year": 1516,
+      "description": "Cristo señala la moneda del cesar ante los recaudadores en un paisaje abierto. Obra temprana que muestra la integración del color veneciano con la narrativa evangélica.",
+      "dimensions": {
+        "width": 75,
+        "height": 56
+      }
+    },
+    {
+      "id": "tiziano-schiavona",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Titian_-_Portrait_of_a_Lady_('La_Schiavona')_-_Google_Art_Project.jpg",
+      "title": "Retrato de dama (La Schiavona)",
+      "year": 1510,
+      "description": "Mujer de perfil sobre fondo claro con brazo apoyado en un pretil. Tiziano inaugura el retrato veneciano moderno con dignidad clásica y presencia monumental.",
+      "dimensions": {
+        "width": 119,
+        "height": 97
+      }
+    },
+    {
+      "id": "tiziano-bembo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Titian_%E2%80%93_Cardinal_Pietro_Bembo_%E2%80%93_Google_Art_Project.jpg",
+      "title": "Retrato del cardenal Pietro Bembo",
+      "year": 1540,
+      "description": "Humanista y cardenal veneciano posa con birreta roja sobre fondo oscuro. Tiziano retrata la cultura cortesana con sobriedad y profundidad psicológica.",
+      "dimensions": {
+        "width": 94,
+        "height": 77
+      }
+    },
+    {
+      "id": "tiziano-venus-anadyomene",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Titian_(Tiziano_Vecellio)_-_Venus_Rising_from_the_Sea_('Venus_Anadyomene')_-_Google_Art_Project.jpg",
+      "title": "Venus anadiómena",
+      "year": 1520,
+      "description": "La diosa emerge del mar en un paisaje de cielo claro y figuras secundarias. Tiziano reinventa el desnudo clásico con color veneciano y movimiento sereno.",
+      "dimensions": {
+        "width": 76,
+        "height": 57
+      }
     }
   ]
 }

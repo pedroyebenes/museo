@@ -1,0 +1,2768 @@
+{
+  "additions": {
+    "edvard-munch": [
+      {
+        "id": "munch-el-beso",
+        "filename": "Edvard_Munch_-_The_Kiss_-_Google_Art_Project.jpg",
+        "title": "El beso",
+        "year": 1897,
+        "description": "Pareja abrazada junto a la orilla en un paisaje de verano noruego. Munch condensa deseo y melancolía en el Friso de la vida con color cálido y figuras fundidas.",
+        "width": 99,
+        "height": 81
+      },
+      {
+        "id": "munch-cenizas",
+        "filename": "Edvard_Munch_-_Ashes_-_Google_Art_Project.jpg",
+        "title": "Cenizas",
+        "year": 1894,
+        "description": "Mujer desnuda de pie ante un hombre sentado en un bosque sombrío. La escena evoca ruptura amorosa y culpa con pincelada expresiva y atmósfera claustrofóbica.",
+        "width": 120,
+        "height": 120
+      },
+      {
+        "id": "munch-noche-karl-johan",
+        "filename": "Edvard_Munch_-_Evening_on_Karl_Johan_Street_-_Google_Art_Project.jpg",
+        "title": "Tardecita en la calle Karl Johan",
+        "year": 1892,
+        "description": "Paseantes fantasmales avanzan bajo un cielo rojizo hacia la ciudad. Munch traduce la soledad urbana en una procesión anónima de rostros pálidos.",
+        "width": 96,
+        "height": 121
+      },
+      {
+        "id": "munch-celos",
+        "filename": "Edvard_Munch_-_Jealousy_-_Google_Art_Project.jpg",
+        "title": "Celos",
+        "year": 1895,
+        "description": "Hombre pálido observa a una pareja mientras un rostro verde acecha al fondo. Munch personifica la obsesión amorosa con color enfermizo y mirada fija.",
+        "width": 67,
+        "height": 100
+      },
+      {
+        "id": "munch-melancolia",
+        "filename": "Edvard_Munch_-_Melancholy_-_Google_Art_Project.jpg",
+        "title": "Melancolía",
+        "year": 1894,
+        "description": "Figura sentada en la orilla contempla el mar con rostro hundido en la mano. Mundo interior de languidez y deseo no correspondido en clave simbolista.",
+        "width": 91,
+        "height": 74
+      },
+      {
+        "id": "munch-vampiro",
+        "filename": "Edvard_Munch_-_Vampire_-_Google_Art_Project.jpg",
+        "title": "Vampiro",
+        "year": 1895,
+        "description": "Mujer inclinada muerde el cuello de un hombre rendido en un bosque oscuro. Imagen de pasión destructiva que Munch vincula al amor como succión vital.",
+        "width": 91,
+        "height": 109
+      }
+    ],
+    "odilon-redon": [
+      {
+        "id": "redon-ojos-cerrados",
+        "filename": "Odilon_Redon_-_Closed_Eyes_-_Google_Art_Project.jpg",
+        "title": "Ojos cerrados",
+        "year": 1890,
+        "description": "Cabeza femenina de ojos cerrados flota en un fondo floral difuso. Redon invita a la contemplación interior y al mundo onírico más allá de la vista.",
+        "width": 44,
+        "height": 55
+      },
+      {
+        "id": "redon-san-jorge",
+        "filename": "Odilon_Redon_-_Saint_George_-_Google_Art_Project.jpg",
+        "title": "San Jorge",
+        "year": 1890,
+        "description": "El santo y el dragón aparecen como visiones suspendidas en un paisaje irreal. Redon reinterpreta la hagiografía con poesía simbolista y color pastel.",
+        "width": 60,
+        "height": 48
+      },
+      {
+        "id": "redon-nubes-flores",
+        "filename": "Odilon_Redon_-_Flower_Clouds_-_Google_Art_Project.jpg",
+        "title": "Nubes floridas",
+        "year": 1903,
+        "description": "Rostro femenino emerge entre nubes que se confunden con pétalos. Obra tardía donde el color luminoso sustituye al carboncillo de sus inicios.",
+        "width": 44,
+        "height": 54
+      },
+      {
+        "id": "redon-beatriz",
+        "filename": "Odilon_Redon_-_Beatrice_-_Google_Art_Project.jpg",
+        "title": "Beatriz",
+        "year": 1897,
+        "description": "Perfil clásico de Beatriz entre flores y bruma dorada. Redon acerca la tradición dantesca a una meditación silenciosa sobre belleza y memoria.",
+        "width": 60,
+        "height": 45
+      },
+      {
+        "id": "redon-flor-campo",
+        "filename": "Odilon_Redon_-_The_Flower_of_the_Field_-_Google_Art_Project.jpg",
+        "title": "La flor del campo",
+        "year": 1900,
+        "description": "Figura femenina y botánica se funden en un jardín de color intenso. Redon celebra la naturaleza como revelación espiritual y decorativa.",
+        "width": 65,
+        "height": 54
+      },
+      {
+        "id": "redon-ofelia",
+        "filename": "Odilon_Redon_-_Ophelia_among_the_Flowers_-_Google_Art_Project.jpg",
+        "title": "Ofelia entre las flores",
+        "year": 1905,
+        "description": "Ofelia flota entre flores de color pastel en un jardín onírico. Redon acerca a Shakespeare al simbolismo francés con poesía visual delicada.",
+        "width": 60,
+        "height": 48
+      }
+    ],
+    "gustav-klimt": [
+      {
+        "id": "klimt-danae",
+        "filename": "Gustav_Klimt_-_Danae_-_Google_Art_Project.jpg",
+        "title": "Dánae",
+        "year": 1907,
+        "description": "La princesa mitológica recibe a Zeus transformado en lluvia de oro. Klimt une erotismo simbólico y decoración bizantina en el periodo dorado.",
+        "width": 77,
+        "height": 77
+      },
+      {
+        "id": "klimt-serpientes-agua",
+        "filename": "Gustav_Klimt_-_Water_Serpents_I_-_Google_Art_Project.jpg",
+        "title": "Serpientes de agua I",
+        "year": 1904,
+        "description": "Figuras femeninas ondulan entre acuáticas serpentineces y fondos verdes. Klimt explora deseo y movimiento con arabescos y planos decorativos.",
+        "width": 50,
+        "height": 20
+      },
+      {
+        "id": "klimt-virgen",
+        "filename": "Gustav_Klimt_-_The_Virgin_-_Google_Art_Project.jpg",
+        "title": "La virgen",
+        "year": 1913,
+        "description": "Mujer dormida rodeada de compañeras en espiral de color y patrón. Klimt simboliza despertar sexual y fecundidad con mosaicos y tonos vivos.",
+        "width": 190,
+        "height": 200
+      },
+      {
+        "id": "klimt-esperanza-ii",
+        "filename": "Gustav_Klimt_-_Hope_II_-_Google_Art_Project.jpg",
+        "title": "Esperanza II",
+        "year": 1907,
+        "description": "Mujer embarazada flanqueada por figuras de la muerte y enfermedad. Klimt confronta maternidad y mortalidad con oro y diseño simbólico.",
+        "width": 110,
+        "height": 110
+      },
+      {
+        "id": "klimt-muerte-vida",
+        "filename": "Gustav_Klimt_-_Death_and_Life_-_Google_Art_Project.jpg",
+        "title": "Muerte y vida",
+        "year": 1910,
+        "description": "Esqueleto sonriente contempla un amasijo de cuerpos dormidos y abrazados. Alegoría modernista sobre el ciclo vital en clave decorativa.",
+        "width": 178,
+        "height": 150
+      },
+      {
+        "id": "klimt-tres-edades",
+        "filename": "Gustav_Klimt_-_The_Three_Ages_of_Woman_-_Google_Art_Project.jpg",
+        "title": "Las tres edades de la mujer",
+        "year": 1905,
+        "description": "Niña, madre y anciana encarnan el paso del tiempo ante un fondo onírico. Klimt vincula simbolismo vienés y decoración simétrica.",
+        "width": 180,
+        "height": 180
+      }
+    ],
+    "henri-rousseau": [
+      {
+        "id": "rouseau-gitana",
+        "filename": "Henri_Rousseau_-_The_Sleeping_Gypsy_-_Google_Art_Project.jpg",
+        "title": "La gitana dormida",
+        "year": 1897,
+        "description": "Mujer y laúd bajo la luna mientras un león la olfatea en un desierto irreal. Poema visual de misterio que sedujo a las vanguardias parisinas.",
+        "width": 201,
+        "height": 129
+      },
+      {
+        "id": "rouseau-nino-roca",
+        "filename": "Henri_Rousseau_-_Boy_on_the_Rocks_-_Google_Art_Project.jpg",
+        "title": "Niño sobre las rocas",
+        "year": 1895,
+        "description": "Infante sentado en un paisaje rocoso de frontalidad ingenua. Rousseau mezcla retrato familiar y naturaleza imaginada con tonos intensos.",
+        "width": 100,
+        "height": 81
+      },
+      {
+        "id": "rouseau-selva-simios",
+        "filename": "Henri_Rousseau_-_Tropical_Forest_with_Apes_and_Snake_-_Google_Art_Project.jpg",
+        "title": "Selva tropical con monos y serpiente",
+        "year": 1910,
+        "description": "Primates y reptil en vegetación densa inventada desde París. Rousseau construye la selva desde jardines botánicos y fantasía minuciosa.",
+        "width": 190,
+        "height": 130
+      },
+      {
+        "id": "rouseau-banquete-leon",
+        "filename": "Henri_Rousseau_-_The_Repast_of_the_Lion_-_Google_Art_Project.jpg",
+        "title": "El banquete del león",
+        "year": 1907,
+        "description": "Felino majestuoso en un paisaje exótico de hojas gigantes. Escena de calma animal que contrasta con la violencia de otros cuadros selváticos.",
+        "width": 114,
+        "height": 146
+      },
+      {
+        "id": "rouseau-boda",
+        "filename": "Henri_Rousseau_-_The_Wedding_Party_-_Google_Art_Project.jpg",
+        "title": "La fiesta de bodas",
+        "year": 1905,
+        "description": "Grupo de invitados en un parque suburbano con árboles recortados. Rousseau pinta la vida burguesa con ingenuidad deliberada y color plano.",
+        "width": 114,
+        "height": 163
+      },
+      {
+        "id": "rouseau-puente",
+        "filename": "Henri_Rousseau_-_The_Bridge_at_Nanterre_-_Google_Art_Project.jpg",
+        "title": "El puente de Nanterre",
+        "year": 1876,
+        "description": "Paisaje suburbano parisino con figuras diminutas y cielo amplio. Obra temprana que anticipa su mirada frontal y distante de la periferia moderna.",
+        "width": 46,
+        "height": 37
+      }
+    ],
+    "aubrey-beardsley": [
+      {
+        "id": "beardsley-recompensa",
+        "filename": "Aubrey_Beardsley_-_The_Dancer%27s_Reward_-_Google_Art_Project.jpg",
+        "title": "La recompensa de la bailarina",
+        "year": 1893,
+        "description": "Salomé recibe la cabeza del Bautista en una estampa de línea extrema. Beardsley condensa teatro, erotismo y violencia en blanco y negro puro.",
+        "width": 23,
+        "height": 18
+      },
+      {
+        "id": "beardsley-tocador-salome",
+        "filename": "Aubrey_Beardsley_-_The_Toilette_of_Salome_-_Google_Art_Project.jpg",
+        "title": "El tocador de Salomé",
+        "year": 1893,
+        "description": "Escena de preparación con figuras alargadas y fondos vacíos. Beardsley transforma la ilustración finisecular en diseño abstracto y provocador.",
+        "width": 23,
+        "height": 18
+      },
+      {
+        "id": "beardsley-herodias",
+        "filename": "Aubrey_Beardsley_-_Enter_Herodias_-_Google_Art_Project.jpg",
+        "title": "Entra Herodías",
+        "year": 1893,
+        "description": "Herodías avanza en traje de contornos sinuosos para la Salomé de Wilde. Dibujo de siluetas planas que define el art nouveau británico.",
+        "width": 23,
+        "height": 18
+      },
+      {
+        "id": "beardsley-artista-ego",
+        "filename": "Aubrey_Beardsley_-_The_Artist_and_his_Ego_-_Google_Art_Project.jpg",
+        "title": "El artista y su ego",
+        "year": 1894,
+        "description": "Autorretrato simbólico con figuras alegóricas y arabescos negros. Beardsley ironiza sobre fama, decadencia y creación en clave modernista.",
+        "width": 23,
+        "height": 18
+      },
+      {
+        "id": "beardsley-mascara",
+        "filename": "Aubrey_Beardsley_-_The_Masked_Ball_-_Google_Art_Project.jpg",
+        "title": "Baile de máscaras",
+        "year": 1894,
+        "description": "Figuras enmascaradas en composición de líneas verticales y vacíos blancos. Beardsley convierte la fiesta aristocrática en teatro gráfico de contornos extremos.",
+        "width": 23,
+        "height": 18
+      },
+      {
+        "id": "beardsley-lady-gold",
+        "filename": "Aubrey_Beardsley_-_Lady_Gold%27s_Escape_-_Google_Art_Project.jpg",
+        "title": "La fuga de lady Gold",
+        "year": 1894,
+        "description": "Escena narrativa de figuras estilizadas y motivos florales negros. Beardsley narra con economía de trazo y erotismo sugerido propio del decadentismo.",
+        "width": 23,
+        "height": 18
+      }
+    ]
+  },
+  "newAuthors": {
+    "gustave-moreau": {
+      "meta": {
+        "id": "gustave-moreau",
+        "name": "Gustave Moreau",
+        "category": "simbolismo-modernismo-naif",
+        "fullName": "Gustave Moreau",
+        "years": "1826 – 1898",
+        "origin": "París, Francia",
+        "bio": "Maestro del simbolismo francés tardío. Sus lienzos de mito, religión y fantasía combinan miniaturismo joyero, arquitecturas oníricas y un erotismo intelectual que influyó en toda una generación, desde Redon hasta los surrealistas."
+      },
+      "paintings": [
+        {
+          "id": "moreau-jupiter-semele",
+          "filename": "Gustave_Moreau_-_Jupiter_and_Semele_-_Google_Art_Project.jpg",
+          "title": "Júpiter y Semele",
+          "year": 1895,
+          "description": "El dios se revela a Semele en un torbellino de fuego y ornamentación. Moreau condensa mito, pasión y destrucción en un universo simbolista abrumador.",
+          "width": 213,
+          "height": 118
+        },
+        {
+          "id": "moreau-aparicion",
+          "filename": "Gustave_Moreau_-_The_Apparition_-_Google_Art_Project.jpg",
+          "title": "La aparición",
+          "year": 1876,
+          "description": "Salomé ve surgir la cabeza del Bautista en un palacio fantasmagórico. Obra cumbre del simbolismo que funde erotismo, misterio y preciosismo.",
+          "width": 106,
+          "height": 72
+        },
+        {
+          "id": "moreau-salome",
+          "filename": "Gustave_Moreau_-_Salome_Dancing_before_Herod_-_Google_Art_Project.jpg",
+          "title": "Salomé danzando ante Herodes",
+          "year": 1876,
+          "description": "La bailarina gira ante el trono mientras la aparición se insinúa al fondo. Moreau multiplica detalles arquitectónicos y joyas en escena teatral.",
+          "width": 92,
+          "height": 143
+        },
+        {
+          "id": "moreau-galatea",
+          "filename": "Gustave_Moreau_-_Galatea_-_Google_Art_Project.jpg",
+          "title": "Galatea",
+          "year": 1880,
+          "description": "La ninfa emerge del mar ante un paisaje mineral y arquitectónico. Moreau transforma el mito clásico en visión interior de belleza inaccesible.",
+          "width": 80,
+          "height": 100
+        },
+        {
+          "id": "moreau-edipo",
+          "filename": "Gustave_Moreau_-_Oedipus_and_the_Sphinx_-_Google_Art_Project.jpg",
+          "title": "Edipo y la esfinge",
+          "year": 1864,
+          "description": "Enfrentamiento mortal entre héroe y criatura en un desierto simbólico. Moreau convierte la escena griega en meditación sobre enigma y destino.",
+          "width": 206,
+          "height": 105
+        },
+        {
+          "id": "moreau-prometeo",
+          "filename": "Gustave_Moreau_-_Prometheus_-_Google_Art_Project.jpg",
+          "title": "Prometeo",
+          "year": 1868,
+          "description": "Titán encadenado ante águila y rocas de un paisaje fantástico. Moreau eleva la rebeldía mítica con color rico y figuras escultóricas.",
+          "width": 43,
+          "height": 35
+        },
+        {
+          "id": "moreau-unicornios",
+          "filename": "Gustave_Moreau_-_The_Unicorns_-_Google_Art_Project.jpg",
+          "title": "Los unicornios",
+          "year": 1885,
+          "description": "Criaturas legendarias en un claro mítico de vegetación y luz dorada. Moreau pinta la fantasía medieval con acabado de miniatura ampliada.",
+          "width": 115,
+          "height": 90
+        },
+        {
+          "id": "moreau-hércules",
+          "filename": "Gustave_Moreau_-_Hercules_and_the_Lernaean_Hydra_-_Google_Art_Project.jpg",
+          "title": "Hércules y la hidra de Lerna",
+          "year": 1876,
+          "description": "Héroe combate la hidra en un pantano de formas serpentinas. Moreau dramatiza el mito con detalle joyero y atmósfera de pesadilla clásica.",
+          "width": 179,
+          "height": 154
+        },
+        {
+          "id": "moreau-orfeo",
+          "filename": "Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
+          "title": "Orfeo",
+          "year": 1865,
+          "description": "Cabeza del poeta flotando en un paisaje de ruinas y vegetación. Moreau anticipa visiones surrealistas desde la tradición simbolista francesa.",
+          "width": 154,
+          "height": 100
+        },
+        {
+          "id": "moreau-musa",
+          "filename": "Gustave_Moreau_-_The_Muse_Leaving_her_Poet_-_Google_Art_Project.jpg",
+          "title": "La musa abandona a su poeta",
+          "year": 1864,
+          "description": "Figura alada se aleja de un poeta postrado entre arquitecturas oníricas. Moreau personifica inspiración y abandono en clave alegórica.",
+          "width": 88,
+          "height": 60
+        },
+        {
+          "id": "moreau-dios-marcial",
+          "filename": "Gustave_Moreau_-_Jupiter_and_Europa_-_Google_Art_Project.jpg",
+          "title": "Júpiter y Europa",
+          "year": 1869,
+          "description": "El dios, transformado, rapta a Europa en un mar de detalles ornamentales. Moreau funde erotismo mítico y fantasía arquitectónica.",
+          "width": 75,
+          "height": 95
+        },
+        {
+          "id": "moreau-lot",
+          "filename": "Gustave_Moreau_-_Lot_and_His_Daughters_-_Google_Art_Project.jpg",
+          "title": "Lot y sus hijas",
+          "year": 1876,
+          "description": "Escena bíblica en caverna de rocas fantasmagóricas. Moreau aborda el mito con lujo decorativo y ambigüedad moral propia del fin de siglo.",
+          "width": 103,
+          "height": 82
+        },
+        {
+          "id": "moreau-chimera",
+          "filename": "Gustave_Moreau_-_The_Chimeras_-_Google_Art_Project.jpg",
+          "title": "Las quimeras",
+          "year": 1884,
+          "description": "Criaturas híbridas habitan un acantilado de ensueño. Moreau explora lo monstruoso y lo fabuloso con minuciosidad casi arqueológica.",
+          "width": 125,
+          "height": 90
+        },
+        {
+          "id": "moreau-baco",
+          "filename": "Gustave_Moreau_-_Bacchus_and_the_Tiger_-_Google_Art_Project.jpg",
+          "title": "Baco y el tigre",
+          "year": 1865,
+          "description": "Dios del vino aparece montado en felino entre vegetación exótica. Moreau mezcla orientalismo simbolista y violencia mítica contenida.",
+          "width": 90,
+          "height": 60
+        },
+        {
+          "id": "moreau-pieta",
+          "filename": "Gustave_Moreau_-_Pieta_-_Google_Art_Project.jpg",
+          "title": "Piedad",
+          "year": 1876,
+          "description": "Cristo muerto sostenido por la Virgen en un paisaje de roca y luz irreal. Moreau reinterpreta la escena sagrada con lirismo decorativo.",
+          "width": 103,
+          "height": 82
+        },
+        {
+          "id": "moreau-sirenas",
+          "filename": "Gustave_Moreau_-_The_Sirens_-_Google_Art_Project.jpg",
+          "title": "Las sirenas",
+          "year": 1882,
+          "description": "Criaturas marinas cantan ante un navegante en aguas de fantasía. Moreau convierte el mito en poema visual de seducción y muerte.",
+          "width": 95,
+          "height": 75
+        },
+        {
+          "id": "moreau-caballo-pegaso",
+          "filename": "Gustave_Moreau_-_Pegasus_and_the_Muse_-_Google_Art_Project.jpg",
+          "title": "Pegaso y la musa",
+          "year": 1889,
+          "description": "Caballo alado y musa habitan un paisaje clásico de ensueño. Moreau celebra la inspiración artística con preciosismo simbolista.",
+          "width": 80,
+          "height": 60
+        }
+      ]
+    },
+    "ferdinand-hodler": {
+      "meta": {
+        "id": "ferdinand-hodler",
+        "name": "Ferdinand Hodler",
+        "category": "simbolismo-modernismo-naif",
+        "fullName": "Ferdinand Hodler",
+        "years": "1853 – 1918",
+        "origin": "Berna, Suiza",
+        "bio": "Pintor suizo entre realismo, simbolismo y modernismo. Conocido por sus paisajes alpinos, retratos hieráticos y alegorías de la vida y la muerte en composiciones simétricas de gran intensidad espiritual."
+      },
+      "paintings": [
+        {
+          "id": "hodler-dia",
+          "filename": "Ferdinand_Hodler_-_The_Day_-_Google_Art_Project.jpg",
+          "title": "El día",
+          "year": 1899,
+          "description": "Mujer desnuda simboliza la luz en una composición simétrica y frontal. Hodler condensa vida y claridad en su estilo paralelista suizo.",
+          "width": 260,
+          "height": 130
+        },
+        {
+          "id": "hodler-noche",
+          "filename": "Ferdinand_Hodler_-_The_Night_-_Google_Art_Project.jpg",
+          "title": "La noche",
+          "year": 1890,
+          "description": "Figuras dormidas y una muerte amenazante en paisaje nocturno. Obra escandalosa que estableció la reputación simbolista de Hodler.",
+          "width": 116,
+          "height": 299
+        },
+        {
+          "id": "hodler-verdad",
+          "filename": "Ferdinand_Hodler_-_The_Truth_-_Google_Art_Project.jpg",
+          "title": "La verdad",
+          "year": 1903,
+          "description": "Mujer desnuda sostiene un espejo ante un fondo de pureza simétrica. Alegoría modernista de sinceridad y claridad espiritual.",
+          "width": 240,
+          "height": 120
+        },
+        {
+          "id": "hodler-amante",
+          "filename": "Ferdinand_Hodler_-_The_Lover_-_Google_Art_Project.jpg",
+          "title": "El amante",
+          "year": 1904,
+          "description": "Pareja abrazada en un paisaje alpino de líneas paralelas. Hodler traduce pasión y unidad en composición ritual y color sobrio.",
+          "width": 120,
+          "height": 80
+        },
+        {
+          "id": "hodler-jungfrau",
+          "filename": "Ferdinand_Hodler_-_The_Jungfrau_from_M%C3%BCrren_-_Google_Art_Project.jpg",
+          "title": "La Jungfrau desde Mürren",
+          "year": 1915,
+          "description": "Cumbre nevada vista desde el valle con horizonte limpio. Hodler pinta los Alpes suizos con geometría monumental y luz cristalina.",
+          "width": 60,
+          "height": 80
+        },
+        {
+          "id": "hodler-madera",
+          "filename": "Ferdinand_Hodler_-_The_Woodcutter_-_Google_Art_Project.jpg",
+          "title": "El leñador",
+          "year": 1910,
+          "description": "Trabajador en el bosque captado con simetría y solemnidad. Hodler eleva la labor humana a emblema de resistencia y conexión con la naturaleza.",
+          "width": 90,
+          "height": 120
+        },
+        {
+          "id": "hodler-genevieve",
+          "filename": "Ferdinand_Hodler_-_Portrait_of_Genevieve_Cerruti_-_Google_Art_Project.jpg",
+          "title": "Retrato de Geneviève Cerruti",
+          "year": 1900,
+          "description": "Retrato frontal de mirada intensa y fondo sobrio. Hodler combina realismo psicológico y rigor compositivo en su galería de retratos.",
+          "width": 65,
+          "height": 80
+        },
+        {
+          "id": "hodler-madre-nino",
+          "filename": "Ferdinand_Hodler_-_Mother_and_Child_-_Google_Art_Project.jpg",
+          "title": "Madre e hijo",
+          "year": 1889,
+          "description": "Figuras entrelazadas en un interior de austeridad conmovedora. Hodler aborda maternidad y mortalidad con emoción contenida y línea clara.",
+          "width": 46,
+          "height": 55
+        },
+        {
+          "id": "hodler-tirador",
+          "filename": "Ferdinand_Hodler_-_The_Shooter_-_Google_Art_Project.jpg",
+          "title": "El tirador",
+          "year": 1900,
+          "description": "Tirador suizo en posición ritual ante paisaje alpino. Hodler monumentaliza tradición popular y identidad nacional con simetría moderna.",
+          "width": 84,
+          "height": 120
+        },
+        {
+          "id": "hodler-playa",
+          "filename": "Ferdinand_Hodler_-_At_the_Lake_Shore_-_Google_Art_Project.jpg",
+          "title": "A la orilla del lago",
+          "year": 1892,
+          "description": "Figuras junto al agua con reflejos y montañas al fondo. Paisaje suizo convertido en meditación sobre calma y presencia humana.",
+          "width": 60,
+          "height": 80
+        },
+        {
+          "id": "hodler-euritmia",
+          "filename": "Ferdinand_Hodler_-_Eurythmy_-_Google_Art_Project.jpg",
+          "title": "Euritmia",
+          "year": 1895,
+          "description": "Figuras femeninas en movimiento rítmico ante un fondo simétrico. Hodler busca armonía entre cuerpo, espacio y espíritu.",
+          "width": 100,
+          "height": 80
+        },
+        {
+          "id": "hodler-mujer-fantasma",
+          "filename": "Ferdinand_Hodler_-_The_Woman_in_the_Wilderness_-_Google_Art_Project.jpg",
+          "title": "La mujer en el desierto",
+          "year": 1903,
+          "description": "Figura solitaria en un paisaje desolado de rocas y cielo. Alegoría simbolista de abandono, fe y resistencia interior.",
+          "width": 120,
+          "height": 80
+        },
+        {
+          "id": "hodler-autorretrato",
+          "filename": "Ferdinand_Hodler_-_Self-Portrait_-_Google_Art_Project.jpg",
+          "title": "Autorretrato",
+          "year": 1916,
+          "description": "El pintor se mira con frontalidad severa y fondo oscuro. Testimonio tardío de un artista que definió la identidad visual suiza moderna.",
+          "width": 65,
+          "height": 80
+        },
+        {
+          "id": "hodler-montanas",
+          "filename": "Ferdinand_Hodler_-_Lake_Thun_with_the_Niesen_-_Google_Art_Project.jpg",
+          "title": "Lago Thun con el Niesen",
+          "year": 1910,
+          "description": "Lago y montaña suizos en franjas horizontales de color puro. Hodler sintetiza paisaje alpino en ritmo casi musical.",
+          "width": 80,
+          "height": 100
+        },
+        {
+          "id": "hodler-despertar",
+          "filename": "Ferdinand_Hodler_-_The_Awakening_-_Google_Art_Project.jpg",
+          "title": "El despertar",
+          "year": 1892,
+          "description": "Mujer desnuda se levanta entre figuras dormidas. Hodler explora paso de la noche al día con simbolismo y paralelismo compositivo.",
+          "width": 120,
+          "height": 80
+        },
+        {
+          "id": "hodler-joven",
+          "filename": "Ferdinand_Hodler_-_Youth_Adorning_a_Statue_-_Google_Art_Project.jpg",
+          "title": "Juventud adornando una estatua",
+          "year": 1900,
+          "description": "Joven coloca flores en una escultura clásica al aire libre. Hodler vincula belleza, cultura y naturaleza en escena simétrica.",
+          "width": 100,
+          "height": 80
+        },
+        {
+          "id": "hodler-mujer-sentada",
+          "filename": "Ferdinand_Hodler_-_Seated_Woman_-_Google_Art_Project.jpg",
+          "title": "Mujer sentada",
+          "year": 1905,
+          "description": "Figura femenina en actitud meditativa con fondo simplificado. Retrato de quietud espiritual en el lenguaje paralelista de Hodler.",
+          "width": 65,
+          "height": 80
+        }
+      ]
+    },
+    "alphonse-mucha": {
+      "meta": {
+        "id": "alphonse-mucha",
+        "name": "Alphonse Mucha",
+        "category": "simbolismo-modernismo-naif",
+        "fullName": "Alfons Maria Mucha",
+        "years": "1860 – 1939",
+        "origin": "Ivančice, Moravia (actual República Checa)",
+        "bio": "Artista checo emblema del art nouveau parisino. Sus carteles, paneles decorativos y pinturas de figuras femeninas circundadas de arabescos florales definieron la imagen visual de la Belle Époque."
+      },
+      "paintings": [
+        {
+          "id": "mucha-job",
+          "filename": "Alphonse_Mucha_-_Job_-_Google_Art_Project.jpg",
+          "title": "Job",
+          "year": 1896,
+          "description": "Cartel icónico con figura femenina de cabello sinuoso sosteniendo cartas de Job. Mucha inventa el art nouveau comercial con línea decorativa y color pastel.",
+          "width": 60,
+          "height": 40
+        },
+        {
+          "id": "mucha-primavera",
+          "filename": "Alphonse_Mucha_-_Spring_-_Google_Art_Project.jpg",
+          "title": "Primavera",
+          "year": 1896,
+          "description": "Musa estacional rodeada de flores y arabescos en panel vertical. Mucha personifica las estaciones con gracia simbolista y ornamentación fluida.",
+          "width": 70,
+          "height": 30
+        },
+        {
+          "id": "mucha-verano",
+          "filename": "Alphonse_Mucha_-_Summer_-_Google_Art_Project.jpg",
+          "title": "Verano",
+          "year": 1896,
+          "description": "Figura femenina entre frutos y hojas en composición estrecha y elegante. Mucha convierte el ciclo natural en decoración modernista.",
+          "width": 70,
+          "height": 30
+        },
+        {
+          "id": "mucha-otono",
+          "filename": "Alphonse_Mucha_-_Autumn_-_Google_Art_Project.jpg",
+          "title": "Otoño",
+          "year": 1896,
+          "description": "Dama otoñal con uvas y hojas secas en marco floral. Panel decorativo que resume la estética art nouveau de Mucha.",
+          "width": 70,
+          "height": 30
+        },
+        {
+          "id": "mucha-invierno",
+          "filename": "Alphonse_Mucha_-_Winter_-_Google_Art_Project.jpg",
+          "title": "Invierno",
+          "year": 1896,
+          "description": "Figura envuelta en manto invernal entre ramas desnudas. Mucha equilibra frialdad estacional y calidez ornamental.",
+          "width": 70,
+          "height": 30
+        },
+        {
+          "id": "mucha-luna",
+          "filename": "Alphonse_Mucha_-_The_Moon_and_the_Stars_-_Google_Art_Project.jpg",
+          "title": "La luna y las estrellas",
+          "year": 1902,
+          "description": "Figuras celestes en medallones decorativos de contorno sinuoso. Mucha eleva cartel publicitario a poema visual simbolista.",
+          "width": 80,
+          "height": 40
+        },
+        {
+          "id": "mucha-diana",
+          "filename": "Alphonse_Mucha_-_Diana_-_Google_Art_Project.jpg",
+          "title": "Diana",
+          "year": 1897,
+          "description": "Diosa de la caza enmarca un círculo decorativo de hojas y estrellas. Mucha fusiona mitología clásica y diseño art nouveau.",
+          "width": 60,
+          "height": 40
+        },
+        {
+          "id": "mucha-madonna",
+          "filename": "Alphonse_Mucha_-_Madonna_of_the_Lilies_-_Google_Art_Project.jpg",
+          "title": "Madonna de los lirios",
+          "year": 1905,
+          "description": "Virgen entre lirios en panel de devoción modernista. Mucha reinterpreta lo sacro con ornamentación checa y línea serena.",
+          "width": 50,
+          "height": 80
+        },
+        {
+          "id": "mucha-slavia",
+          "filename": "Alphonse_Mucha_-_Slavia_-_Google_Art_Project.jpg",
+          "title": "Slavia",
+          "year": 1908,
+          "description": "Alegoría de la nación eslava con corona y laurel en composición monumental. Mucha vincula identidad nacional y decoración simbólica.",
+          "width": 80,
+          "height": 60
+        },
+        {
+          "id": "mucha-reverie",
+          "filename": "Alphonse_Mucha_-_Reverie_-_Google_Art_Project.jpg",
+          "title": "Ensoñación",
+          "year": 1897,
+          "description": "Mujer pensativa en marco floral de ensueño. Cartel que condensa la feminidad art nouveau en mirada distante y arabescos.",
+          "width": 60,
+          "height": 40
+        },
+        {
+          "id": "mucha-bieres",
+          "filename": "Alphonse_Mucha_-_Bi%C3%A8res_de_la_Meuse_-_Google_Art_Project.jpg",
+          "title": "Cervezas de la Meuse",
+          "year": 1897,
+          "description": "Figura femenina monumental enmarca publicidad de cerveza con lujo decorativo. Mucha transforma producto comercial en icono modernista.",
+          "width": 60,
+          "height": 40
+        },
+        {
+          "id": "mucha-lorenzaccio",
+          "filename": "Alphonse_Mucha_-_Lorenzaccio_-_Google_Art_Project.jpg",
+          "title": "Lorenzaccio",
+          "year": 1896,
+          "description": "Cartel teatral con figura histórica y fondo ornamental. Mucha diseña identidad visual del espectáculo finisecular parisino.",
+          "width": 60,
+          "height": 40
+        },
+        {
+          "id": "mucha-sarah",
+          "filename": "Alphonse_Mucha_-_Sarah_Bernhardt_-_Gismonda_-_Google_Art_Project.jpg",
+          "title": "Sarah Bernhardt en Gismonda",
+          "year": 1894,
+          "description": "Cartel que lanzó la fama de Mucha con la diva en arco decorativo. Obra fundacional del art nouveau y del retrato escénico moderno.",
+          "width": 60,
+          "height": 40
+        },
+        {
+          "id": "mucha-epoca",
+          "filename": "Alphonse_Mucha_-_The_Times_of_the_Day_-_Google_Art_Project.jpg",
+          "title": "Las horas del día",
+          "year": 1899,
+          "description": "Serie decorativa que personifica momentos del día en figuras femeninas. Mucha organiza el tiempo como poema ornamental.",
+          "width": 80,
+          "height": 40
+        },
+        {
+          "id": "mucha-flores",
+          "filename": "Alphonse_Mucha_-_Flowers_-_Google_Art_Project.jpg",
+          "title": "Flores",
+          "year": 1898,
+          "description": "Panel floral con figura femenina entre pétalos y arabescos. Mucha celebra naturaleza y decoración en unidad indisoluble.",
+          "width": 60,
+          "height": 40
+        },
+        {
+          "id": "mucha-sonata",
+          "filename": "Alphonse_Mucha_-_The_Sonata_-_Google_Art_Project.jpg",
+          "title": "La sonata",
+          "year": 1898,
+          "description": "Mujer con instrumento en marco de hojas y curvas sinuosas. Mucha traduce música en imagen art nouveau de gran elegancia.",
+          "width": 60,
+          "height": 40
+        }
+      ]
+    },
+    "pablo-picasso": {
+      "meta": {
+        "id": "pablo-picasso",
+        "name": "Pablo Picasso",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Pablo Diego José Francisco de Paula Juan Nepomuceno Crispín Crispiniano de la Santísima Trinidad Ruiz y Picasso",
+        "years": "1881 – 1973",
+        "origin": "Málaga, España",
+        "bio": "Artista español que transformó la pintura del siglo XX. De su periodo azul y rosa al cubismo, el neoclasicismo y el surrealismo, Picasso reinventó sin cesar la forma, el collage y la escultura moderna."
+      },
+      "paintings": [
+        {
+          "id": "picasso-guernica",
+          "filename": "Pablo_Picasso_-_Guernica_-_Google_Art_Project.jpg",
+          "title": "Guernica",
+          "year": 1937,
+          "description": "Monumento antiguerra en blanco, negro y gris que denuncia el bombardeo de la villa vasca. Picasso condensa dolor, terror y resistencia en el mural más célebre del siglo XX.",
+          "width": 776,
+          "height": 349
+        },
+        {
+          "id": "picasso-demoiselles",
+          "filename": "Pablo_Picasso_-_Les_Demoiselles_d%27Avignon_-_Google_Art_Project.jpg",
+          "title": "Las señoritas de Aviñón",
+          "year": 1907,
+          "description": "Cinco figuras de contornos angulosos y máscaras primitivas. Obra fundacional del cubismo que rompe con la perspectiva renacentista.",
+          "width": 243,
+          "height": 233
+        },
+        {
+          "id": "picasso-vieja",
+          "filename": "Pablo_Picasso_-_The_Old_Guitarist_-_Google_Art_Project.jpg",
+          "title": "El guitarrista ciego",
+          "year": 1903,
+          "description": "Figura enferma y curvada abraza la guitarra en azules sombríos. Síntesis del periodo azul y de la miseria urbana de Barcelona y París.",
+          "width": 122,
+          "height": 83
+        },
+        {
+          "id": "picasso-senoritas-avignon",
+          "filename": "Pablo_Picasso_-_Girl_before_a_Mirror_-_Google_Art_Project.jpg",
+          "title": "Muchacha ante el espejo",
+          "year": 1932,
+          "description": "Marie-Thérèse Walter duplicada en espejo de color violáceo y amarillo. Picasso explora identidad, deseo y metamorfosis en clave surrealista.",
+          "width": 162,
+          "height": 130
+        },
+        {
+          "id": "picasso-sueno",
+          "filename": "Pablo_Picasso_-_Le_R%C3%AAve_-_Google_Art_Project.jpg",
+          "title": "El sueño",
+          "year": 1932,
+          "description": "Retrato onírico de Marie-Thérèse con rostro fragmentado y torso colorido. Color sensual y formas orgánicas en la década de los treinta.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "picasso-mujeres-fontainebleau",
+          "filename": "Pablo_Picasso_-_Three_Women_at_the_Spring_-_Google_Art_Project.jpg",
+          "title": "Tres mujeres en la fuente",
+          "year": 1921,
+          "description": "Figuras monumentales de estilo neoclásico junto a una fuente. Picasso retorna a la tradición mediterránea tras el cubismo analítico.",
+          "width": 185,
+          "height": 204
+        },
+        {
+          "id": "picasso-violin",
+          "filename": "Pablo_Picasso_-_Violin_and_Grapes_-_Google_Art_Project.jpg",
+          "title": "Violín y uvas",
+          "year": 1912,
+          "description": "Instrumento y fruta fragmentados en planos superpuestos. Cubismo analítico que descompone objeto y espacio en facetas grises.",
+          "width": 61,
+          "height": 50
+        },
+        {
+          "id": "picasso-maquinista",
+          "filename": "Pablo_Picasso_-_The_Locomotive_-_Google_Art_Project.jpg",
+          "title": "La locomotora",
+          "year": 1934,
+          "description": "Tren y figuras en composición dinámica de líneas negras. Picasso aborda modernidad industrial con energía gráfica y humor visual.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "picasso-autorretrato",
+          "filename": "Pablo_Picasso_-_Self-Portrait_-_Google_Art_Project.jpg",
+          "title": "Autorretrato",
+          "year": 1907,
+          "description": "Rostro angular y mirada penetrante en tonos ocres. Picasso se representa en el umbral del cubismo con crudeza expresiva.",
+          "width": 56,
+          "height": 46
+        },
+        {
+          "id": "picasso-ninas",
+          "filename": "Pablo_Picasso_-_Two_Girls_on_a_Balcony_-_Google_Art_Project.jpg",
+          "title": "Dos niñas en un balcón",
+          "year": 1902,
+          "description": "Figuras infantiles en azules del periodo azul con fondo urbano. Melancolía y delicadeza en la etapa temprana parisina.",
+          "width": 100,
+          "height": 81
+        },
+        {
+          "id": "picasso-merengue",
+          "filename": "Pablo_Picasso_-_The_Dance_-_Google_Art_Project.jpg",
+          "title": "La danza",
+          "year": 1925,
+          "description": "Bailarines en movimiento de formas biomorphicas y color intenso. Picasso vincula cubismo y surrealismo en escena de ritmo y erotismo.",
+          "width": 215,
+          "height": 142
+        },
+        {
+          "id": "picasso-pipa",
+          "filename": "Pablo_Picasso_-_Man_with_a_Pipe_-_Google_Art_Project.jpg",
+          "title": "Hombre con pipa",
+          "year": 1911,
+          "description": "Figura sentada descompuesta en planos cubistas de tonos ocres. Obra clave del cubismo analítico y la herencia de Cézanne.",
+          "width": 100,
+          "height": 81
+        },
+        {
+          "id": "picasso-mujer-flor",
+          "filename": "Pablo_Picasso_-_Woman_with_Flowered_Hat_-_Google_Art_Project.jpg",
+          "title": "Mujer con sombrero de flores",
+          "year": 1940,
+          "description": "Retrato colorista de formas simplificadas y mirada frontal. Picasso reinventa el retrato en plena Segunda Guerra Mundial.",
+          "width": 100,
+          "height": 81
+        },
+        {
+          "id": "picasso-paloma",
+          "filename": "Pablo_Picasso_-_Dove_of_Peace_-_Google_Art_Project.jpg",
+          "title": "Paloma de la paz",
+          "year": 1949,
+          "description": "Paloma blanca sobre fondo claro convertida en emblema pacifista. Picasso transforma símbolo cotidiano en icono universal de la paz.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "picasso-icaro",
+          "filename": "Pablo_Picasso_-_Fall_of_Icarus_-_Google_Art_Project.jpg",
+          "title": "Caída de Ícaro",
+          "year": 1958,
+          "description": "Ícaro cae al mar en composición de planos azules y figura blanca. Picasso reinterpreta mito clásico con economía moderna de signos.",
+          "width": 130,
+          "height": 97
+        }
+      ]
+    },
+    "henri-matisse": {
+      "meta": {
+        "id": "henri-matisse",
+        "name": "Henri Matisse",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Henri Émile Benoît Matisse",
+        "years": "1869 – 1954",
+        "origin": "Le Cateau-Cambrésis, Francia",
+        "bio": "Líder del fauvismo y maestro del color moderno. Matisse buscó en toda su carrera una arte de equilibrio, pureza y serenidad mediante línea decorativa, planos intensos y recortes de papel tardíos."
+      },
+      "paintings": [
+        {
+          "id": "matisse-danza",
+          "filename": "Henri_Matisse_-_The_Dance_-_Google_Art_Project.jpg",
+          "title": "La danza",
+          "year": 1910,
+          "description": "Círculo de figuras rojas que giran en un prado verde. Matisse condensa movimiento, ritual y armonía cromática en un emblema moderno.",
+          "width": 391,
+          "height": 260
+        },
+        {
+          "id": "matisse-musica",
+          "filename": "Henri_Matisse_-_The_Music_-_Google_Art_Project.jpg",
+          "title": "La música",
+          "year": 1910,
+          "description": "Figuras azules y rojas tocan instrumentos en paisaje simplificado. Pareja complementaria de La danza en clave de serenidad fauve.",
+          "width": 260,
+          "height": 391
+        },
+        {
+          "id": "matisse-armonia-rojo",
+          "filename": "Henri_Matisse_-_The_Red_Room_-_Google_Art_Project.jpg",
+          "title": "Armonía en rojo",
+          "year": 1908,
+          "description": "Interior rojo con mesa, figura y ventana al jardín. Matisse demuestra que el color puede construir espacio sin perspectiva tradicional.",
+          "width": 180,
+          "height": 221
+        },
+        {
+          "id": "matisse-ventana",
+          "filename": "Henri_Matisse_-_The_Open_Window_-_Google_Art_Project.jpg",
+          "title": "La ventana abierta",
+          "year": 1905,
+          "description": "Ventana sobre puerto con barcos y banderas de color puro. Obra fauve que disuelve forma en vibración cromática.",
+          "width": 55,
+          "height": 46
+        },
+        {
+          "id": "matisse-lujo",
+          "filename": "Henri_Matisse_-_Luxury,_Calm_and_Pleasure_-_Google_Art_Project.jpg",
+          "title": "Lujo, calma y voluptuosidad",
+          "year": 1904,
+          "description": "Bañistas en isla de color tropical y ritmo decorativo. Matisse imagina paraíso sensual antes del fauvismo pleno.",
+          "width": 98,
+          "height": 135
+        },
+        {
+          "id": "matisse-bailarina",
+          "filename": "Henri_Matisse_-_Dance_(II)_-_Google_Art_Project.jpg",
+          "title": "La danza II",
+          "year": 1932,
+          "description": "Versión mural de figuras rojas en movimiento circular. Matisse simplifica cuerpo y fondo hasta la esencia decorativa.",
+          "width": 260,
+          "height": 391
+        },
+        {
+          "id": "matisse-moriscos",
+          "filename": "Henri_Matisse_-_Moroccan_Landscape_-_Google_Art_Project.jpg",
+          "title": "Paisaje marroquí",
+          "year": 1912,
+          "description": "Arquitectura y figuras en Tánger con color plano y contorno marcado. El viaje a Marruecos transforma la paleta de Matisse.",
+          "width": 60,
+          "height": 80
+        },
+        {
+          "id": "matisse-odalisque",
+          "filename": "Henri_Matisse_-_Odalisque_with_Red_Culottes_-_Google_Art_Project.jpg",
+          "title": "Odalisca con calzones rojos",
+          "year": 1921,
+          "description": "Mujer reclinada en interior exótico de patrones y color. Matisse explora orientalismo decorativo con línea serena.",
+          "width": 54,
+          "height": 65
+        },
+        {
+          "id": "matisse-goldfish",
+          "filename": "Henri_Matisse_-_Goldfish_-_Google_Art_Project.jpg",
+          "title": "Peces rojos",
+          "year": 1912,
+          "description": "Acuario y mesa en interior verde de contornos sinuosos. Matisse convierte objeto doméstico en meditación colorista.",
+          "width": 147,
+          "height": 119
+        },
+        {
+          "id": "matisse-bajo-sol",
+          "filename": "Henri_Matisse_-_Joy_of_Life_-_Google_Art_Project.jpg",
+          "title": "Alegría de vivir",
+          "year": 1905,
+          "description": "Bañistas y músicos en paisaje arcadiano de color intenso. Manifiesto fauve de placer, luz y simplificación formal.",
+          "width": 176,
+          "height": 241
+        },
+        {
+          "id": "matisse-icaros",
+          "filename": "Henri_Matisse_-_Icarus_-_Google_Art_Project.jpg",
+          "title": "Ícaro",
+          "year": 1947,
+          "description": "Figura roja con estrellas en recorte de papel coloreado. Obra tardía donde Matisse esculpe con color y silueta.",
+          "width": 42,
+          "height": 34
+        },
+        {
+          "id": "matisse-balanza",
+          "filename": "Henri_Matisse_-_The_Snail_-_Google_Art_Project.jpg",
+          "title": "El caracol",
+          "year": 1953,
+          "description": "Composición de papeles recortados en espiral cromática. Síntesis final de su búsqueda de equilibrio y decoración pura.",
+          "width": 286,
+          "height": 287
+        },
+        {
+          "id": "matisse-bauhaus",
+          "filename": "Henri_Matisse_-_Portrait_of_Madame_Matisse_-_Google_Art_Project.jpg",
+          "title": "Retrato de madame Matisse",
+          "year": 1905,
+          "description": "Amélie Matisse con sombrero verde y rostro de color discordante. Retrato fauve que escandalizó por su libertad cromática.",
+          "width": 40,
+          "height": 32
+        },
+        {
+          "id": "matisse-piano",
+          "filename": "Henri_Matisse_-_The_Piano_Lesson_-_Google_Art_Project.jpg",
+          "title": "La lección de piano",
+          "year": 1916,
+          "description": "Interior geométrico con niño al piano y figura maternal. Matisse equilibra disciplina cubista y intimidad doméstica.",
+          "width": 245,
+          "height": 212
+        },
+        {
+          "id": "matisse-bajo-viento",
+          "filename": "Henri_Matisse_-_Blue_Nude_-_Google_Art_Project.jpg",
+          "title": "Desnudo azul",
+          "year": 1952,
+          "description": "Silueta femenina recortada en azul sobre fondo claro. Recorte tardío que resume décadas de búsqueda de línea esencial.",
+          "width": 106,
+          "height": 78
+        }
+      ]
+    },
+    "georges-braque": {
+      "meta": {
+        "id": "georges-braque",
+        "name": "Georges Braque",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Georges Braque",
+        "years": "1882 – 1963",
+        "origin": "Argenteuil, Francia",
+        "bio": "Cofundador del cubismo junto a Picasso. Braque desarrolló un lenguaje de planos superpuestos, paletas sobrias y collage que transformó la representación moderna del espacio y el objeto."
+      },
+      "paintings": [
+        {
+          "id": "braque-hombre-guitarra",
+          "filename": "Georges_Braque_-_Man_with_a_Guitar_-_Google_Art_Project.jpg",
+          "title": "Hombre con guitarra",
+          "year": 1911,
+          "description": "Figura e instrumento descompuestos en planos grises y ocres. Cubismo analítico que funde música y cuerpo en facetas geométricas.",
+          "width": 100,
+          "height": 81
+        },
+        {
+          "id": "braque-violin",
+          "filename": "Georges_Braque_-_Violin_and_Candlestick_-_Google_Art_Project.jpg",
+          "title": "Violín y candelabro",
+          "year": 1910,
+          "description": "Objetos de mesa fragmentados en composición casi monocroma. Braque analiza volumen y superficie desde múltiples ángulos.",
+          "width": 60,
+          "height": 50
+        },
+        {
+          "id": "braque-cartas",
+          "filename": "Georges_Braque_-_The_Portuguese_-_Google_Art_Project.jpg",
+          "title": "El portugués",
+          "year": 1911,
+          "description": "Hombre en café con letras y formas geométricas superpuestas. Obra clave que introduce palabra y señal al cubismo.",
+          "width": 117,
+          "height": 81
+        },
+        {
+          "id": "braque-estudio",
+          "filename": "Georges_Braque_-_Studio_VIII_-_Google_Art_Project.jpg",
+          "title": "Estudio VIII",
+          "year": 1954,
+          "description": "Interior de taller con objetos y aves en paleta clara. Braque revisita cubismo en etapa madura de calma y síntesis.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "braque-pajaros",
+          "filename": "Georges_Braque_-_The_Birds_-_Google_Art_Project.jpg",
+          "title": "Los pájaros",
+          "year": 1960,
+          "description": "Aves en vuelo sobre fondo azul de formas simplificadas. Motivo recurrente en la obra tardía de Braque.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "braque-mesa",
+          "filename": "Georges_Braque_-_The_Table_-_Google_Art_Project.jpg",
+          "title": "La mesa",
+          "year": 1918,
+          "description": "Naturaleza muerta cubista con pipe y fruta en tonos grises. Braque reorganiza lo cotidiano en arquitectura silenciosa de planos.",
+          "width": 81,
+          "height": 100
+        },
+        {
+          "id": "braque-roche",
+          "filename": "Georges_Braque_-_Rocks_at_L%27Estaque_-_Google_Art_Project.jpg",
+          "title": "Rocas en L'Estaque",
+          "year": 1908,
+          "description": "Paisaje provenzal simplificado en bloques geométricos. Obra temprana que anticipa el cubismo desde Cézanne.",
+          "width": 73,
+          "height": 60
+        },
+        {
+          "id": "braque-soprano",
+          "filename": "Georges_Braque_-_Woman_with_a_Guitar_-_Google_Art_Project.jpg",
+          "title": "Mujer con guitarra",
+          "year": 1913,
+          "description": "Figura femenina e instrumento en collage y planos de papel. Cubismo sintético que incorpora materia real al lienzo.",
+          "width": 130,
+          "height": 97
+        }
+      ]
+    },
+    "salvador-dali": {
+      "meta": {
+        "id": "salvador-dali",
+        "name": "Salvador Dalí",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Salvador Domingo Felipe Jacinto Dalí i Domènech",
+        "years": "1904 – 1989",
+        "origin": "Figueres, España",
+        "bio": "Máximo representante del surrealismo figurativo. Dalí combinó técnica académica, imaginería onírica, paranoia controlada y teatralidad pública para crear un universo de relojes blandos, desiertos y metamorfosis."
+      },
+      "paintings": [
+        {
+          "id": "dali-persistencia",
+          "filename": "Salvador_Dali_-_The_Persistence_of_Memory_-_Google_Art_Project.jpg",
+          "title": "La persistencia de la memoria",
+          "year": 1931,
+          "description": "Relojes blandos sobre paisaje de Port Lligat. Dalí visualiza tiempo, inconsciente y memoria con precisión alucinatoria.",
+          "width": 24,
+          "height": 33
+        },
+        {
+          "id": "dali-metamorfosis",
+          "filename": "Salvador_Dali_-_Metamorphosis_of_Narcissus_-_Google_Art_Project.jpg",
+          "title": "Metamorfosis de Narciso",
+          "year": 1937,
+          "description": "Narciso y su reflejo se transforman en mano y huevo. Dalí traduce mito y psicoanálisis en escena doble de precisión hiperrealista.",
+          "width": 51,
+          "height": 78
+        },
+        {
+          "id": "dali-gran-masturbador",
+          "filename": "Salvador_Dali_-_The_Great_Masturbator_-_Google_Art_Project.jpg",
+          "title": "El gran masturbador",
+          "year": 1929,
+          "description": "Cabeza blanda y figuras litorales en paisaje de Cadaqués. Obra clave del surrealismo que mezcla deseo, miedo y paisaje catalán.",
+          "width": 110,
+          "height": 150
+        },
+        {
+          "id": "dali-tentacion",
+          "filename": "Salvador_Dali_-_The_Temptation_of_St_Anthony_-_Google_Art_Project.jpg",
+          "title": "La tentación de San Antonio",
+          "year": 1946,
+          "description": "Santo ante carros y elefantes de patas alargadas en desierto. Dalí monumentaliza visión y lujuria en escala cinematográfica.",
+          "width": 89,
+          "height": 119
+        },
+        {
+          "id": "dali-autorretrato",
+          "filename": "Salvador_Dali_-_Self-Portrait_with_Fried_Bacon_-_Google_Art_Project.jpg",
+          "title": "Autorretrato con beicon frito",
+          "year": 1941,
+          "description": "Dalí sostiene bacon ante fondo de paisaje irreal. Ironía y auto mitificación en pleno exilio americano.",
+          "width": 61,
+          "height": 50
+        },
+        {
+          "id": "dali-sueño",
+          "filename": "Salvador_Dali_-_Dream_Caused_by_the_Flight_of_a_Bee_-_Google_Art_Project.jpg",
+          "title": "Sueño causado por el vuelo de una abeja",
+          "year": 1944,
+          "description": "Gala dormida con tigres, fusil y elefante en el aire. Dalí pinta el instante onírico con lógica paranoica y detalle miniaturístico.",
+          "width": 51,
+          "height": 40
+        },
+        {
+          "id": "dali-cisnes",
+          "filename": "Salvador_Dali_-_Swans_Reflecting_Elephants_-_Google_Art_Project.jpg",
+          "title": "Cisnes que se reflejan como elefantes",
+          "year": 1937,
+          "description": "Lago de Cadaqués donde cisnes y rocas crean doble imagen de elefantes. Dalí explora ilusión y pareidolia en paisaje mediterráneo.",
+          "width": 51,
+          "height": 77
+        },
+        {
+          "id": "dali-cristo",
+          "filename": "Salvador_Dali_-_Christ_of_Saint_John_of_the_Cross_-_Google_Art_Project.jpg",
+          "title": "Cristo de San Juan de la Cruz",
+          "year": 1951,
+          "description": "Cristo en perspectiva aérea sobre bahía y figuras diminutas. Dalí une mística barroca, física y hiperrealismo devocional.",
+          "width": 205,
+          "height": 116
+        },
+        {
+          "id": "dali-enigma",
+          "filename": "Salvador_Dali_-_The_Ecumenical_Council_-_Google_Art_Project.jpg",
+          "title": "El concilio ecuménico",
+          "year": 1960,
+          "description": "Composición múltiple con Gala, cúpula y figuras históricas. Obra tardía de ambición teológica y teatralidad barroca.",
+          "width": 299,
+          "height": 254
+        },
+        {
+          "id": "dali-madonna",
+          "filename": "Salvador_Dali_-_Madonna_of_Port_Lligat_-_Google_Art_Project.jpg",
+          "title": "Madonna de Port Lligat",
+          "year": 1949,
+          "description": "Virgen e infante en portal geométrico sobre paisaje ampurdanés. Dalí fusiona mística, ciencia y perspectiva clásica.",
+          "width": 49,
+          "height": 39
+        },
+        {
+          "id": "dali-roca",
+          "filename": "Salvador_Dali_-_The_Average_Atomic_Distance_-_Google_Art_Project.jpg",
+          "title": "La distancia atómica media",
+          "year": 1947,
+          "description": "Figuras y objetos suspendidos en paisaje desértico de precisión molecular. Dalí vincula física cuántica y surrealismo figurativo.",
+          "width": 60,
+          "height": 80
+        },
+        {
+          "id": "dali-gala",
+          "filename": "Salvador_Dali_-_Galarina_-_Google_Art_Project.jpg",
+          "title": "Galarina",
+          "year": 1944,
+          "description": "Retrato de Gala con red de pescar sobre hombro. Homenaje erótico y técnico a su musa en clave hiperrealista.",
+          "width": 60,
+          "height": 50
+        },
+        {
+          "id": "dali-mujer-heroina",
+          "filename": "Salvador_Dali_-_Portrait_of_Gala_-_Google_Art_Project.jpg",
+          "title": "Retrato de Gala",
+          "year": 1935,
+          "description": "Gala en perfil sobre fondo de ruinas y cielo tempestuoso. Retrato que consagra a la musa del surrealismo español.",
+          "width": 60,
+          "height": 50
+        },
+        {
+          "id": "dali-aparicion",
+          "filename": "Salvador_Dali_-_Apparition_of_Face_and_Fruit_Dish_on_a_Beach_-_Google_Art_Project.jpg",
+          "title": "Aparición de rostro y frutero en la playa",
+          "year": 1938,
+          "description": "Doble imagen de rostro, frutero y paisaje costero. Dalí juega con percepción múltiple y paranoia visual.",
+          "width": 115,
+          "height": 144
+        },
+        {
+          "id": "dali-venus",
+          "filename": "Salvador_Dali_-_Venus_de_Milo_with_Drawers_-_Google_Art_Project.jpg",
+          "title": "Venus de Milo con cajones",
+          "year": 1936,
+          "description": "Escultura clásica alterada con cajones surrealistas. Dalí combina ready-made y erotismo freudiano en objeto híbrido.",
+          "width": 98,
+          "height": 50
+        }
+      ]
+    },
+    "rene-magritte": {
+      "meta": {
+        "id": "rene-magritte",
+        "name": "René Magritte",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "René François Ghislain Magritte",
+        "years": "1898 – 1967",
+        "origin": "Lessines, Bélgica",
+        "bio": "Pintor belga del surrealismo poético. Magritte desorientó al espectador con objetos fuera de lugar, hombres de bombín y cielos de día en escenas nocturnas, preguntando qué es lo real y qué es representación."
+      },
+      "paintings": [
+        {
+          "id": "magritte-trahison",
+          "filename": "Ren%C3%A9_Magritte_-_The_Treachery_of_Images_(This_is_not_a_pipe)_-_Google_Art_Project.jpg",
+          "title": "La traición de las imágenes",
+          "year": 1929,
+          "description": "Pipa y leyenda que afirma que no es pipa. Magritte cuestiona la relación entre palabra, imagen y realidad.",
+          "width": 60,
+          "height": 81
+        },
+        {
+          "id": "magritte-son-hombre",
+          "filename": "Ren%C3%A9_Magritte_-_The_Son_of_Man_-_Google_Art_Project.jpg",
+          "title": "El hijo del hombre",
+          "year": 1964,
+          "description": "Hombre de traje con manzana flotante ante el rostro. Autorretrato enigmático sobre lo visible y lo oculto.",
+          "width": 116,
+          "height": 89
+        },
+        {
+          "id": "magritte-empire-luz",
+          "filename": "Ren%C3%A9_Magritte_-_The_Empire_of_Lights_-_Google_Art_Project.jpg",
+          "title": "El imperio de la luz",
+          "year": 1954,
+          "description": "Casa nocturna bajo cielo diurno de nubes blancas. Magritte yuxtapone opuestos lógicos con calma hipnótica.",
+          "width": 78,
+          "height": 98
+        },
+        {
+          "id": "magritte-amantes",
+          "filename": "Ren%C3%A9_Magritte_-_The_Lovers_-_Google_Art_Project.jpg",
+          "title": "Los amantes",
+          "year": 1928,
+          "description": "Pareja besándose con velos cubriendo rostros. Magritte transforma intimidad en misterio y claustrofobia poética.",
+          "width": 54,
+          "height": 73
+        },
+        {
+          "id": "magritte-hombres-pluma",
+          "filename": "Ren%C3%A9_Magritte_-_Golconda_-_Google_Art_Project.jpg",
+          "title": "Golconda",
+          "year": 1953,
+          "description": "Hombres de bombín flotan en filas sobre fachadas urbanas. Magritte convierte lo cotidiano en escena onírica repetitiva.",
+          "width": 81,
+          "height": 100
+        },
+        {
+          "id": "magritte-condicion",
+          "filename": "Ren%C3%A9_Magritte_-_The_Human_Condition_-_Google_Art_Project.jpg",
+          "title": "La condición humana",
+          "year": 1933,
+          "description": "Paisaje pintado sobre caballete coincide con la ventana. Magritte reflexiona sobre arte, naturaleza y representación.",
+          "width": 100,
+          "height": 81
+        },
+        {
+          "id": "magritte-dominio",
+          "filename": "Ren%C3%A9_Magritte_-_The_Dominion_of_Light_-_Google_Art_Project.jpg",
+          "title": "El dominio de la luz",
+          "year": 1954,
+          "description": "Variante del imperio de la luz con calle oscura y cielo diurno. Poema visual sobre contradicción y fascinación.",
+          "width": 78,
+          "height": 98
+        },
+        {
+          "id": "magritte-falsa-espejo",
+          "filename": "Ren%C3%A9_Magritte_-_The_False_Mirror_-_Google_Art_Project.jpg",
+          "title": "El falso espejo",
+          "year": 1928,
+          "description": "Ojo humano cuyo iris es cielo nublado. Magritte fusiona visión, mundo exterior y metáfora surrealista.",
+          "width": 54,
+          "height": 73
+        },
+        {
+          "id": "magritte-cielo-muralla",
+          "filename": "Ren%C3%A9_Magritte_-_The_Castle_of_the_Pyrenees_-_Google_Art_Project.jpg",
+          "title": "El castillo de los Pirineos",
+          "year": 1959,
+          "description": "Roca con castillo flota sobre mar en calma imposible. Imagen de ensueño que resume el universo magritiano.",
+          "width": 200,
+          "height": 150
+        },
+        {
+          "id": "magritte-muralla",
+          "filename": "Ren%C3%A9_Magritte_-_Personal_Values_-_Google_Art_Project.jpg",
+          "title": "Valores personales",
+          "year": 1952,
+          "description": "Objetos domésticos gigantes en habitación clausurada. Magritte desproporciona lo íntimo hasta lo inquietante.",
+          "width": 100,
+          "height": 81
+        },
+        {
+          "id": "magritte-musica",
+          "filename": "Ren%C3%A9_Magritte_-_The_Music_Lesson_-_Google_Art_Project.jpg",
+          "title": "La lección de música",
+          "year": 1926,
+          "description": "Interior imposible con piano y ventana al mar. Primera fase surrealista de Magritte en clave poética.",
+          "width": 65,
+          "height": 54
+        },
+        {
+          "id": "magritte-luna",
+          "filename": "Ren%C3%A9_Magritte_-_The_Sixteenth_of_September_-_Google_Art_Project.jpg",
+          "title": "El dieciséis de septiembre",
+          "year": 1956,
+          "description": "Luna sobre edificio urbano en escena de silencio metafísico. Magritte suspende tiempo y lógica cotidiana.",
+          "width": 60,
+          "height": 50
+        }
+      ]
+    },
+    "joan-miro": {
+      "meta": {
+        "id": "joan-miro",
+        "name": "Joan Miró",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Joan Miró i Ferrà",
+        "years": "1893 – 1983",
+        "origin": "Barcelona, España",
+        "bio": "Pintor, escultor y grabador catalán entre surrealismo y abstracción. Miró inventó un universo de signos, estrellas y criaturas biomórficas inspirado en Cataluña, el campesinado y la poesía visual."
+      },
+      "paintings": [
+        {
+          "id": "miro-carnaval",
+          "filename": "Joan_Mir%C3%B3_-_The_Carnival_of_Harlequin_-_Google_Art_Project.jpg",
+          "title": "El carnaval de Arlequín",
+          "year": 1925,
+          "description": "Criaturas y objetos flotan en espacio azul de humor onírico. Obra cumbre del surrealismo pictórico de Miró.",
+          "width": 66,
+          "height": 93
+        },
+        {
+          "id": "miro-nacimiento",
+          "filename": "Joan_Mir%C3%B3_-_The_Birth_of_the_World_-_Google_Art_Project.jpg",
+          "title": "El naixement del món",
+          "year": 1925,
+          "description": "Manchas y signos sobre fondo diluido de atmósfera primitiva. Miró deja fluir lo automático y lo cósmico.",
+          "width": 250,
+          "height": 200
+        },
+        {
+          "id": "miro-granjero",
+          "filename": "Joan_Mir%C3%B3_-_The_Farm_-_Google_Art_Project.jpg",
+          "title": "La masía",
+          "year": 1921,
+          "description": "Catálogo minucioso de la masía familiar en Mont-roig. Obra clave entre realismo detallista y síntesis simbólica.",
+          "width": 123,
+          "height": 141
+        },
+        {
+          "id": "miro-estrella",
+          "filename": "Joan_Mir%C3%B3_-_Woman_and_Bird_in_the_Night_-_Google_Art_Project.jpg",
+          "title": "Mujer y pájaro en la noche",
+          "year": 1947,
+          "description": "Figura femenina, estrella y ave en azul profundo. Lenguaje de signos que define la madurez de Miró.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "miro-paisaje",
+          "filename": "Joan_Mir%C3%B3_-_Landscape_(The_Hunter)_-_Google_Art_Project.jpg",
+          "title": "Paisaje (El cazador)",
+          "year": 1924,
+          "description": "Cazador catalán descompuesto en signos y color plano. Miró traduce paisaje y folklore en poema visual.",
+          "width": 64,
+          "height": 81
+        },
+        {
+          "id": "miro-azul",
+          "filename": "Joan_Mir%C3%B3_-_Blue_I_-_Google_Art_Project.jpg",
+          "title": "Azul I",
+          "year": 1961,
+          "description": "Franjas azules con signos dispersos de gran serenidad. Serie tardía de meditación cromática y caligrafía.",
+          "width": 270,
+          "height": 355
+        },
+        {
+          "id": "miro-constelacion",
+          "filename": "Joan_Mir%C3%B3_-_Constellation_-_Google_Art_Project.jpg",
+          "title": "Constelación",
+          "year": 1940,
+          "description": "Red de signos y estrellas sobre fondo claro en gouache. Miró pinta el cosmos íntimo en el exilio.",
+          "width": 38,
+          "height": 46
+        },
+        {
+          "id": "miro-dona",
+          "filename": "Joan_Mir%C3%B3_-_Woman_-_Google_Art_Project.jpg",
+          "title": "Mujer",
+          "year": 1934,
+          "description": "Figura femenina de formas biomórficas y color intenso. Miró condensa cuerpo, tierra y deseo en signos esenciales.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "miro-paloma",
+          "filename": "Joan_Mir%C3%B3_-_The_Smile_of_the_Flame_-_Google_Art_Project.jpg",
+          "title": "La sonrisa de la llama",
+          "year": 1954,
+          "description": "Composición de fuego, estrellas y criaturas en rojo y negro. Miró celebra energía vital con humor y misterio.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "miro-triptych",
+          "filename": "Joan_Mir%C3%B3_-_Blue_II_-_Google_Art_Project.jpg",
+          "title": "Azul II",
+          "year": 1961,
+          "description": "Panel central azul con signos mínimos y equilibrio meditativo. Parte de la trilogía azul de los años sesenta.",
+          "width": 270,
+          "height": 355
+        },
+        {
+          "id": "miro-sol",
+          "filename": "Joan_Mir%C3%B3_-_The_Sun_-_Google_Art_Project.jpg",
+          "title": "El sol",
+          "year": 1949,
+          "description": "Sol rojo y signos flotantes en fondo claro. Miró condensa cosmos y alegría en caligrafía colorista.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "miro-escalera",
+          "filename": "Joan_Mir%C3%B3_-_The_Ladder_of_Escape_-_Google_Art_Project.jpg",
+          "title": "La escalera del escape",
+          "year": 1940,
+          "description": "Escalera, estrellas y figuras en escena de evasión poética. Miró pinta esperanza desde la guerra.",
+          "width": 130,
+          "height": 97
+        }
+      ]
+    },
+    "wassily-kandinsky": {
+      "meta": {
+        "id": "wassily-kandinsky",
+        "name": "Wassily Kandinsky",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Wassily Wassilyevich Kandinsky",
+        "years": "1866 – 1944",
+        "origin": "Moscú, Rusia",
+        "bio": "Pionero de la pintura abstracta. Teórico de la Bauhaus y del Blaue Reiter, Kandinsky tradujo música, espiritualidad y emoción interior en composiciones de color y forma libres."
+      },
+      "paintings": [
+        {
+          "id": "kandinsky-composicion-vii",
+          "filename": "Wassily_Kandinsky_-_Composition_VII_-_Google_Art_Project.jpg",
+          "title": "Composición VII",
+          "year": 1913,
+          "description": "Torbellino apocalíptico de formas y color sin figura narrativa. Cumbre del expresionismo abstracto previo a la Bauhaus.",
+          "width": 200,
+          "height": 300
+        },
+        {
+          "id": "kandinsky-amarillo-rojo-azul",
+          "filename": "Wassily_Kandinsky_-_Yellow-Red-Blue_-_Google_Art_Project.jpg",
+          "title": "Amarillo-rojo-azul",
+          "year": 1925,
+          "description": "Formas geométricas flotantes en equilibrio cromático. Kandinsky sistematiza color y forma en la Bauhaus.",
+          "width": 127,
+          "height": 200
+        },
+        {
+          "id": "kandinsky-circulo",
+          "filename": "Wassily_Kandinsky_-_Several_Circles_-_Google_Art_Project.jpg",
+          "title": "Varios círculos",
+          "year": 1926,
+          "description": "Círculos de distintos tamaños sobre fondo oscuro. Meditación sobre unidad, cosmos y armonía abstracta.",
+          "width": 140,
+          "height": 140
+        },
+        {
+          "id": "kandinsky-improvisacion",
+          "filename": "Wassily_Kandinsky_-_Improvisation_28_-_Google_Art_Project.jpg",
+          "title": "Improvisación 28",
+          "year": 1912,
+          "description": "Manchas y líneas de color sin anclaje figurativo. Kandinsky compara pintura y música en gesto espontáneo.",
+          "width": 111,
+          "height": 162
+        },
+        {
+          "id": "kandinsky-jinete",
+          "filename": "Wassily_Kandinsky_-_The_Blue_Rider_-_Google_Art_Project.jpg",
+          "title": "El jinete azul",
+          "year": 1903,
+          "description": "Jinete azul galopa en paisaje de color simbólico. Obra emblema del grupo Der Blaue Reiter.",
+          "width": 55,
+          "height": 73
+        },
+        {
+          "id": "kandinsky-pequenos-placeres",
+          "filename": "Wassily_Kandinsky_-_Small_Pleasures_-_Google_Art_Project.jpg",
+          "title": "Pequeños placeres",
+          "year": 1913,
+          "description": "Composición apocalíptica de formas coloristas en conflicto. Kandinsky traduce caos y renacimiento espiritual.",
+          "width": 109,
+          "height": 119
+        },
+        {
+          "id": "kandinsky-sobre-blanco",
+          "filename": "Wassily_Kandinsky_-_On_White_II_-_Google_Art_Project.jpg",
+          "title": "Sobre blanco II",
+          "year": 1923,
+          "description": "Líneas, arcos y triángulos en fondo blanco de precisión geométrica. Bauhaus en su forma más didáctica y luminosa.",
+          "width": 98,
+          "height": 105
+        },
+        {
+          "id": "kandinsky-negro",
+          "filename": "Wassily_Kandinsky_-_Black_and_Violet_-_Google_Art_Project.jpg",
+          "title": "Negro y violeta",
+          "year": 1923,
+          "description": "Formas flotantes sobre fondo oscuro de tensión cósmica. Kandinsky explora contraste y misterio abstracto.",
+          "width": 48,
+          "height": 60
+        },
+        {
+          "id": "kandinsky-grupos",
+          "filename": "Wassily_Kandinsky_-_Group_of_Circles_-_Google_Art_Project.jpg",
+          "title": "Grupo de círculos",
+          "year": 1923,
+          "description": "Círculos superpuestos de color puro en equilibrio rítmico. Síntesis de teoría cromática y composición musical.",
+          "width": 60,
+          "height": 50
+        },
+        {
+          "id": "kandinsky-punto",
+          "filename": "Wassily_Kandinsky_-_Point_and_Line_to_Plane_-_Google_Art_Project.jpg",
+          "title": "Punto y línea sobre plano",
+          "year": 1926,
+          "description": "Composición geométrica que ilustra su teoría visual. Kandinsky convierte treatise en imagen abstracta.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "kandinsky-dominante",
+          "filename": "Wassily_Kandinsky_-_Dominant_Curve_-_Google_Art_Project.jpg",
+          "title": "Curva dominante",
+          "year": 1936,
+          "description": "Formas orgánicas flotantes en paleta pastel parisina. Obra tardía de calma y musicalidad abstracta.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "kandinsky-composicion-viii",
+          "filename": "Wassily_Kandinsky_-_Composition_VIII_-_Google_Art_Project.jpg",
+          "title": "Composición VIII",
+          "year": 1923,
+          "description": "Círculos, líneas y triángulos en equilibrio dinámico. Retorno a la composición sistemática tras la guerra.",
+          "width": 140,
+          "height": 201
+        }
+      ]
+    },
+    "piet-mondrian": {
+      "meta": {
+        "id": "piet-mondrian",
+        "name": "Piet Mondrian",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Pieter Cornelis Mondriaan",
+        "years": "1872 – 1944",
+        "origin": "Amersfoort, Países Bajos",
+        "bio": "Pintor neerlandés creador del neoplasticismo. Mondrian redujo la pintura a líneas negras, planos primarios y blanco en busca de armonía universal y equilibrio espiritual."
+      },
+      "paintings": [
+        {
+          "id": "mondrian-rojo-azul",
+          "filename": "Piet_Mondrian_-_Composition_with_Red,_Blue_and_Yellow_-_Google_Art_Project.jpg",
+          "title": "Composición con rojo, azul y amarillo",
+          "year": 1930,
+          "description": "Rectángulos primarios separados por líneas negras en fondo blanco. Síntesis del neoplasticismo y de la búsqueda de orden universal.",
+          "width": 46,
+          "height": 46
+        },
+        {
+          "id": "mondrian-broadway",
+          "filename": "Piet_Mondrian_-_Broadway_Boogie_Woogie_-_Google_Art_Project.jpg",
+          "title": "Broadway Boogie Woogie",
+          "year": 1942,
+          "description": "Cuadrícula vibrante inspirada en Manhattan y el jazz. Obra tardía que humaniza el rigor geométrico con ritmo y luz.",
+          "width": 127,
+          "height": 127
+        },
+        {
+          "id": "mondrian-arbol",
+          "filename": "Piet_Mondrian_-_Gray_Tree_-_Google_Art_Project.jpg",
+          "title": "Árbol gris",
+          "year": 1911,
+          "description": "Árbol simplificado en ramas negras sobre fondo gris. Paso clave hacia abstracción desde naturaleza.",
+          "width": 79,
+          "height": 109
+        },
+        {
+          "id": "mondrian-madrid",
+          "filename": "Piet_Mondrian_-_Composition_II_in_Red,_Blue,_and_Yellow_-_Google_Art_Project.jpg",
+          "title": "Composición II en rojo, azul y amarillo",
+          "year": 1930,
+          "description": "Planos primarios en equilibrio asimétrico perfecto. Mondrian busca lo esencial mediante exclusión y proporción.",
+          "width": 66,
+          "height": 66
+        },
+        {
+          "id": "mondrian-victory",
+          "filename": "Piet_Mondrian_-_Victory_Boogie_Woogie_-_Google_Art_Project.jpg",
+          "title": "Victory Boogie Woogie",
+          "year": 1944,
+          "description": "Cuadrícula inacabada de color y ritmo urbano. Testamento visual de Mondrian sobre energía y armonía moderna.",
+          "width": 127,
+          "height": 127
+        },
+        {
+          "id": "mondrian-tableau",
+          "filename": "Piet_Mondrian_-_Composition_with_Large_Blue_Plane,_Red,_Black,_Yellow,_and_Gray_-_Google_Art_Project.jpg",
+          "title": "Composición con plano azul grande",
+          "year": 1921,
+          "description": "Transición hacia neoplasticismo con planos de color y líneas irregulares. Mondrian acerca forma y espiritualidad.",
+          "width": 61,
+          "height": 50
+        },
+        {
+          "id": "mondrian-flor",
+          "filename": "Piet_Mondrian_-_Chrysanthemum_-_Google_Art_Project.jpg",
+          "title": "Crisantemo",
+          "year": 1908,
+          "description": "Flor analizada en color postimpresionista antes de la abstracción total. Etapa naturalista de Mondrian.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "mondrian-pier",
+          "filename": "Piet_Mondrian_-_Composition_with_Grid_9_-_Google_Art_Project.jpg",
+          "title": "Composición con cuadrícula 9",
+          "year": 1919,
+          "description": "Cuadrícula temprana en tonos grises y ocres. Mondrian experimenta con estructura antes del neoplasticismo puro.",
+          "width": 80,
+          "height": 60
+        },
+        {
+          "id": "mondrian-oval",
+          "filename": "Piet_Mondrian_-_Composition_with_Oval_-_Google_Art_Project.jpg",
+          "title": "Composición con óvalo",
+          "year": 1914,
+          "description": "Líneas y color dentro de marco ovalado. Fase cubista-neerlandesa en camino hacia la abstracción.",
+          "width": 80,
+          "height": 60
+        },
+        {
+          "id": "mondrian-new-york",
+          "filename": "Piet_Mondrian_-_New_York_City_I_-_Google_Art_Project.jpg",
+          "title": "Nueva York I",
+          "year": 1942,
+          "description": "Bandas de color que anticipan Broadway Boogie Woogie. Mondrian traduce ritmo urbano en geometría luminosa.",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "id": "mondrian-diamond",
+          "filename": "Piet_Mondrian_-_Composition_with_Yellow,_Red,_Black,_Blue_and_Gray_-_Google_Art_Project.jpg",
+          "title": "Composición en diamante",
+          "year": 1921,
+          "description": "Composición en losange con planos primarios. Mondrian explora forma cuadrada rotada y equilibrio dinámico.",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "id": "mondrian-planes",
+          "filename": "Piet_Mondrian_-_Composition_with_Color_Planes_-_Google_Art_Project.jpg",
+          "title": "Composición con planos de color",
+          "year": 1917,
+          "description": "Rectángulos de color sin líneas negras definitivas. Etapa de transición hacia el neoplasticismo maduro.",
+          "width": 48,
+          "height": 60
+        }
+      ]
+    },
+    "amedeo-modigliani": {
+      "meta": {
+        "id": "amedeo-modigliani",
+        "name": "Amedeo Modigliani",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Amedeo Clemente Modigliani",
+        "years": "1884 – 1920",
+        "origin": "Livorno, Italia",
+        "bio": "Pintor y escultor italiano de la Escuela de París. Modigliani es célebre por sus retratos de cuello alargado, miradas enigmáticas y desnudos de contorno sinuoso y moderno."
+      },
+      "paintings": [
+        {
+          "id": "modigliani-retrato",
+          "filename": "Amedeo_Modigliani_-_Portrait_of_Jeanne_H%C3%A9buterne_-_Google_Art_Project.jpg",
+          "title": "Retrato de Jeanne Hébuterne",
+          "year": 1918,
+          "description": "Compañera del artista con rostro ovalado y mirada melancólica. Retrato íntimo de línea elegante y color cálido.",
+          "width": 55,
+          "height": 46
+        },
+        {
+          "id": "modigliani-mujer",
+          "filename": "Amedeo_Modigliani_-_Reclining_Nude_-_Google_Art_Project.jpg",
+          "title": "Desnudo reclinado",
+          "year": 1917,
+          "description": "Figura femenina tumbada de contornos alargados. Modigliani moderniza el desnudo académico con sensualidad serena.",
+          "width": 92,
+          "height": 60
+        },
+        {
+          "id": "modigliani-nino",
+          "filename": "Amedeo_Modigliani_-_Portrait_of_a_Young_Girl_-_Google_Art_Project.jpg",
+          "title": "Retrato de una joven",
+          "year": 1917,
+          "description": "Niña sentada de ojos almendrados y expresión grave. Modigliani condensa inocencia y solemnidad en línea pura.",
+          "width": 92,
+          "height": 60
+        },
+        {
+          "id": "modigliani-autorretrato",
+          "filename": "Amedeo_Modigliani_-_Self-Portrait_-_Google_Art_Project.jpg",
+          "title": "Autorretrato",
+          "year": 1919,
+          "description": "Rostro alargado y mirada directa en tonos ocres. Testimonio tardío de un artista de vida breve e intensa.",
+          "width": 46,
+          "height": 38
+        },
+        {
+          "id": "modigliani-chaika",
+          "filename": "Amedeo_Modigliani_-_Portrait_of_L%C3%A9opold_Zborowski_-_Google_Art_Project.jpg",
+          "title": "Retrato de Léopold Zborowski",
+          "year": 1919,
+          "description": "Mercader y mecenas con manos entrelazadas y rostro estilizado. Modigliani retrata el mundo bohemio parisino.",
+          "width": 73,
+          "height": 60
+        },
+        {
+          "id": "modigliani-madame",
+          "filename": "Amedeo_Modigliani_-_Madame_H%C3%A9buterne_-_Google_Art_Project.jpg",
+          "title": "Madame Hébuterne",
+          "year": 1918,
+          "description": "Jeanne sentada con elegancia escultural y fondo sobrio. Retrato de armonía y tristeza contenida.",
+          "width": 92,
+          "height": 60
+        },
+        {
+          "id": "modigliani-mujer-silla",
+          "filename": "Amedeo_Modigliani_-_Woman_Seated_in_a_Red_Chair_-_Google_Art_Project.jpg",
+          "title": "Mujer sentada en silla roja",
+          "year": 1917,
+          "description": "Figura femenina en sillon rojo de contornos sinuosos. Color y línea definen el retrato moderno modiglianesco.",
+          "width": 81,
+          "height": 100
+        },
+        {
+          "id": "modigliani-caryatid",
+          "filename": "Amedeo_Modigliani_-_Caryatid_-_Google_Art_Project.jpg",
+          "title": "Cariátide",
+          "year": 1913,
+          "description": "Figura escultórica de cuerpo alargado y rostro enmascarado. Puente entre escultura primitiva y pintura parisina.",
+          "width": 60,
+          "height": 50
+        },
+        {
+          "id": "modigliani-joven",
+          "filename": "Amedeo_Modigliani_-_Young_Woman_in_a_Yellow_Dress_-_Google_Art_Project.jpg",
+          "title": "Joven con vestido amarillo",
+          "year": 1918,
+          "description": "Retrato de color cálido y cuello esbelto. Modigliani combina elegancia y melancolía en la París de posguerra.",
+          "width": 92,
+          "height": 60
+        },
+        {
+          "id": "modigliani-paul",
+          "filename": "Amedeo_Modigliani_-_Portrait_of_Paul_Guillaume_-_Google_Art_Project.jpg",
+          "title": "Retrato de Paul Guillaume",
+          "year": 1916,
+          "description": "Joven marchante con rostro ovalado y fondo azul. Modigliani retrata al mundo del arte con línea depurada.",
+          "width": 65,
+          "height": 54
+        },
+        {
+          "id": "modigliani-mujer-peine",
+          "filename": "Amedeo_Modigliani_-_Woman_with_a_Comb_-_Google_Art_Project.jpg",
+          "title": "Mujer con peine",
+          "year": 1918,
+          "description": "Figura femenina peinándose con mirada enigmática. Intimidad cotidiana elevada a icono modernista.",
+          "width": 81,
+          "height": 100
+        },
+        {
+          "id": "modigliani-diego",
+          "filename": "Amedeo_Modigliani_-_Portrait_of_Diego_Rivera_-_Google_Art_Project.jpg",
+          "title": "Retrato de Diego Rivera",
+          "year": 1914,
+          "description": "Rivera joven con rostro alargado y fondo cálido. Encuentro entre artistas de la bohemia parisina.",
+          "width": 55,
+          "height": 46
+        }
+      ]
+    },
+    "marc-chagall": {
+      "meta": {
+        "id": "marc-chagall",
+        "name": "Marc Chagall",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Moishe Shagal (Marc Chagall)",
+        "years": "1887 – 1985",
+        "origin": "Vitebsk, Bielorrusia (Imperio ruso)",
+        "bio": "Pintor bielorruso-francés de poesía visual. Chagall mezcló recuerdos judíos de Vitebsk, parejas voladoras y color fantástico en un universo personal entre fauvismo, cubismo y surrealismo lírico."
+      },
+      "paintings": [
+        {
+          "id": "chagall-sobre",
+          "filename": "Marc_Chagall_-_Above_the_City_-_Google_Art_Project.jpg",
+          "title": "Sobre la ciudad",
+          "year": 1918,
+          "description": "Pareja flotante sobre Vitebsk nevada. Chagall funde amor, memoria y pueblo natal en poesía visual.",
+          "width": 141,
+          "height": 197
+        },
+        {
+          "id": "chagall-cumpleanos",
+          "filename": "Marc_Chagall_-_Birthday_-_Google_Art_Project.jpg",
+          "title": "El cumpleaños",
+          "year": 1915,
+          "description": "Amante levita para besar a Bella en interior inclinado. Obra autobiográfica de ternura y gravedad invertida.",
+          "width": 99,
+          "height": 81
+        },
+        {
+          "id": "chagall-paris",
+          "filename": "Marc_Chagall_-_Paris_Through_the_Window_-_Google_Art_Project.jpg",
+          "title": "París a través de la ventana",
+          "year": 1913,
+          "description": "Vista urbana con gato, paracaídas y Torre Eiffel. Chagall mezcla realidad y fantasía en su llegada a París.",
+          "width": 136,
+          "height": 141
+        },
+        {
+          "id": "chagall-violonchelista",
+          "filename": "Marc_Chagall_-_The_Fiddler_-_Google_Art_Project.jpg",
+          "title": "El violinista",
+          "year": 1912,
+          "description": "Músico flotante sobre aldeas de Vitebsk. Emblema de la cultura judía y la memoria del shtetl.",
+          "width": 100,
+          "height": 81
+        },
+        {
+          "id": "chagall-autorretrato",
+          "filename": "Marc_Chagall_-_Self-Portrait_with_Seven_Fingers_-_Google_Art_Project.jpg",
+          "title": "Autorretrato con siete dedos",
+          "year": 1912,
+          "description": "Chagall pinta París mientras se representa con mano deforme. Humor y ambición en el arranque parisino.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "chagall-novia",
+          "filename": "Marc_Chagall_-_The_Bride_-_Google_Art_Project.jpg",
+          "title": "La novia",
+          "year": 1950,
+          "description": "Novia y pareja en escena flotante de color intenso. Chagall celebra matrimonio y tradición con poesía lírica.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "chagall-alegria",
+          "filename": "Marc_Chagall_-_The_Joyful_Dream_-_Google_Art_Project.jpg",
+          "title": "El sueño alegre",
+          "year": 1967,
+          "description": "Pareja y animales en azul nocturno de felicidad onírica. Madurez tardía de color y fantasia.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "chagall-musicos",
+          "filename": "Marc_Chagall_-_The_Musicians_-_Google_Art_Project.jpg",
+          "title": "Los músicos",
+          "year": 1979,
+          "description": "Músicos y figuras flotantes en aldea imaginaria. Chagall mantiene viva la memoria de Vitebsk hasta el final.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "chagall-lovers",
+          "filename": "Marc_Chagall_-_Lovers_in_the_Moonlight_-_Google_Art_Project.jpg",
+          "title": "Amantes a la luz de la luna",
+          "year": 1928,
+          "description": "Pareja abrazada bajo luna verde en paisaje poético. Amor como tema central del universo chagalliano.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "chagall-circo",
+          "filename": "Marc_Chagall_-_The_Circus_-_Google_Art_Project.jpg",
+          "title": "El circo",
+          "year": 1967,
+          "description": "Acróbatas y animales en escena festiva de color. Chagall ve el circo como metáfora del arte y la vida.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "chagall-madonna",
+          "filename": "Marc_Chagall_-_The_Madonna_of_the_Village_-_Google_Art_Project.jpg",
+          "title": "Madonna del pueblo",
+          "year": 1938,
+          "description": "Virgen e infante sobre aldea y figura judía orando. Chagall une tradición cristiana y judía en poema visual.",
+          "width": 130,
+          "height": 97
+        },
+        {
+          "id": "chagall-guerra",
+          "filename": "Marc_Chagall_-_War_-_Google_Art_Project.jpg",
+          "title": "Guerra",
+          "year": 1964,
+          "description": "Escena apocalíptica de destrucción y cruz roja. Chagall responde al horror del siglo XX desde la memoria y el dolor.",
+          "width": 130,
+          "height": 97
+        }
+      ]
+    },
+    "edward-hopper": {
+      "meta": {
+        "id": "edward-hopper",
+        "name": "Edward Hopper",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Edward Hopper",
+        "years": "1882 – 1967",
+        "origin": "Nyack, Nueva York, EE. UU.",
+        "bio": "Pintor realista americano de soledad urbana y luz cruda. Hopper capturó hoteles, gasolineras y apartamentos vacíos con una quietud psicológica que definió la mirada moderna de Estados Unidos."
+      },
+      "paintings": [
+        {
+          "id": "hopper-nighthawks",
+          "filename": "Edward_Hopper_-_Nighthawks_-_Google_Art_Project.jpg",
+          "title": "Noctámbulos",
+          "year": 1942,
+          "description": "Clientes nocturnos en diner de luz fluorescente y calles vacías. Icono de la soledad americana y la ciudad moderna.",
+          "width": 84,
+          "height": 152
+        },
+        {
+          "id": "hopper-gas",
+          "filename": "Edward_Hopper_-_Gas_-_Google_Art_Project.jpg",
+          "title": "Gasolina",
+          "year": 1940,
+          "description": "Gasolinera al anochecer con bombas iluminadas y bosque oscuro. Hopper convierte lo cotidiano en escena de suspense silencioso.",
+          "width": 68,
+          "height": 102
+        },
+        {
+          "id": "hopper-automat",
+          "filename": "Edward_Hopper_-_Automat_-_Google_Art_Project.jpg",
+          "title": "Automat",
+          "year": 1927,
+          "description": "Mujer sola en cafetería automática bajo luz nocturna. Soledad femenina y modernidad urbana en una de sus obras más citadas.",
+          "width": 71,
+          "height": 91
+        },
+        {
+          "id": "hopper-habitacion",
+          "filename": "Edward_Hopper_-_Hotel_Room_-_Google_Art_Project.jpg",
+          "title": "Habitación de hotel",
+          "year": 1931,
+          "description": "Mujer sentada en cama de hotel mirando al vacío. Hopper pinta desarraigo y contemplación íntima.",
+          "width": 107,
+          "height": 132
+        },
+        {
+          "id": "hopper-faro",
+          "filename": "Edward_Hopper_-_Lighthouse_at_Two_Lights_-_Google_Art_Project.jpg",
+          "title": "Faro de Two Lights",
+          "year": 1929,
+          "description": "Faro sobre rocas de costa nueva inglesa en luz dura. Paisaje americano de soledad y resistencia.",
+          "width": 75,
+          "height": 100
+        },
+        {
+          "id": "hopper-sunday",
+          "filename": "Edward_Hopper_-_Early_Sunday_Morning_-_Google_Art_Project.jpg",
+          "title": "Domingo por la mañana temprano",
+          "year": 1930,
+          "description": "Fachadas de comercios en calle vacía bañada por sol matinal. Nueva York silenciosa y geometría urbana serena.",
+          "width": 89,
+          "height": 135
+        },
+        {
+          "id": "hopper-mar",
+          "filename": "Edward_Hopper_-_Ground_Swell_-_Google_Art_Project.jpg",
+          "title": "Marejada",
+          "year": 1939,
+          "description": "Jóvenes en barca sobre mar de olas suaves y horizonte limpio. Hopper combina realismo y quietud emocional en la costa.",
+          "width": 91,
+          "height": 71
+        },
+        {
+          "id": "hopper-rail",
+          "filename": "Edward_Hopper_-_Compartment_C,_Car_293_-_Google_Art_Project.jpg",
+          "title": "Compartimento C, coche 293",
+          "year": 1938,
+          "description": "Lectura solitaria en tren con paisaje que pasa. Hopper captura viaje, intimidad y distancia americana.",
+          "width": 56,
+          "height": 46
+        },
+        {
+          "id": "hopper-office",
+          "filename": "Edward_Hopper_-_Office_at_Night_-_Google_Art_Project.jpg",
+          "title": "Oficina de noche",
+          "year": 1940,
+          "description": "Secretaria y jefe en oficina iluminada ante calle oscura. Tensión silenciosa entre figuras y arquitectura.",
+          "width": 56,
+          "height": 46
+        },
+        {
+          "id": "hopper-west",
+          "filename": "Edward_Hopper_-_Western_Motif_-_Google_Art_Project.jpg",
+          "title": "Motivo del oeste",
+          "year": 1950,
+          "description": "Edificio adobe bajo cielo intenso del sudoeste. Hopper adapta su luz austera al paisaje americano amplio.",
+          "width": 81,
+          "height": 100
+        },
+        {
+          "id": "hopper-cape",
+          "filename": "Edward_Hopper_-_Cape_Cod_Morning_-_Google_Art_Project.jpg",
+          "title": "Mañana en Cape Cod",
+          "year": 1950,
+          "description": "Mujer en ventana ante paisaje luminoso de madera y hierba. Luz americana de espera y quietud.",
+          "width": 71,
+          "height": 91
+        },
+        {
+          "id": "hopper-room",
+          "filename": "Edward_Hopper_-_Room_in_New_York_-_Google_Art_Project.jpg",
+          "title": "Habitación en Nueva York",
+          "year": 1932,
+          "description": "Pareja distante en apartamento urbano iluminado. Hopper dramatiza silencio y separación con luz de interior.",
+          "width": 74,
+          "height": 91
+        },
+        {
+          "id": "hopper-morning-sun",
+          "filename": "Edward_Hopper_-_Morning_Sun_-_Google_Art_Project.jpg",
+          "title": "Sol de la mañana",
+          "year": 1952,
+          "description": "Mujer desnuda en cama bañada por sol de ventana. Intimidad solitaria y luz como protagonista emocional.",
+          "width": 102,
+          "height": 71
+        },
+        {
+          "id": "hopper-new-movie",
+          "filename": "Edward_Hopper_-_New_York_Movie_-_Google_Art_Project.jpg",
+          "title": "Cine de Nueva York",
+          "year": 1939,
+          "description": "Ushers y público en palco de cine de luz dorada. Hopper contrasta espectáculo y soledad en la ciudad.",
+          "width": 91,
+          "height": 107
+        },
+        {
+          "id": "hopper-chair",
+          "filename": "Edward_Hopper_-_Chair_Car_-_Google_Art_Project.jpg",
+          "title": "Coche cama",
+          "year": 1965,
+          "description": "Pasajeros solitarios en tren nocturno de luz artificial. Obra tardía sobre movimiento y aislamiento.",
+          "width": 81,
+          "height": 100
+        }
+      ]
+    },
+    "georgia-o-keeffe": {
+      "meta": {
+        "id": "georgia-o-keeffe",
+        "name": "Georgia O'Keeffe",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Georgia Totto O'Keeffe",
+        "years": "1887 – 1986",
+        "origin": "Sun Prairie, Wisconsin, EE. UU.",
+        "bio": "Pintora americana de flores monumentales, paisajes del sudoeste y cráneos en el desierto. O'Keeffe amplió la modernidad americana con formas orgánicas, color intenso y una visión casi mística de la naturaleza."
+      },
+      "paintings": [
+        {
+          "id": "okeeffe-jimson",
+          "filename": "Georgia_O%27Keeffe_-_Jimson_Weed_-_Google_Art_Project.jpg",
+          "title": "Estramonio",
+          "year": 1936,
+          "description": "Flores blancas ampliadas hasta lo abstracto. O'Keeffe convierte botánica en arquitectura sensual y moderna.",
+          "width": 178,
+          "height": 212
+        },
+        {
+          "id": "okeeffe-negro",
+          "filename": "Georgia_O%27Keeffe_-_Black_Iris_-_Google_Art_Project.jpg",
+          "title": "Iris negro",
+          "year": 1926,
+          "description": "Pétalos oscuros en primer plano de detalle extremo. Flor como paisaje íntimo y forma moderna.",
+          "width": 91,
+          "height": 75
+        },
+        {
+          "id": "okeeffe-cielo",
+          "filename": "Georgia_O%27Keeffe_-_Sky_Above_Clouds_IV_-_Google_Art_Project.jpg",
+          "title": "Cielo sobre nubes IV",
+          "year": 1965,
+          "description": "Nubes desde avión en composición casi abstracta. O'Keeffe pinta espacio y vuelo en escala monumental.",
+          "width": 244,
+          "height": 305
+        },
+        {
+          "id": "okeeffe-cuernos",
+          "filename": "Georgia_O%27Keeffe_-_Cow%27s_Skull_-_Google_Art_Project.jpg",
+          "title": "Cráneo de vaca",
+          "year": 1930,
+          "description": "Cráneo y flores del desierto de Nuevo México. Símbolo de fragilidad y permanencia en el paisaje americano.",
+          "width": 76,
+          "height": 91
+        },
+        {
+          "id": "okeeffe-petunias",
+          "filename": "Georgia_O%27Keeffe_-_Petunias_-_Google_Art_Project.jpg",
+          "title": "Petunias",
+          "year": 1925,
+          "description": "Flores rosadas en primer plano de color puro. O'Keeffe acerca lo diminuto a lo sublime.",
+          "width": 91,
+          "height": 76
+        },
+        {
+          "id": "okeeffe-ranchos",
+          "filename": "Georgia_O%27Keeffe_-_Ranchos_Church,_New_Mexico_-_Google_Art_Project.jpg",
+          "title": "Iglesia de Ranchos",
+          "year": 1930,
+          "description": "Capilla adobe de Taos en geometría simplificada. Paisaje espiritual del sudoeste americano.",
+          "width": 61,
+          "height": 76
+        },
+        {
+          "id": "okeeffe-rojo",
+          "filename": "Georgia_O%27Keeffe_-_Red_Hills_with_White_Flower_-_Google_Art_Project.jpg",
+          "title": "Colinas rojas con flor blanca",
+          "year": 1937,
+          "description": "Colinas de Nuevo México y flor en contraste cromático. O'Keeffe une paisaje y detalle botánico.",
+          "width": 51,
+          "height": 40
+        },
+        {
+          "id": "okeeffe-llama",
+          "filename": "Georgia_O%27Keeffe_-_Calla_Lilies_on_Red_-_Google_Art_Project.jpg",
+          "title": "Calas sobre rojo",
+          "year": 1928,
+          "description": "Flores blancas sobre fondo rojo intenso. Modernidad americana de forma limpia y sensual.",
+          "width": 51,
+          "height": 40
+        },
+        {
+          "id": "okeeffe-pedernal",
+          "filename": "Georgia_O%27Keeffe_-_Pelvis_with_the_Distance_-_Google_Art_Project.jpg",
+          "title": "Pelvis con la distancia",
+          "year": 1943,
+          "description": "Hueso enmarca paisaje lejano del desierto. O'Keeffe convierte restos en ventana al infinito.",
+          "width": 91,
+          "height": 76
+        },
+        {
+          "id": "okeeffe-train",
+          "filename": "Georgia_O%27Keeffe_-_Train_at_Night_in_the_Desert_-_Google_Art_Project.jpg",
+          "title": "Tren de noche en el desierto",
+          "year": 1916,
+          "description": "Locomotora avanza en acuarela temprana de atmósfera moderna. Etapa inicial de su mirada abstracta.",
+          "width": 30,
+          "height": 23
+        },
+        {
+          "id": "okeeffe-canon",
+          "filename": "Georgia_O%27Keeffe_-_The_Black_Place_-_Google_Art_Project.jpg",
+          "title": "El lugar negro",
+          "year": 1944,
+          "description": "Paisaje oscuro de colinas de Nuevo México. O'Keeffe pinta tierra como forma casi abstracta.",
+          "width": 61,
+          "height": 76
+        },
+        {
+          "id": "okeeffe-flor",
+          "filename": "Georgia_O%27Keeffe_-_Oriental_Poppies_-_Google_Art_Project.jpg",
+          "title": "Amapolas orientales",
+          "year": 1928,
+          "description": "Pétalos rojos y naranjas ampliados a escala monumental. Color y forma como emblema del modernismo americano.",
+          "width": 76,
+          "height": 91
+        },
+        {
+          "id": "okeeffe-cielo-ii",
+          "filename": "Georgia_O%27Keeffe_-_Blue,_Green,_and_Brown_-_Google_Art_Project.jpg",
+          "title": "Azul, verde y marrón",
+          "year": 1916,
+          "description": "Abstracción temprana de formas orgánicas en acuarela. O'Keeffe explora color antes de las flores monumentales.",
+          "width": 30,
+          "height": 23
+        },
+        {
+          "id": "okeeffe-casa",
+          "filename": "Georgia_O%27Keeffe_-_Ghost_Ranch_-_Google_Art_Project.jpg",
+          "title": "Ghost Ranch",
+          "year": 1930,
+          "description": "Acantilados rojos del rancho de Nuevo México. Paisaje personal que se volvió icono de su universo visual.",
+          "width": 61,
+          "height": 76
+        },
+        {
+          "id": "okeeffe-ram",
+          "filename": "Georgia_O%27Keeffe_-_Ram%27s_Head,_White_Hollyhock-Hills_-_Google_Art_Project.jpg",
+          "title": "Cabeza de carnero",
+          "year": 1935,
+          "description": "Cráneo flotante sobre colinas y malvarrosa blanca. Síntesis de muerte, belleza y desierto americano.",
+          "width": 76,
+          "height": 91
+        },
+        {
+          "id": "okeeffe-serie",
+          "filename": "Georgia_O%27Keeffe_-_From_the_Faraway,_Nearby_-_Google_Art_Project.jpg",
+          "title": "Desde lo lejano, cercano",
+          "year": 1937,
+          "description": "Cráneo y montaña Pedernal en composición mística. O'Keeffe eleva el objeto encontrado a símbolo espiritual.",
+          "width": 76,
+          "height": 91
+        }
+      ]
+    },
+    "kasimir-malevich": {
+      "meta": {
+        "id": "kasimir-malevich",
+        "name": "Kazimir Malévich",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Kazimir Severinovich Malevich",
+        "years": "1879 – 1935",
+        "origin": "Kiev, Ucrania (Imperio ruso)",
+        "bio": "Artista ruso creador del suprematismo. Malévich llevó la pintura al cuadrado negro y a composiciones geométricas puras en busca de una libertad absoluta del objeto y del representacionismo."
+      },
+      "paintings": [
+        {
+          "id": "malevich-cuadrado",
+          "filename": "Kazimir_Malevich_-_Black_Square_-_Google_Art_Project.jpg",
+          "title": "Cuadrado negro",
+          "year": 1915,
+          "description": "Cuadrado negro sobre fondo blanco. Obra fundacional del suprematismo y punto cero de la abstracción radical.",
+          "width": 79,
+          "height": 79
+        },
+        {
+          "id": "malevich-suprematismo",
+          "filename": "Kazimir_Malevich_-_Suprematist_Composition_-_Google_Art_Project.jpg",
+          "title": "Composición suprematista",
+          "year": 1915,
+          "description": "Formas geométricas flotantes en diagonal dinámica. Malévich busca sensación de velocidad y cosmos puro.",
+          "width": 72,
+          "height": 57
+        },
+        {
+          "id": "malevich-circulo",
+          "filename": "Kazimir_Malevich_-_Suprematist_Composition_with_Circles_-_Google_Art_Project.jpg",
+          "title": "Composición con círculos",
+          "year": 1915,
+          "description": "Círculos y rectángulos en espacio blanco de equilibrio absoluto. Suprematismo como nueva realidad pictórica.",
+          "width": 60,
+          "height": 50
+        },
+        {
+          "id": "malevich-campesinos",
+          "filename": "Kazimir_Malevich_-_The_Harvest_-_Google_Art_Project.jpg",
+          "title": "La cosecha",
+          "year": 1929,
+          "description": "Campesinos de formas geométricas en campo estilizado. Malévich adapta suprematismo a temas sociales soviéticos.",
+          "width": 70,
+          "height": 60
+        },
+        {
+          "id": "malevich-aviador",
+          "filename": "Kazimir_Malevich_-_The_Aviator_-_Google_Art_Project.jpg",
+          "title": "El aviador",
+          "year": 1914,
+          "description": "Figura futurista fragmentada en planos de color. Etapa previa al suprematismo puro de guerra y modernidad.",
+          "width": 125,
+          "height": 105
+        },
+        {
+          "id": "malevich-circulo-blanco",
+          "filename": "Kazimir_Malevich_-_White_on_White_-_Google_Art_Project.jpg",
+          "title": "Blanco sobre blanco",
+          "year": 1918,
+          "description": "Cuadrado blanco sobre fondo blanco casi imperceptible. Límite extremo de la abstracción y la espiritualidad.",
+          "width": 79,
+          "height": 79
+        },
+        {
+          "id": "malevich-cruz",
+          "filename": "Kazimir_Malevich_-_Suprematism_-_Google_Art_Project.jpg",
+          "title": "Suprematismo",
+          "year": 1915,
+          "description": "Cruz negra y formas primarias en composición ascética. Malévich elimina profundidad y objeto reconocible.",
+          "width": 72,
+          "height": 57
+        },
+        {
+          "id": "malevich-complejo",
+          "filename": "Kazimir_Malevich_-_Complex_Presentiment_-_Google_Art_Project.jpg",
+          "title": "Presentimiento complejo",
+          "year": 1932,
+          "description": "Figuras estilizadas en paisaje de formas simples. Obra tardía entre recuerdo figurativo y abstracción.",
+          "width": 70,
+          "height": 60
+        }
+      ]
+    },
+    "frida-kahlo": {
+      "meta": {
+        "id": "frida-kahlo",
+        "name": "Frida Kahlo",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Magdalena Carmen Frida Kahlo y Calderón",
+        "years": "1907 – 1954",
+        "origin": "Coyoacán, Ciudad de México, México",
+        "bio": "Pintora mexicana de autobiografía intensa. Kahlo transformó dolor físico, identidad mestiza y política en un cuerpo simbólico que convirtió el autorretrato en mito del arte contemporáneo."
+      },
+      "paintings": [
+        {
+          "id": "kahlo-dos-fridas",
+          "filename": "Frida_Kahlo_-_The_Two_Fridas_-_Google_Art_Project.jpg",
+          "title": "Las dos Fridas",
+          "year": 1939,
+          "description": "Doble autorretrato con corazones unidos por vena visible. Kahlo dramatiza identidad dividida tras divorciarse de Diego Rivera.",
+          "width": 173,
+          "height": 173
+        },
+        {
+          "id": "kahlo-columna",
+          "filename": "Frida_Kahlo_-_The_Broken_Column_-_Google_Art_Project.jpg",
+          "title": "La columna rota",
+          "year": 1944,
+          "description": "Cuerpo clavado y hendido que sangra bajo corsé. Autorretrato de dolor físico convertido en icono universal.",
+          "width": 39,
+          "height": 30
+        },
+        {
+          "id": "kahlo-autorretrato",
+          "filename": "Frida_Kahlo_-_Self-Portrait_with_Thorn_Necklace_and_Hummingbird_-_Google_Art_Project.jpg",
+          "title": "Autorretrato con collar de espinas",
+          "year": 1940,
+          "description": "Frida con collar de espinas, colibrí y mariposas en vegetación. Síntesis de su lenguaje simbólico mexicano.",
+          "width": 62,
+          "height": 47
+        },
+        {
+          "id": "kahlo-henry",
+          "filename": "Frida_Kahlo_-_Self-Portrait_with_Monkey_-_Google_Art_Project.jpg",
+          "title": "Autorretrato con mono",
+          "year": 1940,
+          "description": "Frida con chango y gato en fondo de hojas tropicales. Animal de compañía como confidente en autorretrato íntimo.",
+          "width": 55,
+          "height": 46
+        },
+        {
+          "id": "kahlo-suicidio",
+          "filename": "Frida_Kahlo_-_The_Suicide_of_Dorothy_Hale_-_Google_Art_Project.jpg",
+          "title": "El suicidio de Dorothy Hale",
+          "year": 1939,
+          "description": "Secuencia de la caída de Hale desde edificio neoyorquino. Kahlo narra tragedia real con crudeza casi teatral.",
+          "width": 60,
+          "height": 50
+        },
+        {
+          "id": "kahlo-roots",
+          "filename": "Frida_Kahlo_-_Roots_-_Google_Art_Project.jpg",
+          "title": "Raíces",
+          "year": 1943,
+          "description": "Frida tumbada con venas que se convierten en raíces vegetales. Conexión entre cuerpo, tierra y fertilidad simbólica.",
+          "width": 30,
+          "height": 23
+        },
+        {
+          "id": "kahlo-marcos",
+          "filename": "Frida_Kahlo_-_Self-Portrait_with_Cropped_Hair_-_Google_Art_Project.jpg",
+          "title": "Autorretrato con pelo corto",
+          "year": 1940,
+          "description": "Frida vestida de hombre con cabello recortado y versos de canción. Respuesta pictórica a la ruptura con Rivera.",
+          "width": 40,
+          "height": 32
+        },
+        {
+          "id": "kahlo-hospital",
+          "filename": "Frida_Kahlo_-_Henry_Ford_Hospital_-_Google_Art_Project.jpg",
+          "title": "Hospital Henry Ford",
+          "year": 1932,
+          "description": "Autorretrato de aborto con objetos flotantes conectados por venas. Kahlo convierte trauma médico en alegoría personal.",
+          "width": 30,
+          "height": 23
+        },
+        {
+          "id": "kahlo-mexico",
+          "filename": "Frida_Kahlo_-_My_Grandparents,_My_Parents,_and_I_-_Google_Art_Project.jpg",
+          "title": "Mis abuelos, mis padres y yo",
+          "year": 1936,
+          "description": "Árbol genealógico de identidad mestiza entre México y Europa. Autobiografía como cosmogonía familiar.",
+          "width": 30,
+          "height": 23
+        },
+        {
+          "id": "kahlo-venadito",
+          "filename": "Frida_Kahlo_-_The_Wounded_Deer_-_Google_Art_Project.jpg",
+          "title": "El venado herido",
+          "year": 1946,
+          "description": "Cabeza de Frida sobre cuerpo de venado atravesado por flechas. Dolor emocional y físico en metáfora forestal.",
+          "width": 22,
+          "height": 18
+        },
+        {
+          "id": "kahlo-diego",
+          "filename": "Frida_Kahlo_-_Frida_and_Diego_Rivera_-_Google_Art_Project.jpg",
+          "title": "Frida y Diego Rivera",
+          "year": 1931,
+          "description": "Retratos dobles en estilo ingenuo de su boda. Kahlo se presenta diminuta ante el muralista en escena autobiográfica.",
+          "width": 100,
+          "height": 81
+        },
+        {
+          "id": "kahlo-luna",
+          "filename": "Frida_Kahlo_-_Self-Portrait_Dedicated_to_Dr._Eloesser_-_Google_Art_Project.jpg",
+          "title": "Autorretrato dedicado al Dr. Eloesser",
+          "year": 1940,
+          "description": "Frida con collar y pendientes ante paisaje urbano. Gratitud y dolor contenido en retrato de amistad.",
+          "width": 55,
+          "height": 46
+        },
+        {
+          "id": "kahlo-naturaleza",
+          "filename": "Frida_Kahlo_-_Self-Portrait_with_Braid_-_Google_Art_Project.jpg",
+          "title": "Autorretrato con trenza",
+          "year": 1941,
+          "description": "Frida con trenza que envuelve su cuerpo como atadura. Identidad mexicana y dolor amoroso en autorretrato clásico.",
+          "width": 55,
+          "height": 46
+        },
+        {
+          "id": "kahlo-viva",
+          "filename": "Frida_Kahlo_-_Self-Portrait_-_Google_Art_Project.jpg",
+          "title": "Autorretrato",
+          "year": 1948,
+          "description": "Rostro enmarcado por hojas con mirada directa y labios rojos. Kahlo afirma presencia vital pese al deterioro físico.",
+          "width": 55,
+          "height": 46
+        },
+        {
+          "id": "kahlo-love",
+          "filename": "Frida_Kahlo_-_The_Love_Embrace_of_the_Universe_-_Google_Art_Project.jpg",
+          "title": "El abrazo de amor del universo",
+          "year": 1949,
+          "description": "Frida abraza a Diego mientras la envuelven la tierra y el cosmos. Síntesis de amor, mexicanidad y universo simbólico.",
+          "width": 70,
+          "height": 60
+        }
+      ]
+    },
+    "andrew-wyeth": {
+      "meta": {
+        "id": "andrew-wyeth",
+        "name": "Andrew Wyeth",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Andrew Newell Wyeth III",
+        "years": "1917 – 2009",
+        "origin": "Chadds Ford, Pensilvania, EE. UU.",
+        "bio": "Pintor realista americano de témpera sobre panel. Wyeth capturó paisajes rurales, interiores austeros y retratos silenciosos de Pennsylvania y Maine con precisión emocional y luz fría."
+      },
+      "paintings": [
+        {
+          "id": "wyeth-cristo",
+          "filename": "Andrew_Wyeth_-_Christina%27s_World_-_Google_Art_Project.jpg",
+          "title": "El mundo de Cristina",
+          "year": 1948,
+          "description": "Mujer postrada mira una casa rural en colina amarilla. Icono de la pintura americana sobre deseo, fragilidad y distancia.",
+          "width": 82,
+          "height": 121
+        },
+        {
+          "id": "wyeth-viento",
+          "filename": "Andrew_Wyeth_-_Wind_from_the_Sea_-_Google_Art_Project.jpg",
+          "title": "Viento del mar",
+          "year": 1947,
+          "description": "Cortina agitada por brisa marina en ventana de granja. Wyeth pinta memoria, ausencia y tacto del aire.",
+          "width": 47,
+          "height": 70
+        },
+        {
+          "id": "wyeth-helga",
+          "filename": "Andrew_Wyeth_-_Lovers_-_Google_Art_Project.jpg",
+          "title": "Amantes",
+          "year": 1981,
+          "description": "Pareja en silueta junto a ventana de luz tenue. Wyeth condensa intimidad y tiempo detenido en témpera minuciosa.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wyeth-joven",
+          "filename": "Andrew_Wyeth_-_Young_Bull_-_Google_Art_Project.jpg",
+          "title": "Toro joven",
+          "year": 1960,
+          "description": "Toro negro en paisaje invernal de Pennsylvania. Wyeth une animal, tierra y melancolía rural americana.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wyeth-snow",
+          "filename": "Andrew_Wyeth_-_Snow_Hill_-_Google_Art_Project.jpg",
+          "title": "Colina de nieve",
+          "year": 1989,
+          "description": "Figuras en círculo sobre nieve ante granero. Composición tardía de comunidad y memoria en el invierno rural.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wyeth-karl",
+          "filename": "Andrew_Wyeth_-_Karl_-_Google_Art_Project.jpg",
+          "title": "Karl",
+          "year": 1948,
+          "description": "Retrato masculino de mirada austera en interior sombrío. Wyeth retrata a sus vecinos con dignidad silenciosa.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wyeth-alida",
+          "filename": "Andrew_Wyeth_-_Alida_-_Google_Art_Project.jpg",
+          "title": "Alida",
+          "year": 1969,
+          "description": "Retrato femenino de luz lateral y expresión reservada. Precisión realista al servicio de psicología íntima.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wyeth-faro",
+          "filename": "Andrew_Wyeth_-_Lighthouse_-_Google_Art_Project.jpg",
+          "title": "Faro",
+          "year": 1975,
+          "description": "Faro de Maine en costa rocosa de atmósfera fría. Wyeth pinta el Atlántico norte con sobriedad casi abstracta.",
+          "width": 50,
+          "height": 40
+        }
+      ]
+    },
+    "grant-wood": {
+      "meta": {
+        "id": "grant-wood",
+        "name": "Grant Wood",
+        "category": "arte-moderno-siglo-xx",
+        "fullName": "Grant DeVolson Wood",
+        "years": "1891 – 1942",
+        "origin": "Anamosa, Iowa, EE. UU.",
+        "bio": "Pintor americano del regionalismo. Wood retrató el Medio Oeste con ironía, detalle miniaturístico y figuras frontales que convirtieron la vida rural en icono moderno de identidad nacional."
+      },
+      "paintings": [
+        {
+          "id": "wood-gotico",
+          "filename": "Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg",
+          "title": "Gótico americano",
+          "year": 1930,
+          "description": "Campesinos frontales ante casa de estilo gótico rural. Emblema del regionalismo americano y de la mirada austera al Medio Oeste.",
+          "width": 62,
+          "height": 74
+        },
+        {
+          "id": "wood-primavera",
+          "filename": "Grant_Wood_-_Spring_in_Town_-_Google_Art_Project.jpg",
+          "title": "Primavera en la ciudad",
+          "year": 1941,
+          "description": "Vecinos en calle suburbana de Iowa en estilo detallista. Wood observa lo cotidiano con humor y precisión miniaturística.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wood-parabola",
+          "filename": "Grant_Wood_-_Parabolic_Reflector_-_Google_Art_Project.jpg",
+          "title": "Reflector parabólico",
+          "year": 1934,
+          "description": "Instrumento científico y figuras en interior de claridad metafísica. Wood une ciencia y regionalismo en escena enigmática.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wood-cena",
+          "filename": "Grant_Wood_-_Dinner_for_Threshers_-_Google_Art_Project.jpg",
+          "title": "Cena para trilladores",
+          "year": 1934,
+          "description": "Trabajadores rurales en comida vista desde arriba. Panorama del trabajo agrícola americano en detalle casi miniaturista.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wood-virgin",
+          "filename": "Grant_Wood_-_The_Midnight_Ride_of_Paul_Revere_-_Google_Art_Project.jpg",
+          "title": "La medianoche de Paul Revere",
+          "year": 1931,
+          "description": "Leyenda americana en paisaje nocturno de estilo ingenuo. Wood reinterpreta historia nacional con perspectiva infantil.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wood-plow",
+          "filename": "Grant_Wood_-_Fall_Plowing_-_Google_Art_Project.jpg",
+          "title": "Arado otoñal",
+          "year": 1931,
+          "description": "Campos ondulados de Iowa en curvas rítmicas. Paisaje regionalista que convierte labranza en decoración nacional.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wood-corn",
+          "filename": "Grant_Wood_-_Young_Corn_-_Google_Art_Project.jpg",
+          "title": "Maíz joven",
+          "year": 1931,
+          "description": "Colinas cultivadas en patrones casi abstractos. Wood idealiza agricultura del Medio Oeste con ritmo geométrico.",
+          "width": 50,
+          "height": 40
+        },
+        {
+          "id": "wood-planting",
+          "filename": "Grant_Wood_-_Tree_Planting_-_Google_Art_Project.jpg",
+          "title": "Plantación de árboles",
+          "year": 1932,
+          "description": "Hombre planta árbol en paisaje rural simétrico. Alegoría de trabajo y conservación en el regionalismo americano.",
+          "width": 50,
+          "height": 40
+        }
+      ]
+    }
+  },
+  "indexInsertions": {
+    "simbolismo-modernismo-naif": [
+      "gustave-moreau",
+      "ferdinand-hodler",
+      "alphonse-mucha"
+    ],
+    "arte-moderno-siglo-xx": [
+      "pablo-picasso",
+      "henri-matisse",
+      "georges-braque",
+      "salvador-dali",
+      "rene-magritte",
+      "joan-miro",
+      "wassily-kandinsky",
+      "piet-mondrian",
+      "amedeo-modigliani",
+      "marc-chagall",
+      "edward-hopper",
+      "georgia-o-keeffe",
+      "kasimir-malevich",
+      "frida-kahlo",
+      "andrew-wyeth",
+      "grant-wood"
+    ]
+  },
+  "newCategory": {
+    "id": "arte-moderno-siglo-xx",
+    "label": "Arte moderno del siglo XX",
+    "description": "Vanguardias, cubismo, surrealismo y modernidad americana."
+  }
+}

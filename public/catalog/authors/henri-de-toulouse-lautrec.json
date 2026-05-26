@@ -50,6 +50,28 @@
         "width": 54,
         "height": 70
       }
+    },
+    {
+      "id": "lautrec-retrato-chocolat",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Henri_de_Toulouse-Lautrec_-_Portrait_of_Chocolat_-_Google_Art_Project.jpg",
+      "title": "Retrato de Chocolat",
+      "year": 1895,
+      "description": "El célebre clown afroamericano posa con traje de escena y mirada directa. Lautrec dignifica al artista de circo con línea expresiva y color plano.",
+      "dimensions": {
+        "width": 81,
+        "height": 100
+      }
+    },
+    {
+      "id": "lautrec-circo-fernando",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Henri_de_Toulouse-Lautrec_-_At_the_Circus_Fernando_-_Google_Art_Project.jpg",
+      "title": "En el circo Fernando",
+      "year": 1888,
+      "description": "Jinete ecuestre y payaso en el circo parisino captados con recorte audaz. Lautrec documenta el espectáculo popular con la inmediatez del cartel moderno.",
+      "dimensions": {
+        "width": 100,
+        "height": 65
+      }
     }
   ]
 }

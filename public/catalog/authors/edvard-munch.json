@@ -61,6 +61,72 @@
         "width": 74,
         "height": 94
       }
+    },
+    {
+      "id": "munch-el-beso",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Edvard_Munch_-_The_Kiss_-_Google_Art_Project.jpg",
+      "title": "El beso",
+      "year": 1897,
+      "description": "Pareja abrazada junto a la orilla en un paisaje de verano noruego. Munch condensa deseo y melancolía en el Friso de la vida con color cálido y figuras fundidas.",
+      "dimensions": {
+        "width": 99,
+        "height": 81
+      }
+    },
+    {
+      "id": "munch-cenizas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Edvard_Munch_-_Ashes_-_Google_Art_Project.jpg",
+      "title": "Cenizas",
+      "year": 1894,
+      "description": "Mujer desnuda de pie ante un hombre sentado en un bosque sombrío. La escena evoca ruptura amorosa y culpa con pincelada expresiva y atmósfera claustrofóbica.",
+      "dimensions": {
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "id": "munch-noche-karl-johan",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Edvard_Munch_-_Evening_on_Karl_Johan_Street_-_Google_Art_Project.jpg",
+      "title": "Tardecita en la calle Karl Johan",
+      "year": 1892,
+      "description": "Paseantes fantasmales avanzan bajo un cielo rojizo hacia la ciudad. Munch traduce la soledad urbana en una procesión anónima de rostros pálidos.",
+      "dimensions": {
+        "width": 96,
+        "height": 121
+      }
+    },
+    {
+      "id": "munch-celos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Edvard_Munch_-_Jealousy_-_Google_Art_Project.jpg",
+      "title": "Celos",
+      "year": 1895,
+      "description": "Hombre pálido observa a una pareja mientras un rostro verde acecha al fondo. Munch personifica la obsesión amorosa con color enfermizo y mirada fija.",
+      "dimensions": {
+        "width": 67,
+        "height": 100
+      }
+    },
+    {
+      "id": "munch-melancolia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Edvard_Munch_-_Melancholy_-_Google_Art_Project.jpg",
+      "title": "Melancolía",
+      "year": 1894,
+      "description": "Figura sentada en la orilla contempla el mar con rostro hundido en la mano. Mundo interior de languidez y deseo no correspondido en clave simbolista.",
+      "dimensions": {
+        "width": 91,
+        "height": 74
+      }
+    },
+    {
+      "id": "munch-vampiro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Edvard_Munch_-_Vampire_-_Google_Art_Project.jpg",
+      "title": "Vampiro",
+      "year": 1895,
+      "description": "Mujer inclinada muerde el cuello de un hombre rendido en un bosque oscuro. Imagen de pasión destructiva que Munch vincula al amor como succión vital.",
+      "dimensions": {
+        "width": 91,
+        "height": 109
+      }
     }
   ]
 }

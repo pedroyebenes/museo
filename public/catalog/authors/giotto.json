@@ -1,0 +1,66 @@
+{
+  "id": "giotto",
+  "name": "Giotto",
+  "category": "renacimiento-manierismo",
+  "fullName": "Giotto di Bondone",
+  "years": "c. 1267 – 1337",
+  "origin": "Vespignano, cerca de Florencia",
+  "bio": "Precursor del Renacimiento italiano que humanizó la pintura medieval con volumen, expresividad y espacio creíble. Sus frescos en Padua, Assisi y Florencia establecieron un nuevo lenguaje visual emocional que influiría en generaciones posteriores.",
+  "paintings": [
+    {
+      "id": "giotto-maesta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Giotto%2C_1267_Around-1337_-_Maest%C3%A0_-_Google_Art_Project.jpg",
+      "title": "Maestà",
+      "year": 1310,
+      "description": "La Virgen entronizada rodeada de ángeles y santos en un trono monumental. Obra clave de Giotto que sustituye la rigidez gótica por figuras graves y arquitectura convincente.",
+      "dimensions": {
+        "width": 200,
+        "height": 320
+      }
+    },
+    {
+      "id": "giotto-entierro-maria",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Giotto_-_The_Entombment_of_Mary_-_Google_Art_Project.jpg",
+      "title": "El entierro de María",
+      "year": 1310,
+      "description": "Apóstoles rodean el lecho de la Virgen en una escena de duelo contenido. Giotto organiza el dolor colectivo con claridad narrativa y gestos elocuentes.",
+      "dimensions": {
+        "width": 75,
+        "height": 45
+      }
+    },
+    {
+      "id": "giotto-polittico-badia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Giotto_-_Polittico_di_Badia_-_Google_Art_Project.jpg",
+      "title": "Políptico de Badia",
+      "year": 1300,
+      "description": "Retablo con la Virgen y santos en compartimentos arquitectónicos. Temprana obra florentina donde Giotto ya muestra su búsqueda de espacio y dignidad humana.",
+      "dimensions": {
+        "width": 91,
+        "height": 334
+      }
+    },
+    {
+      "id": "giotto-lamentacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Giotto_-_Saint_Francis_Receiving_the_Stigmata_-_Google_Art_Project.jpg",
+      "title": "San Francisco recibiendo los estigmas",
+      "year": 1300,
+      "description": "El santo recibe las heridas de Cristo en la montaña de La Verna. Giotto narra el misterio con claridad monumental y figuras de expresión contenida.",
+      "dimensions": {
+        "width": 314,
+        "height": 162
+      }
+    },
+    {
+      "id": "giotto-crucifixion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Giotto_-_Crucifixion_-_Google_Art_Project.jpg",
+      "title": "Crucifixión",
+      "year": 1305,
+      "description": "Cristo expira en la cruz ante un grupo compacto de figuras y ángeles. Fragmento paduano donde Giotto humaniza el sacrificio con gestos contenidos y espacio creíble.",
+      "dimensions": {
+        "width": 90,
+        "height": 70
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "georges-braque",
+  "name": "Georges Braque",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Georges Braque",
+  "years": "1882 – 1963",
+  "origin": "Argenteuil, Francia",
+  "bio": "Cofundador del cubismo junto a Picasso. Braque desarrolló un lenguaje de planos superpuestos, paletas sobrias y collage que transformó la representación moderna del espacio y el objeto.",
+  "paintings": [
+    {
+      "id": "braque-hombre-guitarra",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Georges_Braque_-_Man_with_a_Guitar_-_Google_Art_Project.jpg",
+      "title": "Hombre con guitarra",
+      "year": 1911,
+      "description": "Figura e instrumento descompuestos en planos grises y ocres. Cubismo analítico que funde música y cuerpo en facetas geométricas.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "braque-violin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Georges_Braque_-_Violin_and_Candlestick_-_Google_Art_Project.jpg",
+      "title": "Violín y candelabro",
+      "year": 1910,
+      "description": "Objetos de mesa fragmentados en composición casi monocroma. Braque analiza volumen y superficie desde múltiples ángulos.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    },
+    {
+      "id": "braque-cartas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Georges_Braque_-_The_Portuguese_-_Google_Art_Project.jpg",
+      "title": "El portugués",
+      "year": 1911,
+      "description": "Hombre en café con letras y formas geométricas superpuestas. Obra clave que introduce palabra y señal al cubismo.",
+      "dimensions": {
+        "width": 117,
+        "height": 81
+      }
+    },
+    {
+      "id": "braque-estudio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Georges_Braque_-_Studio_VIII_-_Google_Art_Project.jpg",
+      "title": "Estudio VIII",
+      "year": 1954,
+      "description": "Interior de taller con objetos y aves en paleta clara. Braque revisita cubismo en etapa madura de calma y síntesis.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "braque-pajaros",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Georges_Braque_-_The_Birds_-_Google_Art_Project.jpg",
+      "title": "Los pájaros",
+      "year": 1960,
+      "description": "Aves en vuelo sobre fondo azul de formas simplificadas. Motivo recurrente en la obra tardía de Braque.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "braque-mesa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Georges_Braque_-_The_Table_-_Google_Art_Project.jpg",
+      "title": "La mesa",
+      "year": 1918,
+      "description": "Naturaleza muerta cubista con pipe y fruta en tonos grises. Braque reorganiza lo cotidiano en arquitectura silenciosa de planos.",
+      "dimensions": {
+        "width": 81,
+        "height": 100
+      }
+    },
+    {
+      "id": "braque-roche",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Georges_Braque_-_Rocks_at_L'Estaque_-_Google_Art_Project.jpg",
+      "title": "Rocas en L'Estaque",
+      "year": 1908,
+      "description": "Paisaje provenzal simplificado en bloques geométricos. Obra temprana que anticipa el cubismo desde Cézanne.",
+      "dimensions": {
+        "width": 73,
+        "height": 60
+      }
+    },
+    {
+      "id": "braque-soprano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Georges_Braque_-_Woman_with_a_Guitar_-_Google_Art_Project.jpg",
+      "title": "Mujer con guitarra",
+      "year": 1913,
+      "description": "Figura femenina e instrumento en collage y planos de papel. Cubismo sintético que incorpora materia real al lienzo.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    }
+  ]
+}

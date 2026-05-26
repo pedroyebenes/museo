@@ -1,0 +1,99 @@
+{
+  "id": "joshua-reynolds",
+  "name": "Joshua Reynolds",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Sir Joshua Reynolds",
+  "years": "1723 – 1792",
+  "origin": "Plympton, Devon, Inglaterra",
+  "bio": "Primer presidente de la Royal Academy y retratista oficial de la élite británica. Reynolds combinó el retrato cortesano con referencias clásicas y una pincelada que influyó en la pintura inglesa del siglo XVIII.",
+  "paintings": [
+    {
+      "id": "reynolds-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Sir_Joshua_Reynolds_-_Self-Portrait_-_Google_Art_Project_(2315517).jpg",
+      "title": "Autorretrato",
+      "year": 1780,
+      "description": "Reynolds se representa con bata oscura y mirada reflexiva. El autorretrato afirma la dignidad intelectual del pintor académico británico.",
+      "dimensions": {
+        "width": 74,
+        "height": 91
+      }
+    },
+    {
+      "id": "reynolds-mrs-robinson",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Sir_Joshua_Reynolds_-_Mrs._Robinson_-_Google_Art_Project.jpg",
+      "title": "Mrs. Robinson",
+      "year": 1782,
+      "description": "Retrato de la actriz Perdita Robinson con elegancia teatral y mirada seductora. Reynolds combina encanto social y precisión pictórica.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "reynolds-anne-damer",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sir_Joshua_Reynolds_-_Anne_Seymour_Damer_-_Google_Art_Project.jpg",
+      "title": "Anne Seymour Damer",
+      "year": 1773,
+      "description": "Escultora y mujer de letras posando con actitud intelectual y vestido clásico. El retrato subraya la cultura femenina de la élite ilustrada.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "reynolds-cardenal-beaufort",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Reynolds%2C_Sir_Joshua_-_Death_of_Cardinal_Beaufort_-_Google_Art_Project.jpg",
+      "title": "Muerte del cardenal Beaufort",
+      "year": 1789,
+      "description": "Escena histórica de agonía y tentación espiritual inspirada en Shakespeare. Reynolds eleva el retrato hacia la pintura de historia dramática.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "reynolds-charles-carroll",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Sir_Joshua_Reynolds_-_Charles_Carroll_of_Carrollton_-_Google_Art_Project.jpg",
+      "title": "Charles Carroll de Carrollton",
+      "year": 1772,
+      "description": "Retrato del patriota americano con elegancia sobria y fondo paisajístico. Reynolds documenta la élite atlántica con equilibrio clásico.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "reynolds-sordo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Sir_Joshua_Reynolds_-_Self-Portrait_as_a_Deaf_Man_-_Google_Art_Project.jpg",
+      "title": "Autorretrato como hombre sordo",
+      "year": 1775,
+      "description": "Reynolds posa con gesto de escucha atenta pese a su sordera progresiva. Autorretrato introspectivo sobre limitación y dignidad artística.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "reynolds-llamamiento-samuel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Reynolds%2C_Sir_Joshua_-_The_Calling_of_Samuel_-_Google_Art_Project.jpg",
+      "title": "El llamamiento de Samuel",
+      "year": 1776,
+      "description": "Samuel niño despierta ante la voz divina en un interior nocturno. Reynolds aborda la escena bíblica con ternura y claridad narrativa.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "reynolds-lady-sondes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Joshua_Reynolds_-_Lady_Sondes_-_Google_Art_Project.jpg",
+      "title": "Lady Sondes",
+      "year": 1760,
+      "description": "Retrato aristocrático con vestido claro y mirada serena en un paisaje suave. Reynolds combina elegancia cortesana y naturalismo psicológico.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

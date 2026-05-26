@@ -61,6 +61,94 @@
         "width": 160,
         "height": 110
       }
+    },
+    {
+      "id": "renoir-baile-moulin-galette",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Pierre-Auguste_Renoir_-_Dance_at_Le_Moulin_de_la_Galette_-_Google_Art_Project.jpg",
+      "title": "Baile en el Moulin de la Galette",
+      "year": 1876,
+      "description": "Domingo de verano en Montmartre: parejas bailan bajo la luz filtrada de los árboles. Obra cumbre del impresionismo social donde Renoir funde retrato, paisaje y alegría colectiva.",
+      "dimensions": {
+        "width": 131,
+        "height": 175
+      }
+    },
+    {
+      "id": "renoir-baile-campo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Pierre-Auguste_Renoir_-_Dance_in_the_Country_-_Google_Art_Project.jpg",
+      "title": "Baile en el campo",
+      "year": 1883,
+      "description": "Pareja baila apretada en un interior campestre mientras un sombrero cae al suelo. Renoir celebra la sensualidad y el movimiento con color cálido y pincelada fundida.",
+      "dimensions": {
+        "width": 88,
+        "height": 98
+      }
+    },
+    {
+      "id": "renoir-baile-ciudad",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pierre-Auguste_Renoir_-_Dance_in_the_City_-_Google_Art_Project.jpg",
+      "title": "Baile en la ciudad",
+      "year": 1883,
+      "description": "Pareja elegante danza en un salón parisino con cortinas azules al fondo. Contrapunto urbano a la escena campestre, con seda, guantes y refinamiento burgués.",
+      "dimensions": {
+        "width": 88,
+        "height": 98
+      }
+    },
+    {
+      "id": "renoir-retrato-monet",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Pierre-Auguste_Renoir_-_Portrait_of_Claude_Monet_-_Google_Art_Project.jpg",
+      "title": "Retrato de Claude Monet",
+      "year": 1875,
+      "description": "Monet fuma en una butaca con barba y boina, captado por su compañero impresionista. Retrato de amistad que documenta la generación que transformó la pintura moderna.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "renoir-ninas-piano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Pierre-Auguste_Renoir_-_Girls_at_the_Piano_-_Google_Art_Project.jpg",
+      "title": "Muchachas al piano",
+      "year": 1892,
+      "description": "Dos jóvenes ensayan frente a un piano en un salón íntimo. Renoir combina intimidad doméstica y tradición académica con la luz suave de su madurez.",
+      "dimensions": {
+        "width": 116,
+        "height": 89
+      }
+    },
+    {
+      "id": "renoir-terrazas-cagnes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Pierre-Auguste_Renoir_-_The_Terraces_at_Cagnes_-_Google_Art_Project.jpg",
+      "title": "Las terrazas de Cagnes",
+      "year": 1905,
+      "description": "Olivos y terrazas del sur de Francia bajo un sol dorado. Paisaje tardío donde Renoir simplifica la forma en manchas de color luminoso y contornos redondeados.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "renoir-judith-biblioteca",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Pierre-Auguste_Renoir_-_Judith_Braunschweig_in_the_Library_-_Google_Art_Project.jpg",
+      "title": "Judith Braunschweig en la biblioteca",
+      "year": 1876,
+      "description": "Joven lee en una biblioteca llena de volúmenes con luz suave sobre su rostro. Retrato íntimo que muestra la sensibilidad de Renoir por la vida burguesa parisina.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "renoir-paisaje-cagnes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Pierre-Auguste_Renoir_-_Landscape_at_Cagnes_-_Google_Art_Project.jpg",
+      "title": "Paisaje en Cagnes",
+      "year": 1910,
+      "description": "Colinas y olivos del sur de Francia bajo un sol dorado. Paisaje tardío donde Renoir simplifica la naturaleza en manchas de color cálido y contornos redondeados.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
     }
   ]
 }

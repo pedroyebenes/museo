@@ -50,6 +50,28 @@
         "width": 200,
         "height": 250
       }
+    },
+    {
+      "id": "seurat-puerto-honfleur",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Georges_Seurat_-_Port_of_Honfleur_-_Google_Art_Project.jpg",
+      "title": "Puerto de Honfleur",
+      "year": 1886,
+      "description": "Veleros y muelle normando construidos con puntos de color puro. Seurat aplica el divisionismo al paisaje marino con rigor científico y calma luminosa.",
+      "dimensions": {
+        "width": 66,
+        "height": 82
+      }
+    },
+    {
+      "id": "seurat-circo-esquisses",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Georges_Seurat_-_Circus_Sideshow_(Parade_de_Cirque)_-_Google_Art_Project.jpg",
+      "title": "Parada de circo",
+      "year": 1888,
+      "description": "Músico y público ante la carpa del circo en una noche de luces gasistas. Seurat explora el ocio urbano parisino con contornos de color y atmósfera nocturna.",
+      "dimensions": {
+        "width": 100,
+        "height": 65
+      }
     }
   ]
 }

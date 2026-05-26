@@ -160,6 +160,50 @@
         "width": 81,
         "height": 101
       }
+    },
+    {
+      "id": "monet-san-giorgio-maggiore",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Claude_Monet_-_San_Giorgio_Maggiore_at_Dusk_-_Google_Art_Project.jpg",
+      "title": "San Giorgio Maggiore al atardecer",
+      "year": 1908,
+      "description": "La iglesia veneciana emerge como silueta sobre aguas doradas al caer la tarde. Monet captura la ciudad flotante desde su habitación con pinceladas de luz casi abstracta.",
+      "dimensions": {
+        "width": 65.2,
+        "height": 92.4
+      }
+    },
+    {
+      "id": "monet-acantilado-etretat",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Claude_Monet_-_The_Cliff%2C_Etretat%2C_Sunset_-_Google_Art_Project.jpg",
+      "title": "El acantilado de Étretat, puesta de sol",
+      "year": 1883,
+      "description": "El arco natural de Étretat se recorta contra un cielo anaranjado mientras la marea sube. Monet estudia la costa normanda con la misma obsesión serial que aplicará a los almiares y a Rouen.",
+      "dimensions": {
+        "width": 60,
+        "height": 81
+      }
+    },
+    {
+      "id": "monet-jardin-giverny",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Claude_Monet_-_The_Artist's_Garden_at_Giverny_-_Google_Art_Project.jpg",
+      "title": "El jardín del artista en Giverny",
+      "year": 1900,
+      "description": "Sendero florido bajo arcos de rosas en el jardín que Monet diseñó en Giverny. El color puro y la perspectiva del pasillo anticipan el ciclo tardío de los nenúfares.",
+      "dimensions": {
+        "width": 81,
+        "height": 92
+      }
+    },
+    {
+      "id": "monet-tuileries",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Claude_Monet_-_The_Tuileries_-_Google_Art_Project.jpg",
+      "title": "Las Tullerías",
+      "year": 1876,
+      "description": "Paseantes y niños en el jardín de las Tullerías bajo árboles recortados. Vista urbana temprana donde Monet integra figuras modernas en un paisaje de ocio parisino.",
+      "dimensions": {
+        "width": 50,
+        "height": 75
+      }
     }
   ]
 }

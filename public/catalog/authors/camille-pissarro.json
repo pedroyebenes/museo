@@ -50,6 +50,83 @@
         "width": 73,
         "height": 60
       }
+    },
+    {
+      "id": "pissarro-carretera-versailles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Camille_Pissarro_-_The_Road_to_Versailles_at_Louveciennes_-_Google_Art_Project.jpg",
+      "title": "El camino de Versalles en Louveciennes",
+      "year": 1869,
+      "description": "Camino suburbano con figuras y casas bajo un cielo invernal. Paisaje temprano donde Pissarro observa la vida rural cercana a París con tonos claros y pincelada constructiva.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "pissarro-cosecha-heno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Camille_Pissarro_-_Haymaking_at_%C3%89ragny_-_Google_Art_Project.jpg",
+      "title": "Hacendado en Éragny",
+      "year": 1887,
+      "description": "Campesinos recogen heno en la granja normanda de Éragny. Pissarro une impresionismo y puntillismo tardío en una escena de trabajo rural armoniosa.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "pissarro-avenida-opera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Camille_Pissarro_-_The_Avenue_de_l'Op%C3%A9ra%2C_Paris_-_Google_Art_Project.jpg",
+      "title": "La avenida de la Ópera, París",
+      "year": 1898,
+      "description": "Vista desde un balcón sobre la avenida de la Ópera con carruajes y árboles. Serie urbana donde Pissarro captura la metrópolis moderna desde múltiples ventanas.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "pissarro-jardin-pontoise",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Camille_Pissarro_-_The_Garden_at_Pontoise_-_Google_Art_Project.jpg",
+      "title": "El jardín en Pontoise",
+      "year": 1877,
+      "description": "Figura camina por un jardín cercado con árboles y cielo abierto. Paisaje impresionista clásico donde Pissarro equilibra naturaleza cultivada y vida cotidiana.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "pissarro-plaza-carrousel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Camille_Pissarro_-_Place_du_Carrousel%2C_Paris_-_Google_Art_Project.jpg",
+      "title": "Plaza del Carrousel, París",
+      "year": 1900,
+      "description": "La plaza del Carrousel con el Louvre al fondo bajo un cielo gris. Pissarro pinta la ciudad imperial desde su hotel con pincelada divisionista y atmósfera cambiante.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "pissarro-recogedoras-guisantes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Camille_Pissarro_-_The_Pea_Pickers_-_Google_Art_Project.jpg",
+      "title": "Las recogedoras de guisantes",
+      "year": 1887,
+      "description": "Campesinas inclinadas recogen guisantes en un campo normando. Pissarro dignifica el trabajo manual con color puntillista y composición horizontal serena.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "pissarro-bulevar-montmartre-invierno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Camille_Pissarro_-_Boulevard_Montmartre%2C_Morning%2C_Grey_Weather_-_Google_Art_Project.jpg",
+      "title": "Bulevar Montmartre, mañana gris",
+      "year": 1897,
+      "description": "El bulevar parisino bajo un cielo nublado con carruajes y árboles desnudos. Una de las catorce vistas desde la ventana del hotel de Pissarro, captada en atmósfera invernal.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
     }
   ]
 }

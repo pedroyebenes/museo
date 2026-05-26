@@ -66,6 +66,72 @@
         "width": 81,
         "height": 100
       }
+    },
+    {
+      "id": "rouseau-gitana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Henri_Rousseau_-_The_Sleeping_Gypsy_-_Google_Art_Project.jpg",
+      "title": "La gitana dormida",
+      "year": 1897,
+      "description": "Mujer y laúd bajo la luna mientras un león la olfatea en un desierto irreal. Poema visual de misterio que sedujo a las vanguardias parisinas.",
+      "dimensions": {
+        "width": 201,
+        "height": 129
+      }
+    },
+    {
+      "id": "rouseau-nino-roca",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Henri_Rousseau_-_Boy_on_the_Rocks_-_Google_Art_Project.jpg",
+      "title": "Niño sobre las rocas",
+      "year": 1895,
+      "description": "Infante sentado en un paisaje rocoso de frontalidad ingenua. Rousseau mezcla retrato familiar y naturaleza imaginada con tonos intensos.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "rouseau-selva-simios",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Henri_Rousseau_-_Tropical_Forest_with_Apes_and_Snake_-_Google_Art_Project.jpg",
+      "title": "Selva tropical con monos y serpiente",
+      "year": 1910,
+      "description": "Primates y reptil en vegetación densa inventada desde París. Rousseau construye la selva desde jardines botánicos y fantasía minuciosa.",
+      "dimensions": {
+        "width": 190,
+        "height": 130
+      }
+    },
+    {
+      "id": "rouseau-banquete-leon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Henri_Rousseau_-_The_Repast_of_the_Lion_-_Google_Art_Project.jpg",
+      "title": "El banquete del león",
+      "year": 1907,
+      "description": "Felino majestuoso en un paisaje exótico de hojas gigantes. Escena de calma animal que contrasta con la violencia de otros cuadros selváticos.",
+      "dimensions": {
+        "width": 114,
+        "height": 146
+      }
+    },
+    {
+      "id": "rouseau-boda",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Henri_Rousseau_-_The_Wedding_Party_-_Google_Art_Project.jpg",
+      "title": "La fiesta de bodas",
+      "year": 1905,
+      "description": "Grupo de invitados en un parque suburbano con árboles recortados. Rousseau pinta la vida burguesa con ingenuidad deliberada y color plano.",
+      "dimensions": {
+        "width": 114,
+        "height": 163
+      }
+    },
+    {
+      "id": "rouseau-puente",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Henri_Rousseau_-_The_Bridge_at_Nanterre_-_Google_Art_Project.jpg",
+      "title": "El puente de Nanterre",
+      "year": 1876,
+      "description": "Paisaje suburbano parisino con figuras diminutas y cielo amplio. Obra temprana que anticipa su mirada frontal y distante de la periferia moderna.",
+      "dimensions": {
+        "width": 46,
+        "height": 37
+      }
     }
   ]
 }

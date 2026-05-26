@@ -1,0 +1,99 @@
+{
+  "id": "grant-wood",
+  "name": "Grant Wood",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Grant DeVolson Wood",
+  "years": "1891 – 1942",
+  "origin": "Anamosa, Iowa, EE. UU.",
+  "bio": "Pintor americano del regionalismo. Wood retrató el Medio Oeste con ironía, detalle miniaturístico y figuras frontales que convirtieron la vida rural en icono moderno de identidad nacional.",
+  "paintings": [
+    {
+      "id": "wood-gotico",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg",
+      "title": "Gótico americano",
+      "year": 1930,
+      "description": "Campesinos frontales ante casa de estilo gótico rural. Emblema del regionalismo americano y de la mirada austera al Medio Oeste.",
+      "dimensions": {
+        "width": 62,
+        "height": 74
+      }
+    },
+    {
+      "id": "wood-primavera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Grant_Wood_-_Spring_in_Town_-_Google_Art_Project.jpg",
+      "title": "Primavera en la ciudad",
+      "year": 1941,
+      "description": "Vecinos en calle suburbana de Iowa en estilo detallista. Wood observa lo cotidiano con humor y precisión miniaturística.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wood-parabola",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Grant_Wood_-_Parabolic_Reflector_-_Google_Art_Project.jpg",
+      "title": "Reflector parabólico",
+      "year": 1934,
+      "description": "Instrumento científico y figuras en interior de claridad metafísica. Wood une ciencia y regionalismo en escena enigmática.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wood-cena",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Grant_Wood_-_Dinner_for_Threshers_-_Google_Art_Project.jpg",
+      "title": "Cena para trilladores",
+      "year": 1934,
+      "description": "Trabajadores rurales en comida vista desde arriba. Panorama del trabajo agrícola americano en detalle casi miniaturista.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wood-virgin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Grant_Wood_-_The_Midnight_Ride_of_Paul_Revere_-_Google_Art_Project.jpg",
+      "title": "La medianoche de Paul Revere",
+      "year": 1931,
+      "description": "Leyenda americana en paisaje nocturno de estilo ingenuo. Wood reinterpreta historia nacional con perspectiva infantil.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wood-plow",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Grant_Wood_-_Fall_Plowing_-_Google_Art_Project.jpg",
+      "title": "Arado otoñal",
+      "year": 1931,
+      "description": "Campos ondulados de Iowa en curvas rítmicas. Paisaje regionalista que convierte labranza en decoración nacional.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wood-corn",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Grant_Wood_-_Young_Corn_-_Google_Art_Project.jpg",
+      "title": "Maíz joven",
+      "year": 1931,
+      "description": "Colinas cultivadas en patrones casi abstractos. Wood idealiza agricultura del Medio Oeste con ritmo geométrico.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wood-planting",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Grant_Wood_-_Tree_Planting_-_Google_Art_Project.jpg",
+      "title": "Plantación de árboles",
+      "year": 1932,
+      "description": "Hombre planta árbol en paisaje rural simétrico. Alegoría de trabajo y conservación en el regionalismo americano.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    }
+  ]
+}

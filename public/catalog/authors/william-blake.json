@@ -36,6 +36,61 @@
         "width": 62,
         "height": 45
       }
+    },
+    {
+      "id": "blake-fantasma-pulga",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/William_Blake_-_The_Ghost_of_a_Flea_-_Google_Art_Project.jpg",
+      "title": "El fantasma de una pulga",
+      "year": 1819,
+      "description": "Criatura híbrida musculosa avanza con lanceta y cuenco en una visión nocturna. Blake traduce lo grotesco en imaginería profética.",
+      "dimensions": {
+        "width": 21,
+        "height": 16
+      }
+    },
+    {
+      "id": "blake-dragon-rojo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/William_Blake_-_The_Great_Red_Dragon_and_the_Woman_Clothed_with_the_Sun_-_Google_Art_Project.jpg",
+      "title": "El gran dragón rojo y la mujer vestida de sol",
+      "year": 1805,
+      "description": "Escena apocalíptica inspirada en el Apocalipsis con color rojo violento. Blake expresa la lucha cósmica entre fuerzas destructivas y la gracia.",
+      "dimensions": {
+        "width": 44,
+        "height": 35
+      }
+    },
+    {
+      "id": "blake-job-llagas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/William_Blake_-_Satan_Smiting_Job_with_Sore_Boils_-_Google_Art_Project.jpg",
+      "title": "Satanás hiere a Job con llagas",
+      "year": 1826,
+      "description": "Job postrado mientras Satanás descarga sobre él un sufrimiento extremo. Blake convierte el relato bíblico en teatro visionario de dolor y fe.",
+      "dimensions": {
+        "width": 33,
+        "height": 43
+      }
+    },
+    {
+      "id": "blake-ancient-of-days",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/William_Blake_-_The_Ancient_of_Days_-_Google_Art_Project.jpg",
+      "title": "El Anciano de los Días",
+      "year": 1794,
+      "description": "Dios compasa el universo desde un círculo de fuego en una visión profética. Blake funde grabado, poesía y mística en una imagen de creación cósmica.",
+      "dimensions": {
+        "width": 23,
+        "height": 17
+      }
+    },
+    {
+      "id": "blake-gran-dragon-rojo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/William_Blake_-_The_Great_Red_Dragon_and_the_Beast_from_the_Sea_-_Google_Art_Project.jpg",
+      "title": "El gran dragón rojo",
+      "year": 1805,
+      "description": "Bestia apocalíptica se alza sobre un mar tempestuoso en una acuarela profética. Blake visualiza el Apocalipsis con imaginación visionaria lejos del naturalismo.",
+      "dimensions": {
+        "width": 40,
+        "height": 34
+      }
     }
   ]
 }

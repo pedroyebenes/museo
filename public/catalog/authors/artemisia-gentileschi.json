@@ -61,6 +61,28 @@
         "width": 86,
         "height": 105
       }
+    },
+    {
+      "id": "gentileschi-lautista",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Artemisia_Gentileschi_-_Self-Portrait_as_a_Lute_Player_-_Google_Art_Project.jpg",
+      "title": "Autorretrato como laúdista",
+      "year": 1616,
+      "description": "La artista posa con laúd y vestido orientalizante en actitud de interpretación. Gentileschi se presenta como musa activa, no como mera modelo pasiva.",
+      "dimensions": {
+        "width": 77,
+        "height": 71
+      }
+    },
+    {
+      "id": "gentileschi-danae",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Artemisia_Gentileschi_-_Danae_-_Google_Art_Project.jpg",
+      "title": "Danae",
+      "year": 1612,
+      "description": "La princesa recibe la lluvia de oro de Zeus en su alcoba. Gentileschi aborda el mito clásico con sensualidad contenida y claroscuro caravaggesco.",
+      "dimensions": {
+        "width": 161,
+        "height": 130
+      }
     }
   ]
 }

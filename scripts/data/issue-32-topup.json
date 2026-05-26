@@ -1,0 +1,425 @@
+{
+  "additions": {
+    "el-greco": [
+      {
+        "id": "greco-apostol-santiago",
+        "filename": "El_Greco_-_St._James_the_Greater_-_Google_Art_Project.jpg",
+        "title": "Santiago el Mayor",
+        "year": 1610,
+        "description": "Apóstol de perfil con túnica verde y mirada extática hacia arriba. El Greco condensa la espiritualidad manierista en figuras alargadas de intensidad devocional.",
+        "width": 77,
+        "height": 64
+      },
+      {
+        "id": "greco-apertura-quinto-sello",
+        "filename": "El_Greco_-_The_Opening_of_the_Fifth_Seal_-_Google_Art_Project.jpg",
+        "title": "La apertura del quinto sello",
+        "year": 1608,
+        "description": "Figuras desnudas alzan los brazos bajo un cielo apocalíptico de color incandescente. Visión bíblica pintada con el dramatismo espiritual de la madurez toledana.",
+        "width": 224,
+        "height": 199
+      }
+    ],
+    "alberto-durero": [
+      {
+        "id": "durero-autorretrato-26",
+        "filename": "Albrecht_D%C3%BCrer_-_Self-Portrait_at_26_-_Google_Art_Project.jpg",
+        "title": "Autorretrato a los veintiséis años",
+        "year": 1498,
+        "description": "Durero se presenta con melena y ropaje elegante ante un paisaje alpino. Autorretrato temprano que afirma la dignidad del artista renacentista.",
+        "width": 52,
+        "height": 39
+      },
+      {
+        "id": "durero-oracion-mano",
+        "filename": "Albrecht_D%C3%BCrer_-_Praying_Hands_-_Google_Art_Project.jpg",
+        "title": "Manos en oración",
+        "year": 1508,
+        "description": "Estudio de manos entrelazadas en oración, preparatorio para un retablo. Símbolo universal de fe y uno de los dibujos más reproducidos del arte occidental.",
+        "width": 29,
+        "height": 20
+      },
+      {
+        "id": "durero-cuatro-apostoles",
+        "filename": "Albrecht_D%C3%BCrer_-_The_Four_Apostles_-_Google_Art_Project.jpg",
+        "title": "Los cuatro apóstoles",
+        "year": 1526,
+        "description": "San Juan, Pedro, Marcos y Pablo en dos paneles monumentales. Obra testamentaria donde Durero expresa su fe con gravedad y precisión nórdica.",
+        "width": 215,
+        "height": 76
+      }
+    ],
+    "francisco-de-zurbaran": [
+      {
+        "id": "zurbaran-casa-labranza",
+        "filename": "Francisco_de_Zurbar%C3%A1n_-_Labrador_with_his_Son_-_Google_Art_Project.jpg",
+        "title": "Labrador con su hijo",
+        "year": 1655,
+        "description": "Campesino y niño posan con dignidad sobre fondo neutro. Zurbarán eleva la figura humilde a retrato de presencia casi escultórica.",
+        "width": 126,
+        "height": 99
+      },
+      {
+        "id": "zurbaran-agnus-dei",
+        "filename": "Francisco_de_Zurbar%C3%A1n_-_Agnus_Dei_-_Google_Art_Project.jpg",
+        "title": "Agnus Dei",
+        "year": 1635,
+        "description": "Cordero atado sobre una mesa en un espacio de silencio absoluto. Zurbarán convierte el símbolo cristiano en meditación sobre el sacrificio con realismo sobrecogedor.",
+        "width": 38,
+        "height": 62
+      }
+    ],
+    "paul-gauguin": [
+      {
+        "id": "gauguin-nunca-mas",
+        "filename": "Paul_Gauguin_-_Nevermore_-_Google_Art_Project.jpg",
+        "title": "Nunca jamás",
+        "year": 1897,
+        "description": "Desnudo tahitiano reclinado mientras un cuervo posa al fondo. Gauguin mezcla memoria de Poe, erotismo oceánico y color simbólico en Polinesia.",
+        "width": 73,
+        "height": 95
+      },
+      {
+        "id": "gauguin-autorretrato-cristo-amarillo",
+        "filename": "Paul_Gauguin_-_Self-Portrait_with_The_Yellow_Christ_-_Google_Art_Project.jpg",
+        "title": "Autorretrato con El Cristo amarillo",
+        "year": 1890,
+        "description": "Gauguin se representa junto a su Cristo amarillo en un interior breton. Autorretrato donde el artista se identifica con el mártir y el primitivismo moderno.",
+        "width": 92,
+        "height": 73
+      }
+    ],
+    "georges-seurat": [
+      {
+        "id": "seurat-puerto-honfleur",
+        "filename": "Georges_Seurat_-_Port_of_Honfleur_-_Google_Art_Project.jpg",
+        "title": "Puerto de Honfleur",
+        "year": 1886,
+        "description": "Veleros y muelle normando construidos con puntos de color puro. Seurat aplica el divisionismo al paisaje marino con rigor científico y calma luminosa.",
+        "width": 66,
+        "height": 82
+      },
+      {
+        "id": "seurat-circo-esquisses",
+        "filename": "Georges_Seurat_-_Circus_Sideshow_(Parade_de_Cirque)_-_Google_Art_Project.jpg",
+        "title": "Parada de circo",
+        "year": 1888,
+        "description": "Músico y público ante la carpa del circo en una noche de luces gasistas. Seurat explora el ocio urbano parisino con contornos de color y atmósfera nocturna.",
+        "width": 100,
+        "height": 65
+      }
+    ],
+    "henri-de-toulouse-lautrec": [
+      {
+        "id": "lautrec-retrato-chocolat",
+        "filename": "Henri_de_Toulouse-Lautrec_-_Portrait_of_Chocolat_-_Google_Art_Project.jpg",
+        "title": "Retrato de Chocolat",
+        "year": 1895,
+        "description": "El célebre clown afroamericano posa con traje de escena y mirada directa. Lautrec dignifica al artista de circo con línea expresiva y color plano.",
+        "width": 81,
+        "height": 100
+      },
+      {
+        "id": "lautrec-circo-fernando",
+        "filename": "Henri_de_Toulouse-Lautrec_-_At_the_Circus_Fernando_-_Google_Art_Project.jpg",
+        "title": "En el circo Fernando",
+        "year": 1888,
+        "description": "Jinete ecuestre y payaso en el circo parisino captados con recorte audaz. Lautrec documenta el espectáculo popular con la inmediatez del cartel moderno.",
+        "width": 100,
+        "height": 65
+      }
+    ],
+    "berthe-morisot": [
+      {
+        "id": "morisot-berlina",
+        "filename": "Berthe_Morisot_-_The_Berlin_Coach_-_Google_Art_Project.jpg",
+        "title": "El coche de Berlín",
+        "year": 1871,
+        "description": "Mujer con niño sube a un carruaje en un parque parisino. Morisot captura la vida burguesa femenina con pincelada ligera y composición dinámica.",
+        "width": 61,
+        "height": 50
+      },
+      {
+        "id": "morisot-jardin-bougival",
+        "filename": "Berthe_Morisot_-_The_Garden_at_Bougival_-_Google_Art_Project.jpg",
+        "title": "El jardín en Bougival",
+        "year": 1884,
+        "description": "Figuras entre flores y luz veraniega en un jardín suburbano. Morisot traduce el paisaje impresionista en escena de ocio femenino al aire libre.",
+        "width": 65,
+        "height": 54
+      }
+    ],
+    "jan-van-eyck": [
+      {
+        "id": "van-eyck-dresden-triptych",
+        "filename": "Jan_van_Eyck_-_Dresden_Triptych_-_Google_Art_Project.jpg",
+        "title": "Tríptico de Dresde",
+        "year": 1437,
+        "description": "Virgen con el Niño flanqueada por ángeles músicos en un tríptico devocional. Van Eyck combina minuciosidad flamenca y color joya en un retablo de intimidad celestial.",
+        "width": 33,
+        "height": 55
+      },
+      {
+        "id": "van-eyck-portrait-baudouin",
+        "filename": "Jan_van_Eyck_-_Portrait_of_Baudouin_de_Lannoy_-_Google_Art_Project.jpg",
+        "title": "Retrato de Baudouin de Lannoy",
+        "year": 1435,
+        "description": "Noble flamenco posa con mirada firme y manos entrelazadas sobre fondo oscuro. Van Eyck aplica al retrato la misma minuciosidad que a sus escenas devocionales.",
+        "width": 26,
+        "height": 20
+      }
+    ],
+    "sandro-botticelli": [
+      {
+        "id": "botticelli-madonna-magnificat",
+        "filename": "Sandro_Botticelli_-_Madonna_of_the_Magnificat_-_Google_Art_Project.jpg",
+        "title": "Madonna del Magnificat",
+        "year": 1483,
+        "description": "Virgen entronizada escribe el Magnificat rodeada de ángeles y figuras celestiales. Botticelli organiza la gloria mariana con línea sinuosa y color claro.",
+        "width": 118,
+        "height": 119
+      },
+      {
+        "id": "botticelli-madonna-granada",
+        "filename": "Sandro_Botticelli_-_Madonna_of_the_Pomegranate_-_Google_Art_Project.jpg",
+        "title": "Madonna de la granada",
+        "year": 1487,
+        "description": "María sostiene al Niño y una granada símbolo de la Pasión. Tondo florentino donde Botticelli equilibra ternura maternal y erudición simbólica.",
+        "width": 143,
+        "height": 143
+      }
+    ],
+    "leonardo-da-vinci": [
+      {
+        "id": "leonardo-belle-ferronniere",
+        "filename": "Leonardo_da_Vinci_-_La_belle_ferronni%C3%A8re_-_Google_Art_Project.jpg",
+        "title": "La bella ferronera",
+        "year": 1495,
+        "description": "Retrato femenino de mirada serena con joyas y vestido rojo. Leonardo modela el rostro con sfumato y captura la psicología de la corte milanesa.",
+        "width": 63,
+        "height": 45
+      },
+      {
+        "id": "leonardo-ultima-cena-detalle",
+        "filename": "Leonardo_da_Vinci_-_The_Last_Supper_-_Google_Art_Project.jpg",
+        "title": "La Última Cena",
+        "year": 1498,
+        "description": "Cristo y los apóstoles en el instante trágico de la traición. Leonardo organiza el drama humano con gestos y miradas que definen la narrativa renacentista.",
+        "width": 460,
+        "height": 880
+      }
+    ],
+    "paolo-veronese": [
+      {
+        "id": "veronese-cena-levi",
+        "filename": "Paolo_Veronese_-_The_Feast_in_the_House_of_Levi_-_Google_Art_Project.jpg",
+        "title": "La cena en casa de Leví",
+        "year": 1573,
+        "description": "Banquete bíblico convertido en escena de lujo veneciano con decenas de personajes. Veronese desafió la Inquisición y amplió la escena sagrada hasta límites teatrales.",
+        "width": 560,
+        "height": 130
+      },
+      {
+        "id": "veronese-unfaithfulness",
+        "filename": "Paolo_Veronese_-_The_Family_of_Darius_before_Alexander_-_Google_Art_Project.jpg",
+        "title": "La familia de Darío ante Alejandro",
+        "year": 1565,
+        "description": "La familia persa se inclina ante el conquistador macedonio en una escena de seda y arquitectura clásica. Veronese celebra el poder y el protocolo histórico con color veneciano.",
+        "width": 236,
+        "height": 475
+      }
+    ],
+    "johannes-vermeer": [
+      {
+        "id": "vermeer-vista-delft",
+        "filename": "Johannes_Vermeer_-_View_of_Delft_-_Google_Art_Project.jpg",
+        "title": "Vista de Delft",
+        "year": 1661,
+        "description": "Panorama de la ciudad natal bajo un cielo nublado con reflejos en el agua. Obra cumbre del paisaje holandés donde la luz define la identidad urbana.",
+        "width": 98,
+        "height": 117
+      },
+      {
+        "id": "vermeer-concierto",
+        "filename": "Johannes_Vermeer_-_The_Music_Lesson_-_Google_Art_Project.jpg",
+        "title": "La lección de música",
+        "year": 1665,
+        "description": "Maestro y alumna junto a un clave en un interior bañado de luz lateral. Vermeer captura la intimidad educativa con geometría silenciosa y color sobrio.",
+        "width": 74,
+        "height": 64
+      }
+    ],
+    "antoine-watteau": [
+      {
+        "id": "watteau-embarkation-cythera",
+        "filename": "Antoine_Watteau_-_The_Embarkation_for_Cythera_-_Google_Art_Project.jpg",
+        "title": "El embarque hacia Citera",
+        "year": 1717,
+        "description": "Parejas galantes se dirigen hacia la isla del amor en un paisaje dorado. Obra fundacional del rococó francés y del fête galante.",
+        "width": 129,
+        "height": 194
+      },
+      {
+        "id": "watteau-fetes-venitiennes",
+        "filename": "Antoine_Watteau_-_F%C3%AAtes_Venitiennes_-_Google_Art_Project.jpg",
+        "title": "Fiestas venecianas",
+        "year": 1717,
+        "description": "Figuras disfrazadas conversan y bailan en un parque de fiesta galante. Watteau mezcla teatro, música y melancolía en una escena de ocio aristocrático.",
+        "width": 55,
+        "height": 45
+      }
+    ],
+    "jean-auguste-dominique-ingres": [
+      {
+        "id": "ingres-jupiter-tetis",
+        "filename": "Jean_Auguste_Dominique_Ingres_-_Jupiter_and_Thetis_-_Google_Art_Project.jpg",
+        "title": "Júpiter y Tetis",
+        "year": 1811,
+        "description": "Tetis suplica a Júpiter en el Olimpo con cuerpos de contorno ideal. Ingres demuestra su virtuosismo académico en una escena mitológica de frialdad clásica.",
+        "width": 327,
+        "height": 260
+      },
+      {
+        "id": "ingres-apotheosis-homer",
+        "filename": "Jean_Auguste_Dominique_Ingres_-_The_Apotheosis_of_Homer_-_Google_Art_Project.jpg",
+        "title": "La apoteosis de Homero",
+        "year": 1827,
+        "description": "Homero entronizado recibe la gloria entre musas y poetas de la Antigüedad. Ingres celebra el canon clásico con composición académica de figuras escultóricas.",
+        "width": 386,
+        "height": 512
+      }
+    ],
+    "emanuel-leutze": [],
+    "caravaggio": [
+      {
+        "id": "caravaggio-martirio-mateo",
+        "filename": "Caravaggio_-_The_Martyrdom_of_Saint_Matthew_-_Google_Art_Project.jpg",
+        "title": "El martirio de san Mateo",
+        "year": 1600,
+        "description": "El apóstol cae bajo la espada del asesino en una iglesia llena de testigos. Caravaggio dramatiza la violencia sagrada con teatralidad y luz que cae desde lo alto.",
+        "width": 323,
+        "height": 343
+      },
+      {
+        "id": "caravaggio-conversione-saulo",
+        "filename": "Caravaggio_-_The_Conversion_of_Saint_Paul_-_Google_Art_Project.jpg",
+        "title": "La conversión de san Pablo",
+        "year": 1601,
+        "description": "Saulo cae de su caballo bajo un rayo divino mientras un criado observa. Caravaggio reduce el milagro a un cuerpo pesado en el suelo y una luz sobrenatural.",
+        "width": 230,
+        "height": 175
+      }
+    ],
+    "eugene-delacroix": [
+      {
+        "id": "delacroix-caza-leones",
+        "filename": "Eug%C3%A8ne_Delacroix_-_The_Lion_Hunt_-_Google_Art_Project.jpg",
+        "title": "La caza del león",
+        "year": 1855,
+        "description": "Jinetes y cazadores luchan contra leones en un torbellino de color y movimiento. Delacroix vuelve al tema orientalista con energía barroca y pincelada ardiente.",
+        "width": 82,
+        "height": 101
+      },
+      {
+        "id": "delacroix-autorretrato-paleta",
+        "filename": "Eug%C3%A8ne_Delacroix_-_Self-Portrait_with_Palette_-_Google_Art_Project.jpg",
+        "title": "Autorretrato con paleta",
+        "year": 1837,
+        "description": "Delacroix se representa como pintor moderno con paleta y mirada intensa. Autorretrato que afirma la libertad romántica frente a la academia neoclásica.",
+        "width": 65,
+        "height": 54
+      }
+    ],
+    "caspar-david-friedrich": [
+      {
+        "id": "friedrich-monje-orilla-mar",
+        "filename": "Caspar_David_Friedrich_-_Monk_by_the_Sea_-_Google_Art_Project.jpg",
+        "title": "Monje a la orilla del mar",
+        "year": 1810,
+        "description": "Figura diminuta contempla un mar gris y un cielo inmenso. Friedrich condensa la sublimidad romántica en la soledad humana ante la naturaleza infinita.",
+        "width": 110,
+        "height": 171
+      },
+      {
+        "id": "friedrich-arbol-cuervos",
+        "filename": "Caspar_David_Friedrich_-_Two_Men_Contemplating_the_Moon_-_Google_Art_Project.jpg",
+        "title": "Dos hombres contemplando la luna",
+        "year": 1819,
+        "description": "Dos figuras observan la luna en un paisaje nocturno de rocas y árboles retorcidos. Friedrich transforma la amistad y la contemplación en meditación romántica.",
+        "width": 35,
+        "height": 45
+      }
+    ],
+    "j-m-w-turner": [
+      {
+        "id": "turner-lluvia-vapor-velocidad",
+        "filename": "Joseph_Mallord_William_Turner_-_Rain,_Steam_and_Speed_-_Google_Art_Project.jpg",
+        "title": "Lluvia, vapor y velocidad",
+        "year": 1844,
+        "description": "Locomotora atraviesa un puente sobre el Támesis entre niebla y lluvia. Turner celebra la era industrial con color casi abstracto y movimiento vertiginoso.",
+        "width": 91,
+        "height": 122
+      },
+      {
+        "id": "turner-esclavos",
+        "filename": "Joseph_Mallord_William_Turner_-_The_Slave_Ship_-_Google_Art_Project.jpg",
+        "title": "El barco de esclavos",
+        "year": 1840,
+        "description": "Mar tormentoso engulle cuerpos arrojados al agua mientras un velero lucha contra las olas. Turner denuncia la atrocidad del comercio atlántico con sublimidad violenta.",
+        "width": 91,
+        "height": 123
+      }
+    ],
+    "thomas-cole": [
+      {
+        "id": "cole-curso-imperio",
+        "filename": "Thomas_Cole_-_The_Course_of_Empire_-_The_Consummation_-_Google_Art_Project.jpg",
+        "title": "El curso del imperio: la consunción",
+        "year": 1836,
+        "description": "Ciudad imperial en su apogeo bajo un cielo dorado en la serie alegórica de Cole. El paisaje americano se convierte en meditación sobre ascenso y caída de civilizaciones.",
+        "width": 130,
+        "height": 193
+      },
+      {
+        "id": "cole-voyage-of-life",
+        "filename": "Thomas_Cole_-_The_Voyage_of_Life_-_Youth_-_Google_Art_Project.jpg",
+        "title": "El viaje de la vida: la juventud",
+        "year": 1842,
+        "description": "Joven navega por un río caudaloso hacia un palacio de nubes doradas. Cole desarrolla la alegoría moral en una serie sobre las edades del hombre.",
+        "width": 134,
+        "height": 193
+      }
+    ],
+    "theodore-gericault": [
+      {
+        "id": "gericault-retrato-kleber",
+        "filename": "Th%C3%A9odore_G%C3%A9ricault_-_Portrait_of_Kleber_-_Google_Art_Project.jpg",
+        "title": "Retrato de Kleber",
+        "year": 1820,
+        "description": "El general Kleber posa con uniforme y mirada penetrante en un retrato de corte napoleónica. Géricault demuestra su maestría en el retrato antes de la balsa de la Medusa.",
+        "width": 65,
+        "height": 54
+      }
+    ],
+    "william-blake": [
+      {
+        "id": "blake-ancient-of-days",
+        "filename": "William_Blake_-_The_Ancient_of_Days_-_Google_Art_Project.jpg",
+        "title": "El Anciano de los Días",
+        "year": 1794,
+        "description": "Dios compasa el universo desde un círculo de fuego en una visión profética. Blake funde grabado, poesía y mística en una imagen de creación cósmica.",
+        "width": 23,
+        "height": 17
+      },
+      {
+        "id": "blake-gran-dragon-rojo",
+        "filename": "William_Blake_-_The_Great_Red_Dragon_and_the_Beast_from_the_Sea_-_Google_Art_Project.jpg",
+        "title": "El gran dragón rojo",
+        "year": 1805,
+        "description": "Bestia apocalíptica se alza sobre un mar tempestuoso en una acuarela profética. Blake visualiza el Apocalipsis con imaginación visionaria lejos del naturalismo.",
+        "width": 40,
+        "height": 34
+      }
+    ]
+  }
+}

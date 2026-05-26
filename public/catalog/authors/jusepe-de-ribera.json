@@ -1,0 +1,77 @@
+{
+  "id": "jusepe-de-ribera",
+  "name": "Jusepe de Ribera",
+  "category": "barroco",
+  "fullName": "José de Ribera, llamado Lo Spagnoletto",
+  "years": "1591 – 1652",
+  "origin": "Játiva, Reino de Valencia",
+  "bio": "Pintor valenciano formado en la estela caravaggesca y afincado en Nápoles. Ribera combinó naturalismo crudo, tenebrismo y una anatomía implacable en escenas de mártires, filósofos y mendigos que lo convirtieron en maestro del barroco español e italiano.",
+  "paintings": [
+    {
+      "id": "ribera-apolo-marsias",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Jusepe_de_Ribera_-_Apollo_and_Marsyas_-_Google_Art_Project.jpg",
+      "title": "Apolo y Marsias",
+      "year": 1637,
+      "description": "Apolo desolla al sátiro vencido en un concurso musical. Ribera dramatiza el castigo mitológico con anatomía cruda y claroscuro violento.",
+      "dimensions": {
+        "width": 182,
+        "height": 232
+      }
+    },
+    {
+      "id": "ribera-martirio-filipo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Jusepe_de_Ribera_-_The_Martyrdom_of_Saint_Philip_-_Google_Art_Project.jpg",
+      "title": "El martirio de san Felipe",
+      "year": 1639,
+      "description": "El apóstol es elevado en la cruz mientras figuras observan desde abajo. Escena de heroísmo cristiano pintada con realismo físico y luz lateral intensa.",
+      "dimensions": {
+        "width": 234,
+        "height": 203
+      }
+    },
+    {
+      "id": "ribera-pie-bot",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Jusepe_de_Ribera_-_The_Clubfoot_-_Google_Art_Project.jpg",
+      "title": "El patizambo",
+      "year": 1642,
+      "description": "Joven mendigo sonríe mientras muestra su documento de pobreza. Ribera dignifica la marginación con retrato directo y ternura inesperada.",
+      "dimensions": {
+        "width": 164,
+        "height": 94
+      }
+    },
+    {
+      "id": "ribera-democrito",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Jusepe_de_Ribera_-_Democritus_-_Google_Art_Project.jpg",
+      "title": "Demócrito",
+      "year": 1630,
+      "description": "El filósofo sonríe ante la vanidad del mundo con un cráneo en las manos. Ribera retrata la sabiduría cínica con naturalismo crudo y luz lateral intensa.",
+      "dimensions": {
+        "width": 125,
+        "height": 100
+      }
+    },
+    {
+      "id": "ribera-santa-teresa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jusepe_de_Ribera_-_Saint_Teresa_of_Avila_-_Google_Art_Project.jpg",
+      "title": "Santa Teresa de Ávila",
+      "year": 1640,
+      "description": "La mística carmelita recibe la visión con rostro extático y manos unidas. Ribera une devoción española y naturalismo napolitano en un retrato de gran intensidad.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "ribera-jacob",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Jusepe_de_Ribera_-_Jacob's_Dream_-_Google_Art_Project.jpg",
+      "title": "El sueño de Jacob",
+      "year": 1639,
+      "description": "Jacob descansa mientras ángeles suben y bajan por la escala celestial. Ribera dramatiza la visión bíblica con claroscuro nocturno y anatomía robusta.",
+      "dimensions": {
+        "width": 179,
+        "height": 233
+      }
+    }
+  ]
+}

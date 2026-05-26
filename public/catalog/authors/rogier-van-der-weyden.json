@@ -36,6 +36,50 @@
         "width": 27,
         "height": 37
       }
+    },
+    {
+      "id": "rogier-crucifixion-triptico",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Rogier_van_der_Weyden_-_Triptych-_The_Crucifixion_-_Google_Art_Project.jpg",
+      "title": "Tríptico de la Crucifixión",
+      "year": 1445,
+      "description": "Cristo muerto en la cruz entre la Virgen, san Juan y donantes arrodillados. Rogier condensa el dolor en figuras alargadas y color intenso sobre fondos dorados.",
+      "dimensions": {
+        "width": 101,
+        "height": 70
+      }
+    },
+    {
+      "id": "rogier-pieta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Rogier_van_der_Weyden_-_Piet%C3%A0_-_Google_Art_Project.jpg",
+      "title": "Piedad",
+      "year": 1441,
+      "description": "Cristo yacente sobre las rodillas de la Virgen en un paisaje rocoso. La escena transmite una intimidad dolorosa mediante gestos contenidos y rostros compungidos.",
+      "dimensions": {
+        "width": 34,
+        "height": 45
+      }
+    },
+    {
+      "id": "rogier-altar-middelburg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Rogier_van_der_Weyden_-_The_Middelburg_Altar_-_Google_Art_Project.jpg",
+      "title": "Retablo de Middelburg",
+      "year": 1450,
+      "description": "Escenas de la Anunciación y la Visitación en un retablo gótico de gran refinamiento. Rogier articula la devoción mariana con arquitectura miniaturizada y color joya.",
+      "dimensions": {
+        "width": 160,
+        "height": 120
+      }
+    },
+    {
+      "id": "rogier-virgen-nino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Rogier_van_der_Weyden_-_Virgin_and_Child_-_Google_Art_Project.jpg",
+      "title": "Virgen y el Niño",
+      "year": 1450,
+      "description": "María sostiene al Niño en un interior íntimo de gran ternura. Rogier condensa la devoción flamenca en figuras delicadas y color luminoso.",
+      "dimensions": {
+        "width": 32,
+        "height": 25
+      }
     }
   ]
 }

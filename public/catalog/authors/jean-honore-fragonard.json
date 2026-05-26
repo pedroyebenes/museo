@@ -50,6 +50,50 @@
         "width": 70,
         "height": 90
       }
+    },
+    {
+      "id": "fragonard-gallina-ciega",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Jean-Honor%C3%A9_Fragonard_-_Blind-Man's_Buff_-_Google_Art_Project.jpg",
+      "title": "Gallina ciega",
+      "year": 1775,
+      "description": "Jóvenes aristócratas juegan en un parque iluminado por la tarde. Fragonard captura el placer galante con pincelada vaporosa y vegetación exuberante.",
+      "dimensions": {
+        "width": 120,
+        "height": 195
+      }
+    },
+    {
+      "id": "fragonard-invierno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Jean-Honor%C3%A9_Fragonard_-_Winter_-_Google_Art_Project.jpg",
+      "title": "El invierno",
+      "year": 1755,
+      "description": "Figura femenina se abriga junto a un brasero en un interior íntimo. De la serie de las estaciones, traduce el frío en una escena de recogimiento doméstico.",
+      "dimensions": {
+        "width": 69,
+        "height": 93
+      }
+    },
+    {
+      "id": "fragonard-pastores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Jean-Honor%C3%A9_Fragonard_-_Landscape_with_Shepherds_and_Flock_of_Sheep_-_Google_Art_Project.jpg",
+      "title": "Paisaje con pastores y rebaño",
+      "year": 1760,
+      "description": "Pastores descansan junto a ovejas en un paisaje italiano idealizado. Fragonard demuestra su maestría paisajística más allá del rococó galante.",
+      "dimensions": {
+        "width": 74,
+        "height": 98
+      }
+    },
+    {
+      "id": "fragonard-competicion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Jean-Honor%C3%A9_Fragonard_-_The_Competition_-_Google_Art_Project.jpg",
+      "title": "La competición",
+      "year": 1755,
+      "description": "Jóvenes compiten en un jardín galante bajo la atenta mirada de cortesanos. Fragonard captura el espíritu lúdico del rococó con pincelada rápida y color brillante.",
+      "dimensions": {
+        "width": 115,
+        "height": 90
+      }
     }
   ]
 }

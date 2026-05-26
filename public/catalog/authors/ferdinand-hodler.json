@@ -1,0 +1,198 @@
+{
+  "id": "ferdinand-hodler",
+  "name": "Ferdinand Hodler",
+  "category": "simbolismo-modernismo-naif",
+  "fullName": "Ferdinand Hodler",
+  "years": "1853 – 1918",
+  "origin": "Berna, Suiza",
+  "bio": "Pintor suizo entre realismo, simbolismo y modernismo. Conocido por sus paisajes alpinos, retratos hieráticos y alegorías de la vida y la muerte en composiciones simétricas de gran intensidad espiritual.",
+  "paintings": [
+    {
+      "id": "hodler-dia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Ferdinand_Hodler_-_The_Day_-_Google_Art_Project.jpg",
+      "title": "El día",
+      "year": 1899,
+      "description": "Mujer desnuda simboliza la luz en una composición simétrica y frontal. Hodler condensa vida y claridad en su estilo paralelista suizo.",
+      "dimensions": {
+        "width": 260,
+        "height": 130
+      }
+    },
+    {
+      "id": "hodler-noche",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Ferdinand_Hodler_-_The_Night_-_Google_Art_Project.jpg",
+      "title": "La noche",
+      "year": 1890,
+      "description": "Figuras dormidas y una muerte amenazante en paisaje nocturno. Obra escandalosa que estableció la reputación simbolista de Hodler.",
+      "dimensions": {
+        "width": 116,
+        "height": 299
+      }
+    },
+    {
+      "id": "hodler-verdad",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Ferdinand_Hodler_-_The_Truth_-_Google_Art_Project.jpg",
+      "title": "La verdad",
+      "year": 1903,
+      "description": "Mujer desnuda sostiene un espejo ante un fondo de pureza simétrica. Alegoría modernista de sinceridad y claridad espiritual.",
+      "dimensions": {
+        "width": 240,
+        "height": 120
+      }
+    },
+    {
+      "id": "hodler-amante",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Ferdinand_Hodler_-_The_Lover_-_Google_Art_Project.jpg",
+      "title": "El amante",
+      "year": 1904,
+      "description": "Pareja abrazada en un paisaje alpino de líneas paralelas. Hodler traduce pasión y unidad en composición ritual y color sobrio.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-jungfrau",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Ferdinand_Hodler_-_The_Jungfrau_from_M%C3%BCrren_-_Google_Art_Project.jpg",
+      "title": "La Jungfrau desde Mürren",
+      "year": 1915,
+      "description": "Cumbre nevada vista desde el valle con horizonte limpio. Hodler pinta los Alpes suizos con geometría monumental y luz cristalina.",
+      "dimensions": {
+        "width": 60,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-madera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Ferdinand_Hodler_-_The_Woodcutter_-_Google_Art_Project.jpg",
+      "title": "El leñador",
+      "year": 1910,
+      "description": "Trabajador en el bosque captado con simetría y solemnidad. Hodler eleva la labor humana a emblema de resistencia y conexión con la naturaleza.",
+      "dimensions": {
+        "width": 90,
+        "height": 120
+      }
+    },
+    {
+      "id": "hodler-genevieve",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Ferdinand_Hodler_-_Portrait_of_Genevieve_Cerruti_-_Google_Art_Project.jpg",
+      "title": "Retrato de Geneviève Cerruti",
+      "year": 1900,
+      "description": "Retrato frontal de mirada intensa y fondo sobrio. Hodler combina realismo psicológico y rigor compositivo en su galería de retratos.",
+      "dimensions": {
+        "width": 65,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-madre-nino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Ferdinand_Hodler_-_Mother_and_Child_-_Google_Art_Project.jpg",
+      "title": "Madre e hijo",
+      "year": 1889,
+      "description": "Figuras entrelazadas en un interior de austeridad conmovedora. Hodler aborda maternidad y mortalidad con emoción contenida y línea clara.",
+      "dimensions": {
+        "width": 46,
+        "height": 55
+      }
+    },
+    {
+      "id": "hodler-tirador",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ferdinand_Hodler_-_The_Shooter_-_Google_Art_Project.jpg",
+      "title": "El tirador",
+      "year": 1900,
+      "description": "Tirador suizo en posición ritual ante paisaje alpino. Hodler monumentaliza tradición popular y identidad nacional con simetría moderna.",
+      "dimensions": {
+        "width": 84,
+        "height": 120
+      }
+    },
+    {
+      "id": "hodler-playa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ferdinand_Hodler_-_At_the_Lake_Shore_-_Google_Art_Project.jpg",
+      "title": "A la orilla del lago",
+      "year": 1892,
+      "description": "Figuras junto al agua con reflejos y montañas al fondo. Paisaje suizo convertido en meditación sobre calma y presencia humana.",
+      "dimensions": {
+        "width": 60,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-euritmia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Ferdinand_Hodler_-_Eurythmy_-_Google_Art_Project.jpg",
+      "title": "Euritmia",
+      "year": 1895,
+      "description": "Figuras femeninas en movimiento rítmico ante un fondo simétrico. Hodler busca armonía entre cuerpo, espacio y espíritu.",
+      "dimensions": {
+        "width": 100,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-mujer-fantasma",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Ferdinand_Hodler_-_The_Woman_in_the_Wilderness_-_Google_Art_Project.jpg",
+      "title": "La mujer en el desierto",
+      "year": 1903,
+      "description": "Figura solitaria en un paisaje desolado de rocas y cielo. Alegoría simbolista de abandono, fe y resistencia interior.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Ferdinand_Hodler_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "title": "Autorretrato",
+      "year": 1916,
+      "description": "El pintor se mira con frontalidad severa y fondo oscuro. Testimonio tardío de un artista que definió la identidad visual suiza moderna.",
+      "dimensions": {
+        "width": 65,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-montanas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Ferdinand_Hodler_-_Lake_Thun_with_the_Niesen_-_Google_Art_Project.jpg",
+      "title": "Lago Thun con el Niesen",
+      "year": 1910,
+      "description": "Lago y montaña suizos en franjas horizontales de color puro. Hodler sintetiza paisaje alpino en ritmo casi musical.",
+      "dimensions": {
+        "width": 80,
+        "height": 100
+      }
+    },
+    {
+      "id": "hodler-despertar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Ferdinand_Hodler_-_The_Awakening_-_Google_Art_Project.jpg",
+      "title": "El despertar",
+      "year": 1892,
+      "description": "Mujer desnuda se levanta entre figuras dormidas. Hodler explora paso de la noche al día con simbolismo y paralelismo compositivo.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-joven",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ferdinand_Hodler_-_Youth_Adorning_a_Statue_-_Google_Art_Project.jpg",
+      "title": "Juventud adornando una estatua",
+      "year": 1900,
+      "description": "Joven coloca flores en una escultura clásica al aire libre. Hodler vincula belleza, cultura y naturaleza en escena simétrica.",
+      "dimensions": {
+        "width": 100,
+        "height": 80
+      }
+    },
+    {
+      "id": "hodler-mujer-sentada",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Ferdinand_Hodler_-_Seated_Woman_-_Google_Art_Project.jpg",
+      "title": "Mujer sentada",
+      "year": 1905,
+      "description": "Figura femenina en actitud meditativa con fondo simplificado. Retrato de quietud espiritual en el lenguaje paralelista de Hodler.",
+      "dimensions": {
+        "width": 65,
+        "height": 80
+      }
+    }
+  ]
+}

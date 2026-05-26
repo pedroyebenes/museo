@@ -1,0 +1,99 @@
+{
+  "id": "jean-francois-millet",
+  "name": "Jean-François Millet",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Jean-François Millet",
+  "years": "1814 – 1875",
+  "origin": "Gruchy, Normandía, Francia",
+  "bio": "Pintor francés de campesinos y labores rurales que dignificó el trabajo manual con una gravedad casi monumental. Su visión de la tierra y del cuerpo obrero influyó en el realismo y en el arte moderno.",
+  "paintings": [
+    {
+      "id": "millet-espigadoras",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project.jpg",
+      "title": "Las espigadoras",
+      "year": 1857,
+      "description": "Tres mujeres recogen restos de la cosecha en un campo dorado. Millet convierte una escena rural en símbolo de pobreza digna y resistencia silenciosa.",
+      "dimensions": {
+        "width": 83,
+        "height": 110
+      }
+    },
+    {
+      "id": "millet-angelus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Jean-Fran%C3%A7ois_Millet_-_The_Angelus_-_Google_Art_Project.jpg",
+      "title": "El ángelus",
+      "year": 1859,
+      "description": "Campesinos interrumpen su labor al oír la oración del atardecer. La escena mezcla devoción, cansancio y paisaje normando con solemnidad popular.",
+      "dimensions": {
+        "width": 55,
+        "height": 66
+      }
+    },
+    {
+      "id": "millet-sembrador",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Jean-Fran%C3%A7ois_Millet_-_The_Sower_-_Google_Art_Project.jpg",
+      "title": "El sembrador",
+      "year": 1850,
+      "description": "Figura masculina siembra a lo lejos bajo un cielo crepuscular. Millet eleva la labranza a gesto épico y arquetípico del trabajo humano.",
+      "dimensions": {
+        "width": 102,
+        "height": 82
+      }
+    },
+    {
+      "id": "millet-pastora",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Jean-Fran%C3%A7ois_Millet_-_The_Shepherdess_-_Google_Art_Project.jpg",
+      "title": "La pastora",
+      "year": 1863,
+      "description": "Joven guardiana de rebaño detenida en un campo bajo luz tenue. Millet subraya la soledad y la paciencia del mundo campesino.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "millet-plantadores-patatas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Jean-Fran%C3%A7ois_Millet_-_Potato_Planters_-_Google_Art_Project.jpg",
+      "title": "Plantadores de patatas",
+      "year": 1861,
+      "description": "Campesinos inclinados plantan tubérculos en un suelo oscuro. La escena destaca el esfuerzo físico repetitivo del trabajo agrícola.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "millet-ordeñando-vaca",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Jean-Fran%C3%A7ois_Millet_-_Woman_Milking_a_Cow_-_Google_Art_Project.jpg",
+      "title": "Mujer ordeñando una vaca",
+      "year": 1854,
+      "description": "Campesina inclinada junto al animal en un establo de luz tenue. Millet dignifica la rutina doméstica rural con gravedad moral.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "millet-rebaño-luna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Jean-Fran%C3%A7ois_Millet_-_The_Sheepfold%2C_Moonlight_-_Google_Art_Project.jpg",
+      "title": "Aprisco a la luz de la luna",
+      "year": 1856,
+      "description": "Pastor conduce el rebaño bajo un cielo nocturno de plata. Millet convierte la labranza en ritual silencioso y casi sagrado.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "millet-acantilados-greville",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Jean-Fran%C3%A7ois_Millet_-_Cliffs_of_Gr%C3%A9ville_-_Google_Art_Project.jpg",
+      "title": "Acantilados de Gréville",
+      "year": 1871,
+      "description": "Costa normanda con acantilados y mar gris bajo cielo pesado. Paisaje natal que muestra la unión de Millet con la tierra y el clima.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

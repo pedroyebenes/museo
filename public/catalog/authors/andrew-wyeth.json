@@ -1,0 +1,99 @@
+{
+  "id": "andrew-wyeth",
+  "name": "Andrew Wyeth",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Andrew Newell Wyeth III",
+  "years": "1917 – 2009",
+  "origin": "Chadds Ford, Pensilvania, EE. UU.",
+  "bio": "Pintor realista americano de témpera sobre panel. Wyeth capturó paisajes rurales, interiores austeros y retratos silenciosos de Pennsylvania y Maine con precisión emocional y luz fría.",
+  "paintings": [
+    {
+      "id": "wyeth-cristo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Andrew_Wyeth_-_Christina's_World_-_Google_Art_Project.jpg",
+      "title": "El mundo de Cristina",
+      "year": 1948,
+      "description": "Mujer postrada mira una casa rural en colina amarilla. Icono de la pintura americana sobre deseo, fragilidad y distancia.",
+      "dimensions": {
+        "width": 82,
+        "height": 121
+      }
+    },
+    {
+      "id": "wyeth-viento",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Andrew_Wyeth_-_Wind_from_the_Sea_-_Google_Art_Project.jpg",
+      "title": "Viento del mar",
+      "year": 1947,
+      "description": "Cortina agitada por brisa marina en ventana de granja. Wyeth pinta memoria, ausencia y tacto del aire.",
+      "dimensions": {
+        "width": 47,
+        "height": 70
+      }
+    },
+    {
+      "id": "wyeth-helga",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Andrew_Wyeth_-_Lovers_-_Google_Art_Project.jpg",
+      "title": "Amantes",
+      "year": 1981,
+      "description": "Pareja en silueta junto a ventana de luz tenue. Wyeth condensa intimidad y tiempo detenido en témpera minuciosa.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wyeth-joven",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Andrew_Wyeth_-_Young_Bull_-_Google_Art_Project.jpg",
+      "title": "Toro joven",
+      "year": 1960,
+      "description": "Toro negro en paisaje invernal de Pennsylvania. Wyeth une animal, tierra y melancolía rural americana.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wyeth-snow",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Andrew_Wyeth_-_Snow_Hill_-_Google_Art_Project.jpg",
+      "title": "Colina de nieve",
+      "year": 1989,
+      "description": "Figuras en círculo sobre nieve ante granero. Composición tardía de comunidad y memoria en el invierno rural.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wyeth-karl",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Andrew_Wyeth_-_Karl_-_Google_Art_Project.jpg",
+      "title": "Karl",
+      "year": 1948,
+      "description": "Retrato masculino de mirada austera en interior sombrío. Wyeth retrata a sus vecinos con dignidad silenciosa.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wyeth-alida",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Andrew_Wyeth_-_Alida_-_Google_Art_Project.jpg",
+      "title": "Alida",
+      "year": 1969,
+      "description": "Retrato femenino de luz lateral y expresión reservada. Precisión realista al servicio de psicología íntima.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "wyeth-faro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Andrew_Wyeth_-_Lighthouse_-_Google_Art_Project.jpg",
+      "title": "Faro",
+      "year": 1975,
+      "description": "Faro de Maine en costa rocosa de atmósfera fría. Wyeth pinta el Atlántico norte con sobriedad casi abstracta.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    }
+  ]
+}

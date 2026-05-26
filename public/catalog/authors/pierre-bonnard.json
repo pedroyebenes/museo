@@ -1,0 +1,121 @@
+{
+  "id": "pierre-bonnard",
+  "name": "Pierre Bonnard",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Pierre Bonnard",
+  "years": "1867 – 1947",
+  "origin": "Fontenay-aux-Roses, Francia",
+  "bio": "Pintor nabi convertido en maestro del color intimista. Bonnard transformó escenas domésticas, baños y jardines en campos de color vibrante donde la figura se funde con la decoración, la luz de ventana y la memoria afectiva.",
+  "paintings": [
+    {
+      "id": "bonnard-gatos-barandilla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Pierre_Bonnard_-_Cats_on_the_Railing_-_Google_Art_Project.jpg",
+      "title": "Gatos en la barandilla",
+      "year": 1908,
+      "description": "Dos gatos se posan sobre una barandilla con jardín floreciente al fondo. Bonnard condensa su mundo doméstico en color decorativo y instante cotidiano casi felino.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "bonnard-comedor-campo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Pierre_Bonnard_-_The_Dining_Room_in_the_Country_-_Google_Art_Project.jpg",
+      "title": "El comedor en el campo",
+      "year": 1913,
+      "description": "Mesa puesta ante ventanas abiertas al jardín campestre. Bonnard fusiona interior y exterior en una sola superficie de luz veraniega y vida familiar.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "bonnard-desnudo-banera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Pierre_Bonnard_-_Nude_in_the_Bath_-_Google_Art_Project.jpg",
+      "title": "Desnudo en la bañera",
+      "year": 1925,
+      "description": "Figura femenina sumergida en una bañera de azulejos con vapor y reflejos. Bonnard pinta la intimidad corporal como paisaje de color donde el cuerpo se disuelve en el agua.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "bonnard-terraza-vernonnet",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Pierre_Bonnard_-_The_Terrace_at_Vernonnet_-_Google_Art_Project.jpg",
+      "title": "La terraza en Vernonnet",
+      "year": 1939,
+      "description": "Terraza florida con mesa y sillas bajo luz meridiana. Paisaje doméstico tardío donde Bonnard convierte el jardín en mosaico de verdes, rosas y sombras cálidas.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "bonnard-desayuno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Pierre_Bonnard_-_Breakfast_-_Google_Art_Project.jpg",
+      "title": "El desayuno",
+      "year": 1930,
+      "description": "Mesa con alimentos, taza y luz matinal filtrada por una ventana. Bonnard eleva la escena cotidiana a ceremonia de color donde cada objeto irradia calor.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "bonnard-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Pierre_Bonnard_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "title": "Autorretrato",
+      "year": 1938,
+      "description": "Bonnard se representa con barba blanca y mirada introspectiva ante un fondo de estudio. Autorretrato tardío que condensa su vida dedicada al color y a la memoria pictórica.",
+      "dimensions": {
+        "width": 54,
+        "height": 65
+      }
+    },
+    {
+      "id": "bonnard-naturaleza-frutas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pierre_Bonnard_-_Still_Life_with_Fruit_-_Google_Art_Project.jpg",
+      "title": "Naturaleza muerta con frutas",
+      "year": 1930,
+      "description": "Frutas y objetos sobre un mantel con reflejos cálidos. Bonnard trata la naturaleza muerta como pretexto para explorar armonías cromáticas casi musicales.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "bonnard-jardin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Pierre_Bonnard_-_The_Garden_-_Google_Art_Project.jpg",
+      "title": "El jardín",
+      "year": 1936,
+      "description": "Jardín veraniego con figuras apenas esbozadas entre la vegetación. Bonnard disuelve la forma en manchas de color que evocan calor, sombra y recuerdo.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "bonnard-bano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Pierre_Bonnard_-_The_Bathroom_-_Google_Art_Project.jpg",
+      "title": "El baño",
+      "year": 1932,
+      "description": "Marthe, su musa y esposa, en la bañera vista desde una perspectiva elevada. Bonnard convierte la escena privada en un universo de azulejos, vapor y color reflejado.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "bonnard-ventana-abierta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pierre_Bonnard_-_The_Open_Window_-_Google_Art_Project.jpg",
+      "title": "La ventana abierta",
+      "year": 1921,
+      "description": "Ventana abierta al jardín con cortinas y luz filtrada sobre un interior. Bonnard explora el umbral entre dentro y fuera como fuente de color y contemplación.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    }
+  ]
+}

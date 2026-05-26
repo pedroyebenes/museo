@@ -1,0 +1,77 @@
+{
+  "id": "andrea-del-sarto",
+  "name": "Andrea del Sarto",
+  "category": "renacimiento-manierismo",
+  "fullName": "Andrea d'Agnolo di Francesco di Luca",
+  "years": "1486 – 1530",
+  "origin": "Florencia, República de Florencia",
+  "bio": "Pintor florentino apodado «el pintor sin errores» por su técnica impecable y color armonioso. Entre Rafael y el manierismo, Andrea del Sarto combinó naturalidad, devoción y un dominio del dibujo que influyó en su círculo, incluida su esposa Lucrezia y Pontormo.",
+  "paintings": [
+    {
+      "id": "andrea-del-sarto-madonna-arpie",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Andrea_del_Sarto_-_Madonna_delle_Arpie_-_Google_Art_Project.jpg",
+      "title": "Madonna de las arpías",
+      "year": 1517,
+      "description": "La Virgen entronizada con santos sobre un pedestal decorado con harpías. Obra cumbre de Andrea del Sarto que equilibra monumentalidad clásica y ternura humana.",
+      "dimensions": {
+        "width": 208,
+        "height": 178
+      }
+    },
+    {
+      "id": "andrea-del-sarto-tobias",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Andrea_del_Sarto_-_The_Archangel_Raphael_with_Tobias%2C_St._Leonard_and_the_Donor%2C_Leonardo_di_Lorenzo_Morelli_-_Google_Art_Project.jpg",
+      "title": "El arcángel Rafael con Tobías",
+      "year": 1512,
+      "description": "Rafael guía a Tobías mientras el donante observa la escena. Andrea del Sarto organiza el retablo con claridad narrativa y color florentino sereno.",
+      "dimensions": {
+        "width": 85,
+        "height": 178
+      }
+    },
+    {
+      "id": "andrea-del-sarto-retrato-hombre",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Andrea_del_Sarto_-_Portrait_of_a_Man_-_Google_Art_Project.jpg",
+      "title": "Retrato de un hombre",
+      "year": 1517,
+      "description": "Hombre maduro posa con expresión grave y ropas oscuras. Andrea del Sarto aplica al retrato la misma precisión técnica y sobriedad de sus composiciones religiosas.",
+      "dimensions": {
+        "width": 72,
+        "height": 57
+      }
+    },
+    {
+      "id": "andrea-del-sarto-sacra-familia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Andrea_del_Sarto_-_Holy_Family_with_the_Infant_St_John_-_Google_Art_Project.jpg",
+      "title": "Sagrada Familia con san Juan",
+      "year": 1520,
+      "description": "María, José, el Niño y el joven san Juan forman un grupo íntimo en un paisaje apacible. Obra que muestra el naturalismo sereno del pintor florentino.",
+      "dimensions": {
+        "width": 120,
+        "height": 95
+      }
+    },
+    {
+      "id": "andrea-del-sarto-anunciacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Andrea_del_Sarto_-_Annunciation_-_Google_Art_Project.jpg",
+      "title": "La Anunciación",
+      "year": 1512,
+      "description": "Gabriel anuncia a María en un interior de arquitectura clásica. La escena fluye con naturalidad y una luz suave que anticipa la serenidad de su madurez.",
+      "dimensions": {
+        "width": 180,
+        "height": 158
+      }
+    },
+    {
+      "id": "andrea-del-sarto-caridad",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Andrea_del_Sarto_-_Charity_-_Google_Art_Project.jpg",
+      "title": "La Caridad",
+      "year": 1530,
+      "description": "Figura femenina alimenta a niños en un paisaje claro. Alegoría de las virtudes teologales pintada con la suavidad y el naturalismo de su última etapa.",
+      "dimensions": {
+        "width": 117,
+        "height": 92
+      }
+    }
+  ]
+}

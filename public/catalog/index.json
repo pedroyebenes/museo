@@ -20,7 +20,15 @@
         "pietro-perugino",
         "melozzo-da-forli",
         "hans-holbein-el-joven",
-        "pieter-bruegel-el-viejo"
+        "pieter-bruegel-el-viejo",
+        "giotto",
+        "andrea-mantegna",
+        "giorgione",
+        "correggio",
+        "parmigianino",
+        "bronzino",
+        "andrea-del-sarto",
+        "lucas-cranach-el-viejo"
       ]
     },
     {
@@ -38,7 +46,14 @@
         "nicolas-poussin",
         "antoine-watteau",
         "artemisia-gentileschi",
-        "jean-honore-fragonard"
+        "jean-honore-fragonard",
+        "jusepe-de-ribera",
+        "guido-reni",
+        "anthony-van-dyck",
+        "claude-lorrain",
+        "georges-de-la-tour",
+        "giovanni-battista-tiepolo",
+        "canaletto"
       ]
     },
     {
@@ -57,7 +72,41 @@
         "caspar-david-friedrich",
         "j-m-w-turner",
         "gustave-courbet",
-        "john-constable"
+        "john-constable",
+        "jean-baptiste-simeon-chardin",
+        "joshua-reynolds",
+        "thomas-gainsborough",
+        "jean-francois-millet",
+        "honore-daumier",
+        "dante-gabriel-rossetti",
+        "john-everett-millais",
+        "james-mcneill-whistler",
+        "arnold-bocklin",
+        "adolph-menzel",
+        "william-adolphe-bouguereau"
+      ]
+    },
+    {
+      "id": "arte-moderno-siglo-xx",
+      "label": "Arte moderno del siglo XX",
+      "description": "Vanguardias, cubismo, surrealismo y modernidad americana.",
+      "authors": [
+        "pablo-picasso",
+        "henri-matisse",
+        "georges-braque",
+        "salvador-dali",
+        "rene-magritte",
+        "joan-miro",
+        "wassily-kandinsky",
+        "piet-mondrian",
+        "amedeo-modigliani",
+        "marc-chagall",
+        "edward-hopper",
+        "georgia-o-keeffe",
+        "kasimir-malevich",
+        "frida-kahlo",
+        "andrew-wyeth",
+        "grant-wood"
       ]
     },
     {
@@ -88,7 +137,11 @@
         "paul-gauguin",
         "georges-seurat",
         "henri-de-toulouse-lautrec",
-        "berthe-morisot"
+        "berthe-morisot",
+        "alfred-sisley",
+        "pierre-bonnard",
+        "edouard-vuillard",
+        "paul-signac"
       ]
     },
     {
@@ -100,7 +153,10 @@
         "odilon-redon",
         "henri-rousseau",
         "gustav-klimt",
-        "aubrey-beardsley"
+        "aubrey-beardsley",
+        "gustave-moreau",
+        "ferdinand-hodler",
+        "alphonse-mucha"
       ]
     }
   ]

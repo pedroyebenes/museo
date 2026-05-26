@@ -50,6 +50,28 @@
         "width": 74,
         "height": 59
       }
+    },
+    {
+      "id": "holbein-retrato-dama",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Hans_Holbein_the_Younger_-_Portrait_of_a_Lady_-_Google_Art_Project.jpg",
+      "title": "Retrato de una dama",
+      "year": 1520,
+      "description": "Mujer anónima con tocado y joyas posa sobre fondo azul. Holbein combina precisión flamenca y elegancia cortesana en un retrato de sobria distinción.",
+      "dimensions": {
+        "width": 35,
+        "height": 26
+      }
+    },
+    {
+      "id": "holbein-jane-seymour",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Hans_Holbein_the_Younger_-_Jane_Seymour%2C_Queen_of_England_-_Google_Art_Project.jpg",
+      "title": "Retrato de Jane Seymour",
+      "year": 1537,
+      "description": "Tercera esposa de Enrique VIII posa con ricos bordados y expresión contenida. Holbein fija la imagen oficial de la reina Tudor con detalle casi miniaturístico.",
+      "dimensions": {
+        "width": 26,
+        "height": 19
+      }
     }
   ]
 }

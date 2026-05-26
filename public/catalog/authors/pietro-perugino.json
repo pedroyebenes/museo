@@ -36,6 +36,28 @@
         "width": 178,
         "height": 163
       }
+    },
+    {
+      "id": "perugino-francesco-opere",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Perugino_-_Ritratto_di_Francesco_delle_Opere_-_Google_Art_Project.jpg",
+      "title": "Retrato de Francesco delle Opere",
+      "year": 1494,
+      "description": "Banquero florentino posa ante un paisaje apacible con manos entrelazadas. Perugino traduce la dignidad civil en un retrato de calma y precisión lineal.",
+      "dimensions": {
+        "width": 52,
+        "height": 44
+      }
+    },
+    {
+      "id": "perugino-crucifixion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pietro_Perugino_-_The_Crucifixion_-_Google_Art_Project.jpg",
+      "title": "La Crucifixión",
+      "year": 1496,
+      "description": "Cristo en la cruz flanqueado por santos y donantes en un paisaje umbrio. Perugino organiza la escena con la serenidad compositiva que influyó en el joven Rafael.",
+      "dimensions": {
+        "width": 185,
+        "height": 165
+      }
     }
   ]
 }

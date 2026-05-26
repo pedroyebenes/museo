@@ -50,6 +50,28 @@
         "width": 121,
         "height": 105
       }
+    },
+    {
+      "id": "greco-apostol-santiago",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/El_Greco_-_St._James_the_Greater_-_Google_Art_Project.jpg",
+      "title": "Santiago el Mayor",
+      "year": 1610,
+      "description": "Apóstol de perfil con túnica verde y mirada extática hacia arriba. El Greco condensa la espiritualidad manierista en figuras alargadas de intensidad devocional.",
+      "dimensions": {
+        "width": 77,
+        "height": 64
+      }
+    },
+    {
+      "id": "greco-apertura-quinto-sello",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/El_Greco_-_The_Opening_of_the_Fifth_Seal_-_Google_Art_Project.jpg",
+      "title": "La apertura del quinto sello",
+      "year": 1608,
+      "description": "Figuras desnudas alzan los brazos bajo un cielo apocalíptico de color incandescente. Visión bíblica pintada con el dramatismo espiritual de la madurez toledana.",
+      "dimensions": {
+        "width": 224,
+        "height": 199
+      }
     }
   ]
 }

@@ -1,0 +1,99 @@
+{
+  "id": "john-everett-millais",
+  "name": "John Everett Millais",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Sir John Everett Millais",
+  "years": "1829 – 1896",
+  "origin": "Southampton, Inglaterra",
+  "bio": "Pintor prerrafaelita británico de precisión casi fotográfica. Millais combinó narrativa histórica, paisaje y retrato con un color brillante que definió la estética victoriana temprana.",
+  "paintings": [
+    {
+      "id": "millais-ofelia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+      "title": "Ofelia",
+      "year": 1852,
+      "description": "Ofelia flota entre flores y agua antes de ahogarse, según la tragedia de Shakespeare. Millais pinta la naturaleza con detalle botánico y melancolía lírica.",
+      "dimensions": {
+        "width": 76,
+        "height": 112
+      }
+    },
+    {
+      "id": "millais-mariana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/John_Everett_Millais_-_Mariana_-_Google_Art_Project.jpg",
+      "title": "Mariana",
+      "year": 1851,
+      "description": "Mujer solitaria se estira tras bordar en un interior otoñal. La escena traduce un personaje shakespeariano en símbolo de espera y deseo.",
+      "dimensions": {
+        "width": 60,
+        "height": 80
+      }
+    },
+    {
+      "id": "millais-valle-descanso",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/John_Everett_Millais_-_The_Vale_of_Rest_-_Google_Art_Project.jpg",
+      "title": "El valle del descanso",
+      "year": 1858,
+      "description": "Monjas cavando tumbas en un cementerio al atardecer. Millais combina quietud religiosa y luz crepuscular en clave prerrafaelita.",
+      "dimensions": {
+        "width": 104,
+        "height": 86
+      }
+    },
+    {
+      "id": "millais-isabella",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/John_Everett_Millais_-_Isabella_-_Google_Art_Project.jpg",
+      "title": "Isabel",
+      "year": 1849,
+      "description": "Escena narrativa inspirada en un poema de Keats con gestos teatrales y color intenso. Obra temprana manifiesto del grupo prerrafaelita.",
+      "dimensions": {
+        "width": 103,
+        "height": 142
+      }
+    },
+    {
+      "id": "millais-paz-concluida",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Sir_John_Everett_Millais_-_Peace_Concluded_-_Google_Art_Project.jpg",
+      "title": "Paz concluida",
+      "year": 1856,
+      "description": "Familia reunida tras la guerra de Crimea en un interior victoriano cargado de símbolos. Millais narra reconciliación y alivio doméstico.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "millais-martir-solway",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/John_Everett_Millais_-_The_Martyr_of_the_Solway_-_Google_Art_Project.jpg",
+      "title": "El mártir del Solway",
+      "year": 1871,
+      "description": "Margaret Wilson condenada por su fe presa en la marea del fiordo escocés. Millais dramatiza persecución religiosa con paisaje y pathos victoriano.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "millais-rescate",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/John_Everett_Millais_-_The_rescue_-_Google_Art_Project.jpg",
+      "title": "El rescate",
+      "year": 1855,
+      "description": "Hombre salva a dos niños del agua en una escena de urgencia doméstica. Millais combina narrativa sentimental y precisión prerrafaelita.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "millais-paso-noroeste",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/John_Everett_Millais_-_The_North-West_Passage_-_Google_Art_Project.jpg",
+      "title": "El paso del Noroeste",
+      "year": 1874,
+      "description": "Marinero anciano contempla un mapa polar con gesto melancólico. Millais alude a la aventura imperial británica y al paso del tiempo.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    }
+  ]
+}

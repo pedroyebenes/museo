@@ -1,0 +1,99 @@
+{
+  "id": "adolph-menzel",
+  "name": "Adolph Menzel",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Adolph Friedrich Erdmann von Menzel",
+  "years": "1815 – 1905",
+  "origin": "Breslavia, Prusia (actual Wrocław, Polonia)",
+  "bio": "Pintor y dibujante alemán que documentó la vida prusiana con realismo minucioso. Menzel fue maestro del detalle histórico, del interior industrial y de la escena contemporánea berlinesa.",
+  "paintings": [
+    {
+      "id": "menzel-laminadora-hierro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Adolph_Menzel_-_Eisenwalzwerk_-_Google_Art_Project.jpg",
+      "title": "La laminadora de hierro (Cíclopes modernos)",
+      "year": 1875,
+      "description": "Obreros y maquinaria iluminados por el resplandor del metal fundido. Menzel dignifica la industria moderna con precisión casi documental.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "menzel-concierto-flauta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Adolph_Menzel_-_Fl%C3%B6tenkonzert_Friedrichs_des_Gro%C3%9Fen_in_Sanssouci_-_Google_Art_Project.jpg",
+      "title": "El concierto de flauta de Federico el Grande en Sanssouci",
+      "year": 1852,
+      "description": "Federico el Grande toca flauta en Sanssouci rodeado de cortesanos en penumbra. Menzel recrea la vida íntima de la corte prusiana.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "menzel-habitacion-balcon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Adolph_Menzel_-_Das_Balkonzimmer_-_Google_Art_Project.jpg",
+      "title": "La habitación del balcón",
+      "year": 1845,
+      "description": "Interior berlinés vacío con luz filtrada por cortinas y ventanal abierto. Menzel convierte un cuarto modesto en meditación sobre la soledad urbana.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "menzel-muro-estudio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Adolph_Menzel_-_Atelierwand_-_Google_Art_Project.jpg",
+      "title": "Muro del estudio",
+      "year": 1872,
+      "description": "Superficie del estudio cubierta de apuntes, recortes y objetos acumulados. La obra funciona como autorretrato indirecto del taller del artista.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "menzel-ferrocarril-berlin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adolph_Menzel_-_Die_Berlin-Potsdamer_Bahn_-_Google_Art_Project.jpg",
+      "title": "El ferrocarril Berlín-Potsdam",
+      "year": 1847,
+      "description": "Tren de vapor atraviesa un paisaje suburbano con humo y figuras diminutas. Menzel documenta la modernidad industrial prusiana con mirada precisa.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "menzel-ballsouper",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Adolph_Menzel_-_Das_Ballsouper_-_Google_Art_Project.jpg",
+      "title": "El banquete de baile",
+      "year": 1878,
+      "description": "Multitud aristocrática en un salón imperial durante un baile oficial. Menzel registra la vida cortesana prusiana con detalle casi fotográfico.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "menzel-teatro-gymnase",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Adolph_Menzel_-_Th%C3%A9%C3%A2tre_du_Gymnase_in_Paris_-_Google_Art_Project.jpg",
+      "title": "Teatro del Gymnase en París",
+      "year": 1856,
+      "description": "Espectadores y escenario captados desde la platea con luz de gas. Menzel observa la vida teatral parisina con precisión documental.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "menzel-verona",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Adolph_Menzel_-_Piazza_d%E2%80%99Erbe_in_Verona_-_Google_Art_Project.jpg",
+      "title": "Plaza de las Erbe en Verona",
+      "year": 1884,
+      "description": "Plaza italiana bulliciosa con arquitectura histórica y puestos de mercado. Menzel combina viaje, topografía y vitalidad urbana.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "georges-de-la-tour",
+  "name": "Georges de La Tour",
+  "category": "barroco",
+  "fullName": "Georges de La Tour",
+  "years": "1593 – 1652",
+  "origin": "Vic-sur-Seille, Ducado de Lorena",
+  "bio": "Pintor lorrain de luz nocturna y devoción silenciosa. Georges de La Tour desarrolló un claroscuro extremo donde una sola fuente de luz —vela o linterna— revela figuras contemplativas de gran sobriedad, emparentadas con Caravaggio pero de calma mística propia.",
+  "paintings": [
+    {
+      "id": "la-tour-tramposo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Georges_de_La_Tour_-_The_Cheat_with_the_Ace_of_Clubs_-_Google_Art_Project.jpg",
+      "title": "El tramposo con el as de trébol",
+      "year": 1635,
+      "description": "Jugadores de cartas engañan a un joven mientras una criada observa. La Tour dramatiza el engaño con luz de vela y gestos contenidos de gran tensión psicológica.",
+      "dimensions": {
+        "width": 106,
+        "height": 146
+      }
+    },
+    {
+      "id": "la-tour-magdalena",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Georges_de_La_Tour_-_Magdalene_with_the_Smoking_Flame_-_Google_Art_Project.jpg",
+      "title": "Magdalena con la llama humeante",
+      "year": 1640,
+      "description": "Magdalena medita ante un cráneo y una vela que se apaga. Obra nocturna de recogimiento espiritual donde la luz define la materia con minimalismo casi abstracto.",
+      "dimensions": {
+        "width": 128,
+        "height": 94
+      }
+    },
+    {
+      "id": "la-tour-nino-nuevo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Georges_de_La_Tour_-_The_Newborn_Child_-_Google_Art_Project.jpg",
+      "title": "El recién nacido",
+      "year": 1645,
+      "description": "Madre e hija contemplan al bebé a la luz de una vela. Escena íntima de maternidad donde La Tour convierte lo doméstico en devoción silenciosa.",
+      "dimensions": {
+        "width": 76,
+        "height": 91
+      }
+    },
+    {
+      "id": "la-tour-joseph-carpintero",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Georges_de_La_Tour_-_Saint_Joseph_the_Carpenter_-_Google_Art_Project.jpg",
+      "title": "San José carpintero",
+      "year": 1645,
+      "description": "José trabaja la madera mientras el Niño sostiene una vela. La escena une trabajo manual y misterio cristiano en un claroscuro de gran serenidad.",
+      "dimensions": {
+        "width": 137,
+        "height": 101
+      }
+    },
+    {
+      "id": "la-tour-educacion-maria",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Georges_de_La_Tour_-_The_Education_of_the_Virgin_-_Google_Art_Project.jpg",
+      "title": "La educación de la Virgen",
+      "year": 1640,
+      "description": "Santa Ana enseña a leer a la joven María a la luz de una vela. La Tour convierte la escena doméstica en meditación silenciosa de gran intimidad.",
+      "dimensions": {
+        "width": 165,
+        "height": 130
+      }
+    },
+    {
+      "id": "la-tour-job",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Georges_de_La_Tour_-_Job_-_Google_Art_Project.jpg",
+      "title": "Job",
+      "year": 1650,
+      "description": "El patriarca sufriente medita en la penumbra junto a su esposa. La Tour reduce la escena bíblica a figuras esenciales iluminadas por una luz interior.",
+      "dimensions": {
+        "width": 145,
+        "height": 110
+      }
+    }
+  ]
+}

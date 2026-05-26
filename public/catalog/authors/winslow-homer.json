@@ -36,6 +36,83 @@
         "width": 72,
         "height": 117
       }
+    },
+    {
+      "id": "homer-caza-ciervo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Winslow_Homer_-_The_Hunt_for_Deer_-_Google_Art_Project.jpg",
+      "title": "La caza del ciervo",
+      "year": 1865,
+      "description": "Cazadores adentran en un bosque otoñal durante la Guerra Civil. Homer combina paisaje americano y narrativa de supervivencia con realismo directo y color sobrio.",
+      "dimensions": {
+        "width": 61,
+        "height": 97
+      }
+    },
+    {
+      "id": "homer-juego-cuerda",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Winslow_Homer_-_Snap_the_Whip_-_Google_Art_Project.jpg",
+      "title": "Juego de la cuerda",
+      "year": 1872,
+      "description": "Niños rurales juegan a la cuerda frente a una escuela de madera. Homer celebra la infancia americana con movimiento, polvo y luz de verano en el campo.",
+      "dimensions": {
+        "width": 56,
+        "height": 91
+      }
+    },
+    {
+      "id": "homer-caza-zorro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Winslow_Homer_-_The_Fox_Hunt_-_Google_Art_Project.jpg",
+      "title": "La caza del zorro",
+      "year": 1893,
+      "description": "Cuervos atacan a un zorro en la nieve mientras el paisaje se extiende hacia el horizonte. Paisaje invernal simbólico donde la naturaleza aparece indiferente y violenta.",
+      "dimensions": {
+        "width": 96,
+        "height": 71
+      }
+    },
+    {
+      "id": "homer-aviso-niebla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Winslow_Homer_-_The_Fog_Warning_-_Google_Art_Project.jpg",
+      "title": "La advertencia de la niebla",
+      "year": 1885,
+      "description": "Pescador rema entre niebla y mar agitado mientras observa un velero lejano. Homer condensa la soledad del Atlántico en una escena de alerta y esfuerzo físico.",
+      "dimensions": {
+        "width": 76,
+        "height": 123
+      }
+    },
+    {
+      "id": "homer-northeaster",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Winslow_Homer_-_Northeaster_-_Google_Art_Project.jpg",
+      "title": "Viento del noreste",
+      "year": 1895,
+      "description": "Olas rompen contra las rocas de Prouts Neck bajo un cielo gris. Homer condensa la fuerza del Atlántico en espuma, sal y roca sin figuras humanas.",
+      "dimensions": {
+        "width": 87,
+        "height": 127
+      }
+    },
+    {
+      "id": "homer-prisioneros",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Winslow_Homer_-_Prisoners_from_the_Front_-_Google_Art_Project.jpg",
+      "title": "Prisioneros del frente",
+      "year": 1866,
+      "description": "Soldados confederados rinden ante un oficial de la Unión. Homer documenta la Guerra Civil con distancia observadora y composición que equilibra dignidad y derrota.",
+      "dimensions": {
+        "width": 61,
+        "height": 97
+      }
+    },
+    {
+      "id": "homer-noche-verano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Winslow_Homer_-_Summer_Night_-_Google_Art_Project.jpg",
+      "title": "Noche de verano",
+      "year": 1890,
+      "description": "Figuras bailan a la luz de la luna junto al mar en una noche de verano. Homer combina paisaje nocturno y escena social con atmósfera misteriosa y realismo americano.",
+      "dimensions": {
+        "width": 77,
+        "height": 102
+      }
     }
   ]
 }

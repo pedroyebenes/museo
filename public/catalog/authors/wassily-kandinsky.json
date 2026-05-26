@@ -1,0 +1,143 @@
+{
+  "id": "wassily-kandinsky",
+  "name": "Wassily Kandinsky",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Wassily Wassilyevich Kandinsky",
+  "years": "1866 – 1944",
+  "origin": "Moscú, Rusia",
+  "bio": "Pionero de la pintura abstracta. Teórico de la Bauhaus y del Blaue Reiter, Kandinsky tradujo música, espiritualidad y emoción interior en composiciones de color y forma libres.",
+  "paintings": [
+    {
+      "id": "kandinsky-composicion-vii",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Wassily_Kandinsky_-_Composition_VII_-_Google_Art_Project.jpg",
+      "title": "Composición VII",
+      "year": 1913,
+      "description": "Torbellino apocalíptico de formas y color sin figura narrativa. Cumbre del expresionismo abstracto previo a la Bauhaus.",
+      "dimensions": {
+        "width": 200,
+        "height": 300
+      }
+    },
+    {
+      "id": "kandinsky-amarillo-rojo-azul",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Wassily_Kandinsky_-_Yellow-Red-Blue_-_Google_Art_Project.jpg",
+      "title": "Amarillo-rojo-azul",
+      "year": 1925,
+      "description": "Formas geométricas flotantes en equilibrio cromático. Kandinsky sistematiza color y forma en la Bauhaus.",
+      "dimensions": {
+        "width": 127,
+        "height": 200
+      }
+    },
+    {
+      "id": "kandinsky-circulo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wassily_Kandinsky_-_Several_Circles_-_Google_Art_Project.jpg",
+      "title": "Varios círculos",
+      "year": 1926,
+      "description": "Círculos de distintos tamaños sobre fondo oscuro. Meditación sobre unidad, cosmos y armonía abstracta.",
+      "dimensions": {
+        "width": 140,
+        "height": 140
+      }
+    },
+    {
+      "id": "kandinsky-improvisacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Wassily_Kandinsky_-_Improvisation_28_-_Google_Art_Project.jpg",
+      "title": "Improvisación 28",
+      "year": 1912,
+      "description": "Manchas y líneas de color sin anclaje figurativo. Kandinsky compara pintura y música en gesto espontáneo.",
+      "dimensions": {
+        "width": 111,
+        "height": 162
+      }
+    },
+    {
+      "id": "kandinsky-jinete",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Wassily_Kandinsky_-_The_Blue_Rider_-_Google_Art_Project.jpg",
+      "title": "El jinete azul",
+      "year": 1903,
+      "description": "Jinete azul galopa en paisaje de color simbólico. Obra emblema del grupo Der Blaue Reiter.",
+      "dimensions": {
+        "width": 55,
+        "height": 73
+      }
+    },
+    {
+      "id": "kandinsky-pequenos-placeres",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Wassily_Kandinsky_-_Small_Pleasures_-_Google_Art_Project.jpg",
+      "title": "Pequeños placeres",
+      "year": 1913,
+      "description": "Composición apocalíptica de formas coloristas en conflicto. Kandinsky traduce caos y renacimiento espiritual.",
+      "dimensions": {
+        "width": 109,
+        "height": 119
+      }
+    },
+    {
+      "id": "kandinsky-sobre-blanco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Wassily_Kandinsky_-_On_White_II_-_Google_Art_Project.jpg",
+      "title": "Sobre blanco II",
+      "year": 1923,
+      "description": "Líneas, arcos y triángulos en fondo blanco de precisión geométrica. Bauhaus en su forma más didáctica y luminosa.",
+      "dimensions": {
+        "width": 98,
+        "height": 105
+      }
+    },
+    {
+      "id": "kandinsky-negro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wassily_Kandinsky_-_Black_and_Violet_-_Google_Art_Project.jpg",
+      "title": "Negro y violeta",
+      "year": 1923,
+      "description": "Formas flotantes sobre fondo oscuro de tensión cósmica. Kandinsky explora contraste y misterio abstracto.",
+      "dimensions": {
+        "width": 48,
+        "height": 60
+      }
+    },
+    {
+      "id": "kandinsky-grupos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Wassily_Kandinsky_-_Group_of_Circles_-_Google_Art_Project.jpg",
+      "title": "Grupo de círculos",
+      "year": 1923,
+      "description": "Círculos superpuestos de color puro en equilibrio rítmico. Síntesis de teoría cromática y composición musical.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    },
+    {
+      "id": "kandinsky-punto",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Wassily_Kandinsky_-_Point_and_Line_to_Plane_-_Google_Art_Project.jpg",
+      "title": "Punto y línea sobre plano",
+      "year": 1926,
+      "description": "Composición geométrica que ilustra su teoría visual. Kandinsky convierte treatise en imagen abstracta.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "kandinsky-dominante",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Wassily_Kandinsky_-_Dominant_Curve_-_Google_Art_Project.jpg",
+      "title": "Curva dominante",
+      "year": 1936,
+      "description": "Formas orgánicas flotantes en paleta pastel parisina. Obra tardía de calma y musicalidad abstracta.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "kandinsky-composicion-viii",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Wassily_Kandinsky_-_Composition_VIII_-_Google_Art_Project.jpg",
+      "title": "Composición VIII",
+      "year": 1923,
+      "description": "Círculos, líneas y triángulos en equilibrio dinámico. Retorno a la composición sistemática tras la guerra.",
+      "dimensions": {
+        "width": 140,
+        "height": 201
+      }
+    }
+  ]
+}

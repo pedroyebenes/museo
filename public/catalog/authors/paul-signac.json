@@ -1,0 +1,121 @@
+{
+  "id": "paul-signac",
+  "name": "Paul Signac",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Paul Victor Jules Signac",
+  "years": "1863 – 1935",
+  "origin": "París, Francia",
+  "bio": "Herederos de Seurat y teórico del neoimpresionismo. Signac aplicó el puntillismo a paisajes marinos, puertos mediterráneos y escenas de ocio con color luminoso y rigor científico, abriendo camino al fauvismo y al abstracción cromática.",
+  "paintings": [
+    {
+      "id": "signac-desayuno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Paul_Signac_-_Breakfast_-_Google_Art_Project.jpg",
+      "title": "El desayuno",
+      "year": 1886,
+      "description": "Figuras desayunan en un comedor bañado de luz matinal construida con puntos de color. Obra temprana donde Signac adapta el divisionismo de Seurat a la intimidad doméstica.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "signac-puerto-saint-tropez",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Paul_Signac_-_The_Port_of_Saint-Tropez_-_Google_Art_Project.jpg",
+      "title": "El puerto de Saint-Tropez",
+      "year": 1901,
+      "description": "Veleros y aguas turquesas del puerto provenzal descompuestas en puntos de color puro. Signac celebra el Mediterráneo con la paleta luminosa de su madurez.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "signac-retrato-feneon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Paul_Signac_-_Opus_217._Against_the_Enamel_of_a_Background_Rhythmic_with_Beatings_and_Angles%2C_Tones_and_Tints%2C_Portrait_of_M._F%C3%A9lix_F%C3%A9n%C3%A9on_in_1889_-_Google_Art_Project.jpg",
+      "title": "Retrato de Félix Fénéon",
+      "year": 1890,
+      "description": "El crítico Fénéon posa de perfil ante un fondo de arabescos puntillistas. Signac rinde homenaje al defensor del neoimpresionismo con un retrato de precisión geométrica y color vibrante.",
+      "dimensions": {
+        "width": 73,
+        "height": 92
+      }
+    },
+    {
+      "id": "signac-mujeres-pozo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Paul_Signac_-_Women_at_the_Well_-_Google_Art_Project.jpg",
+      "title": "Mujeres en el pozo",
+      "year": 1892,
+      "description": "Campesinas junto a un pozo bajo un sol meridiano de puntos amarillos y naranjas. Signac lleva el divisionismo al paisaje campestre con ritmo decorativo y luz intensa.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "signac-naturaleza-patatas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Paul_Signac_-_Still_Life_with_Potatoes_-_Google_Art_Project.jpg",
+      "title": "Naturaleza muerta con patatas",
+      "year": 1885,
+      "description": "Patatas y objetos sobre una mesa construidos con pincelada puntillista temprana. Signac demuestra que el neoimpresionismo puede aplicarse también al objeto humilde.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "signac-canal-amsterdam",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Paul_Signac_-_The_Canal_of_Amsterdam_-_Google_Art_Project.jpg",
+      "title": "El canal de Ámsterdam",
+      "year": 1895,
+      "description": "Canal neerlandés con barcas y fachadas reflejadas en el agua. Signac captura el norte de Europa con puntos de color que vibran en la superficie acuática.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "signac-venecia-nube-rosa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Paul_Signac_-_Venice%2C_The_Pink_Cloud_-_Google_Art_Project.jpg",
+      "title": "Venecia, la nube rosa",
+      "year": 1909,
+      "description": "La laguna veneciana bajo una nube rosada construida con divisionismo maduro. Signac traduce la ciudad flotante en poema cromático de agua, cielo y arquitectura.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "signac-pino-saint-tropez",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Paul_Signac_-_Pine_Tree_at_Saint-Tropez_-_Google_Art_Project.jpg",
+      "title": "Pino en Saint-Tropez",
+      "year": 1909,
+      "description": "Pino inclinado sobre el mar mediterráneo con veleros al fondo. Paisaje provenzal donde Signac equilibra naturaleza y ocio con color puntillista luminoso.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "signac-rotterdam",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Paul_Signac_-_Rotterdam_-_Google_Art_Project.jpg",
+      "title": "Róterdam",
+      "year": 1907,
+      "description": "Puerto industrial de Róterdam con chimeneas, barcos y agua reflejada. Signac documenta la modernidad portuaria europea con rigor neoimpresionista.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "signac-bailarinas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Paul_Signac_-_The_Dancers_-_Google_Art_Project.jpg",
+      "title": "Las bailarinas",
+      "year": 1890,
+      "description": "Bailarinas en un escenario construidas con arabescos de color puro. Signac lleva el divisionismo al espectáculo moderno con ritmo decorativo y luz artificial.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    }
+  ]
+}

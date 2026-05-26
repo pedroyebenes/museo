@@ -83,6 +83,72 @@
         "width": 498,
         "height": 410
       }
+    },
+    {
+      "id": "delacroix-cristo-galilea",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Eug%C3%A8ne_Delacroix_-_Christ_on_the_Sea_of_Galilee_-_Google_Art_Project.jpg",
+      "title": "Cristo en el mar de Galilea",
+      "year": 1854,
+      "description": "Apóstoles en una barca bajo tormenta mientras Cristo domina las olas. Delacroix intensifica la escena bíblica con color dramático y movimiento.",
+      "dimensions": {
+        "width": 59,
+        "height": 73
+      }
+    },
+    {
+      "id": "delacroix-tigre-real",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Eug%C3%A8ne_Delacroix_-_Royal_Tiger_-_Google_Art_Project.jpg",
+      "title": "Tigre real",
+      "year": 1858,
+      "description": "Felino majestuoso en un paisaje rocoso de pincelada suelta. La obra muestra el interés romántico de Delacroix por la fauna exótica y la violencia contenida.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "delacroix-andromeda",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Eug%C3%A8ne_Delacroix_-_Andromeda_-_Google_Art_Project.jpg",
+      "title": "Andrómeda",
+      "year": 1852,
+      "description": "La princesa encadenada a la roca espera ser rescatada del monstruo marino. Delacroix combina mito clásico y sensualidad con un color cálido y envolvente.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "delacroix-cristo-sepulcro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Eug%C3%A8ne_Delacroix_-_Christ_Carried_Down_to_the_Tomb_-_Google_Art_Project.jpg",
+      "title": "Cristo bajado del sepulcro",
+      "year": 1847,
+      "description": "Cuerpo de Cristo sostenido por discípulos en un entorno sombrío. La escena concentra dolor, devoción y teatralidad romántica.",
+      "dimensions": {
+        "width": 65,
+        "height": 53
+      }
+    },
+    {
+      "id": "delacroix-caza-leones",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Eug%C3%A8ne_Delacroix_-_The_Lion_Hunt_-_Google_Art_Project.jpg",
+      "title": "La caza del león",
+      "year": 1855,
+      "description": "Jinetes y cazadores luchan contra leones en un torbellino de color y movimiento. Delacroix vuelve al tema orientalista con energía barroca y pincelada ardiente.",
+      "dimensions": {
+        "width": 82,
+        "height": 101
+      }
+    },
+    {
+      "id": "delacroix-autorretrato-paleta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Eug%C3%A8ne_Delacroix_-_Self-Portrait_with_Palette_-_Google_Art_Project.jpg",
+      "title": "Autorretrato con paleta",
+      "year": 1837,
+      "description": "Delacroix se representa como pintor moderno con paleta y mirada intensa. Autorretrato que afirma la libertad romántica frente a la academia neoclásica.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
     }
   ]
 }

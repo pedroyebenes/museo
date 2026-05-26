@@ -1,0 +1,77 @@
+{
+  "id": "andrea-mantegna",
+  "name": "Andrea Mantegna",
+  "category": "renacimiento-manierismo",
+  "fullName": "Andrea Mantegna",
+  "years": "c. 1431 – 1506",
+  "origin": "Isola di Carturo, cerca de Padua",
+  "bio": "Pintor y grabador paduano formado en la arqueología clásica y la perspectiva científica. Sus frescos, retablos y obras como Los triunfos de César combinaron monumentalidad romana, precisión anatómica y un dramatismo que anticipó el manierismo.",
+  "paintings": [
+    {
+      "id": "mantegna-san-sebastian",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Andrea_Mantegna_-_St._Sebastian_-_Google_Art_Project.jpg",
+      "title": "San Sebastián",
+      "year": 1480,
+      "description": "El mártir clavado a una columna clásica recibe las flechas en un paisaje de ruinas. Mantegna fusiona erudición arqueológica y cuerpo escultórico en una escena de heroísmo sereno.",
+      "dimensions": {
+        "width": 68,
+        "height": 107
+      }
+    },
+    {
+      "id": "mantegna-presentacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Andrea_Mantegna_-_The_Presentation_-_Google_Art_Project.jpg",
+      "title": "La Presentación en el Templo",
+      "year": 1460,
+      "description": "Simón recibe al Niño Jesús en un interior de arquitectura clásica. Mantegna organiza la escena con perspectiva rigurosa y figuras de relieve casi escultórico.",
+      "dimensions": {
+        "width": 67,
+        "height": 86
+      }
+    },
+    {
+      "id": "mantegna-retrato-hombre",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Andrea_Mantegna_-_Portrait_of_a_Man_-_Google_Art_Project.jpg",
+      "title": "Retrato de un hombre",
+      "year": 1470,
+      "description": "Hombre de perfil sobre fondo claro con expresión severa. Mantegna aplica al retrato la precisión lineal y la dignidad clásica propias de su formación paduana.",
+      "dimensions": {
+        "width": 32,
+        "height": 28
+      }
+    },
+    {
+      "id": "mantegna-redentor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Andrea_Mantegna_-_Christ_as_the_Suffering_Redeemer_-_Google_Art_Project.jpg",
+      "title": "Cristo como Redentor sufriente",
+      "year": 1500,
+      "description": "Cristo resucitado muestra sus heridas en un paisaje apocalíptico. Obra tardía de intensa devoción donde la anatomía clásica sirve a la meditación sobre el sacrificio.",
+      "dimensions": {
+        "width": 78,
+        "height": 65
+      }
+    },
+    {
+      "id": "mantegna-virgen-nino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Andrea_Mantegna_-_The_Virgin_and_Child_-_Google_Art_Project.jpg",
+      "title": "La Virgen y el Niño",
+      "year": 1490,
+      "description": "María sostiene al Niño ante un paraje de rocas y cielo despejado. Mantegna equilibra ternura maternal y solidez monumental en una madonna de carácter escultórico.",
+      "dimensions": {
+        "width": 43,
+        "height": 32
+      }
+    },
+    {
+      "id": "mantegna-triunfo-senadores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Andrea_Mantegna_-_Triumph_of_Senators_-_Google_Art_Project.jpg",
+      "title": "Triunfo de los senadores",
+      "year": 1500,
+      "description": "Figuras clásicas desfilan en un friso de arquitectura romana. Mantegna evoca la antigüedad con precisión arqueológica y relieve casi escultórico.",
+      "dimensions": {
+        "width": 68,
+        "height": 45
+      }
+    }
+  ]
+}

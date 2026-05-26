@@ -1,0 +1,176 @@
+{
+  "id": "frida-kahlo",
+  "name": "Frida Kahlo",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Magdalena Carmen Frida Kahlo y Calderón",
+  "years": "1907 – 1954",
+  "origin": "Coyoacán, Ciudad de México, México",
+  "bio": "Pintora mexicana de autobiografía intensa. Kahlo transformó dolor físico, identidad mestiza y política en un cuerpo simbólico que convirtió el autorretrato en mito del arte contemporáneo.",
+  "paintings": [
+    {
+      "id": "kahlo-dos-fridas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Frida_Kahlo_-_The_Two_Fridas_-_Google_Art_Project.jpg",
+      "title": "Las dos Fridas",
+      "year": 1939,
+      "description": "Doble autorretrato con corazones unidos por vena visible. Kahlo dramatiza identidad dividida tras divorciarse de Diego Rivera.",
+      "dimensions": {
+        "width": 173,
+        "height": 173
+      }
+    },
+    {
+      "id": "kahlo-columna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Frida_Kahlo_-_The_Broken_Column_-_Google_Art_Project.jpg",
+      "title": "La columna rota",
+      "year": 1944,
+      "description": "Cuerpo clavado y hendido que sangra bajo corsé. Autorretrato de dolor físico convertido en icono universal.",
+      "dimensions": {
+        "width": 39,
+        "height": 30
+      }
+    },
+    {
+      "id": "kahlo-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Frida_Kahlo_-_Self-Portrait_with_Thorn_Necklace_and_Hummingbird_-_Google_Art_Project.jpg",
+      "title": "Autorretrato con collar de espinas",
+      "year": 1940,
+      "description": "Frida con collar de espinas, colibrí y mariposas en vegetación. Síntesis de su lenguaje simbólico mexicano.",
+      "dimensions": {
+        "width": 62,
+        "height": 47
+      }
+    },
+    {
+      "id": "kahlo-henry",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Frida_Kahlo_-_Self-Portrait_with_Monkey_-_Google_Art_Project.jpg",
+      "title": "Autorretrato con mono",
+      "year": 1940,
+      "description": "Frida con chango y gato en fondo de hojas tropicales. Animal de compañía como confidente en autorretrato íntimo.",
+      "dimensions": {
+        "width": 55,
+        "height": 46
+      }
+    },
+    {
+      "id": "kahlo-suicidio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Frida_Kahlo_-_The_Suicide_of_Dorothy_Hale_-_Google_Art_Project.jpg",
+      "title": "El suicidio de Dorothy Hale",
+      "year": 1939,
+      "description": "Secuencia de la caída de Hale desde edificio neoyorquino. Kahlo narra tragedia real con crudeza casi teatral.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    },
+    {
+      "id": "kahlo-roots",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Frida_Kahlo_-_Roots_-_Google_Art_Project.jpg",
+      "title": "Raíces",
+      "year": 1943,
+      "description": "Frida tumbada con venas que se convierten en raíces vegetales. Conexión entre cuerpo, tierra y fertilidad simbólica.",
+      "dimensions": {
+        "width": 30,
+        "height": 23
+      }
+    },
+    {
+      "id": "kahlo-marcos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Frida_Kahlo_-_Self-Portrait_with_Cropped_Hair_-_Google_Art_Project.jpg",
+      "title": "Autorretrato con pelo corto",
+      "year": 1940,
+      "description": "Frida vestida de hombre con cabello recortado y versos de canción. Respuesta pictórica a la ruptura con Rivera.",
+      "dimensions": {
+        "width": 40,
+        "height": 32
+      }
+    },
+    {
+      "id": "kahlo-hospital",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Frida_Kahlo_-_Henry_Ford_Hospital_-_Google_Art_Project.jpg",
+      "title": "Hospital Henry Ford",
+      "year": 1932,
+      "description": "Autorretrato de aborto con objetos flotantes conectados por venas. Kahlo convierte trauma médico en alegoría personal.",
+      "dimensions": {
+        "width": 30,
+        "height": 23
+      }
+    },
+    {
+      "id": "kahlo-mexico",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Frida_Kahlo_-_My_Grandparents%2C_My_Parents%2C_and_I_-_Google_Art_Project.jpg",
+      "title": "Mis abuelos, mis padres y yo",
+      "year": 1936,
+      "description": "Árbol genealógico de identidad mestiza entre México y Europa. Autobiografía como cosmogonía familiar.",
+      "dimensions": {
+        "width": 30,
+        "height": 23
+      }
+    },
+    {
+      "id": "kahlo-venadito",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo_-_The_Wounded_Deer_-_Google_Art_Project.jpg",
+      "title": "El venado herido",
+      "year": 1946,
+      "description": "Cabeza de Frida sobre cuerpo de venado atravesado por flechas. Dolor emocional y físico en metáfora forestal.",
+      "dimensions": {
+        "width": 22,
+        "height": 18
+      }
+    },
+    {
+      "id": "kahlo-diego",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Frida_Kahlo_-_Frida_and_Diego_Rivera_-_Google_Art_Project.jpg",
+      "title": "Frida y Diego Rivera",
+      "year": 1931,
+      "description": "Retratos dobles en estilo ingenuo de su boda. Kahlo se presenta diminuta ante el muralista en escena autobiográfica.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "kahlo-luna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Frida_Kahlo_-_Self-Portrait_Dedicated_to_Dr._Eloesser_-_Google_Art_Project.jpg",
+      "title": "Autorretrato dedicado al Dr. Eloesser",
+      "year": 1940,
+      "description": "Frida con collar y pendientes ante paisaje urbano. Gratitud y dolor contenido en retrato de amistad.",
+      "dimensions": {
+        "width": 55,
+        "height": 46
+      }
+    },
+    {
+      "id": "kahlo-naturaleza",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Frida_Kahlo_-_Self-Portrait_with_Braid_-_Google_Art_Project.jpg",
+      "title": "Autorretrato con trenza",
+      "year": 1941,
+      "description": "Frida con trenza que envuelve su cuerpo como atadura. Identidad mexicana y dolor amoroso en autorretrato clásico.",
+      "dimensions": {
+        "width": 55,
+        "height": 46
+      }
+    },
+    {
+      "id": "kahlo-viva",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Frida_Kahlo_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "title": "Autorretrato",
+      "year": 1948,
+      "description": "Rostro enmarcado por hojas con mirada directa y labios rojos. Kahlo afirma presencia vital pese al deterioro físico.",
+      "dimensions": {
+        "width": 55,
+        "height": 46
+      }
+    },
+    {
+      "id": "kahlo-love",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Frida_Kahlo_-_The_Love_Embrace_of_the_Universe_-_Google_Art_Project.jpg",
+      "title": "El abrazo de amor del universo",
+      "year": 1949,
+      "description": "Frida abraza a Diego mientras la envuelven la tierra y el cosmos. Síntesis de amor, mexicanidad y universo simbólico.",
+      "dimensions": {
+        "width": 70,
+        "height": 60
+      }
+    }
+  ]
+}

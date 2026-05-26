@@ -1,0 +1,143 @@
+{
+  "id": "rene-magritte",
+  "name": "René Magritte",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "René François Ghislain Magritte",
+  "years": "1898 – 1967",
+  "origin": "Lessines, Bélgica",
+  "bio": "Pintor belga del surrealismo poético. Magritte desorientó al espectador con objetos fuera de lugar, hombres de bombín y cielos de día en escenas nocturnas, preguntando qué es lo real y qué es representación.",
+  "paintings": [
+    {
+      "id": "magritte-trahison",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ren%C3%A9_Magritte_-_The_Treachery_of_Images_(This_is_not_a_pipe)_-_Google_Art_Project.jpg",
+      "title": "La traición de las imágenes",
+      "year": 1929,
+      "description": "Pipa y leyenda que afirma que no es pipa. Magritte cuestiona la relación entre palabra, imagen y realidad.",
+      "dimensions": {
+        "width": 60,
+        "height": 81
+      }
+    },
+    {
+      "id": "magritte-son-hombre",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Ren%C3%A9_Magritte_-_The_Son_of_Man_-_Google_Art_Project.jpg",
+      "title": "El hijo del hombre",
+      "year": 1964,
+      "description": "Hombre de traje con manzana flotante ante el rostro. Autorretrato enigmático sobre lo visible y lo oculto.",
+      "dimensions": {
+        "width": 116,
+        "height": 89
+      }
+    },
+    {
+      "id": "magritte-empire-luz",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ren%C3%A9_Magritte_-_The_Empire_of_Lights_-_Google_Art_Project.jpg",
+      "title": "El imperio de la luz",
+      "year": 1954,
+      "description": "Casa nocturna bajo cielo diurno de nubes blancas. Magritte yuxtapone opuestos lógicos con calma hipnótica.",
+      "dimensions": {
+        "width": 78,
+        "height": 98
+      }
+    },
+    {
+      "id": "magritte-amantes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Ren%C3%A9_Magritte_-_The_Lovers_-_Google_Art_Project.jpg",
+      "title": "Los amantes",
+      "year": 1928,
+      "description": "Pareja besándose con velos cubriendo rostros. Magritte transforma intimidad en misterio y claustrofobia poética.",
+      "dimensions": {
+        "width": 54,
+        "height": 73
+      }
+    },
+    {
+      "id": "magritte-hombres-pluma",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ren%C3%A9_Magritte_-_Golconda_-_Google_Art_Project.jpg",
+      "title": "Golconda",
+      "year": 1953,
+      "description": "Hombres de bombín flotan en filas sobre fachadas urbanas. Magritte convierte lo cotidiano en escena onírica repetitiva.",
+      "dimensions": {
+        "width": 81,
+        "height": 100
+      }
+    },
+    {
+      "id": "magritte-condicion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Ren%C3%A9_Magritte_-_The_Human_Condition_-_Google_Art_Project.jpg",
+      "title": "La condición humana",
+      "year": 1933,
+      "description": "Paisaje pintado sobre caballete coincide con la ventana. Magritte reflexiona sobre arte, naturaleza y representación.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "magritte-dominio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Ren%C3%A9_Magritte_-_The_Dominion_of_Light_-_Google_Art_Project.jpg",
+      "title": "El dominio de la luz",
+      "year": 1954,
+      "description": "Variante del imperio de la luz con calle oscura y cielo diurno. Poema visual sobre contradicción y fascinación.",
+      "dimensions": {
+        "width": 78,
+        "height": 98
+      }
+    },
+    {
+      "id": "magritte-falsa-espejo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Ren%C3%A9_Magritte_-_The_False_Mirror_-_Google_Art_Project.jpg",
+      "title": "El falso espejo",
+      "year": 1928,
+      "description": "Ojo humano cuyo iris es cielo nublado. Magritte fusiona visión, mundo exterior y metáfora surrealista.",
+      "dimensions": {
+        "width": 54,
+        "height": 73
+      }
+    },
+    {
+      "id": "magritte-cielo-muralla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Ren%C3%A9_Magritte_-_The_Castle_of_the_Pyrenees_-_Google_Art_Project.jpg",
+      "title": "El castillo de los Pirineos",
+      "year": 1959,
+      "description": "Roca con castillo flota sobre mar en calma imposible. Imagen de ensueño que resume el universo magritiano.",
+      "dimensions": {
+        "width": 200,
+        "height": 150
+      }
+    },
+    {
+      "id": "magritte-muralla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Ren%C3%A9_Magritte_-_Personal_Values_-_Google_Art_Project.jpg",
+      "title": "Valores personales",
+      "year": 1952,
+      "description": "Objetos domésticos gigantes en habitación clausurada. Magritte desproporciona lo íntimo hasta lo inquietante.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "magritte-musica",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ren%C3%A9_Magritte_-_The_Music_Lesson_-_Google_Art_Project.jpg",
+      "title": "La lección de música",
+      "year": 1926,
+      "description": "Interior imposible con piano y ventana al mar. Primera fase surrealista de Magritte en clave poética.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "magritte-luna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ren%C3%A9_Magritte_-_The_Sixteenth_of_September_-_Google_Art_Project.jpg",
+      "title": "El dieciséis de septiembre",
+      "year": 1956,
+      "description": "Luna sobre edificio urbano en escena de silencio metafísico. Magritte suspende tiempo y lógica cotidiana.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    }
+  ]
+}

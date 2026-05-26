@@ -1,0 +1,99 @@
+{
+  "id": "kasimir-malevich",
+  "name": "Kazimir Malévich",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Kazimir Severinovich Malevich",
+  "years": "1879 – 1935",
+  "origin": "Kiev, Ucrania (Imperio ruso)",
+  "bio": "Artista ruso creador del suprematismo. Malévich llevó la pintura al cuadrado negro y a composiciones geométricas puras en busca de una libertad absoluta del objeto y del representacionismo.",
+  "paintings": [
+    {
+      "id": "malevich-cuadrado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kazimir_Malevich_-_Black_Square_-_Google_Art_Project.jpg",
+      "title": "Cuadrado negro",
+      "year": 1915,
+      "description": "Cuadrado negro sobre fondo blanco. Obra fundacional del suprematismo y punto cero de la abstracción radical.",
+      "dimensions": {
+        "width": 79,
+        "height": 79
+      }
+    },
+    {
+      "id": "malevich-suprematismo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Kazimir_Malevich_-_Suprematist_Composition_-_Google_Art_Project.jpg",
+      "title": "Composición suprematista",
+      "year": 1915,
+      "description": "Formas geométricas flotantes en diagonal dinámica. Malévich busca sensación de velocidad y cosmos puro.",
+      "dimensions": {
+        "width": 72,
+        "height": 57
+      }
+    },
+    {
+      "id": "malevich-circulo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Kazimir_Malevich_-_Suprematist_Composition_with_Circles_-_Google_Art_Project.jpg",
+      "title": "Composición con círculos",
+      "year": 1915,
+      "description": "Círculos y rectángulos en espacio blanco de equilibrio absoluto. Suprematismo como nueva realidad pictórica.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    },
+    {
+      "id": "malevich-campesinos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Kazimir_Malevich_-_The_Harvest_-_Google_Art_Project.jpg",
+      "title": "La cosecha",
+      "year": 1929,
+      "description": "Campesinos de formas geométricas en campo estilizado. Malévich adapta suprematismo a temas sociales soviéticos.",
+      "dimensions": {
+        "width": 70,
+        "height": 60
+      }
+    },
+    {
+      "id": "malevich-aviador",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Kazimir_Malevich_-_The_Aviator_-_Google_Art_Project.jpg",
+      "title": "El aviador",
+      "year": 1914,
+      "description": "Figura futurista fragmentada en planos de color. Etapa previa al suprematismo puro de guerra y modernidad.",
+      "dimensions": {
+        "width": 125,
+        "height": 105
+      }
+    },
+    {
+      "id": "malevich-circulo-blanco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Kazimir_Malevich_-_White_on_White_-_Google_Art_Project.jpg",
+      "title": "Blanco sobre blanco",
+      "year": 1918,
+      "description": "Cuadrado blanco sobre fondo blanco casi imperceptible. Límite extremo de la abstracción y la espiritualidad.",
+      "dimensions": {
+        "width": 79,
+        "height": 79
+      }
+    },
+    {
+      "id": "malevich-cruz",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Kazimir_Malevich_-_Suprematism_-_Google_Art_Project.jpg",
+      "title": "Suprematismo",
+      "year": 1915,
+      "description": "Cruz negra y formas primarias en composición ascética. Malévich elimina profundidad y objeto reconocible.",
+      "dimensions": {
+        "width": 72,
+        "height": 57
+      }
+    },
+    {
+      "id": "malevich-complejo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Kazimir_Malevich_-_Complex_Presentiment_-_Google_Art_Project.jpg",
+      "title": "Presentimiento complejo",
+      "year": 1932,
+      "description": "Figuras estilizadas en paisaje de formas simples. Obra tardía entre recuerdo figurativo y abstracción.",
+      "dimensions": {
+        "width": 70,
+        "height": 60
+      }
+    }
+  ]
+}
