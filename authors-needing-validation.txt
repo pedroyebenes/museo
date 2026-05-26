@@ -17,7 +17,7 @@ Authors to validate (105 total):
 [x] arnold-bocklin (6 paintings)
 [x] artemisia-gentileschi (7 paintings)
 [x] aubrey-beardsley (10 paintings)
-[ ] bartolome-esteban-murillo (4 paintings)
+[x] bartolome-esteban-murillo (4 paintings)
 [ ] berthe-morisot (6 paintings)
 [ ] bronzino (5 paintings)
 [ ] camille-pissarro (11 paintings)
