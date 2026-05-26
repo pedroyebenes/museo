@@ -10,7 +10,11 @@ const TOUCH_STICK_RADIUS = 68;
 const TOUCH_DEAD_ZONE = 0.14;
 const STICK_VISUAL_SIZE = 148;
 
-export function createControls({ camera, renderer, onLock, onUnlock, onToggleInfo }) {
+const ICON_RUN = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.5 3.8 2.4 2.4V19h2v-7.2l-2.4-2.4 1.4-1.4L16 12l-4.6 4.6-1.4-1.4 2.4-2.4H5v-2h7z"/></svg>';
+const ICON_INFO = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 4.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zm-1.25 4h2.5v7.5h-2.5V11z"/></svg>';
+const ICON_REPORT = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 4.2 7.53 13.3H4.47L12 6.2zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>';
+
+export function createControls({ camera, renderer, onLock, onUnlock, onToggleInfo, onReport }) {
   const controls = new PointerLockControls(camera, renderer.domElement);
   const isTouchDevice =
     window.matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0;
@@ -242,8 +246,9 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
       <div id="touch-stick" aria-hidden="true">
         <div id="touch-stick-knob"></div>
       </div>
-      <button type="button" id="touch-run" aria-label="Correr">Correr</button>
-      <button type="button" id="touch-info" aria-label="Mostrar u ocultar ficha">Info</button>
+      <button type="button" id="touch-report" class="touch-action-btn inactive" aria-label="Reportar error" aria-disabled="true">${ICON_REPORT}</button>
+      <button type="button" id="touch-run" class="touch-action-btn" aria-label="Correr">${ICON_RUN}</button>
+      <button type="button" id="touch-info" class="touch-action-btn" aria-label="Mostrar u ocultar ficha">${ICON_INFO}</button>
     `;
     document.body.appendChild(root);
 
@@ -251,6 +256,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
     const lookZone = root.querySelector('#touch-look-zone');
     const stick = root.querySelector('#touch-stick');
     const knob = root.querySelector('#touch-stick-knob');
+    const reportBtn = root.querySelector('#touch-report');
     const runBtn = root.querySelector('#touch-run');
     const infoBtn = root.querySelector('#touch-info');
 
@@ -339,6 +345,15 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
       if (e.pointerId === lookPointerId) lookPointerId = null;
     };
 
+    function setReportAvailable(available) {
+      reportBtn.setAttribute('aria-disabled', available ? 'false' : 'true');
+      reportBtn.classList.toggle('inactive', !available);
+    }
+
+    reportBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      onReport && onReport();
+    });
     runBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       setRunActive(!mobileRun);
@@ -347,6 +362,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
       e.stopPropagation();
       onToggleInfo && onToggleInfo();
     });
+    reportBtn.addEventListener('pointerdown', (e) => e.stopPropagation());
     runBtn.addEventListener('pointerdown', (e) => e.stopPropagation());
     infoBtn.addEventListener('pointerdown', (e) => e.stopPropagation());
 
@@ -372,7 +388,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
       root.remove();
     }
 
-    return { root, hideStick, setRunActive, dispose };
+    return { root, hideStick, setRunActive, setReportAvailable, dispose };
   }
 
   function dispose() {
@@ -386,6 +402,10 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
     controls.dispose();
   }
 
+  function setReportAvailable(available) {
+    touchUi.setReportAvailable(available);
+  }
+
   return {
     controls,
     update,
@@ -396,6 +416,7 @@ export function createControls({ camera, renderer, onLock, onUnlock, onToggleInf
     suspend,
     resume,
     unlock,
+    setReportAvailable,
     dispose,
     PLAYER_RADIUS,
   };

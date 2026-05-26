@@ -15,6 +15,7 @@ El catálogo es **estático** (JSON en `public/`); no hay backend ni base de dat
 | **Escala real** | Si el cuadro incluye `dimensions` (cm), el lienzo y el tamaño de la sala se calculan a partir de esas medidas. |
 | **Placas biográficas** | Cada archivo de autor incluye la biografía que se muestra en la sala. |
 | **HUD e información** | Panel de sala (autor, número de obras) y ficha del cuadro (título, autor, año, descripción) al enfocar una obra. Tecla **H** para mostrar/ocultar la ficha. |
+| **Reportar errores** | Tecla **R** en escritorio o botón táctil (arriba a la derecha) y enlace en la ficha del cuadro; abre un issue en GitHub con contexto del cuadro o sala de autor. |
 | **Carga progresiva** | Al entrar en una sala por primera vez, barra de progreso mientras se descargan las texturas. |
 | **Calidad adaptativa** | Perfil distinto en móvil (menos antialiasing, texturas hasta 1024 px) y en escritorio (hasta 2048 px). |
 
@@ -67,8 +68,8 @@ PORT=3000 npm run dev
 
 ### 3. Controles (resumen)
 
-- **Escritorio:** WASD o flechas, ratón para mirar, Mayús para correr, **H** para la ficha del cuadro, **Esc** para liberar el cursor.
-- **Móvil:** mitad izquierda para moverse, mitad derecha para mirar; botones de correr e información en pantalla.
+- **Escritorio:** WASD o flechas, ratón para mirar, Mayús para correr, **H** para la ficha del cuadro, **M** para el catálogo, **R** para reportar un error, **Esc** para liberar el cursor.
+- **Móvil:** mitad izquierda para moverse, mitad derecha para mirar; botones con iconos de correr, información y reportar en pantalla; catálogo arriba a la izquierda.
 
 ---
 

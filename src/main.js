@@ -12,6 +12,7 @@ import {
 } from './ui.js';
 import { createRoomManager } from './roomManager.js';
 import { createCatalog } from './catalog.js';
+import { canOpenReport, buildReportContext } from './report.js';
 
 async function boot() {
   const loading = document.getElementById('loading');
@@ -37,12 +38,40 @@ async function boot() {
     return;
   }
 
-  const overlay = createInfoOverlay();
+  const overlay = createInfoOverlay({ onReport: () => requestReport() });
   const hud = createRoomHUD();
   const transition = createTransitionOverlay();
   const reportDialog = createReportDialog();
 
   let catalog = null;
+  let roomManager;
+
+  function reportAvailable() {
+    return canOpenReport({
+      playing: document.body.classList.contains('playing'),
+      catalogOpen: catalog?.isOpen() ?? false,
+      overlay,
+      roomManager,
+    });
+  }
+
+  function requestReport() {
+    if (!document.body.classList.contains('playing')) return;
+    if (catalog?.isOpen()) return;
+
+    const context = buildReportContext({
+      overlay,
+      roomManager,
+      catalogData,
+    });
+
+    if (!context) {
+      hud.flash('Enfoca un cuadro o entra en una sala de autor para reportar');
+      return;
+    }
+
+    openReport(context);
+  }
 
   const {
     update: updateControls,
@@ -53,6 +82,7 @@ async function boot() {
     suspend: suspendControls,
     resume: resumeControls,
     unlock: unlockControls,
+    setReportAvailable,
   } = createControls({
     camera,
     renderer,
@@ -76,9 +106,10 @@ async function boot() {
         suppressed ? 'Información del cuadro: oculta' : 'Información del cuadro: visible',
       );
     },
+    onReport: () => requestReport(),
   });
 
-  const roomManager = createRoomManager({
+  roomManager = createRoomManager({
     scene,
     camera,
     renderer,
@@ -128,41 +159,42 @@ async function boot() {
   function resumeAfterReport() {
     resumeControls();
     if (controlsActive()) return;
-    // Reset to welcome state first; if requestPointerLock() fails (e.g. tab lost focus after
-    // opening the GitHub issue), the welcome screen stays visible so the user can click back in.
+
+    const isTouch =
+      document.body.classList.contains('is-touch')
+      || window.matchMedia('(pointer: coarse)').matches
+      || navigator.maxTouchPoints > 0;
+
+    if (isTouch && !catalog?.isOpen()) {
+      lockOnClick();
+      return;
+    }
+
     welcome.classList.remove('hidden');
     document.body.classList.remove('playing');
     document.getElementById('catalog-btn')?.classList.add('hidden');
     lockOnClick();
   }
 
-  function openReport() {
+  function openReport(context) {
     if (!document.body.classList.contains('playing')) return;
     if (catalog?.isOpen()) return;
 
-    const painting = overlay.getCurrent();
-    const { kind, authorId } = roomManager.getRoomState();
+    const reportContext =
+      context
+      ?? buildReportContext({
+        overlay,
+        roomManager,
+        catalogData,
+      });
 
-    let issueTitle, issueBody, description;
+    if (!reportContext) return;
 
-    if (painting) {
-      issueTitle = `Error en cuadro: ${painting.title}`;
-      issueBody = `**Cuadro:** ${painting.title}\n**Autor:** ${painting.author}\n**Año:** ${painting.year}\n\n**Descripción del error:**\n\n`;
-      description = `Se abrirá un issue para el cuadro "${painting.title}" de ${painting.author}.`;
-    } else if (kind === 'author' && authorId) {
-      const author = catalogData.authorsById[authorId];
-      const name = author?.name ?? authorId;
-      issueTitle = `Error en sala de ${name}`;
-      issueBody = `**Autor:** ${name}\n\n**Descripción del error:**\n\n`;
-      description = `Se abrirá un issue para la sala de ${name}.`;
-    } else {
-      return;
-    }
-
+    hud.flash(reportContext.description, 1800);
     overlay.hide();
     suspendControls();
     unlockControls();
-    reportDialog.open({ issueTitle, issueBody, description, onClose: resumeAfterReport });
+    reportDialog.open({ ...reportContext, onClose: resumeAfterReport });
   }
 
   catalogBtn?.addEventListener('click', (e) => {
@@ -210,7 +242,7 @@ async function boot() {
       );
     }
     if (e.code === 'KeyR') {
-      openReport();
+      requestReport();
     }
   });
 
@@ -238,7 +270,10 @@ async function boot() {
 
     updateControls(dt);
     roomManager.update(dt);
-    if (controlsActive()) focus.update(now);
+    if (controlsActive()) {
+      focus.update(now);
+      setReportAvailable(reportAvailable());
+    }
 
     renderer.render(scene, camera);
   }
