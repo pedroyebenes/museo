@@ -3,7 +3,6 @@ import { getQualityProfile } from './qualityProfile.js';
 import { buildRoomShell } from './wallBuilder.js';
 import { getAuthorRoomMaterials } from './materials.js';
 import {
-  getPaintingDimensionsMeters,
   getPaintingLayoutExtents,
   computePaintingCenterY,
   PAINTING_LAYOUT,
@@ -212,8 +211,8 @@ function layoutSlots(slots, opts) {
   const { paintingGap } = PAINTING_LAYOUT;
 
   const sizes = paintings.map((p) => {
-    const dims = getPaintingDimensionsMeters(p) ?? { w: 2, h: 2 };
-    return { w: dims.w, h: dims.h };
+    const { width, canvasH } = getPaintingLayoutExtents(p);
+    return { w: width, h: canvasH };
   });
 
   const totalWidth =
