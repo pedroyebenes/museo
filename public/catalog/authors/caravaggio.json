@@ -72,6 +72,28 @@
         "width": 141,
         "height": 196
       }
+    },
+    {
+      "id": "caravaggio-martirio-mateo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Caravaggio_-_The_Martyrdom_of_Saint_Matthew_-_Google_Art_Project.jpg",
+      "title": "El martirio de san Mateo",
+      "year": 1600,
+      "description": "El apóstol cae bajo la espada del asesino en una iglesia llena de testigos. Caravaggio dramatiza la violencia sagrada con teatralidad y luz que cae desde lo alto.",
+      "dimensions": {
+        "width": 323,
+        "height": 343
+      }
+    },
+    {
+      "id": "caravaggio-conversione-saulo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Caravaggio_-_The_Conversion_of_Saint_Paul_-_Google_Art_Project.jpg",
+      "title": "La conversión de san Pablo",
+      "year": 1601,
+      "description": "Saulo cae de su caballo bajo un rayo divino mientras un criado observa. Caravaggio reduce el milagro a un cuerpo pesado en el suelo y una luz sobrenatural.",
+      "dimensions": {
+        "width": 230,
+        "height": 175
+      }
     }
   ]
 }

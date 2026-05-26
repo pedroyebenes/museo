@@ -1,0 +1,66 @@
+{
+  "id": "bronzino",
+  "name": "Bronzino",
+  "category": "renacimiento-manierismo",
+  "fullName": "Agnolo di Cosimo, llamado Bronzino",
+  "years": "1503 – 1572",
+  "origin": "Florencia, República de Florencia",
+  "bio": "Pintor oficial de la corte medicea y discípulo de Pontormo. Bronzino perfeccionó un manierismo frío y pulido, de color porcelana y erudición alegórica, visible en sus retratos ducales y escenas mitológicas de precisión casi lapidaria.",
+  "paintings": [
+    {
+      "id": "bronzino-eleonora",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Bronzino_-_Eleonora_di_Toledo_col_figlio_Giovanni_-_Google_Art_Project.jpg",
+      "title": "Leonor de Toledo con su hijo Giovanni",
+      "year": 1545,
+      "description": "La duquesa posa con rios bordados junto a su hijo en un interior sobrio. Retrato de corte que fija la imagen del poder mediceo con distancia majestuosa.",
+      "dimensions": {
+        "width": 115,
+        "height": 96
+      }
+    },
+    {
+      "id": "bronzino-mujer-nino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Agnolo_Bronzino_-_A_Young_Woman_and_Her_Little_Boy_-_Google_Art_Project.jpg",
+      "title": "Joven mujer y su hijo",
+      "year": 1540,
+      "description": "Madre e hijo posan con joyas y telas de color frío sobre fondo azul. Bronzino convierte el retrato familiar en emblema de linaje y refinamiento cortesano.",
+      "dimensions": {
+        "width": 100,
+        "height": 80
+      }
+    },
+    {
+      "id": "bronzino-cosimo-orfeo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Agnolo_Bronzino_-_Portrait_of_Cosimo_I_de'_Medici_as_Orpheus_-_Google_Art_Project.jpg",
+      "title": "Cosimo I de Médici como Orfeo",
+      "year": 1537,
+      "description": "El duque desnudo sostiene la lira en alusión al mito del poeta-músico. Retrato alegórico que une poder político y erudición clásica con frialdad intencionada.",
+      "dimensions": {
+        "width": 93,
+        "height": 67
+      }
+    },
+    {
+      "id": "bronzino-depostion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Agnolo_Bronzino_-_The_Deposition_of_Christ_-_Google_Art_Project.jpg",
+      "title": "El descendimiento de Cristo",
+      "year": 1561,
+      "description": "Cristo es bajado de la cruz en una escena de figuras entrelazadas y color pálido. Bronzino aplica al tema sacro la precisión manierista y una emoción contenida.",
+      "dimensions": {
+        "width": 268,
+        "height": 173
+      }
+    },
+    {
+      "id": "bronzino-cosimo-armadura",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Agnolo_Bronzino_-_Cosimo_I_de'_Medici_in_armour_-_Google_Art_Project.jpg",
+      "title": "Cosimo I de Médici con armadura",
+      "year": 1543,
+      "description": "El duque aparece en armadura sobre fondo rojo con emblemas imperiales. Retrato de estado que combina propaganda dinástica y elegancia pictórica impecable.",
+      "dimensions": {
+        "width": 74,
+        "height": 58
+      }
+    }
+  ]
+}

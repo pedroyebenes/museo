@@ -61,6 +61,50 @@
         "width": 90,
         "height": 66
       }
+    },
+    {
+      "id": "courbet-mediterraneo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Gustave_Courbet_-_The_Mediterranean_-_Google_Art_Project.jpg",
+      "title": "El Mediterráneo",
+      "year": 1854,
+      "description": "Mar azul y rocas bañadas por luz meridional en una escala monumental. Courbet pinta la naturaleza con materialidad directa y sin idealización académica.",
+      "dimensions": {
+        "width": 90,
+        "height": 66
+      }
+    },
+    {
+      "id": "courbet-mujer-espanola",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Gustave_Courbet%2C_French_-_Spanish_Woman_-_Google_Art_Project.jpg",
+      "title": "Mujer española",
+      "year": 1854,
+      "description": "Figura femenina en traje oscuro posa con sobriedad y fuerza. Courbet combina retrato y carácter nacional con realismo sobrio.",
+      "dimensions": {
+        "width": 54,
+        "height": 45
+      }
+    },
+    {
+      "id": "courbet-luchadores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Gustave_Courbet_-_The_Wrestlers_-_Google_Art_Project.jpg",
+      "title": "Los luchadores",
+      "year": 1853,
+      "description": "Dos hombres luchan cuerpo a cuerpo con una tensión física casi escultórica. Courbet eleva un tema popular a la dignidad del gran formato.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "courbet-invierno-jura",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Gustave_Courbet_-_Winter_in_the_Jura_-_Google_Art_Project.jpg",
+      "title": "Invierno en el Jura",
+      "year": 1874,
+      "description": "Paisaje nevado de su tierra natal con árboles oscuros y cielo pesado. Courbet pinta el invierno con crudeza y una paleta sombría.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
     }
   ]
 }

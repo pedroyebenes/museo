@@ -58,6 +58,28 @@
         "width": 55,
         "height": 43
       }
+    },
+    {
+      "id": "watteau-embarkation-cythera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Antoine_Watteau_-_The_Embarkation_for_Cythera_-_Google_Art_Project.jpg",
+      "title": "El embarque hacia Citera",
+      "year": 1717,
+      "description": "Parejas galantes se dirigen hacia la isla del amor en un paisaje dorado. Obra fundacional del rococó francés y del fête galante.",
+      "dimensions": {
+        "width": 129,
+        "height": 194
+      }
+    },
+    {
+      "id": "watteau-fetes-venitiennes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Antoine_Watteau_-_F%C3%AAtes_Venitiennes_-_Google_Art_Project.jpg",
+      "title": "Fiestas venecianas",
+      "year": 1717,
+      "description": "Figuras disfrazadas conversan y bailan en un parque de fiesta galante. Watteau mezcla teatro, música y melancolía en una escena de ocio aristocrático.",
+      "dimensions": {
+        "width": 55,
+        "height": 45
+      }
     }
   ]
 }

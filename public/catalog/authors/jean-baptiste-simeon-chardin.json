@@ -1,0 +1,110 @@
+{
+  "id": "jean-baptiste-simeon-chardin",
+  "name": "Jean-Baptiste-Siméon Chardin",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Jean-Baptiste-Siméon Chardin",
+  "years": "1699 – 1779",
+  "origin": "París, Francia",
+  "bio": "Maestro del bodegón y la escena íntima en el siglo XVIII francés. Chardin elevó objetos cotidianos y figuras domésticas con una luz silenciosa que anticipó la sensibilidad moderna ante lo ordinario.",
+  "paintings": [
+    {
+      "id": "charadin-jarron-flores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Jean-Baptiste_Sim%C3%A9on_Chardin_-_A_Vase_of_Flowers_-_Google_Art_Project.jpg",
+      "title": "Un jarrón de flores",
+      "year": 1750,
+      "description": "Bodegón floral con rosas y bulbos en loza sobre mesa de madera. Chardin convierte lo cotidiano en meditación sobre textura, color y transitoriedad.",
+      "dimensions": {
+        "width": 45,
+        "height": 38
+      }
+    },
+    {
+      "id": "charadin-liebre",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Jean-Baptiste-Sim%C3%A9on_Chardin%2C_French_-_Still_Life_with_a_Hare_-_Google_Art_Project.jpg",
+      "title": "Naturaleza muerta con liebre",
+      "year": 1728,
+      "description": "Liebre suspendida junto a caza menor y utensilios de cocina. La composición sobria muestra su dominio temprano del bodegón francés.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "charadin-estudiante-dibujando",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Jean_Sim%C3%A9on_Chardin_-_Young_Student_Drawing_-_Google_Art_Project.jpg",
+      "title": "Joven estudiante dibujando",
+      "year": 1738,
+      "description": "Niño concentrado copiando un dibujo en un interior modesto. Chardin dignifica la educación artística con una escena íntima y serena.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "charadin-lavandera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jean-Sim%C3%A9on_Chardin_-_Washerwoman_-_Google_Art_Project.jpg",
+      "title": "Lavandera",
+      "year": 1733,
+      "description": "Mujer trabajadora en un entorno doméstico sencillo. La escena refleja la mirada compasiva de Chardin hacia la vida laboral parisina.",
+      "dimensions": {
+        "width": 37,
+        "height": 45
+      }
+    },
+    {
+      "id": "charadin-buena-educacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Chardin%2C_Jean-Sim%C3%A9on_-_The_Good_Education_-_Google_Art_Project.jpg",
+      "title": "La buena educación",
+      "year": 1754,
+      "description": "Niña cuidando a su hermano pequeño en un interior ordenado. Chardin convierte la virtud doméstica en tema pictórico de calma y ternura.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "charadin-burbujas-jabon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Jean_Sim%C3%A9on_Chardin_-_Soap_Bubbles_-_Google_Art_Project.jpg",
+      "title": "Burbujas de jabón",
+      "year": 1739,
+      "description": "Niño inclinado sopla una burbuja en un umbral iluminado. Chardin transforma un juego infantil en meditación sobre fragilidad y paso del tiempo.",
+      "dimensions": {
+        "width": 61,
+        "height": 78
+      }
+    },
+    {
+      "id": "charadin-perdiz-pera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Jean_Sim%C3%A9on_Chardin_-_Still_Life_with_Partridge_and_Pear_-_Google_Art_Project.jpg",
+      "title": "Naturaleza muerta con perdiz y pera",
+      "year": 1728,
+      "description": "Caza y fruta dispuestas con sobriedad sobre mesa de madera. Chardin equilibra texturas orgánicas y silencio contemplativo.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "charadin-tarros-albaricoques",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Jean-Sim%C3%A9on_Chardin_-_Jar_of_Apricots_-_Google_Art_Project.jpg",
+      "title": "Tarro de albaricoques",
+      "year": 1764,
+      "description": "Fruta conservada en un tarro de vidrio sobre repisa iluminada. El bodegón condensa la atención minuciosa de Chardin por la materia cotidiana.",
+      "dimensions": {
+        "width": 45,
+        "height": 38
+      }
+    },
+    {
+      "id": "charadin-atributos-artes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Jean-Baptiste-Sim%C3%A9on_Chardin_-_The_Attributes_of_the_Arts_and_the_Rewards_Which_Are_Accorded_Them_-_Google_Art_Project.jpg",
+      "title": "Los atributos de las artes",
+      "year": 1766,
+      "description": "Instrumentos y objetos artísticos dispuestos como alegoría de la creación. Chardin dignifica las artes liberales con sobriedad clásica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

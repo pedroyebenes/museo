@@ -1,0 +1,121 @@
+{
+  "id": "alfred-sisley",
+  "name": "Alfred Sisley",
+  "category": "impresionismo-postimpresionismo",
+  "fullName": "Alfred Sisley",
+  "years": "1839 – 1899",
+  "origin": "París, Francia",
+  "bio": "Paisajista impresionista anglo-francés, fiel a la pintura al aire libre y a las riberas del Sena. Compañero de Monet y Renoir, dedicó su carrera a captar la luz cambiante de pueblos, caminos y cielos de la Île-de-France con pincelada serena y color armonioso.",
+  "paintings": [
+    {
+      "id": "sisley-nieve-louveciennes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Alfred_Sisley_-_Snow_at_Louveciennes_-_Google_Art_Project.jpg",
+      "title": "Nieve en Louveciennes",
+      "year": 1878,
+      "description": "Casas y caminos cubiertos de nieve bajo un cielo gris pálido. Sisley convierte el invierno suburbano en poema de silencio y luz difusa sobre el pueblo donde vivió.",
+      "dimensions": {
+        "width": 61,
+        "height": 50
+      }
+    },
+    {
+      "id": "sisley-paisaje-louveciennes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Alfred_Sisley_-_Landscape_at_Louveciennes_-_Google_Art_Project.jpg",
+      "title": "Paisaje en Louveciennes",
+      "year": 1873,
+      "description": "Camino rural con figuras y casas bajo un cielo abierto. Paisaje temprano donde Sisley establece su vocación impresionista por la vida cotidiana del valle del Sena.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "sisley-puente-villeneuve",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Alfred_Sisley_-_The_Bridge_at_Villeneuve-la-Garenne_-_Google_Art_Project.jpg",
+      "title": "El puente de Villeneuve-la-Garenne",
+      "year": 1872,
+      "description": "Puente moderno sobre el Sena con barcas y paseantes bajo un cielo luminoso. Sisley integra arquitectura industrial y paisaje fluvial con color claro y pincelada suelta.",
+      "dimensions": {
+        "width": 65,
+        "height": 50
+      }
+    },
+    {
+      "id": "sisley-regata-st-mammes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Alfred_Sisley_-_Regatta_at_St_Mamm%C3%A8s_-_Google_Art_Project.jpg",
+      "title": "Regata en Saint-Mammès",
+      "year": 1885,
+      "description": "Veleros compiten en el Sena mientras figuras observan desde la orilla. Escena de ocio fluvial pintada con la misma serenidad luminosa que caracteriza a Sisley.",
+      "dimensions": {
+        "width": 54,
+        "height": 65
+      }
+    },
+    {
+      "id": "sisley-inundacion-port-marly",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Alfred_Sisley_-_Flood_at_Port-Marly_-_Google_Art_Project.jpg",
+      "title": "Inundación en Port-Marly",
+      "year": 1876,
+      "description": "Agua cubre las calles de Port-Marly mientras árboles y fachadas se reflejan en la superficie. Sisley transforma la catástrofe en meditación sobre la luz acuática.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    },
+    {
+      "id": "sisley-carretera-versailles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Alfred_Sisley_-_The_Road_to_Versailles%2C_Louveciennes_-_Google_Art_Project.jpg",
+      "title": "El camino de Versalles, Louveciennes",
+      "year": 1873,
+      "description": "Camino polvoriento con figuras que caminan hacia Versalles bajo un cielo azul. Paisaje impresionista clásico donde Sisley equilibra arquitectura, vegetación y movimiento humano.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "sisley-orilla-sena",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Alfred_Sisley_-_The_Banks_of_the_Seine_-_Google_Art_Project.jpg",
+      "title": "Las orillas del Sena",
+      "year": 1880,
+      "description": "Ribera del Sena con barcas amarradas y casas al fondo. Sisley dedica su mirada al río como protagonista absoluto del paisaje impresionista francés.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "sisley-villa-sevres",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Alfred_Sisley_-_The_Villa_at_S%C3%A8vres_-_Google_Art_Project.jpg",
+      "title": "La villa de Sèvres",
+      "year": 1877,
+      "description": "Villa entre árboles en Sèvres bajo una luz de tarde suave. Paisaje suburbano donde Sisley captura la calma residencial del cinturón parisino.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "sisley-iglesia-moret",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Alfred_Sisley_-_The_Church_at_Moret_-_Google_Art_Project.jpg",
+      "title": "La iglesia de Moret",
+      "year": 1894,
+      "description": "Iglesia gótica de Moret-sur-Loing vista desde el río con reflejos en el agua. Obra tardía donde Sisley eleva la arquitectura medieval a emblema de su paisaje ideal.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "sisley-puente-moret",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Alfred_Sisley_-_Bridge_at_Moret_-_Google_Art_Project.jpg",
+      "title": "Puente en Moret",
+      "year": 1888,
+      "description": "Puente de piedra sobre el Loing con casas y árboles a ambos lados. Sisley repite el motivo del puente como estructura que ordena el paisaje fluvial.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    }
+  ]
+}

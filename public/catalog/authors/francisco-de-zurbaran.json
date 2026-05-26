@@ -50,6 +50,28 @@
         "width": 179,
         "height": 232
       }
+    },
+    {
+      "id": "zurbaran-casa-labranza",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Francisco_de_Zurbar%C3%A1n_-_Labrador_with_his_Son_-_Google_Art_Project.jpg",
+      "title": "Labrador con su hijo",
+      "year": 1655,
+      "description": "Campesino y niño posan con dignidad sobre fondo neutro. Zurbarán eleva la figura humilde a retrato de presencia casi escultórica.",
+      "dimensions": {
+        "width": 126,
+        "height": 99
+      }
+    },
+    {
+      "id": "zurbaran-agnus-dei",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Francisco_de_Zurbar%C3%A1n_-_Agnus_Dei_-_Google_Art_Project.jpg",
+      "title": "Agnus Dei",
+      "year": 1635,
+      "description": "Cordero atado sobre una mesa en un espacio de silencio absoluto. Zurbarán convierte el símbolo cristiano en meditación sobre el sacrificio con realismo sobrecogedor.",
+      "dimensions": {
+        "width": 38,
+        "height": 62
+      }
     }
   ]
 }

@@ -1,0 +1,143 @@
+{
+  "id": "piet-mondrian",
+  "name": "Piet Mondrian",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Pieter Cornelis Mondriaan",
+  "years": "1872 – 1944",
+  "origin": "Amersfoort, Países Bajos",
+  "bio": "Pintor neerlandés creador del neoplasticismo. Mondrian redujo la pintura a líneas negras, planos primarios y blanco en busca de armonía universal y equilibrio espiritual.",
+  "paintings": [
+    {
+      "id": "mondrian-rojo-azul",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Piet_Mondrian_-_Composition_with_Red%2C_Blue_and_Yellow_-_Google_Art_Project.jpg",
+      "title": "Composición con rojo, azul y amarillo",
+      "year": 1930,
+      "description": "Rectángulos primarios separados por líneas negras en fondo blanco. Síntesis del neoplasticismo y de la búsqueda de orden universal.",
+      "dimensions": {
+        "width": 46,
+        "height": 46
+      }
+    },
+    {
+      "id": "mondrian-broadway",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Piet_Mondrian_-_Broadway_Boogie_Woogie_-_Google_Art_Project.jpg",
+      "title": "Broadway Boogie Woogie",
+      "year": 1942,
+      "description": "Cuadrícula vibrante inspirada en Manhattan y el jazz. Obra tardía que humaniza el rigor geométrico con ritmo y luz.",
+      "dimensions": {
+        "width": 127,
+        "height": 127
+      }
+    },
+    {
+      "id": "mondrian-arbol",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Piet_Mondrian_-_Gray_Tree_-_Google_Art_Project.jpg",
+      "title": "Árbol gris",
+      "year": 1911,
+      "description": "Árbol simplificado en ramas negras sobre fondo gris. Paso clave hacia abstracción desde naturaleza.",
+      "dimensions": {
+        "width": 79,
+        "height": 109
+      }
+    },
+    {
+      "id": "mondrian-madrid",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Piet_Mondrian_-_Composition_II_in_Red%2C_Blue%2C_and_Yellow_-_Google_Art_Project.jpg",
+      "title": "Composición II en rojo, azul y amarillo",
+      "year": 1930,
+      "description": "Planos primarios en equilibrio asimétrico perfecto. Mondrian busca lo esencial mediante exclusión y proporción.",
+      "dimensions": {
+        "width": 66,
+        "height": 66
+      }
+    },
+    {
+      "id": "mondrian-victory",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Piet_Mondrian_-_Victory_Boogie_Woogie_-_Google_Art_Project.jpg",
+      "title": "Victory Boogie Woogie",
+      "year": 1944,
+      "description": "Cuadrícula inacabada de color y ritmo urbano. Testamento visual de Mondrian sobre energía y armonía moderna.",
+      "dimensions": {
+        "width": 127,
+        "height": 127
+      }
+    },
+    {
+      "id": "mondrian-tableau",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Piet_Mondrian_-_Composition_with_Large_Blue_Plane%2C_Red%2C_Black%2C_Yellow%2C_and_Gray_-_Google_Art_Project.jpg",
+      "title": "Composición con plano azul grande",
+      "year": 1921,
+      "description": "Transición hacia neoplasticismo con planos de color y líneas irregulares. Mondrian acerca forma y espiritualidad.",
+      "dimensions": {
+        "width": 61,
+        "height": 50
+      }
+    },
+    {
+      "id": "mondrian-flor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Piet_Mondrian_-_Chrysanthemum_-_Google_Art_Project.jpg",
+      "title": "Crisantemo",
+      "year": 1908,
+      "description": "Flor analizada en color postimpresionista antes de la abstracción total. Etapa naturalista de Mondrian.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "mondrian-pier",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Piet_Mondrian_-_Composition_with_Grid_9_-_Google_Art_Project.jpg",
+      "title": "Composición con cuadrícula 9",
+      "year": 1919,
+      "description": "Cuadrícula temprana en tonos grises y ocres. Mondrian experimenta con estructura antes del neoplasticismo puro.",
+      "dimensions": {
+        "width": 80,
+        "height": 60
+      }
+    },
+    {
+      "id": "mondrian-oval",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Piet_Mondrian_-_Composition_with_Oval_-_Google_Art_Project.jpg",
+      "title": "Composición con óvalo",
+      "year": 1914,
+      "description": "Líneas y color dentro de marco ovalado. Fase cubista-neerlandesa en camino hacia la abstracción.",
+      "dimensions": {
+        "width": 80,
+        "height": 60
+      }
+    },
+    {
+      "id": "mondrian-new-york",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Piet_Mondrian_-_New_York_City_I_-_Google_Art_Project.jpg",
+      "title": "Nueva York I",
+      "year": 1942,
+      "description": "Bandas de color que anticipan Broadway Boogie Woogie. Mondrian traduce ritmo urbano en geometría luminosa.",
+      "dimensions": {
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "id": "mondrian-diamond",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Piet_Mondrian_-_Composition_with_Yellow%2C_Red%2C_Black%2C_Blue_and_Gray_-_Google_Art_Project.jpg",
+      "title": "Composición en diamante",
+      "year": 1921,
+      "description": "Composición en losange con planos primarios. Mondrian explora forma cuadrada rotada y equilibrio dinámico.",
+      "dimensions": {
+        "width": 60,
+        "height": 60
+      }
+    },
+    {
+      "id": "mondrian-planes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Piet_Mondrian_-_Composition_with_Color_Planes_-_Google_Art_Project.jpg",
+      "title": "Composición con planos de color",
+      "year": 1917,
+      "description": "Rectángulos de color sin líneas negras definitivas. Etapa de transición hacia el neoplasticismo maduro.",
+      "dimensions": {
+        "width": 48,
+        "height": 60
+      }
+    }
+  ]
+}

@@ -61,6 +61,83 @@
         "width": 114,
         "height": 146
       }
+    },
+    {
+      "id": "degas-clase-danza",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Edgar_Degas_-_The_Dance_Class_-_Google_Art_Project.jpg",
+      "title": "La clase de danza",
+      "year": 1873,
+      "description": "Bailarinas ensayan ante el maestro Jules Perrot en un estudio del Opera de París. Degas recorta la escena como una instantánea y somete el movimiento a una geometría observacional precisa.",
+      "dimensions": {
+        "width": 85,
+        "height": 75
+      }
+    },
+    {
+      "id": "degas-familia-bellelli",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Edgar_Degas_-_The_Bellelli_Family_-_Google_Art_Project.jpg",
+      "title": "La familia Bellelli",
+      "year": 1867,
+      "description": "Retrato de grupo de la familia de su tía en Florencia, marcado por la rigidez y la pena. Obra temprana maestra donde Degas combina retrato psicológico y composición clásica.",
+      "dimensions": {
+        "width": 200,
+        "height": 250
+      }
+    },
+    {
+      "id": "degas-carreras-caballos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Edgar_Degas_-_Race_Horses_-_Google_Art_Project.jpg",
+      "title": "Carreras de caballos",
+      "year": 1885,
+      "description": "Jinetes y pur-sang en pleno galope vistos con recorte audaz y polvo levantado. Degas aplica al turf aristocrático la misma atención al movimiento que dedica al ballet.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "degas-orquesta-opera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Edgar_Degas_-_The_Orchestra_of_the_Opera_-_Google_Art_Project.jpg",
+      "title": "La orquesta de la Ópera",
+      "year": 1870,
+      "description": "Músicos en el foso vistos desde arriba mientras una bailarina aparece en escena. Composición teatral que superpone realidad y espectáculo con perspectiva inclinada.",
+      "dimensions": {
+        "width": 56,
+        "height": 46
+      }
+    },
+    {
+      "id": "degas-mujer-banandose",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Edgar_Degas_-_Woman_Bathing_in_a_Shallow_Tub_-_Google_Art_Project.jpg",
+      "title": "Mujer bañándose en una bañera poco profunda",
+      "year": 1885,
+      "description": "Desnudo femenino inclinado sobre una bañera en un interior íntimo. Degas observa el cuerpo sin idealizarlo, con pastel seco y encuadres que recortan como una fotografía.",
+      "dimensions": {
+        "width": 60,
+        "height": 83
+      }
+    },
+    {
+      "id": "degas-bailarinas-rosa-verde",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Edgar_Degas_-_Dancers_in_Pink_and_Green_-_Google_Art_Project.jpg",
+      "title": "Bailarinas en rosa y verde",
+      "year": 1890,
+      "description": "Grupo de bailarinas ajusta sus tutús en un camerino. Pastel sobre papel donde el rosa y el verde vibran contra el fondo oscuro del teatro.",
+      "dimensions": {
+        "width": 60,
+        "height": 73
+      }
+    },
+    {
+      "id": "degas-cuadro-carreras",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Edgar_Degas_-_At_the_Races_-_Google_Art_Project.jpg",
+      "title": "En las carreras",
+      "year": 1877,
+      "description": "Caballos y jinetes se agrupan antes de la salida en un paisaje abierto. Degas captura la tensión previa al arranque con figuras recortadas y horizonte bajo.",
+      "dimensions": {
+        "width": 62,
+        "height": 92
+      }
     }
   ]
 }

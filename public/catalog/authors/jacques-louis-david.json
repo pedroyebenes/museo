@@ -72,6 +72,50 @@
         "width": 979,
         "height": 621
       }
+    },
+    {
+      "id": "david-muerte-socrates",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Jacques-Louis_David_-_The_Death_of_Socrates_-_Google_Art_Project.jpg",
+      "title": "La muerte de Sócrates",
+      "year": 1787,
+      "description": "Sócrates bebe la cicuta rodeado de discípulos conmovidos. David convierte la escena filosófica en ejemplo cívico de integridad moral.",
+      "dimensions": {
+        "width": 129,
+        "height": 196
+      }
+    },
+    {
+      "id": "david-napoleon-despacho",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+      "title": "Napoleón en su despacho de las Tullerías",
+      "year": 1812,
+      "description": "Napoleón trabaja de madrugada entre mapas y documentos bajo luz concentrada. David idealiza al emperador como líder incansable y pensador.",
+      "dimensions": {
+        "width": 203,
+        "height": 125
+      }
+    },
+    {
+      "id": "david-despedida-telemaco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Jacques-Louis_David_-_The_Farewell_of_Telemachus_and_Eucharis_-_Google_Art_Project.jpg",
+      "title": "Despedida de Telémaco y Eucaris",
+      "year": 1818,
+      "description": "Pareja mítica se separa en un paisaje idealizado de gran ternura. David combina erudición clásica y emoción romántica en clave neoclásica tardía.",
+      "dimensions": {
+        "width": 87,
+        "height": 101
+      }
+    },
+    {
+      "id": "david-ira-aquiles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Jacques-Louis_David_-_The_Anger_of_Achilles_-_Google_Art_Project.jpg",
+      "title": "La ira de Aquiles",
+      "year": 1819,
+      "description": "Aquiles desenvaina la espada ante Agamenón en un episodio homérico. La escena enfatiza el conflicto entre honor, autoridad y pasión guerrera.",
+      "dimensions": {
+        "width": 145,
+        "height": 113
+      }
     }
   ]
 }

@@ -61,6 +61,72 @@
         "width": 43.8,
         "height": 34.5
       }
+    },
+    {
+      "id": "friedrich-monticulo-nieve",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Caspar_David_Friedrich_-_Cairn_in_Snow_-_Google_Art_Project.jpg",
+      "title": "Montículo en la nieve",
+      "year": 1807,
+      "description": "Tres figuras ante un montón de piedras cubierto de nieve en un paisaje invernal. Friedrich evoca memoria, muerte y devoción silenciosa.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "friedrich-paseo-anochecer",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Caspar_David_Friedrich_-_A_Walk_at_Dusk_-_Google_Art_Project.jpg",
+      "title": "Paseo al anochecer",
+      "year": 1835,
+      "description": "Hombre y mujer avanzan entre árboles al crepúsculo. La escena condensa melancolía, compañía y transición hacia la noche.",
+      "dimensions": {
+        "width": 33,
+        "height": 43
+      }
+    },
+    {
+      "id": "friedrich-mujer-ventana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Caspar_David_Friedrich_-_Frau_am_Fenster_-_Google_Art_Project.jpg",
+      "title": "Mujer en la ventana",
+      "year": 1822,
+      "description": "Figura femenina de espaldas mira el puerto desde un interior austero. Friedrich convierte la contemplación en meditación sobre distancia y deseo.",
+      "dimensions": {
+        "width": 44,
+        "height": 73
+      }
+    },
+    {
+      "id": "friedrich-greifswald-luna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Caspar_David_Friedrich_-_Greifswald_in_Moonlight_-_Google_Art_Project.jpg",
+      "title": "Greifswald a la luz de la luna",
+      "year": 1817,
+      "description": "Ciudad natal iluminada por la luna sobre el mar del Báltico. El paisaje nocturno une nostalgia personal y poesía romántica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "friedrich-monje-orilla-mar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Caspar_David_Friedrich_-_Monk_by_the_Sea_-_Google_Art_Project.jpg",
+      "title": "Monje a la orilla del mar",
+      "year": 1810,
+      "description": "Figura diminuta contempla un mar gris y un cielo inmenso. Friedrich condensa la sublimidad romántica en la soledad humana ante la naturaleza infinita.",
+      "dimensions": {
+        "width": 110,
+        "height": 171
+      }
+    },
+    {
+      "id": "friedrich-arbol-cuervos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Caspar_David_Friedrich_-_Two_Men_Contemplating_the_Moon_-_Google_Art_Project.jpg",
+      "title": "Dos hombres contemplando la luna",
+      "year": 1819,
+      "description": "Dos figuras observan la luna en un paisaje nocturno de rocas y árboles retorcidos. Friedrich transforma la amistad y la contemplación en meditación romántica.",
+      "dimensions": {
+        "width": 35,
+        "height": 45
+      }
     }
   ]
 }

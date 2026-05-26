@@ -1,0 +1,143 @@
+{
+  "id": "joan-miro",
+  "name": "Joan Miró",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Joan Miró i Ferrà",
+  "years": "1893 – 1983",
+  "origin": "Barcelona, España",
+  "bio": "Pintor, escultor y grabador catalán entre surrealismo y abstracción. Miró inventó un universo de signos, estrellas y criaturas biomórficas inspirado en Cataluña, el campesinado y la poesía visual.",
+  "paintings": [
+    {
+      "id": "miro-carnaval",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Joan_Mir%C3%B3_-_The_Carnival_of_Harlequin_-_Google_Art_Project.jpg",
+      "title": "El carnaval de Arlequín",
+      "year": 1925,
+      "description": "Criaturas y objetos flotan en espacio azul de humor onírico. Obra cumbre del surrealismo pictórico de Miró.",
+      "dimensions": {
+        "width": 66,
+        "height": 93
+      }
+    },
+    {
+      "id": "miro-nacimiento",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Joan_Mir%C3%B3_-_The_Birth_of_the_World_-_Google_Art_Project.jpg",
+      "title": "El naixement del món",
+      "year": 1925,
+      "description": "Manchas y signos sobre fondo diluido de atmósfera primitiva. Miró deja fluir lo automático y lo cósmico.",
+      "dimensions": {
+        "width": 250,
+        "height": 200
+      }
+    },
+    {
+      "id": "miro-granjero",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Joan_Mir%C3%B3_-_The_Farm_-_Google_Art_Project.jpg",
+      "title": "La masía",
+      "year": 1921,
+      "description": "Catálogo minucioso de la masía familiar en Mont-roig. Obra clave entre realismo detallista y síntesis simbólica.",
+      "dimensions": {
+        "width": 123,
+        "height": 141
+      }
+    },
+    {
+      "id": "miro-estrella",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Joan_Mir%C3%B3_-_Woman_and_Bird_in_the_Night_-_Google_Art_Project.jpg",
+      "title": "Mujer y pájaro en la noche",
+      "year": 1947,
+      "description": "Figura femenina, estrella y ave en azul profundo. Lenguaje de signos que define la madurez de Miró.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "miro-paisaje",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Joan_Mir%C3%B3_-_Landscape_(The_Hunter)_-_Google_Art_Project.jpg",
+      "title": "Paisaje (El cazador)",
+      "year": 1924,
+      "description": "Cazador catalán descompuesto en signos y color plano. Miró traduce paisaje y folklore en poema visual.",
+      "dimensions": {
+        "width": 64,
+        "height": 81
+      }
+    },
+    {
+      "id": "miro-azul",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Joan_Mir%C3%B3_-_Blue_I_-_Google_Art_Project.jpg",
+      "title": "Azul I",
+      "year": 1961,
+      "description": "Franjas azules con signos dispersos de gran serenidad. Serie tardía de meditación cromática y caligrafía.",
+      "dimensions": {
+        "width": 270,
+        "height": 355
+      }
+    },
+    {
+      "id": "miro-constelacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Joan_Mir%C3%B3_-_Constellation_-_Google_Art_Project.jpg",
+      "title": "Constelación",
+      "year": 1940,
+      "description": "Red de signos y estrellas sobre fondo claro en gouache. Miró pinta el cosmos íntimo en el exilio.",
+      "dimensions": {
+        "width": 38,
+        "height": 46
+      }
+    },
+    {
+      "id": "miro-dona",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Joan_Mir%C3%B3_-_Woman_-_Google_Art_Project.jpg",
+      "title": "Mujer",
+      "year": 1934,
+      "description": "Figura femenina de formas biomórficas y color intenso. Miró condensa cuerpo, tierra y deseo en signos esenciales.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "miro-paloma",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Joan_Mir%C3%B3_-_The_Smile_of_the_Flame_-_Google_Art_Project.jpg",
+      "title": "La sonrisa de la llama",
+      "year": 1954,
+      "description": "Composición de fuego, estrellas y criaturas en rojo y negro. Miró celebra energía vital con humor y misterio.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "miro-triptych",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Joan_Mir%C3%B3_-_Blue_II_-_Google_Art_Project.jpg",
+      "title": "Azul II",
+      "year": 1961,
+      "description": "Panel central azul con signos mínimos y equilibrio meditativo. Parte de la trilogía azul de los años sesenta.",
+      "dimensions": {
+        "width": 270,
+        "height": 355
+      }
+    },
+    {
+      "id": "miro-sol",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Joan_Mir%C3%B3_-_The_Sun_-_Google_Art_Project.jpg",
+      "title": "El sol",
+      "year": 1949,
+      "description": "Sol rojo y signos flotantes en fondo claro. Miró condensa cosmos y alegría en caligrafía colorista.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "miro-escalera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Joan_Mir%C3%B3_-_The_Ladder_of_Escape_-_Google_Art_Project.jpg",
+      "title": "La escalera del escape",
+      "year": 1940,
+      "description": "Escalera, estrellas y figuras en escena de evasión poética. Miró pinta esperanza desde la guerra.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    }
+  ]
+}

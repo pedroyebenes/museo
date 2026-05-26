@@ -55,6 +55,94 @@
         "width": 68,
         "height": 52
       }
+    },
+    {
+      "id": "cezanne-cesta-manzanas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Paul_C%C3%A9zanne_-_The_Basket_of_Apples_-_Google_Art_Project.jpg",
+      "title": "La cesta de manzanas",
+      "year": 1893,
+      "description": "Manzanas, botella y mantel plegado se equilibran en una mesa inclinada. Cézanne desafía la perspectiva única para construir el espacio mediante planos de color superpuestos.",
+      "dimensions": {
+        "width": 65,
+        "height": 80
+      }
+    },
+    {
+      "id": "cezanne-jugadores-cartas-dublin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Paul_C%C3%A9zanne_-_The_Card_Players_-_Google_Art_Project.jpg",
+      "title": "Los jugadores de cartas",
+      "year": 1892,
+      "description": "Dos campesinos provenzales absortos en su partida, modelados con volúmenes geométricos. Versión del tema que Cézanne repitió en una serie que condensa figura, mesa y atmósfera silenciosa.",
+      "dimensions": {
+        "width": 97,
+        "height": 130
+      }
+    },
+    {
+      "id": "cezanne-casa-hombre-ahorcado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Paul_C%C3%A9zanne_-_The_House_of_the_Hanged_Man_-_Google_Art_Project.jpg",
+      "title": "La casa del ahorcado",
+      "year": 1873,
+      "description": "Casas de Auvers bajo un cielo tempestuoso con pincelada impresionista temprana. Obra expuesta en la primera exposición impresionista que anuncia su búsqueda estructural del paisaje.",
+      "dimensions": {
+        "width": 55,
+        "height": 66
+      }
+    },
+    {
+      "id": "cezanne-cantera-bibemus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Paul_C%C3%A9zanne_-_Bibemus_Quarry_-_Google_Art_Project.jpg",
+      "title": "Cantera de Bibémus",
+      "year": 1895,
+      "description": "Rocas ocre y verdes se apilan como bloques cúbicos bajo un cielo azul intenso. Cézanne convierte la cantera provenzal en laboratorio de formas geométricas que heredará el cubismo.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "cezanne-madame-vestido-rojo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_in_a_Red_Dress_-_Google_Art_Project.jpg",
+      "title": "Madame Cézanne con vestido rojo",
+      "year": 1890,
+      "description": "Retrato frontal de Hortense Fiquet sentada con rigidez casi escultórica. Cézanne somete el rostro humano a la misma construcción cromática que a sus naturalezas muertas.",
+      "dimensions": {
+        "width": 116,
+        "height": 89
+      }
+    },
+    {
+      "id": "cezanne-muchacho-chaleco-rojo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Paul_C%C3%A9zanne_-_The_Boy_in_a_Red_Waistcoat_-_Google_Art_Project.jpg",
+      "title": "El muchacho del chaleco rojo",
+      "year": 1890,
+      "description": "Joven apoyado en una mesa con chaleco rojo y mirada pensativa. Figura modelada en planos angulares que condensan la transición de Cézanne del impresionismo a la construcción moderna.",
+      "dimensions": {
+        "width": 89,
+        "height": 72
+      }
+    },
+    {
+      "id": "cezanne-jarrón-azul",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Paul_C%C3%A9zanne_-_The_Blue_Vase_-_Google_Art_Project.jpg",
+      "title": "El jarrón azul",
+      "year": 1887,
+      "description": "Flores silvestres en un jarrón azul sobre un mantel blanco. Naturaleza muerta donde Cézanne equilibra el color decorativo con la geometría de mesa, pared y frutas.",
+      "dimensions": {
+        "width": 54,
+        "height": 65
+      }
+    },
+    {
+      "id": "cezanne-tres-calaveras",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Paul_C%C3%A9zanne_-_The_Three_Skulls_-_Google_Art_Project.jpg",
+      "title": "Las tres calaveras",
+      "year": 1901,
+      "description": "Tres calaveras sobre un mantel inclinado en una meditación sobre la mortalidad. Cézanne reduce el vanitas barroco a construcción geométrica de volúmenes y sombras.",
+      "dimensions": {
+        "width": 60,
+        "height": 73
+      }
     }
   ]
 }

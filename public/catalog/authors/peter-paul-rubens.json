@@ -61,6 +61,72 @@
         "width": 131.2,
         "height": 98.4
       }
+    },
+    {
+      "id": "rubens-abundancia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Peter_Paul_Rubens_-_Abundance_(Abundantia)_-_Google_Art_Project.jpg",
+      "title": "La Abundancia",
+      "year": 1630,
+      "description": "Figura femenina alegórica derrama frutos y flores en un paisaje fecundo. Rubens celebra la opulencia barroca con carnaciones luminosas y movimiento circular.",
+      "dimensions": {
+        "width": 131,
+        "height": 90
+      }
+    },
+    {
+      "id": "rubens-daniel-leones",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Sir_Peter_Paul_Rubens_-_Daniel_in_the_Lions'_Den_-_Google_Art_Project.jpg",
+      "title": "Daniel en el foso de los leones",
+      "year": 1615,
+      "description": "El profeta ora impávido mientras los leones lo rodean en la penumbra. Rubens dramatiza la fe con claroscuro teatral y anatomías poderosas.",
+      "dimensions": {
+        "width": 224,
+        "height": 330
+      }
+    },
+    {
+      "id": "rubens-jabali-calydon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Peter_Paul_Rubens_-_The_Calydonian_Boar_Hunt_-_Google_Art_Project.jpg",
+      "title": "La caza del jabalí de Calidón",
+      "year": 1612,
+      "description": "Héroes y amazonas caen sobre el jabalí en una espiral de cuerpos y lanza. Obra apoteósica del barroco flamenco que convierte el mito en espectáculo dinámico.",
+      "dimensions": {
+        "width": 248,
+        "height": 377
+      }
+    },
+    {
+      "id": "rubens-venus-adonis",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Peter_Paul_Rubens_-_Venus_and_Adonis_-_Google_Art_Project.jpg",
+      "title": "Venus y Adonis",
+      "year": 1635,
+      "description": "Venus intenta retener a Adonis antes de la caza fatal. Rubens funde erotismo mitológico y paisaje boscoso en una escena de despedida apasionada.",
+      "dimensions": {
+        "width": 198,
+        "height": 298
+      }
+    },
+    {
+      "id": "rubens-bacanal",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Peter_Paul_Rubens_-_Bacchanalia_-_Google_Art_Project.jpg",
+      "title": "Bacanal",
+      "year": 1615,
+      "description": "Sátiros y ninfas danzan en un bosque de celebración pagana. Rubens despliega su energía carnavalesca y su dominio del cuerpo en movimiento.",
+      "dimensions": {
+        "width": 214,
+        "height": 305
+      }
+    },
+    {
+      "id": "rubens-marte-venus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Peter_Paul_Rubens_(Flemish)_-_The_Return_from_War-_Mars_Disarmed_by_Venus_-_Google_Art_Project.jpg",
+      "title": "Marte desarmado por Venus",
+      "year": 1610,
+      "description": "Venus desarma a Marte mientras amorcillos juegan con sus armas. Rubens alegoriza la paz amorosa con carnaciones sensuales y composición dinámica.",
+      "dimensions": {
+        "width": 203,
+        "height": 298
+      }
     }
   ]
 }

@@ -47,6 +47,50 @@
         "width": 228,
         "height": 131
       }
+    },
+    {
+      "id": "bosco-muerte-avaro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Hieronymus_Bosch_-_Death_and_the_Miser_-_Google_Art_Project.jpg",
+      "title": "La muerte del avaro",
+      "year": 1490,
+      "description": "Un moribundo elige entre un ángel y un demonio mientras la muerte entra por la ventana. Bosco advierte sobre la codicia con una escena claustrofóbica de gran simbolismo.",
+      "dimensions": {
+        "width": 93,
+        "height": 31
+      }
+    },
+    {
+      "id": "bosco-escarnio-cristo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Hieronymus_Bosch_-_Christ_Mocked_(The_Crowning_with_Thorns)_-_Google_Art_Project.jpg",
+      "title": "Escarnio de Cristo",
+      "year": 1510,
+      "description": "Soldados corona de espinas a Cristo en un interior sombrío. Bosco intensifica el sufrimiento mediante rostros grotescos y una luz que aísla la figura redentora.",
+      "dimensions": {
+        "width": 73,
+        "height": 57
+      }
+    },
+    {
+      "id": "bosco-ecce-homo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Hieronymus_Bosch_-_Ecce_Homo_-_Google_Art_Project.jpg",
+      "title": "Ecce homo",
+      "year": 1475,
+      "description": "Cristo presentado al pueblo entre soldados y donantes. Obra temprana donde Bosco ya muestra su gusto por figuras excéntricas y moralización implacable.",
+      "dimensions": {
+        "width": 75,
+        "height": 60
+      }
+    },
+    {
+      "id": "bosco-pedlar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Jheronimus_Bosch_-_The_Pedlar_-_Google_Art_Project.jpg",
+      "title": "El caminante",
+      "year": 1500,
+      "description": "Hombre cargado con enseres avanza por un camino entre tentaciones y peligros. Bosco convierte la vida errante en alegoría moral de fragilidad humana.",
+      "dimensions": {
+        "width": 71,
+        "height": 25
+      }
     }
   ]
 }

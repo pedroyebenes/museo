@@ -61,6 +61,28 @@
         "width": 111,
         "height": 134
       }
+    },
+    {
+      "id": "botticelli-madonna-magnificat",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Sandro_Botticelli_-_Madonna_of_the_Magnificat_-_Google_Art_Project.jpg",
+      "title": "Madonna del Magnificat",
+      "year": 1483,
+      "description": "Virgen entronizada escribe el Magnificat rodeada de ángeles y figuras celestiales. Botticelli organiza la gloria mariana con línea sinuosa y color claro.",
+      "dimensions": {
+        "width": 118,
+        "height": 119
+      }
+    },
+    {
+      "id": "botticelli-madonna-granada",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Sandro_Botticelli_-_Madonna_of_the_Pomegranate_-_Google_Art_Project.jpg",
+      "title": "Madonna de la granada",
+      "year": 1487,
+      "description": "María sostiene al Niño y una granada símbolo de la Pasión. Tondo florentino donde Botticelli equilibra ternura maternal y erudición simbólica.",
+      "dimensions": {
+        "width": 143,
+        "height": 143
+      }
     }
   ]
 }

@@ -94,6 +94,72 @@
         "width": 110,
         "height": 84
       }
+    },
+    {
+      "id": "cole-sueno-arquitecto",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Thomas_Cole_-_Architect%E2%80%99s_Dream_-_Google_Art_Project.jpg",
+      "title": "El sueño del arquitecto",
+      "year": 1840,
+      "description": "Arquitecto recostado contempla un collage fantástico de civilizaciones y paisajes. Cole celebra la imaginación creativa como puente entre historia y naturaleza.",
+      "dimensions": {
+        "width": 135,
+        "height": 84
+      }
+    },
+    {
+      "id": "cole-sueno-arcadia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Thomas_Cole_-_Dream_of_Arcadia_-_Google_Art_Project.jpg",
+      "title": "Sueño de Arcadia",
+      "year": 1838,
+      "description": "Paisaje clásico ideal con templos, figuras y vegetación exuberante. Cole evoca la armonía utópica entre naturaleza y cultura antigua.",
+      "dimensions": {
+        "width": 100,
+        "height": 67
+      }
+    },
+    {
+      "id": "cole-molino-atardecer",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Thomas_Cole_-_The_Mill%2C_Sunset_-_Google_Art_Project.jpg",
+      "title": "El molino al atardecer",
+      "year": 1844,
+      "description": "Molino y río bañados por la luz del ocaso en un valle apacible. La escena combina paisaje americano y melancolía romántica del paso del tiempo.",
+      "dimensions": {
+        "width": 100,
+        "height": 67
+      }
+    },
+    {
+      "id": "cole-prometeo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Thomas_Cole_-_Prometheus_Bound_-_Google_Art_Project.jpg",
+      "title": "Prometeo encadenado",
+      "year": 1847,
+      "description": "Titán encadenado a la roca sufre el castigo de Zeus en un paisaje grandioso. Cole aborda el mito clásico como reflexión sobre sufrimiento y rebelión.",
+      "dimensions": {
+        "width": 100,
+        "height": 67
+      }
+    },
+    {
+      "id": "cole-curso-imperio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Thomas_Cole_-_The_Course_of_Empire_-_The_Consummation_-_Google_Art_Project.jpg",
+      "title": "El curso del imperio: la consunción",
+      "year": 1836,
+      "description": "Ciudad imperial en su apogeo bajo un cielo dorado en la serie alegórica de Cole. El paisaje americano se convierte en meditación sobre ascenso y caída de civilizaciones.",
+      "dimensions": {
+        "width": 130,
+        "height": 193
+      }
+    },
+    {
+      "id": "cole-voyage-of-life",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Thomas_Cole_-_The_Voyage_of_Life_-_Youth_-_Google_Art_Project.jpg",
+      "title": "El viaje de la vida: la juventud",
+      "year": 1842,
+      "description": "Joven navega por un río caudaloso hacia un palacio de nubes doradas. Cole desarrolla la alegoría moral en una serie sobre las edades del hombre.",
+      "dimensions": {
+        "width": 134,
+        "height": 193
+      }
     }
   ]
 }

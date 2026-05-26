@@ -58,6 +58,83 @@
         "width": 231,
         "height": 611
       }
+    },
+    {
+      "id": "sargent-dama-verde",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/John_Singer_Sargent_-_Lady_Agnew_of_Lochnaw_-_Google_Art_Project.jpg",
+      "title": "Lady Agnew de Lochnaw",
+      "year": 1892,
+      "description": "Retrato de Lady Agnew recostada en un sillón blanco con vestido blanco y chal chino. Sargent captura la elegancia escocesa con pincelada fluida y mirada directa al espectador.",
+      "dimensions": {
+        "width": 127,
+        "height": 99
+      }
+    },
+    {
+      "id": "sargent-ramon-subercaseaux",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/John_Singer_Sargent_-_Portrait_of_Ramon_Subercaseaux_-_Google_Art_Project.jpg",
+      "title": "Retrato de Ramón Subercaseaux",
+      "year": 1880,
+      "description": "El pintor chileno posa al piano en un interior elegante de París. Sargent documenta la vida artística internacional con virtuosismo técnico y atmósfera íntima.",
+      "dimensions": {
+        "width": 130,
+        "height": 170
+      }
+    },
+    {
+      "id": "sargent-interior-venecia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/John_Singer_Sargent_-_An_Interior_in_Venice_-_Google_Art_Project.jpg",
+      "title": "Un interior en Venecia",
+      "year": 1882,
+      "description": "Dos mujeres conversan en un palazzo veneciano con luz filtrada desde el canal. Sargent traduce la ciudad lagunar en atmósfera de seda, mármol y ocio cosmopolita.",
+      "dimensions": {
+        "width": 60,
+        "height": 49
+      }
+    },
+    {
+      "id": "sargent-general-pozzo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/John_Singer_Sargent_-_General_Pozzo_di_Borgo_-_Google_Art_Project.jpg",
+      "title": "General Pozzo di Borgo",
+      "year": 1906,
+      "description": "Retrato ecuestre del general corsicano con uniforme y caballo en movimiento. Sargent demuestra su dominio de la pintura de historia y el retrato oficial.",
+      "dimensions": {
+        "width": 150,
+        "height": 200
+      }
+    },
+    {
+      "id": "sargent-stevenson",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/John_Singer_Sargent_-_Robert_Louis_Stevenson_and_His_Wife_-_Google_Art_Project.jpg",
+      "title": "Robert Louis Stevenson y su esposa",
+      "year": 1885,
+      "description": "El escritor escocés posa con su esposa en un interior lleno de luz y sombra. Sargent captura la personalidad literaria con pincelada suelta y atmósfera de intimidad bohemia.",
+      "dimensions": {
+        "width": 127,
+        "height": 99
+      }
+    },
+    {
+      "id": "sargent-calle-venecia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/John_Singer_Sargent_-_Street_in_Venice_-_Google_Art_Project.jpg",
+      "title": "Calle en Venecia",
+      "year": 1882,
+      "description": "Dos mujeres caminan por una calle estrecha veneciana mientras un hombre las observa desde un portal. Escena de inquietud urbana pintada con pincelada sugerente y luz crepuscular.",
+      "dimensions": {
+        "width": 45,
+        "height": 54
+      }
+    },
+    {
+      "id": "sargent-cecilia-beaux",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/John_Singer_Sargent_-_Portrait_of_Cecilia_Beaux_-_Google_Art_Project.jpg",
+      "title": "Retrato de Cecilia Beaux",
+      "year": 1892,
+      "description": "La pintora estadounidense posa con mirada firme y vestido oscuro. Sargent retrata a una colega artista con respeto y pincelada ágil que define su maestría en el género.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
     }
   ]
 }

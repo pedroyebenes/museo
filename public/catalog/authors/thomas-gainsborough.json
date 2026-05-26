@@ -1,0 +1,99 @@
+{
+  "id": "thomas-gainsborough",
+  "name": "Thomas Gainsborough",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Thomas Gainsborough",
+  "years": "1727 – 1788",
+  "origin": "Sudbury, Suffolk, Inglaterra",
+  "bio": "Retratista y paisajista británico rival de Reynolds. Gainsborough combinó elegancia aristocrática con pincelada ligera y paisajes poéticos que acercaron el retrato inglés al sentimiento romántico.",
+  "paintings": [
+    {
+      "id": "gainsborough-william-pitt",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Thomas_Gainsborough_-_William_Pitt_-_Google_Art_Project.jpg",
+      "title": "William Pitt",
+      "year": 1789,
+      "description": "Retrato del estadista británico con gesto enérgico y fondo de tormenta simbólica. Gainsborough une política y carácter psicológico en clave romántica.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "gainsborough-ninos-marsham",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Thomas_Gainsborough_-_The_Marsham_Children_-_Google_Art_Project.jpg",
+      "title": "Los niños Marsham",
+      "year": 1787,
+      "description": "Retrato infantil en un paisaje campestre con ternura y naturalismo. Gainsborough captura la espontaneidad juvenil con pincelada luminosa.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "gainsborough-paisaje-lechera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Thomas_Gainsborough_-_Landscape_with_Milkmaid_-_Google_Art_Project.jpg",
+      "title": "Paisaje con lechera",
+      "year": 1786,
+      "description": "Campesina y ganado en un paisaje veraniego de atmósfera suave. La escena idealiza la vida rural inglesa con poesía y fluidez pictórica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "gainsborough-mary-heberden",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Thomas_Gainsborough_-_Mary_Heberden_-_Google_Art_Project.jpg",
+      "title": "Mary Heberden",
+      "year": 1764,
+      "description": "Retrato femenino de gran delicadeza con sedas claras y mirada serena. Gainsborough demuestra su dominio del retrato íntimo rococó tardío.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "gainsborough-paisaje-suffolk",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Thomas_Gainsborough_-_Landscape_in_Suffolk_-_Google_Art_Project.jpg",
+      "title": "Paisaje en Suffolk",
+      "year": 1748,
+      "description": "Vista campestre de su tierra natal con árboles, camino y cielo abierto. Obra temprana que anticipa su poética del paisaje británico.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "gainsborough-rev-gainsborough",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Thomas_Gainsborough_-_The_Rev._Humphry_Gainsborough_-_Google_Art_Project.jpg",
+      "title": "El reverendo Humphry Gainsborough",
+      "year": 1770,
+      "description": "Retrato del hermano del artista con gesto reflexivo y fondo paisajístico. Gainsborough combina intimidad familiar y elegancia británica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "gainsborough-mary-linley",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Gainsborough%2C_Thomas_-_Thomas_Linley_the_elder_-_Google_Art_Project.jpg",
+      "title": "Thomas Linley el Viejo",
+      "year": 1771,
+      "description": "Retrato del compositor con elegancia musical y fondo paisajístico. Gainsborough captura la cultura artística británica con pincelada luminosa.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "gainsborough-ganado-paisaje",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Thomas_Gainsborough_-_Landscape_with_Cattle_-_Google_Art_Project.jpg",
+      "title": "Paisaje con ganado",
+      "year": 1773,
+      "description": "Vacas y pastores en un prado de atmósfera suave y cielo cambiante. Gainsborough idealiza la campiña inglesa con pincelada ligera.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

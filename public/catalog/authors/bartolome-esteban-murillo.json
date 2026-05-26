@@ -61,6 +61,50 @@
         "width": 112,
         "height": 168
       }
+    },
+    {
+      "id": "murillo-adoracion-magos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Bartolom%C3%A9_Esteban_Murillo_-_Adoration_of_the_Magi_-_Google_Art_Project.jpg",
+      "title": "Adoración de los Magos",
+      "year": 1660,
+      "description": "Los Reyes Magos adoran al Niño en un establo iluminado por luz celestial. Murillo une devoción barroca y ternura popular en una escena de calidez dorada.",
+      "dimensions": {
+        "width": 333,
+        "height": 224
+      }
+    },
+    {
+      "id": "murillo-vendedora-flores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Murillo%2C_Bartolom%C3%A9_Est%C3%A9ban_-_The_Flower_Girl_-_Google_Art_Project.jpg",
+      "title": "La vendedora de flores",
+      "year": 1665,
+      "description": "Niña ofrece un cesto de flores con mirada directa y sonrisa espontánea. Murillo eleva el retrato de calle a género poético de gran encanto sevillano.",
+      "dimensions": {
+        "width": 74,
+        "height": 61
+      }
+    },
+    {
+      "id": "murillo-huida-egipto",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Bartolom%C3%A9_Esteban_Murillo_-_The_Flight_into_Egypt_-_Google_Art_Project.jpg",
+      "title": "La huida a Egipto",
+      "year": 1650,
+      "description": "La Sagrada Familia descansa en un paisaje nocturno mientras un ángel les guía. Murillo dramatiza el éxodo con luna, nubes y una intimidad protectora.",
+      "dimensions": {
+        "width": 134,
+        "height": 180
+      }
+    },
+    {
+      "id": "murillo-magdalena",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Bartolom%C3%A9_Esteban_Murillo_-_La_Magdalena_-_Google_Art_Project.jpg",
+      "title": "La Magdalena penitente",
+      "year": 1665,
+      "description": "María Magdalena medita ante un crucifijo en un paisaje sombrío. Murillo une devoción contrarreformista y naturalismo sevillano en una figura de recogimiento.",
+      "dimensions": {
+        "width": 108,
+        "height": 85
+      }
     }
   ]
 }

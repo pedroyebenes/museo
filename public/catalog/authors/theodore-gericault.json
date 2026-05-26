@@ -47,6 +47,61 @@
         "width": 123,
         "height": 92
       }
+    },
+    {
+      "id": "gericault-boxeadores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Th%C3%A9odore_G%C3%A9ricault_-_The_Boxers_-_Google_Art_Project.jpg",
+      "title": "Los boxeadores",
+      "year": 1818,
+      "description": "Dos luchadores se enfrentan en un ring con cuerpos tensos y miradas fijas. Géricault captura la violencia atlética con realismo y energía romántica.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "gericault-caballos-roma",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Th%C3%A9odore_G%C3%A9ricault_-_Riderless_Racers_at_Rome_-_Google_Art_Project.jpg",
+      "title": "Caballos sin jinete en Roma",
+      "year": 1817,
+      "description": "Corceles desbocados en la Campagna romana levantan polvo bajo un cielo amplio. La escena anticipa el interés moderno por el movimiento y la velocidad.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "gericault-anciana-italiana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Th%C3%A9odore_G%C3%A9ricault_-_The_Old_Italian_Woman_-_Google_Art_Project.jpg",
+      "title": "La anciana italiana",
+      "year": 1818,
+      "description": "Retrato de mujer mayor con mirada directa y manos enlazadas. Géricault sustituye la idealización académica por una presencia humana intensa.",
+      "dimensions": {
+        "width": 65,
+        "height": 53
+      }
+    },
+    {
+      "id": "gericault-satyr-nymph",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Th%C3%A9odore_G%C3%A9ricault_-_Satyr_and_Nymph_-_Google_Art_Project.jpg",
+      "title": "Sátiro y ninfa",
+      "year": 1818,
+      "description": "Pareja mítica abrazada en un paisaje clásico de gran sensualidad. Géricault aborda el tema antiguo con energía romántica y anatomía expresiva.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "gericault-retrato-kleber",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Th%C3%A9odore_G%C3%A9ricault_-_Portrait_of_Kleber_-_Google_Art_Project.jpg",
+      "title": "Retrato de Kleber",
+      "year": 1820,
+      "description": "El general Kleber posa con uniforme y mirada penetrante en un retrato de corte napoleónica. Géricault demuestra su maestría en el retrato antes de la balsa de la Medusa.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
     }
   ]
 }

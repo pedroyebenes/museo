@@ -47,6 +47,39 @@
         "width": 24,
         "height": 19
       }
+    },
+    {
+      "id": "durero-autorretrato-26",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Albrecht_D%C3%BCrer_-_Self-Portrait_at_26_-_Google_Art_Project.jpg",
+      "title": "Autorretrato a los veintiséis años",
+      "year": 1498,
+      "description": "Durero se presenta con melena y ropaje elegante ante un paisaje alpino. Autorretrato temprano que afirma la dignidad del artista renacentista.",
+      "dimensions": {
+        "width": 52,
+        "height": 39
+      }
+    },
+    {
+      "id": "durero-oracion-mano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Albrecht_D%C3%BCrer_-_Praying_Hands_-_Google_Art_Project.jpg",
+      "title": "Manos en oración",
+      "year": 1508,
+      "description": "Estudio de manos entrelazadas en oración, preparatorio para un retablo. Símbolo universal de fe y uno de los dibujos más reproducidos del arte occidental.",
+      "dimensions": {
+        "width": 29,
+        "height": 20
+      }
+    },
+    {
+      "id": "durero-cuatro-apostoles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Albrecht_D%C3%BCrer_-_The_Four_Apostles_-_Google_Art_Project.jpg",
+      "title": "Los cuatro apóstoles",
+      "year": 1526,
+      "description": "San Juan, Pedro, Marcos y Pablo en dos paneles monumentales. Obra testamentaria donde Durero expresa su fe con gravedad y precisión nórdica.",
+      "dimensions": {
+        "width": 215,
+        "height": 76
+      }
     }
   ]
 }

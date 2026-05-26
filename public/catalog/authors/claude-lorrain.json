@@ -1,0 +1,66 @@
+{
+  "id": "claude-lorrain",
+  "name": "Claude Lorrain",
+  "category": "barroco",
+  "fullName": "Claude Gellée, llamado Le Lorrain",
+  "years": "c. 1600 – 1682",
+  "origin": "Chamagne, Ducado de Lorena",
+  "bio": "Pintor frances afincado en Roma, creador del paisaje clásico ideal. Claude organizó la naturaleza según la luz dorada del amanecer y el ocaso, influyendo en el vedutismo, el romanticismo y la percepción europea del paisaje como espacio contemplativo.",
+  "paintings": [
+    {
+      "id": "claude-puerto-clasico",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Claude_-_Classical_Seaport_at_Sunset_-_Google_Art_Project.jpg",
+      "title": "Puerto clásico al atardecer",
+      "year": 1644,
+      "description": "Embarcaciones y arquitectura antigua se recortan contra un sol poniente. Claude convierte el puerto mediterráneo en escena de paz clásica bañada por luz dorada.",
+      "dimensions": {
+        "width": 103,
+        "height": 137
+      }
+    },
+    {
+      "id": "claude-columna-paisaje",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Claude_-_Landscape_with_a_Column_and_Figures_-_Google_Art_Project.jpg",
+      "title": "Paisaje con columna y figuras",
+      "year": 1645,
+      "description": "Pastores descansan junto a una columna clásica en un valle iluminado. Obra típica donde la arquitectura antigua ordena el paisaje ideal.",
+      "dimensions": {
+        "width": 103,
+        "height": 137
+      }
+    },
+    {
+      "id": "claude-pastores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Claude_Lorrain_-_Landscape_with_Shepherds_-_Google_Art_Project.jpg",
+      "title": "Paisaje con pastores",
+      "year": 1630,
+      "description": "Pastores y rebaño descansan en un valle de árboles altos y cielo claro. Obra temprana que muestra la búsqueda de Claude por la armonía entre figura y naturaleza.",
+      "dimensions": {
+        "width": 97,
+        "height": 130
+      }
+    },
+    {
+      "id": "claude-embarque-sheba",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Claude_Lorrain_-_The_Embarkation_of_the_Queen_of_Sheba_-_Google_Art_Project.jpg",
+      "title": "El embarque de la reina de Saba",
+      "year": 1648,
+      "description": "La reina parte hacia Jerusalén en un puerto de arquitectura clásica. Claude narra el episodio bíblico como ceremonia luminosa junto al mar.",
+      "dimensions": {
+        "width": 149,
+        "height": 196
+      }
+    },
+    {
+      "id": "claude-ursula",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Claude_Lorrain_-_Seaport_with_the_Embarkation_of_Saint_Ursula_-_Google_Art_Project.jpg",
+      "title": "Puerto con el embarque de santa Úrsula",
+      "year": 1641,
+      "description": "Santa Úrsula y sus doncellas zarpan en un puerto bañado por la luz matinal. Paisaje histórico donde la atmósfera prevalece sobre la acción.",
+      "dimensions": {
+        "width": 113,
+        "height": 149
+      }
+    }
+  ]
+}

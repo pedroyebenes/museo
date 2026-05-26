@@ -1,0 +1,187 @@
+{
+  "id": "georgia-o-keeffe",
+  "name": "Georgia O'Keeffe",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Georgia Totto O'Keeffe",
+  "years": "1887 – 1986",
+  "origin": "Sun Prairie, Wisconsin, EE. UU.",
+  "bio": "Pintora americana de flores monumentales, paisajes del sudoeste y cráneos en el desierto. O'Keeffe amplió la modernidad americana con formas orgánicas, color intenso y una visión casi mística de la naturaleza.",
+  "paintings": [
+    {
+      "id": "okeeffe-jimson",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Georgia_O'Keeffe_-_Jimson_Weed_-_Google_Art_Project.jpg",
+      "title": "Estramonio",
+      "year": 1936,
+      "description": "Flores blancas ampliadas hasta lo abstracto. O'Keeffe convierte botánica en arquitectura sensual y moderna.",
+      "dimensions": {
+        "width": 178,
+        "height": 212
+      }
+    },
+    {
+      "id": "okeeffe-negro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Georgia_O'Keeffe_-_Black_Iris_-_Google_Art_Project.jpg",
+      "title": "Iris negro",
+      "year": 1926,
+      "description": "Pétalos oscuros en primer plano de detalle extremo. Flor como paisaje íntimo y forma moderna.",
+      "dimensions": {
+        "width": 91,
+        "height": 75
+      }
+    },
+    {
+      "id": "okeeffe-cielo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Georgia_O'Keeffe_-_Sky_Above_Clouds_IV_-_Google_Art_Project.jpg",
+      "title": "Cielo sobre nubes IV",
+      "year": 1965,
+      "description": "Nubes desde avión en composición casi abstracta. O'Keeffe pinta espacio y vuelo en escala monumental.",
+      "dimensions": {
+        "width": 244,
+        "height": 305
+      }
+    },
+    {
+      "id": "okeeffe-cuernos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Georgia_O'Keeffe_-_Cow's_Skull_-_Google_Art_Project.jpg",
+      "title": "Cráneo de vaca",
+      "year": 1930,
+      "description": "Cráneo y flores del desierto de Nuevo México. Símbolo de fragilidad y permanencia en el paisaje americano.",
+      "dimensions": {
+        "width": 76,
+        "height": 91
+      }
+    },
+    {
+      "id": "okeeffe-petunias",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Georgia_O'Keeffe_-_Petunias_-_Google_Art_Project.jpg",
+      "title": "Petunias",
+      "year": 1925,
+      "description": "Flores rosadas en primer plano de color puro. O'Keeffe acerca lo diminuto a lo sublime.",
+      "dimensions": {
+        "width": 91,
+        "height": 76
+      }
+    },
+    {
+      "id": "okeeffe-ranchos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Georgia_O'Keeffe_-_Ranchos_Church%2C_New_Mexico_-_Google_Art_Project.jpg",
+      "title": "Iglesia de Ranchos",
+      "year": 1930,
+      "description": "Capilla adobe de Taos en geometría simplificada. Paisaje espiritual del sudoeste americano.",
+      "dimensions": {
+        "width": 61,
+        "height": 76
+      }
+    },
+    {
+      "id": "okeeffe-rojo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Georgia_O'Keeffe_-_Red_Hills_with_White_Flower_-_Google_Art_Project.jpg",
+      "title": "Colinas rojas con flor blanca",
+      "year": 1937,
+      "description": "Colinas de Nuevo México y flor en contraste cromático. O'Keeffe une paisaje y detalle botánico.",
+      "dimensions": {
+        "width": 51,
+        "height": 40
+      }
+    },
+    {
+      "id": "okeeffe-llama",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Georgia_O'Keeffe_-_Calla_Lilies_on_Red_-_Google_Art_Project.jpg",
+      "title": "Calas sobre rojo",
+      "year": 1928,
+      "description": "Flores blancas sobre fondo rojo intenso. Modernidad americana de forma limpia y sensual.",
+      "dimensions": {
+        "width": 51,
+        "height": 40
+      }
+    },
+    {
+      "id": "okeeffe-pedernal",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Georgia_O'Keeffe_-_Pelvis_with_the_Distance_-_Google_Art_Project.jpg",
+      "title": "Pelvis con la distancia",
+      "year": 1943,
+      "description": "Hueso enmarca paisaje lejano del desierto. O'Keeffe convierte restos en ventana al infinito.",
+      "dimensions": {
+        "width": 91,
+        "height": 76
+      }
+    },
+    {
+      "id": "okeeffe-train",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Georgia_O'Keeffe_-_Train_at_Night_in_the_Desert_-_Google_Art_Project.jpg",
+      "title": "Tren de noche en el desierto",
+      "year": 1916,
+      "description": "Locomotora avanza en acuarela temprana de atmósfera moderna. Etapa inicial de su mirada abstracta.",
+      "dimensions": {
+        "width": 30,
+        "height": 23
+      }
+    },
+    {
+      "id": "okeeffe-canon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Georgia_O'Keeffe_-_The_Black_Place_-_Google_Art_Project.jpg",
+      "title": "El lugar negro",
+      "year": 1944,
+      "description": "Paisaje oscuro de colinas de Nuevo México. O'Keeffe pinta tierra como forma casi abstracta.",
+      "dimensions": {
+        "width": 61,
+        "height": 76
+      }
+    },
+    {
+      "id": "okeeffe-flor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Georgia_O'Keeffe_-_Oriental_Poppies_-_Google_Art_Project.jpg",
+      "title": "Amapolas orientales",
+      "year": 1928,
+      "description": "Pétalos rojos y naranjas ampliados a escala monumental. Color y forma como emblema del modernismo americano.",
+      "dimensions": {
+        "width": 76,
+        "height": 91
+      }
+    },
+    {
+      "id": "okeeffe-cielo-ii",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Georgia_O'Keeffe_-_Blue%2C_Green%2C_and_Brown_-_Google_Art_Project.jpg",
+      "title": "Azul, verde y marrón",
+      "year": 1916,
+      "description": "Abstracción temprana de formas orgánicas en acuarela. O'Keeffe explora color antes de las flores monumentales.",
+      "dimensions": {
+        "width": 30,
+        "height": 23
+      }
+    },
+    {
+      "id": "okeeffe-casa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_O'Keeffe_-_Ghost_Ranch_-_Google_Art_Project.jpg",
+      "title": "Ghost Ranch",
+      "year": 1930,
+      "description": "Acantilados rojos del rancho de Nuevo México. Paisaje personal que se volvió icono de su universo visual.",
+      "dimensions": {
+        "width": 61,
+        "height": 76
+      }
+    },
+    {
+      "id": "okeeffe-ram",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Georgia_O'Keeffe_-_Ram's_Head%2C_White_Hollyhock-Hills_-_Google_Art_Project.jpg",
+      "title": "Cabeza de carnero",
+      "year": 1935,
+      "description": "Cráneo flotante sobre colinas y malvarrosa blanca. Síntesis de muerte, belleza y desierto americano.",
+      "dimensions": {
+        "width": 76,
+        "height": 91
+      }
+    },
+    {
+      "id": "okeeffe-serie",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Georgia_O'Keeffe_-_From_the_Faraway%2C_Nearby_-_Google_Art_Project.jpg",
+      "title": "Desde lo lejano, cercano",
+      "year": 1937,
+      "description": "Cráneo y montaña Pedernal en composición mística. O'Keeffe eleva el objeto encontrado a símbolo espiritual.",
+      "dimensions": {
+        "width": 76,
+        "height": 91
+      }
+    }
+  ]
+}

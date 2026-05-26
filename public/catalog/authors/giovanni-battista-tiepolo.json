@@ -1,0 +1,66 @@
+{
+  "id": "giovanni-battista-tiepolo",
+  "name": "Giovanni Battista Tiepolo",
+  "category": "barroco",
+  "fullName": "Giovanni Battista Tiepolo",
+  "years": "1696 – 1770",
+  "origin": "Venecia, República de Venecia",
+  "bio": "Último gran maestro del Settecento veneciano. Tiepolo cubrió palacios y iglesias de frescos aéreos donde la arquitectura se abre al cielo y figuras mitológicas y alegóricas flotan en una luz dorada de teatralidad barroca tardía.",
+  "paintings": [
+    {
+      "id": "tiepolo-rosario",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Giovanni_Battista_Tiepolo_-_The_Institution_of_the_Rosary_-_Google_Art_Project.jpg",
+      "title": "La institución del Rosario",
+      "year": 1739,
+      "description": "La Virgen entrega el rosario a santo Domingo entre nubes de ángeles. Tiepolo despliega su frescura cromática y composiciones abiertas al cielo.",
+      "dimensions": {
+        "width": 520,
+        "height": 450
+      }
+    },
+    {
+      "id": "tiepolo-moises",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Giovanni_Battista_Tiepolo_-_The_Finding_of_Moses_-_Google_Art_Project.jpg",
+      "title": "El hallazgo de Moisés",
+      "year": 1740,
+      "description": "La hija del faraón descubre al infante en la cesta entre el Nilo y la arquitectura clásica. Tiepolo narra el episodio con elegancia teatral y color veneciano.",
+      "dimensions": {
+        "width": 135,
+        "height": 120
+      }
+    },
+    {
+      "id": "tiepolo-banquete-cleopatra",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Giovanni_Battista_Tiepolo_-_The_Banquet_of_Cleopatra_-_Google_Art_Project.jpg",
+      "title": "El banquete de Cleopatra",
+      "year": 1744,
+      "description": "Cleopatra disuelve una perla en vinagre ante Antonio. Escena de opulencia orientalisante pintada con pincelada ligera y humor narrativo.",
+      "dimensions": {
+        "width": 250,
+        "height": 300
+      }
+    },
+    {
+      "id": "tiepolo-apolo-dafne",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Giovanni_Battista_Tiepolo_-_Apollo_and_Daphne_-_Google_Art_Project.jpg",
+      "title": "Apolo y Dafne",
+      "year": 1755,
+      "description": "Apolo persigue a la ninfa que comienza su transformación en laurel. Tiepolo captura el instante del mito con arabescos de color y figuras etéreas.",
+      "dimensions": {
+        "width": 96,
+        "height": 79
+      }
+    },
+    {
+      "id": "tiepolo-inmaculada",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Giovanni_Battista_Tiepolo_-_The_Immaculate_Conception_-_Google_Art_Project.jpg",
+      "title": "La Inmaculada Concepción",
+      "year": 1767,
+      "description": "María se eleva entre nubes y símbolos marianos en un cielo de azul pálido. Obra tardía de devoción luminosa y movimiento ascendente.",
+      "dimensions": {
+        "width": 400,
+        "height": 200
+      }
+    }
+  ]
+}

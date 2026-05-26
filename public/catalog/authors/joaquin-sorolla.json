@@ -83,6 +83,94 @@
         "width": 205,
         "height": 200
       }
+    },
+    {
+      "id": "sorolla-despues-bano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Joaqu%C3%ADn_Sorolla_y_Bastida_-_After_Bathing_-_Google_Art_Project.jpg",
+      "title": "Después del baño",
+      "year": 1919,
+      "description": "Niño envuelto en toalla sobre la arena mientras el mar resplandece detrás. Intimidad veraniega captada con empaste suelto y reflejos de agua casi abstractos.",
+      "dimensions": {
+        "width": 130,
+        "height": 110
+      }
+    },
+    {
+      "id": "sorolla-madre",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Mother_-_Google_Art_Project.jpg",
+      "title": "Madre",
+      "year": 1895,
+      "description": "Madre abraza a su hijo en la orilla del mar con gesto protector y mirada serena. Sorolla une intimidad maternal y luminismo mediterráneo en una escena de ternura contenida.",
+      "dimensions": {
+        "width": 200,
+        "height": 150
+      }
+    },
+    {
+      "id": "sorolla-jardines-casa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Joaqu%C3%ADn_Sorolla_y_Bastida_-_The_Gardens_at_the_Sorolla_Family_House_-_Google_Art_Project.jpg",
+      "title": "Los jardines de la casa familiar Sorolla",
+      "year": 1920,
+      "description": "Jardín de la casa-museo madrileña con fuentes, azulejos y vegetación exuberante. Sorolla pinta su refugio personal como paraíso de luz y color mediterráneo.",
+      "dimensions": {
+        "width": 250,
+        "height": 200
+      }
+    },
+    {
+      "id": "sorolla-barcas-playa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Joaqu%C3%ADn_Sorolla_-_Barcas_en_la_Playa%2C_Valencia_(1894).jpg",
+      "title": "Barcas en la playa, Valencia",
+      "year": 1894,
+      "description": "Barcas varadas en la arena valenciana bajo un sol intenso. Paisaje luminista donde Sorolla captura el brillo del mar y la vida pesquera del Levante español.",
+      "dimensions": {
+        "width": 94,
+        "height": 60
+      }
+    },
+    {
+      "id": "sorolla-buscando-mariscos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Joaqu%C3%ADn_Sorolla_-_Buscando_Mariscos%2C_Playa_de_Valencia.jpg",
+      "title": "Buscando mariscos, playa de Valencia",
+      "year": 1907,
+      "description": "Figuras inclinadas recogen mariscos en la orilla mientras la luz ciega sobre el agua. Escena de labor cotidiana elevada a poema de sol, sal y movimiento.",
+      "dimensions": {
+        "width": 95,
+        "height": 60
+      }
+    },
+    {
+      "id": "sorolla-corriendo-playa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Running_on_the_Beach_-_Google_Art_Project.jpg",
+      "title": "Corriendo por la playa",
+      "year": 1908,
+      "description": "Niños corren desnudos hacia el mar en un estallido de luz y movimiento. Una de las escenas más celebradas del luminismo sorollesco, donde la infancia y el Mediterráneo se funden.",
+      "dimensions": {
+        "width": 200,
+        "height": 150
+      }
+    },
+    {
+      "id": "sorolla-pescadores-valencia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Fishermen_from_Valencia_-_Google_Art_Project.jpg",
+      "title": "Pescadores de Valencia",
+      "year": 1908,
+      "description": "Pescadores valencianos con redes y barcas bajo la luz meridiana. Sorolla dignifica el trabajo manual con color puro y composición dinámica típica de su madurez luminista.",
+      "dimensions": {
+        "width": 150,
+        "height": 200
+      }
+    },
+    {
+      "id": "sorolla-cristianos-marruecos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Christians_in_Morocco_-_Google_Art_Project.jpg",
+      "title": "Cristianos en Marruecos",
+      "year": 1910,
+      "description": "Prisioneros cristianos encadenados avanzan por un paisaje marroquí. Sorolla recupera el tono histórico y humanitario de su etapa social con color dramático y composición cinematográfica.",
+      "dimensions": {
+        "width": 205,
+        "height": 300
+      }
     }
   ]
 }

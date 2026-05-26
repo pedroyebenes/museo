@@ -50,6 +50,61 @@
         "width": 670,
         "height": 450
       }
+    },
+    {
+      "id": "rafael-alba-madonna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Raphael_-_The_Alba_Madonna_-_Google_Art_Project.jpg",
+      "title": "La Madonna del alba",
+      "year": 1510,
+      "description": "Tondo en el que la Virgen, el Niño y san Juan forman una pirámide de ternura sobre un fondo paisajístico. Rafael condensa su ideal de armonía clásica en una de las madonnas más equilibradas del Alto Renacimiento.",
+      "dimensions": {
+        "width": 94.5,
+        "height": 94.5
+      }
+    },
+    {
+      "id": "rafael-madonna-cardellino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Raffaello_Sanzio_-_Madonna_del_Cardellino_-_Google_Art_Project.jpg",
+      "title": "Madonna del cardellino",
+      "year": 1506,
+      "description": "María entronizada sostiene al Niño mientras san Juan le ofrece un pinzón. La escena une devoción florentina y paisaje umbrio en una composición de claridad serena.",
+      "dimensions": {
+        "width": 107,
+        "height": 77
+      }
+    },
+    {
+      "id": "rafael-transfiguracion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Raphael_-_The_Transfiguration_-_Google_Art_Project.jpg",
+      "title": "La Transfiguración",
+      "year": 1520,
+      "description": "Última gran obra de Rafael, alterna la gloria de Cristo transfigurado con el milagro del lunático poseso abajo. Resume la síntesis teológica y visual del artista en su madurez.",
+      "dimensions": {
+        "width": 405,
+        "height": 278
+      }
+    },
+    {
+      "id": "rafael-bindo-altoviti",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Raphael_-_Bindo_Altoviti_-_Google_Art_Project.jpg",
+      "title": "Retrato de Bindo Altoviti",
+      "year": 1514,
+      "description": "Joven banquero florentino posa con elegancia sobre fondo azul. Rafael combina la psicología del retrato con la suavidad veneciana del color en una obra de exquisita refinación.",
+      "dimensions": {
+        "width": 60,
+        "height": 44
+      }
+    },
+    {
+      "id": "rafael-madonna-prado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Raphael_-_Madonna_in_the_Meadow_-_Google_Art_Project.jpg",
+      "title": "Madonna del prado",
+      "year": 1506,
+      "description": "La Virgen y el Niño en un prado con san Juan Bautista. Rafael equilibra ternura maternal y paisaje luminoso en una de sus madonnas más celebradas.",
+      "dimensions": {
+        "width": 113,
+        "height": 88
+      }
     }
   ]
 }

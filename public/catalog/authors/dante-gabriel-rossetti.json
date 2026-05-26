@@ -1,0 +1,99 @@
+{
+  "id": "dante-gabriel-rossetti",
+  "name": "Dante Gabriel Rossetti",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Dante Gabriel Rossetti",
+  "years": "1828 – 1882",
+  "origin": "Londres, Inglaterra",
+  "bio": "Poeta y pintor fundador de la Hermandad Prerrafaelita. Rossetti mezcló medievalismo, sensualidad y simbolismo literario en retratos femeninos de intensa carga emocional.",
+  "paintings": [
+    {
+      "id": "rossetti-ensueno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Dante_Gabriel_Rossetti_-_The_Day_Dream_-_Google_Art_Project.jpg",
+      "title": "El ensueño",
+      "year": 1880,
+      "description": "Mujer apoyada en un roble lee un volumen de hojas verdes. La escena celebra la ensoñación literaria y la belleza femenina idealizada.",
+      "dimensions": {
+        "width": 92,
+        "height": 78
+      }
+    },
+    {
+      "id": "rossetti-proserpina",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Dante_Gabriel_Rossetti_-_Proserpine_-_Google_Art_Project.jpg",
+      "title": "Proserpina",
+      "year": 1874,
+      "description": "Diosa del inframundo sostiene una granada en un jardín sombrío. El retrato simbolista condensa captividad, deseo y melancolía.",
+      "dimensions": {
+        "width": 61,
+        "height": 61
+      }
+    },
+    {
+      "id": "rossetti-ecce-ancilla",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Dante_Gabriel_Rossetti_-_Ecce_Ancilla_Domini!_-_Google_Art_Project.jpg",
+      "title": "He aquí la sierva del Señor",
+      "year": 1850,
+      "description": "Anunciación representada con rigor medieval y paleta intensa. Rossetti funda la estética prerrafaelita en devoción, detalle y simbolismo.",
+      "dimensions": {
+        "width": 73,
+        "height": 61
+      }
+    },
+    {
+      "id": "rossetti-laboratorio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Dante_Gabriel_Rossetti_-_The_Laboratory_-_Google_Art_Project.jpg",
+      "title": "El laboratorio",
+      "year": 1849,
+      "description": "Mujer prepara un veneno en un laboratorio alquímico con gesto tenso. La escena une literatura, venganza y erotismo en clave prerrafaelita.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "rossetti-dos-amantes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Dante_Gabriel_Rossetti_-_Two_Lovers_-_Google_Art_Project.jpg",
+      "title": "Dos amantes",
+      "year": 1865,
+      "description": "Pareja abrazada en un entorno medieval de gran intimidad emocional. Rossetti funde amor, poesía y decorativismo simbolista.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "rossetti-pregunta-esfinge",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Dante_Gabriel_Rossetti_-_The_Question%2C_the_Sphinx_-_Google_Art_Project.jpg",
+      "title": "La pregunta: la esfinge",
+      "year": 1870,
+      "description": "Figura femenina enigmática posa ante un fondo simbolista de gran misterio. Rossetti explora enigma, deseo y literatura visual.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "rossetti-retrato-fanny",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Dante_Gabriel_Rossetti_-_Portrait_of_Fanny_Cornforth_-_Google_Art_Project.jpg",
+      "title": "Retrato de Fanny Cornforth",
+      "year": 1860,
+      "description": "Musa y modelo posa con mirada directa y cabello abundante. Rossetti convierte el retrato íntimo en icono prerrafaelita de sensualidad.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "rossetti-cuerno-amor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Dante_Gabriel_Rossetti_-_The_Loving_Cup_-_Compositional_Study_-_Google_Art_Project.jpg",
+      "title": "La copa del amor",
+      "year": 1870,
+      "description": "Estudio compositivo de figuras medievales en escena de cortejo ritual. Rossetti prepara la iconografía literaria con minuciosidad decorativa.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

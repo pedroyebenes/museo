@@ -1,0 +1,198 @@
+{
+  "id": "gustave-moreau",
+  "name": "Gustave Moreau",
+  "category": "simbolismo-modernismo-naif",
+  "fullName": "Gustave Moreau",
+  "years": "1826 – 1898",
+  "origin": "París, Francia",
+  "bio": "Maestro del simbolismo francés tardío. Sus lienzos de mito, religión y fantasía combinan miniaturismo joyero, arquitecturas oníricas y un erotismo intelectual que influyó en toda una generación, desde Redon hasta los surrealistas.",
+  "paintings": [
+    {
+      "id": "moreau-jupiter-semele",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Gustave_Moreau_-_Jupiter_and_Semele_-_Google_Art_Project.jpg",
+      "title": "Júpiter y Semele",
+      "year": 1895,
+      "description": "El dios se revela a Semele en un torbellino de fuego y ornamentación. Moreau condensa mito, pasión y destrucción en un universo simbolista abrumador.",
+      "dimensions": {
+        "width": 213,
+        "height": 118
+      }
+    },
+    {
+      "id": "moreau-aparicion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Gustave_Moreau_-_The_Apparition_-_Google_Art_Project.jpg",
+      "title": "La aparición",
+      "year": 1876,
+      "description": "Salomé ve surgir la cabeza del Bautista en un palacio fantasmagórico. Obra cumbre del simbolismo que funde erotismo, misterio y preciosismo.",
+      "dimensions": {
+        "width": 106,
+        "height": 72
+      }
+    },
+    {
+      "id": "moreau-salome",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Gustave_Moreau_-_Salome_Dancing_before_Herod_-_Google_Art_Project.jpg",
+      "title": "Salomé danzando ante Herodes",
+      "year": 1876,
+      "description": "La bailarina gira ante el trono mientras la aparición se insinúa al fondo. Moreau multiplica detalles arquitectónicos y joyas en escena teatral.",
+      "dimensions": {
+        "width": 92,
+        "height": 143
+      }
+    },
+    {
+      "id": "moreau-galatea",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Gustave_Moreau_-_Galatea_-_Google_Art_Project.jpg",
+      "title": "Galatea",
+      "year": 1880,
+      "description": "La ninfa emerge del mar ante un paisaje mineral y arquitectónico. Moreau transforma el mito clásico en visión interior de belleza inaccesible.",
+      "dimensions": {
+        "width": 80,
+        "height": 100
+      }
+    },
+    {
+      "id": "moreau-edipo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Gustave_Moreau_-_Oedipus_and_the_Sphinx_-_Google_Art_Project.jpg",
+      "title": "Edipo y la esfinge",
+      "year": 1864,
+      "description": "Enfrentamiento mortal entre héroe y criatura en un desierto simbólico. Moreau convierte la escena griega en meditación sobre enigma y destino.",
+      "dimensions": {
+        "width": 206,
+        "height": 105
+      }
+    },
+    {
+      "id": "moreau-prometeo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Gustave_Moreau_-_Prometheus_-_Google_Art_Project.jpg",
+      "title": "Prometeo",
+      "year": 1868,
+      "description": "Titán encadenado ante águila y rocas de un paisaje fantástico. Moreau eleva la rebeldía mítica con color rico y figuras escultóricas.",
+      "dimensions": {
+        "width": 43,
+        "height": 35
+      }
+    },
+    {
+      "id": "moreau-unicornios",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Gustave_Moreau_-_The_Unicorns_-_Google_Art_Project.jpg",
+      "title": "Los unicornios",
+      "year": 1885,
+      "description": "Criaturas legendarias en un claro mítico de vegetación y luz dorada. Moreau pinta la fantasía medieval con acabado de miniatura ampliada.",
+      "dimensions": {
+        "width": 115,
+        "height": 90
+      }
+    },
+    {
+      "id": "moreau-hércules",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Gustave_Moreau_-_Hercules_and_the_Lernaean_Hydra_-_Google_Art_Project.jpg",
+      "title": "Hércules y la hidra de Lerna",
+      "year": 1876,
+      "description": "Héroe combate la hidra en un pantano de formas serpentinas. Moreau dramatiza el mito con detalle joyero y atmósfera de pesadilla clásica.",
+      "dimensions": {
+        "width": 179,
+        "height": 154
+      }
+    },
+    {
+      "id": "moreau-orfeo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
+      "title": "Orfeo",
+      "year": 1865,
+      "description": "Cabeza del poeta flotando en un paisaje de ruinas y vegetación. Moreau anticipa visiones surrealistas desde la tradición simbolista francesa.",
+      "dimensions": {
+        "width": 154,
+        "height": 100
+      }
+    },
+    {
+      "id": "moreau-musa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Gustave_Moreau_-_The_Muse_Leaving_her_Poet_-_Google_Art_Project.jpg",
+      "title": "La musa abandona a su poeta",
+      "year": 1864,
+      "description": "Figura alada se aleja de un poeta postrado entre arquitecturas oníricas. Moreau personifica inspiración y abandono en clave alegórica.",
+      "dimensions": {
+        "width": 88,
+        "height": 60
+      }
+    },
+    {
+      "id": "moreau-dios-marcial",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Gustave_Moreau_-_Jupiter_and_Europa_-_Google_Art_Project.jpg",
+      "title": "Júpiter y Europa",
+      "year": 1869,
+      "description": "El dios, transformado, rapta a Europa en un mar de detalles ornamentales. Moreau funde erotismo mítico y fantasía arquitectónica.",
+      "dimensions": {
+        "width": 75,
+        "height": 95
+      }
+    },
+    {
+      "id": "moreau-lot",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Gustave_Moreau_-_Lot_and_His_Daughters_-_Google_Art_Project.jpg",
+      "title": "Lot y sus hijas",
+      "year": 1876,
+      "description": "Escena bíblica en caverna de rocas fantasmagóricas. Moreau aborda el mito con lujo decorativo y ambigüedad moral propia del fin de siglo.",
+      "dimensions": {
+        "width": 103,
+        "height": 82
+      }
+    },
+    {
+      "id": "moreau-chimera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Gustave_Moreau_-_The_Chimeras_-_Google_Art_Project.jpg",
+      "title": "Las quimeras",
+      "year": 1884,
+      "description": "Criaturas híbridas habitan un acantilado de ensueño. Moreau explora lo monstruoso y lo fabuloso con minuciosidad casi arqueológica.",
+      "dimensions": {
+        "width": 125,
+        "height": 90
+      }
+    },
+    {
+      "id": "moreau-baco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Gustave_Moreau_-_Bacchus_and_the_Tiger_-_Google_Art_Project.jpg",
+      "title": "Baco y el tigre",
+      "year": 1865,
+      "description": "Dios del vino aparece montado en felino entre vegetación exótica. Moreau mezcla orientalismo simbolista y violencia mítica contenida.",
+      "dimensions": {
+        "width": 90,
+        "height": 60
+      }
+    },
+    {
+      "id": "moreau-pieta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Gustave_Moreau_-_Pieta_-_Google_Art_Project.jpg",
+      "title": "Piedad",
+      "year": 1876,
+      "description": "Cristo muerto sostenido por la Virgen en un paisaje de roca y luz irreal. Moreau reinterpreta la escena sagrada con lirismo decorativo.",
+      "dimensions": {
+        "width": 103,
+        "height": 82
+      }
+    },
+    {
+      "id": "moreau-sirenas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Gustave_Moreau_-_The_Sirens_-_Google_Art_Project.jpg",
+      "title": "Las sirenas",
+      "year": 1882,
+      "description": "Criaturas marinas cantan ante un navegante en aguas de fantasía. Moreau convierte el mito en poema visual de seducción y muerte.",
+      "dimensions": {
+        "width": 95,
+        "height": 75
+      }
+    },
+    {
+      "id": "moreau-caballo-pegaso",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Gustave_Moreau_-_Pegasus_and_the_Muse_-_Google_Art_Project.jpg",
+      "title": "Pegaso y la musa",
+      "year": 1889,
+      "description": "Caballo alado y musa habitan un paisaje clásico de ensueño. Moreau celebra la inspiración artística con preciosismo simbolista.",
+      "dimensions": {
+        "width": 80,
+        "height": 60
+      }
+    }
+  ]
+}

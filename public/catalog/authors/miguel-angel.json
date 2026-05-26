@@ -83,6 +83,28 @@
         "width": 380,
         "height": 350
       }
+    },
+    {
+      "id": "miguel-angel-tormento-san-antonio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Michelangelo_Buonarroti_-_The_Torment_of_Saint_Anthony_-_Google_Art_Project.jpg",
+      "title": "El tormento de san Antonio Abad",
+      "year": 1487,
+      "description": "Obra juvenil en la que demonios arrastran al eremita por los aires. Miguel Ángel demuestra ya su dominio del cuerpo en movimiento y del drama espiritual.",
+      "dimensions": {
+        "width": 47,
+        "height": 35
+      }
+    },
+    {
+      "id": "miguel-angel-anunciacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Michelangelo_Buonarroti_-_Annunciation_to_the_Virgin_-_Google_Art_Project.jpg",
+      "title": "Anunciación a la Virgen",
+      "year": 1508,
+      "description": "El ángel anuncia a María en un interior de arquitectura clásica. Panel temprano que anticipa la gravedad escultórica de su madurez florentina.",
+      "dimensions": {
+        "width": 115,
+        "height": 88
+      }
     }
   ]
 }

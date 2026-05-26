@@ -1,0 +1,176 @@
+{
+  "id": "salvador-dali",
+  "name": "Salvador Dalí",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Salvador Domingo Felipe Jacinto Dalí i Domènech",
+  "years": "1904 – 1989",
+  "origin": "Figueres, España",
+  "bio": "Máximo representante del surrealismo figurativo. Dalí combinó técnica académica, imaginería onírica, paranoia controlada y teatralidad pública para crear un universo de relojes blandos, desiertos y metamorfosis.",
+  "paintings": [
+    {
+      "id": "dali-persistencia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Salvador_Dali_-_The_Persistence_of_Memory_-_Google_Art_Project.jpg",
+      "title": "La persistencia de la memoria",
+      "year": 1931,
+      "description": "Relojes blandos sobre paisaje de Port Lligat. Dalí visualiza tiempo, inconsciente y memoria con precisión alucinatoria.",
+      "dimensions": {
+        "width": 24,
+        "height": 33
+      }
+    },
+    {
+      "id": "dali-metamorfosis",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Salvador_Dali_-_Metamorphosis_of_Narcissus_-_Google_Art_Project.jpg",
+      "title": "Metamorfosis de Narciso",
+      "year": 1937,
+      "description": "Narciso y su reflejo se transforman en mano y huevo. Dalí traduce mito y psicoanálisis en escena doble de precisión hiperrealista.",
+      "dimensions": {
+        "width": 51,
+        "height": 78
+      }
+    },
+    {
+      "id": "dali-gran-masturbador",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Salvador_Dali_-_The_Great_Masturbator_-_Google_Art_Project.jpg",
+      "title": "El gran masturbador",
+      "year": 1929,
+      "description": "Cabeza blanda y figuras litorales en paisaje de Cadaqués. Obra clave del surrealismo que mezcla deseo, miedo y paisaje catalán.",
+      "dimensions": {
+        "width": 110,
+        "height": 150
+      }
+    },
+    {
+      "id": "dali-tentacion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Salvador_Dali_-_The_Temptation_of_St_Anthony_-_Google_Art_Project.jpg",
+      "title": "La tentación de San Antonio",
+      "year": 1946,
+      "description": "Santo ante carros y elefantes de patas alargadas en desierto. Dalí monumentaliza visión y lujuria en escala cinematográfica.",
+      "dimensions": {
+        "width": 89,
+        "height": 119
+      }
+    },
+    {
+      "id": "dali-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Salvador_Dali_-_Self-Portrait_with_Fried_Bacon_-_Google_Art_Project.jpg",
+      "title": "Autorretrato con beicon frito",
+      "year": 1941,
+      "description": "Dalí sostiene bacon ante fondo de paisaje irreal. Ironía y auto mitificación en pleno exilio americano.",
+      "dimensions": {
+        "width": 61,
+        "height": 50
+      }
+    },
+    {
+      "id": "dali-sueño",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Salvador_Dali_-_Dream_Caused_by_the_Flight_of_a_Bee_-_Google_Art_Project.jpg",
+      "title": "Sueño causado por el vuelo de una abeja",
+      "year": 1944,
+      "description": "Gala dormida con tigres, fusil y elefante en el aire. Dalí pinta el instante onírico con lógica paranoica y detalle miniaturístico.",
+      "dimensions": {
+        "width": 51,
+        "height": 40
+      }
+    },
+    {
+      "id": "dali-cisnes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Salvador_Dali_-_Swans_Reflecting_Elephants_-_Google_Art_Project.jpg",
+      "title": "Cisnes que se reflejan como elefantes",
+      "year": 1937,
+      "description": "Lago de Cadaqués donde cisnes y rocas crean doble imagen de elefantes. Dalí explora ilusión y pareidolia en paisaje mediterráneo.",
+      "dimensions": {
+        "width": 51,
+        "height": 77
+      }
+    },
+    {
+      "id": "dali-cristo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Salvador_Dali_-_Christ_of_Saint_John_of_the_Cross_-_Google_Art_Project.jpg",
+      "title": "Cristo de San Juan de la Cruz",
+      "year": 1951,
+      "description": "Cristo en perspectiva aérea sobre bahía y figuras diminutas. Dalí une mística barroca, física y hiperrealismo devocional.",
+      "dimensions": {
+        "width": 205,
+        "height": 116
+      }
+    },
+    {
+      "id": "dali-enigma",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Salvador_Dali_-_The_Ecumenical_Council_-_Google_Art_Project.jpg",
+      "title": "El concilio ecuménico",
+      "year": 1960,
+      "description": "Composición múltiple con Gala, cúpula y figuras históricas. Obra tardía de ambición teológica y teatralidad barroca.",
+      "dimensions": {
+        "width": 299,
+        "height": 254
+      }
+    },
+    {
+      "id": "dali-madonna",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Salvador_Dali_-_Madonna_of_Port_Lligat_-_Google_Art_Project.jpg",
+      "title": "Madonna de Port Lligat",
+      "year": 1949,
+      "description": "Virgen e infante en portal geométrico sobre paisaje ampurdanés. Dalí fusiona mística, ciencia y perspectiva clásica.",
+      "dimensions": {
+        "width": 49,
+        "height": 39
+      }
+    },
+    {
+      "id": "dali-roca",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Salvador_Dali_-_The_Average_Atomic_Distance_-_Google_Art_Project.jpg",
+      "title": "La distancia atómica media",
+      "year": 1947,
+      "description": "Figuras y objetos suspendidos en paisaje desértico de precisión molecular. Dalí vincula física cuántica y surrealismo figurativo.",
+      "dimensions": {
+        "width": 60,
+        "height": 80
+      }
+    },
+    {
+      "id": "dali-gala",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Salvador_Dali_-_Galarina_-_Google_Art_Project.jpg",
+      "title": "Galarina",
+      "year": 1944,
+      "description": "Retrato de Gala con red de pescar sobre hombro. Homenaje erótico y técnico a su musa en clave hiperrealista.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    },
+    {
+      "id": "dali-mujer-heroina",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Salvador_Dali_-_Portrait_of_Gala_-_Google_Art_Project.jpg",
+      "title": "Retrato de Gala",
+      "year": 1935,
+      "description": "Gala en perfil sobre fondo de ruinas y cielo tempestuoso. Retrato que consagra a la musa del surrealismo español.",
+      "dimensions": {
+        "width": 60,
+        "height": 50
+      }
+    },
+    {
+      "id": "dali-aparicion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Salvador_Dali_-_Apparition_of_Face_and_Fruit_Dish_on_a_Beach_-_Google_Art_Project.jpg",
+      "title": "Aparición de rostro y frutero en la playa",
+      "year": 1938,
+      "description": "Doble imagen de rostro, frutero y paisaje costero. Dalí juega con percepción múltiple y paranoia visual.",
+      "dimensions": {
+        "width": 115,
+        "height": 144
+      }
+    },
+    {
+      "id": "dali-venus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Salvador_Dali_-_Venus_de_Milo_with_Drawers_-_Google_Art_Project.jpg",
+      "title": "Venus de Milo con cajones",
+      "year": 1936,
+      "description": "Escultura clásica alterada con cajones surrealistas. Dalí combina ready-made y erotismo freudiano en objeto híbrido.",
+      "dimensions": {
+        "width": 98,
+        "height": 50
+      }
+    }
+  ]
+}

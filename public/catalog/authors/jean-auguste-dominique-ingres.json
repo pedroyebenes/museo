@@ -58,6 +58,28 @@
         "width": 108,
         "height": 108
       }
+    },
+    {
+      "id": "ingres-jupiter-tetis",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Jean_Auguste_Dominique_Ingres_-_Jupiter_and_Thetis_-_Google_Art_Project.jpg",
+      "title": "Júpiter y Tetis",
+      "year": 1811,
+      "description": "Tetis suplica a Júpiter en el Olimpo con cuerpos de contorno ideal. Ingres demuestra su virtuosismo académico en una escena mitológica de frialdad clásica.",
+      "dimensions": {
+        "width": 327,
+        "height": 260
+      }
+    },
+    {
+      "id": "ingres-apotheosis-homer",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Jean_Auguste_Dominique_Ingres_-_The_Apotheosis_of_Homer_-_Google_Art_Project.jpg",
+      "title": "La apoteosis de Homero",
+      "year": 1827,
+      "description": "Homero entronizado recibe la gloria entre musas y poetas de la Antigüedad. Ingres celebra el canon clásico con composición académica de figuras escultóricas.",
+      "dimensions": {
+        "width": 386,
+        "height": 512
+      }
     }
   ]
 }

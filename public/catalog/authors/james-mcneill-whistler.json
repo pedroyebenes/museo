@@ -1,0 +1,99 @@
+{
+  "id": "james-mcneill-whistler",
+  "name": "James McNeill Whistler",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "James Abbott McNeill Whistler",
+  "years": "1834 – 1903",
+  "origin": "Lowell, Massachusetts, Estados Unidos (activo en Londres y París)",
+  "bio": "Pintor y esteta que defendió el arte por el arte y la armonía cromática. Whistler transformó retratos, paisajes nocturnos y escenas urbanas en composiciones musicales de gran refinamiento.",
+  "paintings": [
+    {
+      "id": "whistler-madre-artista",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/James_Abbott_McNeill_Whistler_-_Portrait_of_the_Artist's_Mother_-_Google_Art_Project.jpg",
+      "title": "Arreglo en gris y negro n.º 1 (Retrato de la madre del artista)",
+      "year": 1871,
+      "description": "La madre de Whistler posa de perfil ante un fondo austero. El retrato se convirtió en icono de la dignidad silenciosa y la composición moderna.",
+      "dimensions": {
+        "width": 144,
+        "height": 162
+      }
+    },
+    {
+      "id": "whistler-nocturno-azul-plata",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/James_McNeill_Whistler_-_Nocturne_in_Blue_and_Silver_-_Google_Art_Project.jpg",
+      "title": "Nocturno azul y plata",
+      "year": 1872,
+      "description": "Río y cielo fundidos en una bruma azulada con luces lejanas. Whistler reduce el paisaje a armonía cromática casi abstracta.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "whistler-biombo-dorado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/James_McNeill_Whistler_-_Caprice_in_Purple_and_Gold-_The_Golden_Screen_-_Google_Art_Project.jpg",
+      "title": "Capricho en púrpura y oro: el biombo dorado",
+      "year": 1864,
+      "description": "Modelo vestida con kimono posa ante un biombo japonés decorado. Whistler fusiona estética oriental y armonía cromática en clave esteticista.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "whistler-mar-lluvia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/James_McNeill_Whistler_-_Sea_and_Rain_-_Google_Art_Project.jpg",
+      "title": "Mar y lluvia",
+      "year": 1865,
+      "description": "Figura diminuta contempla mar gris bajo lluvia en la costa de Valparaíso. Whistler condensa atmósfera, soledad y economía pictórica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "whistler-tamesis-helado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/James_McNeill_Whistler_-_The_Thames_in_Ice_-_Google_Art_Project.jpg",
+      "title": "El Támesis helado",
+      "year": 1860,
+      "description": "Hielo y humo industrial envuelven embarcaciones en el río londinense. El paisaje urbano se vuelve poema visual sobre frío y modernidad.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "whistler-puerta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/James_McNeill_Whistler_-_The_Doorway_-_Google_Art_Project.jpg",
+      "title": "La puerta",
+      "year": 1879,
+      "description": "Fachada veneciana de arco decorado captada con economía cromática. Whistler transforma arquitectura en armonía de tonos azules y dorados.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "whistler-nocturno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/James_McNeill_Whistler_-_Nocturne_-_Google_Art_Project.jpg",
+      "title": "Nocturno",
+      "year": 1870,
+      "description": "Paisaje nocturno reducido a veladuras de azul y oro sobre el Támesis. Whistler lleva la pintura hacia la abstricción atmosférica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "whistler-rotherhithe",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/James_McNeill_Whistler_-_Rotherhithe_-_Google_Art_Project.jpg",
+      "title": "Rotherhithe",
+      "year": 1860,
+      "description": "Vista del Támesis desde Rotherhithe con figuras diminutas y bruma industrial. Whistler observa la ciudad moderna con poesía visual contenida.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

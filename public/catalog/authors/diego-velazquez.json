@@ -61,6 +61,50 @@
         "width": 119,
         "height": 141
       }
+    },
+    {
+      "id": "velazquez-musicos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Diego_Vel%C3%A1zquez_-_The_Three_Musicians_-_Google_Art_Project.jpg",
+      "title": "Los músicos",
+      "year": 1618,
+      "description": "Grupo de figuras con instrumentos en un interior sevillano de claroscuro. Obra temprana que muestra el naturalismo y la atención al detalle cotidiano del Velázquez juvenil.",
+      "dimensions": {
+        "width": 50,
+        "height": 42
+      }
+    },
+    {
+      "id": "velazquez-infanta-azul",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Diego_Rodriguez_de_Silva_y_Vel%C3%A1zquez_-_Infanta_Margarita_Teresa_in_a_Blue_Dress_-_Google_Art_Project.jpg",
+      "title": "Infanta Margarita Teresa en azul",
+      "year": 1659,
+      "description": "Retrato de corte de la infanta con vestido azul y enagua blanca. Velázquez captura la presencia regia con pincelada suelta y economía cromática.",
+      "dimensions": {
+        "width": 127,
+        "height": 107
+      }
+    },
+    {
+      "id": "velazquez-san-pablo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Diego_Vel%C3%A1zquez_-_Saint_Paul_-_Google_Art_Project.jpg",
+      "title": "San Pablo",
+      "year": 1619,
+      "description": "El apóstol aparece en un interior modesto con espada y libros. Retrato devocional temprano donde la luz lateral modela la figura con sobriedad sevillana.",
+      "dimensions": {
+        "width": 102,
+        "height": 83
+      }
+    },
+    {
+      "id": "velazquez-juan-mateos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Vel%C3%A1zquez_-_Don_Juan_Mateos_(d.1643)_-_Google_Art_Project.jpg",
+      "title": "Don Juan Mateos",
+      "year": 1632,
+      "description": "Retrato ecuestre de un personaje de la corte con caballo y paisaje. Velázquez aplica su sobriedad aristocrática al retrato ecuestre antes de las meninas.",
+      "dimensions": {
+        "width": 133,
+        "height": 106
+      }
     }
   ]
 }

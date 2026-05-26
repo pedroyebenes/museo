@@ -1,0 +1,99 @@
+{
+  "id": "william-adolphe-bouguereau",
+  "name": "William-Adolphe Bouguereau",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "William-Adolphe Bouguereau",
+  "years": "1825 – 1905",
+  "origin": "La Rochelle, Francia",
+  "bio": "Pintor académico francés de técnica impecable y gran éxito en el Salón. Bouguereau cultivó mitología, retrato y escena campestre con una idealización clásica que dominó el gusto oficial del siglo XIX tardío.",
+  "paintings": [
+    {
+      "id": "bouguereau-dante-virgilio",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/William_Bouguereau_-_Dante_and_Virgile_-_Google_Art_Project.jpg",
+      "title": "Dante y Virgilio en el infierno",
+      "year": 1850,
+      "description": "Escena infernal inspirada en la Divina Comedia con cuerpos contorsionados y luz dramática. Obra temprana que muestra su formación histórica y clasicista.",
+      "dimensions": {
+        "width": 281,
+        "height": 225
+      }
+    },
+    {
+      "id": "bouguereau-hermana-mayor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/William_Bouguereau_-_The_Elder_Sister_-_Google_Art_Project.jpg",
+      "title": "La hermana mayor",
+      "year": 1869,
+      "description": "Niña mayor sostiene a su hermano pequeño en un paisaje campestre. Bouguereau idealiza la infancia con acabado pulido y ternura académica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bouguereau-pequena-pastora",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/William-Adolphe_Bouguereau_-_The_Little_Shepherdess_-_Google_Art_Project.jpg",
+      "title": "La pequeña pastora",
+      "year": 1889,
+      "description": "Niña campesina posa con cordero en un prado bucólico. Bouguereau combina encanto pastoral y precisión anatómica en clave académica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bouguereau-nina-limones",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/William_Adolphe_Bouguereau_-_Girl_Holding_Lemons_-_Google_Art_Project.jpg",
+      "title": "Niña con limones",
+      "year": 1899,
+      "description": "Retrato infantil con fruta y mirada directa sobre fondo neutro. La obra muestra su dominio del retrato idealizado y la superficie lisa.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bouguereau-bourrique",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/William-Adolphe_Bouguereau_-_La_Bourrique_(The_Horseback_Ride)_-_Google_Art_Project.jpg",
+      "title": "La bourrique (Paseo a caballo)",
+      "year": 1884,
+      "description": "Niños montando un burro en un paisaje veraniego de gran dulzura. Bouguereau celebra la infancia rural con virtuosismo académico.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bouguereau-nina-pequena",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/William_Adolphe_Bouguereau_-_Little_Girl_-_Google_Art_Project.jpg",
+      "title": "Niña pequeña",
+      "year": 1886,
+      "description": "Retrato infantil de mirada limpia y postura serena sobre fondo neutro. Bouguereau perfecciona la idealización académica del retrato infantil.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bouguereau-pastora-lamb",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/William-Adolphe_Bouguereau_-_L'Agneau_Nouveau-Ne_(The_Shepherdess)_-_Google_Art_Project.jpg",
+      "title": "La pastora con cordero recién nacido",
+      "year": 1873,
+      "description": "Pastora sostiene un cordero en un prado bucólico de gran ternura. Bouguereau combina escena rural y perfección técnica académica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bouguereau-defiende-eros",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/William_Adolphe_Bouguereau_(French_-_A_Young_Girl_Defending_Herself_against_Eros_-_Google_Art_Project.jpg",
+      "title": "Joven defendiéndose de Eros",
+      "year": 1880,
+      "description": "Desnudo femenino joven aparta con gesto juguetón al dios del amor alado. Bouguereau aborda la mitología con sensualidad académica contenida.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

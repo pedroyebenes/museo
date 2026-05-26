@@ -105,6 +105,50 @@
         "width": 347,
         "height": 268
       }
+    },
+    {
+      "id": "goya-autorretrato-caballete",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Francisco_de_Goya_-_Autorretrato_ante_el_caballete_-_Google_Art_Project.jpg",
+      "title": "Autorretrato ante el caballete",
+      "year": 1795,
+      "description": "Goya se representa pintando ante un caballete en un interior sombrío. El autorretrato afirma la dignidad del artista moderno con pincelada directa y mirada intensa.",
+      "dimensions": {
+        "width": 114,
+        "height": 146
+      }
+    },
+    {
+      "id": "goya-escena-inquisicion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Francisco_de_Goya_-_Escena_de_Inquisici%C3%B3n_-_Google_Art_Project.jpg",
+      "title": "Escena de la Inquisición",
+      "year": 1816,
+      "description": "Condemados con sambenitos y capirote en una escena de autos de fe. Goya denuncia la crueldad institucional con una composición densa y claustrofóbica.",
+      "dimensions": {
+        "width": 46,
+        "height": 73
+      }
+    },
+    {
+      "id": "goya-ciego-cantor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Goya_y_Lucientes%2C_Francisco_de_-_The_Blind_Singer_-_Google_Art_Project.jpg",
+      "title": "El ciego cantor",
+      "year": 1820,
+      "description": "Músico ciego acompañado por jóvenes en un paisaje abierto. La escena mezcla costumbrismo, compasión y una mirada crítica sobre la precariedad.",
+      "dimensions": {
+        "width": 40,
+        "height": 32
+      }
+    },
+    {
+      "id": "goya-modos-volar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Francisco_de_Goya_y_Lucientes_-_Ways_of_Flying_-_Google_Art_Project.jpg",
+      "title": "Modos de volar",
+      "year": 1816,
+      "description": "Estampa de los Disparates con figuras que intentan elevarse mediante artilugios imposibles. Goya convierte la ambición humana en sátira fantástica.",
+      "dimensions": {
+        "width": 24,
+        "height": 35
+      }
     }
   ]
 }

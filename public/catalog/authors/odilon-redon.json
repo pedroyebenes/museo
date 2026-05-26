@@ -66,6 +66,72 @@
         "width": 67,
         "height": 54
       }
+    },
+    {
+      "id": "redon-ojos-cerrados",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Odilon_Redon_-_Closed_Eyes_-_Google_Art_Project.jpg",
+      "title": "Ojos cerrados",
+      "year": 1890,
+      "description": "Cabeza femenina de ojos cerrados flota en un fondo floral difuso. Redon invita a la contemplación interior y al mundo onírico más allá de la vista.",
+      "dimensions": {
+        "width": 44,
+        "height": 55
+      }
+    },
+    {
+      "id": "redon-san-jorge",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Odilon_Redon_-_Saint_George_-_Google_Art_Project.jpg",
+      "title": "San Jorge",
+      "year": 1890,
+      "description": "El santo y el dragón aparecen como visiones suspendidas en un paisaje irreal. Redon reinterpreta la hagiografía con poesía simbolista y color pastel.",
+      "dimensions": {
+        "width": 60,
+        "height": 48
+      }
+    },
+    {
+      "id": "redon-nubes-flores",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Odilon_Redon_-_Flower_Clouds_-_Google_Art_Project.jpg",
+      "title": "Nubes floridas",
+      "year": 1903,
+      "description": "Rostro femenino emerge entre nubes que se confunden con pétalos. Obra tardía donde el color luminoso sustituye al carboncillo de sus inicios.",
+      "dimensions": {
+        "width": 44,
+        "height": 54
+      }
+    },
+    {
+      "id": "redon-beatriz",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Odilon_Redon_-_Beatrice_-_Google_Art_Project.jpg",
+      "title": "Beatriz",
+      "year": 1897,
+      "description": "Perfil clásico de Beatriz entre flores y bruma dorada. Redon acerca la tradición dantesca a una meditación silenciosa sobre belleza y memoria.",
+      "dimensions": {
+        "width": 60,
+        "height": 45
+      }
+    },
+    {
+      "id": "redon-flor-campo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Odilon_Redon_-_The_Flower_of_the_Field_-_Google_Art_Project.jpg",
+      "title": "La flor del campo",
+      "year": 1900,
+      "description": "Figura femenina y botánica se funden en un jardín de color intenso. Redon celebra la naturaleza como revelación espiritual y decorativa.",
+      "dimensions": {
+        "width": 65,
+        "height": 54
+      }
+    },
+    {
+      "id": "redon-ofelia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Odilon_Redon_-_Ophelia_among_the_Flowers_-_Google_Art_Project.jpg",
+      "title": "Ofelia entre las flores",
+      "year": 1905,
+      "description": "Ofelia flota entre flores de color pastel en un jardín onírico. Redon acerca a Shakespeare al simbolismo francés con poesía visual delicada.",
+      "dimensions": {
+        "width": 60,
+        "height": 48
+      }
     }
   ]
 }

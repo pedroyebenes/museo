@@ -1,0 +1,66 @@
+{
+  "id": "anthony-van-dyck",
+  "name": "Anthony van Dyck",
+  "category": "barroco",
+  "fullName": "Sir Anthony van Dyck",
+  "years": "1599 – 1641",
+  "origin": "Amberes, Condado de Flandes",
+  "bio": "Retratista de la corte inglesa y principal discípulo de Rubens. Van Dyck definió la elegancia aristocrática del siglo XVII con figuras alargadas, telas fluidas y una distancia distinguida que convirtió el retrato en instrumento de poder y refinamiento.",
+  "paintings": [
+    {
+      "id": "van-dyck-carlos-caza",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sir_Anthony_Van_Dyck_-_Charles_I_(1600-49)_-_Google_Art_Project.jpg",
+      "title": "Carlos I de Inglaterra",
+      "year": 1635,
+      "description": "El monarca posa con elegancia sobre fondo paisajístico en uno de sus retratos más emblemáticos. Van Dyck define la imagen regia del Stuart con distancia distinguida.",
+      "dimensions": {
+        "width": 84,
+        "height": 104
+      }
+    },
+    {
+      "id": "van-dyck-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Anthony_van_Dyck_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "title": "Autorretrato",
+      "year": 1621,
+      "description": "El artista joven se representa con barba y giro de cabeza confiado. Autorretrato temprano que anticipa la elegancia distante de su madurez cortesana.",
+      "dimensions": {
+        "width": 73,
+        "height": 57
+      }
+    },
+    {
+      "id": "van-dyck-girasol",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Anthony_van_Dyck_-_Portrait_of_the_Artist_with_Sunflower_-_Google_Art_Project.jpg",
+      "title": "Autorretrato con girasol",
+      "year": 1632,
+      "description": "Van Dyck posa junto a un girasol en alusión a la fama y la veneración artística. Retrato alegórico de gran sophistication flamenca.",
+      "dimensions": {
+        "width": 73,
+        "height": 61
+      }
+    },
+    {
+      "id": "van-dyck-isabela",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Anthony_van_Dyck_-_Portrait_of_Queen_Henrietta_Maria_-_Google_Art_Project.jpg",
+      "title": "Retrato de la reina Enriqueta María",
+      "year": 1635,
+      "description": "La reina consorte inglesa posa con elegancia y mirada distante. Van Dyck define el retrato cortesano femenino con telas fluidas y color sobrio.",
+      "dimensions": {
+        "width": 106,
+        "height": 86
+      }
+    },
+    {
+      "id": "van-dyck-jabach",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Anthony_van_Dyck_-_Portrait_of_a_Man%2C_probably_Everhard_Jabach_-_Google_Art_Project.jpg",
+      "title": "Retrato de Everhard Jabach",
+      "year": 1634,
+      "description": "El coleccionista alemán posa entre obras de arte y telas ricas. Van Dyck retrata al mecenas ilustrado con la elegancia que definió la élite europea del Seicento.",
+      "dimensions": {
+        "width": 140,
+        "height": 118
+      }
+    }
+  ]
+}

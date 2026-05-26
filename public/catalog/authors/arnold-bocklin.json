@@ -1,0 +1,77 @@
+{
+  "id": "arnold-bocklin",
+  "name": "Arnold Böcklin",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Arnold Böcklin",
+  "years": "1827 – 1901",
+  "origin": "Basilea, Suiza",
+  "bio": "Pintor simbolista suizo de mundos míticos, paisajes fantásticos y figuras arquetípicas. Böcklin influyó en el simbolismo europeo con imágenes enigmáticas de muerte, deseo y naturaleza animada.",
+  "paintings": [
+    {
+      "id": "bocklin-villa-mar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Arnold_B%C3%B6cklin_-_Villa_by_the_Sea_-_Google_Art_Project.jpg",
+      "title": "Villa junto al mar",
+      "year": 1878,
+      "description": "Terraza clásica frente a un mar tranquilo con figuras quietas. La escena evoca un paraíso mediterráneo de calma y enigma.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bocklin-paisaje-romano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Arnold_B%C3%B6cklin_-_Roman_Landscape_(R%C3%B6mische_Landschaft)_-_Google_Art_Project.jpg",
+      "title": "Paisaje romano",
+      "year": 1884,
+      "description": "Ruinas y pinos mediterráneos bañados por una luz cálida y melancólica. Böcklin reinterpreta la campiña italiana con tono mítico.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bocklin-diana-dormida",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Arnold_B%C3%B6cklin_-_Sleeping_Diana_Watched_by_Two_Fauns_-_Google_Art_Project.jpg",
+      "title": "Diana dormida vigilada por dos sátiros",
+      "year": 1877,
+      "description": "Diosa durmida observada por faunos en un bosque clásico. La escena mezcla erotismo, mito y naturaleza animada.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bocklin-atardecer-primavera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Arnold_B%C3%B6cklin_-_Spring_Evening_-_Google_Art_Project.jpg",
+      "title": "Atardecer de primavera",
+      "year": 1879,
+      "description": "Pareja camina entre árboles y agua en un crepúsculo veraniego. Böcklin convierte el paisaje en escena de deseo y quietud simbolista.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bocklin-manantial-desfiladero",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Arnold_B%C3%B6cklin_-_Quell_in_einer_Felsschlucht_-_Google_Art_Project.jpg",
+      "title": "Manantial en un desfiladero rocoso",
+      "year": 1880,
+      "description": "Cascada y rocas cubiertas de musgo en un paraje fantástico. La naturaleza se presenta como escenario misterioso de ensoñación.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "bocklin-dia-verano",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Arnold_B%C3%B6cklin_-_Summer_Day_-_Google_Art_Project.jpg",
+      "title": "Día de verano",
+      "year": 1881,
+      "description": "Figuras en un paisaje mediterráneo de luz intensa y vegetación densa. Böcklin mezcla idilio clásico y atmósfera onírica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

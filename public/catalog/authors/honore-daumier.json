@@ -1,0 +1,99 @@
+{
+  "id": "honore-daumier",
+  "name": "Honoré Daumier",
+  "category": "neoclasicismo-romanticismo",
+  "fullName": "Honoré-Victorin Daumier",
+  "years": "1808 – 1879",
+  "origin": "Marsella, Francia",
+  "bio": "Caricaturista, pintor y escultor que criticó la sociedad parisina con agudeza moral. Daumier combinó el realismo urbano con una compasión profunda hacia los oprimidos y los trabajadores.",
+  "paintings": [
+    {
+      "id": "daumier-familia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Honor%C3%A9_Daumier_-_The_Family_-_Google_Art_Project.jpg",
+      "title": "La familia",
+      "year": 1863,
+      "description": "Grupo familiar modesto reunido en un interior parisino de penumbra. Daumier observa la intimidad obrera con empatía y sobriedad pictórica.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "daumier-alegato-defensa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Honor%C3%A9_Daumier_-_Plea_for_the_Defense_-_Google_Art_Project.jpg",
+      "title": "Alegato de la defensa",
+      "year": 1865,
+      "description": "Abogado apasionado defiende a su cliente ante un tribunal. Daumier captura el drama jurídico y la retórica del mundo urbano moderno.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "daumier-saltimbanquis",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Honor%C3%A9_Daumier_-_Two_Saltimbanques_-_Google_Art_Project.jpg",
+      "title": "Dos saltimbanquis",
+      "year": 1865,
+      "description": "Artistas callejeros descansan con rostros cansados y miradas distantes. La escena subraya la precariedad del espectáculo popular parisino.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "daumier-puente-noche",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Honor%C3%A9_Daumier_-_On_a_Bridge_at_Night_-_Google_Art_Project.jpg",
+      "title": "En un puente de noche",
+      "year": 1855,
+      "description": "Figuras solitarias cruzan un puente bajo luz tenue y bruma. Daumier convierte la ciudad nocturna en escena de soledad y desplazamiento.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "daumier-publico-teatro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Honor%C3%A9_Daumier_-_Theater_Audience_-_Google_Art_Project.jpg",
+      "title": "Público de teatro",
+      "year": 1860,
+      "description": "Espectadores observan la escena desde palcos y butacas con gestos diversos. Daumier satiriza y humaniza a la sociedad parisina del espectáculo.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "daumier-tres-abogados",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Honor%C3%A9_Daumier_-_Three_Lawyers_-_Google_Art_Project.jpg",
+      "title": "Tres abogados",
+      "year": 1860,
+      "description": "Magistrados debaten con gestos exagerados en un tribunal parisino. Daumier satiriza el mundo jurídico con humor mordaz y realismo expresivo.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "daumier-calle",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Honor%C3%A9_Daumier_-_To_the_Street_-_Google_Art_Project.jpg",
+      "title": "A la calle",
+      "year": 1860,
+      "description": "Figuras urbanas avanzan bajo la lluvia con paraguas y prisa. Daumier captura el ritmo cotidiano de la ciudad moderna con empatía obrera.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "daumier-pintor-caballete",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Honor%C3%A9_Daumier_-_The_Painter_at_His_Easel_-_Google_Art_Project.jpg",
+      "title": "El pintor ante su caballete",
+      "year": 1870,
+      "description": "Artista trabaja en un interior modesto con modelos y objetos dispersos. Daumier rinde homenaje irónico y tierno a la condición del creador.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    }
+  ]
+}

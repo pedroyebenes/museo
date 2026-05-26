@@ -58,6 +58,72 @@
         "width": 23,
         "height": 18
       }
+    },
+    {
+      "id": "beardsley-recompensa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Aubrey_Beardsley_-_The_Dancer's_Reward_-_Google_Art_Project.jpg",
+      "title": "La recompensa de la bailarina",
+      "year": 1893,
+      "description": "Salomé recibe la cabeza del Bautista en una estampa de línea extrema. Beardsley condensa teatro, erotismo y violencia en blanco y negro puro.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
+    },
+    {
+      "id": "beardsley-tocador-salome",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Aubrey_Beardsley_-_The_Toilette_of_Salome_-_Google_Art_Project.jpg",
+      "title": "El tocador de Salomé",
+      "year": 1893,
+      "description": "Escena de preparación con figuras alargadas y fondos vacíos. Beardsley transforma la ilustración finisecular en diseño abstracto y provocador.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
+    },
+    {
+      "id": "beardsley-herodias",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Aubrey_Beardsley_-_Enter_Herodias_-_Google_Art_Project.jpg",
+      "title": "Entra Herodías",
+      "year": 1893,
+      "description": "Herodías avanza en traje de contornos sinuosos para la Salomé de Wilde. Dibujo de siluetas planas que define el art nouveau británico.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
+    },
+    {
+      "id": "beardsley-artista-ego",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Aubrey_Beardsley_-_The_Artist_and_his_Ego_-_Google_Art_Project.jpg",
+      "title": "El artista y su ego",
+      "year": 1894,
+      "description": "Autorretrato simbólico con figuras alegóricas y arabescos negros. Beardsley ironiza sobre fama, decadencia y creación en clave modernista.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
+    },
+    {
+      "id": "beardsley-mascara",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Aubrey_Beardsley_-_The_Masked_Ball_-_Google_Art_Project.jpg",
+      "title": "Baile de máscaras",
+      "year": 1894,
+      "description": "Figuras enmascaradas en composición de líneas verticales y vacíos blancos. Beardsley convierte la fiesta aristocrática en teatro gráfico de contornos extremos.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
+    },
+    {
+      "id": "beardsley-lady-gold",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Aubrey_Beardsley_-_Lady_Gold's_Escape_-_Google_Art_Project.jpg",
+      "title": "La fuga de lady Gold",
+      "year": 1894,
+      "description": "Escena narrativa de figuras estilizadas y motivos florales negros. Beardsley narra con economía de trazo y erotismo sugerido propio del decadentismo.",
+      "dimensions": {
+        "width": 23,
+        "height": 18
+      }
     }
   ]
 }

@@ -1,0 +1,77 @@
+{
+  "id": "giorgione",
+  "name": "Giorgione",
+  "category": "renacimiento-manierismo",
+  "fullName": "Giorgio Barbarelli da Castelfranco",
+  "years": "c. 1477 – 1510",
+  "origin": "Castelfranco Veneto, República de Venecia",
+  "bio": "Pintor veneciano de vida breve pero influencia decisiva. Giorgione sustituyó la narrativa explícita por atmósferas poéticas, paisajes melancólicos y figuras enigmáticas que abrieron camino a Tiziano y al paisaje moderno.",
+  "paintings": [
+    {
+      "id": "giorgione-tres-filosofos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Giorgione_-_Three_Philosophers_-_Google_Art_Project.jpg",
+      "title": "Los tres filósofos",
+      "year": 1509,
+      "description": "Tres figuras dialogan ante un paisaje rocoso al atardecer. Giorgione convierte la escena erudita en meditación silenciosa sobre la naturaleza y el saber.",
+      "dimensions": {
+        "width": 123,
+        "height": 144
+      }
+    },
+    {
+      "id": "giorgione-laura",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Giorgione_-_Young_Woman_(%22Laura%22)_-_Google_Art_Project.jpg",
+      "title": "Mujer joven (Laura)",
+      "year": 1506,
+      "description": "Retrato femenino de perfil con manto rojo y mirada introspectiva. Una de las primeras obras venecianas que funden retrato y poesía en una presencia enigmática.",
+      "dimensions": {
+        "width": 41,
+        "height": 34
+      }
+    },
+    {
+      "id": "giorgione-adoracion-reyes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Giorgione_-_The_Adoration_of_the_Kings_-_Google_Art_Project.jpg",
+      "title": "La adoración de los Reyes",
+      "year": 1505,
+      "description": "Los Magos adoran al Niño bajo ruinas clásicas y cielo tempestuoso. Giorgione dramatiza la Epifanía con color atmosférico y figuras integradas en el paisaje.",
+      "dimensions": {
+        "width": 91,
+        "height": 110
+      }
+    },
+    {
+      "id": "giorgione-venus-durmiente",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Giorgione_-_Sleeping_Venus_-_Google_Art_Project.jpg",
+      "title": "Venus dormida",
+      "year": 1510,
+      "description": "La diosa yace en un paisaje campestre bajo cielo crepuscular. Obra fundacional del desnudo paisajístico veneciano, completada tras la muerte del artista.",
+      "dimensions": {
+        "width": 108,
+        "height": 175
+      }
+    },
+    {
+      "id": "giorgione-moses-fire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Giorgione_-_Mos%C3%A8_alla_prova_del_fuoco_-_Google_Art_Project.jpg",
+      "title": "La prueba de fuego de Moisés",
+      "year": 1505,
+      "description": "Moisés atraviesa la prueba del fuego ante el faraón en un paisaje dramático. Giorgione narra el episodio bíblico con atmósfera enigmática y color veneciano.",
+      "dimensions": {
+        "width": 89,
+        "height": 72
+      }
+    },
+    {
+      "id": "giorgione-castelfranco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Giorgione_-_Castelfranco_Madonna_-_Google_Art_Project.jpg",
+      "title": "Madonna de Castelfranco",
+      "year": 1505,
+      "description": "La Virgen entronizada con santos ante un paisaje apacible. Obra temprana que muestra la poesía atmosférica que hará célebre al maestro veneciano.",
+      "dimensions": {
+        "width": 200,
+        "height": 152
+      }
+    }
+  ]
+}

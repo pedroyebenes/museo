@@ -1,0 +1,66 @@
+{
+  "id": "parmigianino",
+  "name": "Parmigianino",
+  "category": "renacimiento-manierismo",
+  "fullName": "Girolamo Francesco Maria Mazzola",
+  "years": "1503 – 1540",
+  "origin": "Parma, Ducado de Parma y Piacenza",
+  "bio": "Genio del manierismo parmesano que alargó las formas, suavizó los contornos y buscó una elegancia artificial y refinada. Su Madonna de cuello largo es emblema de una estética que privilegia la gracia sobre la naturaleza.",
+  "paintings": [
+    {
+      "id": "parmigianino-madonna-cuello-largo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Parmigianino_-_Madonna_dal_collo_lungo_-_Google_Art_Project.jpg",
+      "title": "Madonna de cuello largo",
+      "year": 1535,
+      "description": "Virgen de proporciones alargadas sostiene al Niño dormido ante columnas clásicas. Obra cumbre del manierismo que convierte la gracia en abstracción elegante.",
+      "dimensions": {
+        "width": 132,
+        "height": 216
+      }
+    },
+    {
+      "id": "parmigianino-venus-cupido",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Parmigianino_-_Venus_Disarming_Cupid_-_Google_Art_Project.jpg",
+      "title": "Venus desarma a Cupido",
+      "year": 1535,
+      "description": "La diosa quita las armas al dios del amor en un paisaje de ruinas. Parmigianino mezcla erotismo clásico y ironía con contornos sinuosos y color frío.",
+      "dimensions": {
+        "width": 135,
+        "height": 165
+      }
+    },
+    {
+      "id": "parmigianino-amor-arco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Francesco_Mazzola%2C_called_Parmigianino_-_Bow-carving_Amor_-_Google_Art_Project.jpg",
+      "title": "Cupido tallando su arco",
+      "year": 1535,
+      "description": "El dios infantil fabrica su arma en un paisaje de atmósfera melancólica. Parmigianino explora la mitología con refinamiento y una belleza deliberadamente artificial.",
+      "dimensions": {
+        "width": 74,
+        "height": 58
+      }
+    },
+    {
+      "id": "parmigianino-virgen-nino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Parmigianino_-_The_Madonna_and_Child_-_Google_Art_Project.jpg",
+      "title": "La Virgen y el Niño",
+      "year": 1525,
+      "description": "María y el Niño posan en un paisaje de colinas suaves y cielo claro. Obra temprana que anticipa la elegancia alargada de su madurez manierista.",
+      "dimensions": {
+        "width": 88,
+        "height": 70
+      }
+    },
+    {
+      "id": "parmigianino-retrato-cybo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Parmigianino_-_Portrait_of_Lorenzo_Cybo_-_Google_Art_Project.jpg",
+      "title": "Retrato de Lorenzo Cybo",
+      "year": 1525,
+      "description": "Noble genovés posa con capa roja y expresión distante. Parmigianino aplica al retrato la misma elongación y frialdad aristocrática de sus composiciones religiosas.",
+      "dimensions": {
+        "width": 68,
+        "height": 52
+      }
+    }
+  ]
+}

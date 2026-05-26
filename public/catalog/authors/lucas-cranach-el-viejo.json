@@ -1,0 +1,77 @@
+{
+  "id": "lucas-cranach-el-viejo",
+  "name": "Lucas Cranach el Viejo",
+  "category": "renacimiento-manierismo",
+  "fullName": "Lucas Cranach der Ältere",
+  "years": "1472 – 1553",
+  "origin": "Kronach, Franconia (Sacro Imperio Romano)",
+  "bio": "Pintor y grabador de la corte de Wittenberg, amigo de Lutero y testigo visual de la Reforma. Cranach combinó elegancia gótica y erotismo clásico en retratos ducales, paisajes de bosque y mitologías de contornos sinuosos y color frío.",
+  "paintings": [
+    {
+      "id": "cranach-jardin-eden",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Lucas_Cranach_the_Elder_-_The_Garden_of_Eden_-_Google_Art_Project.jpg",
+      "title": "El jardín del Edén",
+      "year": 1530,
+      "description": "Adán y Eva en un paraíso de animales y árboles exuberantes. Cranach pinta la creación con detalle miniaturístico y una sensualidad contenida típica del Renacimiento nórdico.",
+      "dimensions": {
+        "width": 82,
+        "height": 114
+      }
+    },
+    {
+      "id": "cranach-apolo-diana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Lucas_Cranach_the_Elder_-_Apollo_and_Diana_-_Google_Art_Project.jpg",
+      "title": "Apolo y Diana",
+      "year": 1520,
+      "description": "Los dioses gemelos posan en un bosque de ciervos y paisaje azul. Cranach traduce la mitología clásica con elegancia cortesana y fondos de bosque germánico.",
+      "dimensions": {
+        "width": 59,
+        "height": 45
+      }
+    },
+    {
+      "id": "cranach-edad-oro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Lucas_Cranach_the_Elder_-_The_Golden_Age_-_Google_Art_Project.jpg",
+      "title": "La Edad de Oro",
+      "year": 1530,
+      "description": "Humanos viven en armonía con la naturaleza antes de la caída. Alegoría de plenitud primitiva pintada con el paisaje idealizado y la paleta fría del artista.",
+      "dimensions": {
+        "width": 75,
+        "height": 55
+      }
+    },
+    {
+      "id": "cranach-juicio-paris",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Lucas_Cranach_the_Elder_-_The_Judgement_of_Paris_-_Google_Art_Project.jpg",
+      "title": "El juicio de Paris",
+      "year": 1528,
+      "description": "Paris elige entre Juno, Minerva y Venus en un paisaje boscoso. Cranach convierte el mito en escena galante de color brillante y figuras esbeltas.",
+      "dimensions": {
+        "width": 71,
+        "height": 102
+      }
+    },
+    {
+      "id": "cranach-corte-venus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Lucas_Cranach_the_Elder_-_The_Court_of_Venus_-_Google_Art_Project.jpg",
+      "title": "La corte de Venus",
+      "year": 1518,
+      "description": "Venus entronizada recibe a cortesanos y amorcillos en un paisaje de bosque. Cranach mezcla mitología clásica y erotismo cortesano con elegancia nórdica.",
+      "dimensions": {
+        "width": 81,
+        "height": 54
+      }
+    },
+    {
+      "id": "cranach-venus-cupido",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Lucas_Cranach_the_Elder_-_Venus_and_Cupid_-_Google_Art_Project.jpg",
+      "title": "Venus y Cupido",
+      "year": 1525,
+      "description": "Venus desnuda sostiene a Cupido bajo un dosel de seda. Cranach repite el tema mitológico con erotismo refinado y contornos alargados de estilo manierista nórdico.",
+      "dimensions": {
+        "width": 87,
+        "height": 57
+      }
+    }
+  ]
+}

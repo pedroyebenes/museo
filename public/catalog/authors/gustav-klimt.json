@@ -61,6 +61,72 @@
         "width": 280,
         "height": 280
       }
+    },
+    {
+      "id": "klimt-danae",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Gustav_Klimt_-_Danae_-_Google_Art_Project.jpg",
+      "title": "Dánae",
+      "year": 1907,
+      "description": "La princesa mitológica recibe a Zeus transformado en lluvia de oro. Klimt une erotismo simbólico y decoración bizantina en el periodo dorado.",
+      "dimensions": {
+        "width": 77,
+        "height": 77
+      }
+    },
+    {
+      "id": "klimt-serpientes-agua",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Gustav_Klimt_-_Water_Serpents_I_-_Google_Art_Project.jpg",
+      "title": "Serpientes de agua I",
+      "year": 1904,
+      "description": "Figuras femeninas ondulan entre acuáticas serpentineces y fondos verdes. Klimt explora deseo y movimiento con arabescos y planos decorativos.",
+      "dimensions": {
+        "width": 50,
+        "height": 20
+      }
+    },
+    {
+      "id": "klimt-virgen",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Gustav_Klimt_-_The_Virgin_-_Google_Art_Project.jpg",
+      "title": "La virgen",
+      "year": 1913,
+      "description": "Mujer dormida rodeada de compañeras en espiral de color y patrón. Klimt simboliza despertar sexual y fecundidad con mosaicos y tonos vivos.",
+      "dimensions": {
+        "width": 190,
+        "height": 200
+      }
+    },
+    {
+      "id": "klimt-esperanza-ii",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gustav_Klimt_-_Hope_II_-_Google_Art_Project.jpg",
+      "title": "Esperanza II",
+      "year": 1907,
+      "description": "Mujer embarazada flanqueada por figuras de la muerte y enfermedad. Klimt confronta maternidad y mortalidad con oro y diseño simbólico.",
+      "dimensions": {
+        "width": 110,
+        "height": 110
+      }
+    },
+    {
+      "id": "klimt-muerte-vida",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Gustav_Klimt_-_Death_and_Life_-_Google_Art_Project.jpg",
+      "title": "Muerte y vida",
+      "year": 1910,
+      "description": "Esqueleto sonriente contempla un amasijo de cuerpos dormidos y abrazados. Alegoría modernista sobre el ciclo vital en clave decorativa.",
+      "dimensions": {
+        "width": 178,
+        "height": 150
+      }
+    },
+    {
+      "id": "klimt-tres-edades",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Gustav_Klimt_-_The_Three_Ages_of_Woman_-_Google_Art_Project.jpg",
+      "title": "Las tres edades de la mujer",
+      "year": 1905,
+      "description": "Niña, madre y anciana encarnan el paso del tiempo ante un fondo onírico. Klimt vincula simbolismo vienés y decoración simétrica.",
+      "dimensions": {
+        "width": 180,
+        "height": 180
+      }
     }
   ]
 }

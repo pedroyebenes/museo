@@ -1,0 +1,176 @@
+{
+  "id": "pablo-picasso",
+  "name": "Pablo Picasso",
+  "category": "arte-moderno-siglo-xx",
+  "fullName": "Pablo Diego José Francisco de Paula Juan Nepomuceno Crispín Crispiniano de la Santísima Trinidad Ruiz y Picasso",
+  "years": "1881 – 1973",
+  "origin": "Málaga, España",
+  "bio": "Artista español que transformó la pintura del siglo XX. De su periodo azul y rosa al cubismo, el neoclasicismo y el surrealismo, Picasso reinventó sin cesar la forma, el collage y la escultura moderna.",
+  "paintings": [
+    {
+      "id": "picasso-guernica",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Pablo_Picasso_-_Guernica_-_Google_Art_Project.jpg",
+      "title": "Guernica",
+      "year": 1937,
+      "description": "Monumento antiguerra en blanco, negro y gris que denuncia el bombardeo de la villa vasca. Picasso condensa dolor, terror y resistencia en el mural más célebre del siglo XX.",
+      "dimensions": {
+        "width": 776,
+        "height": 349
+      }
+    },
+    {
+      "id": "picasso-demoiselles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Pablo_Picasso_-_Les_Demoiselles_d'Avignon_-_Google_Art_Project.jpg",
+      "title": "Las señoritas de Aviñón",
+      "year": 1907,
+      "description": "Cinco figuras de contornos angulosos y máscaras primitivas. Obra fundacional del cubismo que rompe con la perspectiva renacentista.",
+      "dimensions": {
+        "width": 243,
+        "height": 233
+      }
+    },
+    {
+      "id": "picasso-vieja",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Pablo_Picasso_-_The_Old_Guitarist_-_Google_Art_Project.jpg",
+      "title": "El guitarrista ciego",
+      "year": 1903,
+      "description": "Figura enferma y curvada abraza la guitarra en azules sombríos. Síntesis del periodo azul y de la miseria urbana de Barcelona y París.",
+      "dimensions": {
+        "width": 122,
+        "height": 83
+      }
+    },
+    {
+      "id": "picasso-senoritas-avignon",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Pablo_Picasso_-_Girl_before_a_Mirror_-_Google_Art_Project.jpg",
+      "title": "Muchacha ante el espejo",
+      "year": 1932,
+      "description": "Marie-Thérèse Walter duplicada en espejo de color violáceo y amarillo. Picasso explora identidad, deseo y metamorfosis en clave surrealista.",
+      "dimensions": {
+        "width": 162,
+        "height": 130
+      }
+    },
+    {
+      "id": "picasso-sueno",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Pablo_Picasso_-_Le_R%C3%AAve_-_Google_Art_Project.jpg",
+      "title": "El sueño",
+      "year": 1932,
+      "description": "Retrato onírico de Marie-Thérèse con rostro fragmentado y torso colorido. Color sensual y formas orgánicas en la década de los treinta.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "picasso-mujeres-fontainebleau",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Pablo_Picasso_-_Three_Women_at_the_Spring_-_Google_Art_Project.jpg",
+      "title": "Tres mujeres en la fuente",
+      "year": 1921,
+      "description": "Figuras monumentales de estilo neoclásico junto a una fuente. Picasso retorna a la tradición mediterránea tras el cubismo analítico.",
+      "dimensions": {
+        "width": 185,
+        "height": 204
+      }
+    },
+    {
+      "id": "picasso-violin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Pablo_Picasso_-_Violin_and_Grapes_-_Google_Art_Project.jpg",
+      "title": "Violín y uvas",
+      "year": 1912,
+      "description": "Instrumento y fruta fragmentados en planos superpuestos. Cubismo analítico que descompone objeto y espacio en facetas grises.",
+      "dimensions": {
+        "width": 61,
+        "height": 50
+      }
+    },
+    {
+      "id": "picasso-maquinista",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Pablo_Picasso_-_The_Locomotive_-_Google_Art_Project.jpg",
+      "title": "La locomotora",
+      "year": 1934,
+      "description": "Tren y figuras en composición dinámica de líneas negras. Picasso aborda modernidad industrial con energía gráfica y humor visual.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    },
+    {
+      "id": "picasso-autorretrato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Pablo_Picasso_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "title": "Autorretrato",
+      "year": 1907,
+      "description": "Rostro angular y mirada penetrante en tonos ocres. Picasso se representa en el umbral del cubismo con crudeza expresiva.",
+      "dimensions": {
+        "width": 56,
+        "height": 46
+      }
+    },
+    {
+      "id": "picasso-ninas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Pablo_Picasso_-_Two_Girls_on_a_Balcony_-_Google_Art_Project.jpg",
+      "title": "Dos niñas en un balcón",
+      "year": 1902,
+      "description": "Figuras infantiles en azules del periodo azul con fondo urbano. Melancolía y delicadeza en la etapa temprana parisina.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "picasso-merengue",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Pablo_Picasso_-_The_Dance_-_Google_Art_Project.jpg",
+      "title": "La danza",
+      "year": 1925,
+      "description": "Bailarines en movimiento de formas biomorphicas y color intenso. Picasso vincula cubismo y surrealismo en escena de ritmo y erotismo.",
+      "dimensions": {
+        "width": 215,
+        "height": 142
+      }
+    },
+    {
+      "id": "picasso-pipa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Pablo_Picasso_-_Man_with_a_Pipe_-_Google_Art_Project.jpg",
+      "title": "Hombre con pipa",
+      "year": 1911,
+      "description": "Figura sentada descompuesta en planos cubistas de tonos ocres. Obra clave del cubismo analítico y la herencia de Cézanne.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "picasso-mujer-flor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Pablo_Picasso_-_Woman_with_Flowered_Hat_-_Google_Art_Project.jpg",
+      "title": "Mujer con sombrero de flores",
+      "year": 1940,
+      "description": "Retrato colorista de formas simplificadas y mirada frontal. Picasso reinventa el retrato en plena Segunda Guerra Mundial.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "picasso-paloma",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pablo_Picasso_-_Dove_of_Peace_-_Google_Art_Project.jpg",
+      "title": "Paloma de la paz",
+      "year": 1949,
+      "description": "Paloma blanca sobre fondo claro convertida en emblema pacifista. Picasso transforma símbolo cotidiano en icono universal de la paz.",
+      "dimensions": {
+        "width": 50,
+        "height": 40
+      }
+    },
+    {
+      "id": "picasso-icaro",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Pablo_Picasso_-_Fall_of_Icarus_-_Google_Art_Project.jpg",
+      "title": "Caída de Ícaro",
+      "year": 1958,
+      "description": "Ícaro cae al mar en composición de planos azules y figura blanca. Picasso reinterpreta mito clásico con economía moderna de signos.",
+      "dimensions": {
+        "width": 130,
+        "height": 97
+      }
+    }
+  ]
+}

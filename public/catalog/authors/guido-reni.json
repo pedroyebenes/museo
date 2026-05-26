@@ -1,0 +1,66 @@
+{
+  "id": "guido-reni",
+  "name": "Guido Reni",
+  "category": "barroco",
+  "fullName": "Guido Reni",
+  "years": "1575 – 1642",
+  "origin": "Bolonia, Estados Pontificios",
+  "bio": "Maestro del barroco clasicista boloñés, discípulo de los Carracci. Guido Reni suavizó el dramatismo caravaggesco en favor de una belleza ideal, pincelada ligera y devoción luminosa que lo convirtió en uno de los pintores más admirados de la Europa católica.",
+  "paintings": [
+    {
+      "id": "reni-rapto-europa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Guido_Reni_-_The_Rape_of_Europa_-_Google_Art_Project.jpg",
+      "title": "El rapto de Europa",
+      "year": 1637,
+      "description": "Europa monta al toro de Zeus en un paisaje de nubes y mar. Reni pinta el mito con gracia clásica y color azul plateado de gran refinamiento.",
+      "dimensions": {
+        "width": 125,
+        "height": 100
+      }
+    },
+    {
+      "id": "reni-atalanta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Guido_Reni_-_Atalanta_and_Hippomenes_-_Google_Art_Project.jpg",
+      "title": "Atalanta e Hipómenes",
+      "year": 1625,
+      "description": "Hipómenes arroja las manzanas de oro durante la carrera con Atalanta. Reni convierte la escena mitológica en danza de cuerpos idealizados y movimiento suave.",
+      "dimensions": {
+        "width": 206,
+        "height": 297
+      }
+    },
+    {
+      "id": "reni-polifemo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Guido_Reni_-_Polyphemus_-_Google_Art_Project.jpg",
+      "title": "Polifemo",
+      "year": 1639,
+      "description": "El ciclope cantarino aparece en un paisaje clásico con expresión melancólica. Reni humaniza al monstruo mitológico con belleza clasicista y color sobrio.",
+      "dimensions": {
+        "width": 68,
+        "height": 53
+      }
+    },
+    {
+      "id": "reni-susana",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Guido_Reni_-_Susanna_and_the_Elders_-_Google_Art_Project.jpg",
+      "title": "Susana y los viejos",
+      "year": 1622,
+      "description": "Susana rechaza a los ancianos que la acosan en el baño. Reni aborda el tema con sensibilidad clasicista y una figura femenina de belleza ideal.",
+      "dimensions": {
+        "width": 145,
+        "height": 120
+      }
+    },
+    {
+      "id": "reni-baptism",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Guido_Reni_-_The_Baptism_of_Christ_-_Google_Art_Project.jpg",
+      "title": "El bautismo de Cristo",
+      "year": 1623,
+      "description": "Cristo recibe el bautismo de san Juan ante un cielo abierto con ángeles. Reni pinta el misterio con color claro y composición de elegancia devocional.",
+      "dimensions": {
+        "width": 260,
+        "height": 170
+      }
+    }
+  ]
+}

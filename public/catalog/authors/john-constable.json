@@ -50,6 +50,50 @@
         "width": 189,
         "height": 151
       }
+    },
+    {
+      "id": "constable-wivenhoe",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/John_Constable_-_Wivenhoe_Park%2C_Essex_-_Google_Art_Project.jpg",
+      "title": "Parque de Wivenhoe, Essex",
+      "year": 1816,
+      "description": "Lago, árboles y figuras dispersas en un paisaje veraniego apacible. Constable observa la luz campestre con naturalismo poético.",
+      "dimensions": {
+        "width": 56,
+        "height": 46
+      }
+    },
+    {
+      "id": "constable-hadleigh",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/John_Constable_-_Hadleigh_Castle_-_Google_Art_Project.jpg",
+      "title": "Castillo de Hadleigh",
+      "year": 1829,
+      "description": "Ruinas medievales sobre acantilados frente a un cielo tormentoso. Constable une topografía precisa y drama romántico del clima inglés.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      }
+    },
+    {
+      "id": "constable-dedham-vale",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/John_Constable_-_Dedham_Vale_-_Google_Art_Project.jpg",
+      "title": "Valle de Dedham",
+      "year": 1802,
+      "description": "Panorama del valle natal con campos, árboles y la torre de la iglesia al fondo. Obra temprana que funda su poética del Suffolk.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
+    },
+    {
+      "id": "constable-paisaje-ingles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/John_Constable_-_English_Landscape_-_Google_Art_Project.jpg",
+      "title": "Paisaje inglés",
+      "year": 1809,
+      "description": "Escena rural con camino, árboles y cielo cambiante en tonos verdes y grises. Constable captura la atmósfera húmeda del campo británico.",
+      "dimensions": {
+        "width": 80,
+        "height": 65
+      }
     }
   ]
 }

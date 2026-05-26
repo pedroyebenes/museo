@@ -66,6 +66,94 @@
         "width": 100,
         "height": 81
       }
+    },
+    {
+      "id": "cassatt-mujer-letras",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Mary_Cassatt_-_The_Letter_-_Google_Art_Project.jpg",
+      "title": "La carta",
+      "year": 1891,
+      "description": "Mujer escribe una carta inclinada sobre un escritorio con estampado floral. Cassatt combina intimidad burguesa y diseño plano inspirado en la estampa japonesa.",
+      "dimensions": {
+        "width": 61,
+        "height": 51
+      }
+    },
+    {
+      "id": "cassatt-nina-sillon-azul",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Mary_Cassatt_-_Little_Girl_in_a_Blue_Armchair_-_Google_Art_Project.jpg",
+      "title": "Niña en un sillón azul",
+      "year": 1878,
+      "description": "Niña aburrida se hunde en un sillón azul con un perro pequeño a su lado. Cassatt captura la infancia moderna con pincelada suelta y composición audazmente recortada.",
+      "dimensions": {
+        "width": 89,
+        "height": 129
+      }
+    },
+    {
+      "id": "cassatt-madre-nino",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Mary_Cassatt_-_Mother_and_Child_-_Google_Art_Project.jpg",
+      "title": "Madre e hijo",
+      "year": 1890,
+      "description": "Madre abraza a su hijo con ternura contenida sobre un fondo claro. Cassatt convierte la maternidad en tema moderno alejado del sentimentalismo académico.",
+      "dimensions": {
+        "width": 81,
+        "height": 65
+      }
+    },
+    {
+      "id": "cassatt-mujer-banando",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mary_Cassatt_-_Woman_Bathing_-_Google_Art_Project.jpg",
+      "title": "Mujer bañándose",
+      "year": 1890,
+      "description": "Desnudo femenino inclinado sobre una bañera en un interior íntimo. Grabado y pintura se funden en una escena de cuidado corporal observada con naturalidad.",
+      "dimensions": {
+        "width": 36,
+        "height": 27
+      }
+    },
+    {
+      "id": "cassatt-palco",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mary_Cassatt_-_In_the_Lodge_-_Google_Art_Project.jpg",
+      "title": "En el palco",
+      "year": 1878,
+      "description": "Mujer joven con abanico en un palco de teatro mientras la función continúa al fondo. Cassatt observa la vida social femenina con la misma modernidad que Degas en el ballet.",
+      "dimensions": {
+        "width": 81,
+        "height": 65
+      }
+    },
+    {
+      "id": "cassatt-sara-gato",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Mary_Cassatt_-_Sara_Holding_a_Cat_-_Google_Art_Project.jpg",
+      "title": "Sara sosteniendo un gato",
+      "year": 1908,
+      "description": "Niña abraza a un gato con expresión seria y vestido rosa. Retrato infantil tardío donde Cassatt simplifica la forma en manchas de color cálido.",
+      "dimensions": {
+        "width": 65,
+        "height": 81
+      }
+    },
+    {
+      "id": "cassatt-joven-fruta",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Mary_Cassatt_-_Young_Woman_Picking_Fruit_-_Google_Art_Project.jpg",
+      "title": "Joven recogiendo fruta",
+      "year": 1891,
+      "description": "Mujer alcanza una fruta en un jardín con brazo extendido y vestido claro. Cassatt adapta el motif de la estampa japonesa a una escena de ocio femenino al aire libre.",
+      "dimensions": {
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "id": "cassatt-peinado",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mary_Cassatt_-_The_Coiffure_-_Google_Art_Project.jpg",
+      "title": "El peinado",
+      "year": 1891,
+      "description": "Mujer se peina ante un espejo con encuadre recortado de influencia japonesa. Cassatt observa el ritual femenino cotidiano con color claro y composición moderna.",
+      "dimensions": {
+        "width": 100,
+        "height": 65
+      }
     }
   ]
 }
