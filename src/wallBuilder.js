@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { getSharedMaterials } from './materials.js';
+import { getSharedMaterials, makeArtistDomeMaterial } from './materials.js';
 import { getPortalGlowMaterial, getReturnPortalGlowMaterial, getReturnFrameMaterial, createDoorSignMesh } from './doorAssets.js';
 
 const DOOR_W = 1.8;
@@ -306,9 +306,12 @@ function addDoorPortal(group, mats, door, axis, fixed, normalIn, rotY, isReturn 
 function addDomeCeiling(group, width, depth, height, mats) {
   const span = Math.min(width, depth);
   const radius = span * 0.42;
+
+  // Dome sphere with sky fresco
+  const domeMat = mats.artistDomeMat || makeArtistDomeMaterial(mats.authorHue || 0);
   const dome = new THREE.Mesh(
     new THREE.SphereGeometry(radius, 48, 28, 0, Math.PI * 2, 0, Math.PI * 0.48),
-    mats.ceilMat,
+    domeMat,
   );
   dome.scale.y = 0.82;
   dome.position.set(0, height, 0);

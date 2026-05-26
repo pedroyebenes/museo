@@ -22,7 +22,7 @@ export function getQualityProfile() {
         hubMarble: 1024,
       },
       anisotropy: 4,
-      enableNormalMaps: false,
+      enableNormalMaps: true,
     };
   }
   return {

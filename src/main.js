@@ -1,6 +1,7 @@
 import { createScene } from './scene.js';
 import { loadCatalogData } from './catalogData.js';
 import { initMaterialRenderer } from './proceduralTextureUtils.js';
+import { buildNeutralEnvMap } from './materials.js';
 import { createControls } from './controls.js';
 import {
   createInfoOverlay,
@@ -18,6 +19,7 @@ async function boot() {
 
   const { scene, camera, renderer } = createScene();
   initMaterialRenderer(renderer);
+  scene.environment = buildNeutralEnvMap(renderer);
 
   if (
     window.matchMedia('(pointer: coarse)').matches ||

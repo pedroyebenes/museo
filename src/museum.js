@@ -60,6 +60,7 @@ export function buildAuthorRoom(scene, config) {
     depth,
     height,
     materials: getAuthorRoomMaterials(author),
+    domeCeiling: true,
     walls: [
       { side: 'N', doors: [] },
       { side: 'E', doors: [] },

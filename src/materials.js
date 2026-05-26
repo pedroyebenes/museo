@@ -40,6 +40,8 @@ export function getAuthorRoomMaterials(author) {
     wallMat,
     wainscotMat,
     trimMat,
+    authorHue: hue,
+    artistDomeMat: makeArtistDomeMaterial(hue),
   };
 }
 
@@ -57,9 +59,7 @@ export function getCategoryRoomMaterials(category) {
   const trimMat = base.trimMat.clone();
   trimMat.color = new THREE.Color().setHSL(((hue + 28) % 360) / 360, 0.42, 0.6);
 
-  const domeMat = getDomeMaterial().clone();
-  domeMat.color = new THREE.Color().setHSL(hue / 360, 0.18, 0.82);
-  domeMat.userData.shared = false;
+  const domeMat = getPantheonDomeMaterial(hue);
 
   return {
     ...base,
@@ -131,7 +131,7 @@ function build() {
   });
   if (wallNormal) {
     wallMat.normalMap = wallNormal;
-    wallMat.normalScale.set(0.22, 0.22);
+    wallMat.normalScale.set(0.55, 0.55);
   }
   wallMat.userData.shared = true;
 
@@ -143,7 +143,7 @@ function build() {
   });
   if (wainscotNormal) {
     wainscotMat.normalMap = wainscotNormal;
-    wainscotMat.normalScale.set(0.4, 0.4);
+    wainscotMat.normalScale.set(0.85, 0.85);
   }
   wainscotMat.userData.shared = true;
 
@@ -637,8 +637,9 @@ function makePlasterWallTexture(quality = getQualityProfile()) {
 
       const n = fbmNoise2D(noise, x / 32, y / 32, 4, 2, 0.5);
       const micro = fbmNoise2D(noise, x / 6, y / 6, 2, 2, 0.45);
+      const grain = fbmNoise2D(noise, x / 2.2, y / 2.2, 2, 2, 0.4);
       const band = Math.sin((y / size) * Math.PI * 8) * 0.015;
-      const variation = (n - 0.5) * 12 + (micro - 0.5) * 6 + band * 255;
+      const variation = (n - 0.5) * 12 + (micro - 0.5) * 6 + (grain - 0.5) * 3 + band * 255;
 
       const i = (y * size + x) * 4;
       d[i] = Math.max(0, Math.min(255, baseR + variation));
@@ -647,7 +648,7 @@ function makePlasterWallTexture(quality = getQualityProfile()) {
       d[i + 3] = 255;
 
       if (heightBuf) {
-        heightBuf[y * size + x] = 0.5 + (n - 0.5) * 0.08 + (micro - 0.5) * 0.04;
+        heightBuf[y * size + x] = 0.5 + (n - 0.5) * 0.08 + (micro - 0.5) * 0.04 + (grain - 0.5) * 0.02;
       }
     }
   }
@@ -676,8 +677,8 @@ function makeWainscotTexture(quality = getQualityProfile()) {
   c.width = width;
   c.height = height;
   const ctx = c.getContext('2d');
-  const noise = createTileableNoise2D(width, height, 'wainscot-marble');
-  const rand = createSeededRandom('wainscot-veins');
+  const colorNoise = createTileableNoise2D(width, height, 'wainscot-marble');
+  const turbNoise = createTileableNoise2D(width, height, 'wainscot-turb');
   const heightBuf = quality.enableNormalMaps ? createHeightBuffer(width, height, 0.5) : null;
 
   const img = ctx.createImageData(width, height);
@@ -685,41 +686,41 @@ function makeWainscotTexture(quality = getQualityProfile()) {
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
       const vGrad = y / height;
-      const baseR = 235 - vGrad * 18;
+      const baseR = 238 - vGrad * 18;
       const baseG = 228 - vGrad * 20;
-      const baseB = 214 - vGrad * 22;
-      const n = fbmNoise2D(noise, x / 40, y / 24, 3, 2, 0.5);
-      const variation = (n - 0.5) * 16;
+      const baseB = 210 - vGrad * 22;
+
+      // Base color variation (coarse Perlin)
+      const cn = fbmNoise2D(colorNoise, x / 40, y / 24, 3, 2, 0.5);
+      const colorVar = (cn - 0.5) * 18;
+
+      // Perlin marble turbulence: sum of |noise| at multiple scales
+      const turbLow = Math.abs(fbmNoise2D(turbNoise, x / 80, y / 80, 3, 2.1, 0.52) * 2 - 1);
+      const turbHigh = Math.abs(fbmNoise2D(turbNoise, x / 22, y / 22, 2, 2, 0.48) * 2 - 1);
+      const turb = turbLow * 3.4 + turbHigh * 0.9;
+
+      // Marble veins: sine of position + turbulence → natural curved bands
+      const veinRaw = Math.sin((x / width * 4.5 + turb) * Math.PI);
+      // Normalize to [0, 1]: 0 = vein core (dark), 1 = marble body
+      const veinSharp = veinRaw * 0.5 + 0.5;
+      // Sharpen transition for thinner veins
+      const veinFactor = Math.pow(veinSharp, 0.45);
+
+      // Darken at vein core, subtle bright edge
+      const veinDark = (1 - veinFactor) * 30;
+      const veinEdge = veinFactor > 0.65 ? (veinFactor - 0.65) / 0.35 * 7 : 0;
+
       const i = (y * width + x) * 4;
-      d[i] = Math.max(0, Math.min(255, baseR + variation));
-      d[i + 1] = Math.max(0, Math.min(255, baseG + variation));
-      d[i + 2] = Math.max(0, Math.min(255, baseB + variation * 0.85));
+      d[i]     = Math.max(0, Math.min(255, baseR + colorVar - veinDark * 0.9 + veinEdge));
+      d[i + 1] = Math.max(0, Math.min(255, baseG + colorVar - veinDark + veinEdge));
+      d[i + 2] = Math.max(0, Math.min(255, baseB + colorVar * 0.85 - veinDark * 0.65 + veinEdge * 0.8));
       d[i + 3] = 255;
-      if (heightBuf) heightBuf[y * width + x] = 0.5 + (n - 0.5) * 0.06;
+      if (heightBuf) {
+        heightBuf[y * width + x] = 0.5 + (cn - 0.5) * 0.05 - (1 - veinFactor) * 0.05;
+      }
     }
   }
   ctx.putImageData(img, 0, 0);
-
-  const veinCount = Math.round(width / 28);
-  for (let v = 0; v < veinCount; v++) {
-    const startX = (v / veinCount) * width;
-    const alpha = 0.04 + rand() * 0.05;
-    ctx.strokeStyle = `rgba(90,80,70,${alpha})`;
-    ctx.lineWidth = 0.4 + rand() * 0.9;
-    ctx.beginPath();
-    ctx.moveTo(startX, 0);
-    const cp1x = startX + (rand() - 0.5) * width * 0.08;
-    const cp2x = startX + (rand() - 0.5) * width * 0.08;
-    ctx.bezierCurveTo(cp1x, height * 0.33, cp2x, height * 0.66, startX + (rand() - 0.5) * 6, height);
-    ctx.stroke();
-
-    ctx.strokeStyle = `rgba(255,250,240,${0.03 + rand() * 0.04})`;
-    ctx.lineWidth = 0.35;
-    ctx.beginPath();
-    ctx.moveTo(startX + 3, 0);
-    ctx.bezierCurveTo(cp1x + 4, height * 0.33, cp2x + 4, height * 0.66, startX + 5, height);
-    ctx.stroke();
-  }
 
   for (let i = 1; i < 4; i++) {
     const x = (i * width) / 4;
@@ -759,6 +760,270 @@ function makeWainscotTexture(quality = getQualityProfile()) {
     normalTex.wrapT = THREE.ClampToEdgeWrapping;
   }
   return { colorTex, normalTex };
+}
+
+let pantheonDomeTexCached = null;
+
+function getPantheonDomeTex() {
+  if (!pantheonDomeTexCached) {
+    pantheonDomeTexCached = makePantheonDomeTexture();
+    pantheonDomeTexCached.userData.shared = true;
+  }
+  return pantheonDomeTexCached;
+}
+
+function getPantheonDomeMaterial(hue) {
+  const mat = new THREE.MeshStandardMaterial({
+    map: getPantheonDomeTex(),
+    side: THREE.DoubleSide,
+    roughness: 0.88,
+    metalness: 0.04,
+    color: new THREE.Color().setHSL(hue / 360, 0.12, 0.94),
+  });
+  mat.userData.shared = false;
+  return mat;
+}
+
+function makePantheonDomeTexture() {
+  const W = 2048;
+  const H = 1024;
+  const c = document.createElement('canvas');
+  c.width = W;
+  c.height = H;
+  const ctx = c.getContext('2d');
+
+  // Base: warm travertine limestone
+  const bg = ctx.createLinearGradient(0, 0, 0, H);
+  bg.addColorStop(0.0,  '#fff8e8');
+  bg.addColorStop(0.08, '#ecdbb8');
+  bg.addColorStop(0.55, '#d8c4a0');
+  bg.addColorStop(0.85, '#c4ae88');
+  bg.addColorStop(1.0,  '#b09870');
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, W, H);
+
+  // Stone grain
+  const stoneNoise = createTileableNoise2D(64, 32, 'pantheon-stone');
+  const stoneImg = ctx.getImageData(0, 0, W, H);
+  const sd = stoneImg.data;
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const n = fbmNoise2D(stoneNoise, x / 60, y / 60, 3, 2, 0.5);
+      const grain = (n - 0.5) * 14;
+      const i = (y * W + x) * 4;
+      sd[i]     = Math.max(0, Math.min(255, sd[i]     + grain));
+      sd[i + 1] = Math.max(0, Math.min(255, sd[i + 1] + grain * 0.9));
+      sd[i + 2] = Math.max(0, Math.min(255, sd[i + 2] + grain * 0.7));
+    }
+  }
+  ctx.putImageData(stoneImg, 0, 0);
+
+  // Coffered grid: 5 rings × 28 columns
+  const COLS = 28;
+  const ROWS = 5;
+  const startY = H * 0.09;
+  const endY   = H * 0.80;
+  const cofferW = W / COLS;
+  const cofferH = (endY - startY) / ROWS;
+
+  for (let row = 0; row < ROWS; row++) {
+    for (let col = 0; col < COLS; col++) {
+      const cx = col * cofferW;
+      const cy = startY + row * cofferH;
+
+      const bfX = cofferW * 0.11;
+      const bfY = cofferH * 0.11;
+
+      // Shadow border
+      const shadowG = ctx.createLinearGradient(cx, cy, cx + cofferW, cy + cofferH);
+      shadowG.addColorStop(0, 'rgba(0,0,0,0.18)');
+      shadowG.addColorStop(0.5, 'rgba(0,0,0,0.07)');
+      shadowG.addColorStop(1, 'rgba(0,0,0,0.18)');
+      ctx.fillStyle = shadowG;
+      ctx.fillRect(cx + bfX * 0.3, cy + bfY * 0.3, cofferW - bfX * 0.6, cofferH - bfY * 0.6);
+
+      // Inner panel (lighter)
+      const innerG = ctx.createLinearGradient(cx, cy, cx, cy + cofferH);
+      innerG.addColorStop(0, 'rgba(0,0,0,0.10)');
+      innerG.addColorStop(0.5, 'rgba(255,255,255,0.03)');
+      innerG.addColorStop(1, 'rgba(255,255,255,0.07)');
+      ctx.fillStyle = innerG;
+      ctx.fillRect(cx + bfX, cy + bfY, cofferW - bfX * 2, cofferH - bfY * 2);
+
+      // Gold rosette
+      const rx = cx + cofferW / 2;
+      const ry = cy + cofferH / 2;
+      const rRad = Math.min(cofferW, cofferH) * 0.075;
+
+      ctx.beginPath();
+      ctx.arc(rx, ry, rRad * 1.5, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(140,110,50,0.28)';
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(rx, ry, rRad, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(188,148,65,0.82)';
+      ctx.fill();
+
+      // 8 petal rings
+      ctx.strokeStyle = 'rgba(212,172,78,0.6)';
+      ctx.lineWidth = Math.max(0.4, rRad * 0.32);
+      for (let p = 0; p < 8; p++) {
+        const angle = (p / 8) * Math.PI * 2;
+        const px = rx + Math.cos(angle) * rRad * 2.3;
+        const py = ry + Math.sin(angle) * rRad * 2.3;
+        ctx.beginPath();
+        ctx.arc(px, py, rRad * 0.5, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+    }
+  }
+
+  // Base cornice strip
+  const corniceY = H * 0.80;
+  ctx.fillStyle = 'rgba(148,118,72,0.65)';
+  ctx.fillRect(0, corniceY, W, H * 0.045);
+  ctx.strokeStyle = 'rgba(200,165,88,0.82)';
+  ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0, corniceY); ctx.lineTo(W, corniceY); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(0, corniceY + H * 0.045); ctx.lineTo(W, corniceY + H * 0.045); ctx.stroke();
+
+  // Oculus glow at apex
+  const oculusG = ctx.createRadialGradient(W / 2, 0, 0, W / 2, 0, H * 0.11);
+  oculusG.addColorStop(0.0, 'rgba(255,252,228,1.0)');
+  oculusG.addColorStop(0.3, 'rgba(255,234,158,0.85)');
+  oculusG.addColorStop(0.7, 'rgba(220,184,98,0.4)');
+  oculusG.addColorStop(1.0, 'rgba(180,138,58,0)');
+  ctx.fillStyle = oculusG;
+  ctx.fillRect(0, 0, W, H * 0.13);
+
+  const tex = configureCanvasTexture(new THREE.CanvasTexture(c), null, {
+    generateMipmaps: true,
+  });
+  tex.repeat.set(-1, 1);
+  tex.offset.set(1, 0);
+  return tex;
+}
+
+let artistDomeTexCached = null;
+
+function getArtistDomeTex() {
+  if (!artistDomeTexCached) {
+    artistDomeTexCached = makeArtistSkyTexture();
+    artistDomeTexCached.userData.shared = true;
+  }
+  return artistDomeTexCached;
+}
+
+export function makeArtistDomeMaterial(hue = 0) {
+  const mat = new THREE.MeshStandardMaterial({
+    map: getArtistDomeTex(),
+    side: THREE.DoubleSide,
+    roughness: 0.90,
+    metalness: 0.02,
+    color: new THREE.Color().setHSL(hue / 360, 0.06, 0.97),
+  });
+  mat.userData.shared = false;
+  return mat;
+}
+
+function makeArtistSkyTexture() {
+  const W = 2048;
+  const H = 1024;
+  const c = document.createElement('canvas');
+  c.width = W;
+  c.height = H;
+  const ctx = c.getContext('2d');
+
+  // Sky gradient: warm white at zenith → soft pale blue at base
+  const sky = ctx.createLinearGradient(0, 0, 0, H);
+  sky.addColorStop(0.0,  '#fffef8');
+  sky.addColorStop(0.12, '#f8f2e4');
+  sky.addColorStop(0.38, '#edf2f8');
+  sky.addColorStop(0.68, '#e4ecf5');
+  sky.addColorStop(0.88, '#d8e2ec');
+  sky.addColorStop(1.0,  '#c8d4e4');
+  ctx.fillStyle = sky;
+  ctx.fillRect(0, 0, W, H);
+
+  // Subtle cloud wisps
+  const cloudNoise = createTileableNoise2D(64, 32, 'artist-sky-clouds');
+  const cloudImg = ctx.getImageData(0, 0, W, H);
+  const cd = cloudImg.data;
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const vf = y / H;
+      if (vf > 0.10 && vf < 0.75) {
+        const fade = Math.sin(((vf - 0.10) / 0.65) * Math.PI);
+        const n = fbmNoise2D(cloudNoise, x / 110, y / 55, 4, 2.1, 0.5);
+        const cloud = Math.max(0, (n - 0.40) * 1.8) * fade;
+        const i = (y * W + x) * 4;
+        const w = cloud * 20;
+        cd[i]     = Math.min(255, cd[i]     + w);
+        cd[i + 1] = Math.min(255, cd[i + 1] + w);
+        cd[i + 2] = Math.min(255, cd[i + 2] + w * 0.75);
+      }
+    }
+  }
+  ctx.putImageData(cloudImg, 0, 0);
+
+  // Gold cornice band at base
+  const corniceG = ctx.createLinearGradient(0, H * 0.80, 0, H);
+  corniceG.addColorStop(0,   'rgba(200,165,78,0)');
+  corniceG.addColorStop(0.4, 'rgba(188,148,62,0.55)');
+  corniceG.addColorStop(1.0, 'rgba(158,122,48,0.75)');
+  ctx.fillStyle = corniceG;
+  ctx.fillRect(0, H * 0.80, W, H * 0.20);
+
+  ctx.strokeStyle = 'rgba(212,175,82,0.88)';
+  ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0, H * 0.82); ctx.lineTo(W, H * 0.82); ctx.stroke();
+
+  // Oculus glow
+  const oculusG = ctx.createRadialGradient(W / 2, 0, 0, W / 2, 0, H * 0.14);
+  oculusG.addColorStop(0.0, 'rgba(255,252,238,1.0)');
+  oculusG.addColorStop(0.25, 'rgba(255,248,222,0.75)');
+  oculusG.addColorStop(0.65, 'rgba(230,235,245,0.35)');
+  oculusG.addColorStop(1.0, 'rgba(200,215,235,0)');
+  ctx.fillStyle = oculusG;
+  ctx.fillRect(0, 0, W, H * 0.16);
+
+  const tex = configureCanvasTexture(new THREE.CanvasTexture(c), null, {
+    generateMipmaps: true,
+  });
+  tex.repeat.set(-1, 1);
+  tex.offset.set(1, 0);
+  return tex;
+}
+
+export function buildNeutralEnvMap(renderer) {
+  const W = 512;
+  const H = 256;
+  const c = document.createElement('canvas');
+  c.width = W;
+  c.height = H;
+  const ctx = c.getContext('2d');
+
+  // Warm gallery environment: skylight ceiling, neutral walls, warm floor
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0.0,  '#fff8f0');
+  grad.addColorStop(0.30, '#f5ede0');
+  grad.addColorStop(0.52, '#e8d8c4');
+  grad.addColorStop(0.72, '#c8b89a');
+  grad.addColorStop(1.0,  '#a09070');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  const canvasTex = new THREE.CanvasTexture(c);
+  canvasTex.mapping = THREE.EquirectangularReflectionMapping;
+  canvasTex.colorSpace = THREE.SRGBColorSpace;
+
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  pmrem.compileEquirectangularShader();
+  const envMap = pmrem.fromEquirectangular(canvasTex).texture;
+  pmrem.dispose();
+  canvasTex.dispose();
+  return envMap;
 }
 
 function makeCofferedCeilingTexture(quality = getQualityProfile()) {
