@@ -15,7 +15,7 @@ Authors to validate (105 total):
 [x] anthony-van-dyck (5 paintings)
 [x] antoine-watteau (6 paintings)
 [x] arnold-bocklin (6 paintings)
-[ ] artemisia-gentileschi (7 paintings)
+[x] artemisia-gentileschi (7 paintings)
 [ ] aubrey-beardsley (10 paintings)
 [ ] bartolome-esteban-murillo (4 paintings)
 [ ] berthe-morisot (6 paintings)
