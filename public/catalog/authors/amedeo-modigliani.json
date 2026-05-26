@@ -9,7 +9,7 @@
   "paintings": [
     {
       "id": "modigliani-retrato",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Amedeo_Modigliani_-_Portrait_of_Jeanne_H%C3%A9buterne_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Amedeo_Modigliani_-_Portrait_of_Jeanne_Hebuterne%2C_Seated%2C_1918_-_Google_Art_Project.jpg",
       "title": "Retrato de Jeanne Hébuterne",
       "year": 1918,
       "description": "Compañera del artista con rostro ovalado y mirada melancólica. Retrato íntimo de línea elegante y color cálido.",
@@ -20,7 +20,7 @@
     },
     {
       "id": "modigliani-mujer",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Amedeo_Modigliani_-_Reclining_Nude_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/1917_Modigliani_Reclining_nude_anagoria.JPG",
       "title": "Desnudo reclinado",
       "year": 1917,
       "description": "Figura femenina tumbada de contornos alargados. Modigliani moderniza el desnudo académico con sensualidad serena.",
@@ -31,7 +31,7 @@
     },
     {
       "id": "modigliani-nino",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Amedeo_Modigliani_-_Portrait_of_a_Young_Girl_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Modigliani%2C_Amedeo_-_Young_Girl_with_a_Striped_Blouse2.jpg",
       "title": "Retrato de una joven",
       "year": 1917,
       "description": "Niña sentada de ojos almendrados y expresión grave. Modigliani condensa inocencia y solemnidad en línea pura.",
@@ -53,7 +53,7 @@
     },
     {
       "id": "modigliani-chaika",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Amedeo_Modigliani_-_Portrait_of_L%C3%A9opold_Zborowski_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Amedeo_modigliani_-_retrato_de_leopoldo_zborowski_03.jpg",
       "title": "Retrato de Léopold Zborowski",
       "year": 1919,
       "description": "Mercader y mecenas con manos entrelazadas y rostro estilizado. Modigliani retrata el mundo bohemio parisino.",
@@ -86,7 +86,7 @@
     },
     {
       "id": "modigliani-caryatid",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Amedeo_Modigliani_-_Caryatid_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Modigliani_-_Standing_Caryatid%2C_1913.jpg",
       "title": "Cariátide",
       "year": 1913,
       "description": "Figura escultórica de cuerpo alargado y rostro enmascarado. Puente entre escultura primitiva y pintura parisina.",
@@ -97,7 +97,7 @@
     },
     {
       "id": "modigliani-joven",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Amedeo_Modigliani_-_Young_Woman_in_a_Yellow_Dress_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Modigliani_-_Young_woman_in_a_yellow_dress_%28Ren%C3%A9e_Modot%29.jpg",
       "title": "Joven con vestido amarillo",
       "year": 1918,
       "description": "Retrato de color cálido y cuello esbelto. Modigliani combina elegancia y melancolía en la París de posguerra.",
@@ -108,7 +108,7 @@
     },
     {
       "id": "modigliani-paul",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Amedeo_Modigliani_-_Portrait_of_Paul_Guillaume_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Amedeo_Modigliani_-_Paul_Guillaume_-_Google_Art_Project.jpg",
       "title": "Retrato de Paul Guillaume",
       "year": 1916,
       "description": "Joven marchante con rostro ovalado y fondo azul. Modigliani retrata al mundo del arte con línea depurada.",
@@ -130,7 +130,7 @@
     },
     {
       "id": "modigliani-diego",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Amedeo_Modigliani_-_Portrait_of_Diego_Rivera_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Modigliani-Amedeo-Portrait-de-Diego-Rivera_Kunstsammlung_NRW_1024.jpg",
       "title": "Retrato de Diego Rivera",
       "year": 1914,
       "description": "Rivera joven con rostro alargado y fondo cálido. Encuentro entre artistas de la bohemia parisina.",
