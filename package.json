@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "validate:catalog": "node scripts/validate-catalog.mjs",
+    "check:urls": "node scripts/check-urls.mjs",
+    "catalog:stats": "node scripts/catalog-inventory.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },

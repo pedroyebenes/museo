@@ -381,6 +381,11 @@ museo/
 │   └── catalog/
 │       ├── index.json          # Categorías y orden de autores
 │       └── authors/*.json      # Biografías y obras por autor
+├── scripts/
+│   ├── validate-catalog.mjs    # Valida esquema del catálogo
+│   ├── check-urls.mjs          # Comprueba URLs de cuadros con HEAD HTTP
+│   ├── catalog-inventory.mjs   # Estadísticas y snapshot del catálogo
+│   └── commons-url.mjs         # Utilidad: construye URLs de Wikimedia Commons
 ├── src/
 │   ├── main.js         # Arranque, bucle de render, carga de datos
 │   ├── catalogData.js  # Cargador y normalización del catálogo
@@ -402,9 +407,11 @@ museo/
 | Script | Comando | Descripción |
 |--------|---------|-------------|
 | `dev` | `npm run dev` | Servidor de desarrollo Vite con recarga en caliente |
-| `validate:catalog` | `npm run validate:catalog` | Valida índice, autores y obras del catálogo JSON |
 | `build` | `npm run build` | Genera `dist/` para producción |
 | `preview` | `npm run preview` | Sirve `dist/` localmente (prueba post-build) |
+| `validate:catalog` | `npm run validate:catalog` | Valida esquema del catálogo JSON (estructura, campos, duplicados) |
+| `check:urls` | `npm run check:urls` | Verifica con HEAD HTTP que todas las URLs de los cuadros son accesibles. Acepta un id de autor como argumento para comprobar solo esa sala (`node scripts/check-urls.mjs van-gogh`) |
+| `catalog:stats` | `npm run catalog:stats` | Imprime estadísticas por categoría y autor, y escribe un snapshot JSON en `scripts/data/` |
 
 ---
 
