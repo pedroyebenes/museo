@@ -23,10 +23,10 @@ Authors to validate (105 total):
 [x] camille-pissarro (11 paintings)
 [x] canaletto (6 paintings)
 [x] caspar-david-friedrich (10 paintings)
-[ ] claude-lorrain (5 paintings)
+[ ] claude-lorrain (5 paintings) - 3 OK, 3 missing need revalidation
 [ ] claude-monet (14 paintings)
-[ ] correggio (5 paintings)
-[ ] dante-gabriel-rossetti (8 paintings)
+[x] correggio (5 paintings) - all 5 confirmed OK (API errors resolved)
+[ ] dante-gabriel-rossetti (8 paintings) - 5 OK, 3 missing need revalidation (Question/Sphinx, Fanny Cornforth, Loving Cup)
 [x] diego-velazquez (4 paintings)
 [ ] edgar-degas (12 paintings)
 [ ] edouard-manet (11 paintings)
