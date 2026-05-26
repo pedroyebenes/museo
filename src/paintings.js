@@ -10,6 +10,7 @@ const FALLBACK_LONG_SIDE = 2.0;
 
 export const PAINTING_LAYOUT = {
   labelHeight: LABEL_HEIGHT,
+  labelWidth: LABEL_WIDTH,
   labelGap: 0.04,
   frameThickness: FRAME_THICKNESS,
   floorClearance: 0.15,
@@ -58,9 +59,10 @@ export function getPaintingLayoutExtents(data) {
     w: FALLBACK_LONG_SIDE,
     h: FALLBACK_LONG_SIDE,
   };
+  const framedWidth = dims.w + FRAME_THICKNESS * 2;
   const labelBelow = labelBelowExtent();
   return {
-    width: dims.w + FRAME_THICKNESS * 2,
+    width: Math.max(framedWidth, LABEL_WIDTH),
     height: dims.h + FRAME_THICKNESS * 2 + labelBelow,
     canvasH: dims.h,
   };
@@ -139,7 +141,7 @@ function buildPaintingMesh(texture, data) {
   group.add(canvas);
 
   const label = buildLabel(data);
-  label.position.set(0, -h / 2 - LABEL_HEIGHT - 0.04, 0.002);
+  label.position.set(0, -h / 2 - LABEL_HEIGHT - PAINTING_LAYOUT.labelGap, 0.002);
   group.add(label);
 
   group.userData.painting = data;
