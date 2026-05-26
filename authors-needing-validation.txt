@@ -7,7 +7,7 @@ Authors to validate (105 total):
 [x] adolph-menzel (8 paintings)
 [x] alberto-durero (6 paintings)
 [x] alfred-sisley (10 paintings)
-[ ] alphonse-mucha (16 paintings)
+[x] alphonse-mucha (16 paintings)
 [ ] amedeo-modigliani (12 paintings)
 [ ] andrea-del-sarto (6 paintings)
 [ ] andrea-mantegna (6 paintings)
