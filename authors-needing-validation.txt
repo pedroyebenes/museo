@@ -21,7 +21,7 @@ Authors to validate (105 total):
 [x] berthe-morisot (6 paintings)
 [ ] bronzino (5 paintings)
 [x] camille-pissarro (11 paintings)
-[ ] canaletto (6 paintings)
+[x] canaletto (6 paintings)
 [ ] caspar-david-friedrich (10 paintings)
 [ ] claude-lorrain (5 paintings)
 [ ] claude-monet (14 paintings)
