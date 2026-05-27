@@ -25,7 +25,7 @@ Authors to validate (105 total):
 [x] caspar-david-friedrich (10 paintings)
 [x] claude-lorrain (5 paintings) - all 5 confirmed OK
 [x] claude-monet (19 paintings) - 2 fixed (Grenouillere, Etretat), others need revalidation due to rate limits (429)
-[ ] el-bosco (8 paintings) - 4 confirmed OK, 4 ERROR (rate limit) need recheck
+[x] el-bosco (8 paintings) - all 8 confirmed OK
 [x] correggio (5 paintings) - all 5 confirmed OK
 [ ] dante-gabriel-rossetti (8 paintings) - 5 OK, 3 missing need revalidation (Question/Sphinx, Fanny Cornforth, Loving Cup)
 [x] diego-velazquez (4 paintings)
@@ -34,7 +34,7 @@ Authors to validate (105 total):
 [ ] edouard-vuillard (10 paintings)
 [ ] edvard-munch (10 paintings)
 [ ] edward-hopper (15 paintings)
-[ ] el-bosco (4 paintings)
+[x] el-bosco (4 paintings)
 [ ] el-greco (6 paintings) - 2 confirmed OK, 1 MISSING (Apostles Peter and Paul), 3 ERROR (rate limit) need recheck
 [ ] emanuel-leutze (5 paintings) - 1 OK, 2 MISSING, 2 ERR (rate limit) need revalidation
 [ ] eugene-delacroix (13 paintings) - 3 OK, 10 ERR (rate limit) need revalidation
