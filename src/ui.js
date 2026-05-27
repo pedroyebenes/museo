@@ -4,13 +4,14 @@ import { formatPaintingDimensions } from './paintings.js';
 const MAX_VIEW_DISTANCE = 4.0;
 const FOCUS_INTERVAL_MS = 120;
 
-export function createInfoOverlay({ onReport } = {}) {
+export function createInfoOverlay({ favorites, onFavoriteChange, onReport } = {}) {
   const panel = document.getElementById('info-panel');
   const titleEl = document.getElementById('info-title');
   const authorEl = document.getElementById('info-author');
   const sizeEl = document.getElementById('info-size');
   const descEl = document.getElementById('info-description');
   const itemsEl = document.getElementById('info-items');
+  const favoriteBtn = document.getElementById('info-favorite');
   const reportBtn = document.getElementById('info-report');
 
   let current = null;
@@ -21,6 +22,14 @@ export function createInfoOverlay({ onReport } = {}) {
     onReport?.();
   });
   reportBtn?.addEventListener('pointerdown', (e) => e.stopPropagation());
+  favoriteBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (!current?.id) return;
+    const active = favorites?.toggle(current.id) ?? false;
+    updateFavoriteButton();
+    onFavoriteChange?.(active, current);
+  });
+  favoriteBtn?.addEventListener('pointerdown', (e) => e.stopPropagation());
 
   function show(data) {
     if (suppressed) return;
@@ -54,6 +63,8 @@ export function createInfoOverlay({ onReport } = {}) {
     }
 
     panel.classList.remove('hidden');
+    updateFavoriteButton();
+    favoriteBtn?.classList.remove('hidden');
     reportBtn?.classList.remove('hidden');
   }
 
@@ -64,8 +75,20 @@ export function createInfoOverlay({ onReport } = {}) {
     sizeEl.style.display = '';
     descEl.style.display = '';
     if (itemsEl) itemsEl.classList.add('hidden');
+    favoriteBtn?.classList.add('hidden');
     reportBtn?.classList.add('hidden');
     panel.classList.add('hidden');
+  }
+
+  function updateFavoriteButton() {
+    if (!favoriteBtn || !current?.id) return;
+    const active = favorites?.has(current.id) ?? false;
+    favoriteBtn.classList.toggle('active', active);
+    favoriteBtn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    favoriteBtn.setAttribute(
+      'aria-label',
+      active ? 'Quitar de favoritos' : 'Añadir a favoritos',
+    );
   }
 
   function toggleSuppressed() {
@@ -82,7 +105,7 @@ export function createInfoOverlay({ onReport } = {}) {
     return current;
   }
 
-  return { show, hide, toggleSuppressed, isSuppressed, getCurrent };
+  return { show, hide, toggleSuppressed, isSuppressed, getCurrent, refresh: updateFavoriteButton };
 }
 
 export function createRoomHUD() {

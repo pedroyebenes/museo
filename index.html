@@ -22,6 +22,7 @@
             <li><b>Ratón</b> — mirar alrededor</li>
             <li><b>Mayús</b> — correr</li>
             <li><b>M</b> — catálogo de categorías, autores y cuadros</li>
+            <li><b>F</b> — marcar o quitar de favoritos el cuadro enfocado</li>
             <li><b>H</b> — ocultar o mostrar la ficha del cuadro</li>
             <li><b>R</b> — reportar error en el cuadro o sala actual</li>
             <li><b>Esc</b> — liberar el cursor</li>
@@ -34,6 +35,7 @@
             <li><b>Mitad derecha</b> — arrastra para mirar alrededor</li>
             <li><b>Correr</b> — botón con icono de correr (esquina inferior derecha)</li>
             <li><b>Info</b> — mostrar u ocultar la ficha del cuadro (esquina inferior derecha)</li>
+            <li><b>Favorito</b> — marca el cuadro desde su ficha o desde el catálogo</li>
             <li><b>Reportar</b> — botón con icono de aviso (arriba a la derecha); reporta el cuadro que estés mirando o la sala del autor</li>
             <li><b>Catálogo</b> — botón arriba a la izquierda; salta a categoría, sala o cuadro</li>
           </ul>
@@ -58,6 +60,10 @@
         </header>
         <div class="catalog-search-wrap">
           <input type="search" id="catalog-search" class="catalog-search" placeholder="Buscar categoría, autor u obra…" autocomplete="off" />
+          <button type="button" id="catalog-favorites-filter" class="catalog-favorites-filter" aria-pressed="false">
+            <span aria-hidden="true">☆</span>
+            Favoritos
+          </button>
         </div>
         <div id="catalog-list" class="catalog-list"></div>
         <div id="catalog-detail" class="catalog-detail hidden"></div>
@@ -72,6 +78,10 @@
       <p id="info-size"></p>
       <p id="info-description"></p>
       <ul id="info-items" class="info-items hidden"></ul>
+      <button type="button" id="info-favorite" class="info-favorite-btn hidden" aria-pressed="false" aria-label="Añadir a favoritos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="m12 2.8 2.8 5.7 6.3.9-4.6 4.5 1.1 6.3-5.6-3-5.6 3 1.1-6.3-4.6-4.5 6.3-.9L12 2.8zm0 4.5-1.5 3-3.3.5 2.4 2.3-.6 3.3 3-1.6 3 1.6-.6-3.3 2.4-2.3-3.3-.5-1.5-3z"/></svg>
+        <span>Favorito</span>
+      </button>
       <button type="button" id="info-report" class="info-report-btn hidden" aria-label="Reportar error en este cuadro">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 4.2 7.53 13.3H4.47L12 6.2zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
         <span>Reportar error</span>

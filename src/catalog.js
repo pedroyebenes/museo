@@ -19,6 +19,7 @@ function plural(count, singular, pluralText) {
 
 export function createCatalog({
   catalog,
+  favorites,
   onGoToCategory,
   onGoToRoom,
   onGoToPainting,
@@ -26,6 +27,7 @@ export function createCatalog({
 }) {
   const panel = document.getElementById('catalog-panel');
   const searchInput = document.getElementById('catalog-search');
+  const favoritesFilterBtn = document.getElementById('catalog-favorites-filter');
   const listEl = document.getElementById('catalog-list');
   const detailEl = document.getElementById('catalog-detail');
   const closeBtn = document.getElementById('catalog-close');
@@ -43,6 +45,9 @@ export function createCatalog({
   let selectedCategoryId = null;
   let selectedAuthorId = null;
   let query = '';
+  let favoriteOnly = false;
+
+  const unsubscribeFavorites = favorites?.subscribe(() => renderCurrentView());
 
   function authorPaintings(authorId) {
     return paintingsByAuthor[authorId] || [];
@@ -107,6 +112,7 @@ export function createCatalog({
       goToCategory(categoryId);
     });
     bindAuthorRows(detailEl);
+    bindFavoriteButtons(detailEl);
   }
 
   function renderAuthorDetail(authorId) {
@@ -152,6 +158,7 @@ export function createCatalog({
       goToRoom(authorId);
     });
     bindPaintingRows(detailEl);
+    bindFavoriteButtons(detailEl);
   }
 
   function renderSearchResults() {
@@ -161,10 +168,11 @@ export function createCatalog({
     detailEl.classList.add('hidden');
     listEl.classList.remove('hidden');
 
-    const matchedCategories = categories.filter(matchesCategory);
-    const matchedAuthors = Object.values(authorsById).filter(matchesAuthor);
+    const matchedCategories = favoriteOnly ? [] : categories.filter(matchesCategory);
+    const matchedAuthors = favoriteOnly ? [] : Object.values(authorsById).filter(matchesAuthor);
     const matchedPaintings = Object.values(paintingsByAuthor)
       .flat()
+      .filter((painting) => !favoriteOnly || favorites?.has(painting.id))
       .filter(matchesPainting);
 
     const sections = [
@@ -193,6 +201,34 @@ export function createCatalog({
     bindCategoryRows(listEl);
     bindAuthorRows(listEl);
     bindPaintingRows(listEl);
+    bindFavoriteButtons(listEl);
+  }
+
+  function renderFavorites() {
+    view = 'favorites';
+    selectedCategoryId = null;
+    selectedAuthorId = null;
+    detailEl.classList.add('hidden');
+    listEl.classList.remove('hidden');
+
+    const favoritePaintings = Object.values(paintingsByAuthor)
+      .flat()
+      .filter((painting) => favorites?.has(painting.id))
+      .filter((painting) => !query || matchesPainting(painting));
+
+    listEl.innerHTML = favoritePaintings.length
+      ? renderSearchSection(
+          'Cuadros favoritos',
+          favoritePaintings.map((painting) =>
+            renderPaintingRow(authorsById[painting.authorId], painting, {
+              showAuthor: true,
+            }),
+          ),
+        )
+      : '<p class="catalog-empty">No hay cuadros favoritos.</p>';
+
+    bindPaintingRows(listEl);
+    bindFavoriteButtons(listEl);
   }
 
   function renderSearchSection(title, rows) {
@@ -238,11 +274,17 @@ export function createCatalog({
     const meta = showAuthor
       ? `${author?.name || painting.author} · ${painting.year}`
       : String(painting.year);
+    const favorite = favorites?.has(painting.id) ?? false;
     return `
-      <button type="button" class="catalog-painting-row" data-author-id="${escapeHtml(painting.authorId)}" data-painting-id="${escapeHtml(painting.id)}">
-        <span class="catalog-painting-title">${escapeHtml(painting.title)}</span>
-        <span class="catalog-painting-year">${escapeHtml(meta)}</span>
-      </button>
+      <div class="catalog-painting-entry">
+        <button type="button" class="catalog-painting-row" data-author-id="${escapeHtml(painting.authorId)}" data-painting-id="${escapeHtml(painting.id)}">
+          <span class="catalog-painting-title">${escapeHtml(painting.title)}</span>
+          <span class="catalog-painting-year">${escapeHtml(meta)}</span>
+        </button>
+        <button type="button" class="catalog-favorite-btn${favorite ? ' active' : ''}" data-favorite-painting-id="${escapeHtml(painting.id)}" aria-pressed="${favorite ? 'true' : 'false'}" aria-label="${favorite ? 'Quitar de favoritos' : 'Añadir a favoritos'}">
+          ${favorite ? '★' : '☆'}
+        </button>
+      </div>
     `;
   }
 
@@ -308,6 +350,39 @@ export function createCatalog({
     });
   }
 
+  function bindFavoriteButtons(root) {
+    root.querySelectorAll('[data-favorite-painting-id]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        favorites?.toggle(btn.dataset.favoritePaintingId);
+        renderCurrentView();
+      });
+    });
+  }
+
+  function renderCurrentView() {
+    updateFavoritesFilterButton();
+    if (favoriteOnly) {
+      renderFavorites();
+      return;
+    }
+    if (query) {
+      renderSearchResults();
+    } else if (view === 'category-detail' && selectedCategoryId) {
+      renderCategoryDetail(selectedCategoryId);
+    } else if (view === 'author-detail' && selectedAuthorId) {
+      renderAuthorDetail(selectedAuthorId);
+    } else {
+      renderCategories();
+    }
+  }
+
+  function updateFavoritesFilterButton() {
+    if (!favoritesFilterBtn) return;
+    favoritesFilterBtn.classList.toggle('active', favoriteOnly);
+    favoritesFilterBtn.setAttribute('aria-pressed', favoriteOnly ? 'true' : 'false');
+  }
+
   function clearQuery() {
     query = '';
     searchInput.value = '';
@@ -335,6 +410,8 @@ export function createCatalog({
     if (open) return;
     open = true;
     clearQuery();
+    favoriteOnly = false;
+    updateFavoritesFilterButton();
     panel.classList.remove('hidden');
     document.body.classList.add('catalog-open');
     renderCategories();
@@ -363,15 +440,12 @@ export function createCatalog({
 
   searchInput.addEventListener('input', () => {
     query = normalizeSearch(searchInput.value.trim());
-    if (query) {
-      renderSearchResults();
-    } else if (view === 'category-detail' && selectedCategoryId) {
-      renderCategoryDetail(selectedCategoryId);
-    } else if (view === 'author-detail' && selectedAuthorId) {
-      renderAuthorDetail(selectedAuthorId);
-    } else {
-      renderCategories();
-    }
+    renderCurrentView();
+  });
+
+  favoritesFilterBtn?.addEventListener('click', () => {
+    favoriteOnly = !favoriteOnly;
+    renderCurrentView();
   });
 
   closeBtn.addEventListener('click', close);
@@ -380,5 +454,5 @@ export function createCatalog({
     if (e.target === panel) close();
   });
 
-  return { open: openCatalog, close, toggle, isOpen };
+  return { open: openCatalog, close, toggle, isOpen, dispose: unsubscribeFavorites };
 }

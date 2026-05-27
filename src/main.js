@@ -12,6 +12,7 @@ import {
 } from './ui.js';
 import { createRoomManager } from './roomManager.js';
 import { createCatalog } from './catalog.js';
+import { createFavoritesStore } from './favorites.js';
 import { canOpenReport, buildReportContext } from './report.js';
 import {
   buildRoomUrl,
@@ -43,7 +44,13 @@ async function boot() {
     return;
   }
 
-  const overlay = createInfoOverlay({ onReport: () => requestReport() });
+  const favorites = createFavoritesStore();
+  const overlay = createInfoOverlay({
+    favorites,
+    onFavoriteChange: (active) =>
+      hud.flash(active ? 'Añadido a favoritos' : 'Quitado de favoritos'),
+    onReport: () => requestReport(),
+  });
   const hud = createRoomHUD();
   const transition = createTransitionOverlay();
   const reportDialog = createReportDialog();
@@ -181,6 +188,7 @@ async function boot() {
 
   catalog = createCatalog({
     catalog: catalogData,
+    favorites,
     onGoToCategory: (categoryId) => roomManager.loadCategory(categoryId),
     onGoToRoom: (authorId) => roomManager.loadAuthor(authorId),
     onGoToPainting: (authorId, paintingId) =>
@@ -300,6 +308,13 @@ async function boot() {
     }
     if (e.code === 'KeyR') {
       requestReport();
+    }
+    if (e.code === 'KeyF') {
+      const painting = overlay.getCurrent();
+      if (!painting?.id) return;
+      const active = favorites.toggle(painting.id);
+      hud.flash(active ? 'Añadido a favoritos' : 'Quitado de favoritos');
+      overlay.refresh();
     }
   });
 
