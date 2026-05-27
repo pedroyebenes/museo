@@ -72,13 +72,13 @@
     },
     {
       "id": "durero-cuatro-apostoles",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Four_Apostles_by_D%C3%BCrer.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Albrecht_D%C3%BCrer_-_The_Four_Apostles%2C_Saints_John%2C_Peter%2C_Mark_and_Paul.jpg",
       "title": "Los cuatro apóstoles",
       "year": 1526,
       "description": "San Juan, Pedro, Marcos y Pablo en dos paneles monumentales. Obra testamentaria donde Durero expresa su fe con gravedad y precisión nórdica.",
       "dimensions": {
-        "width": 215,
-        "height": 76
+        "width": 150,
+        "height": 212
       }
     }
   ]
