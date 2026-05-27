@@ -29,7 +29,7 @@ Authors to validate (105 total):
 [x] correggio (5 paintings) - all 5 confirmed OK
 [x] dante-gabriel-rossetti (8 paintings) - all 8 confirmed OK
 [x] diego-velazquez (4 paintings)
-[ ] edgar-degas (12 paintings) - 2 broken (absenta, clase-danza), 10 rate-limited (429) - needs revalidation
+[x] edgar-degas (12 paintings) - fixed 11 broken Google Art URLs (Ballet Class, Absinthe, Star, Rehearsal, Combing Hair, Dance Class, Race Horses, Orchestra, Dancers Pink/Green, At Races, Woman Bathing), 1 confirmed OK (Bellelli Family)
 [x] edouard-manet (11 paintings) - fixed 7 broken URLs (Folies-Bergère, Maximiliano, Street Singers, Fifer, Bullfight, Zola, Mujer loro/replaced with MET Young Lady 1866)
 [ ] edouard-vuillard (10 paintings)
 [ ] edvard-munch (10 paintings)
