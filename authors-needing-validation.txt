@@ -27,7 +27,7 @@ Authors to validate (105 total):
 [x] claude-monet (19 paintings) - 2 fixed (Grenouillere, Etretat), others need revalidation due to rate limits (429)
 [x] el-bosco (8 paintings) - all 8 confirmed OK
 [x] correggio (5 paintings) - all 5 confirmed OK
-[ ] dante-gabriel-rossetti (8 paintings) - 5 OK, 3 missing need revalidation (Question/Sphinx, Fanny Cornforth, Loving Cup)
+[x] dante-gabriel-rossetti (8 paintings) - all 8 confirmed OK
 [x] diego-velazquez (4 paintings)
 [ ] edgar-degas (12 paintings) - 2 broken (absenta, clase-danza), 10 rate-limited (429) - needs revalidation
 [x] edouard-manet (11 paintings) - fixed 7 broken URLs (Folies-Bergère, Maximiliano, Street Singers, Fifer, Bullfight, Zola, Mujer loro/replaced with MET Young Lady 1866)
