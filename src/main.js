@@ -13,6 +13,11 @@ import {
 import { createRoomManager } from './roomManager.js';
 import { createCatalog } from './catalog.js';
 import { canOpenReport, buildReportContext } from './report.js';
+import {
+  buildRoomUrl,
+  resolveRoomRoute,
+  routeFromRoomInfo,
+} from './routes.js';
 
 async function boot() {
   const loading = document.getElementById('loading');
@@ -45,6 +50,41 @@ async function boot() {
 
   let catalog = null;
   let roomManager;
+  let syncRoomUrl = false;
+  let suppressNextRoomUrlSync = false;
+
+  function replaceRoomUrl(route) {
+    const url = buildRoomUrl(route);
+    const currentUrl =
+      window.location.pathname + window.location.search + window.location.hash;
+    if (url !== currentUrl) {
+      window.history.replaceState(null, '', url);
+    }
+  }
+
+  function pushRoomUrl(info) {
+    if (!syncRoomUrl || suppressNextRoomUrlSync) return;
+
+    const route = routeFromRoomInfo(info);
+    const url = buildRoomUrl(route);
+    const currentUrl =
+      window.location.pathname + window.location.search + window.location.hash;
+    if (url !== currentUrl) {
+      window.history.pushState(null, '', url);
+    }
+  }
+
+  async function goToRoute(route) {
+    if (route.kind === 'category') {
+      await roomManager.loadCategory(route.categoryId);
+      return;
+    }
+    if (route.kind === 'author') {
+      await roomManager.loadAuthor(route.authorId);
+      return;
+    }
+    await roomManager.loadHub('initial');
+  }
 
   function reportAvailable() {
     return canOpenReport({
@@ -124,13 +164,20 @@ async function boot() {
       } else {
         hud.set(`${info.author.name} (${info.paintingCount} obras)`);
       }
+      pushRoomUrl(info);
     },
     onTransitionStart: (info) => transition.show(info),
     onTransitionProgress: ({ loaded, total }) => transition.setProgress(loaded, total),
     onTransitionEnd: () => transition.hide(),
   });
 
+  const initialRoute = resolveRoomRoute(catalogData);
   await roomManager.loadHub('initial');
+  if (initialRoute.kind !== 'hub') {
+    await goToRoute(initialRoute);
+  }
+  replaceRoomUrl(initialRoute);
+  syncRoomUrl = true;
 
   catalog = createCatalog({
     catalog: catalogData,
@@ -219,6 +266,16 @@ async function boot() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  window.addEventListener('popstate', async () => {
+    const route = resolveRoomRoute(catalogData);
+    suppressNextRoomUrlSync = true;
+    try {
+      await goToRoute(route);
+    } finally {
+      suppressNextRoomUrlSync = false;
+    }
   });
 
   window.addEventListener('keydown', (e) => {
