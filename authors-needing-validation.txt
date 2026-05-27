@@ -24,7 +24,7 @@ Authors to validate (105 total):
 [x] canaletto (6 paintings)
 [x] caspar-david-friedrich (10 paintings)
 [x] claude-lorrain (5 paintings) - all 5 confirmed OK
-[ ] claude-monet (14 paintings)
+[x] claude-monet (19 paintings) - 2 fixed (Grenouillere, Etretat), others need revalidation due to rate limits (429)
 [ ] el-bosco (8 paintings) - 4 confirmed OK, 4 ERROR (rate limit) need recheck
 [x] correggio (5 paintings) - all 5 confirmed OK
 [ ] dante-gabriel-rossetti (8 paintings) - 5 OK, 3 missing need revalidation (Question/Sphinx, Fanny Cornforth, Loving Cup)
