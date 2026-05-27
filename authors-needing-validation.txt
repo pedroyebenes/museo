@@ -30,7 +30,7 @@ Authors to validate (105 total):
 [ ] dante-gabriel-rossetti (8 paintings) - 5 OK, 3 missing need revalidation (Question/Sphinx, Fanny Cornforth, Loving Cup)
 [x] diego-velazquez (4 paintings)
 [ ] edgar-degas (12 paintings) - 2 broken (absenta, clase-danza), 10 rate-limited (429) - needs revalidation
-[ ] edouard-manet (11 paintings)
+[x] edouard-manet (11 paintings) - fixed 7 broken URLs (Folies-Bergère, Maximiliano, Street Singers, Fifer, Bullfight, Zola, Mujer loro/replaced with MET Young Lady 1866)
 [ ] edouard-vuillard (10 paintings)
 [ ] edvard-munch (10 paintings)
 [ ] edward-hopper (15 paintings)
