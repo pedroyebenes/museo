@@ -29,7 +29,7 @@ Authors to validate (105 total):
 [x] correggio (5 paintings) - all 5 confirmed OK
 [ ] dante-gabriel-rossetti (8 paintings) - 5 OK, 3 missing need revalidation (Question/Sphinx, Fanny Cornforth, Loving Cup)
 [x] diego-velazquez (4 paintings)
-[ ] edgar-degas (12 paintings)
+[ ] edgar-degas (12 paintings) - 2 broken (absenta, clase-danza), 10 rate-limited (429) - needs revalidation
 [ ] edouard-manet (11 paintings)
 [ ] edouard-vuillard (10 paintings)
 [ ] edvard-munch (10 paintings)
