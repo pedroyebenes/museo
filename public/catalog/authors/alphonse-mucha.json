@@ -14,8 +14,8 @@
       "year": 1896,
       "description": "Cartel icónico con figura femenina de cabello sinuoso sosteniendo cartas de Job. Mucha inventa el art nouveau comercial con línea decorativa y color pastel.",
       "dimensions": {
-        "width": 60,
-        "height": 40
+        "width": 40,
+        "height": 60
       }
     },
     {
@@ -25,8 +25,8 @@
       "year": 1896,
       "description": "Musa estacional rodeada de flores y arabescos en panel vertical. Mucha personifica las estaciones con gracia simbolista y ornamentación fluida.",
       "dimensions": {
-        "width": 70,
-        "height": 30
+        "width": 30,
+        "height": 70
       }
     },
     {
@@ -36,8 +36,8 @@
       "year": 1896,
       "description": "Figura femenina entre frutos y hojas en composición estrecha y elegante. Mucha convierte el ciclo natural en decoración modernista.",
       "dimensions": {
-        "width": 70,
-        "height": 30
+        "width": 30,
+        "height": 70
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1896,
       "description": "Dama otoñal con uvas y hojas secas en marco floral. Panel decorativo que resume la estética art nouveau de Mucha.",
       "dimensions": {
-        "width": 70,
-        "height": 30
+        "width": 30,
+        "height": 70
       }
     },
     {
@@ -58,8 +58,8 @@
       "year": 1896,
       "description": "Figura envuelta en manto invernal entre ramas desnudas. Mucha equilibra frialdad estacional y calidez ornamental.",
       "dimensions": {
-        "width": 70,
-        "height": 30
+        "width": 30,
+        "height": 70
       }
     },
     {
@@ -69,19 +69,8 @@
       "year": 1902,
       "description": "Figuras celestes en medallones decorativos de contorno sinuoso. Mucha eleva cartel publicitario a poema visual simbolista.",
       "dimensions": {
-        "width": 80,
-        "height": 40
-      }
-    },
-    {
-      "id": "mucha-diana",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Alphonse_Mucha_-_Diana_-_Google_Art_Project.jpg",
-      "title": "Diana",
-      "year": 1897,
-      "description": "Diosa de la caza enmarca un círculo decorativo de hojas y estrellas. Mucha fusiona mitología clásica y diseño art nouveau.",
-      "dimensions": {
-        "width": 60,
-        "height": 40
+        "width": 40,
+        "height": 80
       }
     },
     {
@@ -102,8 +91,8 @@
       "year": 1908,
       "description": "Alegoría de la nación eslava con corona y laurel en composición monumental. Mucha vincula identidad nacional y decoración simbólica.",
       "dimensions": {
-        "width": 80,
-        "height": 60
+        "width": 60,
+        "height": 80
       }
     },
     {
@@ -113,8 +102,8 @@
       "year": 1897,
       "description": "Mujer pensativa en marco floral de ensueño. Cartel que condensa la feminidad art nouveau en mirada distante y arabescos.",
       "dimensions": {
-        "width": 60,
-        "height": 40
+        "width": 40,
+        "height": 60
       }
     },
     {
@@ -124,19 +113,8 @@
       "year": 1897,
       "description": "Figura femenina monumental enmarca publicidad de cerveza con lujo decorativo. Mucha transforma producto comercial en icono modernista.",
       "dimensions": {
-        "width": 60,
-        "height": 40
-      }
-    },
-    {
-      "id": "mucha-lorenzaccio",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Alphonse_Mucha_-_Lorenzaccio_-_Google_Art_Project.jpg",
-      "title": "Lorenzaccio",
-      "year": 1896,
-      "description": "Cartel teatral con figura histórica y fondo ornamental. Mucha diseña identidad visual del espectáculo finisecular parisino.",
-      "dimensions": {
-        "width": 60,
-        "height": 40
+        "width": 40,
+        "height": 60
       }
     },
     {
@@ -146,19 +124,8 @@
       "year": 1894,
       "description": "Cartel que lanzó la fama de Mucha con la diva en arco decorativo. Obra fundacional del art nouveau y del retrato escénico moderno.",
       "dimensions": {
-        "width": 60,
-        "height": 40
-      }
-    },
-    {
-      "id": "mucha-epoca",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Alphonse_Mucha_-_The_Times_of_the_Day_-_Google_Art_Project.jpg",
-      "title": "Las horas del día",
-      "year": 1899,
-      "description": "Serie decorativa que personifica momentos del día en figuras femeninas. Mucha organiza el tiempo como poema ornamental.",
-      "dimensions": {
-        "width": 80,
-        "height": 40
+        "width": 40,
+        "height": 60
       }
     },
     {
@@ -167,17 +134,6 @@
       "title": "Flores",
       "year": 1898,
       "description": "Panel floral con figura femenina entre pétalos y arabescos. Mucha celebra naturaleza y decoración en unidad indisoluble.",
-      "dimensions": {
-        "width": 60,
-        "height": 40
-      }
-    },
-    {
-      "id": "mucha-sonata",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Alphonse_Mucha_-_The_Sonata_-_Google_Art_Project.jpg",
-      "title": "La sonata",
-      "year": 1898,
-      "description": "Mujer con instrumento en marco de hojas y curvas sinuosas. Mucha traduce música en imagen art nouveau de gran elegancia.",
       "dimensions": {
         "width": 60,
         "height": 40
