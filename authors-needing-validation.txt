@@ -40,17 +40,15 @@ Authors to validate (105 total):
 [ ] eugene-delacroix (13 paintings) - 3 OK, 10 ERR (rate limit) need revalidation
 [ ] fra-angelico (5 paintings) - 1 OK, 3 MISSING, 1 ERR need revalidation
 [ ] francisco-de-goya (14 paintings) - 2 confirmed OK, 12 ERROR (rate limit) need recheck
-[ ] francisco-de-zurbaran (5 paintings)
+[ ] francisco-de-zurbaran (6 paintings) - 2 OK, 3 ERR (rate limit), 1 DUPLICATE URL (Agnus Dei twice) need revalidation
 [ ] frida-kahlo (15 paintings)
 [ ] georges-braque (8 paintings)
 [ ] georges-de-la-tour (6 paintings)
 [ ] georges-seurat (6 paintings)
 [ ] georgia-o-keeffe (16 paintings)
-[ ] giorgione (6 paintings)
-[ ] giotto (5 paintings)
-[ ] giovanni-battista-tiepolo (5 paintings)
-[ ] grant-wood (8 paintings)
-[ ] guido-reni (5 paintings)
+[ ] giorgione (6 paintings) - 1 OK, 1 MISSING (Laura), 4 ERR (rate limit) need revalidation
+[ ] giotto (5 paintings) - 2 OK, 1 MISSING (Crucifixion), 2 ERR (rate limit on Maestà and Lamentacion) need revalidation
+[ ] guido-reni (5 paintings) - 2 OK, 1 MISSING (Rape of Europa), 2 ERR (rate limit) need revalidation
 [ ] gustav-klimt (10 paintings)
 [ ] gustave-courbet (9 paintings)
 [ ] gustave-moreau (17 paintings)
