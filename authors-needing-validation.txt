@@ -36,10 +36,9 @@ Authors to validate (105 total):
 [ ] edward-hopper (15 paintings)
 [ ] el-bosco (4 paintings)
 [ ] el-greco (6 paintings) - 2 confirmed OK, 1 MISSING (Apostles Peter and Paul), 3 ERROR (rate limit) need recheck
-[ ] emanuel-leutze (4 paintings)
-[ ] eugene-delacroix (6 paintings)
-[ ] ferdinand-hodler (17 paintings)
-[ ] fra-angelico (4 paintings)
+[ ] emanuel-leutze (5 paintings) - 1 OK, 2 MISSING, 2 ERR (rate limit) need revalidation
+[ ] eugene-delacroix (13 paintings) - 3 OK, 10 ERR (rate limit) need revalidation
+[ ] fra-angelico (5 paintings) - 1 OK, 3 MISSING, 1 ERR need revalidation
 [ ] francisco-de-goya (14 paintings) - 2 confirmed OK, 12 ERROR (rate limit) need recheck
 [ ] francisco-de-zurbaran (5 paintings)
 [ ] frida-kahlo (15 paintings)
