@@ -23,7 +23,7 @@ Authors to validate (105 total):
 [x] camille-pissarro (11 paintings)
 [x] canaletto (6 paintings)
 [x] caspar-david-friedrich (10 paintings)
-[ ] claude-lorrain (5 paintings) - 3 OK, 3 missing need revalidation
+[x] claude-lorrain (5 paintings) - all 5 confirmed OK
 [ ] claude-monet (14 paintings)
 [ ] el-bosco (8 paintings) - 4 confirmed OK, 4 ERROR (rate limit) need recheck
 [x] correggio (5 paintings) - all 5 confirmed OK
@@ -59,7 +59,7 @@ Authors to validate (105 total):
 [ ] honore-daumier (8 paintings)
 [ ] j-m-w-turner (6 paintings)
 [ ] jacques-louis-david (4 paintings)
-[ ] james-mcneill-whistler (8 paintings)
+[ ] james-mcneill-whistler (8 paintings) - 3 OK, 5 ERR (rate limit) need revalidation
 [x] jan-van-eyck (2 paintings)
 [ ] jean-auguste-dominique-ingres (6 paintings)
 [ ] jean-baptiste-simeon-chardin (9 paintings)
@@ -67,8 +67,8 @@ Authors to validate (105 total):
 [ ] jean-honore-fragonard (8 paintings)
 [ ] joan-miro (12 paintings)
 [ ] joaquin-sorolla (8 paintings)
-[ ] johannes-vermeer (5 paintings)
-[ ] john-constable (8 paintings)
+[ ] johannes-vermeer (7 paintings) - 1 OK, 1 MISSING (Milkmaid), 4 ERR (rate limit), 1 DUPLICATE (joven-perla x2) need revalidation
+[ ] john-constable (8 paintings) - 1 OK, 2 MISSING (Hay Wain, Cornfield), 5 ERR (rate limit), 2 DUPLICATES (Dedham Vale x2) need revalidation
 [ ] john-everett-millais (8 paintings)
 [ ] john-singer-sargent (10 paintings)
 [ ] joshua-reynolds (8 paintings)
