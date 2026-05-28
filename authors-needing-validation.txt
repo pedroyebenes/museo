@@ -12,7 +12,7 @@ Authors to validate (105 total):
 [x] andrea-del-sarto (6 paintings)
 [x] andrea-mantegna (6 paintings)
 [x] andrew-wyeth (8 paintings)
-[x] anthony-van-dyck (5 paintings)
+[x] anthony-van-dyck (5 paintings) ----------------------------------------------------
 [x] antoine-watteau (6 paintings)
 [x] arnold-bocklin (6 paintings)
 [x] artemisia-gentileschi (7 paintings)
@@ -33,7 +33,7 @@ Authors to validate (105 total):
 [x] edouard-manet (11 paintings) - fixed 7 broken URLs (Folies-Bergère, Maximiliano, Street Singers, Fifer, Bullfight, Zola, Mujer loro/replaced with MET Young Lady 1866)
 [x] edouard-vuillard (10 paintings) - all 10 URLs fixed, validated, and confirmed 200
 [x] edvard-munch (10 paintings) - all 10 URLs fixed and validated 200, Madonna Google GAP replaced
-[x] edward-hopper (15 paintings) - 4 broken GAP URLs fixed (Hotel Room→Railroad, Lighthouse→Light, Compartment C→Lobby, Ground Swell→Swells), all revalidated 200
+[ ] edward-hopper (15 paintings) - 4 broken GAP URLs fixed (Hotel Room→Railroad, Lighthouse→Light, Compartment C→Lobby, Ground Swell→Swells), all revalidated 200
 [x] el-bosco (4 paintings)
 [x] el-greco (6 paintings) - all 6 URLs verified 200, valid
 [x] emanuel-leutze (5 paintings) - 5 URLs verified 200, last 2 Google GAP fixed (Columbus Landing→LeutzeColumbus, Hudson→HeComes)

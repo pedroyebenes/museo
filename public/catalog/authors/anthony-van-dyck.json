@@ -14,30 +14,30 @@
       "year": 1635,
       "description": "El monarca posa con elegancia sobre fondo paisajístico en uno de sus retratos más emblemáticos. Van Dyck define la imagen regia del Stuart con distancia distinguida.",
       "dimensions": {
-        "width": 84,
-        "height": 104
+        "width": 104,
+        "height": 84
       }
     },
     {
       "id": "van-dyck-autorretrato",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Anthony_Van_Dyck%2C_Self_Portrait_MET_173288.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Anthony_van_Dyck_-_Self_portrait.jpg/960px-Anthony_van_Dyck_-_Self_portrait.jpg",
       "title": "Autorretrato",
       "year": 1621,
-      "description": "El artista joven se representa con barba y giro de cabeza confiado. Autorretrato temprano que anticipa la elegancia distante de su madurez cortesana.",
+      "description": "La obra retrata a su creador a principios de sus veinte años.",
       "dimensions": {
-        "width": 73,
-        "height": 57
+        "width": 88,
+        "height": 120
       }
     },
     {
       "id": "van-dyck-girasol",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Sir_Anthony_van_Dyck_with_a_sunflower_MET_DP823393.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Anthony_van_Dyck_-_Self-portrait_with_a_Sunflower.jpg",
       "title": "Autorretrato con girasol",
       "year": 1632,
       "description": "Van Dyck posa junto a un girasol en alusión a la fama y la veneración artística. Retrato alegórico de gran sophistication flamenca.",
       "dimensions": {
         "width": 73,
-        "height": 61
+        "height": 60
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1635,
       "description": "La reina consorte inglesa posa con elegancia y mirada distante. Van Dyck define el retrato cortesano femenino con telas fluidas y color sobrio.",
       "dimensions": {
-        "width": 106,
-        "height": 86
+        "width": 135,
+        "height": 219
       }
     },
     {
@@ -58,8 +58,8 @@
       "year": 1634,
       "description": "El coleccionista alemán posa entre obras de arte y telas ricas. Van Dyck retrata al mecenas ilustrado con la elegancia que definió la élite europea del Seicento.",
       "dimensions": {
-        "width": 140,
-        "height": 118
+        "width": 91,
+        "height": 113
       }
     }
   ]
