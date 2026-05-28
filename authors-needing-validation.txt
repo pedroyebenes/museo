@@ -33,7 +33,7 @@ Authors to validate (105 total):
 [x] edouard-manet (11 paintings) - fixed 7 broken URLs (Folies-Bergère, Maximiliano, Street Singers, Fifer, Bullfight, Zola, Mujer loro/replaced with MET Young Lady 1866)
 [x] edouard-vuillard (10 paintings) - 6 OK, 4 fixed (Mother/Sister MoMA, Singer for Café, Madame Hessel for Desk, Le Dîner for Dining Room); 2 recheck pending due to 429 rate limit
 [x] edvard-munch (11 paintings) - 2 OK (Scream, Madonna), 9 fixed (7 GAP→museum, 2 404→museum)
-[ ] edward-hopper (15 paintings)
+[x] edward-hopper (15 paintings) - 6 fixed (Nighthawks, Gas, Automat, Early Sunday, Office Night, Morning Sun), 9 GAP still need replacement (Hotel Room, Lighthouse, Compartment C, Western Motif, Cape Cod, Room NYC, New York Movie, Chair Car, Ground Swell - some have hash collisions)
 [x] el-bosco (4 paintings)
 [ ] el-greco (6 paintings) - 2 confirmed OK, 1 MISSING (Apostles Peter and Paul), 3 ERROR (rate limit) need recheck
 [ ] emanuel-leutze (5 paintings) - 1 OK, 2 MISSING, 2 ERR (rate limit) need revalidation

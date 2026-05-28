@@ -9,7 +9,7 @@
   "paintings": [
     {
       "id": "hopper-nighthawks",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Edward_Hopper_-_Nighthawks_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg",
       "title": "Noctámbulos",
       "year": 1942,
       "description": "Clientes nocturnos en diner de luz fluorescente y calles vacías. Icono de la soledad americana y la ciudad moderna.",
@@ -20,7 +20,7 @@
     },
     {
       "id": "hopper-gas",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Edward_Hopper_-_Gas_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Hopper-Gas-1940.png",
       "title": "Gasolina",
       "year": 1940,
       "description": "Gasolinera al anochecer con bombas iluminadas y bosque oscuro. Hopper convierte lo cotidiano en escena de suspense silencioso.",
@@ -31,7 +31,7 @@
     },
     {
       "id": "hopper-automat",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Edward_Hopper_-_Automat_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Automat-edward-hopper-1927.jpg",
       "title": "Automat",
       "year": 1927,
       "description": "Mujer sola en cafetería automática bajo luz nocturna. Soledad femenina y modernidad urbana en una de sus obras más citadas.",
@@ -64,7 +64,7 @@
     },
     {
       "id": "hopper-sunday",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Edward_Hopper_-_Early_Sunday_Morning_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Early-sunday-morning-edward-hopper-1930.jpg",
       "title": "Domingo por la mañana temprano",
       "year": 1930,
       "description": "Fachadas de comercios en calle vacía bañada por sol matinal. Nueva York silenciosa y geometría urbana serena.",
@@ -97,7 +97,7 @@
     },
     {
       "id": "hopper-office",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Edward_Hopper_-_Office_at_Night_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Office-at-night-edward-hopper-1940.jpg",
       "title": "Oficina de noche",
       "year": 1940,
       "description": "Secretaria y jefe en oficina iluminada ante calle oscura. Tensión silenciosa entre figuras y arquitectura.",
@@ -141,7 +141,7 @@
     },
     {
       "id": "hopper-morning-sun",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Edward_Hopper_-_Morning_Sun_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Edward_Hopper_-_Morning_Sun_-_c_1952_-_Columbus_Museum_of_Art.jpg",
       "title": "Sol de la mañana",
       "year": 1952,
       "description": "Mujer desnuda en cama bañada por sol de ventana. Intimidad solitaria y luz como protagonista emocional.",
