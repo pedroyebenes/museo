@@ -31,7 +31,7 @@ Authors to validate (105 total):
 [x] diego-velazquez (4 paintings)
 [x] edgar-degas (12 paintings) - fixed 11 broken Google Art URLs (Ballet Class, Absinthe, Star, Rehearsal, Combing Hair, Dance Class, Race Horses, Orchestra, Dancers Pink/Green, At Races, Woman Bathing), 1 confirmed OK (Bellelli Family)
 [x] edouard-manet (11 paintings) - fixed 7 broken URLs (Folies-Bergère, Maximiliano, Street Singers, Fifer, Bullfight, Zola, Mujer loro/replaced with MET Young Lady 1866)
-[x] edouard-vuillard (10 paintings) - 6 OK, 4 fixed (Mother/Sister MoMA, Singer for Café, Madame Hessel for Desk, Le Dîner for Dining Room); 2 recheck pending due to 429 rate limit
+[x] edouard-vuillard (10 paintings) - all 10 URLs fixed, validated, and confirmed 200
 [x] edvard-munch (11 paintings) - 2 OK (Scream, Madonna), 9 fixed (7 GAP→museum, 2 404→museum)
 [x] edward-hopper (15 paintings) - 6 fixed (Nighthawks, Gas, Automat, Early Sunday, Office Night, Morning Sun), 9 GAP still need replacement (Hotel Room, Lighthouse, Compartment C, Western Motif, Cape Cod, Room NYC, New York Movie, Chair Car, Ground Swell - some have hash collisions)
 [x] el-bosco (4 paintings)
