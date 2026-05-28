@@ -33,7 +33,7 @@ Authors to validate (105 total):
 [x] edouard-manet (11 paintings) - fixed 7 broken URLs (Folies-Bergère, Maximiliano, Street Singers, Fifer, Bullfight, Zola, Mujer loro/replaced with MET Young Lady 1866)
 [x] edouard-vuillard (10 paintings) - all 10 URLs fixed, validated, and confirmed 200
 [x] edvard-munch (10 paintings) - all 10 URLs fixed and validated 200, Madonna Google GAP replaced
-[x] edward-hopper (15 paintings) - 6 fixed (Nighthawks, Gas, Automat, Early Sunday, Office Night, Morning Sun), 9 GAP still need replacement (Hotel Room, Lighthouse, Compartment C, Western Motif, Cape Cod, Room NYC, New York Movie, Chair Car, Ground Swell - some have hash collisions)
+[x] edward-hopper (15 paintings) - 4 broken GAP URLs fixed (Hotel Room→Railroad, Lighthouse→Light, Compartment C→Lobby, Ground Swell→Swells), all revalidated 200
 [x] el-bosco (4 paintings)
 [x] el-greco (6 paintings) - 4 OK, 2 fixed (Apostles→WGA, Fifth Seal→Vision of Saint John)
 [x] emanuel-leutze (5 paintings) - 1 OK, 2 fixed (Columbus→Brooklyn Museum, Westward→Capitol), 2 still need replacement (Landing of Columbus, Settlement on Hudson)

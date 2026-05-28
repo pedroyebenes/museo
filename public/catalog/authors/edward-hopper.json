@@ -14,8 +14,8 @@
       "year": 1942,
       "description": "Clientes nocturnos en diner de luz fluorescente y calles vacías. Icono de la soledad americana y la ciudad moderna.",
       "dimensions": {
-        "width": 84,
-        "height": 152
+        "width": 152,
+        "height": 84
       }
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "id": "hopper-habitacion",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Edward_Hopper_-_Hotel_Room_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Hotel-by-a-Railroad-Edward-Hopper-1952.jpg",
       "title": "Habitación de hotel",
       "year": 1931,
       "description": "Mujer sentada en cama de hotel mirando al vacío. Hopper pinta desarraigo y contemplación íntima.",
@@ -53,7 +53,7 @@
     },
     {
       "id": "hopper-faro",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Edward_Hopper_-_Lighthouse_at_Two_Lights_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Light_at_Two_Lights.jpg",
       "title": "Faro de Two Lights",
       "year": 1929,
       "description": "Faro sobre rocas de costa nueva inglesa en luz dura. Paisaje americano de soledad y resistencia.",
@@ -69,13 +69,13 @@
       "year": 1930,
       "description": "Fachadas de comercios en calle vacía bañada por sol matinal. Nueva York silenciosa y geometría urbana serena.",
       "dimensions": {
-        "width": 89,
-        "height": 135
+        "width": 135,
+        "height": 89
       }
     },
     {
       "id": "hopper-mar",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Edward_Hopper_-_Ground_Swell_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Ground_swell.jpg",
       "title": "Marejada",
       "year": 1939,
       "description": "Jóvenes en barca sobre mar de olas suaves y horizonte limpio. Hopper combina realismo y quietud emocional en la costa.",
@@ -86,7 +86,7 @@
     },
     {
       "id": "hopper-rail",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Edward_Hopper_-_Compartment_C%2C_Car_293_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Hotel-lobby-edward-hopper-1943.jpg",
       "title": "Compartimento C, coche 293",
       "year": 1938,
       "description": "Lectura solitaria en tren con paisaje que pasa. Hopper captura viaje, intimidad y distancia americana.",
