@@ -36,7 +36,7 @@ Authors to validate (105 total):
 [x] edward-hopper (15 paintings) - 6 fixed (Nighthawks, Gas, Automat, Early Sunday, Office Night, Morning Sun), 9 GAP still need replacement (Hotel Room, Lighthouse, Compartment C, Western Motif, Cape Cod, Room NYC, New York Movie, Chair Car, Ground Swell - some have hash collisions)
 [x] el-bosco (4 paintings)
 [x] el-greco (6 paintings) - 4 OK, 2 fixed (Apostles→WGA, Fifth Seal→Vision of Saint John)
-[ ] emanuel-leutze (5 paintings) - 1 OK, 2 MISSING, 2 ERR (rate limit) need revalidation
+[x] emanuel-leutze (5 paintings) - 1 OK, 2 fixed (Columbus→Brooklyn Museum, Westward→Capitol), 2 still need replacement (Landing of Columbus, Settlement on Hudson)
 [ ] eugene-delacroix (13 paintings) - 3 OK, 10 ERR (rate limit) need revalidation
 [ ] fra-angelico (5 paintings) - 1 OK, 3 MISSING, 1 ERR need revalidation
 [ ] francisco-de-goya (14 paintings) - 2 confirmed OK, 12 ERROR (rate limit) need recheck
