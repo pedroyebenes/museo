@@ -20,7 +20,7 @@
     },
     {
       "id": "zurbaran-agno-dios",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Francisco_de_Zurbar%C3%A1n_-_Agnus_Dei_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Agnus_Dei_by_Francisco_de_Zurbarán_-_WGA26060.jpg",
       "title": "Agnus Dei",
       "year": 1635,
       "description": "Cordero atado sobre un altar oscuro, símbolo del sacrificio cristo. Zurbarán convierte un bodegón animal en meditación sobria de fe barroca española.",
@@ -31,7 +31,7 @@
     },
     {
       "id": "zurbaran-francisco-exaltacion",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Francisco_de_Zurbar%C3%A1n_-_Saint_Francis_in_Ecstasy_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Francisco_de_Zurbarán_-_Saint_Francis_in_Meditation_-_WGA26042.jpg",
       "title": "San Francisco en éxtasis",
       "year": 1635,
       "description": "El santo contempla un cráneo mientras un ángel le susurra al oído en la oscuridad. Zurbarán convierte la devoción franciscana en meditación sobria de luz y silencio.",
@@ -42,7 +42,7 @@
     },
     {
       "id": "zurbaran-virgen-ildefonso",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Francisco_de_Zurbar%C3%A1n_-_The_Apparition_of_the_Virgin_to_Saint_Ildefonso_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Francisco_de_Zurbarán_-_Saint_Ildefonsus_-_WGA26024.jpg",
       "title": "Aparición de la Virgen a san Ildefonso",
       "year": 1635,
       "description": "La Virgen entrega una casulla al obispo arrodillado ante un altar. Zurbarán organiza la escena con claridad teatral y blancos luminosos sobre fondo oscuro.",
@@ -53,7 +53,7 @@
     },
     {
       "id": "zurbaran-casa-labranza",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Francisco_de_Zurbar%C3%A1n_-_Labrador_with_his_Son_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Francisco_de_Zurbarán_-_Labrador_with_his_Son_-_WGA.jpg",
       "title": "Labrador con su hijo",
       "year": 1655,
       "description": "Campesino y niño posan con dignidad sobre fondo neutro. Zurbarán eleva la figura humilde a retrato de presencia casi escultórica.",
@@ -63,15 +63,7 @@
       }
     },
     {
-      "id": "zurbaran-agnus-dei",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Francisco_de_Zurbar%C3%A1n_-_Agnus_Dei_-_Google_Art_Project.jpg",
-      "title": "Agnus Dei",
-      "year": 1635,
-      "description": "Cordero atado sobre una mesa en un espacio de silencio absoluto. Zurbarán convierte el símbolo cristiano en meditación sobre el sacrificio con realismo sobrecogedor.",
-      "dimensions": {
-        "width": 38,
-        "height": 62
-      }
+
     }
   ]
 }
