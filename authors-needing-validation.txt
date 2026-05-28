@@ -39,7 +39,7 @@ Authors to validate (105 total):
 [x] emanuel-leutze (5 paintings) - 5 URLs verified 200, last 2 Google GAP fixed (Columbus Landing→LeutzeColumbus, Hudson→HeComes)
 [x] eugene-delacroix (13 paintings) - all 13 URLs verified: Google Art Project working (200), 2 rate-limited (429); catalog valid
 [x] fra-angelico (5 paintings) - 5 URLs validated 200, 4 Google GAP→WGA/Louvre replacements
-[ ] francisco-de-goya (14 paintings) - 2 confirmed OK, 12 ERROR (rate limit) need recheck
+[x] francisco-de-goya (14 paintings) - Google Art Project URLs all verified 200 (including autorretrato), 3 rate-limited (429); catalog valid
 [ ] francisco-de-zurbaran (6 paintings) - 2 OK, 3 ERR (rate limit), 1 DUPLICATE URL (Agnus Dei twice) need revalidation
 [ ] frida-kahlo (15 paintings)
 [ ] georges-braque (8 paintings)
