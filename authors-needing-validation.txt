@@ -35,7 +35,7 @@ Authors to validate (105 total):
 [x] edvard-munch (11 paintings) - 2 OK (Scream, Madonna), 9 fixed (7 GAP→museum, 2 404→museum)
 [x] edward-hopper (15 paintings) - 6 fixed (Nighthawks, Gas, Automat, Early Sunday, Office Night, Morning Sun), 9 GAP still need replacement (Hotel Room, Lighthouse, Compartment C, Western Motif, Cape Cod, Room NYC, New York Movie, Chair Car, Ground Swell - some have hash collisions)
 [x] el-bosco (4 paintings)
-[ ] el-greco (6 paintings) - 2 confirmed OK, 1 MISSING (Apostles Peter and Paul), 3 ERROR (rate limit) need recheck
+[x] el-greco (6 paintings) - 4 OK, 2 fixed (Apostles→WGA, Fifth Seal→Vision of Saint John)
 [ ] emanuel-leutze (5 paintings) - 1 OK, 2 MISSING, 2 ERR (rate limit) need revalidation
 [ ] eugene-delacroix (13 paintings) - 3 OK, 10 ERR (rate limit) need revalidation
 [ ] fra-angelico (5 paintings) - 1 OK, 3 MISSING, 1 ERR need revalidation
