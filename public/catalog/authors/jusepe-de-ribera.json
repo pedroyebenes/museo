@@ -26,7 +26,7 @@
       "description": "El apóstol es elevado en la cruz mientras figuras observan desde abajo. Escena de heroísmo cristiano pintada con realismo físico y luz lateral intensa.",
       "dimensions": {
         "width": 234,
-        "height": 203
+        "height": 234
       }
     },
     {
@@ -36,8 +36,8 @@
       "year": 1642,
       "description": "Joven mendigo sonríe mientras muestra su documento de pobreza. Ribera dignifica la marginación con retrato directo y ternura inesperada.",
       "dimensions": {
-        "width": 164,
-        "height": 94
+        "width": 94,
+        "height": 164
       }
     },
     {
@@ -47,24 +47,24 @@
       "year": 1630,
       "description": "El filósofo sonríe ante la vanidad del mundo con un cráneo en las manos. Ribera retrata la sabiduría cínica con naturalismo crudo y luz lateral intensa.",
       "dimensions": {
-        "width": 125,
-        "height": 100
+        "width": 81,
+        "height": 125
       }
     },
     {
       "id": "ribera-santa-teresa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jusepe_de_Ribera_-_Saint_Teresa_of_Avila_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Santa_Teresa_de_Jes%C3%BAs%2C_de_Jos%C3%A9_de_Ribera_%28Museo_de_Bellas_Artes_de_Sevilla%29.JPG",
       "title": "Santa Teresa de Ávila",
       "year": 1640,
       "description": "La mística carmelita recibe la visión con rostro extático y manos unidas. Ribera une devoción española y naturalismo napolitano en un retrato de gran intensidad.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 97,
+        "height": 123
       }
     },
     {
       "id": "ribera-jacob",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Jusepe_de_Ribera_-_Jacob's_Dream_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/El_sue%C3%B1o_de_Jacob%2C_por_Jos%C3%A9_de_Ribera.jpg",
       "title": "El sueño de Jacob",
       "year": 1639,
       "description": "Jacob descansa mientras ángeles suben y bajan por la escala celestial. Ribera dramatiza la visión bíblica con claroscuro nocturno y anatomía robusta.",
