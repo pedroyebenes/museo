@@ -2,6 +2,9 @@
   "id": "jean-auguste-dominique-ingres",
   "name": "Jean-Auguste-Dominique Ingres",
   "category": "neoclasicismo-romanticismo",
+  "fullName": "Jean-Auguste-Dominique Ingres",
+  "years": "1780 – 1867",
+  "origin": "Montauban, Francia",
   "bio": "Pintor francés formado en el ideal clásico, célebre por sus retratos y desnudos de línea precisa. Su obra combina rigor académico, sensualidad y una relación libre con la anatomía.",
   "paintings": [
     {
@@ -44,8 +47,8 @@
       "year": 1806,
       "description": "El emperador en trono dorado con gesto hierático y ropajes imperiales. Ingres fija la imagen del poder napoleónico con rigor neoclásico y detalle miniaturístico.",
       "dimensions": {
-        "width": 259,
-        "height": 162
+        "width": 163,
+        "height": 259
       }
     },
     {
@@ -66,8 +69,8 @@
       "year": 1811,
       "description": "Tetis suplica a Júpiter en el Olimpo con cuerpos de contorno ideal. Ingres demuestra su virtuosismo académico en una escena mitológica de frialdad clásica.",
       "dimensions": {
-        "width": 327,
-        "height": 260
+        "width": 260,
+        "height": 327
       }
     },
     {
