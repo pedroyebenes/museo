@@ -7,6 +7,7 @@
     "dev": "vite",
     "validate:catalog": "node scripts/validate-catalog.mjs",
     "check:urls": "node scripts/check-urls.mjs",
+    "sync:validation": "node scripts/sync-validation-status.mjs",
     "catalog:stats": "node scripts/catalog-inventory.mjs",
     "build": "vite build",
     "preview": "vite preview"

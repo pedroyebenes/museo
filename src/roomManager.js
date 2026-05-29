@@ -1,6 +1,12 @@
 import { buildAuthorRoom } from './museum.js';
 import { buildHub } from './hub.js';
 import { placePaintings } from './paintings.js';
+import { retainTextures, releaseTextures } from './textureUtils.js';
+
+// Author rooms hold many painting meshes, so the cache that makes revisits instant is
+// bounded; least-recently-used rooms beyond this are disposed. Hub/category rooms are
+// few and cheap, so they stay cached for the whole session.
+const MAX_AUTHOR_ROOMS = 6;
 
 export function createRoomManager({
   scene,
@@ -179,7 +185,17 @@ export function createRoomManager({
             },
           },
         );
-        cached = { room, interactables: [...newInteractables, ...(room.doorInteractables || [])] };
+        const urls = paintings.map((p) => p.url);
+        retainTextures(urls);
+        cached = {
+          room,
+          interactables: [...newInteractables, ...(room.doorInteractables || [])],
+          urls,
+        };
+        authorCache.set(author.id, cached);
+      } else {
+        // cache hit: move to most-recently-used position
+        authorCache.delete(author.id);
         authorCache.set(author.id, cached);
       }
       swapRoom(cached.room, cached.interactables);
@@ -187,6 +203,7 @@ export function createRoomManager({
       currentCategoryId = author.category;
       currentAuthorId = author.id;
       placeAtSpawn(spawnKey, cached.room);
+      enforceAuthorCacheLimit();
       announce({
         kind: 'author',
         author,
@@ -207,6 +224,46 @@ export function createRoomManager({
     scene.add(room.group);
     controls.setSegments(room.segments);
     triggerCooldown = 0.5;
+  }
+
+  // Evict least-recently-used author rooms beyond the cap, never the current one.
+  // authorCache iteration order is LRU (we re-insert on hit / on build).
+  function enforceAuthorCacheLimit() {
+    if (authorCache.size <= MAX_AUTHOR_ROOMS) return;
+    for (const id of [...authorCache.keys()]) {
+      if (authorCache.size <= MAX_AUTHOR_ROOMS) break;
+      if (id === currentAuthorId) continue;
+      const cached = authorCache.get(id);
+      authorCache.delete(id);
+      disposeRoom(cached);
+    }
+  }
+
+  function disposeRoom(cached) {
+    if (cached?.urls) releaseTextures(cached.urls);
+    cached?.room?.group?.traverse((obj) => {
+      if (obj.geometry && !obj.geometry.userData?.shared) obj.geometry.dispose();
+      const materials = Array.isArray(obj.material)
+        ? obj.material
+        : obj.material
+          ? [obj.material]
+          : [];
+      for (const mat of materials) disposeMaterial(mat);
+    });
+  }
+
+  // Dispose a material and its per-room textures. Shared materials/textures (walls,
+  // trim, door assets, and painting textures owned by textureUtils — all flagged
+  // userData.shared) are left alone; only per-room label/placeholder textures and
+  // per-painting frame/canvas materials are freed here.
+  function disposeMaterial(mat) {
+    if (!mat || mat.userData?.shared) return;
+    const mapKeys = ['map', 'normalMap', 'roughnessMap', 'metalnessMap', 'emissiveMap', 'aoMap', 'bumpMap', 'alphaMap'];
+    for (const key of mapKeys) {
+      const tex = mat[key];
+      if (tex && !tex.userData?.shared) tex.dispose();
+    }
+    mat.dispose();
   }
 
   function placeAtSpawn(spawnKey, room) {

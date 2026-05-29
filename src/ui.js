@@ -42,8 +42,11 @@ export function createInfoOverlay({ favorites, onFavoriteChange, onReport } = {}
     authorEl.style.display = subtitle ? '' : 'none';
 
     const size = formatPaintingDimensions(data);
-    sizeEl.textContent = size ?? '';
-    sizeEl.style.display = size ? '' : 'none';
+    const sizeText = [size, data.imageBroken ? '(imagen no disponible)' : null]
+      .filter(Boolean)
+      .join('  ');
+    sizeEl.textContent = sizeText;
+    sizeEl.style.display = sizeText ? '' : 'none';
 
     descEl.textContent = data.description ?? '';
     descEl.style.display = data.description ? '' : 'none';
@@ -157,23 +160,38 @@ export function createTransitionOverlay() {
     } else {
       labelEl.textContent = `Entrando en la sala de ${author.name}…`;
     }
-    barEl.style.width = kind === 'author' ? '0%' : '100%';
+    // Author rooms load textures (real progress); hub/category rooms load nothing, so
+    // show an indeterminate pulse instead of a static full bar that never moves.
+    if (kind === 'author') {
+      barEl.classList.remove('indeterminate');
+      barEl.style.width = '0%';
+    } else {
+      barEl.classList.add('indeterminate');
+      barEl.style.width = '';
+    }
     el.classList.remove('hidden');
   }
 
   function setProgress(loaded, total) {
     if (!barEl || total <= 0) return;
+    barEl.classList.remove('indeterminate');
     const pct = Math.round((loaded / total) * 100);
     barEl.style.width = `${pct}%`;
   }
 
   function hide() {
     el?.classList.add('hidden');
-    if (barEl) barEl.style.width = '0%';
+    if (barEl) {
+      barEl.classList.remove('indeterminate');
+      barEl.style.width = '0%';
+    }
   }
 
   return { show, setProgress, hide };
 }
+
+const FRAME_EMISSIVE_BASE = 0.08;
+const FRAME_EMISSIVE_FOCUS = 0.45;
 
 export function createFocusTracker({ camera, getInteractables, overlay }) {
   const raycaster = new THREE.Raycaster();
@@ -182,6 +200,18 @@ export function createFocusTracker({ camera, getInteractables, overlay }) {
   let lastCheck = 0;
   let lastCamPos = new THREE.Vector3();
   let lastCamRot = new THREE.Euler();
+  let highlighted = null;
+
+  function setHighlight(group) {
+    if (highlighted === group) return;
+    if (highlighted?.userData?.frameMaterial) {
+      highlighted.userData.frameMaterial.emissiveIntensity = FRAME_EMISSIVE_BASE;
+    }
+    highlighted = group;
+    if (group?.userData?.frameMaterial) {
+      group.userData.frameMaterial.emissiveIntensity = FRAME_EMISSIVE_FOCUS;
+    }
+  }
 
   function shouldUpdate(now) {
     if (now - lastCheck >= FOCUS_INTERVAL_MS) return true;
@@ -203,6 +233,7 @@ export function createFocusTracker({ camera, getInteractables, overlay }) {
     const interactables = getInteractables();
     if (!interactables || interactables.length === 0) {
       overlay.hide();
+      setHighlight(null);
       return;
     }
     raycaster.setFromCamera(center, camera);
@@ -211,22 +242,28 @@ export function createFocusTracker({ camera, getInteractables, overlay }) {
       const obj = findInteractable(hits[0].object);
       if (obj) {
         overlay.show(obj.userData.door ?? obj.userData.painting);
+        setHighlight(obj.userData.painting ? obj : null);
         return;
       }
     }
     overlay.hide();
+    setHighlight(null);
   }
 
   return { update };
 }
 
+// Returns the topmost ancestor flagged as interactable (the painting/door group),
+// not the inner mesh that was hit — so callers get the whole group (and its
+// userData.frameMaterial) rather than a leaf canvas/frame mesh.
 function findInteractable(node) {
   let n = node;
+  let found = null;
   while (n) {
-    if (n.userData && (n.userData.painting || n.userData.door)) return n;
+    if (n.userData && (n.userData.painting || n.userData.door)) found = n;
     n = n.parent;
   }
-  return null;
+  return found;
 }
 
 export function createReportDialog() {

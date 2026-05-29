@@ -31,6 +31,8 @@ export function createCatalog({
   const listEl = document.getElementById('catalog-list');
   const detailEl = document.getElementById('catalog-detail');
   const closeBtn = document.getElementById('catalog-close');
+  const statusEl = document.getElementById('catalog-status');
+  const openerBtn = document.getElementById('catalog-btn');
 
   const {
     categories,
@@ -53,6 +55,28 @@ export function createCatalog({
     return paintingsByAuthor[authorId] || [];
   }
 
+  function announce(text) {
+    if (statusEl) statusEl.textContent = text;
+  }
+
+  // Keep keyboard focus inside the dialog while it is open (it is aria-modal).
+  function trapFocus(e) {
+    if (e.key !== 'Tab') return;
+    const focusables = [...panel.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+    )].filter((el) => !el.disabled && el.offsetParent !== null);
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+
   function renderCategories() {
     view = 'categories';
     selectedCategoryId = null;
@@ -73,6 +97,7 @@ export function createCatalog({
       .join('');
 
     bindCategoryRows(listEl);
+    announce(`Catálogo: ${plural(categories.length, 'categoría', 'categorías')}`);
   }
 
   function renderCategoryDetail(categoryId) {
@@ -113,6 +138,7 @@ export function createCatalog({
     });
     bindAuthorRows(detailEl);
     bindFavoriteButtons(detailEl);
+    announce(`${category.label}: ${plural(authors.length, 'autor', 'autores')}`);
   }
 
   function renderAuthorDetail(authorId) {
@@ -159,6 +185,7 @@ export function createCatalog({
     });
     bindPaintingRows(detailEl);
     bindFavoriteButtons(detailEl);
+    announce(`Sala de ${author.name}: ${plural(paintings.length, 'obra', 'obras')}`);
   }
 
   function renderSearchResults() {
@@ -202,6 +229,10 @@ export function createCatalog({
     bindAuthorRows(listEl);
     bindPaintingRows(listEl);
     bindFavoriteButtons(listEl);
+
+    const totalMatches =
+      matchedCategories.length + matchedAuthors.length + matchedPaintings.length;
+    announce(`Resultados de búsqueda: ${totalMatches}`);
   }
 
   function renderFavorites() {
@@ -229,6 +260,7 @@ export function createCatalog({
 
     bindPaintingRows(listEl);
     bindFavoriteButtons(listEl);
+    announce(`${plural(favoritePaintings.length, 'cuadro favorito', 'cuadros favoritos')}`);
   }
 
   function renderSearchSection(title, rows) {
@@ -381,6 +413,9 @@ export function createCatalog({
     if (!favoritesFilterBtn) return;
     favoritesFilterBtn.classList.toggle('active', favoriteOnly);
     favoritesFilterBtn.setAttribute('aria-pressed', favoriteOnly ? 'true' : 'false');
+    const count = favorites?.all().size ?? 0;
+    const labelEl = favoritesFilterBtn.querySelector('.catalog-favorites-label');
+    if (labelEl) labelEl.textContent = count ? `Favoritos (${count})` : 'Favoritos';
   }
 
   function clearQuery() {
@@ -414,6 +449,7 @@ export function createCatalog({
     updateFavoritesFilterButton();
     panel.classList.remove('hidden');
     document.body.classList.add('catalog-open');
+    panel.addEventListener('keydown', trapFocus);
     renderCategories();
     searchInput.focus();
   }
@@ -422,10 +458,13 @@ export function createCatalog({
     if (!open) return;
     open = false;
     panel.classList.add('hidden');
+    panel.removeEventListener('keydown', trapFocus);
     document.body.classList.remove('catalog-open');
     view = 'categories';
     selectedCategoryId = null;
     selectedAuthorId = null;
+    // Return focus to the control that opened the dialog (no-op if it is hidden).
+    if (openerBtn?.offsetParent !== null) openerBtn?.focus();
     onClose?.();
   }
 

@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { loadPaintingTexture } from './textureUtils.js';
+import { getQualityProfile } from './qualityProfile.js';
 
 const CM_TO_M = 0.01;
 const FRAME_THICKNESS = 0.06;
@@ -128,10 +129,12 @@ function buildPaintingMesh(texture, data) {
   );
   frame.position.z = -FRAME_DEPTH / 2;
   group.add(frame);
+  // Referenced by the focus highlighter (ui.js) to brighten the frame when looked at.
+  group.userData.frameMaterial = frame.material;
 
-  const canvasMaterial = texture
-    ? new THREE.MeshBasicMaterial({ map: texture })
-    : new THREE.MeshBasicMaterial({ color: 0x000000 });
+  const canvasMaterial = new THREE.MeshBasicMaterial({
+    map: texture ?? buildPlaceholderTexture(data, w, h),
+  });
   const canvas = new THREE.Mesh(
     new THREE.PlaneGeometry(w, h),
     canvasMaterial,
@@ -145,7 +148,50 @@ function buildPaintingMesh(texture, data) {
   group.add(label);
 
   group.userData.painting = data;
+  if (!texture) {
+    group.userData.imageBroken = true;
+    data.imageBroken = true;
+  }
   return group;
+}
+
+// Texture shown in place of a painting whose image failed to load, so the frame
+// still reads as a labelled artwork rather than an unexplained black rectangle.
+function buildPlaceholderTexture(data, w, h) {
+  const longSide = 768;
+  const aspect = w / h;
+  const c = document.createElement('canvas');
+  c.width = aspect >= 1 ? longSide : Math.round(longSide * aspect);
+  c.height = aspect >= 1 ? Math.round(longSide / aspect) : longSide;
+  const ctx = c.getContext('2d');
+
+  ctx.fillStyle = '#1a1a1a';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.strokeStyle = 'rgba(199, 160, 96, 0.4)';
+  ctx.lineWidth = 6;
+  ctx.strokeRect(8, 8, c.width - 16, c.height - 16);
+
+  ctx.fillStyle = '#c7a060';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  const iconSize = Math.round(Math.min(c.width, c.height) * 0.18);
+  ctx.font = `${iconSize}px -apple-system, "Segoe UI", sans-serif`;
+  ctx.fillText('🖼', c.width / 2, c.height / 2 - iconSize * 0.7);
+
+  ctx.font = '600 30px -apple-system, "Segoe UI", sans-serif';
+  ctx.fillText('Imagen no disponible', c.width / 2, c.height / 2 + 6);
+
+  ctx.fillStyle = '#a89880';
+  ctx.font = '400 24px -apple-system, "Segoe UI", sans-serif';
+  ctx.fillText(
+    ellipsize(ctx, data.title ?? '', c.width - 48),
+    c.width / 2,
+    c.height / 2 + iconSize * 0.7,
+  );
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return tex;
 }
 
 function getPaintingSize(data, texture) {
@@ -200,7 +246,7 @@ function buildLabel(data) {
 
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 4;
+  tex.anisotropy = getQualityProfile().anisotropy;
   return new THREE.Mesh(
     new THREE.PlaneGeometry(LABEL_WIDTH, LABEL_HEIGHT),
     new THREE.MeshBasicMaterial({ map: tex }),

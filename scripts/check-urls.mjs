@@ -3,13 +3,16 @@
  * check-urls.mjs — HEAD-check every painting URL in the catalog.
  *
  * Usage:
- *   node scripts/check-urls.mjs              # check all authors
- *   node scripts/check-urls.mjs van-gogh     # check one author by id
- *   node scripts/check-urls.mjs --concurrency 3  # parallel requests (default: 2)
+ *   node scripts/check-urls.mjs                     # check all authors
+ *   node scripts/check-urls.mjs van-gogh            # check one author by id
+ *   node scripts/check-urls.mjs --concurrency 3     # parallel requests (default: 2)
+ *   node scripts/check-urls.mjs --json [path]       # write a machine-readable report
+ *                                                   # (default: scripts/data/url-report.json)
+ *   node scripts/check-urls.mjs --authors-from r.json  # re-check only authors broken in r.json
  *
  * Exits 0 if all URLs are reachable, 1 if any fail.
  */
-import { readdir, readFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -17,9 +20,34 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const authorsDir = path.join(root, 'public', 'catalog', 'authors');
 
 const args = process.argv.slice(2);
-const concurrencyFlag = args.indexOf('--concurrency');
-const CONCURRENCY = concurrencyFlag !== -1 ? parseInt(args[concurrencyFlag + 1], 10) : 2;
-const authorFilter = args.filter((a) => !a.startsWith('--') && !/^\d+$/.test(a));
+
+// Flags that consume a value; collect them so their values aren't mistaken for author ids.
+const consumed = new Set();
+function readFlag(name) {
+  const i = args.indexOf(name);
+  if (i === -1) return undefined;
+  consumed.add(i);
+  const value = args[i + 1];
+  if (value && !value.startsWith('--')) {
+    consumed.add(i + 1);
+    return value;
+  }
+  return ''; // present without a value
+}
+
+const concurrencyValue = readFlag('--concurrency');
+const CONCURRENCY = concurrencyValue ? parseInt(concurrencyValue, 10) : 2;
+
+const jsonValue = readFlag('--json');
+const JSON_PATH = jsonValue === undefined
+  ? null
+  : path.resolve(root, jsonValue || 'scripts/data/url-report.json');
+
+const authorsFromValue = readFlag('--authors-from');
+
+const authorFilter = args.filter(
+  (a, i) => !consumed.has(i) && !a.startsWith('--') && !/^\d+$/.test(a),
+);
 
 const RETRY_DELAYS = [0, 3000, 8000, 15000];
 const BETWEEN_REQUESTS_MS = 1200;
@@ -51,18 +79,43 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
+async function authorsFromReport(reportPath) {
+  const report = JSON.parse(await readFile(path.resolve(root, reportPath), 'utf8'));
+  return new Set((report.broken || []).map((b) => b.authorId));
+}
+
 async function loadPaintings() {
   const files = (await readdir(authorsDir)).filter((f) => f.endsWith('.json'));
+  const fromReport = authorsFromValue ? await authorsFromReport(authorsFromValue) : null;
   const paintings = [];
   for (const file of files) {
     const authorId = file.replace(/\.json$/, '');
     if (authorFilter.length && !authorFilter.includes(authorId)) continue;
+    if (fromReport && !fromReport.has(authorId)) continue;
     const author = JSON.parse(await readFile(path.join(authorsDir, file), 'utf8'));
     for (const painting of author.paintings || []) {
       paintings.push({ authorId, authorName: author.name, ...painting });
     }
   }
   return paintings;
+}
+
+async function writeReport(reportPath, totalChecked, broken) {
+  await mkdir(path.dirname(reportPath), { recursive: true });
+  const report = {
+    generated: new Date().toISOString(),
+    totalChecked,
+    brokenCount: broken.length,
+    broken: broken.map(({ authorId, paintingId, title, url, status }) => ({
+      authorId,
+      paintingId,
+      title,
+      url,
+      status,
+    })),
+  };
+  await writeFile(reportPath, `${JSON.stringify(report, null, 2)}\n`);
+  console.log(`\nReport written to ${path.relative(root, reportPath)}`);
 }
 
 async function runPool(tasks, concurrency) {
@@ -111,6 +164,8 @@ async function main() {
 
   process.stdout.write('\n\n');
   console.log(`Done. ${checked - broken.length}/${checked} OK, ${broken.length} broken.`);
+
+  if (JSON_PATH) await writeReport(JSON_PATH, checked, broken);
 
   if (broken.length) {
     console.log('\nBroken URLs:');

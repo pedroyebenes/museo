@@ -111,6 +111,11 @@ export function createDoorSignMesh({
     new THREE.PlaneGeometry(w, h),
     new THREE.MeshBasicMaterial({ map: tex, transparent: true }),
   );
+  // Signs are cached and clone()d into many rooms, so the geometry and material are
+  // shared references. Flag them so the room disposer never frees them out from under
+  // another room (the texture is already flagged above).
+  mesh.geometry.userData.shared = true;
+  mesh.material.userData.shared = true;
   signCache.set(key, mesh);
   return mesh.clone();
 }

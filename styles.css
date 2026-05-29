@@ -928,3 +928,110 @@ body.playing #room-hud:not(.hidden) { display: block; }
     padding: 0.75rem 1rem;
   }
 }
+
+/* ---- Plan 3: UX & accessibility polish ---- */
+
+/* Visually-hidden live region (screen-reader announcements). */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Indeterminate progress pulse for hub/category transitions (no textures to load). */
+.transition-bar.indeterminate {
+  width: 40% !important;
+  transition: none;
+  animation: transition-pulse 1.1s ease-in-out infinite;
+}
+
+@keyframes transition-pulse {
+  0% { margin-left: -40%; }
+  100% { margin-left: 100%; }
+}
+
+/* In-play help button (top-right) + overlay. */
+.help-btn {
+  position: fixed;
+  top: max(1rem, env(safe-area-inset-top));
+  right: max(1rem, env(safe-area-inset-right));
+  z-index: 8;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--museum-border);
+  border-radius: 50%;
+  background: rgba(12, 9, 7, 0.72);
+  color: var(--museum-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.help-btn:hover,
+.help-btn:focus-visible {
+  background: rgba(199, 160, 96, 0.22);
+  border-color: var(--museum-gold);
+  outline: none;
+}
+
+/* The report button lives top-right on touch; nudge help below it to avoid overlap. */
+body.is-touch .help-btn {
+  top: max(4.25rem, calc(env(safe-area-inset-top) + 3.25rem));
+}
+
+#help-modal { z-index: 20; cursor: default; }
+
+.help-card {
+  width: min(440px, 92vw);
+  max-height: min(85vh, 640px);
+  overflow-y: auto;
+  padding: 1.25rem 1.4rem 1.5rem;
+  background: rgba(12, 9, 7, 0.96);
+  border: 1px solid var(--museum-border);
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.help-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.help-header h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  color: var(--museum-gold);
+}
+
+/* Item 4: larger, clearer favorite affordances. */
+.catalog-favorite-btn {
+  flex: 0 0 2.75rem;
+  font-size: 1.5rem;
+}
+
+.info-favorite-btn svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Item 5: keep the painting info card clear of the touch buttons in landscape. */
+@media (pointer: coarse) and (orientation: landscape) {
+  #info-panel {
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    max-width: min(440px, 70vw);
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+}

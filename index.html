@@ -62,11 +62,46 @@
           <input type="search" id="catalog-search" class="catalog-search" placeholder="Buscar categoría, autor u obra…" autocomplete="off" />
           <button type="button" id="catalog-favorites-filter" class="catalog-favorites-filter" aria-pressed="false">
             <span aria-hidden="true">☆</span>
-            Favoritos
+            <span class="catalog-favorites-label">Favoritos</span>
           </button>
         </div>
+        <div id="catalog-status" class="sr-only" role="status" aria-live="polite"></div>
         <div id="catalog-list" class="catalog-list"></div>
         <div id="catalog-detail" class="catalog-detail hidden"></div>
+      </div>
+    </div>
+
+    <button type="button" id="help-btn" class="help-btn hidden" aria-label="Ayuda y controles">?</button>
+
+    <div id="help-modal" class="overlay hidden" role="dialog" aria-modal="true" aria-label="Ayuda y controles">
+      <div class="help-card">
+        <header class="help-header">
+          <h2>Controles</h2>
+          <button type="button" id="help-close" class="catalog-close" aria-label="Cerrar ayuda">×</button>
+        </header>
+        <div class="controls-section controls-desktop">
+          <ul>
+            <li><b>W A S D</b> o <b>flechas</b> — moverte</li>
+            <li><b>Ratón</b> — mirar alrededor</li>
+            <li><b>Mayús</b> — correr</li>
+            <li><b>M</b> — catálogo de categorías, autores y cuadros</li>
+            <li><b>F</b> — marcar o quitar de favoritos el cuadro enfocado</li>
+            <li><b>H</b> — ocultar o mostrar la ficha del cuadro</li>
+            <li><b>R</b> — reportar error en el cuadro o sala actual</li>
+            <li><b>Esc</b> — liberar el cursor</li>
+          </ul>
+        </div>
+        <div class="controls-section controls-mobile">
+          <ul>
+            <li><b>Mitad izquierda</b> — mantén pulsado y arrastra para moverte</li>
+            <li><b>Mitad derecha</b> — arrastra para mirar alrededor</li>
+            <li><b>Correr</b> — botón con icono de correr (esquina inferior derecha)</li>
+            <li><b>Info</b> — mostrar u ocultar la ficha del cuadro (esquina inferior derecha)</li>
+            <li><b>Favorito</b> — marca el cuadro desde su ficha o desde el catálogo</li>
+            <li><b>Reportar</b> — botón con icono de aviso (arriba a la derecha)</li>
+            <li><b>Catálogo</b> — botón arriba a la izquierda; salta a categoría, sala o cuadro</li>
+          </ul>
+        </div>
       </div>
     </div>
 

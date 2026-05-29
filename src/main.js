@@ -137,14 +137,18 @@ async function boot() {
       welcome.classList.add('hidden');
       document.body.classList.add('playing');
       document.getElementById('catalog-btn')?.classList.remove('hidden');
+      document.getElementById('help-btn')?.classList.remove('hidden');
     },
     onUnlock: () => {
       if (catalog?.isOpen()) return;
       const reportModal = document.getElementById('report-modal');
       if (reportModal && !reportModal.classList.contains('hidden')) return;
+      const helpModal = document.getElementById('help-modal');
+      if (helpModal && !helpModal.classList.contains('hidden')) return;
       welcome.classList.remove('hidden');
       document.body.classList.remove('playing');
       document.getElementById('catalog-btn')?.classList.add('hidden');
+      document.getElementById('help-btn')?.classList.add('hidden');
       overlay.hide();
     },
     onToggleInfo: () => {
@@ -257,6 +261,38 @@ async function boot() {
     openCatalog();
   });
 
+  const helpModal = document.getElementById('help-modal');
+  const helpBtn = document.getElementById('help-btn');
+
+  function helpOpen() {
+    return helpModal && !helpModal.classList.contains('hidden');
+  }
+
+  function openHelp() {
+    if (!document.body.classList.contains('playing')) return;
+    if (catalog?.isOpen() || helpOpen()) return;
+    overlay.hide();
+    suspendControls();
+    unlockControls();
+    helpModal?.classList.remove('hidden');
+    document.getElementById('help-close')?.focus();
+  }
+
+  function closeHelp() {
+    if (!helpOpen()) return;
+    helpModal.classList.add('hidden');
+    resumeAfterCatalog();
+  }
+
+  helpBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openHelp();
+  });
+  document.getElementById('help-close')?.addEventListener('click', closeHelp);
+  helpModal?.addEventListener('click', (e) => {
+    if (e.target === helpModal) closeHelp();
+  });
+
   const focus = createFocusTracker({
     camera,
     overlay,
@@ -296,8 +332,22 @@ async function boot() {
       openCatalog();
       return;
     }
+    if (e.code === 'Escape' && helpOpen()) {
+      closeHelp();
+      return;
+    }
     if (e.code === 'Escape' && catalog?.isOpen()) {
       catalog.close();
+      return;
+    }
+    if (
+      e.key === '?'
+      && document.body.classList.contains('playing')
+      && !catalog?.isOpen()
+    ) {
+      e.preventDefault();
+      if (helpOpen()) closeHelp();
+      else openHelp();
       return;
     }
     if (e.code === 'KeyH') {
