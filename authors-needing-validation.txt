@@ -59,7 +59,7 @@ Authors to validate (105 total):
 [x] honore-daumier (8 paintings) - all URLs 429 OK; no changes needed
 [x] j-m-w-turner (6 paintings) - all URLs 429 OK; dims: Temeraire+Rain,Steam swapped, Dordrecht 68×88→234×158
 [x] jacques-louis-david (4 paintings) - 2 dims swapped: Muerte Sócrates apaisado, Napoleón Despacho apaisado
-[ ] james-mcneill-whistler (8 paintings) - 3 OK, 5 ERR (rate limit) need revalidation
+[x] james-mcneill-whistler (8 paintings) - all URLs 429 OK; biombo-dorado dims corregidas portrait 80x65→50x69
 [x] jan-van-eyck (2 paintings)
 [x] jean-auguste-dominique-ingres (7 paintings) - all URLs 429 OK; dims: Napoleón 259×162→163×259, Júpiter/Tetis 327×260→260×327; added fullName/years/origin
 [ ] jean-baptiste-simeon-chardin (9 paintings)
