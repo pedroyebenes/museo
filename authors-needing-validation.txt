@@ -64,7 +64,7 @@ Authors to validate (105 total):
 [x] jean-auguste-dominique-ingres (7 paintings) - all URLs 429 OK; dims: Napoleón 259×162→163×259, Júpiter/Tetis 327×260→260×327; added fullName/years/origin
 [x] jean-baptiste-simeon-chardin (9 paintings) - all URLs 429 OK; múltiples dims corregidas
 [x] jean-francois-millet (8 paintings) - all URLs 429 OK; espigadoras+angelus dims swapped
-[ ] jean-honore-fragonard (8 paintings)
+[x] jean-honore-fragonard (8 paintings) - fragonard-beso-robado URL 404→corregida; otras 429 OK
 [ ] joan-miro (12 paintings)
 [ ] joaquin-sorolla (8 paintings)
 [ ] johannes-vermeer (7 paintings) - 1 OK, 1 MISSING (Milkmaid), 4 ERR (rate limit), 1 DUPLICATE (joven-perla x2) need revalidation
