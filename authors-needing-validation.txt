@@ -71,7 +71,7 @@ Authors to validate (105 total):
 [x] john-constable (8 paintings) - all URLs 429 OK; Hay Wain+otras dims corregidas
 [x] john-everett-millais (8 paintings) - all URLs 429 OK; millais-mariana+martir-solway dims corregidas
 [ ] john-singer-sargent (10 paintings)
-[ ] joshua-reynolds (8 paintings)
+[x] joshua-reynolds (8 paintings) - all URLs 429 OK; múltiples dims corregidas
 [ ] jusepe-de-ribera (6 paintings)
 [ ] kasimir-malevich (8 paintings)
 [ ] lucas-cranach-el-viejo (6 paintings)
