@@ -20,7 +20,7 @@
     },
     {
       "id": "giorgione-laura",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Giorgione_-_Young_Woman_(%22Laura%22)_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Giorgione_-_Young_Woman_%28%E2%80%9CLaura%E2%80%9D%29_-_Google_Art_Project.jpg",
       "title": "Mujer joven (Laura)",
       "year": 1506,
       "description": "Retrato femenino de perfil con manto rojo y mirada introspectiva. Una de las primeras obras venecianas que funden retrato y poesía en una presencia enigmática.",
@@ -47,8 +47,8 @@
       "year": 1510,
       "description": "La diosa yace en un paisaje campestre bajo cielo crepuscular. Obra fundacional del desnudo paisajístico veneciano, completada tras la muerte del artista.",
       "dimensions": {
-        "width": 108,
-        "height": 175
+        "width": 175,
+        "height": 108
       }
     },
     {
