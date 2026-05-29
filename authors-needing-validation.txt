@@ -44,7 +44,7 @@ Authors to validate (105 total):
 [x] frida-kahlo (15 paintings) - todas las URLs Google AP reemplazadas por Wikimedia Commons thumbs
 [x] georges-braque (8 paintings) - todas URLs Google GAP reemplazadas por museos públicos
 [x] georges-de-la-tour (6 paintings) - todas rotas reemplazadas por Wikimedia thumbs, validadas 200
-[ ] georges-seurat (6 paintings)
+[x] georges-seurat (6 paintings) - 4 rotas reemplazadas, 2 Google AP funcionando
 [ ] georgia-o-keeffe (16 paintings)
 [ ] giorgione (6 paintings) - 1 OK, 1 MISSING (Laura), 4 ERR (rate limit) need revalidation
 [ ] giotto (5 paintings) - 2 OK, 1 MISSING (Crucifixion), 2 ERR (rate limit on Maestà and Lamentacion) need revalidation
