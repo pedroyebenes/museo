@@ -67,7 +67,7 @@ Authors to validate (105 total):
 [x] jean-honore-fragonard (8 paintings) - fragonard-beso-robado URL 404→corregida; otras 429 OK
 [x] joan-miro (12 paintings) - miro-carnaval URL 404→corregida; otras 429 OK
 [x] joaquin-sorolla (8 paintings) - all URLs 429 OK; múltiples dims corregidas
-[ ] johannes-vermeer (7 paintings) - 1 OK, 1 MISSING (Milkmaid), 4 ERR (rate limit), 1 DUPLICATE (joven-perla x2) need revalidation
+[x] johannes-vermeer (7 paintings) - all URLs 429 OK; lechera+diana dims swapped
 [ ] john-constable (8 paintings) - 1 OK, 2 MISSING (Hay Wain, Cornfield), 5 ERR (rate limit), 2 DUPLICATES (Dedham Vale x2) need revalidation
 [ ] john-everett-millais (8 paintings)
 [ ] john-singer-sargent (10 paintings)

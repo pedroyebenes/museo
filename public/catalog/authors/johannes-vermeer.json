@@ -36,8 +36,8 @@
       "year": 1658,
       "description": "Servidora vertiendo leche junto a una mesa con pan y cesta. Vermeer eleva una escena doméstica mediante luz lateral y detalle casi táctil.",
       "dimensions": {
-        "width": 45.5,
-        "height": 41
+        "width": 41,
+        "height": 45.5
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1655,
       "description": "Diana y sus ninfas descansan en un paisaje clásico con luz suave. Obra temprana donde Vermeer aún dialoga con la pintura de historia antes de especializarse en escenas domésticas.",
       "dimensions": {
-        "width": 98,
-        "height": 105
+        "width": 105,
+        "height": 98.5
       }
     },
     {
@@ -58,8 +58,8 @@
       "year": 1668,
       "description": "Pintor retrata a una modelo vestida de Clío ante un mapa y un candelabro. Vermeer medita sobre su propio oficio con una escena enigmática de luz y perspectiva.",
       "dimensions": {
-        "width": 120,
-        "height": 100
+        "width": 100,
+        "height": 120
       }
     },
     {
@@ -69,8 +69,8 @@
       "year": 1661,
       "description": "Panorama de la ciudad natal bajo un cielo nublado con reflejos en el agua. Obra cumbre del paisaje holandés donde la luz define la identidad urbana.",
       "dimensions": {
-        "width": 98,
-        "height": 117
+        "width": 117,
+        "height": 97
       }
     },
     {
@@ -80,8 +80,8 @@
       "year": 1665,
       "description": "Maestro y alumna junto a un clave en un interior bañado de luz lateral. Vermeer captura la intimidad educativa con geometría silenciosa y color sobrio.",
       "dimensions": {
-        "width": 74,
-        "height": 64
+        "width": 64,
+        "height": 74
       }
     }
   ]
