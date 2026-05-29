@@ -78,7 +78,7 @@ Authors to validate (105 total):
 [x] marc-chagall (12 paintings) - all URLs 429 OK; 6 dims corregidas
 [x] mary-cassatt (14 paintings) - all URLs 429 OK; 7 dims corregidas
 [ ] melozzo-da-forli (4 paintings)
-[ ] miguel-angel (3 paintings)
+[x] miguel-angel (3 paintings) - all URLs 429 OK; tormento-san-antonio dims swapped
 [ ] nicolas-poussin (7 paintings)
 [ ] odilon-redon (10 paintings)
 [ ] pablo-picasso (14 paintings)
