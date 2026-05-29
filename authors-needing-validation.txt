@@ -42,7 +42,7 @@ Authors to validate (105 total):
 [x] francisco-de-goya (14 paintings) - Google Art Project URLs all verified 200 (including autorretrato), 3 rate-limited (429); catalog valid
 [x] francisco-de-zurbaran (5 paintings) - 4 Google GAP replaced (WGA), duplicate Agnus Dei removed, all URLs https
 [x] frida-kahlo (15 paintings) - todas las URLs Google AP reemplazadas por Wikimedia Commons thumbs
-[ ] georges-braque (8 paintings)
+[x] georges-braque (8 paintings) - todas URLs Google GAP reemplazadas por museos públicos
 [ ] georges-de-la-tour (6 paintings)
 [ ] georges-seurat (6 paintings)
 [ ] georgia-o-keeffe (16 paintings)

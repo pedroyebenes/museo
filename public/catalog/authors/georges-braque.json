@@ -9,7 +9,7 @@
   "paintings": [
     {
       "id": "braque-hombre-guitarra",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Georges_Braque_-_Man_with_a_Guitar_-_Google_Art_Project.jpg",
+      "url": "https://www.moma.org/wp-content/uploads/2019/10/braquemanwithaguitar-300x208.jpg",
       "title": "Hombre con guitarra",
       "year": 1911,
       "description": "Figura e instrumento descompuestos en planos grises y ocres. Cubismo analítico que funde música y cuerpo en facetas geométricas.",
@@ -20,7 +20,7 @@
     },
     {
       "id": "braque-violin",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Georges_Braque_-_Violin_and_Candlestick_-_Google_Art_Project.jpg",
+      "url": "https://www.guggenheim.org/wp-content/uploads/2020/02/2000.25.2_ph_web-400x333.jpg",
       "title": "Violín y candelabro",
       "year": 1910,
       "description": "Objetos de mesa fragmentados en composición casi monocroma. Braque analiza volumen y superficie desde múltiples ángulos.",
@@ -31,7 +31,7 @@
     },
     {
       "id": "braque-cartas",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Georges_Braque_-_The_Portuguese_-_Google_Art_Project.jpg",
+      "url": "https://www.museoreinasofia.es/sites/default/files/2020-03/11584.jpg?height=400",
       "title": "El portugués",
       "year": 1911,
       "description": "Hombre en café con letras y formas geométricas superpuestas. Obra clave que introduce palabra y señal al cubismo.",
@@ -42,7 +42,7 @@
     },
     {
       "id": "braque-estudio",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Georges_Braque_-_Studio_VIII_-_Google_Art_Project.jpg",
+      "url": "https://www.guggenheim.org/wp-content/uploads/2020/02/2000.25.1_ph_web-300x224.jpg",
       "title": "Estudio VIII",
       "year": 1954,
       "description": "Interior de taller con objetos y aves en paleta clara. Braque revisita cubismo en etapa madura de calma y síntesis.",
@@ -53,7 +53,7 @@
     },
     {
       "id": "braque-pajaros",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Georges_Braque_-_The_Birds_-_Google_Art_Project.jpg",
+      "url": "https://www.moma.org/wp-content/uploads/2019/10/birds-400x307.jpg",
       "title": "Los pájaros",
       "year": 1960,
       "description": "Aves en vuelo sobre fondo azul de formas simplificadas. Motivo recurrente en la obra tardía de Braque.",
@@ -75,7 +75,7 @@
     },
     {
       "id": "braque-roche",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Georges_Braque_-_Rocks_at_L'Estaque_-_Google_Art_Project.jpg",
+      "url": "https://collections.artsmia.org/art/4583/rocks-at-l-estaque-georges-braque.jpg?width=400",
       "title": "Rocas en L'Estaque",
       "year": 1908,
       "description": "Paisaje provenzal simplificado en bloques geométricos. Obra temprana que anticipa el cubismo desde Cézanne.",
@@ -86,7 +86,7 @@
     },
     {
       "id": "braque-soprano",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Georges_Braque_-_Woman_with_a_Guitar_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Georges_Braque_-_Woman_with_a_Guitar_%28Woman_with_Mandolin%29_-_Musee_National_d%27Art_Moderne.jpg/400px-Georges_Braque_-_Woman_with_a_Guitar_%28Woman_with_Mandolin%29_-_Musee_National_d%27Art_Moderne.jpg",
       "title": "Mujer con guitarra",
       "year": 1913,
       "description": "Figura femenina e instrumento en collage y planos de papel. Cubismo sintético que incorpora materia real al lienzo.",
