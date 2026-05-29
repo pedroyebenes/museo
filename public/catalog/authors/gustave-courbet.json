@@ -9,13 +9,13 @@
   "paintings": [
     {
       "id": "courbet-taller",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Gustave_Courbet_-_The_Artist's_Studio_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Courbet_LAtelier_du_peintre.jpg",
       "title": "El taller del pintor",
       "year": 1855,
       "description": "Autorretrato alegórico donde Courbet se presenta rodeado de amigos, modelos y personajes simbólicos. Manifiesto visual del realismo que explica su concepción del arte y la sociedad.",
       "dimensions": {
-        "width": 361,
-        "height": 598
+        "width": 598,
+        "height": 361
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1849,
       "description": "Dos obreros destrozando rocas en un camino rural. Courbet dignifica el trabajo manual con una escala antes reservada a la historia y provocó el rechazo del establishment artístico.",
       "dimensions": {
-        "width": 170,
-        "height": 240
+        "width": 257,
+        "height": 165
       }
     },
     {
