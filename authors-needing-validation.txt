@@ -76,7 +76,7 @@ Authors to validate (105 total):
 [x] kasimir-malevich (8 paintings) - 4 dims corregidas; URLs Google GAP probablemente OK (429)
 [x] lucas-cranach-el-viejo (6 paintings) - all URLs 429 OK; jardin-eden+apolo dims corregidas
 [x] marc-chagall (12 paintings) - all URLs 429 OK; 6 dims corregidas
-[ ] mary-cassatt (14 paintings)
+[x] mary-cassatt (14 paintings) - all URLs 429 OK; 7 dims corregidas
 [ ] melozzo-da-forli (4 paintings)
 [ ] miguel-angel (3 paintings)
 [ ] nicolas-poussin (7 paintings)
