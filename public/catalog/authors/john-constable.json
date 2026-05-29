@@ -14,8 +14,8 @@
       "year": 1821,
       "description": "Carro atravesando un vado del río Stour con un molino al fondo. Obra emblemática del paisaje inglés que Constable presentó en París y que influyó en los románticos franceses.",
       "dimensions": {
-        "width": 130,
-        "height": 185
+        "width": 185,
+        "height": 130
       }
     },
     {
@@ -25,8 +25,8 @@
       "year": 1828,
       "description": "Vista panorámica del valle natal con campos, árboles y la torre de la iglesia al fondo. Constable captura la atmósfera húmeda del Suffolk con nubes cargadas de lluvia.",
       "dimensions": {
-        "width": 145,
-        "height": 120
+        "width": 122,
+        "height": 145
       }
     },
     {
@@ -36,8 +36,8 @@
       "year": 1826,
       "description": "Pastor con rebaño avanza por un sendero entre campos de trigo y un arroyo. Constable idealiza el campo inglés con naturalismo poético y detalle botánico.",
       "dimensions": {
-        "width": 143,
-        "height": 122
+        "width": 122,
+        "height": 143
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1831,
       "description": "La catedral gótica surge tras un prado mojado bajo un arcoíris tormentoso. Constable combina topografía precisa y drama romántico del cielo.",
       "dimensions": {
-        "width": 189,
-        "height": 151
+        "width": 190,
+        "height": 152
       }
     },
     {
@@ -58,8 +58,8 @@
       "year": 1816,
       "description": "Lago, árboles y figuras dispersas en un paisaje veraniego apacible. Constable observa la luz campestre con naturalismo poético.",
       "dimensions": {
-        "width": 56,
-        "height": 46
+        "width": 101,
+        "height": 56
       }
     },
     {
@@ -69,19 +69,19 @@
       "year": 1829,
       "description": "Ruinas medievales sobre acantilados frente a un cielo tormentoso. Constable une topografía precisa y drama romántico del clima inglés.",
       "dimensions": {
-        "width": 120,
-        "height": 80
+        "width": 165,
+        "height": 122
       }
     },
     {
       "id": "constable-dedham-vale",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/John_Constable_-_Dedham_Vale_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Constable_-_Dedham_Vale%2C_1802%2C_124-1888.jpg",
       "title": "Valle de Dedham",
       "year": 1802,
       "description": "Panorama del valle natal con campos, árboles y la torre de la iglesia al fondo. Obra temprana que funda su poética del Suffolk.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 34,
+        "height": 44
       }
     },
     {
