@@ -74,7 +74,7 @@ Authors to validate (105 total):
 [x] joshua-reynolds (8 paintings) - all URLs 429 OK; múltiples dims corregidas
 [x] jusepe-de-ribera (6 paintings) - ribera-santa-teresa URL 404→corregida; múltiples dims corregidas
 [x] kasimir-malevich (8 paintings) - 4 dims corregidas; URLs Google GAP probablemente OK (429)
-[ ] lucas-cranach-el-viejo (6 paintings)
+[x] lucas-cranach-el-viejo (6 paintings) - all URLs 429 OK; jardin-eden+apolo dims corregidas
 [ ] marc-chagall (12 paintings)
 [ ] mary-cassatt (14 paintings)
 [ ] melozzo-da-forli (4 paintings)
