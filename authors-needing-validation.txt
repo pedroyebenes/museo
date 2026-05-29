@@ -69,7 +69,7 @@ Authors to validate (105 total):
 [x] joaquin-sorolla (8 paintings) - all URLs 429 OK; múltiples dims corregidas
 [x] johannes-vermeer (7 paintings) - all URLs 429 OK; lechera+diana dims swapped
 [x] john-constable (8 paintings) - all URLs 429 OK; Hay Wain+otras dims corregidas
-[ ] john-everett-millais (8 paintings)
+[x] john-everett-millais (8 paintings) - all URLs 429 OK; millais-mariana+martir-solway dims corregidas
 [ ] john-singer-sargent (10 paintings)
 [ ] joshua-reynolds (8 paintings)
 [ ] jusepe-de-ribera (6 paintings)
