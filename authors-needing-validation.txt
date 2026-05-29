@@ -58,7 +58,7 @@ Authors to validate (105 total):
 [x] henri-rousseau (12 paintings) - all URLs 429 OK; banquete del león height 146→160
 [x] honore-daumier (8 paintings) - all URLs 429 OK; no changes needed
 [x] j-m-w-turner (6 paintings) - all URLs 429 OK; dims: Temeraire+Rain,Steam swapped, Dordrecht 68×88→234×158
-[ ] jacques-louis-david (4 paintings)
+[x] jacques-louis-david (4 paintings) - 2 dims swapped: Muerte Sócrates apaisado, Napoleón Despacho apaisado
 [ ] james-mcneill-whistler (8 paintings) - 3 OK, 5 ERR (rate limit) need revalidation
 [x] jan-van-eyck (2 paintings)
 [x] jean-auguste-dominique-ingres (7 paintings) - all URLs 429 OK; dims: Napoleón 259×162→163×259, Júpiter/Tetis 327×260→260×327; added fullName/years/origin
