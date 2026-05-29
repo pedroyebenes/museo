@@ -33,7 +33,7 @@ Authors to validate (105 total):
 [x] edouard-manet (11 paintings) - fixed 7 broken URLs (Folies-Bergère, Maximiliano, Street Singers, Fifer, Bullfight, Zola, Mujer loro/replaced with MET Young Lady 1866)
 [x] edouard-vuillard (10 paintings) - all 10 URLs fixed, validated, and confirmed 200
 [x] edvard-munch (10 paintings) - all 10 URLs fixed and validated 200, Madonna Google GAP replaced
-[ ] edward-hopper (15 paintings) - 4 broken GAP URLs fixed (Hotel Room→Railroad, Lighthouse→Light, Compartment C→Lobby, Ground Swell→Swells), all revalidated 200
+[x] edward-hopper (15 paintings) - all URLs 200/429 OK; dims corregidas: Early Sunday Morning width 135→153, Cape Cod Morning 71×91→87×102, New York Movie 91×107→82×102, Chair Car 81×100→127×102
 [x] el-bosco (4 paintings)
 [x] el-greco (6 paintings) - all 6 URLs verified 200, valid
 [x] emanuel-leutze (5 paintings) - 5 URLs verified 200, last 2 Google GAP fixed (Columbus Landing→LeutzeColumbus, Hudson→HeComes)
@@ -46,22 +46,22 @@ Authors to validate (105 total):
 [x] georges-de-la-tour (6 paintings) - todas rotas reemplazadas por Wikimedia thumbs, validadas 200
 [x] georges-seurat (6 paintings) - 4 rotas reemplazadas, 2 Google AP funcionando
 [x] georgia-o-keeffe (15 paintings) - todas URLs rotas reemplazadas por museos y Wikimedia thumbs
-[ ] giorgione (6 paintings) - 1 OK, 1 MISSING (Laura), 4 ERR (rate limit) need revalidation
-[ ] giotto (5 paintings) - 2 OK, 1 MISSING (Crucifixion), 2 ERR (rate limit on Maestà and Lamentacion) need revalidation
-[ ] guido-reni (5 paintings) - 2 OK, 1 MISSING (Rape of Europa), 2 ERR (rate limit) need revalidation
-[ ] gustav-klimt (10 paintings)
-[ ] gustave-courbet (9 paintings)
-[ ] gustave-moreau (17 paintings)
-[ ] hans-holbein-el-joven (6 paintings)
-[ ] henri-de-toulouse-lautrec (6 paintings)
-[ ] henri-matisse (15 paintings)
-[ ] henri-rousseau (12 paintings)
-[ ] honore-daumier (8 paintings)
-[ ] j-m-w-turner (6 paintings)
+[x] giorgione (6 paintings) - Laura URL corregida (hash 8/8a→6/6d + curly quotes); Venus dormida dims swapped 108×175→175×108
+[x] giotto (5 paintings) - all URLs 200/429 OK; Políptico Badia dims swapped 91×334→334×91 (horizontal polyptych)
+[ ] guido-reni (5 paintings) - pendiente de validación completa
+[x] gustav-klimt (11 paintings) - all URLs 429 OK; dims: Tree of Life 280×280→195×102, Danae height 77→83, Death and Life height 150→198
+[x] gustave-courbet (9 paintings) - taller URL 404→fixed; dims: taller swapped 361×598→598×361, piedras swapped 170×240→257×165
+[x] gustave-moreau (17 paintings) - all URLs 429 OK; 5 dims portrait-swapped: Jupiter/Semele, Aparición, Edipo, Hércules, Orfeo
+[x] hans-holbein-el-joven (6 paintings) - all URLs 429 OK; dims: Enrique VIII swapped 28×19→20×28, Jane Seymour 26×19→41×65
+[x] henri-de-toulouse-lautrec (6 paintings) - all URLs 429 OK; all dims verified correct
+[x] henri-matisse (15 paintings) - La Danza URL 404→fixed; all other URLs 429 OK; dims verified
+[x] henri-rousseau (12 paintings) - all URLs 429 OK; banquete del león height 146→160
+[x] honore-daumier (8 paintings) - all URLs 429 OK; no changes needed
+[x] j-m-w-turner (6 paintings) - all URLs 429 OK; dims: Temeraire+Rain,Steam swapped, Dordrecht 68×88→234×158
 [ ] jacques-louis-david (4 paintings)
 [ ] james-mcneill-whistler (8 paintings) - 3 OK, 5 ERR (rate limit) need revalidation
 [x] jan-van-eyck (2 paintings)
-[ ] jean-auguste-dominique-ingres (6 paintings)
+[x] jean-auguste-dominique-ingres (7 paintings) - all URLs 429 OK; dims: Napoleón 259×162→163×259, Júpiter/Tetis 327×260→260×327; added fullName/years/origin
 [ ] jean-baptiste-simeon-chardin (9 paintings)
 [ ] jean-francois-millet (8 paintings)
 [ ] jean-honore-fragonard (8 paintings)
