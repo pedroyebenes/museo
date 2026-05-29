@@ -9,7 +9,7 @@
   "paintings": [
     {
       "id": "kahlo-dos-fridas",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Frida_Kahlo_-_The_Two_Fridas_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Frida_Kahlo_%281907-1954%29_-_Las_dos_Fridas_%281939%29.jpg/600px-Las_dos_Fridas_%281939%29.jpg",
       "title": "Las dos Fridas",
       "year": 1939,
       "description": "Doble autorretrato con corazones unidos por vena visible. Kahlo dramatiza identidad dividida tras divorciarse de Diego Rivera.",
@@ -20,7 +20,7 @@
     },
     {
       "id": "kahlo-columna",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Frida_Kahlo_-_The_Broken_Column_-_Google_Art_Project.jpg",
+      "url": "https://uploads5.wikiart.org/images/frida-kahlo/the-broken-column-1944-2.jpg",
       "title": "La columna rota",
       "year": 1944,
       "description": "Cuerpo clavado y hendido que sangra bajo corsé. Autorretrato de dolor físico convertido en icono universal.",
@@ -31,7 +31,7 @@
     },
     {
       "id": "kahlo-autorretrato",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Frida_Kahlo_-_Self-Portrait_with_Thorn_Necklace_and_Hummingbird_-_Google_Art_Project.jpg",
+      "url": "https://uploads8.wikiart.org/images/frida-kahlo/self-portrait-with-thorn-necklace-and-hummingbird-1940-2.jpg",
       "title": "Autorretrato con collar de espinas",
       "year": 1940,
       "description": "Frida con collar de espinas, colibrí y mariposas en vegetación. Síntesis de su lenguaje simbólico mexicano.",
@@ -42,7 +42,7 @@
     },
     {
       "id": "kahlo-henry",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Frida_Kahlo_-_Self-Portrait_with_Monkey_-_Google_Art_Project.jpg",
+      "url": "https://uploads0.wikiart.org/images/frida-kahlo/self-portrait-with-monkey-1938-2.jpg",
       "title": "Autorretrato con mono",
       "year": 1940,
       "description": "Frida con chango y gato en fondo de hojas tropicales. Animal de compañía como confidente en autorretrato íntimo.",
@@ -53,7 +53,7 @@
     },
     {
       "id": "kahlo-suicidio",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Frida_Kahlo_-_The_Suicide_of_Dorothy_Hale_-_Google_Art_Project.jpg",
+      "url": "https://www.phillipscollection.org/sites/default/files/styles/image_width_rectangle_large/public/2023-07/Kahlo_The%20Suicide%20of%20Dorothy%20Hale.jpg",
       "title": "El suicidio de Dorothy Hale",
       "year": 1939,
       "description": "Secuencia de la caída de Hale desde edificio neoyorquino. Kahlo narra tragedia real con crudeza casi teatral.",
@@ -64,7 +64,7 @@
     },
     {
       "id": "kahlo-roots",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Frida_Kahlo_-_Roots_-_Google_Art_Project.jpg",
+      "url": "https://www.museomam.org/fridakahlo/db/raices-full.jpg",
       "title": "Raíces",
       "year": 1943,
       "description": "Frida tumbada con venas que se convierten en raíces vegetales. Conexión entre cuerpo, tierra y fertilidad simbólica.",
@@ -75,7 +75,7 @@
     },
     {
       "id": "kahlo-marcos",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Frida_Kahlo_-_Self-Portrait_with_Cropped_Hair_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Frida_Kahlo_-_Self-Portrait_with_Cropped_Hair_-_Moma.jpg",
       "title": "Autorretrato con pelo corto",
       "year": 1940,
       "description": "Frida vestida de hombre con cabello recortado y versos de canción. Respuesta pictórica a la ruptura con Rivera.",
@@ -86,7 +86,7 @@
     },
     {
       "id": "kahlo-hospital",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Frida_Kahlo_-_Henry_Ford_Hospital_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Frida_Kahlo_-_Henry_Ford_Hospital%2C_Detroit.jpg",
       "title": "Hospital Henry Ford",
       "year": 1932,
       "description": "Autorretrato de aborto con objetos flotantes conectados por venas. Kahlo convierte trauma médico en alegoría personal.",
@@ -97,7 +97,7 @@
     },
     {
       "id": "kahlo-mexico",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Frida_Kahlo_-_My_Grandparents%2C_My_Parents%2C_and_I_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Frida_Kahlo_-_My_Ancestors,_My_Grandparents_and_I_-_Google_Art_Project_Modified.jpg",
       "title": "Mis abuelos, mis padres y yo",
       "year": 1936,
       "description": "Árbol genealógico de identidad mestiza entre México y Europa. Autobiografía como cosmogonía familiar.",
@@ -108,7 +108,7 @@
     },
     {
       "id": "kahlo-venadito",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo_-_The_Wounded_Deer_-_Google_Art_Project.jpg",
+      "url": "https://www.museomam.org/fridakahlo/db/elvenadoherido-full.jpg",
       "title": "El venado herido",
       "year": 1946,
       "description": "Cabeza de Frida sobre cuerpo de venado atravesado por flechas. Dolor emocional y físico en metáfora forestal.",
