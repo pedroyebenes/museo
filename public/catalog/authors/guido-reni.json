@@ -9,13 +9,13 @@
   "paintings": [
     {
       "id": "reni-rapto-europa",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Guido_Reni_-_The_Rape_of_Europa_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Reni%2C_Guido_-_Europa_and_the_Bull_-_Google_Art_Project.jpg",
       "title": "El rapto de Europa",
       "year": 1637,
       "description": "Europa monta al toro de Zeus en un paisaje de nubes y mar. Reni pinta el mito con gracia clásica y color azul plateado de gran refinamiento.",
       "dimensions": {
-        "width": 125,
-        "height": 100
+        "width": 130,
+        "height": 177
       }
     },
     {
@@ -25,8 +25,8 @@
       "year": 1625,
       "description": "Hipómenes arroja las manzanas de oro durante la carrera con Atalanta. Reni convierte la escena mitológica en danza de cuerpos idealizados y movimiento suave.",
       "dimensions": {
-        "width": 206,
-        "height": 297
+        "width": 297,
+        "height": 206
       }
     },
     {
@@ -36,8 +36,8 @@
       "year": 1639,
       "description": "El ciclope cantarino aparece en un paisaje clásico con expresión melancólica. Reni humaniza al monstruo mitológico con belleza clasicista y color sobrio.",
       "dimensions": {
-        "width": 68,
-        "height": 53
+        "width": 64,
+        "height": 52
       }
     },
     {
@@ -58,8 +58,8 @@
       "year": 1623,
       "description": "Cristo recibe el bautismo de san Juan ante un cielo abierto con ángeles. Reni pinta el misterio con color claro y composición de elegancia devocional.",
       "dimensions": {
-        "width": 260,
-        "height": 170
+        "width": 187,
+        "height": 264
       }
     }
   ]

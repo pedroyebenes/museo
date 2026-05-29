@@ -48,7 +48,7 @@ Authors to validate (105 total):
 [x] georgia-o-keeffe (15 paintings) - todas URLs rotas reemplazadas por museos y Wikimedia thumbs
 [x] giorgione (6 paintings) - Laura URL corregida (hash 8/8a→6/6d + curly quotes); Venus dormida dims swapped 108×175→175×108
 [x] giotto (5 paintings) - all URLs 200/429 OK; Políptico Badia dims swapped 91×334→334×91 (horizontal polyptych)
-[ ] guido-reni (5 paintings) - pendiente de validación completa
+[x] guido-reni (5 paintings) - reni-rapto-europa URL 404→corregida; 4 dims corregidas (Susana, Atalanta, Polifemo, Bautismo)
 [x] gustav-klimt (11 paintings) - all URLs 429 OK; dims: Tree of Life 280×280→195×102, Danae height 77→83, Death and Life height 150→198
 [x] gustave-courbet (9 paintings) - taller URL 404→fixed; dims: taller swapped 361×598→598×361, piedras swapped 170×240→257×165
 [x] gustave-moreau (17 paintings) - all URLs 429 OK; 5 dims portrait-swapped: Jupiter/Semele, Aparición, Edipo, Hércules, Orfeo
