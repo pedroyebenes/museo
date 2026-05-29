@@ -62,7 +62,7 @@ Authors to validate (105 total):
 [x] james-mcneill-whistler (8 paintings) - all URLs 429 OK; biombo-dorado dims corregidas portrait 80x65→50x69
 [x] jan-van-eyck (2 paintings)
 [x] jean-auguste-dominique-ingres (7 paintings) - all URLs 429 OK; dims: Napoleón 259×162→163×259, Júpiter/Tetis 327×260→260×327; added fullName/years/origin
-[ ] jean-baptiste-simeon-chardin (9 paintings)
+[x] jean-baptiste-simeon-chardin (9 paintings) - all URLs 429 OK; múltiples dims corregidas
 [ ] jean-francois-millet (8 paintings)
 [ ] jean-honore-fragonard (8 paintings)
 [ ] joan-miro (12 paintings)
