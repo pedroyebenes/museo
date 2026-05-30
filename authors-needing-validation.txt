@@ -87,7 +87,7 @@ Authors to validate (105 total):
 [x] paul-cezanne - cesta-manzanas+madame dims swapped
 [x] paul-gauguin - cristo-amarillo+dos-mujeres dims swapped
 [x] paul-signac - desayuno+puerto dims corregidas
-[ ] peter-paul-rubens (6 paintings)
+[x] peter-paul-rubens - descendimiento+abundancia dims corregidas
 [ ] pierre-auguste-renoir (12 paintings)
 [ ] pierre-bonnard (10 paintings)
 [ ] piet-mondrian (12 paintings)
