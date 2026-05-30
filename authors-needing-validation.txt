@@ -77,7 +77,7 @@ Authors to validate (105 total):
 [x] lucas-cranach-el-viejo (6 paintings) - all URLs 429 OK; jardin-eden+apolo dims corregidas
 [x] marc-chagall (12 paintings) - all URLs 429 OK; 6 dims corregidas
 [x] mary-cassatt (14 paintings) - all URLs 429 OK; 7 dims corregidas
-[ ] melozzo-da-forli (4 paintings)
+[x] melozzo-da-forli - melozzo-angeles URL 404→corregida; dims corregidas 222x200→93x117
 [x] miguel-angel (3 paintings) - all URLs 429 OK; tormento-san-antonio dims swapped
 [x] nicolas-poussin - poussin-rapto-sabinas URL 404→corregida; 2+ dims swapped
 [x] odilon-redon - redon-barco-flores URL 404→corregida; otras 429 OK
