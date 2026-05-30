@@ -107,3 +107,5 @@ Authors to validate (105 total):
 [x] william-adolphe-bouguereau - 4 dims corregidas (placeholder 80x65 → valores reales)
 [x] william-blake - 2 dims corregidas (fantasma-pulga, dragon-rojo - portrait)
 [x] winslow-homer - homer-caza-ciervo URL 404→corregida; dims 122.3x71.8
+
+[x] rembrandt (9 paintings) - 8 URLs 404→corregidas (WGA/Hermitage/Getty); 7 dims corregidas (H×W invertidas)
