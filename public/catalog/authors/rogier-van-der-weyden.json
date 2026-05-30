@@ -17,13 +17,13 @@
     },
     {
       "id": "rogier-ultima-cena",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Rogier_van_der_Weyden_-_The_Last_Supper_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Rogier_van_der_Weyden_-_De_Zeven_Sacramenten_-_393-395_-_Royal_Museum_of_Fine_Arts_Antwerp.jpg",
       "title": "La Última Cena",
       "year": 1464,
       "description": "Cristo y los apóstoles en un interior gótico con detalle minucioso. Obra tardía que transmite la solemnidad eucarística con intimidad dramática.",
       "dimensions": {
-        "width": 43,
-        "height": 38
+        "width": 223,
+        "height": 200
       }
     },
     {
@@ -33,8 +33,8 @@
       "year": 1460,
       "description": "Mujer anónima con tocado elaborado y manos entrelazadas sobre fondo oscuro. Rogier condensa la dignidad burguesa flamenca en una mirada contenida y serena.",
       "dimensions": {
-        "width": 27,
-        "height": 37
+        "width": 26,
+        "height": 34
       }
     },
     {
@@ -44,8 +44,8 @@
       "year": 1445,
       "description": "Cristo muerto en la cruz entre la Virgen, san Juan y donantes arrodillados. Rogier condensa el dolor en figuras alargadas y color intenso sobre fondos dorados.",
       "dimensions": {
-        "width": 101,
-        "height": 70
+        "width": 70,
+        "height": 101
       }
     },
     {
@@ -55,8 +55,8 @@
       "year": 1441,
       "description": "Cristo yacente sobre las rodillas de la Virgen en un paisaje rocoso. La escena transmite una intimidad dolorosa mediante gestos contenidos y rostros compungidos.",
       "dimensions": {
-        "width": 34,
-        "height": 45
+        "width": 47,
+        "height": 33
       }
     },
     {
@@ -66,8 +66,8 @@
       "year": 1450,
       "description": "Escenas de la Anunciación y la Visitación en un retablo gótico de gran refinamiento. Rogier articula la devoción mariana con arquitectura miniaturizada y color joya.",
       "dimensions": {
-        "width": 160,
-        "height": 120
+        "width": 176,
+        "height": 94
       }
     },
     {
@@ -77,8 +77,8 @@
       "year": 1450,
       "description": "María sostiene al Niño en un interior íntimo de gran ternura. Rogier condensa la devoción flamenca en figuras delicadas y color luminoso.",
       "dimensions": {
-        "width": 32,
-        "height": 25
+        "width": 23,
+        "height": 32
       }
     }
   ]
