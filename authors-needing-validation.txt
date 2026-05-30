@@ -91,7 +91,7 @@ Authors to validate (105 total):
 [x] pierre-auguste-renoir - gran-banista+baile-campo dims corregidas
 [x] pierre-bonnard - no changes needed - all OK
 [ ] piet-mondrian (12 paintings)
-[ ] pieter-bruegel-el-viejo (8 paintings)
+[x] pieter-bruegel-el-viejo - 5 dims swapped (landscape paintings)
 [ ] pietro-perugino (4 paintings)
 [ ] rafael (5 paintings)
 [ ] rene-magritte (12 paintings)
