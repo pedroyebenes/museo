@@ -86,7 +86,7 @@ Authors to validate (105 total):
 [x] parmigianino - amor-arco+virgen-nino dims corregidas
 [x] paul-cezanne - cesta-manzanas+madame dims swapped
 [x] paul-gauguin - cristo-amarillo+dos-mujeres dims swapped
-[ ] paul-signac (10 paintings)
+[x] paul-signac - desayuno+puerto dims corregidas
 [ ] peter-paul-rubens (6 paintings)
 [ ] pierre-auguste-renoir (12 paintings)
 [ ] pierre-bonnard (10 paintings)
