@@ -38,25 +38,14 @@
       }
     },
     {
-      "id": "poussin-bacanal",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Nicolas_Poussin_-_The_Bacchanal_of_the_Andrians_-_Google_Art_Project.jpg",
-      "title": "El bacanal de los andrios",
-      "year": 1635,
-      "description": "Festín mitológico en la isla de Andros con danza, música y vino. Poussin ordena el placer clásico con geometría compositiva y color sobrio.",
-      "dimensions": {
-        "width": 175,
-        "height": 121
-      }
-    },
-    {
       "id": "poussin-santa-cena",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Nicolas_Poussin_-_The_Institution_of_the_Eucharist_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Nicolas_Poussin_-_The_Institution_of_the_Eucharist_-_WGA18310.jpg",
       "title": "La institución de la Eucaristía",
       "year": 1640,
       "description": "Cristo consagra el pan ante los apóstoles en un interior clásico. Poussin traduce la escena sacramental con claridad racional y figuras escultóricas.",
       "dimensions": {
-        "width": 325,
-        "height": 260
+        "width": 260,
+        "height": 325
       }
     },
     {
@@ -77,8 +66,8 @@
       "year": 1630,
       "description": "Los dioses del amor y la guerra descansan en un paisaje clásico. Poussin equilibra pasión y razón en una escena de elegancia neoclásica avant la lettre.",
       "dimensions": {
-        "width": 155,
-        "height": 215
+        "width": 215,
+        "height": 155
       }
     },
     {
