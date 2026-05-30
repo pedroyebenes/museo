@@ -20,13 +20,13 @@
     },
     {
       "id": "picasso-demoiselles",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Pablo_Picasso_-_Les_Demoiselles_d'Avignon_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Les_Demoiselles_d%27Avignon.jpg",
       "title": "Las señoritas de Aviñón",
       "year": 1907,
       "description": "Cinco figuras de contornos angulosos y máscaras primitivas. Obra fundacional del cubismo que rompe con la perspectiva renacentista.",
       "dimensions": {
-        "width": 243,
-        "height": 233
+        "width": 234,
+        "height": 244
       }
     },
     {
@@ -36,8 +36,8 @@
       "year": 1903,
       "description": "Figura enferma y curvada abraza la guitarra en azules sombríos. Síntesis del periodo azul y de la miseria urbana de Barcelona y París.",
       "dimensions": {
-        "width": 122,
-        "height": 83
+        "width": 83,
+        "height": 122
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1932,
       "description": "Marie-Thérèse Walter duplicada en espejo de color violáceo y amarillo. Picasso explora identidad, deseo y metamorfosis en clave surrealista.",
       "dimensions": {
-        "width": 162,
-        "height": 130
+        "width": 130,
+        "height": 162
       }
     },
     {
@@ -58,8 +58,8 @@
       "year": 1932,
       "description": "Retrato onírico de Marie-Thérèse con rostro fragmentado y torso colorido. Color sensual y formas orgánicas en la década de los treinta.",
       "dimensions": {
-        "width": 130,
-        "height": 97
+        "width": 97,
+        "height": 130
       }
     },
     {
@@ -69,7 +69,7 @@
       "year": 1921,
       "description": "Figuras monumentales de estilo neoclásico junto a una fuente. Picasso retorna a la tradición mediterránea tras el cubismo analítico.",
       "dimensions": {
-        "width": 185,
+        "width": 174,
         "height": 204
       }
     },
@@ -80,8 +80,8 @@
       "year": 1912,
       "description": "Instrumento y fruta fragmentados en planos superpuestos. Cubismo analítico que descompone objeto y espacio en facetas grises.",
       "dimensions": {
-        "width": 61,
-        "height": 50
+        "width": 51,
+        "height": 61
       }
     },
     {
@@ -102,8 +102,8 @@
       "year": 1907,
       "description": "Rostro angular y mirada penetrante en tonos ocres. Picasso se representa en el umbral del cubismo con crudeza expresiva.",
       "dimensions": {
-        "width": 56,
-        "height": 46
+        "width": 46,
+        "height": 56
       }
     },
     {
@@ -124,8 +124,8 @@
       "year": 1925,
       "description": "Bailarines en movimiento de formas biomorphicas y color intenso. Picasso vincula cubismo y surrealismo en escena de ritmo y erotismo.",
       "dimensions": {
-        "width": 215,
-        "height": 142
+        "width": 142,
+        "height": 215
       }
     },
     {
