@@ -88,7 +88,7 @@ Authors to validate (105 total):
 [x] paul-gauguin - cristo-amarillo+dos-mujeres dims swapped
 [x] paul-signac - desayuno+puerto dims corregidas
 [x] peter-paul-rubens - descendimiento+abundancia dims corregidas
-[ ] pierre-auguste-renoir (12 paintings)
+[x] pierre-auguste-renoir - gran-banista+baile-campo dims corregidas
 [ ] pierre-bonnard (10 paintings)
 [ ] piet-mondrian (12 paintings)
 [ ] pieter-bruegel-el-viejo (8 paintings)
