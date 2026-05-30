@@ -96,7 +96,7 @@ Authors to validate (105 total):
 [x] rafael - madonna-cardellino+transfiguración dims swapped
 [x] rene-magritte - condicion+castillo-pirineos dims swapped
 [ ] rogier-van-der-weyden (6 paintings)
-[ ] salvador-dali (15 paintings)
+[x] salvador-dali - 5+ dims corregidas
 [ ] sandro-botticelli (6 paintings)
 [ ] theodore-gericault (5 paintings)
 [ ] thomas-cole (9 paintings)
