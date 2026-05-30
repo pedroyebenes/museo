@@ -106,4 +106,4 @@ Authors to validate (105 total):
 [x] wassily-kandinsky - composicion-vii+amarillo-rojo-azul dims swapped (landscape)
 [x] william-adolphe-bouguereau - 4 dims corregidas (placeholder 80x65 → valores reales)
 [x] william-blake - 2 dims corregidas (fantasma-pulga, dragon-rojo - portrait)
-[ ] winslow-homer (9 paintings)
+[x] winslow-homer - homer-caza-ciervo URL 404→corregida; dims 122.3x71.8
