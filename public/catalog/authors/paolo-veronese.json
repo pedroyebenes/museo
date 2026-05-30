@@ -25,7 +25,7 @@
       "year": 1565,
       "description": "Encuentro histórico entre conquistador y realeza persa en un escenario teatral. Veronese demuestra su dominio del retrato colectivo y del color veneciano.",
       "dimensions": {
-        "width": 455,
+        "width": 475,
         "height": 236
       }
     },
@@ -36,8 +36,8 @@
       "year": 1578,
       "description": "Alegoría mitológica donde Cupido ata a los dioses del amor y la guerra. Veronese despliega sedas, armaduras y paisaje veneciano con elegancia decorativa.",
       "dimensions": {
-        "width": 205,
-        "height": 123
+        "width": 161,
+        "height": 206
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1559,
       "description": "Cristo revelado en un banquete aristocrático veneciano. Veronese eleva el episóngelico con arquitectura clásica, sirvientes y un despliegue de color y seda.",
       "dimensions": {
-        "width": 240,
-        "height": 550
+        "width": 415,
+        "height": 241
       }
     },
     {
@@ -69,8 +69,8 @@
       "year": 1573,
       "description": "Banquete bíblico convertido en escena de lujo veneciano con decenas de personajes. Veronese desafió la Inquisición y amplió la escena sagrada hasta límites teatrales.",
       "dimensions": {
-        "width": 560,
-        "height": 130
+        "width": 1309,
+        "height": 555
       }
     },
     {
@@ -80,8 +80,8 @@
       "year": 1565,
       "description": "La familia persa se inclina ante el conquistador macedonio en una escena de seda y arquitectura clásica. Veronese celebra el poder y el protocolo histórico con color veneciano.",
       "dimensions": {
-        "width": 236,
-        "height": 475
+        "width": 475,
+        "height": 236
       }
     }
   ]

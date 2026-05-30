@@ -82,7 +82,7 @@ Authors to validate (105 total):
 [x] nicolas-poussin - poussin-rapto-sabinas URL 404→corregida; 2+ dims swapped
 [x] odilon-redon - redon-barco-flores URL 404→corregida; otras 429 OK
 [x] pablo-picasso - picasso-demoiselles URL 404→corregida; dims corregidas
-[ ] paolo-veronese (6 paintings)
+[x] paolo-veronese - familia-dario+marte-venus dims corregidas
 [ ] parmigianino (5 paintings)
 [ ] paul-cezanne (11 paintings)
 [ ] paul-gauguin (5 paintings)
