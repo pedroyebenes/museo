@@ -85,7 +85,7 @@ Authors to validate (105 total):
 [x] paolo-veronese - familia-dario+marte-venus dims corregidas
 [x] parmigianino - amor-arco+virgen-nino dims corregidas
 [x] paul-cezanne - cesta-manzanas+madame dims swapped
-[ ] paul-gauguin (5 paintings)
+[x] paul-gauguin - cristo-amarillo+dos-mujeres dims swapped
 [ ] paul-signac (10 paintings)
 [ ] peter-paul-rubens (6 paintings)
 [ ] pierre-auguste-renoir (12 paintings)
