@@ -102,7 +102,7 @@ Authors to validate (105 total):
 [x] thomas-cole - cole-oxbow URL 404→MET corregida; dims 76x130→193x131 (apaisado gigante)
 [x] thomas-gainsborough - 3 dims corregidas (william-pitt, ninos-marsham, paisaje-lechera)
 [ ] tiziano (6 paintings)
-[ ] vincent-van-gogh (12 paintings)
+[x] vincent-van-gogh - 3 dims corregidas (campo-trigo height 262→50.5, cipreses swapped, tanguy width 65→75)
 [ ] wassily-kandinsky (12 paintings)
 [ ] william-adolphe-bouguereau (8 paintings)
 [ ] william-blake (7 paintings)
