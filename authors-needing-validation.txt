@@ -89,7 +89,7 @@ Authors to validate (105 total):
 [x] paul-signac - desayuno+puerto dims corregidas
 [x] peter-paul-rubens - descendimiento+abundancia dims corregidas
 [x] pierre-auguste-renoir - gran-banista+baile-campo dims corregidas
-[ ] pierre-bonnard (10 paintings)
+[x] pierre-bonnard - no changes needed - all OK
 [ ] piet-mondrian (12 paintings)
 [ ] pieter-bruegel-el-viejo (8 paintings)
 [ ] pietro-perugino (4 paintings)
