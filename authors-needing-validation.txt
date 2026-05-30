@@ -94,7 +94,7 @@ Authors to validate (105 total):
 [x] pieter-bruegel-el-viejo - 5 dims swapped (landscape paintings)
 [x] pietro-perugino - perugino-francesco+madonna dims corregidas
 [x] rafael - madonna-cardellino+transfiguración dims swapped
-[ ] rene-magritte (12 paintings)
+[x] rene-magritte - condicion+castillo-pirineos dims swapped
 [ ] rogier-van-der-weyden (6 paintings)
 [ ] salvador-dali (15 paintings)
 [ ] sandro-botticelli (6 paintings)
