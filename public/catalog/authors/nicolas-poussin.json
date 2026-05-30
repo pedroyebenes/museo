@@ -17,24 +17,24 @@
     },
     {
       "id": "poussin-rapto-sabinas",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Nicolas_Poussin_-_The_Rape_of_the_Sabine_Women_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/L%27Enl%C3%A8vement_des_Sabines_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7290_%3B_MR_2335.jpg",
       "title": "El rapto de las sabinas",
       "year": 1637,
       "description": "Romulo y sus hombres arrebatan a las mujeres sabinas en una espiral compositiva perfecta. Poussin ordena la violencia mitológica con geometría clásica.",
       "dimensions": {
-        "width": 159,
-        "height": 206
+        "width": 206,
+        "height": 159
       }
     },
     {
       "id": "poussin-orfeo-euridice",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Nicolas_Poussin_-_Landscape_with_Orpheus_and_Eurydice_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Orph%C3%A9e_et_Eurydice_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7307.jpg",
       "title": "Paisaje con Orfeo y Eurídice",
       "year": 1650,
       "description": "Orfeo mira atrás hacia Eurídice en un paisaje clásico de árboles y ruinas. Poussin convierte el mito en meditación sobre el deseo, la pérdida y la mirada.",
       "dimensions": {
-        "width": 124,
-        "height": 200
+        "width": 200,
+        "height": 124
       }
     },
     {
@@ -44,8 +44,8 @@
       "year": 1635,
       "description": "Festín mitológico en la isla de Andros con danza, música y vino. Poussin ordena el placer clásico con geometría compositiva y color sobrio.",
       "dimensions": {
-        "width": 122,
-        "height": 175
+        "width": 175,
+        "height": 121
       }
     },
     {
@@ -55,8 +55,8 @@
       "year": 1640,
       "description": "Cristo consagra el pan ante los apóstoles en un interior clásico. Poussin traduce la escena sacramental con claridad racional y figuras escultóricas.",
       "dimensions": {
-        "width": 331,
-        "height": 252
+        "width": 325,
+        "height": 260
       }
     },
     {
@@ -66,8 +66,8 @@
       "year": 1631,
       "description": "Flora reina sobre un reino de flores, mitos y transformaciones vegetales. Poussin ordena la mitología clásica con geometría serena y color mineral.",
       "dimensions": {
-        "width": 131,
-        "height": 181
+        "width": 181,
+        "height": 131
       }
     },
     {
@@ -88,8 +88,8 @@
       "year": 1633,
       "description": "Los Reyes Magos adoran al Niño en un paisaje clásico de ruinas y cielo sereno. Poussin narra la Epifanía con claridad racional y figuras escultóricas.",
       "dimensions": {
-        "width": 120,
-        "height": 175
+        "width": 182,
+        "height": 160
       }
     }
   ]

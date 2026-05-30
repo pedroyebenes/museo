@@ -79,7 +79,7 @@ Authors to validate (105 total):
 [x] mary-cassatt (14 paintings) - all URLs 429 OK; 7 dims corregidas
 [ ] melozzo-da-forli (4 paintings)
 [x] miguel-angel (3 paintings) - all URLs 429 OK; tormento-san-antonio dims swapped
-[ ] nicolas-poussin (7 paintings)
+[x] nicolas-poussin - poussin-rapto-sabinas URL 404→corregida; 2+ dims swapped
 [ ] odilon-redon (10 paintings)
 [ ] pablo-picasso (14 paintings)
 [ ] paolo-veronese (6 paintings)
