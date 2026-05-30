@@ -36,8 +36,8 @@
       "year": 1485,
       "description": "La diosa contempla al dios de la guerra dormido mientras sátiros juegan con su armadura. Botticelli combina erotismo clásico y humor refinado.",
       "dimensions": {
-        "width": 69,
-        "height": 173
+        "width": 173,
+        "height": 69
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1495,
       "description": "Alegoría basada en un texto de Luciano con figuras de la calumnia, la envidia y la verdad. Botticelli traduce la erudición clásica en una escena narrativa de precisión lineal.",
       "dimensions": {
-        "width": 62,
-        "height": 91
+        "width": 91,
+        "height": 62
       }
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "id": "botticelli-madonna-magnificat",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Sandro_Botticelli_-_Madonna_of_the_Magnificat_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Sandro_Botticelli_-_Madonna_del_Magnificat_-_Google_Art_Project.jpg",
       "title": "Madonna del Magnificat",
       "year": 1483,
       "description": "Virgen entronizada escribe el Magnificat rodeada de ángeles y figuras celestiales. Botticelli organiza la gloria mariana con línea sinuosa y color claro.",

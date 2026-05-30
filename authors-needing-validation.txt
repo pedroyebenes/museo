@@ -97,7 +97,7 @@ Authors to validate (105 total):
 [x] rene-magritte - condicion+castillo-pirineos dims swapped
 [ ] rogier-van-der-weyden (6 paintings)
 [x] salvador-dali - 5+ dims corregidas
-[ ] sandro-botticelli (6 paintings)
+[x] sandro-botticelli - Madonna del Magnificat URL corregida; 2 dims swapped
 [ ] theodore-gericault (5 paintings)
 [ ] thomas-cole (9 paintings)
 [ ] thomas-gainsborough (8 paintings)
