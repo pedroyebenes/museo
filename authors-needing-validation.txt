@@ -84,7 +84,7 @@ Authors to validate (105 total):
 [x] pablo-picasso - picasso-demoiselles URL 404→corregida; dims corregidas
 [x] paolo-veronese - familia-dario+marte-venus dims corregidas
 [x] parmigianino - amor-arco+virgen-nino dims corregidas
-[ ] paul-cezanne (11 paintings)
+[x] paul-cezanne - cesta-manzanas+madame dims swapped
 [ ] paul-gauguin (5 paintings)
 [ ] paul-signac (10 paintings)
 [ ] peter-paul-rubens (6 paintings)
