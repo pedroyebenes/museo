@@ -100,7 +100,7 @@ Authors to validate (105 total):
 [x] sandro-botticelli - Madonna del Magnificat URL corregida; 2 dims swapped
 [x] theodore-gericault - 3 dims corregidas (boxeadores, anciana-italiana, satyr-nymph)
 [x] thomas-cole - cole-oxbow URL 404→MET corregida; dims 76x130→193x131 (apaisado gigante)
-[ ] thomas-gainsborough (8 paintings)
+[x] thomas-gainsborough - 3 dims corregidas (william-pitt, ninos-marsham, paisaje-lechera)
 [ ] tiziano (6 paintings)
 [ ] vincent-van-gogh (12 paintings)
 [ ] wassily-kandinsky (12 paintings)

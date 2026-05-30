@@ -14,8 +14,8 @@
       "year": 1789,
       "description": "Retrato del estadista británico con gesto enérgico y fondo de tormenta simbólica. Gainsborough une política y carácter psicológico en clave romántica.",
       "dimensions": {
-        "width": 120,
-        "height": 80
+        "width": 64,
+        "height": 76
       }
     },
     {
@@ -25,8 +25,8 @@
       "year": 1787,
       "description": "Retrato infantil en un paisaje campestre con ternura y naturalismo. Gainsborough captura la espontaneidad juvenil con pincelada luminosa.",
       "dimensions": {
-        "width": 120,
-        "height": 80
+        "width": 182,
+        "height": 243
       }
     },
     {
@@ -36,8 +36,8 @@
       "year": 1786,
       "description": "Campesina y ganado en un paisaje veraniego de atmósfera suave. La escena idealiza la vida rural inglesa con poesía y fluidez pictórica.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 102,
+        "height": 76
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1764,
       "description": "Retrato femenino de gran delicadeza con sedas claras y mirada serena. Gainsborough demuestra su dominio del retrato íntimo rococó tardío.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 62,
+        "height": 73
       }
     },
     {
@@ -58,7 +58,7 @@
       "year": 1748,
       "description": "Vista campestre de su tierra natal con árboles, camino y cielo abierto. Obra temprana que anticipa su poética del paisaje británico.",
       "dimensions": {
-        "width": 80,
+        "width": 95,
         "height": 65
       }
     },
@@ -69,8 +69,8 @@
       "year": 1770,
       "description": "Retrato del hermano del artista con gesto reflexivo y fondo paisajístico. Gainsborough combina intimidad familiar y elegancia británica.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 50,
+        "height": 60
       }
     },
     {
@@ -80,8 +80,8 @@
       "year": 1771,
       "description": "Retrato del compositor con elegancia musical y fondo paisajístico. Gainsborough captura la cultura artística británica con pincelada luminosa.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 64,
+        "height": 76
       }
     },
     {
@@ -91,8 +91,8 @@
       "year": 1773,
       "description": "Vacas y pastores en un prado de atmósfera suave y cielo cambiante. Gainsborough idealiza la campiña inglesa con pincelada ligera.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 145,
+        "height": 120
       }
     }
   ]
