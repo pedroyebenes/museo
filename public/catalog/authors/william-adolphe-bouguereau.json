@@ -25,8 +25,8 @@
       "year": 1869,
       "description": "Niña mayor sostiene a su hermano pequeño en un paisaje campestre. Bouguereau idealiza la infancia con acabado pulido y ternura académica.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 97,
+        "height": 130
       }
     },
     {
@@ -36,8 +36,8 @@
       "year": 1889,
       "description": "Niña campesina posa con cordero en un prado bucólico. Bouguereau combina encanto pastoral y precisión anatómica en clave académica.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 94,
+        "height": 159
       }
     },
     {
@@ -47,8 +47,8 @@
       "year": 1899,
       "description": "Retrato infantil con fruta y mirada directa sobre fondo neutro. La obra muestra su dominio del retrato idealizado y la superficie lisa.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 50,
+        "height": 66
       }
     },
     {
@@ -58,8 +58,8 @@
       "year": 1884,
       "description": "Niños montando un burro en un paisaje veraniego de gran dulzura. Bouguereau celebra la infancia rural con virtuosismo académico.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 102,
+        "height": 137
       }
     },
     {
@@ -69,8 +69,8 @@
       "year": 1886,
       "description": "Retrato infantil de mirada limpia y postura serena sobre fondo neutro. Bouguereau perfecciona la idealización académica del retrato infantil.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 27,
+        "height": 35
       }
     },
     {
@@ -80,19 +80,19 @@
       "year": 1873,
       "description": "Pastora sostiene un cordero en un prado bucólico de gran ternura. Bouguereau combina escena rural y perfección técnica académica.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 88,
+        "height": 165
       }
     },
     {
       "id": "bouguereau-defiende-eros",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/William_Adolphe_Bouguereau_(French_-_A_Young_Girl_Defending_Herself_against_Eros_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/William-Adolphe_Bouguereau_%281825-1905%29_-_A_Young_Girl_Defending_Herself_Against_Eros_%281880%29.jpg",
       "title": "Joven defendiéndose de Eros",
       "year": 1880,
       "description": "Desnudo femenino joven aparta con gesto juguetón al dios del amor alado. Bouguereau aborda la mitología con sensualidad académica contenida.",
       "dimensions": {
-        "width": 80,
-        "height": 65
+        "width": 58,
+        "height": 82
       }
     }
   ]
