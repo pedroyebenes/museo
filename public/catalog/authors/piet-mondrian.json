@@ -9,7 +9,7 @@
   "paintings": [
     {
       "id": "mondrian-rojo-azul",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Piet_Mondrian_-_Composition_with_Red%2C_Blue_and_Yellow_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg",
       "title": "Composición con rojo, azul y amarillo",
       "year": 1930,
       "description": "Rectángulos primarios separados por líneas negras en fondo blanco. Síntesis del neoplasticismo y de la búsqueda de orden universal.",
@@ -20,7 +20,7 @@
     },
     {
       "id": "mondrian-broadway",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Piet_Mondrian_-_Broadway_Boogie_Woogie_-_Google_Art_Project.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Piet_Mondrian%2C_1942_-_Broadway_Boogie_Woogie.jpg",
       "title": "Broadway Boogie Woogie",
       "year": 1942,
       "description": "Cuadrícula vibrante inspirada en Manhattan y el jazz. Obra tardía que humaniza el rigor geométrico con ritmo y luz.",
@@ -69,7 +69,7 @@
       "year": 1921,
       "description": "Transición hacia neoplasticismo con planos de color y líneas irregulares. Mondrian acerca forma y espiritualidad.",
       "dimensions": {
-        "width": 61,
+        "width": 60,
         "height": 50
       }
     },
@@ -91,8 +91,8 @@
       "year": 1919,
       "description": "Cuadrícula temprana en tonos grises y ocres. Mondrian experimenta con estructura antes del neoplasticismo puro.",
       "dimensions": {
-        "width": 80,
-        "height": 60
+        "width": 86,
+        "height": 106
       }
     },
     {
@@ -102,8 +102,8 @@
       "year": 1914,
       "description": "Líneas y color dentro de marco ovalado. Fase cubista-neerlandesa en camino hacia la abstracción.",
       "dimensions": {
-        "width": 80,
-        "height": 60
+        "width": 79,
+        "height": 108
       }
     },
     {
@@ -113,7 +113,7 @@
       "year": 1942,
       "description": "Bandas de color que anticipan Broadway Boogie Woogie. Mondrian traduce ritmo urbano en geometría luminosa.",
       "dimensions": {
-        "width": 120,
+        "width": 115,
         "height": 120
       }
     },

@@ -90,7 +90,7 @@ Authors to validate (105 total):
 [x] peter-paul-rubens - descendimiento+abundancia dims corregidas
 [x] pierre-auguste-renoir - gran-banista+baile-campo dims corregidas
 [x] pierre-bonnard - no changes needed - all OK
-[ ] piet-mondrian (12 paintings)
+[x] piet-mondrian - 2 URLs 404 corregidas (rojo-azul, broadway); mondrian-pier dims 80x60→86x106
 [x] pieter-bruegel-el-viejo - 5 dims swapped (landscape paintings)
 [x] pietro-perugino - perugino-francesco+madonna dims corregidas
 [x] rafael - madonna-cardellino+transfiguración dims swapped
