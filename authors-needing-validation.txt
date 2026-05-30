@@ -101,7 +101,7 @@ Authors to validate (105 total):
 [x] theodore-gericault - 3 dims corregidas (boxeadores, anciana-italiana, satyr-nymph)
 [x] thomas-cole - cole-oxbow URL 404→MET corregida; dims 76x130→193x131 (apaisado gigante)
 [x] thomas-gainsborough - 3 dims corregidas (william-pitt, ninos-marsham, paisaje-lechera)
-[ ] tiziano (6 paintings)
+[x] tiziano (6 paintings) - all URLs 200/429 OK; all dims verified correct - no changes needed
 [x] vincent-van-gogh - 3 dims corregidas (campo-trigo height 262→50.5, cipreses swapped, tanguy width 65→75)
 [x] wassily-kandinsky - composicion-vii+amarillo-rojo-azul dims swapped (landscape)
 [x] william-adolphe-bouguereau - 4 dims corregidas (placeholder 80x65 → valores reales)
