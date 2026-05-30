@@ -69,8 +69,8 @@
       "year": 1506,
       "description": "María entronizada sostiene al Niño mientras san Juan le ofrece un pinzón. La escena une devoción florentina y paisaje umbrio en una composición de claridad serena.",
       "dimensions": {
-        "width": 107,
-        "height": 77
+        "width": 77,
+        "height": 107
       }
     },
     {
@@ -80,8 +80,8 @@
       "year": 1520,
       "description": "Última gran obra de Rafael, alterna la gloria de Cristo transfigurado con el milagro del lunático poseso abajo. Resume la síntesis teológica y visual del artista en su madurez.",
       "dimensions": {
-        "width": 405,
-        "height": 278
+        "width": 278,
+        "height": 405
       }
     },
     {
@@ -91,8 +91,8 @@
       "year": 1514,
       "description": "Joven banquero florentino posa con elegancia sobre fondo azul. Rafael combina la psicología del retrato con la suavidad veneciana del color en una obra de exquisita refinación.",
       "dimensions": {
-        "width": 60,
-        "height": 44
+        "width": 44,
+        "height": 60
       }
     },
     {
@@ -102,8 +102,8 @@
       "year": 1506,
       "description": "La Virgen y el Niño en un prado con san Juan Bautista. Rafael equilibra ternura maternal y paisaje luminoso en una de sus madonnas más celebradas.",
       "dimensions": {
-        "width": 113,
-        "height": 88
+        "width": 88,
+        "height": 113
       }
     }
   ]
