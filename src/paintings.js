@@ -8,6 +8,7 @@ const FRAME_DEPTH = 0.08;
 const LABEL_HEIGHT = 0.18;
 const LABEL_WIDTH = 1.2;
 const FALLBACK_LONG_SIDE = 2.0;
+const PAINTING_LOAD_CONCURRENCY = 4;
 
 export const PAINTING_LAYOUT = {
   labelHeight: LABEL_HEIGHT,
@@ -69,7 +70,16 @@ export function getPaintingLayoutExtents(data) {
   };
 }
 
-export async function placePaintings(container, slots, paintings, { renderer, onProgress } = {}) {
+export async function placePaintings(
+  container,
+  slots,
+  paintings,
+  {
+    renderer,
+    onProgress,
+    concurrency = PAINTING_LOAD_CONCURRENCY,
+  } = {},
+) {
   const interactables = [];
   let loaded = 0;
   const total = paintings.filter((_, i) => slots[i]).length;
@@ -79,33 +89,46 @@ export async function placePaintings(container, slots, paintings, { renderer, on
     onProgress?.(loaded, total);
   };
 
+  await runLimited(paintings, concurrency, async (data, i) => {
+    const slot = slots[i];
+    if (!slot) return;
+    try {
+      const texture = await loadPaintingTexture(data.url, renderer);
+      const group = buildPaintingMesh(texture, data);
+      group.position.copy(slot.position);
+      group.rotation.y = slot.rotationY;
+      group.userData.painting = data;
+      container.add(group);
+      interactables.push(group);
+    } catch (err) {
+      console.error(`No pude cargar el cuadro "${data.title}":`, err);
+      const group = buildPaintingMesh(null, data);
+      group.position.copy(slot.position);
+      group.rotation.y = slot.rotationY;
+      group.userData.painting = data;
+      container.add(group);
+      interactables.push(group);
+    } finally {
+      report();
+    }
+  });
+
+  return interactables;
+}
+
+async function runLimited(items, concurrency, worker) {
+  const limit = Math.max(1, Math.min(items.length, Math.floor(concurrency) || 1));
+  let next = 0;
+
   await Promise.all(
-    paintings.map(async (data, i) => {
-      const slot = slots[i];
-      if (!slot) return;
-      try {
-        const texture = await loadPaintingTexture(data.url, renderer);
-        const group = buildPaintingMesh(texture, data);
-        group.position.copy(slot.position);
-        group.rotation.y = slot.rotationY;
-        group.userData.painting = data;
-        container.add(group);
-        interactables.push(group);
-      } catch (err) {
-        console.error(`No pude cargar el cuadro "${data.title}":`, err);
-        const group = buildPaintingMesh(null, data);
-        group.position.copy(slot.position);
-        group.rotation.y = slot.rotationY;
-        group.userData.painting = data;
-        container.add(group);
-        interactables.push(group);
-      } finally {
-        report();
+    Array.from({ length: limit }, async () => {
+      while (next < items.length) {
+        const index = next;
+        next += 1;
+        await worker(items[index], index);
       }
     }),
   );
-
-  return interactables;
 }
 
 function buildPaintingMesh(texture, data) {
