@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { getQualityProfile } from './qualityProfile.js';
-import { DOOR_WIDTH, buildRoomShell } from './wallBuilder.js';
+import { buildRoomShell } from './wallBuilder.js';
 import { getAuthorRoomMaterials } from './materials.js';
 import {
   getPaintingLayoutExtents,
@@ -12,9 +12,8 @@ const MIN_HEIGHT = 4;
 const MIN_SIDE = 6;
 const DEFAULT_PAINTING_Y = 1.6;
 const PAINTING_VIEW_DISTANCE = 2.0;
-const SOUTH_DOOR_CLEARANCE = 0.45;
 
-// Builds an author room: paintings on N/E/W/S walls, one door on the S wall
+// Builds an author room: paintings on N/E/W walls, one door on the S wall
 // that leads back to the hub. Returns slots/segments/triggers/spawn.
 export function buildAuthorRoom(scene, config) {
   const {
@@ -29,17 +28,16 @@ export function buildAuthorRoom(scene, config) {
 
   const walls = partitionPaintings(paintings);
 
-  const widthSide = Math.max(
+  const width = Math.max(
     MIN_SIDE,
     wallSpanNeeded(walls.N),
-    wallSpanNeeded(walls.E),
+  );
+  const depth = Math.max(
+    MIN_SIDE,
     wallSpanNeeded(walls.W),
-    southWallSpanNeeded(walls.S),
+    wallSpanNeeded(walls.E),
   );
   const height = Math.max(MIN_HEIGHT, roomHeightNeeded(paintings));
-
-  const width = widthSide;
-  const depth = widthSide;
 
   const group = new THREE.Group();
   group.name = `room:author:${authorId}`;
@@ -106,16 +104,6 @@ export function buildAuthorRoom(scene, config) {
       rotY: Math.PI / 2,
     });
   }
-  if (walls.S.length > 0) {
-    layoutSouthSlots(slots, {
-      paintings: walls.S,
-      wallLength: width,
-      fixedValue: depth / 2 - 0.05,
-      normal: new THREE.Vector3(0, 0, -1),
-      rotY: Math.PI,
-    });
-  }
-
   addAuthorPlaque(group, author, depth);
   if (bio) addAuthorBioPlaque(group, author, bio, depth);
   addRoomLights(group, width, depth, height);
@@ -163,29 +151,48 @@ function buildPaintingSpawns(slots, paintings) {
 }
 
 function partitionPaintings(paintings) {
-  const walls = { N: [], E: [], W: [], S: [] };
-  const spans = { N: 0, E: 0, W: 0, S: 0 };
-  const counts = { N: 0, E: 0, W: 0, S: 0 };
-  const sides = ['N', 'E', 'W', 'S'];
+  const walls = { N: [], E: [], W: [] };
+  const spans = { N: 0, E: 0, W: 0 };
+  const counts = { N: 0, E: 0, W: 0 };
+  const sides = ['N', 'E', 'W'];
+  const entries = paintings
+    .map((painting, index) => ({
+      painting,
+      index,
+      width: getPaintingLayoutExtents(painting).width,
+    }))
+    .sort((a, b) => b.width - a.width || a.index - b.index);
 
-  for (let index = 0; index < paintings.length; index++) {
-    const painting = paintings[index];
+  for (const entry of entries) {
     const side = sides.reduce((best, candidate) => {
       if (counts[candidate] === 0 && counts[best] > 0) return candidate;
       if (counts[candidate] > 0 && counts[best] === 0) return best;
-      if (spans[candidate] !== spans[best]) {
-        return spans[candidate] < spans[best] ? candidate : best;
+
+      const candidateSpan = spanAfterAdding(
+        spans[candidate],
+        counts[candidate],
+        entry.width,
+      );
+      const bestSpan = spanAfterAdding(spans[best], counts[best], entry.width);
+      if (candidateSpan !== bestSpan) {
+        return candidateSpan < bestSpan ? candidate : best;
       }
       return counts[candidate] < counts[best] ? candidate : best;
     });
-    const addedGap = counts[side] > 0 ? PAINTING_LAYOUT.paintingGap : 0;
-    const addedWidth = getPaintingLayoutExtents(painting).width;
-    walls[side].push({ painting, index });
-    spans[side] += addedGap + addedWidth;
+    spans[side] = spanAfterAdding(spans[side], counts[side], entry.width);
     counts[side] += 1;
+    walls[side].push({ painting: entry.painting, index: entry.index });
+  }
+
+  for (const side of sides) {
+    walls[side].sort((a, b) => a.index - b.index);
   }
 
   return walls;
+}
+
+function spanAfterAdding(currentSpan, count, width) {
+  return currentSpan + (count > 0 ? PAINTING_LAYOUT.paintingGap : 0) + width;
 }
 
 function wallContentSpan(paintingsOnWall) {
@@ -204,18 +211,6 @@ function wallSpanNeeded(paintingsOnWall) {
   if (paintingsOnWall.length === 0) return 0;
 
   return wallContentSpan(paintingsOnWall) + PAINTING_LAYOUT.wallPadding * 2;
-}
-
-function southWallSpanNeeded(paintingsOnWall) {
-  if (paintingsOnWall.length === 0) return 0;
-
-  return (
-    (wallContentSpan(paintingsOnWall) +
-      PAINTING_LAYOUT.wallPadding +
-      DOOR_WIDTH / 2 +
-      SOUTH_DOOR_CLEARANCE) *
-    2
-  );
 }
 
 function roomHeightNeeded(paintings) {
@@ -255,32 +250,6 @@ function layoutSlots(slots, opts) {
       fixedAxis === 'x'
         ? new THREE.Vector3(fixedValue, y, along)
         : new THREE.Vector3(along, y, fixedValue);
-    slots[index] = { position, normal: normal.clone(), rotationY: rotY };
-    along += w / 2 + paintingGap;
-  }
-}
-
-function layoutSouthSlots(slots, opts) {
-  const { paintings, wallLength, fixedValue, normal, rotY } = opts;
-  const { wallPadding, paintingGap } = PAINTING_LAYOUT;
-
-  const sizes = paintings.map((entry) => {
-    const { width, canvasH } = getPaintingLayoutExtents(entry.painting);
-    return { w: width, h: canvasH, index: entry.index };
-  });
-
-  const totalWidth =
-    sizes.reduce((sum, size) => sum + size.w, 0) +
-    Math.max(0, paintings.length - 1) * paintingGap;
-  const usableStart = DOOR_WIDTH / 2 + SOUTH_DOOR_CLEARANCE;
-  const usableEnd = wallLength / 2 - wallPadding;
-  let along = usableStart + Math.max(0, usableEnd - usableStart - totalWidth) / 2;
-
-  for (let i = 0; i < paintings.length; i++) {
-    const { w, h, index } = sizes[i];
-    along += w / 2;
-    const y = computePaintingCenterY(h);
-    const position = new THREE.Vector3(along, y, fixedValue);
     slots[index] = { position, normal: normal.clone(), rotationY: rotY };
     along += w / 2 + paintingGap;
   }
