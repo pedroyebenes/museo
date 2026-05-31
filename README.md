@@ -11,12 +11,12 @@ El catálogo es **estático** (JSON en `public/`); no hay backend ni base de dat
 | **Recorrido 3D** | Movimiento tipo FPS (ratón + WASD/flechas en escritorio; controles táctiles en móvil). |
 | **Hall principal** | Rotonda con una puerta por categoría; el orden lo define `public/catalog/index.json`. |
 | **Salas por categoría** | Rotondas intermedias con una puerta por autor y vuelta al hall principal. |
-| **Salas por autor** | Cada autor tiene una sala rectangular; los cuadros se colocan en las paredes norte, este y oeste. |
+| **Salas por autor** | Cada autor tiene una sala rectangular ajustada a sus obras; los cuadros se colocan en las paredes norte, este y oeste. |
 | **Escala real** | Si el cuadro incluye `dimensions` (cm), el lienzo y el tamaño de la sala se calculan a partir de esas medidas. |
 | **Placas biográficas** | Cada archivo de autor incluye la biografía que se muestra en la sala. |
 | **HUD e información** | Panel de sala (autor, número de obras) y ficha del cuadro (título, autor, año, descripción) al enfocar una obra. Tecla **H** para mostrar/ocultar la ficha. |
 | **Reportar errores** | Tecla **R** en escritorio o botón táctil (arriba a la derecha) y enlace en la ficha del cuadro; abre un issue en GitHub con contexto del cuadro o sala de autor. |
-| **Carga progresiva** | Al entrar en una sala por primera vez, barra de progreso mientras se descargan las texturas. |
+| **Carga progresiva** | Al entrar en una sala por primera vez, barra de progreso mientras se descargan las texturas, con concurrencia limitada para no saturar Wikimedia. |
 | **Calidad adaptativa** | Perfil distinto en móvil (menos antialiasing, texturas hasta 1024 px) y en escritorio (hasta 2048 px). |
 
 ## Stack tecnológico
@@ -364,7 +364,15 @@ Puedes añadir obras y biografías **sin tocar el código**, editando solo JSON:
 
 No recrees `public/paintings.json` ni `public/authors.json`; el catálogo antiguo fue retirado. Cada autor debe estar listado una sola vez en `index.json`, y el campo `id` del archivo de autor debe coincidir con su slug.
 
-Guía detallada (esquemas, convenciones, validación en terminal): **[`AGENTS.md`](AGENTS.md)**.
+Reglas rápidas:
+
+- Las obras no declaran `author`; el cargador lo inyecta desde el archivo del autor.
+- Cada `painting.id` debe ser único globalmente, en kebab-case y sin tildes.
+- Las imágenes nuevas deben apuntar a una imagen directa HTTPS en `upload.wikimedia.org`.
+- Comprueba imágenes nuevas con `curl -L -I "URL"` y espera `content-type: image/...`.
+- Ejecuta `npm run validate:catalog` tras editar el catálogo; para cambios grandes, ejecuta también `npm run build`.
+
+Guía autosuficiente para agentes (catálogo, `/museo`, imágenes y cambios visuales): **[`AGENTS.md`](AGENTS.md)**.
 
 ---
 
@@ -376,7 +384,7 @@ museo/
 ├── styles.css          # Estilos de la UI
 ├── vite.config.js      # Puerto (PORT), host 0.0.0.0
 ├── package.json
-├── AGENTS.md           # Cómo añadir cuadros/autores (JSON)
+├── AGENTS.md           # Guía autosuficiente para agentes
 ├── README.md           # Este archivo
 ├── public/
 │   └── catalog/
@@ -394,7 +402,7 @@ museo/
 │   ├── museum.js       # Construcción de salas de autor
 │   ├── hub.js          # Rotondas de hall y categoría
 │   ├── roomManager.js  # Cambio de sala, caché, transiciones
-│   ├── paintings.js    # Colocación de cuadros y dimensiones
+│   ├── paintings.js    # Colocación de cuadros, dimensiones y carga limitada de texturas
 │   ├── controls.js     # Movimiento (ratón / táctil)
 │   ├── ui.js           # Paneles e HUD
 │   └── …               # rotunda, wallBuilder, materials, etc.
