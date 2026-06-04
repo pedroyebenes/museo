@@ -60,7 +60,41 @@ async function loadWithRetry(url) {
     return await loader.loadAsync(url);
   } catch (err) {
     await sleep(RETRY_DELAY_MS);
-    return loader.loadAsync(url);
+    try {
+      return await loader.loadAsync(url);
+    } catch (retryErr) {
+      throw await enrichImageLoadError(retryErr, url);
+    }
+  }
+}
+
+async function enrichImageLoadError(err, url) {
+  const status = await probeHttpStatus(url);
+  if (!status) return err;
+
+  const message = `No pude cargar la imagen (${status.code} ${status.text})`;
+  const enriched = new Error(message, { cause: err });
+  enriched.imageUrl = url;
+  enriched.imageHttpStatus = status.code;
+  enriched.imageHttpStatusText = status.text;
+  return enriched;
+}
+
+async function probeHttpStatus(url) {
+  if (typeof fetch !== 'function') return null;
+  try {
+    const response = await fetch(url, {
+      method: 'HEAD',
+      mode: 'cors',
+      cache: 'no-store',
+    });
+    if (response.ok || response.status === 0) return null;
+    return {
+      code: response.status,
+      text: response.statusText || 'HTTP error',
+    };
+  } catch {
+    return null;
   }
 }
 

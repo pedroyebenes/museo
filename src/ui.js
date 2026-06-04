@@ -42,7 +42,10 @@ export function createInfoOverlay({ favorites, onFavoriteChange, onReport } = {}
     authorEl.style.display = subtitle ? '' : 'none';
 
     const size = formatPaintingDimensions(data);
-    const sizeText = [size, data.imageBroken ? '(imagen no disponible)' : null]
+    const imageStatus = data.imageBroken
+      ? `(imagen no disponible${data.imageErrorCode ? `: ${data.imageErrorCode}` : ''})`
+      : null;
+    const sizeText = [size, imageStatus]
       .filter(Boolean)
       .join('  ');
     sizeEl.textContent = sizeText;

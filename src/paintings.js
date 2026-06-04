@@ -8,7 +8,8 @@ const FRAME_DEPTH = 0.08;
 const LABEL_HEIGHT = 0.18;
 const LABEL_WIDTH = 1.2;
 const FALLBACK_LONG_SIDE = 2.0;
-const PAINTING_LOAD_CONCURRENCY = 4;
+// Wikimedia es quisquillosa cuando la sala dispara muchas descargas a la vez.
+const PAINTING_LOAD_CONCURRENCY = 2;
 
 export const PAINTING_LAYOUT = {
   labelHeight: LABEL_HEIGHT,
@@ -94,6 +95,8 @@ export async function placePaintings(
     if (!slot) return;
     try {
       const texture = await loadPaintingTexture(data.url, renderer);
+      delete data.imageBroken;
+      delete data.imageErrorCode;
       const group = buildPaintingMesh(texture, data);
       group.position.copy(slot.position);
       group.rotation.y = slot.rotationY;
@@ -102,6 +105,7 @@ export async function placePaintings(
       interactables.push(group);
     } catch (err) {
       console.error(`No pude cargar el cuadro "${data.title}":`, err);
+      data.imageErrorCode = imageErrorCode(err);
       const group = buildPaintingMesh(null, data);
       group.position.copy(slot.position);
       group.rotation.y = slot.rotationY;
@@ -174,8 +178,13 @@ function buildPaintingMesh(texture, data) {
   if (!texture) {
     group.userData.imageBroken = true;
     data.imageBroken = true;
+    group.userData.imageErrorCode = data.imageErrorCode;
   }
   return group;
+}
+
+function imageErrorCode(err) {
+  return err?.imageHttpStatus ? `HTTP ${err.imageHttpStatus}` : null;
 }
 
 // Texture shown in place of a painting whose image failed to load, so the frame
@@ -202,7 +211,14 @@ function buildPlaceholderTexture(data, w, h) {
   ctx.fillText('🖼', c.width / 2, c.height / 2 - iconSize * 0.7);
 
   ctx.font = '600 30px -apple-system, "Segoe UI", sans-serif';
-  ctx.fillText('Imagen no disponible', c.width / 2, c.height / 2 + 6);
+  const unavailableText = data.imageErrorCode
+    ? `Imagen no disponible (${data.imageErrorCode})`
+    : 'Imagen no disponible';
+  ctx.fillText(
+    ellipsize(ctx, unavailableText, c.width - 48),
+    c.width / 2,
+    c.height / 2 + 6,
+  );
 
   ctx.fillStyle = '#a89880';
   ctx.font = '400 24px -apple-system, "Segoe UI", sans-serif';
