@@ -1,4 +1,5 @@
-const DEFAULT_INDEX_URL = '/catalog/index.json';
+const CATALOG_BASE_URL = `${import.meta.env.BASE_URL}catalog`;
+const DEFAULT_INDEX_URL = `${CATALOG_BASE_URL}/index.json`;
 
 export async function loadCatalogData(indexUrl = DEFAULT_INDEX_URL) {
   const index = await fetchJson(indexUrl);
@@ -8,7 +9,7 @@ export async function loadCatalogData(indexUrl = DEFAULT_INDEX_URL) {
 
   const rawAuthors = await Promise.all(
     orderedAuthorIds.map((authorId) =>
-      fetchJson(`/catalog/authors/${authorId}.json`),
+      fetchJson(`${CATALOG_BASE_URL}/authors/${authorId}.json`),
     ),
   );
   const authors = [];

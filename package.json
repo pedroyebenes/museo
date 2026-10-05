@@ -10,7 +10,8 @@
     "sync:validation": "node scripts/sync-validation-status.mjs",
     "catalog:stats": "node scripts/catalog-inventory.mjs",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {
     "three": "^0.160.0"
